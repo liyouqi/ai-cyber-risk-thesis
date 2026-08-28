@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-09",
+  "title": "RPC portmapper service detected on a critical asset",
+  "case_origin": {
+    "type": "anonymized_real_vulnerability_finding",
+    "source": "Tenable vulnerability export supplied for thesis experiment",
+    "derived_from_real_scan_data": true,
+    "source_references": [
+      {
+        "source_row": 56,
+        "plugin_id": "10223",
+        "plugin_name": "RPC portmapper Service Detection"
+      }
+    ]
+  },
+  "experimental_selection_reason": "Low-severity service-detection finding with no remediation text in the source; selected to test cautious handling of limited evidence.",
+  "finding": {
+    "plugin_id": "10223",
+    "plugin_name": "RPC portmapper Service Detection",
+    "family": "RPC",
+    "severity": "Low",
+    "synopsis": "An ONC RPC portmapper is running on the remote host.",
+    "description": "The RPC portmapper is running on this port.\n\nThe portmapper allows someone to get the port number of each RPC service running on the remote host by sending either multiple lookup requests or a DUMP request.",
+    "recommended_remediation": null
+  },
+  "assets": [
+    {
+      "asset_id": "ASSET-UNKNOWN-09",
+      "identifier_type": "synthetic_placeholder_for_missing_source_identifier",
+      "device_category": null,
+      "environment": null,
+      "criticality": "Critical"
+    }
+  ],
+  "affected_asset_count": 1,
+  "network": {
+    "protocol": "UDP",
+    "port": 111,
+    "internet_exposed": null
+  },
+  "vulnerability_intelligence": {
+    "cves": ["CVE-1999-0632"],
+    "vpr": 2.8,
+    "epss_percent": 0.61,
+    "cpe": []
+  },
+  "observation": {
+    "first_discovered": "Jun 06, 2026 11:23:08 CEST",
+    "last_observed": "Aug 15, 2026 11:21:06 CEST",
+    "days_between_first_and_last_observation": 69
+  },
+  "context_not_present_in_source": {
+    "business_context": null,
+    "existing_compensating_controls": null,
+    "remediation_owner": null,
+    "formal_risk_acceptance": null,
+    "internet_exposure": null,
+    "note": "These fields were not present in the supplied export and must not be inferred."
+  },
+  "anonymization": {
+    "ip_address_removed": true,
+    "original_node_names_replaced": true,
+    "branch_location_removed": true,
+    "raw_plugin_output_excluded": true
+  }
+}

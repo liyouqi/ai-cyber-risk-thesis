@@ -1,0 +1,84 @@
+{
+  "case_id": "CASE-01",
+  "title": "Critical VMware ESXi multiple vulnerabilities on production hosts",
+  "case_origin": {
+    "type": "anonymized_real_vulnerability_finding",
+    "source": "Tenable vulnerability export supplied for thesis experiment",
+    "derived_from_real_scan_data": true,
+    "source_references": [
+      {
+        "source_row": 26,
+        "plugin_id": "237304",
+        "plugin_name": "VMware ESXi 7.0 / 8.0 Multiple Vulnerabilities (VMSA-2025-0004)"
+      },
+      {
+        "source_row": 32,
+        "plugin_id": "237304",
+        "plugin_name": "VMware ESXi 7.0 / 8.0 Multiple Vulnerabilities (VMSA-2025-0004)"
+      }
+    ]
+  },
+  "experimental_selection_reason": "Critical virtualization-host vulnerability affecting two production physical hosts; selected to represent a high-impact infrastructure case.",
+  "finding": {
+    "plugin_id": "237304",
+    "plugin_name": "VMware ESXi 7.0 / 8.0 Multiple Vulnerabilities (VMSA-2025-0004)",
+    "family": "Misc.",
+    "severity": "Critical",
+    "synopsis": "The remote VMware ESXi host is affected by multiple vulnerabilities.",
+    "description": "The version of VMware ESXi installed on the remote host is 7.0 prior to 7.0 Update 3s, 8.0 Update 2 prior to 8.0 Update 2d, or 8.0 Update 3 prior to 8.0 Update 3d. It is, therefore, affected by multiple vulnerabilities as referenced in the VMSA-2025-0004 advisory:\n\n  - VMware ESXi, and Workstation contain a TOCTOU (Time-of-Check Time-of-Use) vulnerability that leads to an     out-of-bounds write. A malicious actor with local administrative privileges on a virtual machine may exploit this     issue to execute code as the virtual machine's VMX process running on the host. (CVE-2025-22224)\n\n  - VMware ESXi contains an arbitrary write vulnerability. A malicious actor with privileges within the VMX process may     trigger an arbitrary kernel write leading to an escape of the sandbox. (CVE-2025-22225)\n\n  - VMware ESXi, Workstation, and Fusion contain an information disclosure vulnerability due to an out-of-bounds read     in HGFS. A malicious actor with administrative privileges to a virtual machine may be able to exploit this issue to     leak memory from the vmx process. (CVE-2025-22226)\n\nNote that Nessus has not tested for these issues but has instead relied only on the application's self-reported version number.",
+    "recommended_remediation": "Upgrade to VMware ESXi 7.0 Update 3s, 8.0 Update 2d, or 8.0 Update 3d or later."
+  },
+  "assets": [
+    {
+      "asset_id": "ASSET-01",
+      "identifier_type": "anonymized",
+      "device_category": "Physical Host",
+      "environment": "Production",
+      "criticality": "Critical"
+    },
+    {
+      "asset_id": "ASSET-02",
+      "identifier_type": "anonymized",
+      "device_category": "Physical Host",
+      "environment": "Production",
+      "criticality": "Critical"
+    }
+  ],
+  "affected_asset_count": 2,
+  "network": {
+    "protocol": "TCP",
+    "port": 443,
+    "internet_exposed": null
+  },
+  "vulnerability_intelligence": {
+    "cves": [
+      "CVE-2025-22226",
+      "CVE-2025-22224",
+      "CVE-2025-22225"
+    ],
+    "vpr": 9.3,
+    "epss_percent": 8.2,
+    "cpe": [
+      "cpe:/o:vmware:esxi"
+    ]
+  },
+  "observation": {
+    "first_discovered": "Jun 06, 2026 11:23:08 CEST",
+    "last_observed": "Aug 15, 2026 11:21:06 CEST",
+    "days_between_first_and_last_observation": 69
+  },
+  "context_not_present_in_source": {
+    "business_context": null,
+    "existing_compensating_controls": null,
+    "remediation_owner": null,
+    "formal_risk_acceptance": null,
+    "internet_exposure": null,
+    "note": "These fields were not present in the supplied export and must not be inferred. They may only be added later if supported by real evidence or explicitly labelled as synthetic experimental assumptions."
+  },
+  "anonymization": {
+    "ip_address_removed": true,
+    "original_node_names_replaced": true,
+    "branch_location_removed": true,
+    "raw_plugin_output_excluded": true
+  }
+}

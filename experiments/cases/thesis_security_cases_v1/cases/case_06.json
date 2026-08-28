@@ -1,0 +1,68 @@
+{
+  "case_id": "CASE-06",
+  "title": "SNMP default community string on a critical storage device",
+  "case_origin": {
+    "type": "anonymized_real_vulnerability_finding",
+    "source": "Tenable vulnerability export supplied for thesis experiment",
+    "derived_from_real_scan_data": true,
+    "source_references": [
+      {
+        "source_row": 63,
+        "plugin_id": "41028",
+        "plugin_name": "SNMP Agent Default Community Name (public)"
+      }
+    ]
+  },
+  "experimental_selection_reason": "Low scanner severity on a source asset marked Critical; selected to test whether the assessment distinguishes technical severity from asset criticality.",
+  "finding": {
+    "plugin_id": "41028",
+    "plugin_name": "SNMP Agent Default Community Name (public)",
+    "family": "SNMP",
+    "severity": "Low",
+    "synopsis": "The community name of the remote SNMP server can be guessed.",
+    "description": "It is possible to obtain the default community name of the remote SNMP server.\n\nAn attacker may use this information to gain more knowledge about the remote host, or to change the configuration of the remote system (if the default community allows such modifications).",
+    "recommended_remediation": "Disable the SNMP service on the remote host if you do not use it.\nEither filter incoming UDP packets going to this port, or change the default community string."
+  },
+  "assets": [
+    {
+      "asset_id": "ASSET-08",
+      "identifier_type": "anonymized",
+      "device_category": "Storage Device",
+      "environment": "Production",
+      "criticality": "Critical"
+    }
+  ],
+  "affected_asset_count": 1,
+  "network": {
+    "protocol": "UDP",
+    "port": 161,
+    "internet_exposed": null
+  },
+  "vulnerability_intelligence": {
+    "cves": [
+      "CVE-1999-0517"
+    ],
+    "vpr": 2.8,
+    "epss_percent": 27.17,
+    "cpe": []
+  },
+  "observation": {
+    "first_discovered": "Jul 04, 2026 11:22:17 CEST",
+    "last_observed": "Aug 15, 2026 11:21:06 CEST",
+    "days_between_first_and_last_observation": 41
+  },
+  "context_not_present_in_source": {
+    "business_context": null,
+    "existing_compensating_controls": null,
+    "remediation_owner": null,
+    "formal_risk_acceptance": null,
+    "internet_exposure": null,
+    "note": "These fields were not present in the supplied export and must not be inferred. They may only be added later if supported by real evidence or explicitly labelled as synthetic experimental assumptions."
+  },
+  "anonymization": {
+    "ip_address_removed": true,
+    "original_node_names_replaced": true,
+    "branch_location_removed": true,
+    "raw_plugin_output_excluded": true
+  }
+}

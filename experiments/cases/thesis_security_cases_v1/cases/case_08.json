@@ -1,0 +1,69 @@
+{
+  "case_id": "CASE-08",
+  "title": "Remote Desktop Protocol man-in-the-middle weakness",
+  "case_origin": {
+    "type": "anonymized_real_vulnerability_finding",
+    "source": "Tenable vulnerability export supplied for thesis experiment",
+    "derived_from_real_scan_data": true,
+    "source_references": [
+      {
+        "source_row": 46,
+        "plugin_id": "18405",
+        "plugin_name": "Remote Desktop Protocol Server Man-in-the-Middle Weakness"
+      }
+    ]
+  },
+  "experimental_selection_reason": "Medium-severity remote-access weakness; selected to assess authentication, confidentiality and network-position uncertainty.",
+  "finding": {
+    "plugin_id": "18405",
+    "plugin_name": "Remote Desktop Protocol Server Man-in-the-Middle Weakness",
+    "family": "General",
+    "severity": "Medium",
+    "synopsis": "It may be possible to get access to the remote host.",
+    "description": "The remote version of the Remote Desktop Protocol Server (Terminal Service) is vulnerable to a man-in-the-middle (MiTM) attack. The RDP client makes no effort to validate the identity of the server when setting up encryption. An attacker with the ability to intercept traffic from the RDP server can establish encryption with the client and server without being detected. A MiTM attack of this nature would allow the attacker to obtain any sensitive information transmitted, including authentication credentials.\n\nThis flaw exists because the RDP server stores a publicly known hard-coded RSA private key. Any attacker in a privileged network location can use the key for this attack.",
+    "recommended_remediation": "- Force the use of SSL as a transport layer for this service if supported, or/and\n\n- On Microsoft Windows operating systems, select the 'Allow connections only from computers running Remote Desktop with Network Level Authentication' setting if it is available."
+  },
+  "assets": [
+    {
+      "asset_id": "ASSET-UNKNOWN-08",
+      "identifier_type": "synthetic_placeholder_for_missing_source_identifier",
+      "device_category": null,
+      "environment": null,
+      "criticality": "Critical"
+    }
+  ],
+  "affected_asset_count": 1,
+  "network": {
+    "protocol": "TCP",
+    "port": 3389,
+    "internet_exposed": null
+  },
+  "vulnerability_intelligence": {
+    "cves": ["CVE-2005-1794"],
+    "vpr": 4.3,
+    "epss_percent": 16.19,
+    "cpe": [
+      "cpe:/a:microsoft:remote_desktop_connection",
+      "cpe:/a:microsoft:windows_terminal_services_using_rdp"
+    ]
+  },
+  "observation": {
+    "first_discovered": "Jul 25, 2026 11:23:06 CEST",
+    "last_observed": "Aug 15, 2026 11:21:06 CEST",
+    "days_between_first_and_last_observation": 20
+  },
+  "context_not_present_in_source": {
+    "business_context": null,
+    "existing_compensating_controls": null,
+    "remediation_owner": null,
+    "formal_risk_acceptance": null,
+    "internet_exposure": null,
+    "note": "These fields were not present in the supplied export and must not be inferred."
+  },
+  "anonymization": {
+    "ip_address_removed": true,
+    "original_node_names_replaced": true,
+    "branch_location_removed": true,
+    "raw_plugin_output_excluded": true
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "case_id": "CASE-05",
+  "title": "IKE aggressive mode with pre-shared key",
+  "case_origin": {
+    "type": "anonymized_real_vulnerability_finding",
+    "source": "Tenable vulnerability export supplied for thesis experiment",
+    "derived_from_real_scan_data": true,
+    "source_references": [
+      {
+        "source_row": 1,
+        "plugin_id": "62694",
+        "plugin_name": "Internet Key Exchange (IKE) Aggressive Mode with Pre-Shared Key"
+      }
+    ]
+  },
+  "experimental_selection_reason": "High-severity VPN/IKE configuration weakness; selected to represent a security configuration case rather than a software patching case.",
+  "finding": {
+    "plugin_id": "62694",
+    "plugin_name": "Internet Key Exchange (IKE) Aggressive Mode with Pre-Shared Key",
+    "family": "General",
+    "severity": "High",
+    "synopsis": "The remote IKEv1 service supports Aggressive Mode with Pre-Shared key.",
+    "description": "The remote Internet Key Exchange (IKE) version 1 service seems to support Aggressive Mode with Pre-Shared key (PSK) authentication. Such a configuration could allow an attacker to capture and crack the PSK of a VPN gateway and gain unauthorized access to private networks.",
+    "recommended_remediation": "- Disable Aggressive Mode if supported.\n- Do not use Pre-Shared key for authentication if it's possible.\n- If using Pre-Shared key cannot be avoided, use very strong keys.\n- If possible, do not allow VPN connections from any IP addresses.\n\nNote that this "
+  },
+  "assets": [
+    {
+      "asset_id": "ASSET-UNKNOWN-05",
+      "identifier_type": "synthetic_placeholder_for_missing_source_identifier",
+      "device_category": null,
+      "environment": null,
+      "criticality": "Critical"
+    }
+  ],
+  "affected_asset_count": 1,
+  "network": {
+    "protocol": "UDP",
+    "port": 500,
+    "internet_exposed": null
+  },
+  "vulnerability_intelligence": {
+    "cves": [
+      "CVE-2002-1623"
+    ],
+    "vpr": 7.8,
+    "epss_percent": 48.57,
+    "cpe": []
+  },
+  "observation": {
+    "first_discovered": "Jun 06, 2026 10:37:27 CEST",
+    "last_observed": "Aug 15, 2026 10:38:52 CEST",
+    "days_between_first_and_last_observation": 70
+  },
+  "context_not_present_in_source": {
+    "business_context": null,
+    "existing_compensating_controls": null,
+    "remediation_owner": null,
+    "formal_risk_acceptance": null,
+    "internet_exposure": null,
+    "note": "These fields were not present in the supplied export and must not be inferred. They may only be added later if supported by real evidence or explicitly labelled as synthetic experimental assumptions."
+  },
+  "anonymization": {
+    "ip_address_removed": true,
+    "original_node_names_replaced": true,
+    "branch_location_removed": true,
+    "raw_plugin_output_excluded": true
+  }
+}
