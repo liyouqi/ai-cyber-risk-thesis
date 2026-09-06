@@ -53,6 +53,11 @@ Blank Manual forms can be created with `scripts/prepare_manual_review.py`. The
 current four-item pack and the completed DORA development calls are described in
 `runs/README.md`.
 
+`results/item_results.csv` already contains one row for every item and method.
+Only the identifiers and the number of existing provisions are prefilled;
+unmeasured values are blank. Regenerate an unused scoring sheet with
+`scripts/prepare_result_table.py` rather than treating missing values as zero.
+
 ## Methods
 
 ```text

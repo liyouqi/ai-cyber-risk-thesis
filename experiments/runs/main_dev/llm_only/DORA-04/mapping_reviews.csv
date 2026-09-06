@@ -1,0 +1,2 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+DORA-04,Regulation (EU) 2022/2554,Article 24(6),Supported,"Article 24(6) of DORA requires institutions to conduct regular testing of ICT systems and applications supporting critical or important functions, which aligns with the control statement's requirement to test these systems at least annually.",,

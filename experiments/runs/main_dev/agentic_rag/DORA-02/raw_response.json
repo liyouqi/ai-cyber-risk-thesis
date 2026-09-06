@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 11(6)",
+      "decision": "Supported",
+      "reason": "Article 11(6)(a) explicitly requires financial entities to test ICT business continuity and response/recovery plans at least yearly and following substantive changes to ICT systems supporting critical or important functions, which aligns with the control statement.",
+      "evidence_ids": [
+        "eu-2022-2554-article-11-6-a"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions identified beyond the instrument's scope.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "The mapping to Article 11(6) is correct. The evidence confirms the requirement for annual testing and testing after major changes, as specified in the control statement."
+}

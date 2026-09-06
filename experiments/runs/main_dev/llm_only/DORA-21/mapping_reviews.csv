@@ -1,0 +1,2 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+DORA-21,Commission Delegated Regulation (EU) 2024/1773,Article 8,Unsupported,"Article 8 of DORA focuses on the requirements for the incident and threat monitoring function, including the need for a monitoring strategy and the use of appropriate tools and processes. It does not specify the frequency of performance (e.g., continuously, monthly, quarterly). The control statement's specific frequency requirement is not addressed in this provision.",,

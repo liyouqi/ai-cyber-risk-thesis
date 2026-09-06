@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
+      "provision": "Article 21(1)(e)(iv)",
+      "decision": "Supported",
+      "reason": "The control statement 'At least once a year' aligns with the requirement in Article 21(1)(e)(iv) for an annual review of access rights.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+}

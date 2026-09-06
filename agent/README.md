@@ -88,3 +88,10 @@ python -m agent.llm_only \
 After the protocol is frozen, `agent.batch` runs either AI method over a complete
 CSV dataset. Exact commands and the order of work are in
 `docs/EXPERIMENT_GUIDE.md`.
+
+For development, `--framework DORA` limits a batch without creating a duplicate
+dataset. If an external call interrupts a batch, rerun the same command with
+`--resume`; only folders containing the four standard output files are skipped.
+Each batch also writes one combined `mapping_reviews.csv` and one combined
+`item_reviews.csv` so the output can be reviewed in Excel without opening every
+item folder.

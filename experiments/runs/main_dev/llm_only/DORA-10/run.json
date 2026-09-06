@@ -1,0 +1,30 @@
+{
+  "item_id": "DORA-10",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 2.435,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [],
+  "item": {
+    "item_id": "DORA-10",
+    "framework": "DORA",
+    "instrument": "Commission Delegated Regulation (EU) 2025/301",
+    "domain": "Initial notification",
+    "control_statement": "Submit within four hours after classification as a major incident and no later than 24 hours after first becoming aware of the incident",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 5(1)(a)",
+    "source_row": 15
+  }
+}

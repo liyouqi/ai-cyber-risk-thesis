@@ -1,0 +1,22 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 19(4)",
+      "decision": "Unsupported",
+      "reason": "Article 19(4) of DORA establishes the requirement for initial notification of a major incident to competent authorities, but it does not specify the detailed reporting structure (initial, intermediate, final reports) or the specific deadlines (four-hour, 24-hour, 72-hour) mentioned in the control statement. These details are specified in the RTS 2025/301, not in Article 19(4).",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 19(4)",
+      "reason": "The provision only mandates the initial notification of a major incident but does not specify the detailed reporting structure or the specific deadlines required by the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The mapping is incorrect because Article 19(4) of DORA only requires the initial notification of a major incident. The control statement's requirement for a structured reporting process with specific deadlines is detailed in the RTS 2025/301, not in Article 19(4)."
+}

@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+DORA-22,Partially correct,[],No additional applicability condition is identified.,The mapping is partially correct because the evidence supports the requirement for periodic testing but lacks the specific criteria of risk and criticality that define the control statement.

@@ -1,0 +1,54 @@
+{
+  "item_id": "DORA-20",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 7.284,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 8",
+      "query": "Does Article 8 of Commission Delegated Regulation (EU) 2024/1773 support this requirement: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit"
+    },
+    {
+      "purpose": "validate",
+      "provision": "Article 9",
+      "query": "Does Article 9 of Commission Delegated Regulation (EU) 2024/1773 support this requirement: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-20",
+    "framework": "DORA",
+    "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+    "domain": "Independent review of critical or important ICT services",
+    "control_statement": "Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Articles 8–9",
+    "source_row": 31
+  }
+}

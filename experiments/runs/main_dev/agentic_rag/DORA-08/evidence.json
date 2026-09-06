@@ -1,0 +1,86 @@
+[
+  {
+    "evidence_id": "eu-2022-2554-article-19-4",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 19(4)",
+    "text": "4. Financial entities shall, within the time limits to be laid down in accordance with Article 20, first paragraph, point (a), point (ii), submit the following to the relevant competent authority:",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1",
+    "instrument": "EU-2025-301",
+    "provision": "Article 1",
+    "text": "Financial entities shall include in the initial notification, the intermediate report, and the final report, as referred to in Article 19(4) of Regulation (EU) 2022/2554, the following general information:",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-1",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(1)",
+    "text": "1. Financial entities shall use the template laid down in Annex I to submit the initial notification, the intermediate report, and the final report referred to in Article 19(4) of Regulation (EU) 2022/2554 as follows:",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-1-a",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(1)(a)",
+    "text": "(a) financial entities that submit an initial notification shall complete the data fields of the template which correspond to the information to be provided in accordance with Article 2 of Commission Delegated Regulation (EU) 2025/301 ( 7 ) , and may, where they already have that information, complete those data fields the completion of which is not required for an initial notification but is required for an intermediate or final report;",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-2",
+    "instrument": "EU-2025-302",
+    "provision": "Article 2",
+    "text": "Financial entities may combine the submission of the initial notification, the intermediate report, and the final report to provide two or all of those at the same time, where regular activities have recovered or the root cause analysis has been completed and provided that the time limits set out in Article 5 of Delegated Regulation (EU) 2025/301 are met.",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-1-b",
+    "instrument": "EU-2025-301",
+    "provision": "Article 5(1)(b)",
+    "text": "(b) for the intermediate report: at the latest within 72 hours from the submission of the initial notification, even where the status or the handling of the incident have not changed as referred to in Article 19(4), point (b), of Regulation (EU) 2022/2554. Financial entities shall submit an updated intermediate report without undue delay, and in any case when the regular activities have been recovered;",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-2",
+    "instrument": "EU-2025-301",
+    "provision": "Article 2",
+    "text": "Initial notifications as referred to in Article 19(4), point (a), of Regulation (EU) 2022/2554 shall contain at least all of the following specific information:",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-3",
+    "instrument": "EU-2025-301",
+    "provision": "Article 3",
+    "text": "Intermediate reports as referred to in Article 19(4), point (b), of Regulation (EU) 2022/2554 shall contain at least all of the following specific information:",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-4",
+    "instrument": "EU-2025-301",
+    "provision": "Article 4",
+    "text": "Final reports as referred to in Article 19(4), point (c), of Regulation (EU) 2022/2554 shall contain all of the following specific information:",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-4",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(4)",
+    "text": "4. When submitting an intermediate or final report, financial entities shall use the template laid down in Annex I to submit all required information and update, where applicable, the information that was previously provided in the initial notification or in the intermediate report.",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-7",
+    "instrument": "EU-2025-301",
+    "provision": "Article 7",
+    "text": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union .",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-1-b",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(1)(b)",
+    "text": "(b) financial entities that submit an intermediate report shall complete the data fields of the template which correspond to the information to be provided in accordance with Article 3 of Delegated Regulation (EU) 2025/301 and may, where they already have the relevant information, complete data fields the completion of which is not required for the intermediate report, but is required for the final report.",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  }
+]

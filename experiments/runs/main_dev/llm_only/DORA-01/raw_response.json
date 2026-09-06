@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 6(5)",
+      "decision": "Supported",
+      "reason": "Article 6(5) of DORA requires institutions to review their ICT risk management framework at least annually and also after significant changes, including major incidents, supervisory instructions, or testing findings, which aligns with the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of DORA.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed; the mapping is accurate and should be retained."
+}

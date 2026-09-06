@@ -1,0 +1,30 @@
+{
+  "item_id": "DORA-20",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 12.762,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [],
+  "item": {
+    "item_id": "DORA-20",
+    "framework": "DORA",
+    "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+    "domain": "Independent review of critical or important ICT services",
+    "control_statement": "Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Articles 8–9",
+    "source_row": 31
+  }
+}

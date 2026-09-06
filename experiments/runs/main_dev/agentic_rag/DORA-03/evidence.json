@@ -1,0 +1,93 @@
+[
+  {
+    "evidence_id": "eu-2022-2554-article-14-1",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 14(1)",
+    "text": "1. As part of the ICT risk management framework referred to in Article 6(1), financial entities shall have in place crisis communication plans enabling a responsible disclosure of, at least, major ICT-related incidents or vulnerabilities to clients and counterparts as well as to the public, as appropriate.",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-14-2",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 14(2)",
+    "text": "2. As part of the ICT risk management framework, financial entities shall implement communication policies for internal staff and for external stakeholders. Communication policies for staff shall take into account the need to differentiate between staff involved in ICT risk management, in particular the staff responsible for response and recovery, and staff that needs to be informed.",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-14-3",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 14(3)",
+    "text": "3. At least one person in the financial entity shall be tasked with implementing the communication strategy for ICT-related incidents and fulfil the public and media function for that purpose.",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-25-1",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 25(1)",
+    "text": "1. When testing the ICT business continuity plans in accordance with Article 11(6), of Regulation (EU) 2022/2554, financial entities shall take into account the financial entity’s business impact analysis (BIA) and the ICT risk assessment referred to in Article 3(1), point (b), of this Regulation.",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-24-1-b-vi-1",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 24(1)(b)(vi)(1)",
+    "text": "(1) the communication policy referred to in Article 14(2) of Regulation (EU) 2022/2554;",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-24-1",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 24(1)",
+    "text": "1. Financial entities shall include in their ICT business continuity policy referred to in Article 11(1) of Regulation (EU) 2022/2554 all of the following:",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2556-article-4-3",
+    "instrument": "EU-2022-2556",
+    "provision": "Article 4(3)",
+    "text": "(3) in Article 85, paragraph 2 is replaced by the following: ‘2. Competent authorities shall ensure that institutions have adequate contingency and business continuity policies and plans, including ICT business continuity policies and plans and ICT response and recovery plans for the technology they use for the communication of information, and that those plans are established, managed and tested in accordance with Article 11 of Regulation (EU) 2022/2554, in order to allow institutions to keep operating in the event of severe business disruption and limit losses incurred as a consequence of such disruption.’;",
+    "source": "http://data.europa.eu/eli/dir/2022/2556/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-40-1",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 40(1)",
+    "text": "1. The financial entities referred to in Article 16(1) of Regulation (EU) 2022/2554 shall test their business continuity plans referred to in Article 39 of this Regulation, including the scenarios referred to in that Article, at least once every year for the back-up and restore procedures, or upon every major change of the business continuity plan.",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-24-1-b-vi",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 24(1)(b)(vi)",
+    "text": "(vi) the alignment of the ICT business continuity policy to:",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-25-2",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 25(2)",
+    "text": "2. Financial entities shall assess through the testing of their ICT business continuity plans referred to in paragraph 1 whether they are able to ensure the continuity of the financial entity’s critical or important functions. That testing shall: For the purposes of point (a), financial entities shall always include in the testing the scenarios considered for the development of the business continuity plans. For the purposes of point (b), financial entities shall duly consider scenarios linked to insolvency or failures of the ICT third-party service providers or linked to political risks in the ICT third-party service providers’ jurisdictions, where relevant. For the purposes of point (c), the testing shall verify whether at least critical or important functions can be operated appropriately for a sufficient period of time, and whether the normal functioning may be restored.",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-60-2-a",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 60(2)(a)",
+    "text": "(a) paragraph 1 is replaced by the following: ‘1. A CCP shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan, which shall include ICT business continuity policy and ICT response and recovery plans put in place and implemented in accordance with Regulation (EU) 2022/2554, aiming to ensure the preservation of its functions, the timely recovery of operations and the fulfilment of the CCP’s obligations.’;",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-60-2",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 60(2)",
+    "text": "(2) Article 34 is amended as follows:",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-60-2-b",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 60(2)(b)",
+    "text": "(b) in paragraph 3, the first subparagraph is replaced by the following: ‘3. In order to ensure consistent application of this Article, ESMA shall, after consulting the members of the ESCB, develop draft regulatory technical standards specifying the minimum content and requirements of the business continuity policy and of the disaster recovery plan, excluding ICT business continuity policy and disaster recovery plans.’;",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  }
+]

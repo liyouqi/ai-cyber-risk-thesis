@@ -51,10 +51,16 @@ must be frozen before formal experiment runs.
   and Agentic RAG under `experiments/runs/pilot_dev/`;
 - generated a blank four-item Manual pilot pack with pre-split legal references
   and a simple timing sheet;
+- generated the same Manual working pack for all 40 selected items and a
+  120-row scoring sheet with missing measurements left blank;
+- completed development runs for all 20 selected DORA items with both LLM-only
+  and Agentic RAG;
 - added exact-provision retrieval, one auditable correction retry and a final
   evidence guardrail for uncited claims;
 - defined two Chapter 4 Mermaid drafts and an automatic Chapter 5 reporting
-  script that produces three tables and six SVG figures from item-level results.
+  script that produces three tables and six SVG figures from item-level results;
+- added a skeleton mode for preparing the three thesis tables before scores are
+  available.
 
 ## Waiting for input
 
@@ -63,7 +69,8 @@ must be frozen before formal experiment runs.
 
 ## Next steps
 
-1. Complete the four Manual pilot rows using official legal texts.
-2. Add and validate an AI Act corpus in the separate RAG project.
+1. Add and validate an AI Act corpus in the separate RAG project.
+2. Complete the Manual rows over time without consulting the corresponding AI
+   answer.
 3. Check AI Act retrieval, then run all four pilot items before freezing the
    experiment.

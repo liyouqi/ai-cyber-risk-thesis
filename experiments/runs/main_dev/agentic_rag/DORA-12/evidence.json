@@ -1,0 +1,79 @@
+[
+  {
+    "evidence_id": "eu-2025-301-article-5-1-b",
+    "instrument": "EU-2025-301",
+    "provision": "Article 5(1)(b)",
+    "text": "(b) for the intermediate report: at the latest within 72 hours from the submission of the initial notification, even where the status or the handling of the incident have not changed as referred to in Article 19(4), point (b), of Regulation (EU) 2022/2554. Financial entities shall submit an updated intermediate report without undue delay, and in any case when the regular activities have been recovered;",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-4-b",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 19(4)(b)",
+    "text": "(b) an intermediate report after the initial notification referred to in point (a), as soon as the status of the original incident has changed significantly or the handling of the major ICT-related incident has changed based on new information available, followed, as appropriate, by updated notifications every time a relevant status update is available, as well as upon a specific request of the competent authority;",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-1-a",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(1)(a)",
+    "text": "(a) financial entities that submit an initial notification shall complete the data fields of the template which correspond to the information to be provided in accordance with Article 2 of Commission Delegated Regulation (EU) 2025/301 ( 7 ) , and may, where they already have that information, complete those data fields the completion of which is not required for an initial notification but is required for an intermediate or final report;",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-2",
+    "instrument": "EU-2025-302",
+    "provision": "Article 2",
+    "text": "Financial entities may combine the submission of the initial notification, the intermediate report, and the final report to provide two or all of those at the same time, where regular activities have recovered or the root cause analysis has been completed and provided that the time limits set out in Article 5 of Delegated Regulation (EU) 2025/301 are met.",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-2",
+    "instrument": "EU-2025-301",
+    "provision": "Article 5(2)",
+    "text": "2. Where the financial entity has not classified an ICT-related incident as major within 24 hours from the moment the financial entity has become aware of the ITC-related incident but classifies that ICT-related incident as major at a later stage, the financial entity shall submit the initial notification within four hours from the classification of the ICT-related incident as a major incident.",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-1",
+    "instrument": "EU-2025-301",
+    "provision": "Article 5(1)",
+    "text": "1. Financial entities shall submit the initial notification and the intermediate and final reports as referred to in Article 19(4), points (a), (b) and (c), of Regulation (EU) 2022/2554 within the following time limits:",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-4",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 19(4)",
+    "text": "4. Financial entities shall, within the time limits to be laid down in accordance with Article 20, first paragraph, point (a), point (ii), submit the following to the relevant competent authority:",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-1-a",
+    "instrument": "EU-2025-301",
+    "provision": "Article 5(1)(a)",
+    "text": "(a) for the initial report: as early as possible, but in any case, within four hours from the classification of the ICT-related incident as a major ICT-related incident and no later than 24 hours from the moment the financial entity has become aware of the ICT-related incident;",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-1-c",
+    "instrument": "EU-2025-301",
+    "provision": "Article 5(1)(c)",
+    "text": "(c) for the final report: no later than one month after either the submission of the intermediate report, or, where applicable, after the latest updated intermediate report.",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-1-b",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(1)(b)",
+    "text": "(b) financial entities that submit an intermediate report shall complete the data fields of the template which correspond to the information to be provided in accordance with Article 3 of Delegated Regulation (EU) 2025/301 and may, where they already have the relevant information, complete data fields the completion of which is not required for the intermediate report, but is required for the final report.",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  },
+  {
+    "evidence_id": "eu-2025-302-article-1-1",
+    "instrument": "EU-2025-302",
+    "provision": "Article 1(1)",
+    "text": "1. Financial entities shall use the template laid down in Annex I to submit the initial notification, the intermediate report, and the final report referred to in Article 19(4) of Regulation (EU) 2022/2554 as follows:",
+    "source": "http://data.europa.eu/eli/reg_impl/2025/302/oj"
+  }
+]

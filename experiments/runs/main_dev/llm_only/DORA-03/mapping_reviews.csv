@@ -1,0 +1,2 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+DORA-03,Regulation (EU) 2022/2554,Article 14,Supported,"Article 14 of DORA requires ICT risk management and business continuity plans, which includes testing. The control statement's focus on including communication plans in these tests aligns with the requirement for comprehensive testing of business continuity arrangements.",,

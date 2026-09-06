@@ -1,0 +1,2 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+DORA-08,Regulation (EU) 2022/2554,Article 19(4),Unsupported,"Article 19(4) of DORA establishes the requirement for initial notification of a major incident to competent authorities, but it does not specify the detailed reporting structure (initial, intermediate, final reports) or the specific deadlines (four-hour, 24-hour, 72-hour) mentioned in the control statement. These details are specified in the RTS 2025/301, not in Article 19(4).",,

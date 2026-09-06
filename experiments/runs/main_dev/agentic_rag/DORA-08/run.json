@@ -1,0 +1,49 @@
+{
+  "item_id": "DORA-08",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 5.779,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 19(4)",
+      "query": "Does Article 19(4) of Regulation (EU) 2022/2554 support this requirement: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-08",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "Major ICT-related incident reporting",
+    "control_statement": "Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 19(4)",
+    "source_row": 10
+  }
+}

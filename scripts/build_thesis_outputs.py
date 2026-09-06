@@ -5,11 +5,18 @@ from __future__ import annotations
 import argparse
 import csv
 import math
+import os
 import statistics
 import sys
+import tempfile
 from collections import defaultdict
 from pathlib import Path
 from typing import Iterable
+
+PLOT_CACHE = Path(tempfile.gettempdir()) / "thesis-plot-cache"
+PLOT_CACHE.mkdir(exist_ok=True)
+os.environ.setdefault("MPLCONFIGDIR", str(PLOT_CACHE / "matplotlib"))
+os.environ.setdefault("XDG_CACHE_HOME", str(PLOT_CACHE))
 
 import matplotlib
 
@@ -182,7 +189,11 @@ def write_table(path: Path, rows: list[dict[str, object]]) -> None:
     if not rows:
         raise ValueError(f"No rows available for {path.name}")
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=list(rows[0]),
+            lineterminator="\n",
+        )
         writer.writeheader()
         for row in rows:
             writer.writerow(
@@ -260,6 +271,55 @@ def result_tables(rows: list[dict[str, str]], table_dir: Path, dataset: Path) ->
                 {"framework": framework, "method": METHOD_LABELS[method], **values}
             )
     write_table(table_dir / "table_framework_results.csv", frameworks)
+
+
+def skeleton_tables(table_dir: Path, dataset: Path) -> None:
+    """Write table layouts before scores and timing data are available."""
+    with dataset.open(newline="", encoding="utf-8-sig") as handle:
+        dataset_rows = list(csv.DictReader(handle))
+    if not dataset_rows:
+        raise ValueError(f"No items found in {dataset}")
+
+    result_stub = [{"item_id": row["item_id"]} for row in dataset_rows]
+    write_table(
+        table_dir / "table_dataset_summary.csv",
+        dataset_table(dataset, result_stub),
+    )
+    metric_fields = {
+        "mean_total_time_min": None,
+        "median_total_time_min": None,
+        "mapping_accuracy": None,
+        "missing_precision": None,
+        "missing_recall": None,
+        "missing_f1": None,
+        "evidence_errors_per_item": None,
+        "unsupported_claims_per_item": None,
+        "mean_human_review_time_min": None,
+    }
+    write_table(
+        table_dir / "table_overall_results.csv",
+        [
+            {
+                "method": METHOD_LABELS[method],
+                "items": len(dataset_rows),
+                **metric_fields,
+            }
+            for method in METHODS
+        ],
+    )
+    write_table(
+        table_dir / "table_framework_results.csv",
+        [
+            {
+                "framework": framework,
+                "method": METHOD_LABELS[method],
+                "items": sum(row["framework"] == framework for row in dataset_rows),
+                **metric_fields,
+            }
+            for framework in FRAMEWORKS
+            for method in METHODS
+        ],
+    )
 
 
 def save(fig: plt.Figure, path: Path) -> None:
@@ -396,7 +456,20 @@ def main() -> None:
         type=Path,
         default=Path("thesis_outputs/generated"),
     )
+    parser.add_argument(
+        "--skeleton",
+        action="store_true",
+        help="Write the three table layouts without requiring completed results",
+    )
     args = parser.parse_args()
+
+    if args.skeleton:
+        args.output.mkdir(parents=True, exist_ok=False)
+        table_dir = args.output / "tables"
+        table_dir.mkdir()
+        skeleton_tables(table_dir, args.dataset)
+        print(f"Wrote thesis table skeletons to {args.output}")
+        return
 
     try:
         rows = read_results(args.results)

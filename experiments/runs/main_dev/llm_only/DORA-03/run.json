@@ -1,0 +1,30 @@
+{
+  "item_id": "DORA-03",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 4.333,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [],
+  "item": {
+    "item_id": "DORA-03",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "Crisis communication testing",
+    "control_statement": "Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 14",
+    "source_row": 5
+  }
+}

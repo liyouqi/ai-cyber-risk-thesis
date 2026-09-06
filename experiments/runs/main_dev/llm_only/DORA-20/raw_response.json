@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 8",
+      "decision": "Unsupported",
+      "reason": "Article 8 of DORA 2024/1773 establishes the requirement for an independent review of critical or important ICT third-party service providers. It does not specify that this review must be included in an audit plan or that the frequency should be determined based on risk.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 of DORA 2024/1773 details the scope and requirements for the independent review, including the need for a report and the assessment of specific areas. It does not mention including the review in an audit plan or setting the frequency based on risk.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 10",
+      "reason": "Article 10 of DORA 2024/1773 outlines the requirements for the audit of the ICT third-party service provider's internal governance and risk management processes. This provision is more closely related to the concept of an audit plan and risk-based frequency than Articles 8 or 9.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The mapping to Articles 8-9 is incorrect. The control statement focuses on the process of including the review in an audit plan and determining its frequency based on risk. This is not the primary subject of Articles 8 and 9, which define the *what* and *how* of the independent review itself. Article 10, which deals with the audit of the provider's internal processes, is a more relevant but still not a perfect match for the control statement's focus on the audit plan and frequency."
+}

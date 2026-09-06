@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 11(6)",
+      "decision": "Supported",
+      "reason": "Article 11(6) requires entities to test their ICT business continuity plans and response and recovery plans at least annually and after any major change to a critical or important function, which directly matches the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA regulation.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+}

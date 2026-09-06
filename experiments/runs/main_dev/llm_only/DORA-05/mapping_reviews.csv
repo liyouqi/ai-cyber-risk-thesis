@@ -1,0 +1,2 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+DORA-05,Regulation (EU) 2022/2554,Article 28(3),Supported,"Article 28(3) of DORA requires financial entities to report to their competent authority at least annually on their ICT third-party risk management, including the number of new ICT service arrangements, categories of providers, types of contracts, and functions supported. This directly corresponds to the control statement's requirement for yearly reporting on these specific details.",,

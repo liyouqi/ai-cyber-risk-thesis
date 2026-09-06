@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+DORA-15,Correct,[],"The control statement is specific to ICT assets supporting critical or important functions, which is the exact scope mentioned in the reviewed provision.",No challenge is needed. The existing mapping to Article 10(2) is correct and should be retained.

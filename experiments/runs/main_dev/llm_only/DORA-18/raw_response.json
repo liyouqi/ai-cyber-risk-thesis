@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
+      "provision": "Article 26",
+      "decision": "Supported",
+      "reason": "Article 26 of the DORA Delegated Regulation requires ICT third-party risk management, which includes testing business continuity plans. The requirement to test 'at least once a year' and consider 'severe but plausible scenarios' is a standard and logical interpretation of the testing obligation within this article.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 11(6)",
+      "decision": "Unsupported",
+      "reason": "Article 11(6) of the DORA Regulation pertains to the content of the ICT risk management framework, specifically the requirement to identify and assess risks. It does not contain any provisions related to the testing of business continuity plans.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
+      "provision": "Article 26",
+      "reason": "The mapping is missing the specific requirement for testing to occur 'at least once a year' and to consider 'severe but plausible scenarios'. While Article 26 mandates testing, these specific parameters are not explicitly stated in the article itself but are standard industry practice and a logical interpretation of the testing obligation.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA Regulation and its Delegated Regulation.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct because it correctly identifies Article 26 as the primary source for the testing requirement but incorrectly includes Article 11(6), which is unrelated to testing. The mapping should be revised to remove the reference to Article 11(6) and should be clarified to reflect that the specific frequency and scenario criteria are standard interpretations of the testing obligation in Article 26."
+}

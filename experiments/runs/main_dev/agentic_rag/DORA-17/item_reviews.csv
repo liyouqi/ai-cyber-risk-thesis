@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+DORA-17,Correct,[],"The control statement is specific to systems supporting critical or important functions, which is a key condition in the regulatory text.",No challenge needed. The existing mapping is correct and should be retained.

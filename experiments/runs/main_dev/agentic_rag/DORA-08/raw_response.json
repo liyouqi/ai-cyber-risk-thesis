@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 19(4)",
+      "decision": "Supported",
+      "reason": "Article 19(4) of Regulation (EU) 2022/2554 requires financial entities to submit an initial notification, an intermediate report, and a final report to the competent authority. The evidence confirms this by referencing these three reports in multiple provisions of the RTS (Regulatory Technical Standards) 2025/301 and 2025/302.",
+      "evidence_ids": [
+        "eu-2022-2554-article-19-4",
+        "eu-2025-301-article-1",
+        "eu-2025-302-article-1-1"
+      ]
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 20(1)(a)(ii)",
+      "reason": "The control statement specifies deadlines (four-hour, 24-hour, 72-hour) which are to be laid down in accordance with Article 20(1)(a)(ii) of Regulation (EU) 2022/2554. While the evidence confirms the existence of these deadlines in the RTS, the specific text of Article 20(1)(a)(ii) itself is not provided, making it a missing mapping.",
+      "evidence_ids": [
+        "eu-2022-2554-article-19-4",
+        "eu-2025-301-article-5-1-b"
+      ]
+    }
+  ],
+  "applicability_note": "The control statement is applicable to financial entities as defined in Regulation (EU) 2022/2554.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "The mapping to Article 19(4) is correct as it establishes the requirement for the three reports. However, the mapping is incomplete because it does not include the provision that specifies the deadlines (Article 20(1)(a)(ii)), which is a key part of the control statement. The provided evidence supports the existence of this missing mapping."
+}

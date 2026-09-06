@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2025/301",
+      "provision": "Article 5(1)(b)",
+      "decision": "Supported",
+      "reason": "The evidence directly supports the control statement. Article 5(1)(b) explicitly requires an updated intermediate report 'without undue delay, and in any case when the regular activities have been recovered', which matches the control statement's requirement to submit after recovery.",
+      "evidence_ids": [
+        "eu-2025-301-article-5-1-b"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions identified.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge needed. The existing mapping to Article 5(1)(b) is correct and should be retained."
+}

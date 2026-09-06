@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2025/301",
+      "provision": "Article 5(1)(b)",
+      "decision": "Supported",
+      "reason": "Article 5(1)(b) of DORA requires the submission of an intermediate report within 72 hours of the initial notification, which directly corresponds to the control statement's requirement to submit within 72 hours.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA regulation.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+}

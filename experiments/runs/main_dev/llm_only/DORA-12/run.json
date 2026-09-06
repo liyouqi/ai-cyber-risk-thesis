@@ -1,0 +1,30 @@
+{
+  "item_id": "DORA-12",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 3.969,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [],
+  "item": {
+    "item_id": "DORA-12",
+    "framework": "DORA",
+    "instrument": "Commission Delegated Regulation (EU) 2025/301",
+    "domain": "Intermediate report",
+    "control_statement": "Submit within 72 hours after the initial notification, even if the incident status or handling has not changed",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 5(1)(b)",
+    "source_row": 17
+  }
+}

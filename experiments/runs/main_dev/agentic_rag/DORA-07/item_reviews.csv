@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+DORA-07,Correct,[],No additional applicability condition identified.,"The assessment is correct. The control statement's focus on mandatory training is directly supported by Article 13(6), which explicitly mandates compulsory modules. The absence of a specified minimum number of training hours in the control statement is consistent with the regulatory text, which also does not specify a duration."

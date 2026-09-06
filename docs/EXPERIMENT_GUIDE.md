@@ -139,8 +139,8 @@ python -m agent.main \
 
 ## 5. Pilot 的执行顺序
 
-Pilot 固定使用 TC05、TC20、DORA-15、DORA-18。必须先做 Manual，再看 AI 输出，避免
-AI 答案影响人工基线。
+Pilot 固定使用 TC05、TC20、DORA-15、DORA-18。Manual 可以晚于 AI 程序运行，但做某
+条人工核验时不要打开该条 AI 输出，避免 AI 答案影响人工基线。
 
 ### 5.1 Manual
 
@@ -155,6 +155,8 @@ python scripts/prepare_manual_review.py \
 
 `items.csv` 是阅读用输入；需要填写的是 `mapping_reviews.csv`、`item_reviews.csv` 和
 `timing.csv`。程序只拆分已有引用，不预填任何判断。
+
+完整 40 条的同类工作包在 `experiments/runs/main_working/manual/`，可以分几次慢慢填写。
 
 对每一条：
 
@@ -237,6 +239,10 @@ python -m agent.batch \
 Manual 仍应在查看对应 AI 输出前完成。总计是 40 条 × 3 种方法，即 120 个方法—条目
 组合，不需要人为扩展成更多实验。
 
+如果只需联调当前 DORA 子集，可使用 `--framework DORA`。已经完成的 20 条开发输出在
+`experiments/runs/main_dev/`；它们没有使用冻结 corpus，不能作为正式数据。批处理中断
+后可在原命令增加 `--resume`，程序只跳过文件完整的条目。
+
 ## 8. 最后评分
 
 以核验后的 Manual 为基线，将每条、每种方法汇总到
@@ -280,3 +286,14 @@ python scripts/build_thesis_outputs.py
 填写 `item_results.csv` 时，计数为零必须写 `0`，不能留空。Manual 只需要填写总时间
 和作为基线确认的遗漏条款总数；AI 两种方法的计数、执行时间和人工修正时间都必须
 填写。这样程序能够区分“零个错误”和“数据忘记记录”。
+
+当前评分表已经预建了 120 行，`existing_mapping_total` 也已从输入自动填写。未完成的
+值必须留空，不要写 `0`。只想提前查看论文表格结构时运行：
+
+```bash
+python scripts/build_thesis_outputs.py \
+  --skeleton \
+  --output path/to/new_table_skeleton_folder
+```
+
+该模式只生成三张表，不生成容易被误解为真实结果的空图。

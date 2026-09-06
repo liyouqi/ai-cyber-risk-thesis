@@ -1,0 +1,49 @@
+{
+  "item_id": "DORA-06",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 3.377,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 5(4)",
+      "query": "Does Article 5(4) of Regulation (EU) 2022/2554 support this requirement: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-06",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "Management body training",
+    "control_statement": "Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 5(4)",
+    "source_row": 8
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 5(4)",
+      "decision": "Supported",
+      "reason": "Article 5(4) of DORA requires members of the management body to have sufficient expertise in ICT risk and digital operational resilience, which is typically achieved through training. The control statement's focus on regular training aligns with this requirement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA regulation.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping to Article 5(4) is appropriate and should be retained."
+}

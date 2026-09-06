@@ -1,0 +1,30 @@
+{
+  "item_id": "DORA-06",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 2.602,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [],
+  "item": {
+    "item_id": "DORA-06",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "Management body training",
+    "control_statement": "Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 5(4)",
+    "source_row": 8
+  }
+}

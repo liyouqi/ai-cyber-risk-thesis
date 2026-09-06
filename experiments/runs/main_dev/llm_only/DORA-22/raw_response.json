@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 10",
+      "decision": "Supported",
+      "reason": "Article 10 of DORA requires entities to test their exit plans periodically, with the frequency determined by the entity's risk and criticality assessment. This aligns with the control statement's requirement for periodic testing based on risk and criticality, rather than a uniform annual schedule.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA regulation.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping to Article 10 is appropriate and should be retained."
+}

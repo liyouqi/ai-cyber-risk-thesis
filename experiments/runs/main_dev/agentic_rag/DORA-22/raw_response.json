@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 10",
+      "decision": "Partially supported",
+      "reason": "The provision requires periodic review and testing of the exit plan but does not specify a frequency or link it to risk and criticality, which are key elements of the control statement.",
+      "evidence_ids": [
+        "eu-2024-1773-article-10"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct because the evidence supports the requirement for periodic testing but lacks the specific criteria of risk and criticality that define the control statement."
+}

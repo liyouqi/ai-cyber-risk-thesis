@@ -1,0 +1,86 @@
+[
+  {
+    "evidence_id": "eu-2024-1774-article-3-d-iv",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 3(d)(iv)",
+    "text": "(iv) provisions on the review of the accepted residual ICT risks at least once a year, including:",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-21-e-iv",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 21(e)(iv)",
+    "text": "(iv) update of access rights where changes are necessary and at least once a year for all ICT systems, other than ICT systems supporting critical or important functions and at least every 6 months for ICT systems supporting critical or important functions;",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-40-1",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 40(1)",
+    "text": "1. The financial entities referred to in Article 16(1) of Regulation (EU) 2022/2554 shall test their business continuity plans referred to in Article 39 of this Regulation, including the scenarios referred to in that Article, at least once every year for the back-up and restore procedures, or upon every major change of the business continuity plan.",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2025-301-article-2-b",
+    "instrument": "EU-2025-301",
+    "provision": "Article 2(b)",
+    "text": "(b) the date of detection, time of detection, and classification of the incident pursuant to Article 8 of Commission Delegated Regulation (EU) 2024/1772 ( 7 ) ;",
+    "source": "http://data.europa.eu/eli/reg_del/2025/301/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-31-6",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 31(6)",
+    "text": "6. The Commission is empowered to adopt a delegated act in accordance with Article 57 to supplement this Regulation by specifying further the criteria referred to in paragraph 2 of this Article, by 17 July 2024.",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-3-d",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 3(d)",
+    "text": "(d) for the residual ICT risks that are still present following the implementation of the ICT risk treatment measures referred to in point (c):",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-21-e",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 21(e)",
+    "text": "(e) account management procedures to grant, change or revoke access rights for user and generic accounts, including generic administrator accounts, including provision on all of the following:",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-22-d",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 22(d)",
+    "text": "(d) retain all evidence relating to ICT-related incidents for a period that shall be no longer than necessary for the purposes for which the data are collected, commensurate with the criticality of the affected business functions, supporting processes, and ICT and information assets, in accordance with Article 8(2) of Commission Delegated Regulation (EU) 2024/1772 ( 12 ) and with any applicable retention requirement pursuant to Union law;",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-43-2",
+    "instrument": "EU-2022-2554",
+    "provision": "Article 43(2)",
+    "text": "2. The Commission is empowered to adopt a delegated act in accordance with Article 57 to supplement this Regulation by determining the amount of the fees and the way in which they are to be paid by 17 July 2024.",
+    "source": "http://data.europa.eu/eli/reg/2022/2554/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-28-2-e",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 28(2)(e)",
+    "text": "(e) allocates and reviews at least once a year the budget necessary to fulfil the financial entity’s digital operational resilience needs in respect of all types of resources, including relevant ICT security awareness programmes and digital operational resilience training and ICT skills for all staff;",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-22",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 22",
+    "text": "As part of the mechanisms to detect anomalous activities, including ICT network performance issues and ICT-related incidents, financial entities shall develop, document, and implement an ICT-related incident policy through which they shall: For the purposes of point (d), financial entities shall retain the evidence referred to in that point in a secure manner.",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-22-c",
+    "instrument": "EU-2024-1774",
+    "provision": "Article 22(c)",
+    "text": "(c) establish, implement, and operate technical, organisational, and operational mechanisms to support the ICT-related incident management process, including mechanisms to enable a prompt detection of anomalous activities and behaviours in accordance with Article 23 of this Regulation;",
+    "source": "http://data.europa.eu/eli/reg_del/2024/1774/oj"
+  }
+]

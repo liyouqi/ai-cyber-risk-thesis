@@ -1,0 +1,15 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 13(6)",
+      "decision": "Supported",
+      "reason": "Article 13(6) requires entities to ensure that staff members receive appropriate training on ICT security and digital operational resilience. This aligns with the control statement's requirement for mandatory training, even though the article does not specify a minimum number of hours.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping to Article 13(6) is appropriate as it captures the mandatory training requirement."
+}

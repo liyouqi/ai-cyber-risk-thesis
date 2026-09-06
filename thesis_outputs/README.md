@@ -7,6 +7,17 @@ restyled before submission. Generated result tables and figures are created in a
 new `generated/` directory only after `experiments/results/item_results.csv` has
 been completed.
 
+The table layouts can be prepared before the scores exist:
+
+```bash
+python scripts/build_thesis_outputs.py \
+  --skeleton \
+  --output thesis_outputs/prepared
+```
+
+This creates three tables with blank result cells and does not create misleading
+zero-valued figures. A prepared copy is already kept in `prepared/`.
+
 Run:
 
 ```bash

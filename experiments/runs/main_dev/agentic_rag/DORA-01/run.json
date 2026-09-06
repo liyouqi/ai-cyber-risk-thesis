@@ -1,0 +1,49 @@
+{
+  "item_id": "DORA-01",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 3.044,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "eligible_for_experiment": false,
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 6(5)",
+      "query": "Does Article 6(5) of Regulation (EU) 2022/2554 support this requirement: Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-01",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "ICT risk management framework review",
+    "control_statement": "Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "DORA Article 6(5)",
+    "source_row": 3
+  }
+}
