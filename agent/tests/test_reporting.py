@@ -25,7 +25,7 @@ class ThesisReportingTest(unittest.TestCase):
             charts = output / "figures"
             tables.mkdir()
             charts.mkdir()
-            result_tables(rows, tables, ROOT / "experiments/items.csv")
+            result_tables(rows, tables, ROOT / "experiments/data/items.csv")
             figures(rows, charts)
             self.assertEqual(len(list(tables.glob("*.csv"))), 3)
             self.assertEqual(len(list(charts.glob("*.svg"))), 6)
@@ -33,7 +33,7 @@ class ThesisReportingTest(unittest.TestCase):
     def test_table_skeletons_do_not_require_scores(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             tables = Path(directory)
-            skeleton_tables(tables, ROOT / "experiments/items.csv")
+            skeleton_tables(tables, ROOT / "experiments/data/items.csv")
             self.assertEqual(len(list(tables.glob("*.csv"))), 3)
             overall = (tables / "table_overall_results.csv").read_text(encoding="utf-8")
             self.assertIn("Agentic RAG,40", overall)

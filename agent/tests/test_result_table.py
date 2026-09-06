@@ -17,7 +17,7 @@ class ResultTableTest(unittest.TestCase):
     def test_main_table_contains_three_blank_method_rows_per_item(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             output = prepare_result_table(
-                ROOT / "experiments/items.csv",
+                ROOT / "experiments/data/items.csv",
                 Path(directory) / "item_results.csv",
             )
             with output.open(newline="", encoding="utf-8") as handle:
@@ -36,7 +36,7 @@ class ResultTableTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             results = prepare_result_table(
-                ROOT / "experiments/pilot_items.csv",
+                ROOT / "experiments/data/pilot_items.csv",
                 root / "results.csv",
             )
             record = root / "outputs/llm_only/records/DORA-15"

@@ -7,8 +7,8 @@ from pathlib import Path
 
 
 CANDIDATES = (
-    Path("experiments/candidates/ai_act.csv"),
-    Path("experiments/candidates/dora.csv"),
+    Path("experiments/data/candidates/ai_act.csv"),
+    Path("experiments/data/candidates/dora.csv"),
 )
 
 AI_ACT_IDS = [
@@ -59,8 +59,8 @@ def write_dataset(
 
 def main() -> None:
     fieldnames, items = read_candidates()
-    write_dataset(Path("experiments/items.csv"), MAIN_IDS, fieldnames, items)
-    write_dataset(Path("experiments/pilot_items.csv"), PILOT_IDS, fieldnames, items)
+    write_dataset(Path("experiments/data/items.csv"), MAIN_IDS, fieldnames, items)
+    write_dataset(Path("experiments/data/pilot_items.csv"), PILOT_IDS, fieldnames, items)
     print("Wrote 40 main items and 4 pilot items")
 
 

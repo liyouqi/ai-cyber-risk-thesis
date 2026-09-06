@@ -13,8 +13,9 @@ Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 - implemented LLM-only and Agentic RAG with the same configured model;
 - completed all 20 selected DORA items with both AI methods;
 - saved combined CSV answers and per-item RAG evidence;
-- created the 40-item Manual working files;
-- created the 120-row scoring table and filled the objective DORA run data;
+- created the 40-item Manual working files under `experiments/outputs/manual/`;
+- created `experiments/results/item_results.csv` with 120 rows and filled the
+  objective DORA run data;
 - prepared the thesis table layouts, reporting script and two Mermaid diagrams.
 
 ## Still missing

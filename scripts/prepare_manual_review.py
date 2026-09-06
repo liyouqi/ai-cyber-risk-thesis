@@ -100,7 +100,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Prepare blank Manual review CSV files")
     parser.add_argument(
         "--input",
-        default=str(ROOT / "experiments/pilot_items.csv"),
+        default=str(ROOT / "experiments/data/items.csv"),
     )
     parser.add_argument("--output", required=True, help="New folder for the review forms")
     args = parser.parse_args()

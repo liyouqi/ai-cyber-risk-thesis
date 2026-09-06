@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Review one regulatory mapping")
-    parser.add_argument("--input", default=str(ROOT / "experiments/pilot_items.csv"))
+    parser.add_argument("--input", default=str(ROOT / "experiments/data/pilot_items.csv"))
     parser.add_argument("--item", required=True, help="Assessment item ID")
     parser.add_argument("--output", required=True, help="New folder for run files")
     parser.add_argument("--env-file", default=str(ROOT / ".env"))

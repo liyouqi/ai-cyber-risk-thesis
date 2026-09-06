@@ -46,7 +46,11 @@ def update_results(results_path: Path, outputs_dir: Path) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Update results from saved AI runs")
-    parser.add_argument("--results", type=Path, default=Path("experiments/results.csv"))
+    parser.add_argument(
+        "--results",
+        type=Path,
+        default=Path("experiments/results/item_results.csv"),
+    )
     parser.add_argument("--outputs", type=Path, default=Path("experiments/outputs"))
     args = parser.parse_args()
     count = update_results(args.results, args.outputs)

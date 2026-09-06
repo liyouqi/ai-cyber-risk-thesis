@@ -4,7 +4,7 @@ This directory is reserved for material used in Chapters 4 and 5.
 
 `system_diagrams.md` contains two Mermaid drafts that should be redrawn or
 restyled before submission. Generated result tables and figures are created in a
-new `generated/` directory only after `experiments/results.csv` has
+new `generated/` directory only after `experiments/results/item_results.csv` has
 been completed.
 
 The three result-table layouts already exist in `tables/`. Their result cells
@@ -47,5 +47,5 @@ specific test.
 
 Model, prompt, workflow and corpus versions are already preserved in each AI
 run's `run.json`. They are not repeated as manually copied columns in
-`results.csv`, which reduces transcription errors while retaining the raw
+`item_results.csv`, which reduces transcription errors while retaining the raw
 record.

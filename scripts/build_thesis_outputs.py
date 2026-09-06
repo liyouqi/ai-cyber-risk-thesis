@@ -444,12 +444,12 @@ def main() -> None:
     parser.add_argument(
         "--results",
         type=Path,
-        default=Path("experiments/results.csv"),
+        default=Path("experiments/results/item_results.csv"),
     )
     parser.add_argument(
         "--dataset",
         type=Path,
-        default=Path("experiments/items.csv"),
+        default=Path("experiments/data/items.csv"),
     )
     parser.add_argument(
         "--output",

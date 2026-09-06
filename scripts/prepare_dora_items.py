@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 
 
 SOURCE = Path("source_files/DORA KPI.xlsx")
-OUTPUT = Path("experiments/candidates/dora.csv")
+OUTPUT = Path("experiments/data/candidates/dora.csv")
 SHEET = "Sheet1"
 
 INSTRUMENT_ROWS = {

@@ -1,4 +1,16 @@
-# AI Outputs
+# Method Outputs
+
+The three compared methods are kept side by side:
+
+```text
+outputs/
+├── manual/
+├── llm_only/
+└── agentic_rag/
+```
+
+`manual/` contains the blank files completed by the researcher. The two AI
+folders contain their saved model answers.
 
 The 20 selected DORA items have been run once with both LLM-only and Agentic
 RAG. AI Act items are the only AI outputs still missing.

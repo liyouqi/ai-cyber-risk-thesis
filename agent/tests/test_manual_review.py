@@ -15,7 +15,7 @@ class ManualReviewTest(unittest.TestCase):
     def test_pilot_forms_are_blank_and_provisions_are_split(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             output = prepare_manual_review(
-                ROOT / "experiments/pilot_items.csv",
+                ROOT / "experiments/data/pilot_items.csv",
                 Path(directory) / "manual",
             )
 

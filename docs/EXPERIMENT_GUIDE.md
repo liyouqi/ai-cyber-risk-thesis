@@ -4,25 +4,22 @@
 
 ```text
 experiments/
-├── items.csv
-├── pilot_items.csv
-├── manual/
-│   ├── provision_checks.csv
-│   ├── item_summary.csv
-│   └── timing.csv
+├── data/
+│   ├── items.csv
+│   └── pilot_items.csv
 ├── outputs/
+│   ├── manual/
 │   ├── llm_only/
 │   └── agentic_rag/
-└── results.csv
+└── results/
+    └── item_results.csv
 ```
 
-- `items.csv`：三种方法共同使用的 40 条输入。
-- `pilot_items.csv`：只是从 40 条中抽出的四条流程检查数据，不再建立单独的 Pilot 工程。
-- `manual/`：你以后慢慢填写的人工结果。
+- `data/items.csv`：三种方法共同使用的 40 条输入。
+- `data/pilot_items.csv`：从 40 条中抽出的四条流程检查数据。
+- `outputs/manual/`：你以后慢慢填写的人工结果。
 - `outputs/`：程序真实产生的 AI 回答。当前 DORA 已完成，AI Act 尚未完成。
-- `results.csv`：最后计算准确率、时间和论文图表的数据表。
-
-旧的重复文件放在 `experiments/_archive/`，不需要使用。
+- `results/item_results.csv`：最后计算准确率、时间和论文图表的数据表。
 
 ## 2. 三种方法
 
@@ -61,7 +58,7 @@ experiments/outputs/agentic_rag/item_summary.csv
 
 每条的原始回答、参数和 RAG 证据在相应的 `records/` 中。不要手工修改原始回答。
 
-`experiments/results.csv` 已经写入 DORA AI 运行的实际执行时间和实际提出的遗漏数量。
+`experiments/results/item_results.csv` 已经写入 DORA AI 运行的实际执行时间和实际提出的遗漏数量。
 需要人工判断才能确定的准确率、证据错误、无依据声明和人工修正时间保持为空。
 
 ## 5. Manual 怎么做
@@ -69,9 +66,9 @@ experiments/outputs/agentic_rag/item_summary.csv
 你不需要一次完成，可以每次做几条。使用：
 
 ```text
-experiments/manual/provision_checks.csv
-experiments/manual/item_summary.csv
-experiments/manual/timing.csv
+experiments/outputs/manual/provision_checks.csv
+experiments/outputs/manual/item_summary.csv
+experiments/outputs/manual/timing.csv
 ```
 
 每条的操作：
@@ -125,7 +122,7 @@ LLM-only：
 ```bash
 python -m agent.batch \
   --method llm-only \
-  --input experiments/items.csv \
+  --input experiments/data/items.csv \
   --framework "EU AI Act" \
   --output experiments/outputs/llm_only \
   --resume
@@ -136,7 +133,7 @@ Agentic RAG：
 ```bash
 python -m agent.batch \
   --method agentic-rag \
-  --input experiments/items.csv \
+  --input experiments/data/items.csv \
   --framework "EU AI Act" \
   --output experiments/outputs/agentic_rag \
   --resume
@@ -152,7 +149,7 @@ python scripts/update_results.py
 
 ## 8. 最后评分
 
-以核验后的 Manual 为参考，在 `experiments/results.csv` 补充：
+以核验后的 Manual 为参考，在 `experiments/results/item_results.csv` 补充：
 
 - AI 条款判断与 Manual 相同的数量；
 - 遗漏条款的 true positive 和 Manual 参考总数；
@@ -172,7 +169,7 @@ python scripts/build_thesis_outputs.py
 ```
 
 程序将在 `thesis_outputs/generated/` 生成 3 张结果表和 6 张 SVG 图。图的数值全部来自
-`experiments/results.csv`。可以自己重画样式，但不要手工修改图中的数据。
+`experiments/results/item_results.csv`。可以自己重画样式，但不要手工修改图中的数据。
 
 ## 10. 最后检查
 

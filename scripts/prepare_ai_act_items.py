@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 
 
 SOURCE = Path("source_files/AI_Tool_Onboarding_Risk_Assessment.xlsx")
-OUTPUT = Path("experiments/candidates/ai_act.csv")
+OUTPUT = Path("experiments/data/candidates/ai_act.csv")
 SHEET = "技术控制清单IT Control CheckList"
 HEADER_ROW = 4
 KNOWN_TRANSLATIONS = {
