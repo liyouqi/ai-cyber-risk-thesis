@@ -23,8 +23,9 @@ small command-line agent is under `agent/`. It can be developed with replay
 evidence, but only runs made against a complete frozen regulatory corpus may be
 used as Agentic RAG experiment results.
 
-See `docs/EXPERIMENT_DESIGN.md` for the experiment definition and
-`agent/README.md` for the agent boundary.
+See `docs/EXPERIMENT_DESIGN.md` for the research design,
+`docs/EXPERIMENT_GUIDE.md` for the exact operating sequence and
+`agent/README.md` for the Agent boundary.
 
 Run the local checks with:
 

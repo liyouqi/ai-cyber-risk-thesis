@@ -7,7 +7,11 @@ from pathlib import Path
 
 from dotenv import dotenv_values
 
-from agent.evidence import RegulatoryRagProvider, ReplayEvidenceProvider
+from agent.evidence import (
+    RegulatoryRagProvider,
+    ReplayEvidenceProvider,
+    validate_experiment_profile,
+)
 from agent.llm import LlmConfig, OpenAiCompatibleLlm
 from agent.workflow import load_item, run_review, write_run
 
@@ -38,6 +42,7 @@ def _parser() -> argparse.ArgumentParser:
 def main() -> None:
     args = _parser().parse_args()
     env = dotenv_values(args.env_file)
+    item = load_item(args.input, args.item)
     if args.experiment_run and args.evidence != "rag":
         raise SystemExit("Replay evidence cannot be marked as an experiment run")
 
@@ -51,16 +56,18 @@ def main() -> None:
             raise SystemExit("Set --rag-root or REGULATORY_RAG_ROOT")
         rag_mode = args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "hybrid")
         rag_top_k = args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8)
+        rag_profile = args.rag_profile or env.get("REGULATORY_RAG_PROFILE")
+        if args.experiment_run:
+            validate_experiment_profile(rag_profile, [item])
         provider = RegulatoryRagProvider(
             rag_root,
-            profile=args.rag_profile,
+            profile=rag_profile,
             mode=rag_mode,
             top_k=rag_top_k,
         )
 
     config = LlmConfig.from_env_file(args.env_file)
     llm = OpenAiCompatibleLlm(config)
-    item = load_item(args.input, args.item)
     system_prompt = (ROOT / "agent/prompts/review_system.md").read_text(encoding="utf-8")
     run = run_review(
         item,

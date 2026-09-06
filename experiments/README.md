@@ -62,6 +62,10 @@ actually performed. Each run contains a run record and the two output tables.
 AI runs also preserve the raw response; Agentic RAG runs preserve the retrieved
 evidence.
 
+LLM-only and Agentic RAG both use `PRIVATE_AI_MODEL` from `.env`. Their difference
+is the presence or absence of retrieved evidence, not a different chat product.
+Follow `docs/EXPERIMENT_GUIDE.md` for the exact order and commands.
+
 ## Before the pilot
 
 1. Add a validated AI Act corpus to the separate Regulatory RAG.

@@ -3,6 +3,10 @@
 The first development version can run with replay evidence. The replay mode is
 for software testing only and is never counted as Agentic RAG experiment data.
 
+The repository also contains the LLM-only comparison runner. It reads the same
+model and endpoint configuration as the Agent but does not call an evidence
+provider.
+
 The intended agent has one job: review an existing mapping between an assessment
 item and regulatory provisions. It will read the same standard dataset used by
 the Manual and LLM-only experiments and will produce the same two review tables.
@@ -60,3 +64,16 @@ evidence arguments with:
 The command writes the run record, retrieved evidence, raw model response and
 the two common review CSV files. Replay runs are always marked as development
 outputs and cannot be marked as experiment runs.
+
+Run one LLM-only item with the same configured model:
+
+```bash
+python -m agent.llm_only \
+  --input experiments/datasets/pilot_items.csv \
+  --item DORA-15 \
+  --output /tmp/dora15-llm-only-dev
+```
+
+After the protocol is frozen, `agent.batch` runs either AI method over a complete
+CSV dataset. Exact commands and the order of work are in
+`docs/EXPERIMENT_GUIDE.md`.

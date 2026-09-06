@@ -26,8 +26,9 @@ Primary frameworks:
 - a separate read-only Regulatory RAG project at
   `/Users/dada/Developer/italy_proj/regulatory-rag`
 
-The Regulatory RAG currently exposes a public Python interface and a frozen
-DORA corpus profile. Its current corpus does not contain the EU AI Act.
+The Regulatory RAG currently exposes a public Python interface and a versioned
+DORA development profile. Its current corpus does not contain the EU AI Act and
+must be frozen before formal experiment runs.
 
 ## Done in the current revision
 
@@ -39,15 +40,21 @@ DORA corpus profile. Its current corpus does not contain the EU AI Act.
 - verified the public RAG interface without modifying the RAG repository;
 - implemented the first one-item Agent workflow with replaceable replay and RAG
   evidence providers;
-- added strict output checks and a development-only replay test.
+- added strict output checks and a development-only replay test;
+- implemented a same-model LLM-only runner and a batch runner for both AI
+  methods;
+- documented the complete experiment procedure and the separate AI Act corpus
+  work.
 
 ## Waiting for input
 
 - EU AI Act corpus in the Regulatory RAG project;
+- explicit approval before sending real experiment rows and retrieved legal
+  passages to the configured external model during development.
 
 ## Next steps
 
 1. Add and validate an AI Act corpus in the separate RAG project.
-2. Test real DORA retrieval through the Agent and adjust only clear workflow
-   failures.
+2. Complete one real DORA end-to-end development run after data-transfer
+   approval.
 3. Run the four-item pilot before freezing the experiment.

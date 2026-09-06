@@ -114,11 +114,10 @@ Record the sources used and the time to reach a complete review.
 
 ### LLM-only
 
-The model receives the Assessment Item and the common output instructions in a
-fresh chat. It does not receive retrieved legal text and may not browse or search
-the web. Save the first response, model configuration, generation time and human
-correction time. Where the chat product cannot use the same model as the Agent,
-record the difference as a limitation.
+The model receives the Assessment Item and the common output instructions through
+the same configured API used by the Agent. It receives no retrieved legal text
+and has no browsing or search tools. Save the first response, model configuration,
+generation time and human correction time.
 
 ### Agentic RAG
 
@@ -216,7 +215,13 @@ large workflow platform is required.
 - the common output and verified-manual procedure work in the pilot;
 - prompts, model settings, corpus versions and timing rules are frozen.
 
-## 13. Known open decisions
+The thesis corpus profile must have `corpus_status` set to `frozen`, a valid
+`frozen_at` date, and a locked processed-corpus fingerprint before a run is
+treated as formal Agentic RAG evidence.
 
-- number of AI runs per item;
-- whether applicability and challenge quality receive ordinal scores.
+## 13. Final analysis choices
+
+Each AI method is run once per item with temperature 0. Applicability handling
+and challenge usefulness are reported qualitatively rather than converted into
+an additional ordinal score. These choices keep the workload proportionate and
+avoid a weak composite quality measure.

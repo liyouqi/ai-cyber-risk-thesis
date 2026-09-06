@@ -8,7 +8,10 @@ from agent.references import DORA_LEVEL_1, parse_mapping
 class ReferenceParserTest(unittest.TestCase):
     def test_semicolon_list(self) -> None:
         refs = parse_mapping("Art. 9; Art. 15; Art. 17", "AI Act")
-        self.assertEqual([ref.provision for ref in refs], ["Article 9", "Article 15", "Article 17"])
+        self.assertEqual(
+            [ref.provision for ref in refs],
+            ["Article 9", "Article 15", "Article 17"],
+        )
 
     def test_paragraph_list(self) -> None:
         refs = parse_mapping("Art. 50(1),(5)", "AI Act")

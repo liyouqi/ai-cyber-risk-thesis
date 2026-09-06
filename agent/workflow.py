@@ -32,15 +32,18 @@ OVERALL_DECISIONS = {
 @dataclass(frozen=True)
 class ReviewRun:
     item: AssessmentItem
+    method: str
     provider: str
     provider_details: dict[str, Any]
     model: str
+    model_settings: dict[str, Any]
     provisions: list[ProvisionRef]
     queries: list[dict[str, str]]
     evidence: list[Evidence]
     response: dict[str, Any]
     elapsed_seconds: float
     eligible_for_experiment: bool
+    prompt_version: str
 
 
 def load_item(path: str | Path, item_id: str) -> AssessmentItem:
@@ -53,6 +56,16 @@ def load_item(path: str | Path, item_id: str) -> AssessmentItem:
     if len(matches) != 1:
         raise ValueError(f"Expected one row for {item_id}; found {len(matches)}")
     return matches[0]
+
+
+def load_items(path: str | Path) -> list[AssessmentItem]:
+    with Path(path).open(newline="", encoding="utf-8-sig") as handle:
+        items = [AssessmentItem.from_dict(row) for row in csv.DictReader(handle)]
+    if not items:
+        raise ValueError(f"No assessment items found in {path}")
+    if len({item.item_id for item in items}) != len(items):
+        raise ValueError(f"Duplicate item IDs in {path}")
+    return items
 
 
 def _query(item: AssessmentItem, provision: ProvisionRef | None) -> str:
@@ -94,6 +107,8 @@ def _validate_response(
     response: dict[str, Any],
     provisions: list[ProvisionRef],
     evidence: list[Evidence],
+    *,
+    require_retrieved_evidence: bool,
 ) -> None:
     required = {
         "mapping_reviews",
@@ -122,10 +137,18 @@ def _validate_response(
         )
         actual.append(key)
         cited = review.get("evidence_ids", [])
-        if not isinstance(cited, list) or not set(cited).issubset(evidence_ids):
+        if not isinstance(cited, list):
+            raise ValueError("evidence_ids must be a list")
+        if require_retrieved_evidence and not set(cited).issubset(evidence_ids):
             raise ValueError("A mapping review cites an unknown evidence ID")
-        if review.get("decision") != "Unable to determine" and not cited:
+        if (
+            require_retrieved_evidence
+            and review.get("decision") != "Unable to determine"
+            and not cited
+        ):
             raise ValueError("A substantive mapping decision must cite retrieved evidence")
+        if not require_retrieved_evidence and cited:
+            raise ValueError("LLM-only output must not invent retrieved evidence IDs")
 
     if len(actual) != len(set(actual)) or set(actual) != expected:
         raise ValueError("LLM output must review each existing provision exactly once")
@@ -135,8 +158,12 @@ def _validate_response(
         raise ValueError("missing_mappings must be a list")
     for mapping in missing_mappings:
         cited = mapping.get("evidence_ids", [])
-        if not isinstance(cited, list) or not cited or not set(cited).issubset(evidence_ids):
+        if not isinstance(cited, list):
+            raise ValueError("evidence_ids must be a list")
+        if require_retrieved_evidence and (not cited or not set(cited).issubset(evidence_ids)):
             raise ValueError("Each missing mapping must cite retrieved evidence")
+        if not require_retrieved_evidence and cited:
+            raise ValueError("LLM-only output must not invent retrieved evidence IDs")
 
     if response["overall_assessment"] not in OVERALL_DECISIONS:
         raise ValueError("Invalid overall_assessment")
@@ -169,18 +196,64 @@ def run_review(
     evidence = _deduplicate(retrieved)
 
     response = llm.generate_json(system_prompt, _user_prompt(item, provisions, evidence))
-    _validate_response(response, provisions, evidence)
+    _validate_response(
+        response,
+        provisions,
+        evidence,
+        require_retrieved_evidence=True,
+    )
     return ReviewRun(
         item=item,
+        method=(
+            "agentic_rag"
+            if evidence_provider.name == "regulatory-rag"
+            else "development_replay"
+        ),
         provider=evidence_provider.name,
         provider_details=getattr(evidence_provider, "metadata", {}),
         model=llm.model,
+        model_settings=getattr(llm, "metadata", {"model": llm.model}),
         provisions=provisions,
         queries=queries,
         evidence=evidence,
         response=response,
         elapsed_seconds=round(time.perf_counter() - started, 3),
         eligible_for_experiment=eligible_for_experiment,
+        prompt_version="agent-review-v0.1",
+    )
+
+
+def run_llm_only(
+    item: AssessmentItem,
+    llm: JsonLlm,
+    system_prompt: str,
+    *,
+    eligible_for_experiment: bool,
+) -> ReviewRun:
+    """Review one item with model knowledge only and no retrieved evidence."""
+    started = time.perf_counter()
+    provisions = parse_mapping(item.existing_mapping, item.instrument)
+    response = llm.generate_json(system_prompt, _user_prompt(item, provisions, []))
+    _validate_response(
+        response,
+        provisions,
+        [],
+        require_retrieved_evidence=False,
+    )
+    return ReviewRun(
+        item=item,
+        method="llm_only",
+        provider="none",
+        provider_details={},
+        model=llm.model,
+        model_settings=getattr(llm, "metadata", {"model": llm.model}),
+        provisions=provisions,
+        queries=[],
+        evidence=[],
+        response=response,
+        elapsed_seconds=round(time.perf_counter() - started, 3),
+        eligible_for_experiment=eligible_for_experiment,
+        prompt_version="llm-only-v0.1",
     )
 
 
@@ -190,11 +263,13 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
 
     run_record = {
         "item_id": run.item.item_id,
+        "method": run.method,
         "evidence_provider": run.provider,
         "evidence_provider_details": run.provider_details,
         "workflow_version": "0.1",
-        "prompt_version": "review-v0.1",
+        "prompt_version": run.prompt_version,
         "model": run.model,
+        "model_settings": run.model_settings,
         "elapsed_seconds": run.elapsed_seconds,
         "eligible_for_experiment": run.eligible_for_experiment,
         "queries": run.queries,
@@ -203,10 +278,16 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
     (output / "run.json").write_text(
         json.dumps(run_record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    (output / "evidence.json").write_text(
-        json.dumps([entry.as_dict() for entry in run.evidence], ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    if run.evidence:
+        (output / "evidence.json").write_text(
+            json.dumps(
+                [entry.as_dict() for entry in run.evidence],
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
     (output / "raw_response.json").write_text(
         json.dumps(run.response, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

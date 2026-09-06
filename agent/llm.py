@@ -53,6 +53,14 @@ class OpenAiCompatibleLlm:
         self._config = config
         self.model = config.model
 
+    @property
+    def metadata(self) -> dict[str, str | int | None]:
+        return {
+            "model": self.model,
+            "temperature": 0,
+            "thinking_mode": self._config.thinking_mode,
+        }
+
     def generate_json(self, system_prompt: str, user_prompt: str) -> dict[str, Any]:
         payload: dict[str, Any] = {
             "model": self.model,
