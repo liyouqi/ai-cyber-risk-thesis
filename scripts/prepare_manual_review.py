@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import shutil
 import sys
 from pathlib import Path
 
@@ -29,7 +28,6 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
     output.mkdir(parents=True, exist_ok=False)
 
     items = load_items(source)
-    shutil.copyfile(source, output / "items.csv")
 
     mapping_rows: list[dict[str, object]] = []
     item_rows: list[dict[str, object]] = []
@@ -67,7 +65,7 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
         )
 
     _write_csv(
-        output / "mapping_reviews.csv",
+        output / "provision_checks.csv",
         [
             "item_id",
             "instrument",
@@ -80,7 +78,7 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
         mapping_rows,
     )
     _write_csv(
-        output / "item_reviews.csv",
+        output / "item_summary.csv",
         [
             "item_id",
             "overall_assessment",
@@ -102,12 +100,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Prepare blank Manual review CSV files")
     parser.add_argument(
         "--input",
-        default=str(ROOT / "experiments/datasets/pilot_items.csv"),
+        default=str(ROOT / "experiments/pilot_items.csv"),
     )
     parser.add_argument("--output", required=True, help="New folder for the review forms")
     args = parser.parse_args()
     output = prepare_manual_review(args.input, args.output)
-    print(f"Manual review forms written to {output}")
+    print(f"Manual review files written to {output}")
 
 
 if __name__ == "__main__":

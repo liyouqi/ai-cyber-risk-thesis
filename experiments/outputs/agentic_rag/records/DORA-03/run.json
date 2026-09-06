@@ -1,0 +1,48 @@
+{
+  "item_id": "DORA-03",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 14.022,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 14",
+      "query": "Does Article 14 of Regulation (EU) 2022/2554 support this requirement: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-03",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "Crisis communication testing",
+    "control_statement": "Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 14",
+    "source_row": 5
+  }
+}

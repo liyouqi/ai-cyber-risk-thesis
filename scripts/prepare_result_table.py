@@ -68,11 +68,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Prepare the blank scoring table")
     parser.add_argument(
         "--input",
-        default=str(ROOT / "experiments/datasets/items.csv"),
+        default=str(ROOT / "experiments/items.csv"),
     )
     parser.add_argument(
         "--output",
-        default=str(ROOT / "experiments/results/item_results.csv"),
+        default=str(ROOT / "experiments/results.csv"),
     )
     args = parser.parse_args()
     output = prepare_result_table(args.input, args.output)

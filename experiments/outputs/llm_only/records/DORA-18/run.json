@@ -1,0 +1,29 @@
+{
+  "item_id": "DORA-18",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 15.99,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "DORA-18",
+    "framework": "DORA",
+    "instrument": "Commission Delegated Regulation (EU) 2024/1774",
+    "domain": "ICT business continuity plan testing",
+    "control_statement": "At least once a year, taking into account severe but plausible scenarios",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 26, together with DORA Article 11(6)",
+    "source_row": 26
+  }
+}

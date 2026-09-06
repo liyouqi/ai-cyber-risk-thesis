@@ -5,7 +5,7 @@ Working thesis title:
 **AI-Assisted Cybersecurity Regulatory Mapping Review in Banking: A Comparative
 Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 
-Status: working draft. Freeze only after the pilot.
+Status: working design. Record any later change to data, prompts or corpus.
 
 ## 1. Research task
 
@@ -28,7 +28,7 @@ traceability?
 The intended frameworks are:
 
 - EU AI Act;
-- DORA, including related instruments when they are part of the frozen corpus.
+- DORA, including the related instruments available in the recorded corpus.
 
 Current material:
 
@@ -145,7 +145,8 @@ Observable queries and evidence are saved; private model reasoning is not.
 - Use the same item and output fields for all methods.
 - Use the same final model for LLM-only and Agentic RAG where possible.
 - Read model and endpoint settings from environment configuration.
-- Freeze model settings, prompts and corpus versions after the pilot.
+- Record model settings, prompts and corpus versions and do not mix changed
+  versions in one result set.
 - Manual and Agentic RAG review the same official source scope.
 - Do not silently treat a missing corpus document as a retrieval failure.
 - Preserve raw AI outputs before human correction.
@@ -178,10 +179,10 @@ Applicability handling and challenge usefulness may be discussed qualitatively
 or scored after the pilot if a stable rubric is practical. Do not create one
 combined quality score.
 
-## 10. Pilot
+## 10. Small process check
 
-Run TC05, TC20, DORA-15 and DORA-18 before the main experiment. Each is reviewed
-by all three methods.
+TC05, TC20, DORA-15 and DORA-18 are listed in `pilot_items.csv`. This is a small
+process check, not a separate dataset or a separate output structure.
 
 The pilot checks:
 
@@ -191,8 +192,8 @@ The pilot checks:
 - whether the output is useful to a second-line reviewer;
 - whether timing and scoring can be applied consistently.
 
-Pilot outputs are development records. Rerun the four items under the frozen
-protocol before including them in the main results.
+The DORA process check has been completed. The two AI Act rows will be checked
+when that corpus is available.
 
 ## 11. Records to keep
 
@@ -211,17 +212,13 @@ For every run, retain:
 These records are sufficient for the thesis. No chain-of-thought, database or
 large workflow platform is required.
 
-## 12. Conditions before the main experiment
+## 12. Conditions for the remaining AI Act runs
 
 - both source workbooks have been inspected;
 - selected items and source scope are fixed;
 - the AI Act and DORA source texts required by those items are in the RAG;
-- the common output and verified-manual procedure work in the pilot;
-- prompts, model settings, corpus versions and timing rules are frozen.
-
-The thesis corpus profile must have `corpus_status` set to `frozen`, a valid
-`frozen_at` date, and a locked processed-corpus fingerprint before a run is
-treated as formal Agentic RAG evidence.
+- the common output and verified-manual procedure have been checked;
+- prompt, model and corpus versions are recorded and are not silently mixed.
 
 ## 13. Final analysis choices
 

@@ -6,10 +6,9 @@ import csv
 from pathlib import Path
 
 
-DATASET_DIR = Path("experiments/datasets")
 CANDIDATES = (
-    DATASET_DIR / "candidates" / "ai_act.csv",
-    DATASET_DIR / "candidates" / "dora.csv",
+    Path("experiments/candidates/ai_act.csv"),
+    Path("experiments/candidates/dora.csv"),
 )
 
 AI_ACT_IDS = [
@@ -60,8 +59,8 @@ def write_dataset(
 
 def main() -> None:
     fieldnames, items = read_candidates()
-    write_dataset(DATASET_DIR / "items.csv", MAIN_IDS, fieldnames, items)
-    write_dataset(DATASET_DIR / "pilot_items.csv", PILOT_IDS, fieldnames, items)
+    write_dataset(Path("experiments/items.csv"), MAIN_IDS, fieldnames, items)
+    write_dataset(Path("experiments/pilot_items.csv"), PILOT_IDS, fieldnames, items)
     print("Wrote 40 main items and 4 pilot items")
 
 

@@ -1,0 +1,29 @@
+{
+  "item_id": "DORA-01",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 3.531,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "DORA-01",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "ICT risk management framework review",
+    "control_statement": "Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "DORA Article 6(5)",
+    "source_row": 3
+  }
+}

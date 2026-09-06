@@ -1,0 +1,48 @@
+{
+  "item_id": "DORA-05",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 5.658,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 28(3)",
+      "query": "Does Article 28(3) of Regulation (EU) 2022/2554 support this requirement: Report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-05",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "ICT third-party register reporting",
+    "control_statement": "Report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 28(3)",
+    "source_row": 7
+  }
+}

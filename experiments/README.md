@@ -1,87 +1,36 @@
-# Experiment
+# Experiment Files
 
-The experiment reviews existing control-to-regulation mappings.
-
-## Common input
-
-All methods use the same CSV columns:
+This directory contains the files used in the three-method comparison.
 
 ```text
-item_id
-framework
-instrument
-domain
-control_statement
-expected_evidence
-applicability
-existing_mapping
-source_row
+experiments/
+├── items.csv                 # common 40-item input
+├── pilot_items.csv           # four rows used for the small process check
+├── manual/                   # files the researcher completes
+├── outputs/
+│   ├── llm_only/             # saved LLM-only answers
+│   └── agentic_rag/          # saved answers and retrieved evidence
+├── results.csv               # one scoring row per item and method
+├── candidates/               # rows extracted from the source workbooks
+└── .archive/                 # old duplicate layouts; hidden and unused
 ```
 
-`datasets/candidates/ai_act.csv` contains 25 candidate controls from the AI Act
-workbook. `datasets/candidates/dora.csv` contains 22 candidate quantitative
-requirements from the DORA workbook.
+## What to open
 
-Keep the candidate files separate so their origin remains obvious. The selected
-rows are combined into one input file for each stage:
+For Manual work, use only:
 
-```text
-datasets/pilot_items.csv
-datasets/items.csv
-```
+- `manual/provision_checks.csv`;
+- `manual/item_summary.csv`;
+- `manual/timing.csv`.
 
-`pilot_items.csv` contains TC05, TC20, DORA-15 and DORA-18. `items.csv`
-contains 20 items from each framework. The pilot items remain part of the main
-sample, but they must be rerun after the protocol is frozen.
+For each AI method, the two CSV files directly inside its output folder contain
+all available DORA answers. The `records/` folders preserve per-item raw output,
+run settings and RAG evidence; they normally do not need to be opened.
 
-## Common output
+`results.csv` already has 120 rows for 40 items and three methods. The DORA AI
+rows contain their measured execution time and actual number of proposed missing
+mappings. Blank cells mean that Manual scoring, human review time or AI Act runs
+are still missing. A numeric `0` means the completed run actually produced zero.
 
-Manual, LLM-only and Agentic RAG use the same two output tables:
-
-- `mapping_reviews.csv`: one row for each cited provision;
-- `item_reviews.csv`: one summary row for each assessment item.
-
-The human reviewer fills these tables manually. The AI workflows produce the
-same fields, initially as raw output and then as reviewed CSV rows. Method-specific
-logs may differ, but the final review structure does not.
-
-Keep the completed output files separate by method. Combine only the evaluation
-results in `results/item_results.csv`; do not put Manual and AI answers in one
-working file while the experiment is running.
-
-Blank Manual forms can be created with `scripts/prepare_manual_review.py`. The
-current four-item pack and the completed DORA development calls are described in
-`runs/README.md`.
-
-`results/item_results.csv` already contains one row for every item and method.
-Only the identifiers and the number of existing provisions are prefilled;
-unmeasured values are blank. Regenerate an unused scoring sheet with
-`scripts/prepare_result_table.py` rather than treating missing values as zero.
-
-## Methods
-
-```text
-manual
-llm_only
-agentic_rag
-```
-
-Do not create all run folders in advance. Add them when a pilot or main run is
-actually performed. Each run contains a run record and the two output tables.
-AI runs also preserve the raw response; Agentic RAG runs preserve the retrieved
-evidence.
-
-LLM-only and Agentic RAG both use `PRIVATE_AI_MODEL` from `.env`. Their difference
-is the presence or absence of retrieved evidence, not a different chat product.
-Follow `docs/EXPERIMENT_GUIDE.md` for the exact order and commands.
-
-After scoring is complete, `scripts/build_thesis_outputs.py` creates the small
-set of reproducible Chapter 5 tables and figures described in
-`thesis_outputs/README.md`.
-
-## Before the pilot
-
-1. Add a validated AI Act corpus to the separate Regulatory RAG.
-2. Test how compound article references are split.
-3. Run the four pilot items.
-4. Freeze the prompts, result labels and timing rules.
+LLM-only and Agentic RAG use the same model configured in `.env`. Their only
+substantive difference is whether Regulatory RAG evidence is supplied.

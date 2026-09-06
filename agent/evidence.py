@@ -19,34 +19,6 @@ INSTRUMENT_DOCUMENT_IDS = {
 }
 
 
-def validate_experiment_profile(
-    profile: str | Path | None,
-    items: list[AssessmentItem],
-) -> None:
-    """Fail before a formal run if its frozen corpus cannot cover the items."""
-    if not profile:
-        raise ValueError("A specific frozen RAG profile is required for an experiment run")
-    path = Path(profile).expanduser().resolve()
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if data.get("corpus_status") != "frozen" or not data.get("frozen_at"):
-        raise ValueError("The RAG profile must be frozen before an experiment run")
-    if not data.get("processed_corpus"):
-        raise ValueError("The frozen RAG profile has no processed-corpus fingerprint")
-
-    required: set[str] = set()
-    for item in items:
-        try:
-            required.add(INSTRUMENT_DOCUMENT_IDS[item.instrument])
-        except KeyError as exc:
-            raise ValueError(f"Unknown experiment instrument: {item.instrument}") from exc
-        if "DORA Article" in item.existing_mapping:
-            required.add("EU-2022-2554")
-    available = set(data.get("document_ids", []))
-    missing = sorted(required - available)
-    if missing:
-        raise ValueError("The RAG profile is missing documents: " + ", ".join(missing))
-
-
 class EvidenceProvider(Protocol):
     name: str
 

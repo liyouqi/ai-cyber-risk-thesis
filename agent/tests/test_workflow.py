@@ -64,7 +64,7 @@ class AlwaysUncitedFakeLlm(FakeLlm):
 
 
 class WorkflowTest(unittest.TestCase):
-    def test_replay_run_is_written_as_development_output(self) -> None:
+    def test_replay_run_is_written_with_audit_files(self) -> None:
         item = AssessmentItem(
             item_id="DEV-01",
             framework="Test",
@@ -77,8 +77,7 @@ class WorkflowTest(unittest.TestCase):
             source_row=1,
         )
         provider = ReplayEvidenceProvider(ROOT / "agent/tests/fixtures/replay_evidence.json")
-        run = run_review(item, provider, FakeLlm(), "test prompt", eligible_for_experiment=False)
-        self.assertFalse(run.eligible_for_experiment)
+        run = run_review(item, provider, FakeLlm(), "test prompt")
         self.assertEqual(run.response["overall_assessment"], "Correct")
 
         with tempfile.TemporaryDirectory() as directory:
@@ -89,12 +88,12 @@ class WorkflowTest(unittest.TestCase):
                     "run.json",
                     "evidence.json",
                     "raw_response.json",
-                    "mapping_reviews.csv",
-                    "item_reviews.csv",
+                    "provision_checks.csv",
+                    "item_summary.csv",
                 },
             )
             self.assertEqual(
-                (output / "item_reviews.csv").read_text(encoding="utf-8").splitlines()[0],
+                (output / "item_summary.csv").read_text(encoding="utf-8").splitlines()[0],
                 "item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment",
             )
 
@@ -110,12 +109,7 @@ class WorkflowTest(unittest.TestCase):
             existing_mapping="Article 1",
             source_row=1,
         )
-        run = run_llm_only(
-            item,
-            FakeLlmOnly(),
-            "test prompt",
-            eligible_for_experiment=False,
-        )
+        run = run_llm_only(item, FakeLlmOnly(), "test prompt")
         self.assertEqual(run.method, "llm_only")
         self.assertEqual(run.evidence, [])
 
@@ -138,7 +132,7 @@ class WorkflowTest(unittest.TestCase):
         )
         provider = ReplayEvidenceProvider(ROOT / "agent/tests/fixtures/replay_evidence.json")
         llm = RepairingFakeLlm()
-        run = run_review(item, provider, llm, "test prompt", eligible_for_experiment=False)
+        run = run_review(item, provider, llm, "test prompt")
         self.assertEqual(llm.calls, 2)
         self.assertEqual(len(run.raw_attempts), 2)
 
@@ -160,7 +154,7 @@ class WorkflowTest(unittest.TestCase):
         )
         provider = ReplayEvidenceProvider(ROOT / "agent/tests/fixtures/replay_evidence.json")
         llm = AlwaysUncitedFakeLlm()
-        run = run_review(item, provider, llm, "test prompt", eligible_for_experiment=False)
+        run = run_review(item, provider, llm, "test prompt")
         self.assertEqual(llm.calls, 2)
         self.assertEqual(
             run.response["mapping_reviews"][0]["decision"],

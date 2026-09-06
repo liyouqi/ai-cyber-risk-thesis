@@ -1,0 +1,48 @@
+{
+  "item_id": "DORA-14",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag",
+  "evidence_provider_details": {
+    "corpus_id": "dora-luxembourg-mvp-en",
+    "corpus_version": "0.2.1",
+    "document_count": 17,
+    "chunk_count": 2682,
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "profile": "default"
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 2.607,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [
+    {
+      "purpose": "validate",
+      "provision": "Article 5(1)(c)",
+      "query": "Does Article 5(1)(c) of Commission Delegated Regulation (EU) 2025/301 support this requirement: Submit no later than one month after the intermediate report or the latest updated intermediate report"
+    },
+    {
+      "purpose": "gap",
+      "provision": "",
+      "query": "Which provision of Commission Delegated Regulation (EU) 2025/301 is materially necessary for this requirement but absent from the existing mapping: Submit no later than one month after the intermediate report or the latest updated intermediate report"
+    }
+  ],
+  "item": {
+    "item_id": "DORA-14",
+    "framework": "DORA",
+    "instrument": "Commission Delegated Regulation (EU) 2025/301",
+    "domain": "Final report",
+    "control_statement": "Submit no later than one month after the intermediate report or the latest updated intermediate report",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 5(1)(c)",
+    "source_row": 19
+  }
+}

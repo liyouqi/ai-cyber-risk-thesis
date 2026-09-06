@@ -1,18 +1,39 @@
 # 实验操作指南
 
-这份指南按实际执行顺序写。正式实验开始前重新读一次即可，不需要另外设计流程。
+## 1. 只需要认识这些文件
 
-## 1. 先记住三个方法
+```text
+experiments/
+├── items.csv
+├── pilot_items.csv
+├── manual/
+│   ├── provision_checks.csv
+│   ├── item_summary.csv
+│   └── timing.csv
+├── outputs/
+│   ├── llm_only/
+│   └── agentic_rag/
+└── results.csv
+```
 
-- `Manual`：自己查官方法律文本并填写结果，是核验后的评分基线。
-- `LLM-only`：调用与 Agent 相同的模型，但不给模型 RAG 证据，也不联网搜索。
-- `Agentic RAG`：程序先从 Regulatory RAG 检索证据，再让同一模型判断。
+- `items.csv`：三种方法共同使用的 40 条输入。
+- `pilot_items.csv`：只是从 40 条中抽出的四条流程检查数据，不再建立单独的 Pilot 工程。
+- `manual/`：你以后慢慢填写的人工结果。
+- `outputs/`：程序真实产生的 AI 回答。当前 DORA 已完成，AI Act 尚未完成。
+- `results.csv`：最后计算准确率、时间和论文图表的数据表。
 
-三种方法使用完全相同的输入条目和输出字段。系统只辅助复核，不代替最终法律判断。
+旧的重复文件放在 `experiments/_archive/`，不需要使用。
 
-## 2. 一次性环境准备
+## 2. 三种方法
 
-在终端执行：
+- `Manual`：你查官方法律并填写人工判断。
+- `LLM-only`：模型直接判断，不提供 RAG 法律文本。
+- `Agentic RAG`：程序先从 Regulatory RAG 检索，再让同一模型判断。
+
+LLM-only 和 Agentic RAG 使用 `.env` 中相同的 `PRIVATE_AI_MODEL`。三种方法检查相同的
+输入，并使用相同的条款判断和条目总结字段。
+
+## 3. 环境检查
 
 ```bash
 cd /Users/dada/Developer/italy_proj/ai-cyber-risk-thesis
@@ -21,32 +42,56 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s agent/tests -v
 ```
 
-`.env` 保存模型和 RAG 配置，不要提交或复制到实验结果里。需要的变量见
-`.env.example`。LLM-only 和 Agent 都读取 `PRIVATE_AI_MODEL`，因此不会因为手动打开
-另一个聊天产品而换成不同模型。
-
-当前本机的 RAG 配置应至少包含：
+`.env` 不得提交。DORA RAG 工程位于：
 
 ```text
-REGULATORY_RAG_ROOT=/Users/dada/Developer/italy_proj/regulatory-rag
-REGULATORY_RAG_MODE=hybrid
-REGULATORY_RAG_TOP_K=10
+/Users/dada/Developer/italy_proj/regulatory-rag
 ```
 
-AI Act 组合 profile 建好后，再增加下一节所列的 `REGULATORY_RAG_PROFILE`。
+## 4. 当前已经完成的内容
 
-## 3. 唯一还缺的外部工作：AI Act RAG
-
-不要修改当前 DORA profile。应在只读的独立工程
-`/Users/dada/Developer/italy_proj/regulatory-rag` 中新建一个论文专用的 DORA + AI Act
-组合 profile，例如：
+20 条 DORA 已经分别运行一次 LLM-only 和 Agentic RAG。正常查看时只打开：
 
 ```text
-data/regulations/catalog/corpora/thesis-dora-ai-act-en.json
+experiments/outputs/llm_only/provision_checks.csv
+experiments/outputs/llm_only/item_summary.csv
+experiments/outputs/agentic_rag/provision_checks.csv
+experiments/outputs/agentic_rag/item_summary.csv
 ```
 
-AI Act 主法规使用 EUR-Lex 发布的官方英文 Regulation (EU) 2024/1689，建议稳定标识
-为：
+每条的原始回答、参数和 RAG 证据在相应的 `records/` 中。不要手工修改原始回答。
+
+`experiments/results.csv` 已经写入 DORA AI 运行的实际执行时间和实际提出的遗漏数量。
+需要人工判断才能确定的准确率、证据错误、无依据声明和人工修正时间保持为空。
+
+## 5. Manual 怎么做
+
+你不需要一次完成，可以每次做几条。使用：
+
+```text
+experiments/manual/provision_checks.csv
+experiments/manual/item_summary.csv
+experiments/manual/timing.csv
+```
+
+每条的操作：
+
+1. 在 `timing.csv` 记录开始时间。
+2. 只查官方法律文本，不打开该条对应的 AI 输出。
+3. 在 `provision_checks.csv` 判断每个现有条款是 `Supported`、
+   `Partially supported`、`Unsupported` 或 `Unable to determine`。
+4. 填写简短原因、官方来源和支持段落。
+5. 在 `item_summary.csv` 填写总体判断和真正重要的遗漏条款。
+6. 在 `timing.csv` 填写结束时间和总分钟数。
+
+Manual 可以晚于 AI 程序运行。关键不是运行顺序，而是人工核验时不要参考对应 AI 答案。
+
+## 6. 唯一尚缺的工程部分：AI Act RAG
+
+不要修改现有 DORA corpus。需要在独立 RAG 工程中加入官方英文 Regulation (EU)
+2024/1689，并建立包含 DORA 和 AI Act 的论文 profile。
+
+建议标识：
 
 ```text
 document_id: EU-2024-1689
@@ -57,243 +102,85 @@ parser_profile: eurlex_oj_html
 
 官方入口：`https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng`。
 
-在 RAG 工程中的具体操作是：
+在 Regulatory RAG 工程中：
 
-1. 从 EUR-Lex 下载 Official Journal 英文 PDF，先放入
-   `data/regulations/incoming/`，人工确认法规编号、语言和来源。
-2. 将确认后的原始文件移动到类似
-   `data/regulations/official/eu/eurlex/ai_act/base_acts/` 的目录。不要重新保存或修改
-   原始文件。
-3. 运行 inventory，取得文件大小、页数和 SHA-256：
-
-```bash
-python scripts/inventory_regulatory_corpus.py \
-  --root data/regulations/official/eu/eurlex/ai_act
-```
-
-4. 在 `data/regulations/catalog/documents.json` 添加 AI Act 的人工复核记录，并提升
-   catalog version。原有 profile 的 `expected_catalog_version` 也要同步。
-5. 复制 DORA profile 为新的论文 profile，使用新的 `corpus_id`、版本号和独立的
-   snapshot/processed 路径；保留需要的 DORA document IDs，再加入
-   `EU-2024-1689`。首次构建时暂不填写 `processed_corpus`。
-6. 使用新 profile 验证、下载 HTML 并生成 chunks：
-
-```bash
-python scripts/validate_regulatory_corpus.py --profile PATH_TO_NEW_PROFILE
-python scripts/fetch_eurlex_html.py --document-id EU-2024-1689 --profile PATH_TO_NEW_PROFILE
-python scripts/build_eurlex_corpus.py --profile PATH_TO_NEW_PROFILE
-python scripts/build_pdf_corpus.py --profile PATH_TO_NEW_PROFILE
-python scripts/validate_regulatory_corpus.py --profile PATH_TO_NEW_PROFILE
-```
-
-7. 将最后一次 validation 输出的 `chunk_count` 和 `chunk_set_hash` 写入新 profile 的
-   `processed_corpus`，再次验证，然后构建 vector index：
-
-```bash
-python scripts/validate_regulatory_corpus.py --profile PATH_TO_NEW_PROFILE
-python scripts/build_vector_index.py --profile PATH_TO_NEW_PROFILE
-```
-
-8. 至少人工检查实验会用到的 Articles 5、9–15、17、19–20、25–27、72–73 是否能
-   检索，并核对返回文本和条款定位。
-9. 回到本工程，在 `.env` 中设置：
+1. 下载并核对 EUR-Lex Official Journal 英文 PDF。
+2. 运行 `inventory_regulatory_corpus.py`，保存页数和 SHA-256。
+3. 在 documents catalog 中添加 AI Act 文档记录。
+4. 复制 DORA profile，建立 DORA + AI Act 的组合 profile。
+5. 运行 corpus validation、HTML/PDF 构建和 vector index 构建。
+6. 人工抽查 Articles 5、9–15、17、19–20、25–27、72–73。
+7. 在本工程 `.env` 设置：
 
 ```text
 REGULATORY_RAG_PROFILE=/absolute/path/to/thesis-dora-ai-act-en.json
 ```
 
-这部分只能在 Regulatory RAG 工程修改。本工程不应复制第二份法规语料。
+该工程不能由这里直接修改；完成后再运行 AI Act 的两种方法。
 
-## 4. 正式实验前的开发检查
+## 7. 补齐 AI Act 输出
 
-当前已经保存了 DORA-15 和 DORA-18 的两种 AI 方法开发输出：
-
-```text
-experiments/runs/pilot_dev/llm_only/
-experiments/runs/pilot_dev/agentic_rag/
-```
-
-它们只用于证明流程可以运行，`run.json` 中的 `eligible_for_experiment` 为 `false`。
-不要将其中的数字写进正式结果。若需重新联调，输出路径必须换成一个尚不存在的新目录。
-
-单条 LLM-only 的命令示例：
-
-```bash
-python -m agent.llm_only \
-  --input experiments/datasets/pilot_items.csv \
-  --item DORA-15 \
-  --output /tmp/dora15-llm-only-dev
-```
-
-再检查 Agentic RAG：
-
-```bash
-python -m agent.main \
-  --input experiments/datasets/pilot_items.csv \
-  --item DORA-15 \
-  --evidence rag \
-  --output /tmp/dora15-agent-dev
-```
-
-没有 `--experiment-run` 的输出会明确标为 development，不能放入论文结果。
-
-## 5. Pilot 的执行顺序
-
-Pilot 固定使用 TC05、TC20、DORA-15、DORA-18。Manual 可以晚于 AI 程序运行，但做某
-条人工核验时不要打开该条 AI 输出，避免 AI 答案影响人工基线。
-
-### 5.1 Manual
-
-空白工作表已经生成在 `experiments/runs/pilot_dev/manual/`。如果更换 pilot 数据，可重新
-生成一份新目录：
-
-```bash
-python scripts/prepare_manual_review.py \
-  --input experiments/datasets/pilot_items.csv \
-  --output path/to/new_manual_folder
-```
-
-`items.csv` 是阅读用输入；需要填写的是 `mapping_reviews.csv`、`item_reviews.csv` 和
-`timing.csv`。程序只拆分已有引用，不预填任何判断。
-
-完整 40 条的同类工作包在 `experiments/runs/main_working/manual/`，可以分几次慢慢填写。
-
-对每一条：
-
-1. 开始计时。
-2. 只查官方法律文本。
-3. 拆开检查每个现有引用。
-4. 只记录真正重要的遗漏条款。
-5. 填写 Manual 工作包中的 `mapping_reviews.csv` 和 `item_reviews.csv`。
-6. 在 `timing.csv` 中记录结束时间、分钟数和官方来源。
-7. 再次核对法律文本；核对后的 Manual 结果就是评分基线。
-
-### 5.2 LLM-only
-
-四条一次运行：
+LLM-only：
 
 ```bash
 python -m agent.batch \
   --method llm-only \
-  --input experiments/datasets/pilot_items.csv \
-  --output experiments/runs/pilot_dev/llm_only
+  --input experiments/items.csv \
+  --framework "EU AI Act" \
+  --output experiments/outputs/llm_only \
+  --resume
 ```
 
-程序会保存每条的第一次模型回答和生成时间。然后记录人工修正时间，不要重新生成一个
-“更好看”的回答替换第一次回答。
-
-### 5.3 Agentic RAG
-
-AI Act corpus 可用后运行：
+Agentic RAG：
 
 ```bash
 python -m agent.batch \
   --method agentic-rag \
-  --input experiments/datasets/pilot_items.csv \
-  --output experiments/runs/pilot_dev/agentic_rag
+  --input experiments/items.csv \
+  --framework "EU AI Act" \
+  --output experiments/outputs/agentic_rag \
+  --resume
 ```
 
-检查每条的 `evidence.json`、`raw_response.json`、`mapping_reviews.csv` 和
-`item_reviews.csv`，并记录人工修正时间。
-
-如果 Agent 使用了唯一一次自动修正重试，目录还会出现 `raw_attempts.json`，其中保留
-第一次和修正后的回答。不要删除第一次失败的记录。
-
-## 6. Pilot 后冻结规则
-
-Pilot 只用来发现明显问题，例如引用拆分错误、RAG 找不到正确条款、输出难以评分或
-计时方式无法执行。不要为了让 Agent 得分更高反复调整。
-
-修正必要问题后，固定：
-
-- 40 条输入数据；
-- 两个 prompt 文件；
-- `PRIVATE_AI_MODEL`；
-- RAG profile、corpus version 和 index version；
-- 判断标签和计时规则；
-- Git commit。
-
-同时将论文 RAG profile 的 `corpus_status` 改为 `frozen`，填写不早于
-`as_of_date` 的 `frozen_at`，并再次通过 corpus validation。
-
-Pilot 的开发输出不能直接计入结果。冻结后，用 `--experiment-run` 重新执行四条。
-
-## 7. 正式运行 40 条
-
-每种 AI 方法每条运行一次。固定模型的 temperature 已在程序中设置为 0。
+完成后把客观运行数据同步到评分表：
 
 ```bash
-python -m agent.batch \
-  --method llm-only \
-  --input experiments/datasets/items.csv \
-  --output experiments/runs/main_v1/llm_only \
-  --experiment-run
-
-python -m agent.batch \
-  --method agentic-rag \
-  --input experiments/datasets/items.csv \
-  --output experiments/runs/main_v1/agentic_rag \
-  --experiment-run
+python scripts/update_results.py
 ```
 
-Manual 仍应在查看对应 AI 输出前完成。总计是 40 条 × 3 种方法，即 120 个方法—条目
-组合，不需要人为扩展成更多实验。
-
-如果只需联调当前 DORA 子集，可使用 `--framework DORA`。已经完成的 20 条开发输出在
-`experiments/runs/main_dev/`；它们没有使用冻结 corpus，不能作为正式数据。批处理中断
-后可在原命令增加 `--resume`，程序只跳过文件完整的条目。
+`--resume` 只跳过已有完整记录的条目，因此不会重新调用已经完成的 DORA。
 
 ## 8. 最后评分
 
-以核验后的 Manual 为基线，将每条、每种方法汇总到
-`experiments/results/item_results.csv`。比较：
+以核验后的 Manual 为参考，在 `experiments/results.csv` 补充：
 
-- 完成并修正到可接受结果的总时间；
-- 现有引用判断准确率；
-- 重要遗漏引用的 precision/recall；
-- 证据引用错误；
-- 无依据的法律或适用性判断；
-- 人工修正时间。
+- AI 条款判断与 Manual 相同的数量；
+- 遗漏条款的 true positive 和 Manual 参考总数；
+- 证据错误和无依据声明数量；
+- 人工修正时间；
+- 总时间和必要的简短说明。
 
-如果后来发现 Manual 基线有错，记录修改原因，并按修正后的基线重新计算三个方法的
-相关结果。不要为了得到更好的结论删除失败条目。
+空白表示尚未测量；`0` 表示已经检查且实际为零。不要用 `0` 代表缺失数据。如果后来
+修正 Manual 判断，要对两种 AI 方法重新评分，但不需要重新调用模型。
 
-## 9. 完成检查表
+## 9. 论文表格和图表
 
-- [ ] AI Act 已进入论文专用的组合 RAG profile。
-- [ ] AI Act 和 DORA 条款检索均已人工抽查。
-- [ ] 四条 pilot 的 Manual、LLM-only、Agentic RAG 均完成。
-- [ ] 根据 pilot 只修正了明确的流程问题。
-- [ ] 数据、模型、prompt、corpus 和代码版本已冻结。
-- [ ] 四条 pilot 已按冻结版本重新运行。
-- [ ] 40 条主实验已完成。
-- [ ] 人工修正时间和评分结果已填写。
-- [ ] 已运行 `python scripts/build_thesis_outputs.py` 生成论文图表草稿。
-- [ ] 错误和局限没有被隐藏。
-
-## 10. 生成论文图表
-
-完成 `experiments/results/item_results.csv` 后运行：
+当前三张论文表格框架在 `thesis_outputs/tables/`。数据完整后运行：
 
 ```bash
 python scripts/build_thesis_outputs.py
 ```
 
-程序会在 `thesis_outputs/generated/` 中生成 3 张 CSV 汇总表和 6 张 SVG 草图。
-图表定义、保留理由和文件名见 `thesis_outputs/README.md`。数字只能由结果 CSV 生成；
-可以重新画版式，但不要在绘图软件中手工修改数值。
+程序将在 `thesis_outputs/generated/` 生成 3 张结果表和 6 张 SVG 图。图的数值全部来自
+`experiments/results.csv`。可以自己重画样式，但不要手工修改图中的数据。
 
-填写 `item_results.csv` 时，计数为零必须写 `0`，不能留空。Manual 只需要填写总时间
-和作为基线确认的遗漏条款总数；AI 两种方法的计数、执行时间和人工修正时间都必须
-填写。这样程序能够区分“零个错误”和“数据忘记记录”。
+## 10. 最后检查
 
-当前评分表已经预建了 120 行，`existing_mapping_total` 也已从输入自动填写。未完成的
-值必须留空，不要写 `0`。只想提前查看论文表格结构时运行：
-
-```bash
-python scripts/build_thesis_outputs.py \
-  --skeleton \
-  --output path/to/new_table_skeleton_folder
-```
-
-该模式只生成三张表，不生成容易被误解为真实结果的空图。
+- [x] 20 条 DORA 的 LLM-only 已运行。
+- [x] 20 条 DORA 的 Agentic RAG 已运行并保存证据。
+- [x] 120 行评分表已建立并写入现有客观数据。
+- [x] Manual 工作表已建立。
+- [ ] AI Act 已加入 RAG。
+- [ ] 20 条 AI Act 的两种 AI 方法已运行。
+- [ ] Manual 和人工修正时间已填写。
+- [ ] 最终评分、论文表格和图表已生成。

@@ -10,7 +10,7 @@ flowchart LR
     D[40 assessment items] --> M[Manual review]
     D --> L[LLM-only<br/>same model, no retrieved text]
     D --> A[Agentic RAG]
-    R[Regulatory RAG<br/>frozen DORA + AI Act corpus] --> A
+    R[Regulatory RAG<br/>versioned DORA + AI Act corpus] --> A
     M --> O[Common review tables]
     L --> O
     A --> O

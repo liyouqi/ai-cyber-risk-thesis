@@ -19,18 +19,18 @@ Current source material is kept in `source_files/`. Candidate experiment dataset
 have been extracted from one AI Act workbook and one DORA workbook.
 
 The standard experiment dataset and output tables are under `experiments/`. A
-small command-line agent is under `agent/`. It can be developed with replay
-evidence, but only runs made against a complete frozen regulatory corpus may be
-used as Agentic RAG experiment results.
+small command-line agent is under `agent/`. Replay evidence is used only by the
+automated tests; saved experiment answers come from the configured model and the
+separate Regulatory RAG.
 
 See `docs/EXPERIMENT_DESIGN.md` for the research design,
 `docs/EXPERIMENT_GUIDE.md` for the exact operating sequence and
 `agent/README.md` for the Agent boundary. Draft system diagrams and the
 reproducible Chapter 5 output definition are under `thesis_outputs/`.
 
-The full Manual working pack and the complete 20-item DORA development batch are
-under `experiments/runs/`. AI Act runs remain pending until that corpus is
-available in the separate RAG project.
+The Manual working files and the completed 20-item DORA outputs are under
+`experiments/`. AI Act runs remain pending until that corpus is available in the
+separate RAG project.
 
 Run the local checks with:
 

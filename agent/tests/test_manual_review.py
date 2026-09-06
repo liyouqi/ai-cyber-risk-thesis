@@ -15,19 +15,19 @@ class ManualReviewTest(unittest.TestCase):
     def test_pilot_forms_are_blank_and_provisions_are_split(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             output = prepare_manual_review(
-                ROOT / "experiments/datasets/pilot_items.csv",
+                ROOT / "experiments/pilot_items.csv",
                 Path(directory) / "manual",
             )
 
             self.assertEqual(
                 {path.name for path in output.iterdir()},
-                {"items.csv", "mapping_reviews.csv", "item_reviews.csv", "timing.csv"},
+                {"provision_checks.csv", "item_summary.csv", "timing.csv"},
             )
-            with (output / "mapping_reviews.csv").open(
+            with (output / "provision_checks.csv").open(
                 newline="", encoding="utf-8"
             ) as handle:
                 mappings = list(csv.DictReader(handle))
-            with (output / "item_reviews.csv").open(
+            with (output / "item_summary.csv").open(
                 newline="", encoding="utf-8"
             ) as handle:
                 items = list(csv.DictReader(handle))

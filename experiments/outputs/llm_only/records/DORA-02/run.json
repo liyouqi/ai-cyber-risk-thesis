@@ -1,0 +1,29 @@
+{
+  "item_id": "DORA-02",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 4.297,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "DORA-02",
+    "framework": "DORA",
+    "instrument": "Regulation (EU) 2022/2554",
+    "domain": "ICT business continuity testing",
+    "control_statement": "Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
+    "expected_evidence": "",
+    "applicability": "",
+    "existing_mapping": "Article 11(6)",
+    "source_row": 4
+  }
+}

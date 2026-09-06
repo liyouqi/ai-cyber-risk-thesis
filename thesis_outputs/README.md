@@ -4,19 +4,11 @@ This directory is reserved for material used in Chapters 4 and 5.
 
 `system_diagrams.md` contains two Mermaid drafts that should be redrawn or
 restyled before submission. Generated result tables and figures are created in a
-new `generated/` directory only after `experiments/results/item_results.csv` has
+new `generated/` directory only after `experiments/results.csv` has
 been completed.
 
-The table layouts can be prepared before the scores exist:
-
-```bash
-python scripts/build_thesis_outputs.py \
-  --skeleton \
-  --output thesis_outputs/prepared
-```
-
-This creates three tables with blank result cells and does not create misleading
-zero-valued figures. A prepared copy is already kept in `prepared/`.
+The three result-table layouts already exist in `tables/`. Their result cells
+remain blank until the Manual scoring data are available.
 
 Run:
 
@@ -55,5 +47,5 @@ specific test.
 
 Model, prompt, workflow and corpus versions are already preserved in each AI
 run's `run.json`. They are not repeated as manually copied columns in
-`item_results.csv`, which reduces transcription errors while retaining the raw
+`results.csv`, which reduces transcription errors while retaining the raw
 record.

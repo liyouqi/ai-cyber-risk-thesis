@@ -45,7 +45,6 @@ class ReviewRun:
     raw_attempts: list[dict[str, Any]]
     guardrail_changes: list[str]
     elapsed_seconds: float
-    eligible_for_experiment: bool
     prompt_version: str
 
 
@@ -267,8 +266,6 @@ def run_review(
     evidence_provider: EvidenceProvider,
     llm: JsonLlm,
     system_prompt: str,
-    *,
-    eligible_for_experiment: bool,
 ) -> ReviewRun:
     started = time.perf_counter()
     provisions = parse_mapping(item.existing_mapping, item.instrument)
@@ -335,7 +332,6 @@ def run_review(
         raw_attempts=raw_attempts,
         guardrail_changes=guardrail_changes,
         elapsed_seconds=round(time.perf_counter() - started, 3),
-        eligible_for_experiment=eligible_for_experiment,
         prompt_version="agent-review-v0.2",
     )
 
@@ -344,8 +340,6 @@ def run_llm_only(
     item: AssessmentItem,
     llm: JsonLlm,
     system_prompt: str,
-    *,
-    eligible_for_experiment: bool,
 ) -> ReviewRun:
     """Review one item with model knowledge only and no retrieved evidence."""
     started = time.perf_counter()
@@ -371,7 +365,6 @@ def run_llm_only(
         raw_attempts=[response],
         guardrail_changes=[],
         elapsed_seconds=round(time.perf_counter() - started, 3),
-        eligible_for_experiment=eligible_for_experiment,
         prompt_version="llm-only-v0.2",
     )
 
@@ -392,7 +385,6 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
         "elapsed_seconds": run.elapsed_seconds,
         "model_attempts": len(run.raw_attempts),
         "guardrail_changes": run.guardrail_changes,
-        "eligible_for_experiment": run.eligible_for_experiment,
         "queries": run.queries,
         "item": run.item.as_dict(),
     }
@@ -418,7 +410,7 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
             encoding="utf-8",
         )
 
-    with (output / "mapping_reviews.csv").open("w", newline="", encoding="utf-8") as handle:
+    with (output / "provision_checks.csv").open("w", newline="", encoding="utf-8") as handle:
         fields = [
             "item_id",
             "instrument",
@@ -446,7 +438,7 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
                 }
             )
 
-    with (output / "item_reviews.csv").open("w", newline="", encoding="utf-8") as handle:
+    with (output / "item_summary.csv").open("w", newline="", encoding="utf-8") as handle:
         fields = [
             "item_id",
             "overall_assessment",
