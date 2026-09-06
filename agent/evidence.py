@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 from pathlib import Path
 from typing import Any, Protocol
@@ -60,6 +61,78 @@ class ReplayEvidenceProvider:
             and entry.provision.casefold() == provision.provision.casefold()
         ]
         return exact or evidence
+
+
+class LocalArticleProvider:
+    """Small deterministic retriever used while a law is absent from Regulatory RAG."""
+
+    name = "local-article-retrieval"
+
+    def __init__(self, path: str | Path, *, top_k: int = 5) -> None:
+        self._path = Path(path)
+        data = json.loads(self._path.read_text(encoding="utf-8"))
+        self._chunks = [Evidence(**entry) for entry in data["chunks"]]
+        self._source = str(data["source_url"])
+        self._document = str(data["document"])
+        self._top_k = top_k
+
+    @property
+    def metadata(self) -> dict[str, object]:
+        return {
+            "document": self._document,
+            "source": self._source,
+            "corpus_file": str(self._path),
+            "retrieval_mode": "local-keyword",
+            "top_k": self._top_k,
+            "provisional": True,
+        }
+
+    @staticmethod
+    def _tokens(text: str) -> set[str]:
+        stopwords = {
+            "and", "are", "for", "from", "has", "have", "into", "its",
+            "shall", "that", "the", "their", "this", "with", "which",
+        }
+        return {
+            token
+            for token in re.findall(r"[a-z0-9]+", text.casefold())
+            if len(token) > 2 and token not in stopwords
+        }
+
+    def _rank(self, candidates: list[Evidence], query: str, limit: int) -> list[Evidence]:
+        query_tokens = self._tokens(query)
+        scored: list[tuple[float, str, Evidence]] = []
+        for entry in candidates:
+            entry_tokens = self._tokens(entry.text)
+            overlap = len(query_tokens & entry_tokens)
+            score = overlap / math.sqrt(max(len(entry_tokens), 1))
+            scored.append((score, entry.evidence_id, entry))
+        scored.sort(key=lambda value: (-value[0], value[1]))
+        return [entry for _, _, entry in scored[:limit]]
+
+    def retrieve(
+        self,
+        item: AssessmentItem,
+        query: str,
+        provision: ProvisionRef | None,
+    ) -> list[Evidence]:
+        if provision is None:
+            return self._rank(self._chunks, query, self._top_k)
+
+        match = re.fullmatch(
+            r"Article\s+(\d+)(?:\((\d+)\))?(?:\([a-z]\))?",
+            provision.provision,
+            flags=re.IGNORECASE,
+        )
+        if not match:
+            return []
+        article, paragraph = match.groups()
+        prefix = f"Article {article}("
+        candidates = [entry for entry in self._chunks if entry.provision.startswith(prefix)]
+        if paragraph:
+            exact = f"Article {article}({paragraph})"
+            candidates = [entry for entry in candidates if entry.provision == exact]
+        return self._rank(candidates, query, min(self._top_k, 3))
 
 
 class RegulatoryRagProvider:

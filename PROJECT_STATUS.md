@@ -12,6 +12,7 @@ Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 - extracted and translated the two source workbooks into one 40-item dataset;
 - implemented LLM-only and Agentic RAG with the same configured model;
 - completed all 20 selected DORA items with both AI methods;
+- prepared a provisional local retriever over 500 official AI Act paragraphs;
 - saved combined CSV answers and per-item RAG evidence;
 - created the 40-item Manual working files under `experiments/outputs/manual/`;
 - created `experiments/results/item_results.csv` with 120 rows and filled the
@@ -20,8 +21,8 @@ Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 
 ## Still missing
 
-- AI Act in the separate Regulatory RAG;
-- 20 AI Act runs for each AI method;
+- 20 AI Act runs for each AI method (external LLM authorization pending);
+- replacement of the provisional AI Act retriever with the final Regulatory RAG corpus;
 - the researcher's Manual decisions and timing;
 - human correction time and Manual-based scoring;
 - final tables and figures generated from the completed scores.

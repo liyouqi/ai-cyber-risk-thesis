@@ -8,7 +8,7 @@ from pathlib import Path
 
 from dotenv import dotenv_values
 
-from agent.evidence import RegulatoryRagProvider
+from agent.evidence import LocalArticleProvider, RegulatoryRagProvider
 from agent.llm import LlmConfig, OpenAiCompatibleLlm
 from agent.workflow import load_items, run_llm_only, run_review, write_run
 
@@ -52,6 +52,10 @@ def main() -> None:
     parser.add_argument("--rag-mode", choices=("bm25", "vector", "hybrid"))
     parser.add_argument("--rag-top-k", type=int)
     parser.add_argument(
+        "--local-corpus",
+        help="Use a small local legal-text corpus when the law is absent from Regulatory RAG",
+    )
+    parser.add_argument(
         "--resume",
         action="store_true",
         help="Continue an interrupted batch and skip complete item folders",
@@ -68,17 +72,23 @@ def main() -> None:
 
     provider = None
     if args.method == "agentic-rag":
-        env = dotenv_values(args.env_file)
-        rag_root = args.rag_root or env.get("REGULATORY_RAG_ROOT")
-        if not rag_root:
-            raise SystemExit("Set --rag-root or REGULATORY_RAG_ROOT")
-        rag_profile = args.rag_profile or env.get("REGULATORY_RAG_PROFILE") or None
-        provider = RegulatoryRagProvider(
-            rag_root,
-            profile=rag_profile,
-            mode=args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "hybrid"),
-            top_k=args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8),
-        )
+        if args.local_corpus:
+            provider = LocalArticleProvider(
+                args.local_corpus,
+                top_k=args.rag_top_k or 5,
+            )
+        else:
+            env = dotenv_values(args.env_file)
+            rag_root = args.rag_root or env.get("REGULATORY_RAG_ROOT")
+            if not rag_root:
+                raise SystemExit("Set --rag-root or REGULATORY_RAG_ROOT")
+            rag_profile = args.rag_profile or env.get("REGULATORY_RAG_PROFILE") or None
+            provider = RegulatoryRagProvider(
+                rag_root,
+                profile=rag_profile,
+                mode=args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "hybrid"),
+                top_k=args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8),
+            )
 
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=args.resume)

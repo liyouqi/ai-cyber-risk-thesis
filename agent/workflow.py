@@ -317,9 +317,9 @@ def run_review(
     return ReviewRun(
         item=item,
         method=(
-            "agentic_rag"
-            if evidence_provider.name == "regulatory-rag"
-            else "development_replay"
+            "development_replay"
+            if evidence_provider.name == "development-replay"
+            else "agentic_rag"
         ),
         provider=evidence_provider.name,
         provider_details=getattr(evidence_provider, "metadata", {}),

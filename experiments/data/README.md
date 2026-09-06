@@ -30,6 +30,18 @@ python scripts/prepare_ai_act_items.py
 
 This is the complete candidate set, not the final selected sample.
 
+`ai_act_legal_text.json` contains 500 article-paragraph chunks extracted from
+the official EUR-Lex English HTML. It supports the provisional local retrieval
+run while AI Act is absent from the separate Regulatory RAG. The file records
+the source URL and SHA-256 of the downloaded HTML.
+
+To rebuild it after downloading the official HTML:
+
+```bash
+python scripts/extract_ai_act_articles.py downloaded.html \
+  experiments/data/ai_act_legal_text.json
+```
+
 ## DORA
 
 `candidates/dora.csv` is generated from the four sections of

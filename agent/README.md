@@ -8,7 +8,9 @@ LLM-only uses the same configured model and output format without retrieval.
 Replay evidence exists only for automated software tests.
 
 The Regulatory RAG remains a separate read-only project. The current corpus is
-`dora-luxembourg-mvp-en` version `0.2.1`; AI Act is not available yet.
+`dora-luxembourg-mvp-en` version `0.2.1`. While AI Act is absent from that
+project, `LocalArticleProvider` can retrieve paragraphs from the official
+EUR-Lex text. Its run metadata marks this source as provisional.
 
 ## Output
 
@@ -41,5 +43,7 @@ python -m agent.llm_only \
 ```
 
 Run a batch with `python -m agent.batch`. `--framework DORA` limits a run to the
-DORA rows, and `--resume` continues an interrupted output folder. Exact commands
-and the remaining AI Act step are in `docs/EXPERIMENT_GUIDE.md`.
+DORA rows, and `--resume` continues an interrupted output folder. For the
+temporary AI Act path, pass
+`--local-corpus experiments/data/ai_act_legal_text.json`. Exact commands are in
+`docs/EXPERIMENT_GUIDE.md`.

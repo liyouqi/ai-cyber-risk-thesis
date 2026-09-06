@@ -18,7 +18,7 @@ experiments/
 - `data/items.csv`：三种方法共同使用的 40 条输入。
 - `data/pilot_items.csv`：从 40 条中抽出的四条流程检查数据。
 - `outputs/manual/`：你以后慢慢填写的人工结果。
-- `outputs/`：程序真实产生的 AI 回答。当前 DORA 已完成，AI Act 尚未完成。
+- `outputs/`：程序真实产生的 AI 回答。DORA 已完成；AI Act 的临时检索路径已准备好。
 - `results/item_results.csv`：最后计算准确率、时间和论文图表的数据表。
 
 ## 2. 三种方法
@@ -83,7 +83,20 @@ experiments/outputs/manual/timing.csv
 
 Manual 可以晚于 AI 程序运行。关键不是运行顺序，而是人工核验时不要参考对应 AI 答案。
 
-## 6. 唯一尚缺的工程部分：AI Act RAG
+## 6. AI Act 临时检索与最终 RAG
+
+为了先完成流程，本工程保存了从 EUR-Lex 官方英文 HTML 抽取的 500 个法条段落：
+
+```text
+experiments/data/ai_act_legal_text.json
+```
+
+临时 Agent 使用简单、确定性的关键词排序。它是真实检索，不是让 LLM 编造法条；但它不等同于
+最终 Regulatory RAG。每次运行的 `run.json` 都会记录
+`evidence_provider: local-article-retrieval` 和 `provisional: true`，论文不能把它描述成外部
+RAG 的正式 AI Act corpus。
+
+最终论文实验如需统一检索实现，再执行下面的替换工作：
 
 不要修改现有 DORA corpus。需要在独立 RAG 工程中加入官方英文 Regulation (EU)
 2024/1689，并建立包含 DORA 和 AI Act 的论文 profile。
@@ -113,7 +126,7 @@ parser_profile: eurlex_oj_html
 REGULATORY_RAG_PROFILE=/absolute/path/to/thesis-dora-ai-act-en.json
 ```
 
-该工程不能由这里直接修改；完成后再运行 AI Act 的两种方法。
+该工程不能由这里直接修改。完成后覆盖重跑 AI Act Agentic RAG；LLM-only 不需要重跑。
 
 ## 7. 补齐 AI Act 输出
 
@@ -136,8 +149,12 @@ python -m agent.batch \
   --input experiments/data/items.csv \
   --framework "EU AI Act" \
   --output experiments/outputs/agentic_rag \
+  --local-corpus experiments/data/ai_act_legal_text.json \
   --resume
 ```
+
+上面是临时本地检索命令。最终 Regulatory RAG 准备好后，不传 `--local-corpus`，并在覆盖旧
+AI Act 记录后使用第 6 节所述 profile 重跑。
 
 完成后把客观运行数据同步到评分表：
 
