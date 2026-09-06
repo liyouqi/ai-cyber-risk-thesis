@@ -241,4 +241,21 @@ Manual 仍应在查看对应 AI 输出前完成。总计是 40 条 × 3 种方�
 - [ ] 四条 pilot 已按冻结版本重新运行。
 - [ ] 40 条主实验已完成。
 - [ ] 人工修正时间和评分结果已填写。
+- [ ] 已运行 `python scripts/build_thesis_outputs.py` 生成论文图表草稿。
 - [ ] 错误和局限没有被隐藏。
+
+## 10. 生成论文图表
+
+完成 `experiments/results/item_results.csv` 后运行：
+
+```bash
+python scripts/build_thesis_outputs.py
+```
+
+程序会在 `thesis_outputs/generated/` 中生成 3 张 CSV 汇总表和 6 张 SVG 草图。
+图表定义、保留理由和文件名见 `thesis_outputs/README.md`。数字只能由结果 CSV 生成；
+可以重新画版式，但不要在绘图软件中手工修改数值。
+
+填写 `item_results.csv` 时，计数为零必须写 `0`，不能留空。Manual 只需要填写总时间
+和作为基线确认的遗漏条款总数；AI 两种方法的计数、执行时间和人工修正时间都必须
+填写。这样程序能够区分“零个错误”和“数据忘记记录”。

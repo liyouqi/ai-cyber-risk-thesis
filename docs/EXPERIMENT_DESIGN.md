@@ -229,3 +229,16 @@ Each AI method is run once per item with temperature 0. Applicability handling
 and challenge usefulness are reported qualitatively rather than converted into
 an additional ordinal score. These choices keep the workload proportionate and
 avoid a weak composite quality measure.
+
+## 14. Thesis outputs
+
+Chapter 5 uses three generated tables for dataset, overall and framework-level
+results. Six generated SVG drafts cover review time, mapping accuracy, missing
+mapping detection, evidence and unsupported-claim errors, human correction time
+and paired Manual-versus-Agent time. Framework differences are shown within the
+relevant figures rather than repeated in a separate dashboard.
+
+The reporting script reads only the completed item-level result CSV. Manual
+accuracy is not plotted because the verified Manual review is the baseline.
+System architecture and Agent workflow diagrams are kept as Mermaid drafts for
+manual redrawing in the final thesis.

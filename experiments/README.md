@@ -66,6 +66,10 @@ LLM-only and Agentic RAG both use `PRIVATE_AI_MODEL` from `.env`. Their differen
 is the presence or absence of retrieved evidence, not a different chat product.
 Follow `docs/EXPERIMENT_GUIDE.md` for the exact order and commands.
 
+After scoring is complete, `scripts/build_thesis_outputs.py` creates the small
+set of reproducible Chapter 5 tables and figures described in
+`thesis_outputs/README.md`.
+
 ## Before the pilot
 
 1. Add a validated AI Act corpus to the separate Regulatory RAG.

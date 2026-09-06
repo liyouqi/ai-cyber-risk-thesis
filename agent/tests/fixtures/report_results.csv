@@ -1,0 +1,7 @@
+item_id,framework,method,existing_mapping_correct,existing_mapping_total,missing_mapping_true_positive,missing_mapping_proposed,missing_mapping_reference_total,evidence_errors,unsupported_claims,execution_time_min,human_review_time_min,total_time_min,short_note
+TC05,EU AI Act,manual,,,,,1,,,,,12,verified baseline
+TC05,EU AI Act,llm_only,2,3,0,1,1,1,2,0.2,4,4.2,test fixture
+TC05,EU AI Act,agentic_rag,3,3,1,1,1,0,0,0.4,2,2.4,test fixture
+DORA-15,DORA,manual,,,,,0,,,,,10,verified baseline
+DORA-15,DORA,llm_only,0,1,0,1,0,1,1,0.2,3,3.2,test fixture
+DORA-15,DORA,agentic_rag,1,1,0,0,0,0,0,0.4,1,1.4,test fixture

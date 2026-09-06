@@ -25,7 +25,8 @@ used as Agentic RAG experiment results.
 
 See `docs/EXPERIMENT_DESIGN.md` for the research design,
 `docs/EXPERIMENT_GUIDE.md` for the exact operating sequence and
-`agent/README.md` for the Agent boundary.
+`agent/README.md` for the Agent boundary. Draft system diagrams and the
+reproducible Chapter 5 output definition are under `thesis_outputs/`.
 
 Run the local checks with:
 

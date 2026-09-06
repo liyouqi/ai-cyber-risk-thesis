@@ -48,7 +48,9 @@ must be frozen before formal experiment runs.
 - completed real DORA end-to-end development runs with the configured external
   model for DORA-15 and the compound mapping in DORA-18;
 - added exact-provision retrieval, one auditable correction retry and a final
-  evidence guardrail for uncited claims.
+  evidence guardrail for uncited claims;
+- defined two Chapter 4 Mermaid drafts and an automatic Chapter 5 reporting
+  script that produces three tables and six SVG figures from item-level results.
 
 ## Waiting for input
 
