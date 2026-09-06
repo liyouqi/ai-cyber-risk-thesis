@@ -47,6 +47,10 @@ must be frozen before formal experiment runs.
   work;
 - completed real DORA end-to-end development runs with the configured external
   model for DORA-15 and the compound mapping in DORA-18;
+- saved reproducible DORA-15 and DORA-18 development records for both LLM-only
+  and Agentic RAG under `experiments/runs/pilot_dev/`;
+- generated a blank four-item Manual pilot pack with pre-split legal references
+  and a simple timing sheet;
 - added exact-provision retrieval, one auditable correction retry and a final
   evidence guardrail for uncited claims;
 - defined two Chapter 4 Mermaid drafts and an automatic Chapter 5 reporting
@@ -55,9 +59,11 @@ must be frozen before formal experiment runs.
 ## Waiting for input
 
 - EU AI Act corpus in the Regulatory RAG project;
+- the researcher's Manual decisions and timing for the four pilot items;
 
 ## Next steps
 
-1. Add and validate an AI Act corpus in the separate RAG project.
-2. Check AI Act retrieval through the Agent.
-3. Run the four-item pilot before freezing the experiment.
+1. Complete the four Manual pilot rows using official legal texts.
+2. Add and validate an AI Act corpus in the separate RAG project.
+3. Check AI Act retrieval, then run all four pilot items before freezing the
+   experiment.

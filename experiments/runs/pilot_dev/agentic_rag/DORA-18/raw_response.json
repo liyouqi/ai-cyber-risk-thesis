@@ -1,0 +1,35 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
+      "provision": "Article 26",
+      "decision": "Partially supported",
+      "reason": "Article 26 requires ICT response and recovery plans to identify severe but plausible scenarios, which is a prerequisite for testing. However, it does not specify the frequency of testing.",
+      "evidence_ids": [
+        "eu-2024-1774-article-26-2"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 11(6)",
+      "decision": "Partially supported",
+      "reason": "Article 11(6) requires financial entities to regularly review their ICT business continuity policy and plans, taking into account test results. It also mandates testing for non-microenterprises, but does not specify the annual frequency for all entities.",
+      "evidence_ids": [
+        "eu-2022-2554-article-11-6"
+      ]
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
+      "provision": "Article 40(1)",
+      "reason": "This provision explicitly states that financial entities shall test their business continuity plans at least once every year, directly supporting the control statement's frequency requirement.",
+      "evidence_ids": [
+        "eu-2024-1774-article-40-1"
+      ]
+    }
+  ],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The existing mapping is incomplete. While Article 26 and Article 11(6) address the content of scenarios and the need for testing/review, they do not specify the annual frequency. Article 40(1) of the Delegated Regulation provides the explicit annual testing requirement that is missing from the current mapping."
+}

@@ -106,7 +106,17 @@ REGULATORY_RAG_PROFILE=/absolute/path/to/thesis-dora-ai-act-en.json
 
 ## 4. 正式实验前的开发检查
 
-先使用 DORA-15 检查 LLM-only。输出路径必须是一个尚不存在的新目录：
+当前已经保存了 DORA-15 和 DORA-18 的两种 AI 方法开发输出：
+
+```text
+experiments/runs/pilot_dev/llm_only/
+experiments/runs/pilot_dev/agentic_rag/
+```
+
+它们只用于证明流程可以运行，`run.json` 中的 `eligible_for_experiment` 为 `false`。
+不要将其中的数字写进正式结果。若需重新联调，输出路径必须换成一个尚不存在的新目录。
+
+单条 LLM-only 的命令示例：
 
 ```bash
 python -m agent.llm_only \
@@ -134,15 +144,26 @@ AI 答案影响人工基线。
 
 ### 5.1 Manual
 
+空白工作表已经生成在 `experiments/runs/pilot_dev/manual/`。如果更换 pilot 数据，可重新
+生成一份新目录：
+
+```bash
+python scripts/prepare_manual_review.py \
+  --input experiments/datasets/pilot_items.csv \
+  --output path/to/new_manual_folder
+```
+
+`items.csv` 是阅读用输入；需要填写的是 `mapping_reviews.csv`、`item_reviews.csv` 和
+`timing.csv`。程序只拆分已有引用，不预填任何判断。
+
 对每一条：
 
 1. 开始计时。
 2. 只查官方法律文本。
 3. 拆开检查每个现有引用。
 4. 只记录真正重要的遗漏条款。
-5. 填写 `experiments/templates/mapping_reviews.csv` 和
-   `experiments/templates/item_reviews.csv`。
-6. 记录结束时间和官方来源。
+5. 填写 Manual 工作包中的 `mapping_reviews.csv` 和 `item_reviews.csv`。
+6. 在 `timing.csv` 中记录结束时间、分钟数和官方来源。
 7. 再次核对法律文本；核对后的 Manual 结果就是评分基线。
 
 ### 5.2 LLM-only

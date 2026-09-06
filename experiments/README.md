@@ -49,6 +49,10 @@ Keep the completed output files separate by method. Combine only the evaluation
 results in `results/item_results.csv`; do not put Manual and AI answers in one
 working file while the experiment is running.
 
+Blank Manual forms can be created with `scripts/prepare_manual_review.py`. The
+current four-item pack and the completed DORA development calls are described in
+`runs/README.md`.
+
 ## Methods
 
 ```text

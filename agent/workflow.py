@@ -428,7 +428,7 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
             "evidence_reference",
             "evidence_excerpt",
         ]
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         by_id = {entry.evidence_id: entry for entry in run.evidence}
         for review in run.response["mapping_reviews"]:
@@ -454,7 +454,7 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
             "applicability_note",
             "challenge_comment",
         ]
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerow(
             {
