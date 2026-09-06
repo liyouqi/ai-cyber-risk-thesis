@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
-from typing import Protocol
+from typing import Any, Protocol
 
 from agent.models import AssessmentItem, Evidence, ProvisionRef
 
@@ -145,16 +146,43 @@ class RegulatoryRagProvider:
                 top_k=self._top_k,
             )
         )
-        output: list[Evidence] = []
+        output = self._direct_evidence(provision) if provision else []
         for hit in result.evidence:
             chunk = self._engine.get(hit.evidence_id)
-            output.append(
-                Evidence(
-                    evidence_id=chunk.evidence_id,
-                    instrument=chunk.document_id,
-                    provision=chunk.source_locator,
-                    text=chunk.text,
-                    source=str(chunk.source_url),
-                )
-            )
+            output.append(self._as_evidence(chunk))
+        return output
+
+    @staticmethod
+    def _as_evidence(chunk: Any) -> Evidence:
+        return Evidence(
+            evidence_id=chunk.evidence_id,
+            instrument=chunk.document_id,
+            provision=chunk.source_locator,
+            text=chunk.text,
+            source=str(chunk.source_url),
+        )
+
+    def _direct_evidence(self, provision: ProvisionRef) -> list[Evidence]:
+        document_id = INSTRUMENT_DOCUMENT_IDS.get(provision.instrument)
+        if not document_id:
+            return []
+        locator = provision.provision.casefold()
+        slug = re.sub(r"[^a-z0-9]+", "-", locator).strip("-")
+        base = f"{document_id.casefold()}-{slug}"
+        evidence_ids = [base]
+        if re.fullmatch(r"article-\d+", slug):
+            evidence_ids.extend(f"{base}-{paragraph}" for paragraph in range(1, 21))
+
+        output: list[Evidence] = []
+        found_child = False
+        for evidence_id in evidence_ids:
+            try:
+                chunk = self._engine.get(evidence_id)
+            except KeyError:
+                if found_child and evidence_id != base:
+                    break
+                continue
+            output.append(self._as_evidence(chunk))
+            if evidence_id != base:
+                found_child = True
         return output

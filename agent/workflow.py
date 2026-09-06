@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import copy
 import json
 import time
 from dataclasses import asdict, dataclass
@@ -41,6 +42,8 @@ class ReviewRun:
     queries: list[dict[str, str]]
     evidence: list[Evidence]
     response: dict[str, Any]
+    raw_attempts: list[dict[str, Any]]
+    guardrail_changes: list[str]
     elapsed_seconds: float
     eligible_for_experiment: bool
     prompt_version: str
@@ -103,6 +106,84 @@ def _user_prompt(
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
+def _repair_prompt(
+    original_prompt: str,
+    response: dict[str, Any],
+    error: str,
+) -> str:
+    repair = {
+        "validation_error": error,
+        "previous_response": response,
+        "instruction": (
+            "Return a corrected JSON object. Keep the substantive conclusions "
+            "unless the validation error requires a change. Use only evidence IDs "
+            "present in the original input."
+        ),
+    }
+    return original_prompt + "\n\nCORRECTION REQUEST\n" + json.dumps(
+        repair,
+        ensure_ascii=False,
+        indent=2,
+    )
+
+
+def _apply_evidence_guardrail(
+    response: dict[str, Any],
+    evidence: list[Evidence],
+) -> tuple[dict[str, Any], list[str]]:
+    """Remove unsupported evidence claims after the single model retry."""
+    corrected = copy.deepcopy(response)
+    changes: list[str] = []
+    known = {entry.evidence_id for entry in evidence}
+
+    reviews = corrected.get("mapping_reviews", [])
+    if isinstance(reviews, list):
+        for review in reviews:
+            if not isinstance(review, dict):
+                continue
+            cited = review.get("evidence_ids", [])
+            valid = (
+                [evidence_id for evidence_id in cited if evidence_id in known]
+                if isinstance(cited, list)
+                else []
+            )
+            if valid != cited:
+                review["evidence_ids"] = valid
+                changes.append(
+                    f"Removed unknown evidence IDs from {review.get('provision', 'a review')}"
+                )
+            if review.get("decision") != "Unable to determine" and not valid:
+                review["decision"] = "Unable to determine"
+                review["reason"] = "No retrieved evidence was cited for this decision."
+                changes.append(
+                    f"Downgraded {review.get('provision', 'a review')} because "
+                    "no evidence was cited"
+                )
+
+    missing = corrected.get("missing_mappings", [])
+    if isinstance(missing, list):
+        retained = []
+        for mapping in missing:
+            cited = mapping.get("evidence_ids", []) if isinstance(mapping, dict) else []
+            if isinstance(cited, list) and cited and set(cited).issubset(known):
+                retained.append(mapping)
+            else:
+                changes.append("Removed a missing-mapping proposal without valid evidence")
+        corrected["missing_mappings"] = retained
+
+    if not str(corrected.get("applicability_note", "")).strip():
+        corrected["applicability_note"] = (
+            "No additional applicability condition could be determined from the evidence."
+        )
+        changes.append("Filled an empty applicability note")
+    if not str(corrected.get("challenge_comment", "")).strip():
+        corrected["challenge_comment"] = (
+            "No additional challenge can be supported by the retrieved evidence."
+        )
+        changes.append("Filled an empty challenge comment")
+    return corrected, changes
+
+
 def _validate_response(
     response: dict[str, Any],
     provisions: list[ProvisionRef],
@@ -129,8 +210,12 @@ def _validate_response(
     evidence_ids = {entry.evidence_id for entry in evidence}
 
     for review in reviews:
+        if not isinstance(review, dict):
+            raise ValueError("Each mapping review must be an object")
         if review.get("decision") not in MAPPING_DECISIONS:
             raise ValueError(f"Invalid mapping decision: {review.get('decision')}")
+        if not str(review.get("reason", "")).strip():
+            raise ValueError("Each mapping review must contain a reason")
         key = (
             str(review.get("instrument", "")).casefold(),
             str(review.get("provision", "")).casefold(),
@@ -157,6 +242,11 @@ def _validate_response(
     if not isinstance(missing_mappings, list):
         raise ValueError("missing_mappings must be a list")
     for mapping in missing_mappings:
+        if not isinstance(mapping, dict):
+            raise ValueError("Each missing mapping must be an object")
+        for field in ("instrument", "provision", "reason"):
+            if not str(mapping.get(field, "")).strip():
+                raise ValueError(f"Each missing mapping must contain {field}")
         cited = mapping.get("evidence_ids", [])
         if not isinstance(cited, list):
             raise ValueError("evidence_ids must be a list")
@@ -168,8 +258,8 @@ def _validate_response(
     if response["overall_assessment"] not in OVERALL_DECISIONS:
         raise ValueError("Invalid overall_assessment")
     for field in ("applicability_note", "challenge_comment"):
-        if not isinstance(response[field], str):
-            raise ValueError(f"{field} must be text")
+        if not isinstance(response[field], str) or not response[field].strip():
+            raise ValueError(f"{field} must be non-empty text")
 
 
 def run_review(
@@ -195,13 +285,38 @@ def run_review(
     retrieved.extend(evidence_provider.retrieve(item, gap_query, None))
     evidence = _deduplicate(retrieved)
 
-    response = llm.generate_json(system_prompt, _user_prompt(item, provisions, evidence))
-    _validate_response(
-        response,
-        provisions,
-        evidence,
-        require_retrieved_evidence=True,
-    )
+    user_prompt = _user_prompt(item, provisions, evidence)
+    response = llm.generate_json(system_prompt, user_prompt)
+    raw_attempts = [response]
+    guardrail_changes: list[str] = []
+    try:
+        _validate_response(
+            response,
+            provisions,
+            evidence,
+            require_retrieved_evidence=True,
+        )
+    except ValueError as error:
+        response = llm.generate_json(
+            system_prompt,
+            _repair_prompt(user_prompt, response, str(error)),
+        )
+        raw_attempts.append(response)
+        try:
+            _validate_response(
+                response,
+                provisions,
+                evidence,
+                require_retrieved_evidence=True,
+            )
+        except ValueError:
+            response, guardrail_changes = _apply_evidence_guardrail(response, evidence)
+            _validate_response(
+                response,
+                provisions,
+                evidence,
+                require_retrieved_evidence=True,
+            )
     return ReviewRun(
         item=item,
         method=(
@@ -217,9 +332,11 @@ def run_review(
         queries=queries,
         evidence=evidence,
         response=response,
+        raw_attempts=raw_attempts,
+        guardrail_changes=guardrail_changes,
         elapsed_seconds=round(time.perf_counter() - started, 3),
         eligible_for_experiment=eligible_for_experiment,
-        prompt_version="agent-review-v0.1",
+        prompt_version="agent-review-v0.2",
     )
 
 
@@ -251,9 +368,11 @@ def run_llm_only(
         queries=[],
         evidence=[],
         response=response,
+        raw_attempts=[response],
+        guardrail_changes=[],
         elapsed_seconds=round(time.perf_counter() - started, 3),
         eligible_for_experiment=eligible_for_experiment,
-        prompt_version="llm-only-v0.1",
+        prompt_version="llm-only-v0.2",
     )
 
 
@@ -266,11 +385,13 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
         "method": run.method,
         "evidence_provider": run.provider,
         "evidence_provider_details": run.provider_details,
-        "workflow_version": "0.1",
+        "workflow_version": "0.3",
         "prompt_version": run.prompt_version,
         "model": run.model,
         "model_settings": run.model_settings,
         "elapsed_seconds": run.elapsed_seconds,
+        "model_attempts": len(run.raw_attempts),
+        "guardrail_changes": run.guardrail_changes,
         "eligible_for_experiment": run.eligible_for_experiment,
         "queries": run.queries,
         "item": run.item.as_dict(),
@@ -291,6 +412,11 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
     (output / "raw_response.json").write_text(
         json.dumps(run.response, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    if len(run.raw_attempts) > 1:
+        (output / "raw_attempts.json").write_text(
+            json.dumps(run.raw_attempts, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
 
     with (output / "mapping_reviews.csv").open("w", newline="", encoding="utf-8") as handle:
         fields = [

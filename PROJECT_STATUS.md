@@ -44,17 +44,18 @@ must be frozen before formal experiment runs.
 - implemented a same-model LLM-only runner and a batch runner for both AI
   methods;
 - documented the complete experiment procedure and the separate AI Act corpus
-  work.
+  work;
+- completed real DORA end-to-end development runs with the configured external
+  model for DORA-15 and the compound mapping in DORA-18;
+- added exact-provision retrieval, one auditable correction retry and a final
+  evidence guardrail for uncited claims.
 
 ## Waiting for input
 
 - EU AI Act corpus in the Regulatory RAG project;
-- explicit approval before sending real experiment rows and retrieved legal
-  passages to the configured external model during development.
 
 ## Next steps
 
 1. Add and validate an AI Act corpus in the separate RAG project.
-2. Complete one real DORA end-to-end development run after data-transfer
-   approval.
+2. Check AI Act retrieval through the Agent.
 3. Run the four-item pilot before freezing the experiment.

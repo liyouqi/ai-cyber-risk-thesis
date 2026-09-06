@@ -40,6 +40,29 @@ class FakeLlmOnly(FakeLlm):
         return response
 
 
+class RepairingFakeLlm(FakeLlm):
+    def __init__(self) -> None:
+        self.calls = 0
+
+    def generate_json(self, system_prompt: str, user_prompt: str) -> dict[str, object]:
+        self.calls += 1
+        response = super().generate_json(system_prompt, user_prompt)
+        if self.calls == 1:
+            response["mapping_reviews"][0]["evidence_ids"] = []
+        return response
+
+
+class AlwaysUncitedFakeLlm(FakeLlm):
+    def __init__(self) -> None:
+        self.calls = 0
+
+    def generate_json(self, system_prompt: str, user_prompt: str) -> dict[str, object]:
+        self.calls += 1
+        response = super().generate_json(system_prompt, user_prompt)
+        response["mapping_reviews"][0]["evidence_ids"] = []
+        return response
+
+
 class WorkflowTest(unittest.TestCase):
     def test_replay_run_is_written_as_development_output(self) -> None:
         item = AssessmentItem(
@@ -100,6 +123,50 @@ class WorkflowTest(unittest.TestCase):
             output = write_run(run, Path(directory) / "run")
             self.assertFalse((output / "evidence.json").exists())
             self.assertTrue((output / "raw_response.json").exists())
+
+    def test_agent_preserves_one_correction_retry(self) -> None:
+        item = AssessmentItem(
+            item_id="DEV-01",
+            framework="Test",
+            instrument="Test Regulation",
+            domain="Access control",
+            control_statement="Keep an access review record.",
+            expected_evidence="Access review record",
+            applicability="Test organisations",
+            existing_mapping="Article 1",
+            source_row=1,
+        )
+        provider = ReplayEvidenceProvider(ROOT / "agent/tests/fixtures/replay_evidence.json")
+        llm = RepairingFakeLlm()
+        run = run_review(item, provider, llm, "test prompt", eligible_for_experiment=False)
+        self.assertEqual(llm.calls, 2)
+        self.assertEqual(len(run.raw_attempts), 2)
+
+        with tempfile.TemporaryDirectory() as directory:
+            output = write_run(run, Path(directory) / "run")
+            self.assertTrue((output / "raw_attempts.json").exists())
+
+    def test_agent_downgrades_an_uncited_decision_after_retry(self) -> None:
+        item = AssessmentItem(
+            item_id="DEV-01",
+            framework="Test",
+            instrument="Test Regulation",
+            domain="Access control",
+            control_statement="Keep an access review record.",
+            expected_evidence="Access review record",
+            applicability="Test organisations",
+            existing_mapping="Article 1",
+            source_row=1,
+        )
+        provider = ReplayEvidenceProvider(ROOT / "agent/tests/fixtures/replay_evidence.json")
+        llm = AlwaysUncitedFakeLlm()
+        run = run_review(item, provider, llm, "test prompt", eligible_for_experiment=False)
+        self.assertEqual(llm.calls, 2)
+        self.assertEqual(
+            run.response["mapping_reviews"][0]["decision"],
+            "Unable to determine",
+        )
+        self.assertTrue(run.guardrail_changes)
 
 
 if __name__ == "__main__":

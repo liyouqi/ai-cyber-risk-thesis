@@ -125,16 +125,20 @@ The agent:
 
 1. parses the Assessment Item;
 2. separates the existing legal references;
-3. creates focused validation and gap-search questions;
-4. calls the public Regulatory RAG interface;
-5. links its conclusions to returned evidence IDs;
-6. flags insufficient evidence instead of filling gaps from model memory;
-7. produces the common review output.
+3. requests the cited provision directly where its evidence ID is available;
+4. creates focused validation and gap-search questions;
+5. calls the public Regulatory RAG interface;
+6. links its conclusions to returned evidence IDs;
+7. flags insufficient evidence instead of filling gaps from model memory;
+8. validates the output and makes at most one correction retry when the JSON or
+   evidence links are invalid;
+9. downgrades any remaining uncited conclusion to `Unable to determine`;
+10. produces the common review output.
 
 The first implementation makes one focused validation query per cited provision
-and one limited gap query per item. Changes to this behaviour must be tested in
-the pilot. Observable queries and evidence are saved; private model reasoning is
-not.
+and one limited gap query per item. Both model attempts are saved when the single
+correction retry is used. Changes to this behaviour must be tested in the pilot.
+Observable queries and evidence are saved; private model reasoning is not.
 
 ## 7. Experimental controls
 

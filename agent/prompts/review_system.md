@@ -33,4 +33,7 @@ Return one JSON object with these keys:
 ```
 
 List a missing mapping only when the supplied evidence materially supports it.
-Keep reasons and the challenge comment concise.
+Keep reasons and the challenge comment concise. The challenge comment must not
+be empty. If no challenge is needed, say that directly and identify what should
+be retained. If no additional applicability condition is identified, say so
+instead of merely repeating the instrument name.

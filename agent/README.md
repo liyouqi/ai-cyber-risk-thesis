@@ -32,6 +32,11 @@ tests the full workflow now; the public `RegulatoryRagEngine` adapter will suppl
 real evidence when the corpus is ready. Do not add a web application, database,
 multi-agent framework or autonomous remediation workflow.
 
+For an existing citation, the RAG adapter first obtains the exact provision when
+the corpus exposes its evidence ID, then adds ranked search results. This avoids
+losing a cited article merely because its wording does not rank for the control
+statement.
+
 ## Run the development version
 
 Install the short dependency list and put the private LLM settings in `.env`.
@@ -64,6 +69,12 @@ evidence arguments with:
 The command writes the run record, retrieved evidence, raw model response and
 the two common review CSV files. Replay runs are always marked as development
 outputs and cannot be marked as experiment runs.
+
+The Agent validates the returned JSON and evidence IDs. If validation fails, it
+makes one correction retry and saves both responses in `raw_attempts.json`.
+After that retry, any remaining uncited conclusion is deterministically changed
+to `Unable to determine` and recorded in `run.json`. LLM-only keeps a single
+attempt.
 
 Run one LLM-only item with the same configured model:
 

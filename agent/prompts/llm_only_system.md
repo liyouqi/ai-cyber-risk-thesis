@@ -36,4 +36,7 @@ Return one JSON object with these keys:
 ```
 
 List only material missing mappings. Keep reasons and the challenge comment
-concise.
+concise. The challenge comment must not be empty. If no challenge is needed, say
+that directly and identify what should be retained. If no additional
+applicability condition is known, say so instead of merely repeating the
+instrument name.

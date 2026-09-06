@@ -25,6 +25,16 @@ python -m unittest discover -s agent/tests -v
 `.env.example`。LLM-only 和 Agent 都读取 `PRIVATE_AI_MODEL`，因此不会因为手动打开
 另一个聊天产品而换成不同模型。
 
+当前本机的 RAG 配置应至少包含：
+
+```text
+REGULATORY_RAG_ROOT=/Users/dada/Developer/italy_proj/regulatory-rag
+REGULATORY_RAG_MODE=hybrid
+REGULATORY_RAG_TOP_K=10
+```
+
+AI Act 组合 profile 建好后，再增加下一节所列的 `REGULATORY_RAG_PROFILE`。
+
 ## 3. 唯一还缺的外部工作：AI Act RAG
 
 不要修改当前 DORA profile。应在只读的独立工程
@@ -162,6 +172,9 @@ python -m agent.batch \
 
 检查每条的 `evidence.json`、`raw_response.json`、`mapping_reviews.csv` 和
 `item_reviews.csv`，并记录人工修正时间。
+
+如果 Agent 使用了唯一一次自动修正重试，目录还会出现 `raw_attempts.json`，其中保留
+第一次和修正后的回答。不要删除第一次失败的记录。
 
 ## 6. Pilot 后冻结规则
 
