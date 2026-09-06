@@ -1,0 +1,2 @@
+item_id,framework,instrument,domain,control_statement,expected_evidence,applicability,existing_mapping,source_row
+DEV-01,Test,Test Regulation,Access control,Keep an access review record.,Access review record,Test organisations,Article 1,1

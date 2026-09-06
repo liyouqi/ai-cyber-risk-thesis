@@ -1,0 +1,18 @@
+{
+  "DEV-01": [
+    {
+      "evidence_id": "test-article-1",
+      "instrument": "Test Regulation",
+      "provision": "Article 1",
+      "text": "The organisation shall keep an access review record.",
+      "source": "local test fixture"
+    },
+    {
+      "evidence_id": "test-article-2",
+      "instrument": "Test Regulation",
+      "provision": "Article 2",
+      "text": "The organisation shall review access every year.",
+      "source": "local test fixture"
+    }
+  ]
+}

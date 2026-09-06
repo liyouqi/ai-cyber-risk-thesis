@@ -1,4 +1,4 @@
-# AI-Assisted Regulatory Mapping Review
+# AI-Assisted Cybersecurity Regulatory Mapping Review
 
 This repository contains the thesis experiment and a small review agent for
 checking whether control and risk statements are correctly mapped to regulatory
@@ -15,12 +15,19 @@ The experiment compares three ways of doing that work:
 2. review by an LLM without retrieved legal evidence;
 3. review by an agent using the separate Regulatory RAG project.
 
-Current source material is kept in `data/`. The AI Act workbook is available;
-the DORA workbook has not yet been added.
+Current source material is kept in `source_files/`. Candidate experiment datasets
+have been extracted from one AI Act workbook and one DORA workbook.
 
-The standard experiment dataset and output tables are under `experiments/`.
-Agent development is paused until the required regulatory corpus and the DORA
-source workbook are available.
+The standard experiment dataset and output tables are under `experiments/`. A
+small command-line agent is under `agent/`. It can be developed with replay
+evidence, but only runs made against a complete frozen regulatory corpus may be
+used as Agentic RAG experiment results.
 
-See `docs/EXPERIMENT_REQUIREMENTS.md` for the experiment definition and
+See `docs/EXPERIMENT_DESIGN.md` for the experiment definition and
 `agent/README.md` for the agent boundary.
+
+Run the local checks with:
+
+```bash
+python -m unittest discover -s agent/tests -v
+```

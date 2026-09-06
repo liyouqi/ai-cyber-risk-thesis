@@ -1,7 +1,7 @@
 # Review Agent
 
-Development is paused until the Regulatory RAG contains the required AI Act
-material and the DORA source workbook has been inspected.
+The first development version can run with replay evidence. The replay mode is
+for software testing only and is never counted as Agentic RAG experiment data.
 
 The intended agent has one job: review an existing mapping between an assessment
 item and regulatory provisions. It will read the same standard dataset used by
@@ -23,6 +23,40 @@ interface has been tested from the local `compliance-agent` Conda environment.
 The available DORA corpus is `dora-luxembourg-mvp-en` version `0.2.1`. It does
 not currently contain the EU AI Act.
 
-When development resumes, start with a direct Python adapter to the public
-`RegulatoryRagEngine`. Do not add a web application, database, multi-agent
-framework or autonomous remediation workflow.
+The implementation uses a replaceable evidence-provider boundary. Replay data
+tests the full workflow now; the public `RegulatoryRagEngine` adapter will supply
+real evidence when the corpus is ready. Do not add a web application, database,
+multi-agent framework or autonomous remediation workflow.
+
+## Run the development version
+
+Install the short dependency list and put the private LLM settings in `.env`.
+The file is ignored by Git.
+
+Run the tests:
+
+```bash
+python -m unittest discover -s agent/tests -v
+```
+
+Run one item with a replay evidence file:
+
+```bash
+python -m agent.main \
+  --input path/to/items.csv \
+  --item DEV-01 \
+  --evidence replay \
+  --evidence-file path/to/replay_evidence.json \
+  --output path/to/new_run_folder
+```
+
+For the real adapter, set `REGULATORY_RAG_ROOT` in `.env` and replace the
+evidence arguments with:
+
+```text
+--evidence rag
+```
+
+The command writes the run record, retrieved evidence, raw model response and
+the two common review CSV files. Replay runs are always marked as development
+outputs and cannot be marked as experiment runs.

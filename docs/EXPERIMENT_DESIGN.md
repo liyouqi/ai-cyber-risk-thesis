@@ -1,4 +1,9 @@
-# Experiment Requirements
+# Experiment Design
+
+Working thesis title:
+
+**AI-Assisted Cybersecurity Regulatory Mapping Review in Banking: A Comparative
+Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 
 Status: working draft. Freeze only after the pilot.
 
@@ -27,13 +32,17 @@ The intended frameworks are:
 
 Current material:
 
-- `data/AI_Tool_Onboarding_Risk_Assessment.xlsx`;
-- a DORA workbook to be added later.
+- `source_files/AI_Tool_Onboarding_Risk_Assessment.xlsx`;
+- `source_files/DORA KPI.xlsx`.
 
 The AI Act workbook contains several tables. The technical control checklist is
 the most suitable starting point because it has one consistent row per control.
-Final item selection and sample size will be decided after the DORA workbook is
-available. The earlier proposal of 20 items per framework is not yet fixed.
+The DORA workbook contributes 22 candidate quantitative requirements across the
+Level 1 Regulation and three Delegated Regulations. Together, the two workbooks
+provide 47 candidate items. The main dataset contains 20 items from each
+framework. The AI Act selection excludes the transparency and bias rows to keep
+the sample centred on cybersecurity and operational controls. The selection is
+purposeful rather than statistically representative.
 
 ## 4. Assessment item
 
@@ -43,15 +52,18 @@ kept:
 ```text
 Item ID
 Framework
+Instrument
 Domain
 Control or risk statement
 Expected control evidence (if present)
 Applicability (if present)
 Existing legal mapping
-Source sheet and row
+Source row
 ```
 
-Source sheet and row are provenance, not facts for legal reasoning.
+Instrument identifies the legal text in which an article is located. Source row
+is provenance, not a fact for legal reasoning; the extraction script identifies
+the source workbook and sheet.
 
 All three methods receive the same substantive item. They do not receive a
 reference answer or another method's output.
@@ -102,9 +114,11 @@ Record the sources used and the time to reach a complete review.
 
 ### LLM-only
 
-The model receives the Assessment Item and the common output instructions. It
-does not receive retrieved legal text and may not browse the web. Save the model
-configuration, raw output, generation time and human correction time.
+The model receives the Assessment Item and the common output instructions in a
+fresh chat. It does not receive retrieved legal text and may not browse or search
+the web. Save the first response, model configuration, generation time and human
+correction time. Where the chat product cannot use the same model as the Agent,
+record the difference as a limitation.
 
 ### Agentic RAG
 
@@ -118,9 +132,10 @@ The agent:
 6. flags insufficient evidence instead of filling gaps from model memory;
 7. produces the common review output.
 
-The exact retry and coverage behaviour will be decided during development and
-tested in the pilot. Observable queries and evidence are saved; private model
-reasoning is not.
+The first implementation makes one focused validation query per cited provision
+and one limited gap query per item. Changes to this behaviour must be tested in
+the pilot. Observable queries and evidence are saved; private model reasoning is
+not.
 
 ## 7. Experimental controls
 
@@ -132,16 +147,17 @@ reasoning is not.
 - Do not silently treat a missing corpus document as a retrieval failure.
 - Preserve raw AI outputs before human correction.
 
-## 8. Reference review
+## 8. Verified manual baseline
 
-Each selected item needs a careful reference review based on the official legal
-text. The reference records decisions for existing provisions, material missing
-provisions, applicability conditions and supporting passages.
+The completed Manual review is checked against the official legal text and then
+used as the practical scoring baseline. Each decision records its provision,
+official source and a short supporting passage. This avoids creating a fourth
+workflow that repeats the same work.
 
-The same researcher may create and score the reference set. This single-reviewer
-design will be stated as a limitation. To reduce avoidable bias, experiment
-outputs should be saved first and scored later without method labels where
-practical.
+The baseline is not treated as universal legal truth. If later checking shows
+that a baseline decision is wrong, record the correction and rescore all methods
+against the corrected decision. One researcher performs the review, so the
+thesis reports this as a limitation.
 
 ## 9. Measures
 
@@ -149,7 +165,7 @@ Keep the result table limited to measures that answer the research question:
 
 - time to reach an acceptable review;
 - accuracy of existing-mapping classifications;
-- precision and recall for material missing mappings, where a reference set
+- precision and recall for material missing mappings, where the manual baseline
   makes these measures possible;
 - citation support or citation errors;
 - unsupported legal claims;
@@ -161,8 +177,8 @@ combined quality score.
 
 ## 10. Pilot
 
-Run a small pilot before selecting the full dataset. The preferred pilot is two
-AI Act items and two DORA items, each reviewed by all three methods.
+Run TC05, TC20, DORA-15 and DORA-18 before the main experiment. Each is reviewed
+by all three methods.
 
 The pilot checks:
 
@@ -172,7 +188,8 @@ The pilot checks:
 - whether the output is useful to a second-line reviewer;
 - whether timing and scoring can be applied consistently.
 
-Pilot results should be excluded or rerun if the protocol changes materially.
+Pilot outputs are development records. Rerun the four items under the frozen
+protocol before including them in the main results.
 
 ## 11. Records to keep
 
@@ -196,12 +213,10 @@ large workflow platform is required.
 - both source workbooks have been inspected;
 - selected items and source scope are fixed;
 - the AI Act and DORA source texts required by those items are in the RAG;
-- the common output and reference-review procedure work in the pilot;
+- the common output and verified-manual procedure work in the pilot;
 - prompts, model settings, corpus versions and timing rules are frozen.
 
 ## 13. Known open decisions
 
-- final DORA item structure;
-- final sample size;
 - number of AI runs per item;
 - whether applicability and challenge quality receive ordinal scores.

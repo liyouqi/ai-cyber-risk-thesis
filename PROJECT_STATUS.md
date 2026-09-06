@@ -4,10 +4,15 @@ Updated: 2026-09-06
 
 ## Current thesis direction
 
+Working title:
+
+**AI-Assisted Cybersecurity Regulatory Mapping Review in Banking: A Comparative
+Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
+
 The thesis evaluates manual, LLM-only and Agentic RAG workflows for reviewing
-existing control-to-regulation mappings in a banking context. The intended use
-is second-line challenge and decision support, not automated legal or compliance
-approval.
+existing cybersecurity control-to-regulation mappings in a banking context. The
+intended use is second-line challenge and decision support, not automated legal
+or compliance approval.
 
 Primary frameworks:
 
@@ -16,7 +21,8 @@ Primary frameworks:
 
 ## Available material
 
-- `data/AI_Tool_Onboarding_Risk_Assessment.xlsx`
+- `source_files/AI_Tool_Onboarding_Risk_Assessment.xlsx`
+- `source_files/DORA KPI.xlsx`
 - a separate read-only Regulatory RAG project at
   `/Users/dada/Developer/italy_proj/regulatory-rag`
 
@@ -28,19 +34,20 @@ DORA corpus profile. Its current corpus does not contain the EU AI Act.
 - simplified the experiment protocol around mapping validation;
 - defined a common CSV input schema;
 - defined the same review tables for all three methods;
+- extracted 25 AI Act and 22 DORA candidate items;
+- selected a balanced 40-item main dataset and a four-item pilot;
 - verified the public RAG interface without modifying the RAG repository;
-- paused Agent development until the missing inputs are available.
+- implemented the first one-item Agent workflow with replaceable replay and RAG
+  evidence providers;
+- added strict output checks and a development-only replay test.
 
 ## Waiting for input
 
-- DORA mapping workbook;
 - EU AI Act corpus in the Regulatory RAG project;
-- final sample size and item selection after both source workbooks are known.
 
 ## Next steps
 
-1. Inspect the DORA workbook when it is added.
-2. Add and validate an AI Act corpus in the separate RAG project.
-3. Select the pilot items.
-4. Implement the Agent against the frozen input and output tables.
-5. Run a small pilot before freezing the experiment.
+1. Add and validate an AI Act corpus in the separate RAG project.
+2. Test real DORA retrieval through the Agent and adjust only clear workflow
+   failures.
+3. Run the four-item pilot before freezing the experiment.

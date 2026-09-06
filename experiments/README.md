@@ -9,6 +9,7 @@ All methods use the same CSV columns:
 ```text
 item_id
 framework
+instrument
 domain
 control_statement
 expected_evidence
@@ -17,10 +18,21 @@ existing_mapping
 source_row
 ```
 
-`datasets/ai_act/items.csv` is a candidate dataset extracted from the technical
-control checklist in the source workbook. It contains all 25 controls; the final
-sample has not been selected. The DORA dataset will be added only after its
-workbook is available and inspected.
+`datasets/candidates/ai_act.csv` contains 25 candidate controls from the AI Act
+workbook. `datasets/candidates/dora.csv` contains 22 candidate quantitative
+requirements from the DORA workbook.
+
+Keep the candidate files separate so their origin remains obvious. The selected
+rows are combined into one input file for each stage:
+
+```text
+datasets/pilot_items.csv
+datasets/items.csv
+```
+
+`pilot_items.csv` contains TC05, TC20, DORA-15 and DORA-18. `items.csv`
+contains 20 items from each framework. The pilot items remain part of the main
+sample, but they must be rerun after the protocol is frozen.
 
 ## Common output
 
@@ -33,6 +45,10 @@ The human reviewer fills these tables manually. The AI workflows produce the
 same fields, initially as raw output and then as reviewed CSV rows. Method-specific
 logs may differ, but the final review structure does not.
 
+Keep the completed output files separate by method. Combine only the evaluation
+results in `results/item_results.csv`; do not put Manual and AI answers in one
+working file while the experiment is running.
+
 ## Methods
 
 ```text
@@ -42,13 +58,13 @@ agentic_rag
 ```
 
 Do not create all run folders in advance. Add them when a pilot or main run is
-actually performed. Each run should contain only the copied input, the two output
-tables and a short run record. AI runs must also preserve the raw response.
+actually performed. Each run contains a run record and the two output tables.
+AI runs also preserve the raw response; Agentic RAG runs preserve the retrieved
+evidence.
 
 ## Before the pilot
 
-1. Add and inspect the DORA workbook.
-2. Add a validated AI Act corpus to the separate Regulatory RAG.
-3. Select a balanced set of AI Act and DORA items.
-4. Test how compound article references are split.
-5. Freeze the prompts, result labels and timing rules.
+1. Add a validated AI Act corpus to the separate Regulatory RAG.
+2. Test how compound article references are split.
+3. Run the four pilot items.
+4. Freeze the prompts, result labels and timing rules.

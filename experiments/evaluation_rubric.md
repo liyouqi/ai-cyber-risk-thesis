@@ -1,7 +1,7 @@
 # Evaluation
 
-Use the reference review to score all three methods. The same researcher may
-prepare the reference and score the outputs; this is reported as a limitation.
+Use the verified Manual review as the practical baseline. The same researcher
+performs and scores the reviews; this is reported as a limitation.
 
 ## Decisions
 
@@ -21,13 +21,15 @@ requirements.
 
 ### Existing mapping accuracy
 
-The share of existing provision decisions that match the reference decision.
-Report the counts as well as the percentage.
+For each AI method, report the share of existing provision decisions that match
+the verified Manual decision. Report the counts as well as the percentage.
+Manual is marked as the baseline rather than scored against itself.
 
 ### Missing mapping precision and recall
 
-Use these only when the reference review identifies a reasonably stable set of
-material omissions. A long list of remotely relevant articles is not rewarded.
+Use these only when the verified Manual review identifies a reasonably stable
+set of material omissions. A long list of remotely relevant articles is not
+rewarded.
 
 ### Evidence errors
 

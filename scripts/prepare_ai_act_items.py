@@ -8,8 +8,8 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 
-SOURCE = Path("data/AI_Tool_Onboarding_Risk_Assessment.xlsx")
-OUTPUT = Path("experiments/datasets/ai_act/items.csv")
+SOURCE = Path("source_files/AI_Tool_Onboarding_Risk_Assessment.xlsx")
+OUTPUT = Path("experiments/datasets/candidates/ai_act.csv")
 SHEET = "技术控制清单IT Control CheckList"
 HEADER_ROW = 4
 KNOWN_TRANSLATIONS = {
@@ -38,6 +38,7 @@ def main() -> None:
                 {
                     "item_id": item_id,
                     "framework": "EU AI Act",
+                    "instrument": "Regulation (EU) 2024/1689",
                     "domain": english(sheet.cell(row_number, 2).value),
                     "control_statement": english(sheet.cell(row_number, 3).value),
                     "expected_evidence": english(sheet.cell(row_number, 4).value),
@@ -51,7 +52,7 @@ def main() -> None:
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
