@@ -18,7 +18,7 @@ experiments/
 - `data/items.csv`：三种方法共同使用的 40 条输入。
 - `data/pilot_items.csv`：从 40 条中抽出的四条流程检查数据。
 - `outputs/manual/`：你以后慢慢填写的人工结果。
-- `outputs/`：程序真实产生的 AI 回答。DORA 已完成；AI Act 的临时检索路径已准备好。
+- `outputs/`：程序真实产生的 AI 回答。已有 DORA 结果是旧的嵌入式 RAG 运行记录。
 - `results/item_results.csv`：最后计算准确率、时间和论文图表的数据表。
 
 ## 2. 三种方法
@@ -33,21 +33,29 @@ LLM-only 和 Agentic RAG 使用 `.env` 中相同的 `PRIVATE_AI_MODEL`。三种�
 ## 3. 环境检查
 
 ```bash
-cd /Users/dada/Developer/italy_proj/ai-cyber-risk-thesis
+cd /Users/moni/Developer/ai-cyber-risk-thesis
 conda activate compliance-agent
 python -m pip install -r requirements.txt
 python -m unittest discover -s agent/tests -v
 ```
 
-`.env` 不得提交。DORA RAG 工程位于：
+`.env` 不得提交。Agentic RAG 只通过只读 HTTP API 访问 Regulatory RAG：
 
 ```text
-/Users/dada/Developer/italy_proj/regulatory-rag
+REGULATORY_RAG_API_URL=http://127.0.0.1:8080
+REGULATORY_RAG_API_KEY=仅在服务要求 Bearer 认证时填写
+REGULATORY_RAG_MODE=bm25
+REGULATORY_RAG_TOP_K=5
 ```
+
+可以复制仓库中的 `.env.example` 后填写；不要把真实密钥提交到 Git。
+
+论文工程不得 import `regulatory_rag`，也不得读取 RAG 工程的 data、release 或 indexes。
+程序启动时会检查 `GET /health` 和 `GET /api/v1/status`；任一检查失败即停止。
 
 ## 4. 当前已经完成的内容
 
-20 条 DORA 已经分别运行一次 LLM-only 和 Agentic RAG。正常查看时只打开：
+20 条 DORA 已经分别运行一次 LLM-only 和旧版嵌入式 Agentic RAG。正常查看时只打开：
 
 ```text
 experiments/outputs/llm_only/provision_checks.csv
@@ -57,6 +65,8 @@ experiments/outputs/agentic_rag/item_summary.csv
 ```
 
 每条的原始回答、参数和 RAG 证据在相应的 `records/` 中。不要手工修改原始回答。
+正式 HTTP 实验不要在旧目录中使用 `--resume`，否则会静默混合两种 provider。应使用新的
+输出目录完整运行 40 条 Agentic RAG，验收后再决定是否归档旧目录。
 
 `experiments/results/item_results.csv` 已经写入 DORA AI 运行的实际执行时间和实际提出的遗漏数量。
 需要人工判断才能确定的准确率、证据错误、无依据声明和人工修正时间保持为空。
@@ -83,50 +93,32 @@ experiments/outputs/manual/timing.csv
 
 Manual 可以晚于 AI 程序运行。关键不是运行顺序，而是人工核验时不要参考对应 AI 答案。
 
-## 6. AI Act 临时检索与最终 RAG
+## 6. Regulatory RAG HTTP 边界
 
-为了先完成流程，本工程保存了从 EUR-Lex 官方英文 HTML 抽取的 500 个法条段落：
+本工程保留的 `experiments/data/ai_act_legal_text.json` 只是早期流程准备数据，不再作为
+正式或临时检索后端。论文工程不实现 BM25、Vector、RRF、Parser 或法规切片。
 
-```text
-experiments/data/ai_act_legal_text.json
-```
-
-临时 Agent 使用简单、确定性的关键词排序。它是真实检索，不是让 LLM 编造法条；但它不等同于
-最终 Regulatory RAG。每次运行的 `run.json` 都会记录
-`evidence_provider: local-article-retrieval` 和 `provisional: true`，论文不能把它描述成外部
-RAG 的正式 AI Act corpus。
-
-最终论文实验如需统一检索实现，再执行下面的替换工作：
-
-不要修改现有 DORA corpus。需要在独立 RAG 工程中加入官方英文 Regulation (EU)
-2024/1689，并建立包含 DORA 和 AI Act 的论文 profile。
-
-建议标识：
+每个现有条款验证调用：
 
 ```text
-document_id: EU-2024-1689
-CELEX: 32024R1689
-ELI: http://data.europa.eu/eli/reg/2024/1689/oj
-parser_profile: eurlex_oj_html
+POST /api/v1/retrieve
+query_mode=direct
+timeout=30 seconds
 ```
 
-官方入口：`https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng`。
-
-在 Regulatory RAG 工程中：
-
-1. 下载并核对 EUR-Lex Official Journal 英文 PDF。
-2. 运行 `inventory_regulatory_corpus.py`，保存页数和 SHA-256。
-3. 在 documents catalog 中添加 AI Act 文档记录。
-4. 复制 DORA profile，建立 DORA + AI Act 的组合 profile。
-5. 运行 corpus validation、HTML/PDF 构建和 vector index 构建。
-6. 人工抽查 Articles 5、9–15、17、19–20、25–27、72–73。
-7. 在本工程 `.env` 设置：
+每个条目的遗漏条款检索调用：
 
 ```text
-REGULATORY_RAG_PROFILE=/absolute/path/to/thesis-dora-ai-act-en.json
+POST /api/v1/retrieve
+query_mode=planned
+timeout=120 seconds
 ```
 
-该工程不能由这里直接修改。完成后覆盖重跑 AI Act Agentic RAG；LLM-only 不需要重跑。
+AI Act 请求固定 scope 为 framework `ai_act`、document ID `EU-2024-1689`；DORA 请求按
+每条 mapping 的 instrument 固定 document ID。空结果记录为 `empty`，不会扩大 scope。
+服务错误、Planner 不可用或非 JSON 响应会明确终止运行。返回的 evidence ID、document ID、
+正文、条款位置、官方 URL、rank、score，以及 Planned 的 plan 和逐 claim coverage 都写入
+运行记录。
 
 ## 7. 补齐 AI Act 输出
 
@@ -147,22 +139,20 @@ Agentic RAG：
 python -m agent.batch \
   --method agentic-rag \
   --input experiments/data/items.csv \
-  --framework "EU AI Act" \
-  --output experiments/outputs/agentic_rag \
-  --local-corpus experiments/data/ai_act_legal_text.json \
-  --resume
+  --output experiments/outputs/agentic_rag_http
 ```
 
-上面是临时本地检索命令。最终 Regulatory RAG 准备好后，不传 `--local-corpus`，并在覆盖旧
-AI Act 记录后使用第 6 节所述 profile 重跑。
+这条命令对 40 条输入使用同一个 HTTP provider。若只做 AI Act 流程检查，可以临时添加
+`--framework "EU AI Act"`，但最终比较应在新的输出目录运行全部 40 条。
 
 完成后把客观运行数据同步到评分表：
 
 ```bash
-python scripts/update_results.py
+python scripts/update_results.py \
+  --agentic-rag-output experiments/outputs/agentic_rag_http
 ```
 
-`--resume` 只跳过已有完整记录的条目，因此不会重新调用已经完成的 DORA。
+`--resume` 只用于继续同一个 HTTP 批次，不要用它把 HTTP 结果写入旧的嵌入式结果目录。
 
 ## 8. 最后评分
 
@@ -191,10 +181,11 @@ python scripts/build_thesis_outputs.py
 ## 10. 最后检查
 
 - [x] 20 条 DORA 的 LLM-only 已运行。
-- [x] 20 条 DORA 的 Agentic RAG 已运行并保存证据。
+- [x] 20 条 DORA 的旧版嵌入式 Agentic RAG 已运行并保存证据。
 - [x] 120 行评分表已建立并写入现有客观数据。
 - [x] Manual 工作表已建立。
-- [ ] AI Act 已加入 RAG。
+- [ ] Regulatory RAG HTTP 健康检查、状态和认证已联通。
+- [ ] 40 条 HTTP Agentic RAG 已在独立输出目录运行。
 - [ ] 20 条 AI Act 的两种 AI 方法已运行。
 - [ ] Manual 和人工修正时间已填写。
 - [ ] 最终评分、论文表格和图表已生成。

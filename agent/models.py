@@ -52,10 +52,42 @@ class ProvisionRef:
 @dataclass(frozen=True)
 class Evidence:
     evidence_id: str
-    instrument: str
-    provision: str
+    document_id: str
     text: str
-    source: str
+    source_locator: str
+    source_url: str
+    rank: int | None = None
+    score: float | None = None
 
-    def as_dict(self) -> dict[str, str]:
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "Evidence":
+        """Load canonical HTTP evidence or a legacy development fixture."""
+        return cls(
+            evidence_id=str(data["evidence_id"]),
+            document_id=str(data.get("document_id", data.get("instrument", ""))),
+            text=str(data["text"]),
+            source_locator=str(
+                data.get("source_locator", data.get("provision", ""))
+            ),
+            source_url=str(data.get("source_url", data.get("source", ""))),
+            rank=(int(data["rank"]) if data.get("rank") is not None else None),
+            score=(float(data["score"]) if data.get("score") is not None else None),
+        )
+
+    @property
+    def instrument(self) -> str:
+        """Backward-compatible alias used by development replay filtering."""
+        return self.document_id
+
+    @property
+    def provision(self) -> str:
+        """Backward-compatible alias for source_locator."""
+        return self.source_locator
+
+    @property
+    def source(self) -> str:
+        """Backward-compatible alias for source_url."""
+        return self.source_url
+
+    def as_dict(self) -> dict[str, Any]:
         return asdict(self)

@@ -8,7 +8,7 @@ from pathlib import Path
 from dotenv import dotenv_values
 
 from agent.evidence import (
-    RegulatoryRagProvider,
+    HttpRegulatoryRagAdapter,
     ReplayEvidenceProvider,
 )
 from agent.llm import LlmConfig, OpenAiCompatibleLlm
@@ -24,11 +24,14 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--item", required=True, help="Assessment item ID")
     parser.add_argument("--output", required=True, help="New folder for run files")
     parser.add_argument("--env-file", default=str(ROOT / ".env"))
-    parser.add_argument("--evidence", choices=("replay", "rag"), default="replay")
+    parser.add_argument("--evidence", choices=("replay", "http"), default="replay")
     parser.add_argument("--evidence-file", help="Replay evidence JSON")
-    parser.add_argument("--rag-root", help="Path to the regulatory-rag project")
-    parser.add_argument("--rag-profile", help="Optional RAG corpus profile")
-    parser.add_argument("--rag-mode", choices=("bm25", "vector", "hybrid"))
+    parser.add_argument("--rag-api-url", help="Regulatory RAG HTTP service base URL")
+    parser.add_argument(
+        "--rag-mode",
+        choices=("bm25", "vector", "hybrid"),
+        help="Underlying retrieval mode used by both Direct and Planned queries",
+    )
     parser.add_argument("--rag-top-k", type=int)
     return parser
 
@@ -43,16 +46,15 @@ def main() -> None:
             raise SystemExit("--evidence-file is required with replay evidence")
         provider = ReplayEvidenceProvider(args.evidence_file)
     else:
-        rag_root = args.rag_root or env.get("REGULATORY_RAG_ROOT")
-        if not rag_root:
-            raise SystemExit("Set --rag-root or REGULATORY_RAG_ROOT")
-        rag_mode = args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "hybrid")
-        rag_top_k = args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8)
-        rag_profile = args.rag_profile or env.get("REGULATORY_RAG_PROFILE")
-        provider = RegulatoryRagProvider(
-            rag_root,
-            profile=rag_profile,
-            mode=rag_mode,
+        api_url = args.rag_api_url or env.get("REGULATORY_RAG_API_URL")
+        if not api_url:
+            raise SystemExit("Set --rag-api-url or REGULATORY_RAG_API_URL")
+        rag_mode = args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "bm25")
+        rag_top_k = args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 5)
+        provider = HttpRegulatoryRagAdapter(
+            str(api_url),
+            api_key=env.get("REGULATORY_RAG_API_KEY") or None,
+            retrieval_mode=rag_mode,
             top_k=rag_top_k,
         )
 

@@ -29,8 +29,9 @@ See `docs/EXPERIMENT_DESIGN.md` for the research design,
 reproducible Chapter 5 output definition are under `thesis_outputs/`.
 
 The Manual working files and the completed 20-item DORA outputs are under
-`experiments/`. AI Act runs remain pending until that corpus is available in the
-separate RAG project.
+`experiments/`. New Agentic RAG runs use the separate Regulatory RAG only through
+its read-only HTTP API. AI Act runs remain pending until that API is available
+with the required corpus and Planned retrieval enabled.
 
 Run the local checks with:
 

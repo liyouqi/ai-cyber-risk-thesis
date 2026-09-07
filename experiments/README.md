@@ -32,7 +32,7 @@ mappings. Blank cells mean that Manual scoring, human review time or AI Act runs
 are still missing. A numeric `0` means the completed run actually produced zero.
 
 LLM-only and Agentic RAG use the same model configured in `.env`. Their only
-substantive difference is whether retrieved legal evidence is supplied. DORA
-uses the separate Regulatory RAG. The first AI Act run uses a small local
-keyword retriever over official EUR-Lex paragraphs and is marked provisional in
-each `run.json`; it should be replaced when the final RAG corpus is available.
+substantive difference is whether retrieved legal evidence is supplied. New
+Agentic RAG runs use the separate Regulatory RAG only through its read-only HTTP
+API. The local AI Act extraction is historical preparation data and is not an
+experiment retrieval backend.

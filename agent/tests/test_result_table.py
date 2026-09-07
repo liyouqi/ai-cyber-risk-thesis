@@ -62,6 +62,42 @@ class ResultTableTest(unittest.TestCase):
             self.assertEqual(row["missing_mapping_proposed"], "0")
             self.assertEqual(row["existing_mapping_correct"], "")
 
+    def test_http_agentic_output_can_override_historical_folder(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            results = prepare_result_table(
+                ROOT / "experiments/data/pilot_items.csv",
+                root / "results.csv",
+            )
+            record = root / "agentic_rag_http/records/DORA-15"
+            record.mkdir(parents=True)
+            (record / "run.json").write_text(
+                json.dumps({"item_id": "DORA-15", "elapsed_seconds": 12}),
+                encoding="utf-8",
+            )
+            (record / "raw_response.json").write_text(
+                json.dumps({"missing_mappings": [{"provision": "Article 1"}]}),
+                encoding="utf-8",
+            )
+
+            self.assertEqual(
+                update_results(
+                    results,
+                    root / "outputs",
+                    agentic_rag_output=root / "agentic_rag_http",
+                ),
+                1,
+            )
+            with results.open(newline="", encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle))
+            row = next(
+                row
+                for row in rows
+                if row["item_id"] == "DORA-15" and row["method"] == "agentic_rag"
+            )
+            self.assertEqual(row["execution_time_min"], "0.200")
+            self.assertEqual(row["missing_mapping_proposed"], "1")
+
 
 if __name__ == "__main__":
     unittest.main()

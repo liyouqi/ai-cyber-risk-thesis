@@ -341,7 +341,11 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
     time_data = [values(rows, method, "total_time_min") for method in METHODS]
-    ax.boxplot(time_data, labels=[METHOD_LABELS[m] for m in METHODS], showmeans=True)
+    ax.boxplot(
+        time_data,
+        tick_labels=[METHOD_LABELS[m] for m in METHODS],
+        showmeans=True,
+    )
     ax.set_ylabel("Total review time (minutes)")
     ax.set_title("Review time by method")
     save(fig, figure_dir / "fig_5_1_review_time.svg")
@@ -400,7 +404,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     correction_data = [values(rows, method, "human_review_time_min") for method in AI_METHODS]
     ax.boxplot(
         correction_data,
-        labels=[METHOD_LABELS[m] for m in AI_METHODS],
+        tick_labels=[METHOD_LABELS[m] for m in AI_METHODS],
         showmeans=True,
     )
     ax.set_ylabel("Human correction time (minutes)")

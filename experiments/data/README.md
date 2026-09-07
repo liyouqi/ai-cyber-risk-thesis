@@ -31,8 +31,9 @@ python scripts/prepare_ai_act_items.py
 This is the complete candidate set, not the final selected sample.
 
 `ai_act_legal_text.json` contains 500 article-paragraph chunks extracted from
-the official EUR-Lex English HTML. It supports the provisional local retrieval
-run while AI Act is absent from the separate Regulatory RAG. The file records
+the official EUR-Lex English HTML. It is retained as historical preparation data
+and is not used by the formal Agentic RAG workflow, which calls the independent
+Regulatory RAG HTTP API. The file records
 the source URL and SHA-256 of the downloaded HTML.
 
 To rebuild it after downloading the official HTML:

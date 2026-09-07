@@ -274,11 +274,25 @@ def run_review(
 
     for provision in provisions:
         query = _query(item, provision)
-        queries.append({"purpose": "validate", "provision": provision.provision, "query": query})
+        queries.append(
+            {
+                "purpose": "validate",
+                "query_mode": "direct",
+                "provision": provision.provision,
+                "query": query,
+            }
+        )
         retrieved.extend(evidence_provider.retrieve(item, query, provision))
 
     gap_query = _query(item, None)
-    queries.append({"purpose": "gap", "provision": "", "query": gap_query})
+    queries.append(
+        {
+            "purpose": "gap",
+            "query_mode": "planned",
+            "provision": "",
+            "query": gap_query,
+        }
+    )
     retrieved.extend(evidence_provider.retrieve(item, gap_query, None))
     evidence = _deduplicate(retrieved)
 

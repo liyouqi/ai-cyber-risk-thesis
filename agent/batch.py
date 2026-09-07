@@ -8,7 +8,7 @@ from pathlib import Path
 
 from dotenv import dotenv_values
 
-from agent.evidence import LocalArticleProvider, RegulatoryRagProvider
+from agent.evidence import HttpRegulatoryRagAdapter
 from agent.llm import LlmConfig, OpenAiCompatibleLlm
 from agent.workflow import load_items, run_llm_only, run_review, write_run
 
@@ -47,14 +47,9 @@ def main() -> None:
         help="New folder containing one folder per item",
     )
     parser.add_argument("--env-file", default=str(ROOT / ".env"))
-    parser.add_argument("--rag-root", help="Path to the regulatory-rag project")
-    parser.add_argument("--rag-profile", help="Optional RAG corpus profile")
+    parser.add_argument("--rag-api-url", help="Regulatory RAG HTTP service base URL")
     parser.add_argument("--rag-mode", choices=("bm25", "vector", "hybrid"))
     parser.add_argument("--rag-top-k", type=int)
-    parser.add_argument(
-        "--local-corpus",
-        help="Use a small local legal-text corpus when the law is absent from Regulatory RAG",
-    )
     parser.add_argument(
         "--resume",
         action="store_true",
@@ -72,23 +67,17 @@ def main() -> None:
 
     provider = None
     if args.method == "agentic-rag":
-        if args.local_corpus:
-            provider = LocalArticleProvider(
-                args.local_corpus,
-                top_k=args.rag_top_k or 5,
-            )
-        else:
-            env = dotenv_values(args.env_file)
-            rag_root = args.rag_root or env.get("REGULATORY_RAG_ROOT")
-            if not rag_root:
-                raise SystemExit("Set --rag-root or REGULATORY_RAG_ROOT")
-            rag_profile = args.rag_profile or env.get("REGULATORY_RAG_PROFILE") or None
-            provider = RegulatoryRagProvider(
-                rag_root,
-                profile=rag_profile,
-                mode=args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "hybrid"),
-                top_k=args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8),
-            )
+        env = dotenv_values(args.env_file)
+        api_url = args.rag_api_url or env.get("REGULATORY_RAG_API_URL")
+        if not api_url:
+            raise SystemExit("Set --rag-api-url or REGULATORY_RAG_API_URL")
+        provider = HttpRegulatoryRagAdapter(
+            str(api_url),
+            api_key=env.get("REGULATORY_RAG_API_KEY") or None,
+            retrieval_mode=args.rag_mode
+            or str(env.get("REGULATORY_RAG_MODE") or "bm25"),
+            top_k=args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 5),
+        )
 
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=args.resume)

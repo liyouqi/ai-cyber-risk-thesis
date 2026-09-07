@@ -125,9 +125,10 @@ The agent:
 
 1. parses the Assessment Item;
 2. separates the existing legal references;
-3. requests the cited provision directly where its evidence ID is available;
+3. sends a Direct HTTP retrieval query for each cited provision;
 4. creates focused validation and gap-search questions;
-5. calls the public Regulatory RAG interface;
+5. calls the read-only Regulatory RAG HTTP interface, using Direct retrieval for
+   cited-provision validation and Planned retrieval for the gap search;
 6. links its conclusions to returned evidence IDs;
 7. flags insufficient evidence instead of filling gaps from model memory;
 8. validates the output and makes at most one correction retry when the JSON or
@@ -138,7 +139,10 @@ The agent:
 The first implementation makes one focused validation query per cited provision
 and one limited gap query per item. Both model attempts are saved when the single
 correction retry is used. Changes to this behaviour must be tested in the pilot.
-Observable queries and evidence are saved; private model reasoning is not.
+Observable queries, HTTP retrieval metadata, Planned retrieval plans, claim
+coverage and evidence are saved; private model reasoning is not. The thesis
+project does not import the RAG Python package or read its corpus and index
+artifacts.
 
 ## 7. Experimental controls
 

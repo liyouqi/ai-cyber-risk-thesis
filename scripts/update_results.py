@@ -14,7 +14,12 @@ METHOD_FOLDERS = {
 }
 
 
-def update_results(results_path: Path, outputs_dir: Path) -> int:
+def update_results(
+    results_path: Path,
+    outputs_dir: Path,
+    *,
+    agentic_rag_output: Path | None = None,
+) -> int:
     with results_path.open(newline="", encoding="utf-8-sig") as handle:
         reader = csv.DictReader(handle)
         fields = list(reader.fieldnames or [])
@@ -23,7 +28,12 @@ def update_results(results_path: Path, outputs_dir: Path) -> int:
 
     updated = 0
     for method, folder_name in METHOD_FOLDERS.items():
-        records = outputs_dir / folder_name / "records"
+        method_output = (
+            agentic_rag_output
+            if method == "agentic_rag" and agentic_rag_output is not None
+            else outputs_dir / folder_name
+        )
+        records = method_output / "records"
         if not records.exists():
             continue
         for folder in sorted(path for path in records.iterdir() if path.is_dir()):
@@ -52,8 +62,17 @@ def main() -> None:
         default=Path("experiments/results/item_results.csv"),
     )
     parser.add_argument("--outputs", type=Path, default=Path("experiments/outputs"))
+    parser.add_argument(
+        "--agentic-rag-output",
+        type=Path,
+        help="Optional HTTP Agentic RAG output folder to use instead of outputs/agentic_rag",
+    )
     args = parser.parse_args()
-    count = update_results(args.results, args.outputs)
+    count = update_results(
+        args.results,
+        args.outputs,
+        agentic_rag_output=args.agentic_rag_output,
+    )
     print(f"Updated {count} AI result rows in {args.results}")
 
 

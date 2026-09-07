@@ -7,10 +7,12 @@ for a small number of material omissions and writes a short summary.
 LLM-only uses the same configured model and output format without retrieval.
 Replay evidence exists only for automated software tests.
 
-The Regulatory RAG remains a separate read-only project. The current corpus is
-`dora-luxembourg-mvp-en` version `0.2.1`. While AI Act is absent from that
-project, `LocalArticleProvider` can retrieve paragraphs from the official
-EUR-Lex text. Its run metadata marks this source as provisional.
+The Regulatory RAG is an independent, read-only HTTP service. The Agent never
+imports its Python package and never reads its corpus, release or index files.
+At startup, `HttpRegulatoryRagAdapter` checks `/health` and `/api/v1/status`.
+Existing-provision validation uses Direct retrieval; the limited gap search uses
+Planned retrieval. Every run records the service status, retrieval metadata,
+evidence rank and score, and the Planned retrieval plan and claim coverage.
 
 ## Output
 
@@ -43,7 +45,15 @@ python -m agent.llm_only \
 ```
 
 Run a batch with `python -m agent.batch`. `--framework DORA` limits a run to the
-DORA rows, and `--resume` continues an interrupted output folder. For the
-temporary AI Act path, pass
-`--local-corpus experiments/data/ai_act_legal_text.json`. Exact commands are in
-`docs/EXPERIMENT_GUIDE.md`.
+DORA rows, and `--resume` continues an interrupted output folder. Configure the
+HTTP service in `.env`:
+
+```text
+REGULATORY_RAG_API_URL=http://127.0.0.1:8080
+REGULATORY_RAG_API_KEY=optional-bearer-key
+REGULATORY_RAG_MODE=bm25
+REGULATORY_RAG_TOP_K=5
+```
+
+The API key is optional only when the service deployment does not require
+authentication. Exact commands are in `docs/EXPERIMENT_GUIDE.md`.
