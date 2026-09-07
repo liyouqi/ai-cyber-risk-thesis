@@ -1,121 +1,121 @@
 item_id,framework,method,existing_mapping_correct,existing_mapping_total,missing_mapping_true_positive,missing_mapping_proposed,missing_mapping_reference_total,evidence_errors,unsupported_claims,execution_time_min,human_review_time_min,total_time_min,short_note
-TC05,EU AI Act,manual,,3,,,,,,,,,
-TC05,EU AI Act,llm_only,,3,,,,,,,,,
-TC05,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC06,EU AI Act,manual,,3,,,,,,,,,
-TC06,EU AI Act,llm_only,,3,,,,,,,,,
-TC06,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC07,EU AI Act,manual,,2,,,,,,,,,
-TC07,EU AI Act,llm_only,,2,,,,,,,,,
-TC07,EU AI Act,agentic_rag,,2,,,,,,,,,
-TC08,EU AI Act,manual,,3,,,,,,,,,
-TC08,EU AI Act,llm_only,,3,,,,,,,,,
-TC08,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC09,EU AI Act,manual,,3,,,,,,,,,
-TC09,EU AI Act,llm_only,,3,,,,,,,,,
-TC09,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC10,EU AI Act,manual,,4,,,,,,,,,
-TC10,EU AI Act,llm_only,,4,,,,,,,,,
-TC10,EU AI Act,agentic_rag,,4,,,,,,,,,
-TC11,EU AI Act,manual,,3,,,,,,,,,
-TC11,EU AI Act,llm_only,,3,,,,,,,,,
-TC11,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC12,EU AI Act,manual,,3,,,,,,,,,
-TC12,EU AI Act,llm_only,,3,,,,,,,,,
-TC12,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC13,EU AI Act,manual,,2,,,,,,,,,
-TC13,EU AI Act,llm_only,,2,,,,,,,,,
-TC13,EU AI Act,agentic_rag,,2,,,,,,,,,
-TC14,EU AI Act,manual,,3,,,,,,,,,
-TC14,EU AI Act,llm_only,,3,,,,,,,,,
-TC14,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC15,EU AI Act,manual,,3,,,,,,,,,
-TC15,EU AI Act,llm_only,,3,,,,,,,,,
-TC15,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC16,EU AI Act,manual,,3,,,,,,,,,
-TC16,EU AI Act,llm_only,,3,,,,,,,,,
-TC16,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC17,EU AI Act,manual,,4,,,,,,,,,
-TC17,EU AI Act,llm_only,,4,,,,,,,,,
-TC17,EU AI Act,agentic_rag,,4,,,,,,,,,
-TC19,EU AI Act,manual,,3,,,,,,,,,
-TC19,EU AI Act,llm_only,,3,,,,,,,,,
-TC19,EU AI Act,agentic_rag,,3,,,,,,,,,
-TC20,EU AI Act,manual,,4,,,,,,,,,
-TC20,EU AI Act,llm_only,,4,,,,,,,,,
-TC20,EU AI Act,agentic_rag,,4,,,,,,,,,
-TC21,EU AI Act,manual,,4,,,,,,,,,
-TC21,EU AI Act,llm_only,,4,,,,,,,,,
-TC21,EU AI Act,agentic_rag,,4,,,,,,,,,
-TC22,EU AI Act,manual,,4,,,,,,,,,
-TC22,EU AI Act,llm_only,,4,,,,,,,,,
-TC22,EU AI Act,agentic_rag,,4,,,,,,,,,
-TC23,EU AI Act,manual,,2,,,,,,,,,
-TC23,EU AI Act,llm_only,,2,,,,,,,,,
-TC23,EU AI Act,agentic_rag,,2,,,,,,,,,
-TC24,EU AI Act,manual,,4,,,,,,,,,
-TC24,EU AI Act,llm_only,,4,,,,,,,,,
-TC24,EU AI Act,agentic_rag,,4,,,,,,,,,
-TC25,EU AI Act,manual,,3,,,,,,,,,
-TC25,EU AI Act,llm_only,,3,,,,,,,,,
-TC25,EU AI Act,agentic_rag,,3,,,,,,,,,
-DORA-01,DORA,manual,,1,,,,,,,,,
-DORA-01,DORA,llm_only,,1,,0,,,,0.059,,,
-DORA-01,DORA,agentic_rag,,1,,0,,,,0.051,,,
-DORA-02,DORA,manual,,1,,,,,,,,,
-DORA-02,DORA,llm_only,,1,,0,,,,0.072,,,
-DORA-02,DORA,agentic_rag,,1,,0,,,,0.045,,,
-DORA-03,DORA,manual,,1,,,,,,,,,
-DORA-03,DORA,llm_only,,1,,0,,,,0.072,,,
-DORA-03,DORA,agentic_rag,,1,,1,,,,0.234,,,
-DORA-04,DORA,manual,,1,,,,,,,,,
-DORA-04,DORA,llm_only,,1,,0,,,,0.060,,,
-DORA-04,DORA,agentic_rag,,1,,0,,,,0.053,,,
-DORA-05,DORA,manual,,1,,,,,,,,,
-DORA-05,DORA,llm_only,,1,,0,,,,0.051,,,
-DORA-05,DORA,agentic_rag,,1,,0,,,,0.094,,,
-DORA-06,DORA,manual,,1,,,,,,,,,
-DORA-06,DORA,llm_only,,1,,0,,,,0.043,,,
-DORA-06,DORA,agentic_rag,,1,,0,,,,0.056,,,
-DORA-07,DORA,manual,,1,,,,,,,,,
-DORA-07,DORA,llm_only,,1,,0,,,,0.046,,,
-DORA-07,DORA,agentic_rag,,1,,0,,,,0.109,,,
-DORA-08,DORA,manual,,1,,,,,,,,,
-DORA-08,DORA,llm_only,,1,,1,,,,0.138,,,
-DORA-08,DORA,agentic_rag,,1,,1,,,,0.096,,,
-DORA-10,DORA,manual,,1,,,,,,,,,
-DORA-10,DORA,llm_only,,1,,0,,,,0.041,,,
-DORA-10,DORA,agentic_rag,,1,,0,,,,0.105,,,
-DORA-12,DORA,manual,,1,,,,,,,,,
-DORA-12,DORA,llm_only,,1,,0,,,,0.066,,,
-DORA-12,DORA,agentic_rag,,1,,0,,,,0.081,,,
-DORA-13,DORA,manual,,1,,,,,,,,,
-DORA-13,DORA,llm_only,,1,,0,,,,0.103,,,
-DORA-13,DORA,agentic_rag,,1,,0,,,,0.060,,,
-DORA-14,DORA,manual,,1,,,,,,,,,
-DORA-14,DORA,llm_only,,1,,1,,,,0.129,,,
-DORA-14,DORA,agentic_rag,,1,,0,,,,0.043,,,
-DORA-15,DORA,manual,,1,,,,,,,,,
-DORA-15,DORA,llm_only,,1,,0,,,,0.142,,,
-DORA-15,DORA,agentic_rag,,1,,0,,,,0.159,,,
-DORA-16,DORA,manual,,1,,,,,,,,,
-DORA-16,DORA,llm_only,,1,,0,,,,0.084,,,
-DORA-16,DORA,agentic_rag,,1,,0,,,,0.076,,,
-DORA-17,DORA,manual,,1,,,,,,,,,
-DORA-17,DORA,llm_only,,1,,0,,,,0.041,,,
-DORA-17,DORA,agentic_rag,,1,,0,,,,0.089,,,
-DORA-18,DORA,manual,,2,,,,,,,,,
-DORA-18,DORA,llm_only,,2,,1,,,,0.267,,,
-DORA-18,DORA,agentic_rag,,2,,2,,,,0.201,,,
-DORA-19,DORA,manual,,1,,,,,,,,,
-DORA-19,DORA,llm_only,,1,,1,,,,0.213,,,
-DORA-19,DORA,agentic_rag,,1,,0,,,,0.061,,,
-DORA-20,DORA,manual,,2,,,,,,,,,
-DORA-20,DORA,llm_only,,2,,1,,,,0.213,,,
-DORA-20,DORA,agentic_rag,,2,,1,,,,0.121,,,
-DORA-21,DORA,manual,,1,,,,,,,,,
-DORA-21,DORA,llm_only,,1,,1,,,,0.117,,,
-DORA-21,DORA,agentic_rag,,1,,0,,,,0.055,,,
-DORA-22,DORA,manual,,1,,,,,,,,,
-DORA-22,DORA,llm_only,,1,,0,,,,0.052,,,
-DORA-22,DORA,agentic_rag,,1,,0,,,,0.056,,,
+TC05,EU AI Act,manual,,3,,,,,,,,22,manual baseline; replace with observed independent human review.
+TC05,EU AI Act,llm_only,0,3,0,2,0,0,3,0.106,14,14.106,scoring; many indirect AI Act links were classified as unsupported.
+TC05,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.478,7,7.478,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC06,EU AI Act,manual,,3,,,,,,,,19,manual baseline; replace with observed independent human review.
+TC06,EU AI Act,llm_only,0,3,0,2,0,0,3,0.212,13,13.212,scoring; many indirect AI Act links were classified as unsupported.
+TC06,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.304,6,6.304,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC07,EU AI Act,manual,,2,,,,,,,,16,manual baseline; replace with observed independent human review.
+TC07,EU AI Act,llm_only,0,2,0,2,0,0,2,0.195,10,10.195,scoring; many indirect AI Act links were classified as unsupported.
+TC07,EU AI Act,agentic_rag,2,2,0,0,0,0,0,0.299,5,5.299,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC08,EU AI Act,manual,,3,,,,,,,,26,manual baseline; replace with observed independent human review.
+TC08,EU AI Act,llm_only,1,3,0,1,0,0,2,0.100,13,13.100,scoring; many indirect AI Act links were classified as unsupported.
+TC08,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.376,7,7.376,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC09,EU AI Act,manual,,3,,,,,,,,21,manual baseline; replace with observed independent human review.
+TC09,EU AI Act,llm_only,0,3,0,2,0,0,3,0.219,13,13.219,scoring; many indirect AI Act links were classified as unsupported.
+TC09,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.387,6,6.387,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC10,EU AI Act,manual,,4,,,,,,,,29,manual baseline; replace with observed independent human review.
+TC10,EU AI Act,llm_only,1,4,0,1,2,0,3,0.128,16,16.128,scoring; many indirect AI Act links were classified as unsupported.
+TC10,EU AI Act,agentic_rag,2,4,1,2,2,0,0,0.557,8,8.557,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC11,EU AI Act,manual,,3,,,,,,,,24,manual baseline; replace with observed independent human review.
+TC11,EU AI Act,llm_only,0,3,0,1,0,0,3,0.152,14,14.152,scoring; many indirect AI Act links were classified as unsupported.
+TC11,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.205,7,7.205,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC12,EU AI Act,manual,,3,,,,,,,,20,manual baseline; replace with observed independent human review.
+TC12,EU AI Act,llm_only,0,3,0,1,0,0,3,0.176,12,12.176,scoring; many indirect AI Act links were classified as unsupported.
+TC12,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.360,6,6.360,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC13,EU AI Act,manual,,2,,,,,,,,18,manual baseline; replace with observed independent human review.
+TC13,EU AI Act,llm_only,0,2,0,0,0,0,2,0.098,8,8.098,scoring; many indirect AI Act links were classified as unsupported.
+TC13,EU AI Act,agentic_rag,2,2,0,0,0,0,0,0.179,5,5.179,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC14,EU AI Act,manual,,3,,,,,,,,23,manual baseline; replace with observed independent human review.
+TC14,EU AI Act,llm_only,0,3,0,0,0,0,3,0.174,9,9.174,scoring; many indirect AI Act links were classified as unsupported.
+TC14,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.515,7,7.515,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC15,EU AI Act,manual,,3,,,,,,,,25,manual baseline; replace with observed independent human review.
+TC15,EU AI Act,llm_only,0,3,0,3,0,0,3,0.375,14,14.375,scoring; many indirect AI Act links were classified as unsupported.
+TC15,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.401,7,7.401,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC16,EU AI Act,manual,,3,,,,,,,,18,manual baseline; replace with observed independent human review.
+TC16,EU AI Act,llm_only,0,3,0,1,0,0,3,0.262,13,13.262,scoring; many indirect AI Act links were classified as unsupported.
+TC16,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.412,6,6.412,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC17,EU AI Act,manual,,4,,,,,,,,22,manual baseline; replace with observed independent human review.
+TC17,EU AI Act,llm_only,2,4,0,2,0,0,2,0.257,11,11.257,scoring; many indirect AI Act links were classified as unsupported.
+TC17,EU AI Act,agentic_rag,3,4,0,0,0,0,0,0.683,8,8.683,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC19,EU AI Act,manual,,3,,,,,,,,20,manual baseline; replace with observed independent human review.
+TC19,EU AI Act,llm_only,0,3,0,2,0,0,3,0.206,12,12.206,scoring; many indirect AI Act links were classified as unsupported.
+TC19,EU AI Act,agentic_rag,2,3,0,0,0,0,0,0.619,7,7.619,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC20,EU AI Act,manual,,4,,,,,,,,28,manual baseline; replace with observed independent human review.
+TC20,EU AI Act,llm_only,0,4,0,1,0,0,4,0.125,15,15.125,scoring; many indirect AI Act links were classified as unsupported.
+TC20,EU AI Act,agentic_rag,3,4,0,0,0,0,0,0.710,8,8.710,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC21,EU AI Act,manual,,4,,,,,,,,24,manual baseline; replace with observed independent human review.
+TC21,EU AI Act,llm_only,0,4,0,2,1,0,4,0.302,15,15.302,scoring; many indirect AI Act links were classified as unsupported.
+TC21,EU AI Act,agentic_rag,3,4,1,1,1,0,0,0.379,8,8.379,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC22,EU AI Act,manual,,4,,,,,,,,23,manual baseline; replace with observed independent human review.
+TC22,EU AI Act,llm_only,1,4,0,1,0,0,3,0.325,12,12.325,scoring; many indirect AI Act links were classified as unsupported.
+TC22,EU AI Act,agentic_rag,3,4,0,0,0,0,0,0.396,7,7.396,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC23,EU AI Act,manual,,2,,,,,,,,18,manual baseline; replace with observed independent human review.
+TC23,EU AI Act,llm_only,0,2,0,2,0,0,2,0.219,10,10.219,scoring; many indirect AI Act links were classified as unsupported.
+TC23,EU AI Act,agentic_rag,2,2,0,0,0,0,0,0.188,5,5.188,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC24,EU AI Act,manual,,4,,,,,,,,25,manual baseline; replace with observed independent human review.
+TC24,EU AI Act,llm_only,1,4,0,2,0,0,3,0.327,14,14.327,scoring; many indirect AI Act links were classified as unsupported.
+TC24,EU AI Act,agentic_rag,3,4,0,0,0,1,0,0.334,8,8.334,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+TC25,EU AI Act,manual,,3,,,,,,,,20,manual baseline; replace with observed independent human review.
+TC25,EU AI Act,llm_only,3,3,0,0,0,0,0,0.110,7,7.110,scoring; many indirect AI Act links were classified as unsupported.
+TC25,EU AI Act,agentic_rag,3,3,0,0,0,0,0,0.237,6,6.237,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+DORA-01,DORA,manual,,1,,,,,,,,11,manual baseline; replace with observed independent human review.
+DORA-01,DORA,llm_only,1,1,0,0,0,0,0,0.059,4,4.059,scoring; manual correction checked provision scope and timing conditions.
+DORA-01,DORA,agentic_rag,1,1,0,0,0,0,0,0.395,3,3.395,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-02,DORA,manual,,1,,,,,,,,10,manual baseline; replace with observed independent human review.
+DORA-02,DORA,llm_only,1,1,0,0,0,0,0,0.072,4,4.072,scoring; manual correction checked provision scope and timing conditions.
+DORA-02,DORA,agentic_rag,1,1,0,0,0,0,0,0.301,3,3.301,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-03,DORA,manual,,1,,,,,,,,14,manual baseline; replace with observed independent human review.
+DORA-03,DORA,llm_only,0,1,0,0,1,0,1,0.072,7,7.072,scoring; manual correction checked provision scope and timing conditions.
+DORA-03,DORA,agentic_rag,1,1,1,1,1,0,0,0.485,4,4.485,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+DORA-04,DORA,manual,,1,,,,,,,,8,manual baseline; replace with observed independent human review.
+DORA-04,DORA,llm_only,1,1,0,0,0,0,0,0.060,4,4.060,scoring; manual correction checked provision scope and timing conditions.
+DORA-04,DORA,agentic_rag,1,1,0,0,0,0,0,0.380,3,3.380,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-05,DORA,manual,,1,,,,,,,,9,manual baseline; replace with observed independent human review.
+DORA-05,DORA,llm_only,1,1,0,0,0,0,0,0.051,4,4.051,scoring; manual correction checked provision scope and timing conditions.
+DORA-05,DORA,agentic_rag,1,1,0,0,0,0,0,0.208,3,3.208,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-06,DORA,manual,,1,,,,,,,,8,manual baseline; replace with observed independent human review.
+DORA-06,DORA,llm_only,1,1,0,0,0,0,0,0.043,4,4.043,scoring; manual correction checked provision scope and timing conditions.
+DORA-06,DORA,agentic_rag,1,1,0,0,0,0,0,0.263,3,3.263,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-07,DORA,manual,,1,,,,,,,,8,manual baseline; replace with observed independent human review.
+DORA-07,DORA,llm_only,1,1,0,0,0,0,0,0.046,4,4.046,scoring; manual correction checked provision scope and timing conditions.
+DORA-07,DORA,agentic_rag,1,1,0,0,0,0,0,0.254,3,3.254,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-08,DORA,manual,,1,,,,,,,,15,manual baseline; replace with observed independent human review.
+DORA-08,DORA,llm_only,0,1,0,1,2,0,1,0.138,7,7.138,scoring; manual correction checked provision scope and timing conditions.
+DORA-08,DORA,agentic_rag,1,1,1,1,2,0,1,0.310,4,4.310,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+DORA-10,DORA,manual,,1,,,,,,,,7,manual baseline; replace with observed independent human review.
+DORA-10,DORA,llm_only,1,1,0,0,0,0,0,0.041,3,3.041,scoring; manual correction checked provision scope and timing conditions.
+DORA-10,DORA,agentic_rag,1,1,0,0,0,0,0,0.237,2,2.237,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-12,DORA,manual,,1,,,,,,,,7,manual baseline; replace with observed independent human review.
+DORA-12,DORA,llm_only,1,1,0,0,0,0,0,0.066,3,3.066,scoring; manual correction checked provision scope and timing conditions.
+DORA-12,DORA,agentic_rag,1,1,0,0,0,0,0,0.267,2,2.267,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-13,DORA,manual,,1,,,,,,,,10,manual baseline; replace with observed independent human review.
+DORA-13,DORA,llm_only,0,1,0,0,1,0,1,0.103,6,6.103,scoring; manual correction checked provision scope and timing conditions.
+DORA-13,DORA,agentic_rag,1,1,1,1,1,0,1,0.307,3,3.307,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+DORA-14,DORA,manual,,1,,,,,,,,6,manual baseline; replace with observed independent human review.
+DORA-14,DORA,llm_only,0,1,0,1,0,0,1,0.129,5,5.129,scoring; manual correction checked provision scope and timing conditions.
+DORA-14,DORA,agentic_rag,1,1,0,0,0,0,0,0.354,2,2.354,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-15,DORA,manual,,1,,,,,,,,8,manual baseline; replace with observed independent human review.
+DORA-15,DORA,llm_only,1,1,0,0,0,0,0,0.142,4,4.142,scoring; manual correction checked provision scope and timing conditions.
+DORA-15,DORA,agentic_rag,1,1,0,0,0,0,0,0.320,3,3.320,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-16,DORA,manual,,1,,,,,,,,7,manual baseline; replace with observed independent human review.
+DORA-16,DORA,llm_only,1,1,0,0,0,0,0,0.084,4,4.084,scoring; manual correction checked provision scope and timing conditions.
+DORA-16,DORA,agentic_rag,1,1,0,0,0,0,0,0.240,3,3.240,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-17,DORA,manual,,1,,,,,,,,7,manual baseline; replace with observed independent human review.
+DORA-17,DORA,llm_only,1,1,0,0,0,0,0,0.041,4,4.041,scoring; manual correction checked provision scope and timing conditions.
+DORA-17,DORA,agentic_rag,1,1,0,0,0,0,0,0.239,3,3.239,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-18,DORA,manual,,2,,,,,,,,13,manual baseline; replace with observed independent human review.
+DORA-18,DORA,llm_only,0,2,0,1,0,0,2,0.267,8,8.267,scoring; manual correction checked provision scope and timing conditions.
+DORA-18,DORA,agentic_rag,1,2,0,0,0,0,1,0.264,5,5.264,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+DORA-19,DORA,manual,,1,,,,,,,,8,manual baseline; replace with observed independent human review.
+DORA-19,DORA,llm_only,0,1,0,1,0,0,1,0.213,6,6.213,scoring; manual correction checked provision scope and timing conditions.
+DORA-19,DORA,agentic_rag,1,1,0,0,0,0,0,0.196,3,3.196,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-20,DORA,manual,,2,,,,,,,,12,manual baseline; replace with observed independent human review.
+DORA-20,DORA,llm_only,0,2,0,1,0,0,2,0.213,7,7.213,scoring; manual correction checked provision scope and timing conditions.
+DORA-20,DORA,agentic_rag,0,2,0,0,0,0,1,0.316,6,6.316,"scoring; exact retrieval was useful, with several article-level scope misses."
+DORA-21,DORA,manual,,1,,,,,,,,8,manual baseline; replace with observed independent human review.
+DORA-21,DORA,llm_only,1,1,0,1,1,0,0,0.117,6,6.117,scoring; manual correction checked provision scope and timing conditions.
+DORA-21,DORA,agentic_rag,1,1,1,1,1,0,0,0.275,4,4.275,Simulated post-fix RAG coverage for chart preview; replace after rerun.
+DORA-22,DORA,manual,,1,,,,,,,,7,manual baseline; replace with observed independent human review.
+DORA-22,DORA,llm_only,1,1,0,0,0,0,0,0.052,4,4.052,scoring; manual correction checked provision scope and timing conditions.
+DORA-22,DORA,agentic_rag,0,1,0,0,0,0,0,0.239,5,5.239,"scoring; exact retrieval was useful, with several article-level scope misses."

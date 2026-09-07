@@ -1,0 +1,36 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 14",
+      "decision": "Unsupported",
+      "reason": "Article 14 addresses the obligation for providers to establish a post-market monitoring system. It does not specifically mandate the availability of human review, rejection, stop, override, or escalation controls for AI systems.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(2)",
+      "decision": "Unsupported",
+      "reason": "Article 26(2) concerns the obligation for providers to establish a post-market monitoring system. It does not specifically mandate the availability of human review, rejection, stop, override, or escalation controls for AI systems.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(5)",
+      "decision": "Unsupported",
+      "reason": "Article 26(5) concerns the obligation for providers to establish a post-market monitoring system. It does not specifically mandate the availability of human review, rejection, stop, override, or escalation controls for AI systems.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 29",
+      "reason": "Article 29, which covers the obligations of users of high-risk AI systems, includes the requirement for users to have human oversight and the ability to intervene in the operation of the AI system.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to decision-impacting AI systems, which are a subset of high-risk AI systems under the EU AI Act.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The provided mapping to Articles 14, 26(2), and 26(5) is incorrect. These articles pertain to post-market monitoring, not the specific human oversight controls required by the control statement. The correct mapping should be to Article 29, which explicitly addresses the user's obligation for human oversight and intervention."
+}

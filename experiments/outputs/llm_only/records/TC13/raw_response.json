@@ -1,0 +1,22 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Supported",
+      "reason": "Article 9 requires AI systems to be resilient against security risks, including those that could compromise integrity or availability. Mitigating prompt injection and malicious files directly addresses this requirement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Supported",
+      "reason": "Article 15 mandates the implementation of appropriate security measures to prevent unauthorized access and manipulation of data. Mitigating retrieval bypass and indirect instructions is a key component of such security measures.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "The control statement is applicable to generative AI, RAG, or agent systems as specified.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping to Articles 9 and 15 is correct and should be retained."
+}

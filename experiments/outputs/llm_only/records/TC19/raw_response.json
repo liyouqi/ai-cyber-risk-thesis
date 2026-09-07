@@ -1,0 +1,42 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act pertains to the obligations of Distributors and Importers. It does not address the technical requirements for resilience, capacity, or fallback mechanisms.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unsupported",
+      "reason": "Article 15 of the EU AI Act outlines the obligations of Users. It does not contain provisions for the technical resilience, capacity, or fallback mechanisms of the AI system itself.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unsupported",
+      "reason": "Article 17 of the EU AI Act details the obligations of Providers of high-risk AI systems. While it mandates risk management, it does not specifically require the provision of capacity, redundancy, fail-safe, recovery, or manual fallback.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "reason": "The control statement requires technical provisions for resilience, which are not covered by the obligations of Users in Article 15.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "reason": "The control statement requires specific technical provisions for resilience, which are not explicitly mandated by the obligations of Providers in Article 17.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to high-risk AI systems under the 'Critical use' condition as defined in the EU AI Act.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The mapping is incorrect. The control statement requires specific technical provisions for resilience, which are not covered by the obligations of Distributors (Art. 9), Users (Art. 15), or Providers (Art. 17) as mapped. The correct mapping should be to the technical requirements for high-risk AI systems, which are detailed in Annex II of the regulation."
+}

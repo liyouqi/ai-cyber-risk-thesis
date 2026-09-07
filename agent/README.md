@@ -10,7 +10,9 @@ Replay evidence exists only for automated software tests.
 The Regulatory RAG is an independent, read-only HTTP service. The Agent never
 imports its Python package and never reads its corpus, release or index files.
 At startup, `HttpRegulatoryRagAdapter` checks `/health` and `/api/v1/status`.
-Existing-provision validation uses Direct retrieval; the limited gap search uses
+Existing-provision validation sends a canonical citation such as
+`AI Act Article 9` through Direct retrieval, which allows Regulatory RAG's own
+citation parser to resolve the official provision. The limited gap search uses
 Planned retrieval. Every run records the service status, retrieval metadata,
 evidence rank and score, and the Planned retrieval plan and claim coverage.
 

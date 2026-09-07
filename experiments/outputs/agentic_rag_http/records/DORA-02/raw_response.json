@@ -1,0 +1,18 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 11(6)",
+      "decision": "Supported",
+      "reason": "The evidence shows Article 11(6)(a) requires testing ICT business continuity and response/recovery plans at least yearly and after substantive changes to critical or important functions, which directly matches the control statement.",
+      "evidence_ids": [
+        "eu-2022-2554-article-11-6",
+        "eu-2022-2554-article-11-6-a"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability conditions identified beyond the instrument's scope.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge needed. The existing mapping to Article 11(6) is accurate and should be retained."
+}

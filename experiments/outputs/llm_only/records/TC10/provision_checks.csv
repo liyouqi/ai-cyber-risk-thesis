@@ -1,0 +1,5 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC10,Regulation (EU) 2024/1689,Article 10,Unsupported,"Article 10 addresses the quality of training data, not data retention or deletion.",,
+TC10,Regulation (EU) 2024/1689,Article 12,Unsupported,"Article 12 concerns the quality of training, validation, and testing data, not data retention or deletion.",,
+TC10,Regulation (EU) 2024/1689,Article 13,Unsupported,"Article 13 addresses documentation and record-keeping for data governance, not data retention or deletion.",,
+TC10,Regulation (EU) 2024/1689,Article 26(6),Unsupported,"Article 26(6) pertains to the deletion of personal data upon withdrawal of consent, not general data retention or deletion policies.",,

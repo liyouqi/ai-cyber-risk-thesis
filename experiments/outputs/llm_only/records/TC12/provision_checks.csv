@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC12,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 of the EU AI Act pertains to the obligations of users of high-risk AI systems, focusing on human oversight and input validation, not on network or API security controls.",,
+TC12,Regulation (EU) 2024/1689,Article 15,Unsupported,"Article 15 addresses the obligations of distributors of AI systems, which is unrelated to the technical control of allowlisting and least-privileged access for APIs and connections.",,
+TC12,Regulation (EU) 2024/1689,Article 17,Unsupported,"Article 17 outlines the obligations of importers of AI systems, which does not cover the specific technical security measures for APIs and outbound connections.",,

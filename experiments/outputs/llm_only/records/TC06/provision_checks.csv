@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC06,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 of the EU AI Act pertains to the classification of AI systems and their risk levels. It does not address the segregation of administrative, model, or security configuration privileges.",,
+TC06,Regulation (EU) 2024/1689,Article 15,Unsupported,Article 15 of the EU AI Act focuses on the obligations of high-risk AI system providers regarding data governance and quality. It does not cover the segregation of privileges.,,
+TC06,Regulation (EU) 2024/1689,Article 17,Unsupported,"Article 17 of the EU AI Act outlines the requirements for high-risk AI systems to ensure robustness and accuracy. It does not mandate the segregation of administrative, model, or security configuration privileges.",,

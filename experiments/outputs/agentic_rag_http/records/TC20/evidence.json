@@ -1,0 +1,155 @@
+[
+  {
+    "evidence_id": "eu:32024R1689:article:110:subparagraph:1:point:68",
+    "document_id": "EU-2024-1689",
+    "text": "(68) Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (OJ L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj)..",
+    "source_locator": "Article 110(68)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 25.182535
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:2",
+    "document_id": "EU-2024-1689",
+    "text": "2. The report referred to in paragraph 1 shall be made immediately after the provider has established a causal link between the AI system and the serious incident or the reasonable likelihood of such a link, and, in any event, not later than 15 days after the provider or, where applicable, the deployer, becomes aware of the serious incident. The period for the reporting referred to in the first subparagraph shall take account of the severity of the serious incident.",
+    "source_locator": "Article 73(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 22.003781
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:107:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 5 of Regulation (EU) 2018/858 the following paragraph is added: When adopting delegated acts pursuant to paragraph 3 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 107, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 20.818733
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:109:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 11 of Regulation (EU) 2019/2144, the following paragraph is added: When adopting the implementing acts pursuant to paragraph 2, concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 109, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 20.701247
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:10",
+    "document_id": "EU-2024-1689",
+    "text": "10. For high-risk AI systems which are safety components of devices, or are themselves devices, covered by Regulations (EU) 2017/745 and (EU) 2017/746, the notification of serious incidents shall be limited to those referred to in Article 3, point (49)(c) of this Regulation, and shall be made to the national competent authority chosen for that purpose by the Member States where the incident occurred.",
+    "source_locator": "Article 73(10)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 20.496424
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:110:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Annex I to Directive (EU) 2020/1828 of the European Parliament and of the Council, the following point is added:",
+    "source_locator": "Article 110, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 6,
+    "score": 25.182535
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. Notwithstanding paragraph 2 of this Article, in the event of a widespread infringement or a serious incident as defined in Article 3, point (49)(b), the report referred to in paragraph 1 of this Article shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident.",
+    "source_locator": "Article 73(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 7,
+    "score": 22.003781
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:6",
+    "document_id": "EU-2024-1689",
+    "text": "6. Following the reporting of a serious incident pursuant to paragraph 1, the provider shall, without delay, perform the necessary investigations in relation to the serious incident and the AI system concerned. This shall include a risk assessment of the incident, and corrective action. The provider shall cooperate with the competent authorities, and where relevant with the notified body concerned, during the investigations referred to in the first subparagraph, and shall not perform any investigation which involves altering the AI system concerned in a way which may affect any subsequent evaluation of the causes of the incident, prior to informing the competent authorities of such action.",
+    "source_locator": "Article 73(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 8,
+    "score": 22.003781
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:7",
+    "document_id": "EU-2024-1689",
+    "text": "7. Upon receiving a notification related to a serious incident referred to in Article 3, point (49)(c), the relevant market surveillance authority shall inform the national public authorities or bodies referred to in Article 77(1). The Commission shall develop dedicated guidance to facilitate compliance with the obligations set out in paragraph 1 of this Article. That guidance shall be issued by 2 August 2025, and shall be assessed regularly.",
+    "source_locator": "Article 73(7)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 9,
+    "score": 22.003781
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:8",
+    "document_id": "EU-2024-1689",
+    "text": "8. The market surveillance authority shall take appropriate measures, as provided for in Article 19 of Regulation (EU) 2019/1020, within seven days from the date it received the notification referred to in paragraph 1 of this Article, and shall follow the notification procedures as provided in that Regulation.",
+    "source_locator": "Article 73(8)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 10,
+    "score": 22.003781
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:103:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 17(5) of Regulation (EU) No 167/2013, the following subparagraph is added: When adopting delegated acts pursuant to the first subparagraph concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 103, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 25.087926
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:1",
+    "document_id": "EU-2024-1689",
+    "text": "(1) in Article 17, the following paragraph is added: Without prejudice to paragraph 2, when adopting implementing acts pursuant to paragraph 1 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 108(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 24.219934
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:73:paragraph:11",
+    "document_id": "EU-2024-1689",
+    "text": "11. National competent authorities shall immediately notify the Commission of any serious incident, whether or not they have taken action on it, in accordance with Article 20 of Regulation (EU) 2019/1020.",
+    "source_locator": "Article 73(11)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 25.250434
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:66:subparagraph:1:point:e:subpoint:ii",
+    "document_id": "EU-2024-1689",
+    "text": "(ii) the evaluation and review of this Regulation pursuant to Article 112, including as regards the serious incident reports referred to in Article 73, and the functioning of the EU database referred to in Article 71, the preparation of the delegated or implementing acts, and as regards possible alignments of this Regulation with the Union harmonisation legislation listed in Annex I;",
+    "source_locator": "Article 66(e)(ii)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 26.143259
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:17:paragraph:1:point:i",
+    "document_id": "EU-2024-1689",
+    "text": "(i) procedures related to the reporting of a serious incident in accordance with Article 73;",
+    "source_locator": "Article 17(1)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 24.831151
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:66:subparagraph:1:point:e",
+    "document_id": "EU-2024-1689",
+    "text": "(e) at the request of the Commission or on its own initiative, issue recommendations and written opinions on any relevant matters related to the implementation of this Regulation and to its consistent and effective application, including:",
+    "source_locator": "Article 66(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 6,
+    "score": 26.143259
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:106:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 5 of Directive (EU) 2016/797, the following paragraph is added: When adopting delegated acts pursuant to paragraph 1 and implementing acts pursuant to paragraph 11 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 106, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

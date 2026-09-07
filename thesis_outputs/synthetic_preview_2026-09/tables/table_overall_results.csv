@@ -1,0 +1,4 @@
+method,items,mean_total_time_min,median_total_time_min,mapping_accuracy,missing_precision,missing_recall,missing_f1,evidence_errors_per_item,unsupported_claims_per_item,mean_human_review_time_min
+Manual,40,15.600,15.500,,,,,,,
+LLM-only,40,8.727,7.655,0.259,0.000,0.000,0.000,0.000,1.575,8.575
+Agentic RAG,40,5.372,5.252,0.753,0.857,0.750,0.800,0.025,0.100,5.025

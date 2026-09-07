@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 11",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 11 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 13 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 17 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The provided evidence consists of amending articles and recitals from the EU AI Act, not the substantive articles (11, 13, 17) that are being reviewed. The text of the relevant articles is missing, which is essential for determining the mapping."
+}

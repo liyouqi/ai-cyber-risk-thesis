@@ -1,0 +1,137 @@
+[
+  {
+    "evidence_id": "eu:32024R1689:article:110:subparagraph:1:point:68",
+    "document_id": "EU-2024-1689",
+    "text": "(68) Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (OJ L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj)..",
+    "source_locator": "Article 110(68)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 24.244602
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:39",
+    "document_id": "EU-2024-1689",
+    "text": "Any processing of biometric data and other personal data involved in the use of AI systems for biometric identification, other than in connection to the use of real-time remote biometric identification systems in publicly accessible spaces for the purpose of law enforcement as regulated by this Regulation, should continue to comply with all requirements resulting from Article 10 of Directive (EU) 2016/680. For purposes other than law enforcement, Article 9(1) of Regulation (EU) 2016/679 and Article 10(1) of Regulation (EU) 2018/1725 prohibit the processing of biometric data subject to limited exceptions as provided in those Articles. In the application of Article 9(1) of Regulation (EU) 2016/679, the use of remote biometric identification for purposes other than law enforcement has already been subject to prohibition decisions by national data protection authorities.",
+    "source_locator": "Recital 39",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 22.709408
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:3",
+    "document_id": "EU-2024-1689",
+    "text": "(3) in Article 43, the following paragraph is added: When adopting implementing acts pursuant to paragraph 1 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account. ;",
+    "source_locator": "Article 108(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 22.142263
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:107:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 5 of Regulation (EU) 2018/858 the following paragraph is added: When adopting delegated acts pursuant to paragraph 3 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 107, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 22.131532
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:109:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 11 of Regulation (EU) 2019/2144, the following paragraph is added: When adopting the implementing acts pursuant to paragraph 2, concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 109, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 22.00521
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:110:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Annex I to Directive (EU) 2020/1828 of the European Parliament and of the Council, the following point is added:",
+    "source_locator": "Article 110, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 6,
+    "score": 24.244602
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:1",
+    "document_id": "EU-2024-1689",
+    "text": "The purpose of this Regulation is to improve the functioning of the internal market by laying down a uniform legal framework in particular for the development, the placing on the market, the putting into service and the use of artificial intelligence systems (AI systems) in the Union, in accordance with Union values, to promote the uptake of human centric and trustworthy artificial intelligence (AI) while ensuring a high level of protection of health, safety, fundamental rights as enshrined in the Charter of Fundamental Rights of the European Union (the Charter), including democracy, the rule of law and environmental protection, to protect against the harmful effects of AI systems in the Union, and to support innovation. This Regulation ensures the free movement, cross-border, of AI-based goods and services, thus preventing Member States from imposing restrictions on the development, marketing and use of AI systems, unless explicitly authorised by this Regulation.",
+    "source_locator": "Recital 1",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 7,
+    "score": 22.709408
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:4",
+    "document_id": "EU-2024-1689",
+    "text": "AI is a fast evolving family of technologies that contributes to a wide array of economic, environmental and societal benefits across the entire spectrum of industries and social activities. By improving prediction, optimising operations and resource allocation, and personalising digital solutions available for individuals and organisations, the use of AI can provide key competitive advantages to undertakings and support socially and environmentally beneficial outcomes, for example in healthcare, agriculture, food safety, education and training, media, sports, culture, infrastructure management, energy, transport and logistics, public services, security, justice, resource and energy efficiency, environmental monitoring, the conservation and restoration of biodiversity and ecosystems and climate change mitigation and adaptation.",
+    "source_locator": "Recital 4",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 8,
+    "score": 22.709408
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:8",
+    "document_id": "EU-2024-1689",
+    "text": "A Union legal framework laying down harmonised rules on AI is therefore needed to foster the development, use and uptake of AI in the internal market that at the same time meets a high level of protection of public interests, such as health and safety and the protection of fundamental rights, including democracy, the rule of law and environmental protection as recognised and protected by Union law. To achieve that objective, rules regulating the placing on the market, the putting into service and the use of certain AI systems should be laid down, thus ensuring the smooth functioning of the internal market and allowing those systems to benefit from the principle of free movement of goods and services. Those rules should be clear and robust in protecting fundamental rights, supportive of new innovative solutions, enabling a European ecosystem of public and private actors creating AI systems in line with Union values and unlocking the potential of the digital transformation across all regions of the Union. By laying down those rules as well as measures in support of innovation with a particular focus on small and medium enterprises (SMEs), including startups, this Regulation supports the objective of promoting the European human-centric approach to AI and being a global leader in the development of secure, trustworthy and ethical AI as stated by the European Council, and it ensures the protection of ethical principles, as specifically requested by the European Parliament.",
+    "source_locator": "Recital 8",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 9,
+    "score": 22.709408
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:11",
+    "document_id": "EU-2024-1689",
+    "text": "This Regulation should be without prejudice to the provisions regarding the liability of providers of intermediary services as set out in Regulation (EU) 2022/2065 of the European Parliament and of the Council.",
+    "source_locator": "Recital 11",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 10,
+    "score": 22.709408
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:2",
+    "document_id": "EU-2024-1689",
+    "text": "(2) in Article 19, the following paragraph is added: When adopting delegated acts pursuant to paragraphs 1 and 2 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account. ;",
+    "source_locator": "Article 108(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 21.838101
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "Regulation (EU) 2018/1139 is amended as follows:",
+    "source_locator": "Article 108, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 7,
+    "score": 22.142263
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:4",
+    "document_id": "EU-2024-1689",
+    "text": "(4) in Article 47, the following paragraph is added: When adopting delegated acts pursuant to paragraphs 1 and 2 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account. ;",
+    "source_locator": "Article 108(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 24.36771
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:102:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 4(3) of Regulation (EC) No 300/2008, the following subparagraph is added: When adopting detailed measures related to technical specifications and procedures for approval and use of security equipment concerning Artificial Intelligence systems within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 102, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 22.871374
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:6",
+    "document_id": "EU-2024-1689",
+    "text": "(6) in Article 58, the following paragraph is added: When adopting delegated acts pursuant to paragraphs 1 and 2 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account..",
+    "source_locator": "Article 108(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

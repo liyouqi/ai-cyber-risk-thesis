@@ -1,0 +1,47 @@
+[
+  {
+    "evidence_id": "eu-2022-2554-article-5-4",
+    "document_id": "EU-2022-2554",
+    "text": "4. Members of the management body of the financial entity shall actively keep up to date with sufficient knowledge and skills to understand and assess ICT risk and its impact on the operations of the financial entity, including by following specific training on a regular basis, commensurate to the ICT risk being managed.",
+    "source_locator": "Article 5(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-62-1-a",
+    "document_id": "EU-2022-2554",
+    "text": "(a) paragraph 4 is replaced by the following: ( *4 ) Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 ( OJ L 333, 27.12.2022, p. 1 ).’;\"",
+    "source_locator": "Article 62(1)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-1-1",
+    "document_id": "EU-2022-2554",
+    "text": "1. In order to achieve a high common level of digital operational resilience, this Regulation lays down uniform requirements concerning the security of network and information systems supporting the business processes of financial entities as follows:",
+    "source_locator": "Article 1(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-61-1",
+    "document_id": "EU-2022-2554",
+    "text": "(1) paragraph 1 is replaced by the following: ‘1. A CSD shall identify sources of operational risk, both internal and external, and minimise their impact also through the deployment of appropriate ICT tools, processes and policies set up and managed in accordance with Regulation (EU) 2022/2554 of the European Parliament and of the Council ( *3 ) , as well as through any other relevant appropriate tools, controls and procedures for other types of operational risk, including for all the securities settlement systems it operates. ( *3 ) Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 ( OJ L 333, 27.12.2022, p. 1 ).’;\"",
+    "source_locator": "Article 61(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-59-1",
+    "document_id": "EU-2022-2554",
+    "text": "(1) in Annex I, Section A, point 4, the first subparagraph is replaced by the following: ‘A credit rating agency shall have sound administrative and accounting procedures, internal control mechanisms, effective procedures for risk assessment, and effective control and safeguard arrangements for managing ICT systems in accordance with Regulation (EU) 2022/2554 of the European Parliament and of the Council ( *1 ) . ( *1 ) Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 ( OJ L 333, 27.12.2022, p. 1 ).’;\"",
+    "source_locator": "Article 59(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

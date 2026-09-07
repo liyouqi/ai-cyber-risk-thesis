@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 9, making it impossible to assess its relevance to the control statement on isolation.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 15, making it impossible to assess its relevance to the control statement on isolation.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 17, making it impossible to assess its relevance to the control statement on isolation.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The challenge is that the provided evidence consists of recitals and amending provisions that reference other regulations, but it does not include the substantive text of the articles (9, 15, 17) that are being mapped. To perform a review, the actual content of these articles is required."
+}

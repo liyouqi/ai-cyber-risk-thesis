@@ -1,0 +1,92 @@
+[
+  {
+    "evidence_id": "eu-2024-1773-article-3-1",
+    "document_id": "EU-2024-1773",
+    "text": "1. The management body shall review the policy at least once a year and update it where necessary. Changes made to the policy shall be implemented in a timely manner and as soon as it is possible within the relevant contractual arrangements. The financial entity shall document the planned timeline for the implementation.",
+    "source_locator": "Article 3(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 1,
+    "score": 11.715669
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-4-e",
+    "document_id": "EU-2024-1773",
+    "text": "(e) the documentation and record-keeping, taking into account the requirements with regard to the register of information laid down in Article 28(3) of Regulation (EU) 2022/2554;",
+    "source_locator": "Article 4(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 2,
+    "score": 10.711767
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-3-6-a",
+    "document_id": "EU-2024-1773",
+    "text": "(a) the ICT risk management framework referred to in Article 6 of Regulation (EU) 2022/2554;",
+    "source_locator": "Article 3(6)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 3,
+    "score": 10.433032
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-1",
+    "document_id": "EU-2024-1773",
+    "text": "1. The policy shall specify that the relevant contractual arrangement are to be in written form and are to include all the elements referred to in Article 30(2) and (3) of Regulation (EU) 2022/2554. The policy shall also include elements regarding requirements referred to in Article 1(1), point (a), of Regulation (EU) 2022/2554, as well as other relevant Union and national law as appropriate.",
+    "source_locator": "Article 8(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 4,
+    "score": 9.876625
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-3-6-b",
+    "document_id": "EU-2024-1773",
+    "text": "(b) the information security policy referred to in Article 9(4) of Regulation (EU) 2022/2554;",
+    "source_locator": "Article 3(6)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 5,
+    "score": 9.608709
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-4",
+    "document_id": "EU-2024-1773",
+    "text": "The policy shall specify the requirements, including the rules, the responsibilities and the processes, for each main phase of the lifecycle of the contractual arrangement, covering at least the following:",
+    "source_locator": "Article 4",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 6,
+    "score": 7.360814
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-3-2",
+    "document_id": "EU-2024-1773",
+    "text": "2. The policy shall establish or refer to a methodology for determining which ICT services support critical or important functions. The policy shall also specify when this assessment is to be conducted and reviewed.",
+    "source_locator": "Article 3(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 7,
+    "score": 7.557667
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-3-3",
+    "document_id": "EU-2024-1773",
+    "text": "3. The policy shall clearly assign the internal responsibilities for the approval, management, control, and documentation of relevant contractual arrangements and shall ensure that appropriate skills, experience and knowledge are maintained within the financial entity to effectively oversee the relevant contractual arrangements, including the ICT services provided under those arrangements.",
+    "source_locator": "Article 3(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 8,
+    "score": 11.715669
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-2",
+    "document_id": "EU-2024-1773",
+    "text": "Where this Regulation applies on a sub-consolidated or consolidated basis, the parent undertaking that is responsible for providing the consolidated or sub-consolidated financial statements for the group shall ensure that the policy is implemented consistently in all financial entities that are part of the group and is adequate for the effective application of this Regulation at all relevant levels of the group.",
+    "source_locator": "Article 2",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-5-2",
+    "document_id": "EU-2024-1773",
+    "text": "2. The policy shall require that a risk assessment is conducted at financial entity level and, where applicable, at consolidated and sub-consolidated level before a contractual arrangement is concluded. The risk assessment shall take into account all the relevant requirements laid down in Regulation (EU) 2022/2554 and applicable sectoral Union legislation. It shall consider, in particular, the impact of the provision of ICT services supporting critical or important functions by ICT third-party service providers on the financial entity and all the risks posed by the provision of those ICT services supporting critical or important functions by ICT third-party service providers, including the following:",
+    "source_locator": "Article 5(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

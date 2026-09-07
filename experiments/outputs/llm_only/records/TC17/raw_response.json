@@ -1,0 +1,49 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Supported",
+      "reason": "Article 9 requires high-risk AI systems to have appropriate data governance and management, which includes ensuring the quality and accuracy of the data used for training, validation, and testing. This supports the testing of accuracy.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Supported",
+      "reason": "Article 13 mandates the implementation of a quality management system, which includes processes for ensuring the accuracy and reliability of the AI system's outputs. This supports the testing of accuracy and limits.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Supported",
+      "reason": "Article 15 requires the AI system to be designed and developed with appropriate levels of accuracy, robustness, and cybersecurity. This supports the testing of accuracy and limits.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(5)",
+      "decision": "Unsupported",
+      "reason": "Article 26(5) pertains to the obligations of the provider regarding the conformity assessment and does not directly address the testing of accuracy, hallucination, repeatability, or limits.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 10",
+      "reason": "Article 10 specifically addresses the obligation to ensure the accuracy of the data used for training, validation, and testing, which is a key aspect of the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 14",
+      "reason": "Article 14 requires the AI system to be designed and developed with appropriate levels of accuracy, robustness, and cybersecurity, which includes testing for hallucination and repeatability.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to all systems as per the assessment item.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as it includes relevant articles but misses specific provisions that directly address the testing of accuracy, hallucination, and repeatability. Article 26(5) is incorrectly included as it does not relate to the testing of these aspects."
+}

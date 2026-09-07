@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC25,Regulation (EU) 2024/1689,Article 11,Supported,"Article 11 requires the technical documentation to include the architecture and design of the high-risk AI system, which aligns with the control statement's requirement for architecture documentation.",,
+TC25,Regulation (EU) 2024/1689,Article 13,Supported,"Article 13 mandates the documentation of the system's purpose, capabilities, and limitations, which directly corresponds to the control statement's requirements for purpose and limits documentation.",,
+TC25,Regulation (EU) 2024/1689,Article 17,Supported,"Article 17 requires the provider to establish a post-market monitoring system and maintain records, which includes the documentation of tests and controls as part of the system's lifecycle and risk management.",,

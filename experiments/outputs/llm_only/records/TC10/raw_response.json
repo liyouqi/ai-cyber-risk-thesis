@@ -1,0 +1,43 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 10",
+      "decision": "Unsupported",
+      "reason": "Article 10 addresses the quality of training data, not data retention or deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 12",
+      "decision": "Unsupported",
+      "reason": "Article 12 concerns the quality of training, validation, and testing data, not data retention or deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Unsupported",
+      "reason": "Article 13 addresses documentation and record-keeping for data governance, not data retention or deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(6)",
+      "decision": "Unsupported",
+      "reason": "Article 26(6) pertains to the deletion of personal data upon withdrawal of consent, not general data retention or deletion policies.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 68(1)(c)",
+      "reason": "This article requires providers to implement data governance measures, which would include retention and deletion policies for various data types.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to all AI systems under the EU AI Act.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings are incorrect as they relate to data quality and consent, not data retention and deletion. The correct mapping should be to Article 68(1)(c), which mandates data governance measures including retention and deletion policies."
+}

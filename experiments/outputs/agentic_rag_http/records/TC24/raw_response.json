@@ -1,0 +1,43 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The evidence provided defines special categories of personal data but does not address data export, access revocation, deletion, or system retirement.",
+      "evidence_ids": [
+        "eu:32024R1689:article:3:subparagraph:1:point:37"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unable to determine",
+      "reason": "The evidence provided amends Article 17 of another regulation but does not address data export, access revocation, deletion, or system retirement.",
+      "evidence_ids": [
+        "eu:32024R1689:article:103:subparagraph:1",
+        "eu:32024R1689:article:108:subparagraph:1:point:1"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(5)",
+      "decision": "Unable to determine",
+      "reason": "The evidence provided references Article 26(8) in the context of a data protection impact assessment but does not address data export, access revocation, deletion, or system retirement.",
+      "evidence_ids": [
+        "eu:32024R1689:annex:viii:annex-part:c:point:5"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 72",
+      "decision": "Unable to determine",
+      "reason": "No evidence was provided for Article 72.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The provided evidence does not contain the specific articles (9, 17, 26(5), 72) or their content. The evidence provided is either from recitals, other articles, or annexes that do not address the control statement's requirements for data export, access revocation, deletion, and system retirement. The assessment cannot be completed without the relevant article text."
+}

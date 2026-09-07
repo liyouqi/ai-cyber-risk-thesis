@@ -1,0 +1,29 @@
+{
+  "item_id": "TC16",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 15.694,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "TC16",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "Oversight",
+    "control_statement": "Are human review, rejection, stop, override and escalation available?",
+    "expected_evidence": "Workflow, stop control, RACI and exercise evidence",
+    "applicability": "Decision-impacting AI",
+    "existing_mapping": "Art. 14; Art. 26(2),(5)",
+    "source_row": 20
+  }
+}

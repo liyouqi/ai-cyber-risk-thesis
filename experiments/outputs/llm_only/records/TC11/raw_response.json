@@ -1,0 +1,36 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 10",
+      "decision": "Unsupported",
+      "reason": "Article 10 addresses the transparency obligations for providers of general-purpose AI models, such as publishing model cards and training data summaries. It does not address the exclusion of institutional data from training or enforceable opt-outs.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Unsupported",
+      "reason": "Article 13 outlines the obligations for providers of high-risk AI systems, including risk management, data governance, and technical documentation. It does not specifically address the exclusion of institutional data from training or enforceable opt-outs.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 25(4)",
+      "decision": "Unsupported",
+      "reason": "Article 25(4) concerns the obligation for providers of high-risk AI systems to ensure human oversight. It does not address the exclusion of institutional data from training or enforceable opt-outs.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 29(1)(b)",
+      "reason": "This article requires providers of high-risk AI systems to ensure that training, validation, and testing data sets are relevant, representative, and to the extent required by the intended purpose, complete and free of errors. It does not explicitly mandate the exclusion of institutional data or an opt-out mechanism, but it is the most relevant provision concerning data governance for training.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to third-party or cloud model providers as defined in the AI Act.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The provided mapping is incorrect. None of the cited articles (10, 13, 25(4)) address the specific requirement of excluding institutional data from training or providing an enforceable opt-out. The most relevant provision for data governance is Article 29, but it does not explicitly mandate an opt-out mechanism."
+}

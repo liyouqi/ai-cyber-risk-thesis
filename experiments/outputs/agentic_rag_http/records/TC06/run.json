@@ -1,0 +1,605 @@
+{
+  "item_id": "TC06",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag-http",
+  "evidence_provider_details": {
+    "api_url": "http://127.0.0.1:8080",
+    "health": {
+      "status": "ready"
+    },
+    "status": {
+      "schema_version": "1.0",
+      "corpus_id": "regulatory-en",
+      "corpus_version": "regulatory-core-20260907-r2",
+      "document_count": 45,
+      "chunk_count": 13017,
+      "supported_modes": [
+        "bm25",
+        "vector",
+        "hybrid"
+      ],
+      "bm25_index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+      "vector_index_version": "regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
+      "vector_index_available": true,
+      "supported_query_modes": [
+        "direct",
+        "planned"
+      ],
+      "planner_available": true
+    },
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "direct_timeout_seconds": 30.0,
+    "planned_timeout_seconds": 120.0,
+    "retrievals": [
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 26,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 18073,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "identify_provision_for_sso_mfa",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "SSO",
+                "MFA"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "identify_provision_for_least_privilege",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "least privilege"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "identify_provision_for_access_review",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "access review"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:11:57.395385"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_sso_mfa",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "SSO",
+                "MFA"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_least_privilege",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "least privilege"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_access_review",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "access review"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 8727,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "find_privilege_segregation_provision",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses segregation and control of admin, model, and security configuration privileges?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "admin privileges",
+                "model configuration privileges",
+                "security configuration privileges",
+                "segregation",
+                "control"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:12:16.766262"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "find_privilege_segregation_provision",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses segregation and control of admin, model, and security configuration privileges?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "admin privileges",
+                "model configuration privileges",
+                "security configuration privileges",
+                "segregation",
+                "control"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:102:subparagraph:1",
+              "eu:32024R1689:article:105:subparagraph:1",
+              "eu:32024R1689:article:106:subparagraph:1",
+              "eu:32024R1689:article:107:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses segregation and control of admin, model, and security configuration privileges?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      }
+    ]
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 18.25,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [
+    {
+      "purpose": "validate",
+      "query_mode": "direct",
+      "provision": "Article 9",
+      "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?"
+    },
+    {
+      "purpose": "validate",
+      "query_mode": "direct",
+      "provision": "Article 15",
+      "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?"
+    },
+    {
+      "purpose": "validate",
+      "query_mode": "direct",
+      "provision": "Article 17",
+      "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?"
+    },
+    {
+      "purpose": "gap",
+      "query_mode": "planned",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?"
+    }
+  ],
+  "item": {
+    "item_id": "TC06",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "PAM",
+    "control_statement": "Are admin, model and security configuration privileges segregated and controlled?",
+    "expected_evidence": "PAM, approval, four-eyes check and admin logs",
+    "applicability": "All systems",
+    "existing_mapping": "Art. 9; Art. 15; Art. 17",
+    "source_row": 10
+  }
+}

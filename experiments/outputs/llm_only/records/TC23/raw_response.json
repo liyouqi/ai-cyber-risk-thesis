@@ -1,0 +1,35 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Unsupported",
+      "reason": "Article 13 of the AI Act focuses on the obligations of the provider regarding the technical documentation of a high-risk AI system, including its design, development, and training. It does not mandate the maintenance of an inventory of models, components, data sources, or subcontractors.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 25(4)",
+      "decision": "Unsupported",
+      "reason": "Article 25(4) of the AI Act pertains to the obligations of the provider to ensure that the high-risk AI system is accompanied by instructions for use and to provide information to users. It does not address the maintenance of an inventory of components or subcontractors.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "reason": "Article 13 focuses on technical documentation, not inventory maintenance.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 25(4)",
+      "reason": "Article 25(4) pertains to user instructions and information, not inventory maintenance.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to the supply chain domain, specifically for third-party components.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The control statement is not supported by the mapped provisions. The AI Act does not have a specific article that mandates the maintenance of an inventory of models, components, data sources, and subcontractors. This type of control is more commonly found in other frameworks like NIST CSF or ISO 27001."
+}

@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC11,Regulation (EU) 2024/1689,Article 10,Unsupported,"Article 10 addresses the transparency obligations for providers of general-purpose AI models, such as publishing model cards and training data summaries. It does not address the exclusion of institutional data from training or enforceable opt-outs.",,
+TC11,Regulation (EU) 2024/1689,Article 13,Unsupported,"Article 13 outlines the obligations for providers of high-risk AI systems, including risk management, data governance, and technical documentation. It does not specifically address the exclusion of institutional data from training or enforceable opt-outs.",,
+TC11,Regulation (EU) 2024/1689,Article 25(4),Unsupported,Article 25(4) concerns the obligation for providers of high-risk AI systems to ensure human oversight. It does not address the exclusion of institutional data from training or enforceable opt-outs.,,

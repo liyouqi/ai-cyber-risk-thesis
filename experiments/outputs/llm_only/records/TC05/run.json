@@ -1,0 +1,29 @@
+{
+  "item_id": "TC05",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 6.357,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "TC05",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "IAM",
+    "control_statement": "Are SSO/MFA, least privilege and access review implemented?",
+    "expected_evidence": "Access matrix, MFA configuration and review record",
+    "applicability": "All systems",
+    "existing_mapping": "Art. 9; Art. 15; Art. 17",
+    "source_row": 9
+  }
+}

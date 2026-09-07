@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 5",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 5 or any information that would allow for an assessment of its support for the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 9 or any information that would allow for an assessment of its support for the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 15 or any information that would allow for an assessment of its support for the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The provided evidence consists of recitals and articles that amend other regulations. None of the evidence contains the substantive text of the articles (5, 9, 15) that are being reviewed, making it impossible to determine if they support the control statement. The assessment cannot be completed with the given information."
+}

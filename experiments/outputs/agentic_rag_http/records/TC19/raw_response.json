@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 9 or any information that would allow for a determination of its content or relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 15 or any information that would allow for a determination of its content or relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 17 or any information that would allow for a determination of its content or relevance to the control statement. The evidence references Article 17 only in the context of amending other regulations.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The challenge is that the provided evidence consists of recitals and articles amending other legislation, which do not contain the substantive text of the articles (9, 15, 17) that are being mapped. To assess the mapping, the actual content of these articles is required."
+}

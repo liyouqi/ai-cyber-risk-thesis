@@ -1,0 +1,7 @@
+framework,method,items,mean_total_time_min,median_total_time_min,mapping_accuracy,missing_precision,missing_recall,missing_f1,evidence_errors_per_item,unsupported_claims_per_item,mean_human_review_time_min
+EU AI Act,Manual,20,22.050,22.000,,,,,,,
+EU AI Act,LLM-only,20,12.453,13.156,0.143,0.000,0.000,0.000,0.000,2.700,12.250
+EU AI Act,Agentic RAG,20,7.101,7.386,0.730,0.667,0.667,0.667,0.050,0.000,6.700
+DORA,Manual,20,9.150,8.000,,,,,,,
+DORA,LLM-only,20,5.000,4.078,0.591,0.000,0.000,0.000,0.000,0.450,4.900
+DORA,Agentic RAG,20,3.643,3.304,0.818,1.000,0.800,0.889,0.000,0.200,3.350

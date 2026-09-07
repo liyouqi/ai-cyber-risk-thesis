@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+TC21,Unable to determine,[],No additional applicability condition identified.,"The assessment is unable to determine the correctness of the mapping because the provided evidence does not include the full text of the articles (9, 15, 17, 72) that are being reviewed. To perform a proper review, the actual provisions of these articles must be available."

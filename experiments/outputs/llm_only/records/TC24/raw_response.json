@@ -1,0 +1,49 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the AI Act addresses the scope of the regulation and does not contain provisions related to data export, deletion, or system retirement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Supported",
+      "reason": "Article 17, concerning data governance, includes requirements for data quality and management, which can support the control statement's focus on data deletion and export.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(5)",
+      "decision": "Unsupported",
+      "reason": "Article 26(5) pertains to the obligations of the provider regarding the AI system's conformity assessment and does not address data lifecycle management or system retirement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 72",
+      "decision": "Unsupported",
+      "reason": "Article 72 outlines the powers of the European Artificial Intelligence Board and does not contain provisions related to data export, deletion, or system retirement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 27",
+      "reason": "Article 27 of the AI Act addresses the obligations of users of high-risk AI systems, which may include requirements for data management and system retirement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 28",
+      "reason": "Article 28 of the AI Act outlines the obligations of providers of high-risk AI systems, which may include requirements for data management and system retirement.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to all systems, as specified in the assessment item.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping to Article 17 is partially supported, but the other mappings are unsupported. The control statement requires provisions related to data export, deletion, and system retirement, which are not covered by the mapped articles. Additional provisions, such as Articles 27 and 28, may be relevant."
+}

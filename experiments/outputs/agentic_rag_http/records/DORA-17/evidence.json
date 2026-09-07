@@ -1,0 +1,65 @@
+[
+  {
+    "evidence_id": "eu-2024-1774-article-21-e-iv",
+    "document_id": "EU-2024-1774",
+    "text": "(iv) update of access rights where changes are necessary and at least once a year for all ICT systems, other than ICT systems supporting critical or important functions and at least every 6 months for ICT systems supporting critical or important functions;",
+    "source_locator": "Article 21(e)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 1,
+    "score": 23.116462
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-40-1",
+    "document_id": "EU-2024-1774",
+    "text": "1. The financial entities referred to in Article 16(1) of Regulation (EU) 2022/2554 shall test their business continuity plans referred to in Article 39 of this Regulation, including the scenarios referred to in that Article, at least once every year for the back-up and restore procedures, or upon every major change of the business continuity plan.",
+    "source_locator": "Article 40(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 2,
+    "score": 22.603569
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-3-d-iv",
+    "document_id": "EU-2024-1774",
+    "text": "(iv) provisions on the review of the accepted residual ICT risks at least once a year, including:",
+    "source_locator": "Article 3(d)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 3,
+    "score": 18.612387
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-22-d",
+    "document_id": "EU-2024-1774",
+    "text": "(d) retain all evidence relating to ICT-related incidents for a period that shall be no longer than necessary for the purposes for which the data are collected, commensurate with the criticality of the affected business functions, supporting processes, and ICT and information assets, in accordance with Article 8(2) of Commission Delegated Regulation (EU) 2024/1772 ( 12 ) and with any applicable retention requirement pursuant to Union law;",
+    "source_locator": "Article 22(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 4,
+    "score": 17.240387
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-11-2-a-sequence-1",
+    "document_id": "EU-2024-1774",
+    "text": "(a) the access restrictions referred to in Article 21 of this Regulation, supporting the protection requirements for each level of classification;",
+    "source_locator": "Article 11(2)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 5,
+    "score": 14.480418
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-21-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) account management procedures to grant, change or revoke access rights for user and generic accounts, including generic administrator accounts, including provision on all of the following:",
+    "source_locator": "Article 21(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 6,
+    "score": 23.116462
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-23-2-a-i",
+    "document_id": "EU-2024-1774",
+    "text": "(i) internal and external factors, including at least the logs collected in accordance with Article 12 of this Regulation, information from business and ICT functions, and any problem reported by users of the financial entity;",
+    "source_locator": "Article 23(2)(a)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

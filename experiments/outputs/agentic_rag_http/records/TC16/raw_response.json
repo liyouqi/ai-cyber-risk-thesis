@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 14",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 14 or any information about human review, rejection, stop, override, or escalation controls.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(2)",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 26(2) or any information about human review, rejection, stop, override, or escalation controls.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(5)",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 26(5) or any information about human review, rejection, stop, override, or escalation controls.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The provided evidence consists of amendments to other EU regulations and directives, not the substantive articles of the AI Act itself. To assess the mapping, the actual text of Articles 14, 26(2), and 26(5) is required."
+}

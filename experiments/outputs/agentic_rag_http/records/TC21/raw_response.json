@@ -1,0 +1,39 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 9, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 15, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence only shows a reference to Article 17 in a recital (Article 108(1)) and an amendment to another regulation (Article 103). It does not provide the text of Article 17 itself, which is necessary to determine its relevance.",
+      "evidence_ids": [
+        "eu:32024R1689:article:103:subparagraph:1",
+        "eu:32024R1689:article:108:subparagraph:1:point:1"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 72",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 72, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The assessment is unable to determine the correctness of the mapping because the provided evidence does not include the full text of the articles (9, 15, 17, 72) that are being reviewed. To perform a proper review, the actual provisions of these articles must be available."
+}

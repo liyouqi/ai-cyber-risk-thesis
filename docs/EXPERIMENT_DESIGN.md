@@ -125,7 +125,9 @@ The agent:
 
 1. parses the Assessment Item;
 2. separates the existing legal references;
-3. sends a Direct HTTP retrieval query for each cited provision;
+3. sends each cited provision as a canonical citation (for example,
+   `AI Act Article 9`) to Direct HTTP retrieval, allowing Regulatory RAG's own
+   citation parser to resolve it;
 4. creates focused validation and gap-search questions;
 5. calls the read-only Regulatory RAG HTTP interface, using Direct retrieval for
    cited-provision validation and Planned retrieval for the gap search;

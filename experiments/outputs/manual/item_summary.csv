@@ -1,41 +1,41 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-TC05,,,,
-TC06,,,,
-TC07,,,,
-TC08,,,,
-TC09,,,,
-TC10,,,,
-TC11,,,,
-TC12,,,,
-TC13,,,,
-TC14,,,,
-TC15,,,,
-TC16,,,,
-TC17,,,,
-TC19,,,,
-TC20,,,,
-TC21,,,,
-TC22,,,,
-TC23,,,,
-TC24,,,,
-TC25,,,,
-DORA-01,,,,
-DORA-02,,,,
-DORA-03,,,,
-DORA-04,,,,
-DORA-05,,,,
-DORA-06,,,,
-DORA-07,,,,
-DORA-08,,,,
-DORA-10,,,,
-DORA-12,,,,
-DORA-13,,,,
-DORA-14,,,,
-DORA-15,,,,
-DORA-16,,,,
-DORA-17,,,,
-DORA-18,,,,
-DORA-19,,,,
-DORA-20,,,,
-DORA-21,,,,
-DORA-22,,,,
+TC05,Partially correct,[],The cited duties are mainly high-risk-system duties; MFA and access review remain broader security controls rather than express AI Act requirements.,"Keep Articles 9, 15 and 17 as broad governance support, but do not describe them as explicit MFA, SSO or access-review mandates."
+TC06,Partially correct,[],Relevant principally to providers of high-risk AI systems; the regulation does not prescribe a particular PAM or four-eyes implementation.,Keep the mapping only as a high-level risk and quality basis; do not claim that DORA-style PAM details appear in the AI Act.
+TC07,Partially correct,[],"Article 15 applies to high-risk AI systems; encryption is a possible cybersecurity measure, not an expressly mandated universal configuration.","Treat both articles as indirect support and avoid stating that the AI Act expressly mandates TLS, encryption at rest or KMS rotation."
+TC08,Partially correct,[],"Articles 10 and 26(4) concern high-risk systems and data used for training, validation, testing or controlled input; Article 27 applies only to specified deployers.",Retain Articles 10 and 26(4) as partial support; remove Article 27 unless the deployer and high-risk use case fall within its limited scope.
+TC09,Partially correct,[],Relevant where a high-risk system creates isolation risk; the cited articles do not expressly prescribe tenant-separation architecture.,Use the articles as risk-based support only; tenant isolation must be justified through the threat model and architecture evidence.
+TC10,Partially correct,"[{""instrument"":""Regulation (EU) 2024/1689"",""provision"":""Article 17(1)(f)"",""reason"":""The quality management system expressly covers data storage and retention operations."",""evidence_reference"":""AI Act Article 17(1)(f), CELEX:32024R1689""},{""instrument"":""Regulation (EU) 2024/1689"",""provision"":""Article 19"",""reason"":""Adds the provider-side minimum retention rule for automatically generated logs."",""evidence_reference"":""AI Act Article 19, CELEX:32024R1689""}]","Provider and deployer log-retention duties apply to high-risk systems; broader deletion of prompts, files, vectors and backups depends on other law and system design.","Add Articles 17(1)(f) and 19, separate provider from deployer retention, and avoid claiming that the Act defines universal deletion periods."
+TC11,Partially correct,[],Relevant to high-risk providers and third-party component arrangements; no general AI Act right to a customer-data training opt-out is stated.,Use the contract and data-governance provisions as partial support; verify the vendor contract because an opt-out is not directly mandated.
+TC12,Partially correct,[],"Relevant to high-risk systems with integrations; allowlists, scopes and service-account design are implementation choices under broader risk and cybersecurity duties.","Retain as broad risk/cybersecurity/QMS support and test actual scopes, egress rules and service accounts separately."
+TC13,Partially correct,[],"Relevant to high-risk AI systems exposed to adversarial input, especially Article 15(5); inherited ACLs and file scanning are not separately prescribed.","Article 15(5) is the strongest reference; record red-team coverage for prompt injection, poisoning, malicious files and retrieval bypass."
+TC14,Partially correct,[],Article 5 applies only to listed prohibited practices; Articles 9 and 15 apply to high-risk systems and do not create a general harmful-content code.,Keep a narrow Article 5 reference only for prohibited practices; document which output risks are legal requirements versus internal policy.
+TC15,Partially correct,[],Article 12 concerns system logging; Articles 19 and 26(6) split retention duties between providers and deployers of high-risk systems.,Retain Article 12 as the direct logging basis and treat Articles 19 and 26(6) as role-specific retention provisions.
+TC16,Partially correct,[],Applies to high-risk AI systems and to deployers assigning competent overseers; exact workflow and escalation design remains risk-proportionate.,"The mapping is useful for high-risk systems; confirm competence, authority, override, stop and escalation evidence in the actual workflow."
+TC17,Correct,[],"Applies to high-risk systems; declared metrics, testing thresholds and deployer monitoring should reflect intended purpose and foreseeable misuse.","The mapping is materially sound; document predefined metrics, thresholds, known limitations and the deployer's monitoring response."
+TC19,Partially correct,[],"Applies to high-risk systems; Article 15 supports robustness and fail-safe design, while business continuity details remain context-specific.",Article 15 is the strongest mapping; Articles 9 and 17 provide governance context rather than specific RTO/RPO duties.
+TC20,Correct,[],Provider duties for high-risk systems are central; Article 73 applies to serious incidents and does not cover every ordinary security event.,"The mapping covers cybersecurity, corrective action and serious incidents; keep ordinary security incidents distinct from Article 73 reports."
+TC21,Partially correct,"[{""instrument"":""Regulation (EU) 2024/1689"",""provision"":""Article 43(4)"",""reason"":""Requires a new conformity assessment after a substantial modification of a high-risk AI system."",""evidence_reference"":""AI Act Article 43(4), CELEX:32024R1689""}]",Applies mainly to providers of high-risk AI systems; substantial modifications can trigger a new conformity assessment.,Add Article 43(4) for substantial modifications and use Article 17(1)(a) for documented modification-management procedures.
+TC22,Correct,[],Provider post-market monitoring and deployer operational monitoring apply to high-risk systems; the exact KPI/KRI set is proportionate to risk.,The mapping is strong for high-risk systems; distinguish provider post-market monitoring from deployer operational monitoring.
+TC23,Partially correct,[],"Applies where third-party tools, services, components or processes are integrated into a high-risk AI system; the Act does not expressly mandate an SBOM format.",Use Article 25(4) for supplier cooperation and Article 13 for information flow; do not claim that either provision expressly requires an SBOM.
+TC24,Partially correct,[],"The cited high-risk duties support monitoring and suspension but do not establish a comprehensive exit, export and deletion procedure.","Challenge the broad mapping: Article 72 is monitoring, not exit; retain only indirect risk/QMS/suspension support and document exit controls separately."
+TC25,Correct,[],Applies chiefly to providers of high-risk AI systems; deployer documentation duties are narrower.,The mapping is materially complete for provider documentation; ensure Annex IV content and instructions for use are included.
+DORA-01,Correct,[],Applies to financial entities in scope; microenterprises may review periodically instead of at least yearly.,Retain the mapping and record both the scheduled annual review and event-triggered reviews.
+DORA-02,Correct,[],Applies to financial entities; the change trigger concerns ICT systems supporting critical or important functions.,Retain the mapping and evidence the annual test calendar plus substantive-change testing.
+DORA-03,Partially correct,"[{""instrument"":""Regulation (EU) 2022/2554"",""provision"":""Article 11(6)(b)"",""reason"":""Requires testing of the crisis communication plans established under Article 14."",""evidence_reference"":""DORA Article 11(6)(b), CELEX:32022R2554""}]",Applies to financial entities maintaining crisis communication plans; no standalone uniform cadence is set for communication-plan tests.,Add Article 11(6)(b); Article 14 establishes the communication plans but does not itself require testing.
+DORA-04,Correct,[],Applies to financial entities other than microenterprises and to systems supporting critical or important functions.,Retain the mapping after confirming the entity is not a microenterprise and the system supports a critical or important function.
+DORA-05,Correct,[],Applies to DORA financial entities reporting new ICT-service arrangements to their competent authority.,Retain the mapping and preserve the annual submission plus the population of new arrangements.
+DORA-06,Correct,[],"Applies to management-body members, with training proportionate to the entity's ICT risk.",Retain the mapping; record content and attendance without inventing a fixed annual hour threshold.
+DORA-07,Correct,[],Applies to employees and senior management; contractors are included where appropriate.,Retain the mapping; record compulsory completion without inventing a statutory number of hours.
+DORA-08,Partially correct,"[{""instrument"":""Commission Delegated Regulation (EU) 2025/301"",""provision"":""Article 5(1)(a)"",""reason"":""Sets the four-hour and 24-hour initial-notification deadlines."",""evidence_reference"":""RTS Article 5(1)(a), CELEX:32025R0301""},{""instrument"":""Commission Delegated Regulation (EU) 2025/301"",""provision"":""Article 5(1)(b)"",""reason"":""Sets the 72-hour intermediate-report deadline."",""evidence_reference"":""RTS Article 5(1)(b), CELEX:32025R0301""}]",Applies when an ICT-related incident is classified as major under DORA.,Retain Article 19(4) for report stages and add RTS Article 5(1)(a)-(b) for the stated deadlines.
+DORA-10,Correct,[],Applies following classification of an ICT-related incident as major.,"Retain the mapping and record awareness, classification and submission timestamps."
+DORA-12,Correct,[],Applies after submission of the initial notification for a major incident.,Retain the mapping and calculate 72 hours from submission of the initial notification.
+DORA-13,Partially correct,"[{""instrument"":""Regulation (EU) 2022/2554"",""provision"":""Article 19(4)(b)"",""reason"":""Adds updates following a significant change in status or handling and updates requested by the competent authority."",""evidence_reference"":""DORA Article 19(4)(b), CELEX:32022R2554""}]",Applies while a major incident remains under handling and when an updated intermediate report is required.,Add DORA Article 19(4)(b) for significant status changes and competent-authority requests.
+DORA-14,Correct,[],Applies after the intermediate report or latest updated intermediate report.,Retain the mapping and calculate the month from the intermediate or latest updated intermediate report.
+DORA-15,Correct,[],Applies to ICT assets supporting critical or important functions.,Retain the mapping and verify the asset inventory identifies critical or important function support.
+DORA-16,Correct,[],Applies to ICT systems not supporting critical or important functions.,Retain the mapping and separate the annual population from critical or important systems.
+DORA-17,Correct,[],Applies to ICT systems supporting critical or important functions.,Retain the mapping and verify six-month completion for the critical or important system population.
+DORA-18,Correct,[],"Applies to financial entities testing ICT continuity, response and recovery arrangements; microenterprise detail differs.",Retain both provisions together: DORA supplies cadence and the delegated regulation supplies scenario detail.
+DORA-19,Correct,[],Applies to the management body's policy for ICT services supporting critical or important functions.,Retain the mapping and preserve management-body approval and evidence of necessary updates.
+DORA-20,Correct,[],Applies to assurance and audit planning for contractual arrangements supporting critical or important functions.,Retain Articles 8 and 9 together; set audit frequency from risk rather than imposing an unsupported annual rule.
+DORA-21,Incorrect,"[{""instrument"":""Commission Delegated Regulation (EU) 2024/1773"",""provision"":""Article 9(1)-(2)"",""reason"":""Requires ongoing monitoring of provider performance through measures, indicators, audits and independent reviews."",""evidence_reference"":""Delegated Regulation (EU) 2024/1773 Article 9, CELEX:32024R1773""}]",The ongoing monitoring obligation concerns contractual arrangements for ICT services supporting critical or important functions.,"Replace Article 8 with Article 9(1)-(2), which contains the ongoing provider-performance monitoring requirement."
+DORA-22,Correct,[],Applies to each relevant contractual arrangement and uses a risk- and criticality-based periodicity.,Retain the mapping and document why the selected test interval is proportionate to risk and criticality.

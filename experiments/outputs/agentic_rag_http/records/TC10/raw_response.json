@@ -1,0 +1,36 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 10",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 10 of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 12",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 12 of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 13 of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(6)",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 26(6) of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The provided evidence consists of amendments to other EU regulations and an annex, but does not include the actual text of the articles (10, 12, 13, 26(6)) that are being reviewed. Without the text of these provisions, a determination of support cannot be made. The evidence IDs provided are for unrelated articles and annexes."
+}

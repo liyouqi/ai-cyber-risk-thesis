@@ -1,0 +1,42 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act pertains to the classification of AI systems and their risk levels. It does not address access control or identity management requirements.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unsupported",
+      "reason": "Article 15 of the EU AI Act focuses on transparency and the provision of information to users. It does not contain requirements for implementing SSO, MFA, or access reviews.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unsupported",
+      "reason": "Article 17 of the EU AI Act deals with the obligations of users of high-risk AI systems. It does not specify technical controls like SSO, MFA, or access reviews.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "reason": "The provision is unrelated to access control and identity management.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "reason": "The provision is unrelated to access control and identity management.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The provided mapping is incorrect. The control statement on access management is not supported by the cited articles of the EU AI Act. The mapping should be revised to reference provisions that address cybersecurity or data protection, such as those found in the NIS2 Directive or GDPR, if applicable."
+}

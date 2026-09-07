@@ -1,0 +1,56 @@
+[
+  {
+    "evidence_id": "eu-2024-1774-article-3-d-iv",
+    "document_id": "EU-2024-1774",
+    "text": "(iv) provisions on the review of the accepted residual ICT risks at least once a year, including:",
+    "source_locator": "Article 3(d)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 1,
+    "score": 25.154727
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-40-1",
+    "document_id": "EU-2024-1774",
+    "text": "1. The financial entities referred to in Article 16(1) of Regulation (EU) 2022/2554 shall test their business continuity plans referred to in Article 39 of this Regulation, including the scenarios referred to in that Article, at least once every year for the back-up and restore procedures, or upon every major change of the business continuity plan.",
+    "source_locator": "Article 40(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 2,
+    "score": 20.416404
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-21-e-iv",
+    "document_id": "EU-2024-1774",
+    "text": "(iv) update of access rights where changes are necessary and at least once a year for all ICT systems, other than ICT systems supporting critical or important functions and at least every 6 months for ICT systems supporting critical or important functions;",
+    "source_locator": "Article 21(e)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 3,
+    "score": 19.31123
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-22-d",
+    "document_id": "EU-2024-1774",
+    "text": "(d) retain all evidence relating to ICT-related incidents for a period that shall be no longer than necessary for the purposes for which the data are collected, commensurate with the criticality of the affected business functions, supporting processes, and ICT and information assets, in accordance with Article 8(2) of Commission Delegated Regulation (EU) 2024/1772 ( 12 ) and with any applicable retention requirement pursuant to Union law;",
+    "source_locator": "Article 22(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 4,
+    "score": 17.804154
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-28-2-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) allocates and reviews at least once a year the budget necessary to fulfil the financial entity’s digital operational resilience needs in respect of all types of resources, including relevant ICT security awareness programmes and digital operational resilience training and ICT skills for all staff;",
+    "source_locator": "Article 28(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 5,
+    "score": 15.828224
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-3-d",
+    "document_id": "EU-2024-1774",
+    "text": "(d) for the residual ICT risks that are still present following the implementation of the ICT risk treatment measures referred to in point (c):",
+    "source_locator": "Article 3(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 6,
+    "score": 25.154727
+  }
+]

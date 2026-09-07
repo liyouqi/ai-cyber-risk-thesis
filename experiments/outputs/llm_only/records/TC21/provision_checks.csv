@@ -1,0 +1,5 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC21,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 addresses the scope of the regulation and definitions, not change management or testing procedures.",,
+TC21,Regulation (EU) 2024/1689,Article 15,Unsupported,"Article 15 pertains to the obligations of the provider of a high-risk AI system, not specific change management controls.",,
+TC21,Regulation (EU) 2024/1689,Article 17,Unsupported,"Article 17 covers the obligations of the importer of an AI system, not change management or testing.",,
+TC21,Regulation (EU) 2024/1689,Article 72,Unsupported,"Article 72 deals with the powers of market surveillance authorities, not the technical controls for managing changes.",,

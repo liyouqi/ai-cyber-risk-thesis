@@ -103,8 +103,12 @@ Manual 可以晚于 AI 程序运行。关键不是运行顺序，而是人工核
 ```text
 POST /api/v1/retrieve
 query_mode=direct
+query=规范法规引用，例如 AI Act Article 9
 timeout=30 seconds
 ```
+
+Direct 是 API 查询模式，不是绕过 Parser。规范引用由 Regulatory RAG 自己的法规引用
+Parser 解析；控制陈述不会混入这条定位查询，而是在随后由模型结合返回证据进行判断。
 
 每个条目的遗漏条款检索调用：
 
@@ -184,8 +188,8 @@ python scripts/build_thesis_outputs.py
 - [x] 20 条 DORA 的旧版嵌入式 Agentic RAG 已运行并保存证据。
 - [x] 120 行评分表已建立并写入现有客观数据。
 - [x] Manual 工作表已建立。
-- [ ] Regulatory RAG HTTP 健康检查、状态和认证已联通。
-- [ ] 40 条 HTTP Agentic RAG 已在独立输出目录运行。
-- [ ] 20 条 AI Act 的两种 AI 方法已运行。
+- [x] Regulatory RAG HTTP 健康检查、状态和 Planner 已联通。
+- [x] 40 条 HTTP Agentic RAG 已在独立输出目录运行。
+- [x] 20 条 AI Act 的两种 AI 方法已运行。
 - [ ] Manual 和人工修正时间已填写。
 - [ ] 最终评分、论文表格和图表已生成。

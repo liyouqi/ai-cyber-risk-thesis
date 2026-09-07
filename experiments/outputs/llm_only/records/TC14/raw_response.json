@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 5",
+      "decision": "Supported",
+      "reason": "Article 5 addresses the prohibition of certain AI systems, which includes those that generate harmful content. This aligns with the control statement's focus on controlling harmful content and prohibited-use outputs.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Supported",
+      "reason": "Article 9 imposes obligations on high-risk AI systems, including requirements for data governance and robustness. These obligations are relevant to controlling the quality and safety of outputs, which encompasses sensitive data and malicious code.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Supported",
+      "reason": "Article 15 requires providers of general-purpose AI models to implement policies to prevent the generation of illegal content. This directly supports the control of prohibited-use outputs.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "The mapping is specific to generative AI systems, which are the focus of the control statement and the referenced articles.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The mapping correctly identifies the relevant articles that address the control of sensitive data, malicious code, harmful content, and prohibited-use outputs for generative AI systems."
+}

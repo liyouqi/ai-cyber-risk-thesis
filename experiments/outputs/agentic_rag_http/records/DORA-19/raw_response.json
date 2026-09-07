@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 3",
+      "decision": "Supported",
+      "reason": "Article 3(1) explicitly requires the management body to review the policy at least once a year, which directly matches the control statement.",
+      "evidence_ids": [
+        "eu-2024-1773-article-3-1"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "The control statement is specific to the review frequency of the policy on the use of ICT third-party services.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The existing mapping to Article 3 is correct and should be retained."
+}

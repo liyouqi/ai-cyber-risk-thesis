@@ -1,0 +1,48 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 12",
+      "decision": "Unsupported",
+      "reason": "Article 12 of the EU AI Act pertains to the obligations of users of high-risk AI systems, not the logging requirements of the provider.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 19",
+      "decision": "Unsupported",
+      "reason": "Article 19 addresses the transparency obligations for users of high-risk AI systems, not the logging of system activities.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(6)",
+      "decision": "Unsupported",
+      "reason": "Article 26(6) concerns the documentation and record-keeping for high-risk AI systems, but does not specifically mandate the detailed logging of user, time, I/O, model version, tool calls, and admin actions.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15(3)",
+      "reason": "This article requires providers of high-risk AI systems to implement a quality management system, which includes logging and monitoring of system activities.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15(4)",
+      "reason": "This article mandates that providers ensure the traceability of AI systems, which is closely related to logging user and system actions.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15(5)",
+      "reason": "This article requires providers to ensure the accuracy of AI systems, which often involves logging and monitoring of inputs and outputs.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The logging requirements are applicable to all AI systems, but are stricter for high-risk AI systems.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings are incorrect as they do not align with the specific logging requirements of the EU AI Act. The correct mappings should be to Articles 15(3), 15(4), and 15(5), which address the quality management system, traceability, and accuracy of AI systems, respectively."
+}

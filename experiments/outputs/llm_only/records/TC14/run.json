@@ -1,0 +1,29 @@
+{
+  "item_id": "TC14",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 10.442,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "TC14",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "Output",
+    "control_statement": "Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
+    "expected_evidence": "DLP, filters, sandboxing and test report",
+    "applicability": "Generative AI",
+    "existing_mapping": "Art. 5; Art. 9; Art. 15",
+    "source_row": 18
+  }
+}

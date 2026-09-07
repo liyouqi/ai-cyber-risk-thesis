@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+TC24,Unable to determine,[],No additional applicability condition identified.,"The provided evidence does not contain the specific articles (9, 17, 26(5), 72) or their content. The evidence provided is either from recitals, other articles, or annexes that do not address the control statement's requirements for data export, access revocation, deletion, and system retirement. The assessment cannot be completed without the relevant article text."

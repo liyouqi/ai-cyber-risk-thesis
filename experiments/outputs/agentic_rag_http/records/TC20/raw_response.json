@@ -1,0 +1,46 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unable to determine",
+      "reason": "No evidence retrieved for Article 15.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Partially supported",
+      "reason": "Article 17(1)(i) references procedures for reporting serious incidents as per Article 73, which is relevant to the 'response' and 'serious-incident' aspects of the control statement. However, the evidence does not support the 'vulnerability, patching, detection' components.",
+      "evidence_ids": [
+        "eu:32024R1689:article:17:paragraph:1:point:i"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 20",
+      "decision": "Unable to determine",
+      "reason": "No evidence retrieved for Article 20.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 73",
+      "decision": "Partially supported",
+      "reason": "Article 73 covers serious incident reporting, investigation, and corrective action, supporting the 'response' and 'serious-incident' parts of the control statement. However, the evidence does not support the 'vulnerability, patching, detection' components.",
+      "evidence_ids": [
+        "eu:32024R1689:article:73:paragraph:2",
+        "eu:32024R1689:article:73:paragraph:3",
+        "eu:32024R1689:article:73:paragraph:6",
+        "eu:32024R1689:article:73:paragraph:7",
+        "eu:32024R1689:article:73:paragraph:8",
+        "eu:32024R1689:article:73:paragraph:10",
+        "eu:32024R1689:article:73:paragraph:11"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "The control statement is applicable to all AI systems, with specific reporting requirements for high-risk systems.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as it identifies relevant provisions for serious incident response but fails to address vulnerability, patching, and detection processes. The evidence supports only the 'response' and 'serious-incident' components of the control statement. The mapping should be revised to include provisions that cover the full scope of the control statement."
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "evidence_id": "eu:32024R1689:article:110:subparagraph:1:point:68",
+    "document_id": "EU-2024-1689",
+    "text": "(68) Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (OJ L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj)..",
+    "source_locator": "Article 110(68)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 30.535372
+  },
+  {
+    "evidence_id": "eu:32024R1689:annex:x:annex-part:3:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "Regulation (EU) 2024/1358 of the European Parliament and of the Council of 14 May 2024 on the establishment of Eurodac for the comparison of biometric data in order to effectively apply Regulations (EU) 2024/1315 and (EU) 2024/1350 of the European Parliament and of the Council and Council Directive 2001/55/EC and to identify illegally staying third-country nationals and stateless persons and on requests for the comparison with Eurodac data by Member States’ law enforcement authorities and Europol for law enforcement purposes, amending Regulations (EU) 2018/1240 and (EU) 2019/818 of the European Parliament and of the Council and repealing Regulation (EU) No 603/2013 of the European Parliament and of the Council (OJ L, 2024/1358, 22.5.2024, ELI: http://data.europa.eu/eli/reg/2024/1358/oj).",
+    "source_locator": "ANNEX X — Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice — 3. Eurodac — subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 25.9813
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:14",
+    "document_id": "EU-2024-1689",
+    "text": "The notion of biometric data used in this Regulation should be interpreted in light of the notion of biometric data as defined in Article 4, point (14) of Regulation (EU) 2016/679, Article 3, point (18) of Regulation (EU) 2018/1725 and Article 3, point (13) of Directive (EU) 2016/680. Biometric data can allow for the authentication, identification or categorisation of natural persons and for the recognition of emotions of natural persons.",
+    "source_locator": "Recital 14",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 24.28092
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:67",
+    "document_id": "EU-2024-1689",
+    "text": "High-quality data and access to high-quality data plays a vital role in providing structure and in ensuring the performance of many AI systems, especially when techniques involving the training of models are used, with a view to ensure that the high-risk AI system performs as intended and safely and it does not become a source of discrimination prohibited by Union law. High-quality data sets for training, validation and testing require the implementation of appropriate data governance and management practices. Data sets for training, validation and testing, including the labels, should be relevant, sufficiently representative, and to the best extent possible free of errors and complete in view of the intended purpose of the system. In order to facilitate compliance with Union data protection law, such as Regulation (EU) 2016/679, data governance and management practices should include, in the case of personal data, transparency about the original purpose of the data collection. The data sets should also have the appropriate statistical properties, including as regards the persons or groups of persons in relation to whom the high-risk AI system is intended to be used, with specific attention to the mitigation of possible biases in the data sets, that are likely to affect the health and safety of persons, have a negative impact on fundamental rights or lead to discrimination prohibited under Union law, especially where data outputs influence inputs for future operations (feedback loops). Biases can for example be inherent in underlying data sets, especially when historical data is being used, or generated when the systems are implemented in real world settings. Results provided by AI systems could be influenced by such inherent biases that are inclined to gradually increase and thereby perpetuate and amplify existing discrimination, in particular for persons belonging to certain vulnerable groups, including racial or ethnic groups. The requirement for the data sets to be to the best extent possible complete and free of errors should not affect the use of privacy-preserving techniques in the context of the development and testing of AI systems. In particular, data sets should take into account, to the extent required by their intended purpose, the features, characteristics or elements that are particular to the specific geographical, contextual, behavioural or functional setting which the AI system is intended to be used. The requirements related to data governance can be complied with by having recourse to third parties that offer certified compliance services including verification of data governance, data set integrity, and data training, validation and testing practices, as far as compliance with the data requirements of this Regulation are ensured.",
+    "source_locator": "Recital 67",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 24.122414
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:3:subparagraph:1:point:37",
+    "document_id": "EU-2024-1689",
+    "text": "(37) special categories of personal data means the categories of personal data referred to in Article 9(1) of Regulation (EU) 2016/679, Article 10 of Directive (EU) 2016/680 and Article 10(1) of Regulation (EU) 2018/1725;",
+    "source_locator": "Article 3(37)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 23.768784
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:110:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Annex I to Directive (EU) 2020/1828 of the European Parliament and of the Council, the following point is added:",
+    "source_locator": "Article 110, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 6,
+    "score": 30.535372
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:103:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 17(5) of Regulation (EU) No 167/2013, the following subparagraph is added: When adopting delegated acts pursuant to the first subparagraph concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 103, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 27.012767
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:1",
+    "document_id": "EU-2024-1689",
+    "text": "(1) in Article 17, the following paragraph is added: Without prejudice to paragraph 2, when adopting implementing acts pursuant to paragraph 1 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 108(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 26.040505
+  },
+  {
+    "evidence_id": "eu:32024R1689:annex:viii:annex-part:c:point:5",
+    "document_id": "EU-2024-1689",
+    "text": "5. A summary of the data protection impact assessment carried out in accordance with Article 35 of Regulation (EU) 2016/679 or Article 27 of Directive (EU) 2016/680 as specified in Article 26(8) of this Regulation, where applicable.",
+    "source_locator": "ANNEX VIII — Information to be submitted upon the registration of high-risk AI systems in accordance with Article 49 — Section C — Information to be submitted by deployers of high-risk AI systems in accordance with Article 49(3) — 5.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 25.908287
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:107:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 5 of Regulation (EU) 2018/858 the following paragraph is added: When adopting delegated acts pursuant to paragraph 3 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 107, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 24.989762
+  },
+  {
+    "evidence_id": "eu:32024R1689:recital:122",
+    "document_id": "EU-2024-1689",
+    "text": "It is appropriate that, without prejudice to the use of harmonised standards and common specifications, providers of a high-risk AI system that has been trained and tested on data reflecting the specific geographical, behavioural, contextual or functional setting within which the AI system is intended to be used, should be presumed to comply with the relevant measure provided for under the requirement on data governance set out in this Regulation. Without prejudice to the requirements related to robustness and accuracy set out in this Regulation, in accordance with Article 54(3) of Regulation (EU) 2019/881, high-risk AI systems that have been certified or for which a statement of conformity has been issued under a cybersecurity scheme pursuant to that Regulation and the references of which have been published in the Official Journal of the European Union should be presumed to comply with the cybersecurity requirement of this Regulation in so far as the cybersecurity certificate or statement of conformity or parts thereof cover the cybersecurity requirement of this Regulation. This remains without prejudice to the voluntary nature of that cybersecurity scheme.",
+    "source_locator": "Recital 122",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 22.830027
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:109:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "In Article 11 of Regulation (EU) 2019/2144, the following paragraph is added: When adopting the implementing acts pursuant to paragraph 2, concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
+    "source_locator": "Article 109, Subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

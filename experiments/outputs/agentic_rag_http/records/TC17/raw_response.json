@@ -1,0 +1,38 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 9, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 13",
+      "decision": "Partially supported",
+      "reason": "Article 13(3)(b)(ii) requires the level of accuracy to be tested and validated, which aligns with the control statement. However, it does not explicitly mention testing for hallucination, repeatability, or limits.",
+      "evidence_ids": [
+        "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:ii"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 15, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(5)",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 26(5), making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The assessment is partially correct because only Article 13 is supported by the evidence, while the other mapped articles (9, 15, 26(5)) cannot be evaluated due to missing text in the provided evidence. The mapping for Article 13 is also only partial as it does not cover all elements of the control statement."
+}

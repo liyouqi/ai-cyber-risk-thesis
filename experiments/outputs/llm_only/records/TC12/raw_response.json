@@ -1,0 +1,36 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act pertains to the obligations of users of high-risk AI systems, focusing on human oversight and input validation, not on network or API security controls.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unsupported",
+      "reason": "Article 15 addresses the obligations of distributors of AI systems, which is unrelated to the technical control of allowlisting and least-privileged access for APIs and connections.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unsupported",
+      "reason": "Article 17 outlines the obligations of importers of AI systems, which does not cover the specific technical security measures for APIs and outbound connections.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 28",
+      "reason": "Article 28 of the EU AI Act requires providers of high-risk AI systems to implement a quality management system, which includes security measures. The control statement on allowlisting and least-privileged access is a specific implementation of this requirement.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to systems that integrate with other services or act as agents, as these scenarios involve the use of APIs and outbound connections that require strict access controls to mitigate risks.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings to Articles 9, 15, and 17 are incorrect as they pertain to user, distributor, and importer obligations, not the provider's technical security requirements. The correct mapping should be to Article 28, which mandates a quality management system including security measures."
+}

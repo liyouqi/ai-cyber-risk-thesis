@@ -1,0 +1,3 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC23,Regulation (EU) 2024/1689,Article 13,Unsupported,"Article 13 of the AI Act focuses on the obligations of the provider regarding the technical documentation of a high-risk AI system, including its design, development, and training. It does not mandate the maintenance of an inventory of models, components, data sources, or subcontractors.",,
+TC23,Regulation (EU) 2024/1689,Article 25(4),Unsupported,Article 25(4) of the AI Act pertains to the obligations of the provider to ensure that the high-risk AI system is accompanied by instructions for use and to provide information to users. It does not address the maintenance of an inventory of components or subcontractors.,,

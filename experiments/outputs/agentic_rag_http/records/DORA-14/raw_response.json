@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2025/301",
+      "provision": "Article 5(1)(c)",
+      "decision": "Supported",
+      "reason": "The evidence directly states the final report must be submitted no later than one month after the intermediate report or latest updated intermediate report, which matches the control statement.",
+      "evidence_ids": [
+        "eu-2025-301-article-5-1-c"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge needed. The existing mapping is correct and should be retained."
+}

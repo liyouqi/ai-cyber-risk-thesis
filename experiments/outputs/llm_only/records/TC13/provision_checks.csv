@@ -1,0 +1,3 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC13,Regulation (EU) 2024/1689,Article 9,Supported,"Article 9 requires AI systems to be resilient against security risks, including those that could compromise integrity or availability. Mitigating prompt injection and malicious files directly addresses this requirement.",,
+TC13,Regulation (EU) 2024/1689,Article 15,Supported,Article 15 mandates the implementation of appropriate security measures to prevent unauthorized access and manipulation of data. Mitigating retrieval bypass and indirect instructions is a key component of such security measures.,,

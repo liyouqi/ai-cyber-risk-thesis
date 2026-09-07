@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 8",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence for Article 8 does not contain information about the frequency of performance (e.g., continuous, monthly, quarterly) for the control statement.",
+      "evidence_ids": [
+        "eu-2024-1773-article-8-1"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The evidence for Article 8 is insufficient to determine if it supports the control statement regarding continuous performance. The text of Article 8 focuses on the content of contractual arrangements, not the frequency of their execution or monitoring."
+}

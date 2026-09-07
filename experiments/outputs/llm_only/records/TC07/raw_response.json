@@ -1,0 +1,35 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act addresses the classification of AI systems and their risk levels, which is unrelated to technical security controls like encryption.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unsupported",
+      "reason": "Article 15 of the EU AI Act pertains to the obligations of distributors and importers, not to the technical implementation of data protection measures like encryption.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "reason": "The provision addresses distributor/importer obligations, not technical security controls.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "reason": "The provision addresses AI system classification, not technical security controls.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The mapping is incorrect because the cited articles address administrative and classification obligations, not the technical security control of data encryption."
+}

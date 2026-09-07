@@ -1,0 +1,29 @@
+{
+  "item_id": "TC20",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 7.526,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "TC20",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "Security",
+    "control_statement": "Are vulnerability, patching, detection, response and serious-incident processes implemented?",
+    "expected_evidence": "Scan, patch SLA, alerts, exercise and reporting process",
+    "applicability": "All; reporting for high-risk",
+    "existing_mapping": "Art. 15; Art. 17; Art. 20; Art. 73",
+    "source_row": 24
+  }
+}

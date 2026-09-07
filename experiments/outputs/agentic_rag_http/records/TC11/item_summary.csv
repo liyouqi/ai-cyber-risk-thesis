@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+TC11,Unable to determine,[],No additional applicability condition is identified.,"The provided evidence consists of recitals and articles from the EU AI Act that are unrelated to the control statement's topic of data exclusion from training. The specific articles cited in the existing mapping (Art. 10, Art. 13, Art. 25(4)) are not present in the evidence, preventing any assessment of their relevance. The evidence is insufficient to determine the correctness of the mapping."

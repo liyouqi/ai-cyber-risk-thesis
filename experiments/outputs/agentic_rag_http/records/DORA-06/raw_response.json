@@ -1,0 +1,17 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 5(4)",
+      "decision": "Supported",
+      "reason": "The evidence text for Article 5(4) explicitly states that members of the management body must receive regular training on ICT risk, which directly supports the control statement.",
+      "evidence_ids": [
+        "eu-2022-2554-article-5-4"
+      ]
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The existing mapping to Article 5(4) is correct and should be retained."
+}

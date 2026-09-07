@@ -1,0 +1,29 @@
+{
+  "item_id": "TC07",
+  "method": "llm_only",
+  "evidence_provider": "none",
+  "evidence_provider_details": {},
+  "workflow_version": "0.3",
+  "prompt_version": "llm-only-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 11.717,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [],
+  "item": {
+    "item_id": "TC07",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "Encryption",
+    "control_statement": "Are data encrypted in transit and at rest with managed keys?",
+    "expected_evidence": "TLS, storage encryption and KMS evidence",
+    "applicability": "Protected data",
+    "existing_mapping": "Art. 9; Art. 15",
+    "source_row": 11
+  }
+}

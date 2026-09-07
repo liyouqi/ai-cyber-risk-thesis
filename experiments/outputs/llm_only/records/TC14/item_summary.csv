@@ -1,0 +1,2 @@
+item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
+TC14,Correct,[],"The mapping is specific to generative AI systems, which are the focus of the control statement and the referenced articles.","No challenge is needed. The mapping correctly identifies the relevant articles that address the control of sensitive data, malicious code, harmful content, and prohibited-use outputs for generative AI systems."

@@ -1,0 +1,25 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 8",
+      "decision": "Supported",
+      "reason": "Article 8(3)(a) requires the financial entity to be satisfied with the audit plan of the ICT third-party service provider, and Article 8(3)(h) grants the right to perform audits at its discretion with an agreed frequency, supporting the control statement's focus on audit plans and risk-based frequency.",
+      "evidence_ids": [
+        "eu-2024-1773-article-8-3-a",
+        "eu-2024-1773-article-8-3-h"
+      ]
+    },
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+      "provision": "Article 9",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain any text from Article 9 of the regulation, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping to Article 9 is unsupported because the provided evidence does not contain any text from that article. The mapping to Article 8 is supported by the evidence. The overall assessment is partially correct due to the unsupported mapping to Article 9."
+}

@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC08,Regulation (EU) 2024/1689,Article 10,Unsupported,"Article 10 of the AI Act focuses on the obligations of providers regarding the technical documentation of high-risk AI systems, which does not directly address the restriction of sensitive inputs through classification, minimisation, or masking.",,
+TC08,Regulation (EU) 2024/1689,Article 26(4),Unsupported,"Article 26(4) pertains to the obligations of users of high-risk AI systems, specifically regarding human oversight, and does not contain provisions for restricting sensitive inputs.",,
+TC08,Regulation (EU) 2024/1689,Article 27,Unsupported,"Article 27 outlines the requirements for the design and development of high-risk AI systems, including data governance, but does not specifically mandate the restriction of sensitive inputs through classification, minimisation, or masking.",,

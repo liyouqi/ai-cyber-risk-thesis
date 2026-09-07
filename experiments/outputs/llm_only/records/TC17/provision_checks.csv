@@ -1,0 +1,5 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC17,Regulation (EU) 2024/1689,Article 9,Supported,"Article 9 requires high-risk AI systems to have appropriate data governance and management, which includes ensuring the quality and accuracy of the data used for training, validation, and testing. This supports the testing of accuracy.",,
+TC17,Regulation (EU) 2024/1689,Article 13,Supported,"Article 13 mandates the implementation of a quality management system, which includes processes for ensuring the accuracy and reliability of the AI system's outputs. This supports the testing of accuracy and limits.",,
+TC17,Regulation (EU) 2024/1689,Article 15,Supported,"Article 15 requires the AI system to be designed and developed with appropriate levels of accuracy, robustness, and cybersecurity. This supports the testing of accuracy and limits.",,
+TC17,Regulation (EU) 2024/1689,Article 26(5),Unsupported,"Article 26(5) pertains to the obligations of the provider regarding the conformity assessment and does not directly address the testing of accuracy, hallucination, repeatability, or limits.",,

@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC15,Regulation (EU) 2024/1689,Article 12,Unsupported,"Article 12 of the EU AI Act pertains to the obligations of users of high-risk AI systems, not the logging requirements of the provider.",,
+TC15,Regulation (EU) 2024/1689,Article 19,Unsupported,"Article 19 addresses the transparency obligations for users of high-risk AI systems, not the logging of system activities.",,
+TC15,Regulation (EU) 2024/1689,Article 26(6),Unsupported,"Article 26(6) concerns the documentation and record-keeping for high-risk AI systems, but does not specifically mandate the detailed logging of user, time, I/O, model version, tool calls, and admin actions.",,

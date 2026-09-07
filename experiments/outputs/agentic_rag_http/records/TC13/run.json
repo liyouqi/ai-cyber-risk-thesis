@@ -1,0 +1,2124 @@
+{
+  "item_id": "TC13",
+  "method": "agentic_rag",
+  "evidence_provider": "regulatory-rag-http",
+  "evidence_provider_details": {
+    "api_url": "http://127.0.0.1:8080",
+    "health": {
+      "status": "ready"
+    },
+    "status": {
+      "schema_version": "1.0",
+      "corpus_id": "regulatory-en",
+      "corpus_version": "regulatory-core-20260907-r2",
+      "document_count": 45,
+      "chunk_count": 13017,
+      "supported_modes": [
+        "bm25",
+        "vector",
+        "hybrid"
+      ],
+      "bm25_index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+      "vector_index_version": "regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
+      "vector_index_available": true,
+      "supported_query_modes": [
+        "direct",
+        "planned"
+      ],
+      "planner_available": true
+    },
+    "retrieval_mode": "bm25",
+    "top_k": 5,
+    "direct_timeout_seconds": 30.0,
+    "planned_timeout_seconds": 120.0,
+    "retrievals": [
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 26,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 18073,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "identify_provision_for_sso_mfa",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "SSO",
+                "MFA"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "identify_provision_for_least_privilege",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "least privilege"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "identify_provision_for_access_review",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "access review"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:11:57.395385"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_sso_mfa",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "SSO",
+                "MFA"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_least_privilege",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "least privilege"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_access_review",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "access review"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 8727,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "find_privilege_segregation_provision",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses segregation and control of admin, model, and security configuration privileges?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "admin privileges",
+                "model configuration privileges",
+                "security configuration privileges",
+                "segregation",
+                "control"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:12:16.766262"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "find_privilege_segregation_provision",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses segregation and control of admin, model, and security configuration privileges?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "admin privileges",
+                "model configuration privileges",
+                "security configuration privileges",
+                "segregation",
+                "control"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:102:subparagraph:1",
+              "eu:32024R1689:article:105:subparagraph:1",
+              "eu:32024R1689:article:106:subparagraph:1",
+              "eu:32024R1689:article:107:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses segregation and control of admin, model, and security configuration privileges?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are data encrypted in transit and at rest with managed keys?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are data encrypted in transit and at rest with managed keys?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 9087,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "identify_encryption_requirements_in_regulation",
+              "question": "Which provisions of Regulation (EU) 2024/1689 require data to be encrypted in transit and at rest with managed keys?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "data encryption",
+                "in transit",
+                "at rest",
+                "managed keys"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:12:35.194604"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "identify_encryption_requirements_in_regulation",
+              "question": "Which provisions of Regulation (EU) 2024/1689 require data to be encrypted in transit and at rest with managed keys?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "data encryption",
+                "in transit",
+                "at rest",
+                "managed keys"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:106:subparagraph:1",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:108:subparagraph:1:point:2"
+            ],
+            "executed_queries": [
+              "Which provisions of Regulation (EU) 2024/1689 require data to be encrypted in transit and at rest with managed keys?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 10 of Regulation (EU) 2024/1689 support this requirement: Are sensitive inputs restricted with classification, minimisation and masking?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 26(4) of Regulation (EU) 2024/1689 support this requirement: Are sensitive inputs restricted with classification, minimisation and masking?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 2,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 27 of Regulation (EU) 2024/1689 support this requirement: Are sensitive inputs restricted with classification, minimisation and masking?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 8197,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "regulation_2024_1689_sensitive_inputs_restriction",
+              "question": "Are sensitive inputs restricted with classification, minimisation and masking under Regulation (EU) 2024/1689?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "sensitive inputs",
+                "classification",
+                "minimisation",
+                "masking"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:12:52.451449"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "regulation_2024_1689_sensitive_inputs_restriction",
+              "question": "Are sensitive inputs restricted with classification, minimisation and masking under Regulation (EU) 2024/1689?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "sensitive inputs",
+                "classification",
+                "minimisation",
+                "masking"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:108:subparagraph:1:point:2",
+              "eu:32024R1689:article:108:subparagraph:1:point:4",
+              "eu:32024R1689:article:108:subparagraph:1:point:6",
+              "eu:32024R1689:article:107:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Are sensitive inputs restricted with classification, minimisation and masking under Regulation (EU) 2024/1689?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are entities, tenants, environments and knowledge bases isolated?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are entities, tenants, environments and knowledge bases isolated?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are entities, tenants, environments and knowledge bases isolated?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 8413,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "find_isolation_provision",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that entities, tenants, environments and knowledge bases are isolated?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "entities",
+                "tenants",
+                "environments",
+                "knowledge bases",
+                "isolation"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:13:15.222722"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "find_isolation_provision",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that entities, tenants, environments and knowledge bases are isolated?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "entities",
+                "tenants",
+                "environments",
+                "knowledge bases",
+                "isolation"
+              ],
+              "expected_evidence_roles": [],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that entities, tenants, environments and knowledge bases are isolated?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 10 of Regulation (EU) 2024/1689 support this requirement: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 12 of Regulation (EU) 2024/1689 support this requirement: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 13 of Regulation (EU) 2024/1689 support this requirement: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 26(6) of Regulation (EU) 2024/1689 support this requirement: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 2,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 22830,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "identify_provision_for_retention_deletion_configurability",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the configurability of retention and deletion for prompts, files, outputs, vectors, and logs?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "retention",
+                "deletion",
+                "configurability",
+                "prompts",
+                "files",
+                "outputs",
+                "vectors",
+                "logs"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:13:53.048166"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "identify_provision_for_retention_deletion_configurability",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the configurability of retention and deletion for prompts, files, outputs, vectors, and logs?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "retention",
+                "deletion",
+                "configurability",
+                "prompts",
+                "files",
+                "outputs",
+                "vectors",
+                "logs"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:annex:x:annex-part:3:subparagraph:1",
+              "eu:32024R1689:article:105:subparagraph:1",
+              "eu:32024R1689:article:106:subparagraph:1",
+              "eu:32024R1689:article:107:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses the configurability of retention and deletion for prompts, files, outputs, vectors, and logs?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 10 of Regulation (EU) 2024/1689 support this requirement: Is institutional data excluded from training or subject to enforceable opt-out?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 5,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 13 of Regulation (EU) 2024/1689 support this requirement: Is institutional data excluded from training or subject to enforceable opt-out?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 2,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 25(4) of Regulation (EU) 2024/1689 support this requirement: Is institutional data excluded from training or subject to enforceable opt-out?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 2,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 4465,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "regulation_2024_1689_institutional_data_training_opt_out",
+              "question": "Is institutional data excluded from training or subject to enforceable opt-out under Regulation (EU) 2024/1689?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "institutional data",
+                "training",
+                "enforceable opt-out"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:14:07.928686"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "regulation_2024_1689_institutional_data_training_opt_out",
+              "question": "Is institutional data excluded from training or subject to enforceable opt-out under Regulation (EU) 2024/1689?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "institutional data",
+                "training",
+                "enforceable opt-out"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:108:subparagraph:1:point:3",
+              "eu:32024R1689:article:108:subparagraph:1:point:2",
+              "eu:32024R1689:article:108:subparagraph:1:point:4",
+              "eu:32024R1689:article:108:subparagraph:1:point:6"
+            ],
+            "executed_queries": [
+              "Is institutional data excluded from training or subject to enforceable opt-out under Regulation (EU) 2024/1689?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 19,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 11072,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "find_provision_for_api_plugin_agent_tool_outbound_connection_allowlisting_least_privileged",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that APIs, plugins, agent tools and outbound connections be allowlisted and least-privileged?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "APIs",
+                "plugins",
+                "agent tools",
+                "outbound connections",
+                "allowlisted",
+                "least-privileged"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:14:26.848434"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "find_provision_for_api_plugin_agent_tool_outbound_connection_allowlisting_least_privileged",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that APIs, plugins, agent tools and outbound connections be allowlisted and least-privileged?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "APIs",
+                "plugins",
+                "agent tools",
+                "outbound connections",
+                "allowlisted",
+                "least-privileged"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:106:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:105:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that APIs, plugins, agent tools and outbound connections be allowlisted and least-privileged?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      },
+      {
+        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 17,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+        "query_mode": "direct",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "retrieval_metadata": {
+          "retrieval_mode": "bm25",
+          "candidate_count": 1455,
+          "retrieval_ms": 18,
+          "embedding_provider": null,
+          "embedding_model": null,
+          "fusion_method": null,
+          "query_expansion_version": "regulatory-aliases-v4",
+          "query_expansion_terms": [],
+          "context_expansion_version": "provision-context-v1",
+          "context_expansion_count": 1,
+          "scope_policy_version": "1.0",
+          "effective_jurisdictions": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+        "query_mode": "planned",
+        "scope": {
+          "frameworks": [
+            "ai_act"
+          ],
+          "document_ids": [
+            "EU-2024-1689"
+          ],
+          "jurisdictions": [
+            "EU"
+          ],
+          "entity_types": [],
+          "topics": []
+        },
+        "status": "retrieved",
+        "planning_ms": 4956,
+        "plan": {
+          "plan_id": "auto",
+          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+          "scope": {
+            "frameworks": [
+              "ai_act"
+            ],
+            "document_ids": [
+              "EU-2024-1689"
+            ],
+            "jurisdictions": [
+              "EU"
+            ],
+            "entity_types": [],
+            "topics": []
+          },
+          "claims": [
+            {
+              "claim_id": "identify_mitigation_provisions",
+              "question": "Which provisions of Regulation (EU) 2024/1689 address mitigation of prompt injection, malicious files, retrieval bypass, and indirect instructions?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "prompt injection",
+                "malicious files",
+                "retrieval bypass",
+                "indirect instructions",
+                "mitigation"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.6v",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-07T11:14:42.122512"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 5,
+            "max_total_evidence": 25,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "identify_mitigation_provisions",
+              "question": "Which provisions of Regulation (EU) 2024/1689 address mitigation of prompt injection, malicious files, retrieval bypass, and indirect instructions?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "prompt injection",
+                "malicious files",
+                "retrieval bypass",
+                "indirect instructions",
+                "mitigation"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:110:subparagraph:1:point:68",
+              "eu:32024R1689:article:107:subparagraph:1",
+              "eu:32024R1689:article:109:subparagraph:1",
+              "eu:32024R1689:article:103:subparagraph:1",
+              "eu:32024R1689:article:104:subparagraph:1"
+            ],
+            "executed_queries": [
+              "Which provisions of Regulation (EU) 2024/1689 address mitigation of prompt injection, malicious files, retrieval bypass, and indirect instructions?"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 1 query projection(s)"
+            ]
+          }
+        ],
+        "retrieval_metadata": {
+          "corpus_id": "regulatory-en",
+          "corpus_version": "regulatory-core-20260907-r2",
+          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
+          "retrieval_strategy_version": "planned-retrieval-v1",
+          "knowledge_pack_version": null,
+          "retrieval_ms": 0,
+          "fallback_details": []
+        }
+      }
+    ]
+  },
+  "workflow_version": "0.3",
+  "prompt_version": "agent-review-v0.2",
+  "model": "glm-4.6v",
+  "model_settings": {
+    "model": "glm-4.6v",
+    "temperature": 0,
+    "thinking_mode": "disabled"
+  },
+  "elapsed_seconds": 10.752,
+  "model_attempts": 1,
+  "guardrail_changes": [],
+  "queries": [
+    {
+      "purpose": "validate",
+      "query_mode": "direct",
+      "provision": "Article 9",
+      "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?"
+    },
+    {
+      "purpose": "validate",
+      "query_mode": "direct",
+      "provision": "Article 15",
+      "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?"
+    },
+    {
+      "purpose": "gap",
+      "query_mode": "planned",
+      "provision": "",
+      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?"
+    }
+  ],
+  "item": {
+    "item_id": "TC13",
+    "framework": "EU AI Act",
+    "instrument": "Regulation (EU) 2024/1689",
+    "domain": "Input",
+    "control_statement": "Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+    "expected_evidence": "Red-team test, scanning, inherited ACL and blocking evidence",
+    "applicability": "Generative AI, RAG or agent systems",
+    "existing_mapping": "Art. 9; Art. 15",
+    "source_row": 17
+  }
+}

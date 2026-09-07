@@ -28,10 +28,10 @@ See `docs/EXPERIMENT_DESIGN.md` for the research design,
 `agent/README.md` for the Agent boundary. Draft system diagrams and the
 reproducible Chapter 5 output definition are under `thesis_outputs/`.
 
-The Manual working files and the completed 20-item DORA outputs are under
-`experiments/`. New Agentic RAG runs use the separate Regulatory RAG only through
-its read-only HTTP API. AI Act runs remain pending until that API is available
-with the required corpus and Planned retrieval enabled.
+The Manual working files and completed AI outputs are under `experiments/`.
+Agentic RAG uses the separate Regulatory RAG only through its read-only HTTP
+API. All 40 LLM-only and all 40 HTTP Agentic RAG runs have been saved; Manual
+review and Manual-based scoring remain outstanding.
 
 Run the local checks with:
 

@@ -1,0 +1,49 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 9",
+      "decision": "Unsupported",
+      "reason": "Article 9 addresses the scope of the regulation and definitions, not change management or testing procedures.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "decision": "Unsupported",
+      "reason": "Article 15 pertains to the obligations of the provider of a high-risk AI system, not specific change management controls.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "decision": "Unsupported",
+      "reason": "Article 17 covers the obligations of the importer of an AI system, not change management or testing.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 72",
+      "decision": "Unsupported",
+      "reason": "Article 72 deals with the powers of market surveillance authorities, not the technical controls for managing changes.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17(2)",
+      "reason": "This article requires providers to establish, implement, and document a quality management system, which should include procedures for managing changes to the AI system, including testing and approval.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17(3)",
+      "reason": "This article mandates that providers ensure the AI system remains compliant with the regulation throughout its lifecycle, which implies a need for controlled changes and testing.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to all AI systems as per the assessment item. The EU AI Act requires providers to implement a quality management system (Article 17(2)) and ensure ongoing compliance (Article 17(3)), which inherently covers the testing and approval of changes.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The provided mapping is incorrect. The control statement on testing and approving changes is not supported by the cited articles. The correct mapping should reference Article 17(2) and (3) of the EU AI Act, which require a quality management system and ongoing compliance, respectively, both of which encompass change management controls."
+}

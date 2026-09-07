@@ -1,0 +1,36 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 10",
+      "decision": "Unsupported",
+      "reason": "Article 10 of the AI Act focuses on the obligations of providers regarding the technical documentation of high-risk AI systems, which does not directly address the restriction of sensitive inputs through classification, minimisation, or masking.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(4)",
+      "decision": "Unsupported",
+      "reason": "Article 26(4) pertains to the obligations of users of high-risk AI systems, specifically regarding human oversight, and does not contain provisions for restricting sensitive inputs.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 27",
+      "decision": "Unsupported",
+      "reason": "Article 27 outlines the requirements for the design and development of high-risk AI systems, including data governance, but does not specifically mandate the restriction of sensitive inputs through classification, minimisation, or masking.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 29",
+      "reason": "Article 29 of the AI Act addresses the quality of data used for training, validation, and testing of high-risk AI systems, which includes requirements for data governance and minimisation that could support the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to personal or confidential data, which is a key focus of the AI Act's data governance requirements.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings do not align with the control statement's focus on restricting sensitive inputs. The AI Act's provisions on data governance, such as Article 29, are more relevant and should be considered for a correct mapping."
+}

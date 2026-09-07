@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC14,Regulation (EU) 2024/1689,Article 5,Supported,"Article 5 addresses the prohibition of certain AI systems, which includes those that generate harmful content. This aligns with the control statement's focus on controlling harmful content and prohibited-use outputs.",,
+TC14,Regulation (EU) 2024/1689,Article 9,Supported,"Article 9 imposes obligations on high-risk AI systems, including requirements for data governance and robustness. These obligations are relevant to controlling the quality and safety of outputs, which encompasses sensitive data and malicious code.",,
+TC14,Regulation (EU) 2024/1689,Article 15,Supported,Article 15 requires providers of general-purpose AI models to implement policies to prevent the generation of illegal content. This directly supports the control of prohibited-use outputs.,,

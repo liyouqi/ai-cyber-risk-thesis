@@ -72,10 +72,16 @@ def load_items(path: str | Path) -> list[AssessmentItem]:
 
 def _query(item: AssessmentItem, provision: ProvisionRef | None) -> str:
     if provision:
-        return (
-            f"Does {provision.provision} of {provision.instrument} support this "
-            f"requirement: {item.control_statement}"
-        )
+        # Keep Direct requests as canonical legal citations so Regulatory RAG's
+        # own citation parser can resolve the provision deterministically.  The
+        # control statement belongs in the later LLM assessment prompt, not in
+        # the citation lookup query.
+        citation_names = {
+            "Regulation (EU) 2024/1689": "AI Act",
+            "Regulation (EU) 2022/2554": "DORA",
+        }
+        instrument = citation_names.get(provision.instrument, provision.instrument)
+        return f"{instrument} {provision.provision}"
     return (
         f"Which provision of {item.instrument} is materially necessary for this "
         f"requirement but absent from the existing mapping: {item.control_statement}"

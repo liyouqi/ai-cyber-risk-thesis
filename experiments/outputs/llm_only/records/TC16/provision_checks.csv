@@ -1,0 +1,4 @@
+item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
+TC16,Regulation (EU) 2024/1689,Article 14,Unsupported,"Article 14 addresses the obligation for providers to establish a post-market monitoring system. It does not specifically mandate the availability of human review, rejection, stop, override, or escalation controls for AI systems.",,
+TC16,Regulation (EU) 2024/1689,Article 26(2),Unsupported,"Article 26(2) concerns the obligation for providers to establish a post-market monitoring system. It does not specifically mandate the availability of human review, rejection, stop, override, or escalation controls for AI systems.",,
+TC16,Regulation (EU) 2024/1689,Article 26(5),Unsupported,"Article 26(5) concerns the obligation for providers to establish a post-market monitoring system. It does not specifically mandate the availability of human review, rejection, stop, override, or escalation controls for AI systems.",,

@@ -1,0 +1,29 @@
+{
+  "mapping_reviews": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 10",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 10 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 26(4)",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 26(4) of the EU AI Act, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 27",
+      "decision": "Unable to determine",
+      "reason": "The provided evidence does not contain the text of Article 27 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
+      "evidence_ids": []
+    }
+  ],
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The provided evidence consists of amendments to other regulations and does not contain the text of the articles (10, 26(4), 27) that are being reviewed. To assess the mapping, the actual provisions of the EU AI Act must be reviewed."
+}
