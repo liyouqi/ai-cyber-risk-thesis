@@ -3,13 +3,20 @@
     {
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 14",
-      "decision": "Supported",
-      "reason": "Article 14 of DORA requires ICT risk management and business continuity plans, which includes testing. The control statement's focus on including communication plans in these tests aligns with the requirement for comprehensive testing of business continuity arrangements.",
+      "decision": "Partially supported",
+      "reason": "Article 14 requires ICT incident response plans to be tested, which includes communication aspects. However, it does not specifically mandate the inclusion of communication plans within ICT business continuity testing or address the timing of such tests.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions are known beyond the general scope of DORA.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping to Article 14 is appropriate as it covers the requirement for testing ICT business continuity plans, which inherently includes communication components."
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 14",
+      "reason": "The provision requires testing of ICT incident response plans but does not explicitly require the inclusion of communication plans within ICT business continuity testing.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as Article 14 supports the testing of communication plans but does not explicitly require their inclusion in ICT business continuity testing. The mapping should be retained but clarified to reflect this partial support."
 }

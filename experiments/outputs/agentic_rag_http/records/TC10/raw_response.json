@@ -3,34 +3,51 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 10 of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 10 focuses on data governance and quality for training, validation, and testing data sets. It does not address the retention or deletion of prompts, files, outputs, vectors, or logs.",
+      "evidence_ids": [
+        "eu:32024R1689:article:10:paragraph:1",
+        "eu:32024R1689:article:10:paragraph:2",
+        "eu:32024R1689:article:10:paragraph:3",
+        "eu:32024R1689:article:10:paragraph:4",
+        "eu:32024R1689:article:10:paragraph:5",
+        "eu:32024R1689:article:10:paragraph:6"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 12",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 12 of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 12 requires the automatic recording of logs and specifies what events must be logged. However, it does not address the retention or deletion of logs, which is a key part of the control statement.",
+      "evidence_ids": [
+        "eu:32024R1689:article:12:paragraph:1",
+        "eu:32024R1689:article:12:paragraph:2",
+        "eu:32024R1689:article:12:paragraph:3"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 13 of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 13 addresses the transparency and instructions for use of high-risk AI systems. It does not contain any provisions related to data retention or deletion.",
+      "evidence_ids": [
+        "eu:32024R1689:article:13:paragraph:1",
+        "eu:32024R1689:article:13:paragraph:2",
+        "eu:32024R1689:article:13:paragraph:3"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(6)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(6) of the EU AI Act, making it impossible to assess its relevance to the control statement on configurable retention and deletion.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 26(6) mandates that deployers keep logs for at least six months, which addresses the retention of logs. However, it does not cover the retention or deletion of prompts, files, outputs, or vectors, nor does it address the configurability of these settings.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:6"
+      ]
     }
   ],
   "missing_mappings": [],
   "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of amendments to other EU regulations and an annex, but does not include the actual text of the articles (10, 12, 13, 26(6)) that are being reviewed. Without the text of these provisions, a determination of support cannot be made. The evidence IDs provided are for unrelated articles and annexes."
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as it identifies provisions related to logging (Art. 12) and log retention (Art. 26(6)). However, it incorrectly includes provisions on data quality (Art. 10) and transparency (Art. 13) which are not relevant to the control's objective of configurable retention and deletion. The mapping should be revised to focus on provisions that directly address data lifecycle management."
 }

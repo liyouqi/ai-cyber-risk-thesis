@@ -4,39 +4,39 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
       "decision": "Unsupported",
-      "reason": "Article 9 addresses the classification of AI systems and their risk levels, not technical isolation measures.",
+      "reason": "Article 9 addresses the classification of AI systems and their risk levels, which is a foundational requirement but does not directly relate to the technical isolation of entities or tenants.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
       "decision": "Unsupported",
-      "reason": "Article 15 pertains to transparency obligations for deployers of high-risk AI systems, not isolation.",
+      "reason": "Article 15 pertains to transparency obligations for certain AI systems, focusing on providing information to users, not on the technical isolation of environments or knowledge bases.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Unsupported",
-      "reason": "Article 17 concerns post-market monitoring and reporting of serious incidents, not isolation.",
+      "reason": "Article 17 outlines requirements for high-risk AI systems, including risk management and data governance, but does not specifically mandate the isolation of entities or tenants.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15(3)",
-      "reason": "This provision requires deployers to ensure high-risk AI systems are used in a manner that is consistent with their intended purpose and to take appropriate technical and organizational measures to ensure this. This includes ensuring isolation between different tenants or entities.",
+      "provision": "Article 15",
+      "reason": "Article 15 is not relevant to the control statement on isolation.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17(1)(b)",
-      "reason": "This provision requires providers to implement appropriate technical and organizational measures to ensure the security of the AI system throughout its lifecycle. Isolation is a key security measure to prevent unauthorized access or interference between different entities or tenants.",
+      "provision": "Article 17",
+      "reason": "Article 17 does not address the specific requirement of isolating entities, tenants, environments, or knowledge bases.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to multi-entity or tenant systems as specified in the assessment item.",
+  "applicability_note": "The control is applicable to multi-entity or tenant systems, which is a key context for the isolation requirement.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they do not address the technical isolation requirement. The correct mappings should focus on provisions related to security and appropriate use, such as Article 15(3) and Article 17(1)(b)."
+  "challenge_comment": "The existing mappings (Art. 9, 15, 17) do not directly support the control statement on isolation. These articles address classification, transparency, and high-risk system requirements, respectively, but none specifically mandate the technical isolation of entities or tenants. The mapping is incorrect as it does not align with the control's objective."
 }

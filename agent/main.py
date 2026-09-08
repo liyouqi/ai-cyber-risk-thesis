@@ -49,8 +49,8 @@ def main() -> None:
         api_url = args.rag_api_url or env.get("REGULATORY_RAG_API_URL")
         if not api_url:
             raise SystemExit("Set --rag-api-url or REGULATORY_RAG_API_URL")
-        rag_mode = args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "bm25")
-        rag_top_k = args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 5)
+        rag_mode = args.rag_mode or str(env.get("REGULATORY_RAG_MODE") or "hybrid")
+        rag_top_k = args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8)
         provider = HttpRegulatoryRagAdapter(
             str(api_url),
             api_key=env.get("REGULATORY_RAG_API_KEY") or None,

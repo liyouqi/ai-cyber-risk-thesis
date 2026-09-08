@@ -1,5 +1,5 @@
 item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-TC20,Regulation (EU) 2024/1689,Article 15,Unsupported,Article 15 relates to the scope of the AI Act and does not address cybersecurity processes.,,
-TC20,Regulation (EU) 2024/1689,Article 17,Unsupported,Article 17 covers the obligations of providers of general-purpose AI models and does not address cybersecurity processes.,,
-TC20,Regulation (EU) 2024/1689,Article 20,Unsupported,Article 20 addresses the obligations of distributors and does not address cybersecurity processes.,,
-TC20,Regulation (EU) 2024/1689,Article 73,Unsupported,Article 73 relates to the European Artificial Intelligence Board and does not address cybersecurity processes.,,
+TC20,Regulation (EU) 2024/1689,Article 15,Unsupported,"Article 15 relates to the classification of AI systems and their risk levels, not to the implementation of security processes like vulnerability management or incident response.",,
+TC20,Regulation (EU) 2024/1689,Article 17,Unsupported,"Article 17 addresses the obligations for high-risk AI systems, including data governance and documentation, but does not specifically mandate the implementation of vulnerability or incident response processes.",,
+TC20,Regulation (EU) 2024/1689,Article 20,Unsupported,"Article 20 concerns the conformity assessment procedures for high-risk AI systems, which is a distinct process from the operational security controls for vulnerability and incident management.",,
+TC20,Regulation (EU) 2024/1689,Article 73,Unsupported,"Article 73 outlines the rules for market surveillance and enforcement, which is a regulatory oversight function and not a direct requirement for implementing specific security processes.",,

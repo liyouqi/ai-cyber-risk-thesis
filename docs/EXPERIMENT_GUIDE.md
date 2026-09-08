@@ -44,8 +44,8 @@ python -m unittest discover -s agent/tests -v
 ```text
 REGULATORY_RAG_API_URL=http://127.0.0.1:8080
 REGULATORY_RAG_API_KEY=仅在服务要求 Bearer 认证时填写
-REGULATORY_RAG_MODE=bm25
-REGULATORY_RAG_TOP_K=5
+REGULATORY_RAG_MODE=hybrid
+REGULATORY_RAG_TOP_K=8
 ```
 
 可以复制仓库中的 `.env.example` 后填写；不要把真实密钥提交到 Git。
@@ -86,7 +86,8 @@ experiments/outputs/manual/timing.csv
 1. 在 `timing.csv` 记录开始时间。
 2. 只查官方法律文本，不打开该条对应的 AI 输出。
 3. 在 `provision_checks.csv` 判断每个现有条款是 `Supported`、
-   `Partially supported`、`Unsupported` 或 `Unable to determine`。
+   `Partially supported`、`Unsupported` 或 `Unable to determine`，并使用
+   `EXPERIMENT_DESIGN.md` 中的统一判定边界。
 4. 填写简短原因、官方来源和支持段落。
 5. 在 `item_summary.csv` 填写总体判断和真正重要的遗漏条款。
 6. 在 `timing.csv` 填写结束时间和总分钟数。

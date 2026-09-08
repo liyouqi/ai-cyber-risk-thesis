@@ -3,15 +3,19 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 9, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 9 establishes a risk management system and requires testing of high-risk AI systems to ensure they perform consistently for their intended purpose. This supports the control's objective of testing accuracy and limits. However, it does not specifically address the testing of hallucination or repeatability.",
+      "evidence_ids": [
+        "eu:32024R1689:article:9:paragraph:1",
+        "eu:32024R1689:article:9:paragraph:6",
+        "eu:32024R1689:article:9:paragraph:8"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
       "decision": "Partially supported",
-      "reason": "Article 13(3)(b)(ii) requires the level of accuracy to be tested and validated, which aligns with the control statement. However, it does not explicitly mention testing for hallucination, repeatability, or limits.",
+      "reason": "Article 13 requires instructions for use to include the level of accuracy and metrics against which the system has been tested. This supports the control's objective of testing accuracy. However, it does not address the testing of hallucination, repeatability, or limits.",
       "evidence_ids": [
         "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:ii"
       ]
@@ -19,20 +23,25 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 15, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Supported",
+      "reason": "Article 15 directly requires high-risk AI systems to achieve an appropriate level of accuracy and to be designed and developed to perform consistently. It also mandates that accuracy metrics be declared in the instructions for use, which supports the control's objective of testing accuracy and limits.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:1",
+        "eu:32024R1689:article:15:paragraph:3"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(5), making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 26(5) addresses the obligations of deployers to monitor the operation of a high-risk AI system and to inform providers and authorities in case of risks or serious incidents. This is a post-deployment monitoring obligation and does not relate to the testing of accuracy, hallucination, repeatability, or limits.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:5"
+      ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
+  "applicability_note": "No additional applicability condition is identified.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The assessment is partially correct because only Article 13 is supported by the evidence, while the other mapped articles (9, 15, 26(5)) cannot be evaluated due to missing text in the provided evidence. The mapping for Article 13 is also only partial as it does not cover all elements of the control statement."
+  "challenge_comment": "The mapping for Article 26(5) is incorrect as it pertains to post-deployment monitoring by deployers, not the testing of system performance. The mapping for Article 9 and Article 13 is partially correct as they support the testing of accuracy but do not cover all aspects of the control statement (hallucination, repeatability). Article 15 is the most relevant and directly supports the control's objective."
 }

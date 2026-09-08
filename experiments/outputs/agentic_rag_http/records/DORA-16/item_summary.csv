@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-16,Correct,[],The control statement 'At least once a year' is directly supported by the regulatory text for access rights review.,No challenge needed. The existing mapping is correct and should be retained.
+DORA-16,Unable to determine,[],No additional applicability condition identified.,"The assessment cannot be completed because the retrieved evidence is empty. To proceed, the specific text of Article 21(1)(e)(iv) and its context within the regulation must be provided to determine if it supports the control statement."

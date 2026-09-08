@@ -6,34 +6,7 @@
     "source_locator": "Article 5(1)(c)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
     "rank": 1,
-    "score": 38.037788
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-3",
-    "document_id": "EU-2025-301",
-    "text": "3. Financial entities that are unable to submit the initial notification, intermediate report, or final report within the time limits set out in paragraph 1, shall inform the competent authority thereof without undue delay, but no later than the respective time limits for the submission of the notification or report, and shall explain the reasons for the delay.",
-    "source_locator": "Article 5(3)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 2,
-    "score": 16.256617
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-1-b",
-    "document_id": "EU-2025-301",
-    "text": "(b) for the intermediate report: at the latest within 72 hours from the submission of the initial notification, even where the status or the handling of the incident have not changed as referred to in Article 19(4), point (b), of Regulation (EU) 2022/2554. Financial entities shall submit an updated intermediate report without undue delay, and in any case when the regular activities have been recovered;",
-    "source_locator": "Article 5(1)(b)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 3,
-    "score": 15.461759
-  },
-  {
-    "evidence_id": "eu-2025-301-article-2-b",
-    "document_id": "EU-2025-301",
-    "text": "(b) the date of detection, time of detection, and classification of the incident pursuant to Article 8 of Commission Delegated Regulation (EU) 2024/1772 ( 7 ) ;",
-    "source_locator": "Article 2(b)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 4,
-    "score": 13.082308
+    "score": 1.0
   },
   {
     "evidence_id": "eu-2025-301-article-5-1",
@@ -41,34 +14,7 @@
     "text": "1. Financial entities shall submit the initial notification and the intermediate and final reports as referred to in Article 19(4), points (a), (b) and (c), of Regulation (EU) 2022/2554 within the following time limits:",
     "source_locator": "Article 5(1)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 5,
-    "score": 12.795542
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-5",
-    "document_id": "EU-2025-301",
-    "text": "5. Paragraph 4 shall not apply for the submission of an initial notification or an intermediate report by credit institutions, central counterparties, operators of trading venues, and other financial entities identified as essential or important entities pursuant to Article 3 of Directive (EU) 2022/2555.",
-    "source_locator": "Article 5(5)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 6,
-    "score": 11.249953
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-6",
-    "document_id": "EU-2025-301",
-    "text": "6. Competent authorities may decide that paragraph 4 shall not apply for the submission of an initial notification or an intermediate report by financial entities, other than those referred to in paragraph 5, which are significant or have a systemic character for the financial sector at national or Union level. Competent authorities shall notify their decision to the identified financial entities. The decision of the competent authority shall only apply in respect of incidents reported after the date of notification of the decision by the competent authority to the identified financial entities.",
-    "source_locator": "Article 5(6)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 7,
-    "score": 10.566899
-  },
-  {
-    "evidence_id": "eu-2025-301-article-1-a",
-    "document_id": "EU-2025-301",
-    "text": "(a) the type of submission (initial notification, intermediate report, or final report);",
-    "source_locator": "Article 1(a)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": null,
-    "score": null
+    "rank": 2,
+    "score": 1.0
   }
 ]

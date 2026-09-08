@@ -4,14 +4,14 @@
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 24(6)",
       "decision": "Supported",
-      "reason": "The evidence text from Article 24(6) directly states that financial entities must ensure appropriate tests are conducted on all ICT systems and applications supporting critical or important functions at least yearly, which matches the control statement.",
+      "reason": "The provision directly states that financial entities must ensure appropriate tests are conducted on all ICT systems and applications supporting critical or important functions at least yearly, which matches the control statement's objective and requirement.",
       "evidence_ids": [
         "eu-2022-2554-article-24-6"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement applies to financial entities, other than microenterprises, as specified in the evidence for Article 24(6).",
+  "applicability_note": "The control applies to financial entities, other than microenterprises.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The existing mapping to Article 24(6) is correct and should be retained."
+  "challenge_comment": "No challenge needed. The existing mapping to Article 24(6) is correct and should be retained."
 }

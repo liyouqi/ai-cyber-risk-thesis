@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-01,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,No challenge is needed; the mapping is accurate and should be retained.
+DORA-01,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,"The mapping is correct. The control statement's requirement for annual reviews and reviews following major incidents, supervisory instructions, or testing findings is directly and materially supported by DORA Article 6(5)."

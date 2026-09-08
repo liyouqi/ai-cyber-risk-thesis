@@ -1,83 +1,425 @@
 [
   {
-    "evidence_id": "eu:32024R1689:article:110:subparagraph:1:point:68",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:1",
     "document_id": "EU-2024-1689",
-    "text": "(68) Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (OJ L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj)..",
-    "source_locator": "Article 110(68)",
+    "text": "1. High-risk AI systems which make use of techniques involving the training of AI models with data shall be developed on the basis of training, validation and testing data sets that meet the quality criteria referred to in paragraphs 2 to 5 whenever such data sets are used.",
+    "source_locator": "Article 10(1)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 1,
-    "score": 27.833917
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:105:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2",
     "document_id": "EU-2024-1689",
-    "text": "In Article 8 of Directive 2014/90/EU, the following paragraph is added: For Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, when carrying out its activities pursuant to paragraph 1 and when adopting technical specifications and testing standards in accordance with paragraphs 2 and 3, the Commission shall take into account the requirements set out in Chapter III, Section 2, of that Regulation.",
-    "source_locator": "Article 105, Subparagraph",
+    "text": "2. Training, validation and testing data sets shall be subject to data governance and management practices appropriate for the intended purpose of the high-risk AI system. Those practices shall concern in particular:",
+    "source_locator": "Article 10(2)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 2,
-    "score": 22.892225
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:106:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:a",
     "document_id": "EU-2024-1689",
-    "text": "In Article 5 of Directive (EU) 2016/797, the following paragraph is added: When adopting delegated acts pursuant to paragraph 1 and implementing acts pursuant to paragraph 11 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 106, Subparagraph",
+    "text": "(a) the relevant design choices;",
+    "source_locator": "Article 10(2)(a)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 3,
-    "score": 22.409658
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:107:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:b",
     "document_id": "EU-2024-1689",
-    "text": "In Article 5 of Regulation (EU) 2018/858 the following paragraph is added: When adopting delegated acts pursuant to paragraph 3 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 107, Subparagraph",
+    "text": "(b) data collection processes and the origin of data, and in the case of personal data, the original purpose of the data collection;",
+    "source_locator": "Article 10(2)(b)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 4,
-    "score": 22.311786
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:109:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:c",
     "document_id": "EU-2024-1689",
-    "text": "In Article 11 of Regulation (EU) 2019/2144, the following paragraph is added: When adopting the implementing acts pursuant to paragraph 2, concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 109, Subparagraph",
+    "text": "(c) relevant data-preparation processing operations, such as annotation, labelling, cleaning, updating, enrichment and aggregation;",
+    "source_locator": "Article 10(2)(c)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 5,
-    "score": 22.18425
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:110:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:d",
     "document_id": "EU-2024-1689",
-    "text": "In Annex I to Directive (EU) 2020/1828 of the European Parliament and of the Council, the following point is added:",
-    "source_locator": "Article 110, Subparagraph",
+    "text": "(d) the formulation of assumptions, in particular with respect to the information that the data are supposed to measure and represent;",
+    "source_locator": "Article 10(2)(d)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 6,
-    "score": 27.833917
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:6",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:e",
     "document_id": "EU-2024-1689",
-    "text": "(6) in Article 58, the following paragraph is added: When adopting delegated acts pursuant to paragraphs 1 and 2 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account..",
-    "source_locator": "Article 108(6)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": 2,
-    "score": 25.01063
-  },
-  {
-    "evidence_id": "eu:32024R1689:article:108:subparagraph:1",
-    "document_id": "EU-2024-1689",
-    "text": "Regulation (EU) 2018/1139 is amended as follows:",
-    "source_locator": "Article 108, Subparagraph",
+    "text": "(e) an assessment of the availability, quantity and suitability of the data sets that are needed;",
+    "source_locator": "Article 10(2)(e)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 7,
-    "score": 25.01063
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:annex:x:annex-part:3:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:f",
     "document_id": "EU-2024-1689",
-    "text": "Regulation (EU) 2024/1358 of the European Parliament and of the Council of 14 May 2024 on the establishment of Eurodac for the comparison of biometric data in order to effectively apply Regulations (EU) 2024/1315 and (EU) 2024/1350 of the European Parliament and of the Council and Council Directive 2001/55/EC and to identify illegally staying third-country nationals and stateless persons and on requests for the comparison with Eurodac data by Member States’ law enforcement authorities and Europol for law enforcement purposes, amending Regulations (EU) 2018/1240 and (EU) 2019/818 of the European Parliament and of the Council and repealing Regulation (EU) No 603/2013 of the European Parliament and of the Council (OJ L, 2024/1358, 22.5.2024, ELI: http://data.europa.eu/eli/reg/2024/1358/oj).",
-    "source_locator": "ANNEX X — Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice — 3. Eurodac — subparagraph",
+    "text": "(f) examination in view of possible biases that are likely to affect the health and safety of persons, have a negative impact on fundamental rights or lead to discrimination prohibited under Union law, especially where data outputs influence inputs for future operations;",
+    "source_locator": "Article 10(2)(f)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": null,
-    "score": null
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:g",
+    "document_id": "EU-2024-1689",
+    "text": "(g) appropriate measures to detect, prevent and mitigate possible biases identified according to point (f);",
+    "source_locator": "Article 10(2)(g)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:2:point:h",
+    "document_id": "EU-2024-1689",
+    "text": "(h) the identification of relevant data gaps or shortcomings that prevent compliance with this Regulation, and how those gaps and shortcomings can be addressed.",
+    "source_locator": "Article 10(2)(h)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 10,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. Training, validation and testing data sets shall be relevant, sufficiently representative, and to the best extent possible, free of errors and complete in view of the intended purpose. They shall have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons in relation to whom the high-risk AI system is intended to be used. Those characteristics of the data sets may be met at the level of individual data sets or at the level of a combination thereof.",
+    "source_locator": "Article 10(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 11,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:4",
+    "document_id": "EU-2024-1689",
+    "text": "4. Data sets shall take into account, to the extent required by the intended purpose, the characteristics or elements that are particular to the specific geographical, contextual, behavioural or functional setting within which the high-risk AI system is intended to be used.",
+    "source_locator": "Article 10(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 12,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5",
+    "document_id": "EU-2024-1689",
+    "text": "5. To the extent that it is strictly necessary for the purpose of ensuring bias detection and correction in relation to the high-risk AI systems in accordance with paragraph (2), points (f) and (g) of this Article, the providers of such systems may exceptionally process special categories of personal data, subject to appropriate safeguards for the fundamental rights and freedoms of natural persons. In addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, all the following conditions must be met in order for such processing to occur:",
+    "source_locator": "Article 10(5)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 13,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5:point:a",
+    "document_id": "EU-2024-1689",
+    "text": "(a) the bias detection and correction cannot be effectively fulfilled by processing other data, including synthetic or anonymised data;",
+    "source_locator": "Article 10(5)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 14,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) the special categories of personal data are subject to technical limitations on the re-use of the personal data, and state-of-the-art security and privacy-preserving measures, including pseudonymisation;",
+    "source_locator": "Article 10(5)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 15,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) the special categories of personal data are subject to measures to ensure that the personal data processed are secured, protected, subject to suitable safeguards, including strict controls and documentation of the access, to avoid misuse and ensure that only authorised persons have access to those personal data with appropriate confidentiality obligations;",
+    "source_locator": "Article 10(5)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 16,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5:point:d",
+    "document_id": "EU-2024-1689",
+    "text": "(d) the special categories of personal data are not to be transmitted, transferred or otherwise accessed by other parties;",
+    "source_locator": "Article 10(5)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 17,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5:point:e",
+    "document_id": "EU-2024-1689",
+    "text": "(e) the special categories of personal data are deleted once the bias has been corrected or the personal data has reached the end of its retention period, whichever comes first;",
+    "source_locator": "Article 10(5)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 18,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:5:point:f",
+    "document_id": "EU-2024-1689",
+    "text": "(f) the records of processing activities pursuant to Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680 include the reasons why the processing of special categories of personal data was strictly necessary to detect and correct biases, and why that objective could not be achieved by processing other data.",
+    "source_locator": "Article 10(5)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 19,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:10:paragraph:6",
+    "document_id": "EU-2024-1689",
+    "text": "6. For the development of high-risk AI systems not using techniques involving the training of AI models, paragraphs 2 to 5 apply only to the testing data sets.",
+    "source_locator": "Article 10(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 20,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system.",
+    "source_locator": "Article 12(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:2",
+    "document_id": "EU-2024-1689",
+    "text": "2. In order to ensure a level of traceability of the functioning of a high-risk AI system that is appropriate to the intended purpose of the system, logging capabilities shall enable the recording of events relevant for:",
+    "source_locator": "Article 12(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:2:point:a",
+    "document_id": "EU-2024-1689",
+    "text": "(a) identifying situations that may result in the high-risk AI system presenting a risk within the meaning of Article 79(1) or in a substantial modification;",
+    "source_locator": "Article 12(2)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:2:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) facilitating the post-market monitoring referred to in Article 72; and",
+    "source_locator": "Article 12(2)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:2:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) monitoring the operation of high-risk AI systems referred to in Article 26(5).",
+    "source_locator": "Article 12(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. For high-risk AI systems referred to in point 1 (a), of Annex III, the logging capabilities shall provide, at a minimum:",
+    "source_locator": "Article 12(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 6,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:3:point:a",
+    "document_id": "EU-2024-1689",
+    "text": "(a) recording of the period of each use of the system (start date and time and end date and time of each use);",
+    "source_locator": "Article 12(3)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 7,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:3:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) the reference database against which input data has been checked by the system;",
+    "source_locator": "Article 12(3)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:3:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) the input data for which the search has led to a match;",
+    "source_locator": "Article 12(3)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:3:point:d",
+    "document_id": "EU-2024-1689",
+    "text": "(d) the identification of the natural persons involved in the verification of the results, as referred to in Article 14(5).",
+    "source_locator": "Article 12(3)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 10,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. High-risk AI systems shall be designed and developed in such a way as to ensure that their operation is sufficiently transparent to enable deployers to interpret a system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured with a view to achieving compliance with the relevant obligations of the provider and deployer set out in Section 3.",
+    "source_locator": "Article 13(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:2",
+    "document_id": "EU-2024-1689",
+    "text": "2. High-risk AI systems shall be accompanied by instructions for use in an appropriate digital format or otherwise that include concise, complete, correct and clear information that is relevant, accessible and comprehensible to deployers.",
+    "source_locator": "Article 13(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. The instructions for use shall contain at least the following information:",
+    "source_locator": "Article 13(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:a",
+    "document_id": "EU-2024-1689",
+    "text": "(a) the identity and the contact details of the provider and, where applicable, of its authorised representative;",
+    "source_locator": "Article 13(3)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) the characteristics, capabilities and limitations of performance of the high-risk AI system, including:",
+    "source_locator": "Article 13(3)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 5,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:i",
+    "document_id": "EU-2024-1689",
+    "text": "(i) its intended purpose;",
+    "source_locator": "Article 13(3)(b)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 6,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:ii",
+    "document_id": "EU-2024-1689",
+    "text": "(ii) the level of accuracy, including its metrics, robustness and cybersecurity referred to in Article 15 against which the high-risk AI system has been tested and validated and which can be expected, and any known and foreseeable circumstances that may have an impact on that expected level of accuracy, robustness and cybersecurity;",
+    "source_locator": "Article 13(3)(b)(ii)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 7,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:iii",
+    "document_id": "EU-2024-1689",
+    "text": "(iii) any known or foreseeable circumstance, related to the use of the high-risk AI system in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to risks to the health and safety or fundamental rights referred to in Article 9(2);",
+    "source_locator": "Article 13(3)(b)(iii)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:iv",
+    "document_id": "EU-2024-1689",
+    "text": "(iv) where applicable, the technical capabilities and characteristics of the high-risk AI system to provide information that is relevant to explain its output;",
+    "source_locator": "Article 13(3)(b)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:v",
+    "document_id": "EU-2024-1689",
+    "text": "(v) when appropriate, its performance regarding specific persons or groups of persons on which the system is intended to be used;",
+    "source_locator": "Article 13(3)(b)(v)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 10,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:vi",
+    "document_id": "EU-2024-1689",
+    "text": "(vi) when appropriate, specifications for the input data, or any other relevant information in terms of the training, validation and testing data sets used, taking into account the intended purpose of the high-risk AI system;",
+    "source_locator": "Article 13(3)(b)(vi)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 11,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:vii",
+    "document_id": "EU-2024-1689",
+    "text": "(vii) where applicable, information to enable deployers to interpret the output of the high-risk AI system and use it appropriately;",
+    "source_locator": "Article 13(3)(b)(vii)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 12,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) the changes to the high-risk AI system and its performance which have been pre-determined by the provider at the moment of the initial conformity assessment, if any;",
+    "source_locator": "Article 13(3)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 13,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:d",
+    "document_id": "EU-2024-1689",
+    "text": "(d) the human oversight measures referred to in Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of the high-risk AI systems by the deployers;",
+    "source_locator": "Article 13(3)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 14,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:e",
+    "document_id": "EU-2024-1689",
+    "text": "(e) the computational and hardware resources needed, the expected lifetime of the high-risk AI system and any necessary maintenance and care measures, including their frequency, to ensure the proper functioning of that AI system, including as regards software updates;",
+    "source_locator": "Article 13(3)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 15,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:13:paragraph:3:point:f",
+    "document_id": "EU-2024-1689",
+    "text": "(f) where relevant, a description of the mechanisms included within the high-risk AI system that allows deployers to properly collect, store and interpret the logs in accordance with Article 12.",
+    "source_locator": "Article 13(3)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 16,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:26:paragraph:6",
+    "document_id": "EU-2024-1689",
+    "text": "6. Deployers of high-risk AI systems shall keep the logs automatically generated by that high-risk AI system to the extent such logs are under their control, for a period appropriate to the intended purpose of the high-risk AI system, of at least six months, unless provided otherwise in applicable Union or national law, in particular in Union law on the protection of personal data. Deployers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law shall maintain the logs as part of the documentation kept pursuant to the relevant Union financial service law.",
+    "source_locator": "Article 26(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 1.0
   }
 ]

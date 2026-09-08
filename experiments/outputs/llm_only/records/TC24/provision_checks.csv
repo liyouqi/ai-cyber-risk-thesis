@@ -1,5 +1,5 @@
 item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-TC24,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 of the AI Act addresses the scope of the regulation and does not contain provisions related to data export, deletion, or system retirement.",,
-TC24,Regulation (EU) 2024/1689,Article 17,Supported,"Article 17, concerning data governance, includes requirements for data quality and management, which can support the control statement's focus on data deletion and export.",,
-TC24,Regulation (EU) 2024/1689,Article 26(5),Unsupported,Article 26(5) pertains to the obligations of the provider regarding the AI system's conformity assessment and does not address data lifecycle management or system retirement.,,
-TC24,Regulation (EU) 2024/1689,Article 72,Unsupported,"Article 72 outlines the powers of the European Artificial Intelligence Board and does not contain provisions related to data export, deletion, or system retirement.",,
+TC24,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 generally addresses the scope and definitions of the AI Act, not specific obligations for data deletion or system retirement.",,
+TC24,Regulation (EU) 2024/1689,Article 17,Supported,"Article 17 imposes a general obligation on providers to take appropriate measures to ensure that users can exercise their rights, which includes the right to access, correct, and delete data, and to revoke access. This directly supports the control's objectives.",,
+TC24,Regulation (EU) 2024/1689,Article 26(5),Unsupported,"Article 26(5) pertains to the obligations of the notified body, not the provider's obligations for data management or system retirement.",,
+TC24,Regulation (EU) 2024/1689,Article 72,Unsupported,"Article 72 deals with the powers of the European Data Protection Board, which is unrelated to the provider's obligations for data deletion or system retirement.",,

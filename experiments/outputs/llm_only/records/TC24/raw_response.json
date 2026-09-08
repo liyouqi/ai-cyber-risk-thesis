@@ -4,28 +4,28 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
       "decision": "Unsupported",
-      "reason": "Article 9 of the AI Act addresses the scope of the regulation and does not contain provisions related to data export, deletion, or system retirement.",
+      "reason": "Article 9 generally addresses the scope and definitions of the AI Act, not specific obligations for data deletion or system retirement.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Supported",
-      "reason": "Article 17, concerning data governance, includes requirements for data quality and management, which can support the control statement's focus on data deletion and export.",
+      "reason": "Article 17 imposes a general obligation on providers to take appropriate measures to ensure that users can exercise their rights, which includes the right to access, correct, and delete data, and to revoke access. This directly supports the control's objectives.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
       "decision": "Unsupported",
-      "reason": "Article 26(5) pertains to the obligations of the provider regarding the AI system's conformity assessment and does not address data lifecycle management or system retirement.",
+      "reason": "Article 26(5) pertains to the obligations of the notified body, not the provider's obligations for data management or system retirement.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 72",
       "decision": "Unsupported",
-      "reason": "Article 72 outlines the powers of the European Artificial Intelligence Board and does not contain provisions related to data export, deletion, or system retirement.",
+      "reason": "Article 72 deals with the powers of the European Data Protection Board, which is unrelated to the provider's obligations for data deletion or system retirement.",
       "evidence_ids": []
     }
   ],
@@ -33,17 +33,23 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 27",
-      "reason": "Article 27 of the AI Act addresses the obligations of users of high-risk AI systems, which may include requirements for data management and system retirement.",
+      "reason": "Article 27 contains specific obligations for providers to ensure that users can delete their data and revoke access, which is a core part of the control statement.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 28",
-      "reason": "Article 28 of the AI Act outlines the obligations of providers of high-risk AI systems, which may include requirements for data management and system retirement.",
+      "reason": "Article 28 imposes obligations on providers to ensure that users can access their data, which is a key part of the control statement.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 71",
+      "reason": "Article 71 contains provisions for the suspension or prohibition of the use of AI systems, which relates to the safe retirement of a system.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to all systems, as specified in the assessment item.",
+  "applicability_note": "The control is applicable to all AI systems under the EU AI Act.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 17 is partially supported, but the other mappings are unsupported. The control statement requires provisions related to data export, deletion, and system retirement, which are not covered by the mapped articles. Additional provisions, such as Articles 27 and 28, may be relevant."
+  "challenge_comment": "The mapping is partially correct as it includes Article 17, which supports the control's objectives. However, it incorrectly includes Articles 9, 26(5), and 72, which are unrelated to the control's requirements. The mapping is missing key provisions such as Articles 27, 28, and 71, which directly address data deletion, access, and system retirement."
 }

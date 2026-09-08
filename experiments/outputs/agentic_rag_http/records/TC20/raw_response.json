@@ -3,44 +3,60 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unable to determine",
-      "reason": "No evidence retrieved for Article 15.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 15(5) directly supports the detection and response aspects of the control by requiring technical solutions to prevent, detect, respond to, and control for specific AI-related attacks. However, it does not address vulnerability management, patching, or the broader scope of serious incident processes.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:5"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Partially supported",
-      "reason": "Article 17(1)(i) references procedures for reporting serious incidents as per Article 73, which is relevant to the 'response' and 'serious-incident' aspects of the control statement. However, the evidence does not support the 'vulnerability, patching, detection' components.",
+      "reason": "Article 17(1)(i) requires procedures for reporting serious incidents, which supports the 'response and serious-incident processes' part of the control. However, it does not address vulnerability, patching, or detection processes.",
       "evidence_ids": [
-        "eu:32024R1689:article:17:paragraph:1:point:i"
+        "eu:32024R1689:article:17:paragraph:1"
       ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 20",
-      "decision": "Unable to determine",
-      "reason": "No evidence retrieved for Article 20.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 20(1) requires providers to take corrective actions (withdraw, disable, recall) for non-conforming systems, which supports the 'response' part of the control. However, it does not address vulnerability, patching, detection, or serious incident reporting processes.",
+      "evidence_ids": [
+        "eu:32024R1689:article:20:paragraph:1"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 73",
       "decision": "Partially supported",
-      "reason": "Article 73 covers serious incident reporting, investigation, and corrective action, supporting the 'response' and 'serious-incident' parts of the control statement. However, the evidence does not support the 'vulnerability, patching, detection' components.",
+      "reason": "Article 73(1) and (6) require reporting and investigating serious incidents, which supports the 'serious-incident processes' part of the control. However, it does not address vulnerability, patching, or detection processes.",
       "evidence_ids": [
-        "eu:32024R1689:article:73:paragraph:2",
-        "eu:32024R1689:article:73:paragraph:3",
-        "eu:32024R1689:article:73:paragraph:6",
-        "eu:32024R1689:article:73:paragraph:7",
-        "eu:32024R1689:article:73:paragraph:8",
-        "eu:32024R1689:article:73:paragraph:10",
-        "eu:32024R1689:article:73:paragraph:11"
+        "eu:32024R1689:article:73:paragraph:1",
+        "eu:32024R1689:article:73:paragraph:6"
       ]
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "The control statement is applicable to all AI systems, with specific reporting requirements for high-risk systems.",
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15(4)",
+      "reason": "This provision requires technical and organisational measures for resilience against errors and faults, which is relevant to vulnerability and patching processes.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:4"
+      ]
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17(1)(g)",
+      "reason": "This provision requires a risk management system, which is a foundational element for implementing vulnerability and detection processes.",
+      "evidence_ids": [
+        "eu:32024R1689:article:17:paragraph:1"
+      ]
+    }
+  ],
+  "applicability_note": "The control is applicable to all high-risk AI systems, with specific reporting obligations for serious incidents.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as it identifies relevant provisions for serious incident response but fails to address vulnerability, patching, and detection processes. The evidence supports only the 'response' and 'serious-incident' components of the control statement. The mapping should be revised to include provisions that cover the full scope of the control statement."
+  "challenge_comment": "The existing mapping is partially correct as it identifies provisions related to serious incident reporting and response. However, it misses key provisions that support vulnerability and patching processes, such as Article 15(4) on resilience and Article 17(1)(g) on risk management. These should be included to fully cover the control's scope."
 }

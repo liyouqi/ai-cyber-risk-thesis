@@ -53,8 +53,8 @@ HTTP service in `.env`:
 ```text
 REGULATORY_RAG_API_URL=http://127.0.0.1:8080
 REGULATORY_RAG_API_KEY=optional-bearer-key
-REGULATORY_RAG_MODE=bm25
-REGULATORY_RAG_TOP_K=5
+REGULATORY_RAG_MODE=hybrid
+REGULATORY_RAG_TOP_K=8
 ```
 
 The API key is optional only when the service deployment does not require

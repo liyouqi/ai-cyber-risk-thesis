@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-22,Unable to determine,[],No additional applicability condition is identified.,"The assessment cannot be completed because the provided evidence does not contain the text of Article 10, which is the provision being reviewed. The evidence IDs should be retained."
+DORA-22,Correct,[],No additional applicability condition is identified.,No challenge is needed. The mapping to Article 10 is correct as it directly supports the control's requirement for periodic review and testing of the exit plan.

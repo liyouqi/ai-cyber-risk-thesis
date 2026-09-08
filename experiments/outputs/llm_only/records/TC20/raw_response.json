@@ -4,40 +4,40 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
       "decision": "Unsupported",
-      "reason": "Article 15 relates to the scope of the AI Act and does not address cybersecurity processes.",
+      "reason": "Article 15 relates to the classification of AI systems and their risk levels, not to the implementation of security processes like vulnerability management or incident response.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Unsupported",
-      "reason": "Article 17 covers the obligations of providers of general-purpose AI models and does not address cybersecurity processes.",
+      "reason": "Article 17 addresses the obligations for high-risk AI systems, including data governance and documentation, but does not specifically mandate the implementation of vulnerability or incident response processes.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 20",
       "decision": "Unsupported",
-      "reason": "Article 20 addresses the obligations of distributors and does not address cybersecurity processes.",
+      "reason": "Article 20 concerns the conformity assessment procedures for high-risk AI systems, which is a distinct process from the operational security controls for vulnerability and incident management.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 73",
       "decision": "Unsupported",
-      "reason": "Article 73 relates to the European Artificial Intelligence Board and does not address cybersecurity processes.",
+      "reason": "Article 73 outlines the rules for market surveillance and enforcement, which is a regulatory oversight function and not a direct requirement for implementing specific security processes.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 28",
-      "reason": "Article 28 requires high-risk AI systems to have an appropriate level of cybersecurity, which includes vulnerability, patching, detection, response, and serious-incident processes.",
+      "provision": "Article 24",
+      "reason": "Article 24 contains the general security obligations for high-risk AI systems, which would directly support the control statement's requirements for vulnerability, patching, detection, response, and serious-incident processes.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to all AI systems, but the reporting requirement is specific to high-risk AI systems.",
+  "applicability_note": "The control is applicable to all AI systems, but the reporting requirement is specific to high-risk systems.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they do not relate to cybersecurity processes. The correct mapping is to Article 28, which specifically addresses cybersecurity requirements for high-risk AI systems."
+  "challenge_comment": "The existing mappings are incorrect as they do not relate to the security processes. The correct mapping should be to Article 24, which contains the general security obligations for high-risk AI systems."
 }

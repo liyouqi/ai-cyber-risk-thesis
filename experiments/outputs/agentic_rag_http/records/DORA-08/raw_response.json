@@ -4,18 +4,17 @@
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 19(4)",
       "decision": "Supported",
-      "reason": "Article 19(4) explicitly requires financial entities to submit an initial notification, an intermediate report, and a final report, which matches the control statement. The evidence also shows that the specific deadlines are to be determined by Article 20(a)(ii), as referenced in the control statement.",
+      "reason": "The provision directly and materially supports the control objective by mandating the submission of an initial notification, an intermediate report, and a final report, which are the core components of the control statement.",
       "evidence_ids": [
         "eu-2022-2554-article-19-4",
         "eu-2022-2554-article-19-4-a",
         "eu-2022-2554-article-19-4-b",
-        "eu-2022-2554-article-19-4-c",
-        "eu-2022-2554-article-20-a-ii"
+        "eu-2022-2554-article-19-4-c"
       ]
     }
   ],
   "missing_mappings": [],
   "applicability_note": "No additional applicability condition is identified.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The existing mapping to Article 19(4) is correct and should be retained."
+  "challenge_comment": "The mapping is correct. The provision directly supports the control statement by mandating the three required reports. The specific deadlines are correctly deferred to the RTS as stated in the control."
 }

@@ -3,22 +3,22 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
-      "decision": "Unsupported",
-      "reason": "Article 10 of the AI Act focuses on the obligations of providers regarding the technical documentation of high-risk AI systems, which does not directly address the restriction of sensitive inputs through classification, minimisation, or masking.",
+      "decision": "Partially supported",
+      "reason": "Article 10 establishes the general obligation for high-risk AI systems to ensure data governance, including data quality and minimisation. This provides a relevant legal basis for restricting sensitive inputs, but it is a high-level requirement and does not specifically mandate classification, masking, or the technical controls mentioned.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(4)",
-      "decision": "Unsupported",
-      "reason": "Article 26(4) pertains to the obligations of users of high-risk AI systems, specifically regarding human oversight, and does not contain provisions for restricting sensitive inputs.",
+      "decision": "Partially supported",
+      "reason": "Article 26(4) requires that high-risk AI systems process personal data in a manner that is limited to what is necessary for the intended purpose. This supports the 'minimisation' aspect of the control but does not address classification or masking of sensitive inputs.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 27",
       "decision": "Unsupported",
-      "reason": "Article 27 outlines the requirements for the design and development of high-risk AI systems, including data governance, but does not specifically mandate the restriction of sensitive inputs through classification, minimisation, or masking.",
+      "reason": "Article 27 pertains to the documentation and record-keeping obligations for high-risk AI systems. It does not address the technical restriction or processing of sensitive inputs.",
       "evidence_ids": []
     }
   ],
@@ -26,11 +26,11 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 29",
-      "reason": "Article 29 of the AI Act addresses the quality of data used for training, validation, and testing of high-risk AI systems, which includes requirements for data governance and minimisation that could support the control statement.",
+      "reason": "Article 29 contains specific requirements for data governance, including the need for data protection by design and by default, which would support the classification and masking of sensitive inputs.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to personal or confidential data, which is a key focus of the AI Act's data governance requirements.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings do not align with the control statement's focus on restricting sensitive inputs. The AI Act's provisions on data governance, such as Article 29, are more relevant and should be considered for a correct mapping."
+  "applicability_note": "The control is applicable to high-risk AI systems that process personal or confidential data, as defined by the AI Act.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as Articles 10 and 26(4) provide a relevant but incomplete basis for the control. Article 27 is not relevant. A key missing provision is Article 29, which directly supports data protection by design and by default, including the classification and masking of sensitive inputs."
 }

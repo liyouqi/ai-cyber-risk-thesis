@@ -4,14 +4,14 @@
       "instrument": "Commission Delegated Regulation (EU) 2024/1774",
       "provision": "Article 26",
       "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26 of the Commission Delegated Regulation (EU) 2024/1774, which is necessary to assess the mapping.",
+      "reason": "The provided evidence does not contain the text of Article 26 from the specified instrument.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 11(6)",
       "decision": "Supported",
-      "reason": "Article 11(6)(a) of Regulation (EU) 2022/2554 explicitly requires financial entities to test their ICT business continuity plans at least yearly. This directly supports the control statement's requirement for annual testing.",
+      "reason": "The provision requires annual testing of ICT business continuity plans, which directly supports the control objective of annual testing.",
       "evidence_ids": [
         "eu-2022-2554-article-11-6",
         "eu-2022-2554-article-11-6-a"
@@ -19,7 +19,7 @@
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement specifies testing 'taking into account severe but plausible scenarios'. While Article 11(6) mandates annual testing, the specific requirement for 'severe but plausible scenarios' is detailed in Article 25(2)(a) of the Commission Delegated Regulation (EU) 2024/1774, which is not part of the existing mapping.",
+  "applicability_note": "No additional applicability condition is identified.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 26 is unsupported as the text of that article is not provided. The mapping to Article 11(6) is correct for the annual testing requirement, but the mapping is incomplete as it does not cover the specific scenario requirement, which is detailed in Article 25(2)(a) of the Delegated Regulation."
+  "challenge_comment": "The mapping to Article 26 is unsupported because the evidence for that article is missing. The mapping to Article 11(6) is correct and should be retained."
 }

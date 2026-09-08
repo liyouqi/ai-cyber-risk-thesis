@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-17,Correct,[],No additional applicability condition is identified.,No challenge is needed. The existing mapping to Article 21(1)(e)(iv) is correct and should be retained.
+DORA-17,Unable to determine,[],No additional applicability condition is identified.,"The assessment cannot be completed because the retrieved evidence is empty. To proceed, the specific text of Article 21(1)(e)(iv) and its relationship to the control statement must be provided."

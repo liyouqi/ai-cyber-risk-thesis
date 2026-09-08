@@ -1,2 +1,2 @@
 item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-DORA-02,Regulation (EU) 2022/2554,Article 11(6),Supported,"Article 11(6) requires entities to test their ICT business continuity plans and response and recovery plans at least annually and after any major change to a critical or important function, which directly matches the control statement.",,
+DORA-02,Regulation (EU) 2022/2554,Article 11(6),Supported,"Article 11(6) of DORA requires entities to test their ICT business continuity plans and response and recovery plans at least annually and after any major change to a critical or important function, which directly and materially supports the control statement's requirement.",,

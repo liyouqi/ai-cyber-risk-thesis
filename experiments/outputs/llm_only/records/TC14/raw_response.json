@@ -3,27 +3,34 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 5",
-      "decision": "Supported",
-      "reason": "Article 5 addresses the prohibition of certain AI systems, which includes those that generate harmful content. This aligns with the control statement's focus on controlling harmful content and prohibited-use outputs.",
+      "decision": "Unsupported",
+      "reason": "Article 5 of the EU AI Act establishes the general obligations for providers of AI systems, focusing on risk management and ensuring AI systems are safe and in conformity with EU law. It does not specifically address the control of sensitive data, malicious code, harmful content, or prohibited-use outputs in the context of generative AI outputs.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Supported",
-      "reason": "Article 9 imposes obligations on high-risk AI systems, including requirements for data governance and robustness. These obligations are relevant to controlling the quality and safety of outputs, which encompasses sensitive data and malicious code.",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act addresses the obligations of users of AI systems, requiring them to use the systems in accordance with instructions and to monitor their operation. It does not impose specific requirements on providers to control the content of AI-generated outputs.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Supported",
-      "reason": "Article 15 requires providers of general-purpose AI models to implement policies to prevent the generation of illegal content. This directly supports the control of prohibited-use outputs.",
+      "decision": "Unsupported",
+      "reason": "Article 15 of the EU AI Act outlines the obligations for providers of high-risk AI systems, including the requirement to implement a quality management system and maintain technical documentation. It does not directly mandate the control of sensitive data, malicious code, harmful content, or prohibited-use outputs in the generated outputs.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "The mapping is specific to generative AI systems, which are the focus of the control statement and the referenced articles.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping correctly identifies the relevant articles that address the control of sensitive data, malicious code, harmful content, and prohibited-use outputs for generative AI systems."
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 28",
+      "reason": "Article 28 of the EU AI Act specifically addresses the obligations for providers of general-purpose AI models, including the requirement to implement appropriate measures to mitigate the risks of generating illegal content, including the dissemination of sensitive data, malicious code, and harmful content.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control statement is applicable to generative AI systems, which are a subset of general-purpose AI models under the EU AI Act.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings are incorrect as they do not address the specific control objective of managing sensitive data, malicious code, harmful content, and prohibited-use outputs in AI-generated outputs. The correct provision is Article 28, which mandates appropriate measures to mitigate these risks for general-purpose AI models."
 }

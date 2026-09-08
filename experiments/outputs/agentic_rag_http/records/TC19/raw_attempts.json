@@ -1,0 +1,80 @@
+[
+  {
+    "mapping_reviews": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 9",
+        "decision": "Partially supported",
+        "reason": "Article 9 establishes a risk management system, which is a foundational element for ensuring resilience. However, it does not specifically address capacity, redundancy, fail-safe, recovery, or manual fallback mechanisms, which are more directly covered by other provisions.",
+        "evidence_ids": [
+          "eu:32024R1689:article:9:paragraph:1",
+          "eu:32024R1689:article:9:paragraph:2",
+          "eu:32024R1689:article:9:paragraph:2:point:d",
+          "eu:32024R1689:article:9:paragraph:5:point:b"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 15",
+        "decision": "Partially supported",
+        "reason": "Article 15(4) explicitly mentions 'backup or fail-safe plans' as a technical redundancy solution to achieve robustness, directly supporting the fail-safe and redundancy aspects of the control. However, it does not cover capacity, recovery, or manual fallback.",
+        "evidence_ids": [
+          "eu:32024R1689:article:15:paragraph:4"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 17",
+        "decision": "Partially supported",
+        "reason": "Article 17 requires a quality management system that includes the risk management system from Article 9, indirectly supporting the overall resilience objective. However, it does not directly address capacity, redundancy, fail-safe, recovery, or manual fallback.",
+        "evidence_ids": [
+          "eu:32024R1689:article:17:paragraph:1",
+          "eu:32024R1689:article:17:paragraph:1:point:g"
+        ]
+      }
+    ],
+    "missing_mappings": [],
+    "applicability_note": "The control is applicable to 'Critical use' of high-risk AI systems under the EU AI Act.",
+    "overall_assessment": "Partially correct",
+    "challenge_comment": "The mapping is partially correct as Articles 9 and 17 provide indirect support through risk management and quality systems, while Article 15 directly supports fail-safe and redundancy. However, the mapping lacks a provision that comprehensively addresses all aspects of the control, such as capacity, recovery, and manual fallback. The existing mappings should be retained as they collectively contribute to the resilience objective, but the assessment should acknowledge the partial coverage."
+  },
+  {
+    "mapping_reviews": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 9",
+        "decision": "Partially supported",
+        "reason": "Article 9 establishes a risk management system, which is a foundational element for ensuring resilience. However, it does not specifically address capacity, redundancy, fail-safe, recovery, or manual fallback mechanisms, which are more directly covered by other provisions.",
+        "evidence_ids": [
+          "eu:32024R1689:article:9:paragraph:1",
+          "eu:32024R1689:article:9:paragraph:2",
+          "eu:32024R1689:article:9:paragraph:2:point:d",
+          "eu:32024R1689:article:9:paragraph:5:point:b"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 15",
+        "decision": "Partially supported",
+        "reason": "Article 15(4) explicitly mentions 'backup or fail-safe plans' as a technical redundancy solution to achieve robustness, directly supporting the fail-safe and redundancy aspects of the control. However, it does not cover capacity, recovery, or manual fallback.",
+        "evidence_ids": [
+          "eu:32024R1689:article:15:paragraph:4"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 17",
+        "decision": "Partially supported",
+        "reason": "Article 17 requires a quality management system that includes the risk management system from Article 9, indirectly supporting the overall resilience objective. However, it does not directly address capacity, redundancy, fail-safe, recovery, or manual fallback.",
+        "evidence_ids": [
+          "eu:32024R1689:article:17:paragraph:1",
+          "eu:32024R1689:article:17:paragraph:1:point:g"
+        ]
+      }
+    ],
+    "missing_mappings": [],
+    "applicability_note": "The control is applicable to 'Critical use' of high-risk AI systems under the EU AI Act.",
+    "overall_assessment": "Partially correct",
+    "challenge_comment": "The mapping is partially correct as Articles 9 and 17 provide indirect support through risk management and quality systems, while Article 15 directly supports fail-safe and redundancy. However, the mapping lacks a provision that comprehensively addresses all aspects of the control, such as capacity, recovery, and manual fallback. The existing mappings should be retained as they collectively contribute to the resilience objective, but the assessment should acknowledge the partial coverage."
+  }
+]

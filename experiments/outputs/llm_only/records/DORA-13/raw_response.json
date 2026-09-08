@@ -4,12 +4,19 @@
       "instrument": "Commission Delegated Regulation (EU) 2025/301",
       "provision": "Article 5(1)(b)",
       "decision": "Supported",
-      "reason": "Article 5(1)(b) requires the submission of an updated intermediate report when the incident status changes materially, which directly supports the control statement's requirement to submit when the incident status changes materially.",
+      "reason": "Article 5(1)(b) requires the submission of an updated intermediate report when the incident status changes materially, which directly corresponds to the control's requirement to submit an updated report when the incident status changes materially.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA regulation.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping to Article 5(1)(b) is correct and should be retained."
+  "missing_mappings": [
+    {
+      "instrument": "Commission Delegated Regulation (EU) 2025/301",
+      "provision": "Article 5(1)(a)",
+      "reason": "The control also requires submission after regular activities have recovered or when the competent authority requests it, which are covered by other provisions in the same article.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control is applicable to all financial entities under DORA.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping correctly identifies the provision for the 'materially changed incident status' trigger but misses the other two submission triggers (recovery and authority request) which are covered by the same article."
 }

@@ -75,8 +75,8 @@ def main() -> None:
             str(api_url),
             api_key=env.get("REGULATORY_RAG_API_KEY") or None,
             retrieval_mode=args.rag_mode
-            or str(env.get("REGULATORY_RAG_MODE") or "bm25"),
-            top_k=args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 5),
+            or str(env.get("REGULATORY_RAG_MODE") or "hybrid"),
+            top_k=args.rag_top_k or int(env.get("REGULATORY_RAG_TOP_K") or 8),
         )
 
     output = Path(args.output)

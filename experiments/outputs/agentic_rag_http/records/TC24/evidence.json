@@ -1,110 +1,254 @@
 [
   {
-    "evidence_id": "eu:32024R1689:article:110:subparagraph:1:point:68",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:1",
     "document_id": "EU-2024-1689",
-    "text": "(68) Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (OJ L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj)..",
-    "source_locator": "Article 110(68)",
+    "text": "1. A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems.",
+    "source_locator": "Article 9(1)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 1,
-    "score": 30.535372
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:annex:x:annex-part:3:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:2",
     "document_id": "EU-2024-1689",
-    "text": "Regulation (EU) 2024/1358 of the European Parliament and of the Council of 14 May 2024 on the establishment of Eurodac for the comparison of biometric data in order to effectively apply Regulations (EU) 2024/1315 and (EU) 2024/1350 of the European Parliament and of the Council and Council Directive 2001/55/EC and to identify illegally staying third-country nationals and stateless persons and on requests for the comparison with Eurodac data by Member States’ law enforcement authorities and Europol for law enforcement purposes, amending Regulations (EU) 2018/1240 and (EU) 2019/818 of the European Parliament and of the Council and repealing Regulation (EU) No 603/2013 of the European Parliament and of the Council (OJ L, 2024/1358, 22.5.2024, ELI: http://data.europa.eu/eli/reg/2024/1358/oj).",
-    "source_locator": "ANNEX X — Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice — 3. Eurodac — subparagraph",
+    "text": "2. The risk management system shall be understood as a continuous iterative process planned and run throughout the entire lifecycle of a high-risk AI system, requiring regular systematic review and updating. It shall comprise the following steps:",
+    "source_locator": "Article 9(2)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 2,
-    "score": 25.9813
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:recital:14",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:2:point:a",
     "document_id": "EU-2024-1689",
-    "text": "The notion of biometric data used in this Regulation should be interpreted in light of the notion of biometric data as defined in Article 4, point (14) of Regulation (EU) 2016/679, Article 3, point (18) of Regulation (EU) 2018/1725 and Article 3, point (13) of Directive (EU) 2016/680. Biometric data can allow for the authentication, identification or categorisation of natural persons and for the recognition of emotions of natural persons.",
-    "source_locator": "Recital 14",
+    "text": "(a) the identification and analysis of the known and the reasonably foreseeable risks that the high-risk AI system can pose to health, safety or fundamental rights when the high-risk AI system is used in accordance with its intended purpose;",
+    "source_locator": "Article 9(2)(a)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 3,
-    "score": 24.28092
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:recital:67",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:2:point:b",
     "document_id": "EU-2024-1689",
-    "text": "High-quality data and access to high-quality data plays a vital role in providing structure and in ensuring the performance of many AI systems, especially when techniques involving the training of models are used, with a view to ensure that the high-risk AI system performs as intended and safely and it does not become a source of discrimination prohibited by Union law. High-quality data sets for training, validation and testing require the implementation of appropriate data governance and management practices. Data sets for training, validation and testing, including the labels, should be relevant, sufficiently representative, and to the best extent possible free of errors and complete in view of the intended purpose of the system. In order to facilitate compliance with Union data protection law, such as Regulation (EU) 2016/679, data governance and management practices should include, in the case of personal data, transparency about the original purpose of the data collection. The data sets should also have the appropriate statistical properties, including as regards the persons or groups of persons in relation to whom the high-risk AI system is intended to be used, with specific attention to the mitigation of possible biases in the data sets, that are likely to affect the health and safety of persons, have a negative impact on fundamental rights or lead to discrimination prohibited under Union law, especially where data outputs influence inputs for future operations (feedback loops). Biases can for example be inherent in underlying data sets, especially when historical data is being used, or generated when the systems are implemented in real world settings. Results provided by AI systems could be influenced by such inherent biases that are inclined to gradually increase and thereby perpetuate and amplify existing discrimination, in particular for persons belonging to certain vulnerable groups, including racial or ethnic groups. The requirement for the data sets to be to the best extent possible complete and free of errors should not affect the use of privacy-preserving techniques in the context of the development and testing of AI systems. In particular, data sets should take into account, to the extent required by their intended purpose, the features, characteristics or elements that are particular to the specific geographical, contextual, behavioural or functional setting which the AI system is intended to be used. The requirements related to data governance can be complied with by having recourse to third parties that offer certified compliance services including verification of data governance, data set integrity, and data training, validation and testing practices, as far as compliance with the data requirements of this Regulation are ensured.",
-    "source_locator": "Recital 67",
+    "text": "(b) the estimation and evaluation of the risks that may emerge when the high-risk AI system is used in accordance with its intended purpose, and under conditions of reasonably foreseeable misuse;",
+    "source_locator": "Article 9(2)(b)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 4,
-    "score": 24.122414
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:3:subparagraph:1:point:37",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:2:point:c",
     "document_id": "EU-2024-1689",
-    "text": "(37) special categories of personal data means the categories of personal data referred to in Article 9(1) of Regulation (EU) 2016/679, Article 10 of Directive (EU) 2016/680 and Article 10(1) of Regulation (EU) 2018/1725;",
-    "source_locator": "Article 3(37)",
+    "text": "(c) the evaluation of other risks possibly arising, based on the analysis of data gathered from the post-market monitoring system referred to in Article 72;",
+    "source_locator": "Article 9(2)(c)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 5,
-    "score": 23.768784
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:110:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:2:point:d",
     "document_id": "EU-2024-1689",
-    "text": "In Annex I to Directive (EU) 2020/1828 of the European Parliament and of the Council, the following point is added:",
-    "source_locator": "Article 110, Subparagraph",
+    "text": "(d) the adoption of appropriate and targeted risk management measures designed to address the risks identified pursuant to point (a).",
+    "source_locator": "Article 9(2)(d)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 6,
-    "score": 30.535372
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:103:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:9:paragraph:3",
     "document_id": "EU-2024-1689",
-    "text": "In Article 17(5) of Regulation (EU) No 167/2013, the following subparagraph is added: When adopting delegated acts pursuant to the first subparagraph concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 103, Subparagraph",
+    "text": "3. The risks referred to in this Article shall concern only those which may be reasonably mitigated or eliminated through the development or design of the high-risk AI system, or the provision of adequate technical information.",
+    "source_locator": "Article 9(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 7,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:4",
+    "document_id": "EU-2024-1689",
+    "text": "4. The risk management measures referred to in paragraph 2, point (d), shall give due consideration to the effects and possible interaction resulting from the combined application of the requirements set out in this Section, with a view to minimising risks more effectively while achieving an appropriate balance in implementing the measures to fulfil those requirements.",
+    "source_locator": "Article 9(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:5",
+    "document_id": "EU-2024-1689",
+    "text": "5. The risk management measures referred to in paragraph 2, point (d), shall be such that the relevant residual risk associated with each hazard, as well as the overall residual risk of the high-risk AI systems is judged to be acceptable. In identifying the most appropriate risk management measures, the following shall be ensured:",
+    "source_locator": "Article 9(5)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:5:point:a",
+    "document_id": "EU-2024-1689",
+    "text": "(a) elimination or reduction of risks identified and evaluated pursuant to paragraph 2 in as far as technically feasible through adequate design and development of the high-risk AI system;",
+    "source_locator": "Article 9(5)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 10,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:5:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) where appropriate, implementation of adequate mitigation and control measures addressing risks that cannot be eliminated;",
+    "source_locator": "Article 9(5)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 11,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:5:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) provision of information required pursuant to Article 13 and, where appropriate, training to deployers.",
+    "source_locator": "Article 9(5)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 12,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:5:text-block:4",
+    "document_id": "EU-2024-1689",
+    "text": "With a view to eliminating or reducing risks related to the use of the high-risk AI system, due consideration shall be given to the technical knowledge, experience, education, the training to be expected by the deployer, and the presumable context in which the system is intended to be used.",
+    "source_locator": "Article 9(5), Text block 2",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 13,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:6",
+    "document_id": "EU-2024-1689",
+    "text": "6. High-risk AI systems shall be tested for the purpose of identifying the most appropriate and targeted risk management measures. Testing shall ensure that high-risk AI systems perform consistently for their intended purpose and that they are in compliance with the requirements set out in this Section.",
+    "source_locator": "Article 9(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 14,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:7",
+    "document_id": "EU-2024-1689",
+    "text": "7. Testing procedures may include testing in real-world conditions in accordance with Article 60.",
+    "source_locator": "Article 9(7)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 15,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:8",
+    "document_id": "EU-2024-1689",
+    "text": "8. The testing of high-risk AI systems shall be performed, as appropriate, at any time throughout the development process, and, in any event, prior to their being placed on the market or put into service. Testing shall be carried out against prior defined metrics and probabilistic thresholds that are appropriate to the intended purpose of the high-risk AI system.",
+    "source_locator": "Article 9(8)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 16,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:9",
+    "document_id": "EU-2024-1689",
+    "text": "9. When implementing the risk management system as provided for in paragraphs 1 to 7, providers shall give consideration to whether in view of its intended purpose the high-risk AI system is likely to have an adverse impact on persons under the age of 18 and, as appropriate, other vulnerable groups.",
+    "source_locator": "Article 9(9)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 17,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:9:paragraph:10",
+    "document_id": "EU-2024-1689",
+    "text": "10. For providers of high-risk AI systems that are subject to requirements regarding internal risk management processes under other relevant provisions of Union law, the aspects provided in paragraphs 1 to 9 may be part of, or combined with, the risk management procedures established pursuant to that law.",
+    "source_locator": "Article 9(10)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 18,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:17",
+    "document_id": "EU-2024-1689",
+    "text": "1. Providers of high-risk AI systems shall put a quality management system in place that ensures compliance with this Regulation. That system shall be documented in a systematic and orderly manner in the form of written policies, procedures and instructions, and shall include at least the following aspects:\n(a) a strategy for regulatory compliance, including compliance with conformity assessment procedures and procedures for the management of modifications to the high-risk AI system;\n(b) techniques, procedures and systematic actions to be used for the design, design control and design verification of the high-risk AI system;\n(c) techniques, procedures and systematic actions to be used for the development, quality control and quality assurance of the high-risk AI system;\n(d) examination, test and validation procedures to be carried out before, during and after the development of the high-risk AI system, and the frequency with which they have to be carried out;\n(e) technical specifications, including standards, to be applied and, where the relevant harmonised standards are not applied in full or do not cover all of the relevant requirements set out in Section 2, the means to be used to ensure that the high-risk AI system complies with those requirements;\n(f) systems and procedures for data management, including data acquisition, data collection, data analysis, data labelling, data storage, data filtration, data mining, data aggregation, data retention and any other operation regarding the data that is performed before and for the purpose of the placing on the market or the putting into service of high-risk AI systems;\n(g) the risk management system referred to in Article 9;\n(h) the setting-up, implementation and maintenance of a post-market monitoring system, in accordance with Article 72;\n(i) procedures related to the reporting of a serious incident in accordance with Article 73;\n(j) the handling of communication with national competent authorities, other relevant authorities, including those providing or supporting the access to data, notified bodies, other operators, customers or other interested parties;\n(k) systems and procedures for record-keeping of all relevant documentation and information;\n(l) resource management, including security-of-supply related measures;\n(m) an accountability framework setting out the responsibilities of the management and other staff with regard to all the aspects listed in this paragraph.\n2. The implementation of the aspects referred to in paragraph 1 shall be proportionate to the size of the provider’s organisation. Providers shall, in any event, respect the degree of rigour and the level of protection required to ensure the compliance of their high-risk AI systems with this Regulation.\n3. Providers of high-risk AI systems that are subject to obligations regarding quality management systems or an equivalent function under relevant sectoral Union law may include the aspects listed in paragraph 1 as part of the quality management systems pursuant to that law.\n4. For providers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law, the obligation to put in place a quality management system, with the exception of paragraph 1, points (g), (h) and (i) of this Article, shall be deemed to be fulfilled by complying with the rules on internal governance arrangements or processes pursuant to the relevant Union financial services law. To that end, any harmonised standards referred to in Article 40 shall be taken into account.",
+    "source_locator": "Article 17",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:17:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. Providers of high-risk AI systems shall put a quality management system in place that ensures compliance with this Regulation. That system shall be documented in a systematic and orderly manner in the form of written policies, procedures and instructions, and shall include at least the following aspects:",
+    "source_locator": "Article 17(1)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 2,
-    "score": 27.012767
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:108:subparagraph:1:point:1",
+    "evidence_id": "eu:32024R1689:article:17:paragraph:2",
     "document_id": "EU-2024-1689",
-    "text": "(1) in Article 17, the following paragraph is added: Without prejudice to paragraph 2, when adopting implementing acts pursuant to paragraph 1 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 108(1)",
+    "text": "2. The implementation of the aspects referred to in paragraph 1 shall be proportionate to the size of the provider’s organisation. Providers shall, in any event, respect the degree of rigour and the level of protection required to ensure the compliance of their high-risk AI systems with this Regulation.",
+    "source_locator": "Article 17(2)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 3,
-    "score": 26.040505
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:annex:viii:annex-part:c:point:5",
+    "evidence_id": "eu:32024R1689:article:17:paragraph:3",
     "document_id": "EU-2024-1689",
-    "text": "5. A summary of the data protection impact assessment carried out in accordance with Article 35 of Regulation (EU) 2016/679 or Article 27 of Directive (EU) 2016/680 as specified in Article 26(8) of this Regulation, where applicable.",
-    "source_locator": "ANNEX VIII — Information to be submitted upon the registration of high-risk AI systems in accordance with Article 49 — Section C — Information to be submitted by deployers of high-risk AI systems in accordance with Article 49(3) — 5.",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": 3,
-    "score": 25.908287
-  },
-  {
-    "evidence_id": "eu:32024R1689:article:107:subparagraph:1",
-    "document_id": "EU-2024-1689",
-    "text": "In Article 5 of Regulation (EU) 2018/858 the following paragraph is added: When adopting delegated acts pursuant to paragraph 3 concerning Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 107, Subparagraph",
+    "text": "3. Providers of high-risk AI systems that are subject to obligations regarding quality management systems or an equivalent function under relevant sectoral Union law may include the aspects listed in paragraph 1 as part of the quality management systems pursuant to that law.",
+    "source_locator": "Article 17(3)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 4,
-    "score": 24.989762
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:recital:122",
+    "evidence_id": "eu:32024R1689:article:17:paragraph:4",
     "document_id": "EU-2024-1689",
-    "text": "It is appropriate that, without prejudice to the use of harmonised standards and common specifications, providers of a high-risk AI system that has been trained and tested on data reflecting the specific geographical, behavioural, contextual or functional setting within which the AI system is intended to be used, should be presumed to comply with the relevant measure provided for under the requirement on data governance set out in this Regulation. Without prejudice to the requirements related to robustness and accuracy set out in this Regulation, in accordance with Article 54(3) of Regulation (EU) 2019/881, high-risk AI systems that have been certified or for which a statement of conformity has been issued under a cybersecurity scheme pursuant to that Regulation and the references of which have been published in the Official Journal of the European Union should be presumed to comply with the cybersecurity requirement of this Regulation in so far as the cybersecurity certificate or statement of conformity or parts thereof cover the cybersecurity requirement of this Regulation. This remains without prejudice to the voluntary nature of that cybersecurity scheme.",
-    "source_locator": "Recital 122",
+    "text": "4. For providers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law, the obligation to put in place a quality management system, with the exception of paragraph 1, points (g), (h) and (i) of this Article, shall be deemed to be fulfilled by complying with the rules on internal governance arrangements or processes pursuant to the relevant Union financial services law. To that end, any harmonised standards referred to in Article 40 shall be taken into account.",
+    "source_locator": "Article 17(4)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 5,
-    "score": 22.830027
+    "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:article:109:subparagraph:1",
+    "evidence_id": "eu:32024R1689:article:26:paragraph:5",
     "document_id": "EU-2024-1689",
-    "text": "In Article 11 of Regulation (EU) 2019/2144, the following paragraph is added: When adopting the implementing acts pursuant to paragraph 2, concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account.",
-    "source_locator": "Article 109, Subparagraph",
+    "text": "5. Deployers shall monitor the operation of the high-risk AI system on the basis of the instructions for use and, where relevant, inform providers in accordance with Article 72. Where deployers have reason to consider that the use of the high-risk AI system in accordance with the instructions may result in that AI system presenting a risk within the meaning of Article 79(1), they shall, without undue delay, inform the provider or distributor and the relevant market surveillance authority, and shall suspend the use of that system. Where deployers have identified a serious incident, they shall also immediately inform first the provider, and then the importer or distributor and the relevant market surveillance authorities of that incident. If the deployer is not able to reach the provider, Article 73 shall apply mutatis mutandis. This obligation shall not cover sensitive operational data of deployers of AI systems which are law enforcement authorities. For deployers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law, the monitoring obligation set out in the first subparagraph shall be deemed to be fulfilled by complying with the rules on internal governance arrangements, processes and mechanisms pursuant to the relevant financial service law.",
+    "source_locator": "Article 26(5)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": null,
-    "score": null
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:72:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. Providers shall establish and document a post-market monitoring system in a manner that is proportionate to the nature of the AI technologies and the risks of the high-risk AI system.",
+    "source_locator": "Article 72(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:72:paragraph:2",
+    "document_id": "EU-2024-1689",
+    "text": "2. The post-market monitoring system shall actively and systematically collect, document and analyse relevant data which may be provided by deployers or which may be collected through other sources on the performance of high-risk AI systems throughout their lifetime, and which allow the provider to evaluate the continuous compliance of AI systems with the requirements set out in Chapter III, Section 2. Where relevant, post-market monitoring shall include an analysis of the interaction with other AI systems. This obligation shall not cover sensitive operational data of deployers which are law-enforcement authorities.",
+    "source_locator": "Article 72(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:72:paragraph:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. The post-market monitoring system shall be based on a post-market monitoring plan. The post-market monitoring plan shall be part of the technical documentation referred to in Annex IV. The Commission shall adopt an implementing act laying down detailed provisions establishing a template for the post-market monitoring plan and the list of elements to be included in the plan by 2 February 2026. That implementing act shall be adopted in accordance with the examination procedure referred to in Article 98(2).",
+    "source_locator": "Article 72(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 3,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:72:paragraph:4",
+    "document_id": "EU-2024-1689",
+    "text": "4. For high-risk AI systems covered by the Union harmonisation legislation listed in Section A of Annex I, where a post-market monitoring system and plan are already established under that legislation, in order to ensure consistency, avoid duplications and minimise additional burdens, providers shall have a choice of integrating, as appropriate, the necessary elements described in paragraphs 1, 2 and 3 using the template referred in paragraph 3 into systems and plans already existing under that legislation, provided that it achieves an equivalent level of protection. The first subparagraph of this paragraph shall also apply to high-risk AI systems referred to in point 5 of Annex III placed on the market or put into service by financial institutions that are subject to requirements under Union financial services law regarding their internal governance, arrangements or processes.",
+    "source_locator": "Article 72(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": 4,
+    "score": 1.0
   }
 ]

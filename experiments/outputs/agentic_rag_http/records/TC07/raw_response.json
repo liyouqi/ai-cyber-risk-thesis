@@ -3,20 +3,50 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 9 or any information that can be used to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "The provision focuses on establishing a general risk management system for high-risk AI systems, which is a broad process for identifying and mitigating risks. It does not specifically address the technical requirement of encrypting data in transit or at rest.",
+      "evidence_ids": [
+        "eu:32024R1689:article:9:paragraph:1",
+        "eu:32024R1689:article:9:paragraph:2",
+        "eu:32024R1689:article:9:paragraph:2:point:a",
+        "eu:32024R1689:article:9:paragraph:2:point:b",
+        "eu:32024R1689:article:9:paragraph:2:point:c",
+        "eu:32024R1689:article:9:paragraph:2:point:d",
+        "eu:32024R1689:article:9:paragraph:3",
+        "eu:32024R1689:article:9:paragraph:4",
+        "eu:32024R1689:article:9:paragraph:5",
+        "eu:32024R1689:article:9:paragraph:5:point:a",
+        "eu:32024R1689:article:9:paragraph:5:point:b",
+        "eu:32024R1689:article:9:paragraph:5:point:c",
+        "eu:32024R1689:article:9:paragraph:5:text-block:4",
+        "eu:32024R1689:article:9:paragraph:6",
+        "eu:32024R1689:article:9:paragraph:7",
+        "eu:32024R1689:article:9:paragraph:8",
+        "eu:32024R1689:article:9:paragraph:9",
+        "eu:32024R1689:article:9:paragraph:10"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 15 or any information that can be used to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 15(1) requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity, which is a relevant objective. However, the provision does not specifically mandate encryption of data in transit or at rest, nor does it mention managed keys. The requirement is a high-level objective rather than a specific implementation detail.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:1"
+      ]
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of recitals and amending articles that reference other legislation. It does not contain the substantive text of Articles 9 or 15, which are necessary to evaluate the mapping. The evidence is insufficient to determine if the control statement is supported."
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15(5)",
+      "reason": "The provision requires high-risk AI systems to be resilient against unauthorized access and manipulation, which is a cybersecurity objective. This includes preventing confidentiality attacks, which is directly related to the control's requirement for data encryption.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:5"
+      ]
+    }
+  ],
+  "applicability_note": "The control is applicable to protected data used in high-risk AI systems.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping to Article 9 is incorrect as it addresses a general risk management process, not specific encryption requirements. The mapping to Article 15 is partially correct as it establishes a high-level cybersecurity objective. A missing mapping to Article 15(5) should be added as it directly supports the confidentiality aspect of the control."
 }

@@ -1,2 +1,2 @@
 item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-DORA-14,Commission Delegated Regulation (EU) 2025/301,Article 5(1)(c),Unsupported,"The control statement requires a submission deadline, which is not specified in the provision.",,
+DORA-14,Commission Delegated Regulation (EU) 2025/301,Article 5(1)(c),Supported,"Article 5(1)(c) of the DORA Delegated Regulation requires financial entities to submit a final report to the competent authority. The control statement specifies a deadline for this submission, which is a direct and material requirement of the provision.",,

@@ -4,12 +4,12 @@
       "instrument": "Commission Delegated Regulation (EU) 2025/301",
       "provision": "Article 5(1)(a)",
       "decision": "Supported",
-      "reason": "Article 5(1)(a) of the DORA Delegated Regulation requires the initial notification of a major incident to be made without undue delay and no later than 24 hours after the entity becomes aware of it. This aligns with the control statement's requirement to submit the notification within 24 hours of awareness. The 'without undue delay' requirement is consistent with the four-hour timeframe for submission after classification.",
+      "reason": "Article 5(1)(a) of DORA requires the initial notification of a major incident to be made without undue delay and no later than 24 hours after the entity becomes aware of it. This directly supports the control's requirement to submit the notification within 24 hours of awareness. The 'without undue delay' component also supports the more stringent four-hour requirement for incidents classified as major.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA Delegated Regulation.",
+  "applicability_note": "No additional applicability conditions are known.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+  "challenge_comment": "The mapping is correct. Article 5(1)(a) of DORA directly supports the control statement's requirement for timely initial notification of a major incident."
 }

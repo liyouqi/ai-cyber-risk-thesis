@@ -3,20 +3,20 @@
     {
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 19(4)",
-      "decision": "Unsupported",
-      "reason": "Article 19(4) of DORA establishes the requirement for initial notification of a major incident to competent authorities, but it does not specify the detailed reporting structure (initial, intermediate, final reports) or the specific deadlines (four-hour, 24-hour, 72-hour) mentioned in the control statement. These details are specified in the RTS 2025/301, not in Article 19(4).",
+      "decision": "Partially supported",
+      "reason": "Article 19(4) establishes the obligation for an initial notification and subsequent reports, which aligns with the control's requirement for an initial notification and a final report. However, the specific deadlines (four-hour, 24-hour, 72-hour) are not specified in the article itself but are delegated to the RTS 2025/301, meaning the provision does not cover the full scope of the control statement.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2022/2554",
-      "provision": "Article 19(4)",
-      "reason": "The provision only mandates the initial notification of a major incident but does not specify the detailed reporting structure or the specific deadlines required by the control statement.",
+      "provision": "RTS 2025/301",
+      "reason": "The specific deadlines for the initial notification (four hours), intermediate report (24 hours), and final report (72 hours) are defined in the Delegated Regulation RTS 2025/301, which is a material component of the control statement not covered by the existing mapping.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "No additional applicability condition is known.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect because Article 19(4) of DORA only requires the initial notification of a major incident. The control statement's requirement for a structured reporting process with specific deadlines is detailed in the RTS 2025/301, not in Article 19(4)."
+  "applicability_note": "No additional applicability conditions are known beyond the instrument name.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as it identifies the correct legal instrument and article for the reporting obligation. However, it is incomplete because it omits the Delegated Regulation (RTS 2025/301) which specifies the critical deadlines for the reports. The mapping should be expanded to include RTS 2025/301 to be fully correct."
 }

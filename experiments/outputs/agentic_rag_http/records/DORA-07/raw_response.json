@@ -4,7 +4,7 @@
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 13(6)",
       "decision": "Supported",
-      "reason": "The evidence confirms that Article 13(6) mandates ICT security awareness programmes and digital operational resilience training as compulsory modules in staff training schemes, which aligns with the control statement's requirement for mandatory training.",
+      "reason": "The provision directly mandates that ICT security awareness programmes and digital operational resilience training be 'compulsory modules' in staff training schemes, which directly supports the control's objective of making such training mandatory.",
       "evidence_ids": [
         "eu-2022-2554-article-13-6"
       ]
@@ -13,5 +13,5 @@
   "missing_mappings": [],
   "applicability_note": "No additional applicability condition is identified.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The existing mapping to Article 13(6) is correct and should be retained."
+  "challenge_comment": "The mapping is correct. The provision's requirement for 'compulsory modules' directly supports the control's objective of mandatory training."
 }

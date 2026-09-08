@@ -27,13 +27,13 @@
       ],
       "planner_available": true
     },
-    "retrieval_mode": "bm25",
-    "top_k": 5,
+    "retrieval_mode": "hybrid",
+    "top_k": 8,
     "direct_timeout_seconds": 30.0,
     "planned_timeout_seconds": 120.0,
     "retrievals": [
       {
-        "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query": "AI Act Article 9",
         "query_mode": "direct",
         "scope": {
           "frameworks": [
@@ -49,18 +49,18 @@
           "topics": []
         },
         "status": "retrieved",
-        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2--explicit-citation-v2--provision-context-v1",
         "retrieval_metadata": {
-          "retrieval_mode": "bm25",
-          "candidate_count": 1455,
-          "retrieval_ms": 26,
+          "retrieval_mode": "hybrid",
+          "candidate_count": 18,
+          "retrieval_ms": 0,
           "embedding_provider": null,
           "embedding_model": null,
           "fusion_method": null,
           "query_expansion_version": "regulatory-aliases-v4",
           "query_expansion_terms": [],
           "context_expansion_version": "provision-context-v1",
-          "context_expansion_count": 1,
+          "context_expansion_count": 0,
           "scope_policy_version": "1.0",
           "effective_jurisdictions": [
             "EU"
@@ -68,7 +68,7 @@
         }
       },
       {
-        "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query": "AI Act Article 15",
         "query_mode": "direct",
         "scope": {
           "frameworks": [
@@ -84,18 +84,18 @@
           "topics": []
         },
         "status": "retrieved",
-        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2--explicit-citation-v2--provision-context-v1",
         "retrieval_metadata": {
-          "retrieval_mode": "bm25",
-          "candidate_count": 1455,
-          "retrieval_ms": 17,
+          "retrieval_mode": "hybrid",
+          "candidate_count": 5,
+          "retrieval_ms": 0,
           "embedding_provider": null,
           "embedding_model": null,
           "fusion_method": null,
           "query_expansion_version": "regulatory-aliases-v4",
           "query_expansion_terms": [],
           "context_expansion_version": "provision-context-v1",
-          "context_expansion_count": 1,
+          "context_expansion_count": 0,
           "scope_policy_version": "1.0",
           "effective_jurisdictions": [
             "EU"
@@ -103,7 +103,7 @@
         }
       },
       {
-        "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?",
+        "query": "AI Act Article 17",
         "query_mode": "direct",
         "scope": {
           "frameworks": [
@@ -119,18 +119,18 @@
           "topics": []
         },
         "status": "retrieved",
-        "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-aliases-v4--provision-context-v1",
+        "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2--explicit-citation-v2--provision-context-v1",
         "retrieval_metadata": {
-          "retrieval_mode": "bm25",
-          "candidate_count": 1455,
-          "retrieval_ms": 17,
+          "retrieval_mode": "hybrid",
+          "candidate_count": 1,
+          "retrieval_ms": 0,
           "embedding_provider": null,
           "embedding_model": null,
           "fusion_method": null,
           "query_expansion_version": "regulatory-aliases-v4",
           "query_expansion_terms": [],
           "context_expansion_version": "provision-context-v1",
-          "context_expansion_count": 1,
+          "context_expansion_count": 4,
           "scope_policy_version": "1.0",
           "effective_jurisdictions": [
             "EU"
@@ -153,8 +153,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "retrieved",
-        "planning_ms": 18073,
+        "status": "empty",
+        "planning_ms": 14991,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
@@ -175,13 +175,15 @@
           "claims": [
             {
               "claim_id": "identify_provision_for_sso_mfa",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?",
-              "intent": "obligation_or_prohibition",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement Single Sign-On (SSO) and Multi-Factor Authentication (MFA)?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "SSO",
                 "MFA"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
@@ -189,11 +191,13 @@
             {
               "claim_id": "identify_provision_for_least_privilege",
               "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?",
-              "intent": "obligation_or_prohibition",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "least privilege"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
@@ -201,11 +205,13 @@
             {
               "claim_id": "identify_provision_for_access_review",
               "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?",
-              "intent": "obligation_or_prohibition",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "access review"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
@@ -218,13 +224,13 @@
             "model": "glm-4.6v",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-07T11:11:57.395385"
+            "generated_at": "2026-09-08T17:13:58.391925"
           },
           "limits": {
             "max_claims": 5,
             "max_query_variants_per_claim": 4,
-            "max_evidence_per_claim": 5,
-            "max_total_evidence": 25,
+            "max_evidence_per_claim": 8,
+            "max_total_evidence": 40,
             "max_relation_expansion_depth": 1
           }
         },
@@ -232,97 +238,85 @@
           {
             "claim": {
               "claim_id": "identify_provision_for_sso_mfa",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?",
-              "intent": "obligation_or_prohibition",
+              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement Single Sign-On (SSO) and Multi-Factor Authentication (MFA)?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "SSO",
                 "MFA"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:110:subparagraph:1:point:68",
-              "eu:32024R1689:article:107:subparagraph:1",
-              "eu:32024R1689:article:109:subparagraph:1",
-              "eu:32024R1689:article:103:subparagraph:1",
-              "eu:32024R1689:article:104:subparagraph:1"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement SSO/MFA?"
+              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement Single Sign-On (SSO) and Multi-Factor Authentication (MFA)?"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "5 evidence item(s) selected from 1 query projection(s)"
+              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
             ]
           },
           {
             "claim": {
               "claim_id": "identify_provision_for_least_privilege",
               "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?",
-              "intent": "obligation_or_prohibition",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "least privilege"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:110:subparagraph:1:point:68",
-              "eu:32024R1689:article:107:subparagraph:1",
-              "eu:32024R1689:article:109:subparagraph:1",
-              "eu:32024R1689:article:103:subparagraph:1",
-              "eu:32024R1689:article:104:subparagraph:1"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
               "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement least privilege?"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "5 evidence item(s) selected from 1 query projection(s)"
+              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
             ]
           },
           {
             "claim": {
               "claim_id": "identify_provision_for_access_review",
               "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?",
-              "intent": "obligation_or_prohibition",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "access review"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:110:subparagraph:1:point:68",
-              "eu:32024R1689:article:107:subparagraph:1",
-              "eu:32024R1689:article:109:subparagraph:1",
-              "eu:32024R1689:article:103:subparagraph:1",
-              "eu:32024R1689:article:104:subparagraph:1"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
               "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement access review?"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "5 evidence item(s) selected from 1 query projection(s)"
+              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
             ]
           }
         ],
         "retrieval_metadata": {
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
-          "index_version": "regulatory-en-regulatory-core-20260907-r2-bm25",
-          "retrieval_strategy_version": "planned-retrieval-v1",
+          "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
+          "retrieval_strategy_version": "planned-retrieval-v2",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -331,14 +325,14 @@
     ]
   },
   "workflow_version": "0.3",
-  "prompt_version": "agent-review-v0.2",
+  "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 28.706,
+  "elapsed_seconds": 31.135,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -346,19 +340,19 @@
       "purpose": "validate",
       "query_mode": "direct",
       "provision": "Article 9",
-      "query": "Does Article 9 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?"
+      "query": "AI Act Article 9"
     },
     {
       "purpose": "validate",
       "query_mode": "direct",
       "provision": "Article 15",
-      "query": "Does Article 15 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?"
+      "query": "AI Act Article 15"
     },
     {
       "purpose": "validate",
       "query_mode": "direct",
       "provision": "Article 17",
-      "query": "Does Article 17 of Regulation (EU) 2024/1689 support this requirement: Are SSO/MFA, least privilege and access review implemented?"
+      "query": "AI Act Article 17"
     },
     {
       "purpose": "gap",

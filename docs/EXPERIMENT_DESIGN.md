@@ -83,6 +83,15 @@ Reason
 Evidence reference
 ```
 
+- `Supported`: the provision directly and materially supports the main control
+  objective and substantially covers the requirement.
+- `Partially supported`: the provision supports an important part or underlying
+  legal objective, but not every implementation detail, actor or condition.
+- `Unsupported`: the provision concerns a materially different obligation and
+  has no substantive connection to the control.
+- `Unable to determine`: the available evidence is insufficient to make one of
+  the three substantive decisions above.
+
 ### Missing mappings
 
 List only provisions that materially improve or correct the existing mapping.

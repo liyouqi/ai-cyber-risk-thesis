@@ -1,0 +1,80 @@
+[
+  {
+    "mapping_reviews": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 11",
+        "decision": "Supported",
+        "reason": "Article 11 directly mandates the creation and maintenance of technical documentation for high-risk AI systems, which is the core objective of the control statement. The provision requires this documentation to demonstrate compliance and provide necessary information for assessment, aligning with the requirement to document architecture, purpose, and other elements.",
+        "evidence_ids": [
+          "eu:32024R1689:article:11:paragraph:1",
+          "eu:32024R1689:article:11:paragraph:2"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 13",
+        "decision": "Partially supported",
+        "reason": "Article 13 supports the control statement by requiring instructions for use that must include details about the system's characteristics, capabilities, limitations, and intended purpose. However, it does not cover the full scope of the control statement, which also includes architecture, versions, tests, controls, and instructions in a broader sense.",
+        "evidence_ids": [
+          "eu:32024R1689:article:13:paragraph:1",
+          "eu:32024R1689:article:13:paragraph:2",
+          "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:i"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 17",
+        "decision": "Partially supported",
+        "reason": "Article 17 supports the control statement by requiring a documented quality management system that includes examination, test, and validation procedures. This addresses the 'tests' and 'controls' aspects of the control statement. However, it does not cover the documentation of architecture, purpose, versions, or instructions in the same direct manner as Article 11.",
+        "evidence_ids": [
+          "eu:32024R1689:article:17:paragraph:1",
+          "eu:32024R1689:article:17:paragraph:1:point:d"
+        ]
+      }
+    ],
+    "missing_mappings": [],
+    "applicability_note": "The control statement applies to providers of high-risk AI systems, which is consistent with the applicability of Articles 11, 13, and 17.",
+    "overall_assessment": "Partially correct",
+    "challenge_comment": "The mapping is partially correct. Article 11 is a strong match for the documentation requirement. Article 13 and 17 provide relevant but incomplete support. The mapping should be retained, but the relationship to Article 13 and 17 should be clarified to reflect their partial support for specific elements of the control statement."
+  },
+  {
+    "mapping_reviews": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 11",
+        "decision": "Supported",
+        "reason": "Article 11 directly mandates the creation and maintenance of technical documentation for high-risk AI systems, which is the core objective of the control statement. The provision requires this documentation to demonstrate compliance and provide necessary information for assessment, aligning with the requirement to document architecture, purpose, and other elements.",
+        "evidence_ids": [
+          "eu:32024R1689:article:11:paragraph:1",
+          "eu:32024R1689:article:11:paragraph:2"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 13",
+        "decision": "Partially supported",
+        "reason": "Article 13 supports the control statement by requiring instructions for use that must include details about the system's characteristics, capabilities, limitations, and intended purpose. However, it does not cover the full scope of the control statement, which also includes architecture, versions, tests, controls, and instructions in a broader sense.",
+        "evidence_ids": [
+          "eu:32024R1689:article:13:paragraph:1",
+          "eu:32024R1689:article:13:paragraph:2",
+          "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:i"
+        ]
+      },
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 17",
+        "decision": "Partially supported",
+        "reason": "Article 17 supports the control statement by requiring a documented quality management system that includes examination, test, and validation procedures. This addresses the 'tests' and 'controls' aspects of the control statement. However, it does not cover the documentation of architecture, purpose, versions, or instructions in the same direct manner as Article 11.",
+        "evidence_ids": [
+          "eu:32024R1689:article:17:paragraph:1",
+          "eu:32024R1689:article:17:paragraph:1:point:d"
+        ]
+      }
+    ],
+    "missing_mappings": [],
+    "applicability_note": "The control statement applies to providers of high-risk AI systems, which is consistent with the applicability of Articles 11, 13, and 17.",
+    "overall_assessment": "Partially correct",
+    "challenge_comment": "The mapping is partially correct. Article 11 is a strong match for the documentation requirement. Article 13 and 17 provide relevant but incomplete support. The mapping should be retained, but the relationship to Article 13 and 17 should be clarified to reflect their partial support for specific elements of the control statement."
+  }
+]

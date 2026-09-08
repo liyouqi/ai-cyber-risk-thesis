@@ -3,20 +3,27 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Supported",
-      "reason": "Article 9 requires AI systems to be resilient against security risks, including those that could compromise integrity or availability. Mitigating prompt injection and malicious files directly addresses this requirement.",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act addresses the obligation for providers to ensure the accuracy of training data. This is a data quality requirement and does not directly relate to mitigating specific attack vectors like prompt injection or malicious file uploads.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Supported",
-      "reason": "Article 15 mandates the implementation of appropriate security measures to prevent unauthorized access and manipulation of data. Mitigating retrieval bypass and indirect instructions is a key component of such security measures.",
+      "decision": "Partially supported",
+      "reason": "Article 15 requires providers to implement appropriate technical measures to ensure that AI systems are resilient against reasonably foreseeable misuse. This provides a general obligation for security and resilience, which is relevant to mitigating attacks. However, it is a broad requirement and does not specifically name or detail the mitigation of the listed attack types.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "The control statement is applicable to generative AI, RAG, or agent systems as specified.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping to Articles 9 and 15 is correct and should be retained."
+  "missing_mappings": [
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 15",
+      "reason": "The mapping to Article 15 is only partially supported. A more specific provision detailing security requirements for generative AI systems is needed to fully support the control objective.",
+      "evidence_ids": []
+    }
+  ],
+  "applicability_note": "The control is applicable to generative AI, RAG, or agent systems as these are the types of systems most vulnerable to the attack vectors listed.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping to Article 9 is incorrect as it pertains to data accuracy, not security. The mapping to Article 15 is partially correct as it provides a general security obligation but lacks the specificity required to fully support the control's objective of mitigating specific attack vectors."
 }

@@ -4,14 +4,14 @@
   "evidence_provider": "none",
   "evidence_provider_details": {},
   "workflow_version": "0.3",
-  "prompt_version": "llm-only-v0.2",
+  "prompt_version": "llm-only-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 5.052,
+  "elapsed_seconds": 2.776,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [],

@@ -7,41 +7,5 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": 1,
     "score": 1.0
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-62-2-a",
-    "document_id": "EU-2022-2554",
-    "text": "(a) paragraph 5 is replaced by the following: ‘5. A CTP shall comply with the requirements concerning the security of network and information systems set out in Regulation (EU) 2022/2554.’.",
-    "source_locator": "Article 62(2)(a)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-60-4",
-    "document_id": "EU-2022-2554",
-    "text": "(4) in Article 79, paragraphs 1 and 2 are replaced by the following: ‘1. A trade repository shall identify sources of operational risk and minimise them also through the development of appropriate systems, controls and procedures, including ICT systems managed in accordance with Regulation (EU) 2022/2554. 2. A trade repository shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan including ICT business continuity policy and ICT response and recovery plans established in accordance with Regulation (EU) 2022/2554, aiming to ensure the maintenance of its functions, the timely recovery of operations and the fulfilment of the trade repository’s obligations.’;",
-    "source_locator": "Article 60(4)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-60-7-b-table-1",
-    "document_id": "EU-2022-2554",
-    "text": "‘(a) a Tier 2 CCP infringes Article 34(1) by not establishing, implementing or maintaining an adequate business continuity policy and response and recovery plan set up in accordance with Regulation (EU) 2022/2554, aiming to ensure the preservation of its functions, the timely recovery of operations and the fulfilment of the CCP’s obligations, which at least allows for the recovery of all transactions at the time of disruption to allow the CCP to continue to operate with certainty and to complete settlement on the scheduled date;’.",
-    "source_locator": "Article 60(7)(b) Table 1",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-61-1",
-    "document_id": "EU-2022-2554",
-    "text": "(1) paragraph 1 is replaced by the following: ‘1. A CSD shall identify sources of operational risk, both internal and external, and minimise their impact also through the deployment of appropriate ICT tools, processes and policies set up and managed in accordance with Regulation (EU) 2022/2554 of the European Parliament and of the Council ( *3 ) , as well as through any other relevant appropriate tools, controls and procedures for other types of operational risk, including for all the securities settlement systems it operates. ( *3 ) Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 ( OJ L 333, 27.12.2022, p. 1 ).’;\"",
-    "source_locator": "Article 61(1)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
   }
 ]

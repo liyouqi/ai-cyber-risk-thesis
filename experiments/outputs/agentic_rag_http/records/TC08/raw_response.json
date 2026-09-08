@@ -3,27 +3,35 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 10 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 10 requires data governance and management practices, including measures to detect, prevent and mitigate biases (points f and g), and imposes technical limitations and security measures for processing special categories of personal data (point b). These provisions support the control's objective of restricting sensitive inputs, but the article focuses on data quality and bias mitigation rather than classification, minimisation, and masking.",
+      "evidence_ids": [
+        "eu:32024R1689:article:10:paragraph:2:point:f",
+        "eu:32024R1689:article:10:paragraph:2:point:g",
+        "eu:32024R1689:article:10:paragraph:5:point:b"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(4)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(4) of the EU AI Act, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 26(4) requires deployers to ensure input data is relevant and representative, which is a data quality requirement. It does not address the restriction of sensitive inputs through classification, minimisation, or masking.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:4"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 27",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 27 of the EU AI Act, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 27 requires deployers to perform a fundamental rights impact assessment. This is a governance and risk assessment obligation and does not address the technical restriction of sensitive inputs.",
+      "evidence_ids": [
+        "eu:32024R1689:article:27"
+      ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of amendments to other regulations and does not contain the text of the articles (10, 26(4), 27) that are being reviewed. To assess the mapping, the actual provisions of the EU AI Act must be reviewed."
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as Article 10 provides some support for the control's objective through its data governance and bias mitigation requirements. However, Articles 26(4) and 27 are incorrectly mapped as they address different obligations (data quality and impact assessment, respectively) and do not support the control's focus on restricting sensitive inputs. The mapping should be revised to remove the unsupported articles and retain only the relevant provisions from Article 10."
 }

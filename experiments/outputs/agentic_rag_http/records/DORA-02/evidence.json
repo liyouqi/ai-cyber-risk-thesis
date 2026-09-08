@@ -27,15 +27,6 @@
     "score": 1.0
   },
   {
-    "evidence_id": "eu-2022-2554-article-16-1-f",
-    "document_id": "EU-2022-2554",
-    "text": "(f) ensure the continuity of critical or important functions, through business continuity plans and response and recovery measures, which include, at least, back-up and restoration measures;",
-    "source_locator": "Article 16(1)(f)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
     "evidence_id": "eu-2022-2554-article-60-2-a",
     "document_id": "EU-2022-2554",
     "text": "(a) paragraph 1 is replaced by the following: ‘1. A CCP shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan, which shall include ICT business continuity policy and ICT response and recovery plans put in place and implemented in accordance with Regulation (EU) 2022/2554, aiming to ensure the preservation of its functions, the timely recovery of operations and the fulfilment of the CCP’s obligations.’;",
@@ -58,6 +49,42 @@
     "document_id": "EU-2022-2554",
     "text": "(4) in Article 79, paragraphs 1 and 2 are replaced by the following: ‘1. A trade repository shall identify sources of operational risk and minimise them also through the development of appropriate systems, controls and procedures, including ICT systems managed in accordance with Regulation (EU) 2022/2554. 2. A trade repository shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan including ICT business continuity policy and ICT response and recovery plans established in accordance with Regulation (EU) 2022/2554, aiming to ensure the maintenance of its functions, the timely recovery of operations and the fulfilment of the trade repository’s obligations.’;",
     "source_locator": "Article 60(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-16-1-f",
+    "document_id": "EU-2022-2554",
+    "text": "(f) ensure the continuity of critical or important functions, through business continuity plans and response and recovery measures, which include, at least, back-up and restoration measures;",
+    "source_locator": "Article 16(1)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-15-e",
+    "document_id": "EU-2022-2554",
+    "text": "(e) specify further the testing of ICT business continuity plans referred to in Article 11(6) to ensure that such testing duly takes into account scenarios in which the quality of the provision of a critical or important function deteriorates to an unacceptable level or fails, and duly considers the potential impact of the insolvency, or other failures, of any relevant ICT third-party service provider and, where relevant, the political risks in the respective providers’ jurisdictions;",
+    "source_locator": "Article 15(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-61-3",
+    "document_id": "EU-2022-2554",
+    "text": "(3) paragraphs 3 and 4 are replaced by the following: ‘3. For services that it provides as well as for each securities settlement system that it operates, a CSD shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan, including ICT business continuity policy and ICT response and recovery plans established in accordance with Regulation (EU) 2022/2554, to ensure the preservation of its services, the timely recovery of operations and the fulfilment of the CSD’s obligations in the case of events that pose a significant risk to disrupting operations. 4. The plan referred to in paragraph 3 shall provide for the recovery of all transactions and participants’ positions at the time of disruption to allow the participants of a CSD to continue to operate with certainty and to complete settlement on the scheduled date, including by ensuring that critical IT systems can resume operations from the time of disruption as provided for in Article 12(5) and (7) of Regulation (EU) 2022/2554.’;",
+    "source_locator": "Article 61(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-11-4",
+    "document_id": "EU-2022-2554",
+    "text": "4. Financial entities shall put in place, maintain and periodically test appropriate ICT business continuity plans, notably with regard to critical or important functions outsourced or contracted through arrangements with ICT third-party service providers.",
+    "source_locator": "Article 11(4)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": null,
     "score": null

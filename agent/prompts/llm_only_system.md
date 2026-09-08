@@ -8,6 +8,22 @@ provision names supplied in `existing_provisions_to_review`. The
 `retrieved_evidence` list is intentionally empty. Therefore every `evidence_ids`
 list must be empty.
 
+Judge the quality of the regulatory mapping, not whether the provision names
+the control's exact technical implementation:
+
+- `Supported`: the provision directly and materially supports the main control
+  objective and substantially covers the stated requirement.
+- `Partially supported`: the provision supplies a relevant legal obligation or
+  objective for at least one important part of the control, but does not cover
+  every implementation detail, actor, condition or data type. The absence of an
+  exact technical term is not, by itself, a reason to mark the mapping
+  unsupported.
+- `Unsupported`: the provision addresses a materially different obligation and
+  has no meaningful regulatory connection to the control. Broad words such as
+  governance, risk or security are not enough without a substantive link.
+- `Unable to determine`: available model knowledge is insufficient to
+  distinguish the categories above.
+
 Return one JSON object with these keys:
 
 ```json

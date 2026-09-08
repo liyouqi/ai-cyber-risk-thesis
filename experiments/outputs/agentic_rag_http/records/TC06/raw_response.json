@@ -3,27 +3,58 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 9, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 9 focuses on establishing a risk management system for high-risk AI systems, which is a broader process for identifying and mitigating risks. It does not address the specific control of segregating and controlling administrative, model, and security configuration privileges.",
+      "evidence_ids": [
+        "eu:32024R1689:article:9:paragraph:1",
+        "eu:32024R1689:article:9:paragraph:2",
+        "eu:32024R1689:article:9:paragraph:2:point:a",
+        "eu:32024R1689:article:9:paragraph:2:point:b",
+        "eu:32024R1689:article:9:paragraph:2:point:c",
+        "eu:32024R1689:article:9:paragraph:2:point:d",
+        "eu:32024R1689:article:9:paragraph:3",
+        "eu:32024R1689:article:9:paragraph:4",
+        "eu:32024R1689:article:9:paragraph:5",
+        "eu:32024R1689:article:9:paragraph:5:point:a",
+        "eu:32024R1689:article:9:paragraph:5:point:b",
+        "eu:32024R1689:article:9:paragraph:5:point:c",
+        "eu:32024R1689:article:9:paragraph:5:text-block:4",
+        "eu:32024R1689:article:9:paragraph:6",
+        "eu:32024R1689:article:9:paragraph:7",
+        "eu:32024R1689:article:9:paragraph:8",
+        "eu:32024R1689:article:9:paragraph:9",
+        "eu:32024R1689:article:9:paragraph:10"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 15, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 15 requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity, including resilience against attacks. While this is related to security, it does not specifically address the segregation and control of administrative, model, and security configuration privileges.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:1",
+        "eu:32024R1689:article:15:paragraph:2",
+        "eu:32024R1689:article:15:paragraph:3",
+        "eu:32024R1689:article:15:paragraph:4",
+        "eu:32024R1689:article:15:paragraph:5"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 17, making it impossible to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 17 requires providers to establish a quality management system that includes an accountability framework setting out the responsibilities of management and staff. This framework could be used to implement segregation of duties, which is a key part of the control objective. However, the provision does not explicitly mandate the segregation of specific privileges (admin, model, security configuration) or the use of PAM, approval, four-eyes checks, or admin logs.",
+      "evidence_ids": [
+        "eu:32024R1689:article:17",
+        "eu:32024R1689:article:17:paragraph:1",
+        "eu:32024R1689:article:17:paragraph:2",
+        "eu:32024R1689:article:17:paragraph:3",
+        "eu:32024R1689:article:17:paragraph:4"
+      ]
     }
   ],
   "missing_mappings": [],
   "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of recitals and articles that amend other legislation, but it does not include the actual text of the articles (9, 15, 17) that are claimed to map to the control statement. Without the text of these articles, a determination cannot be made."
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The mapping is incorrect because Articles 9 and 15 do not address the specific control of segregating and controlling administrative, model, and security configuration privileges. Article 17 is only partially supported as it mentions an accountability framework which could be used to implement segregation of duties, but it does not explicitly mandate the specific control requirements."
 }

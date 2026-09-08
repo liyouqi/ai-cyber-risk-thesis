@@ -3,20 +3,13 @@
     {
       "instrument": "Commission Delegated Regulation (EU) 2024/1773",
       "provision": "Article 3",
-      "decision": "Unsupported",
-      "reason": "Article 3 of DORA establishes the scope and definitions for the regulation, including the definition of an 'ICT third-party service provider'. It does not contain any requirements or obligations regarding the frequency of reviewing a policy on the use of such services.",
+      "decision": "Unable to determine",
+      "reason": "The provided model knowledge does not contain the specific content of Article 3 of the DORA Delegated Regulation, which is necessary to assess the mapping to the control statement.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 8(3)",
-      "reason": "Article 8(3) requires financial entities to review their ICT third-party risk management framework at least annually, which would include the policy on the use of ICT third-party services.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "No additional applicability conditions are known beyond the general scope of DORA.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping to Article 3 is incorrect. The control statement 'At least once a year' for reviewing a policy on ICT third-party services is supported by Article 8(3) of the same regulation, not Article 3. The mapping should be corrected to reflect this."
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is known.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The assessment cannot be completed because the content of Article 3 is not available in the model's knowledge base. To proceed, the text of Article 3 must be provided."
 }

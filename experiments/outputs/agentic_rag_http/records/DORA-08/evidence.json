@@ -34,41 +34,5 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": 4,
     "score": 1.0
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-20-a-ii",
-    "document_id": "EU-2022-2554",
-    "text": "(ii) determine the time limits for the initial notification and for each report referred to in Article 19(4);",
-    "source_locator": "Article 20(a)(ii)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-19-1",
-    "document_id": "EU-2022-2554",
-    "text": "1. Financial entities shall report major ICT-related incidents to the relevant competent authority as referred to in Article 46 in accordance with paragraph 4 of this Article. Where a financial entity is subject to supervision by more than one national competent authority referred to in Article 46, Member States shall designate a single competent authority as the relevant competent authority responsible for carrying out the functions and duties provided for in this Article. Credit institutions classified as significant, in accordance with Article 6(4) of Regulation (EU) No 1024/2013, shall report major ICT-related incidents to the relevant national competent authority designated in accordance with Article 4 of Directive 2013/36/EU, which shall immediately transmit that report to the ECB. For the purpose of the first subparagraph, financial entities shall produce, after collecting and analysing all relevant information, the initial notification and reports referred to in paragraph 4 of this Article using the templates referred to in Article 20 and submit them to the competent authority. In the event that a technical impossibility prevents the submission of the initial notification using the template, financial entities shall notify the competent authority about it via alternative means. The initial notification and reports referred to in paragraph 4 shall include all information necessary for the competent authority to determine the significance of the major ICT-related incident and assess possible cross-border impacts. Without prejudice to the reporting pursuant to the first subparagraph by the financial entity to the relevant competent authority, Member States may additionally determine that some or all financial entities shall also provide the initial notification and each report referred to in paragraph 4 of this Article using the templates referred to in Article 20 to the competent authorities or the computer security incident response teams (CSIRTs) designated or established in accordance with Directive (EU) 2022/2555.",
-    "source_locator": "Article 19(1)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-19-6",
-    "document_id": "EU-2022-2554",
-    "text": "6. Upon receipt of the initial notification and of each report referred to in paragraph 4, the competent authority shall, in a timely manner, provide details of the major ICT-related incident to the following recipients based, as applicable, on their respective competences:",
-    "source_locator": "Article 19(6)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-62-1-a",
-    "document_id": "EU-2022-2554",
-    "text": "(a) paragraph 4 is replaced by the following: ( *4 ) Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 ( OJ L 333, 27.12.2022, p. 1 ).’;\"",
-    "source_locator": "Article 62(1)(a)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
   }
 ]

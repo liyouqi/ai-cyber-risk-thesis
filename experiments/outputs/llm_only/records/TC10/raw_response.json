@@ -4,40 +4,52 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
       "decision": "Unsupported",
-      "reason": "Article 10 addresses the quality of training data, not data retention or deletion.",
+      "reason": "Article 10 of the EU AI Act generally addresses the obligations of providers regarding the design and development of AI systems, focusing on risk management and ensuring the AI system is safe and in compliance with the law. It does not specifically address data retention or deletion policies for prompts, files, outputs, vectors, or logs.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 12",
       "decision": "Unsupported",
-      "reason": "Article 12 concerns the quality of training, validation, and testing data, not data retention or deletion.",
+      "reason": "Article 12 of the EU AI Act pertains to the obligations of providers regarding the documentation and information to be drawn up before an AI system is placed on the market. This is a documentation requirement and does not cover data retention or deletion policies.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
       "decision": "Unsupported",
-      "reason": "Article 13 addresses documentation and record-keeping for data governance, not data retention or deletion.",
+      "reason": "Article 13 of the EU AI Act deals with transparency obligations for providers of certain AI systems, such as those intended to interact with natural persons or used to generate or manipulate image, audio or video content. This is a transparency requirement and does not address data retention or deletion.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(6)",
       "decision": "Unsupported",
-      "reason": "Article 26(6) pertains to the deletion of personal data upon withdrawal of consent, not general data retention or deletion policies.",
+      "reason": "Article 26(6) of the EU AI Act concerns the obligations of providers to ensure that AI systems are designed and developed in a way that they can be effectively overseen by natural persons. This is an oversight requirement and does not address data retention or deletion policies.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 68(1)(c)",
-      "reason": "This article requires providers to implement data governance measures, which would include retention and deletion policies for various data types.",
+      "provision": "Article 15",
+      "reason": "Article 15 of the EU AI Act addresses the obligations of providers regarding the quality of data used for training, validation, and testing of AI systems. While it does not explicitly mandate retention and deletion, it requires providers to ensure that the data used is relevant, representative, and free of errors. This could be interpreted as requiring providers to have policies in place for managing the lifecycle of data, including retention and deletion.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 16",
+      "reason": "Article 16 of the EU AI Act deals with the obligations of providers regarding the accuracy of the data used for training, validation, and testing of AI systems. This could be interpreted as requiring providers to have policies in place for managing the lifecycle of data, including retention and deletion, to ensure the accuracy of the data.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17",
+      "reason": "Article 17 of the EU AI Act addresses the obligations of providers regarding the robustness of AI systems. This could be interpreted as requiring providers to have policies in place for managing the lifecycle of data, including retention and deletion, to ensure the robustness of the AI system.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to all AI systems under the EU AI Act.",
+  "applicability_note": "The EU AI Act applies to all AI systems placed on the market or put into service in the EU, regardless of whether they are developed or provided by entities established in the EU or in a third country.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they relate to data quality and consent, not data retention and deletion. The correct mapping should be to Article 68(1)(c), which mandates data governance measures including retention and deletion policies."
+  "challenge_comment": "The existing mappings are incorrect as they do not address the control statement regarding retention and deletion. The correct mappings should be to Articles 15, 16, and 17 of the EU AI Act, which address the quality, accuracy, and robustness of data used for training, validation, and testing of AI systems. These articles could be interpreted as requiring providers to have policies in place for managing the lifecycle of data, including retention and deletion."
 }

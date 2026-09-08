@@ -3,27 +3,58 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 9 or any information to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 9 focuses on establishing a risk management system for high-risk AI systems, which is a broad process for identifying and mitigating risks. It does not address specific access control mechanisms like SSO, MFA, least privilege, or access reviews.",
+      "evidence_ids": [
+        "eu:32024R1689:article:9:paragraph:1",
+        "eu:32024R1689:article:9:paragraph:2",
+        "eu:32024R1689:article:9:paragraph:2:point:a",
+        "eu:32024R1689:article:9:paragraph:2:point:b",
+        "eu:32024R1689:article:9:paragraph:2:point:c",
+        "eu:32024R1689:article:9:paragraph:2:point:d",
+        "eu:32024R1689:article:9:paragraph:3",
+        "eu:32024R1689:article:9:paragraph:4",
+        "eu:32024R1689:article:9:paragraph:5",
+        "eu:32024R1689:article:9:paragraph:5:point:a",
+        "eu:32024R1689:article:9:paragraph:5:point:b",
+        "eu:32024R1689:article:9:paragraph:5:point:c",
+        "eu:32024R1689:article:9:paragraph:5:text-block:4",
+        "eu:32024R1689:article:9:paragraph:6",
+        "eu:32024R1689:article:9:paragraph:7",
+        "eu:32024R1689:article:9:paragraph:8",
+        "eu:32024R1689:article:9:paragraph:9",
+        "eu:32024R1689:article:9:paragraph:10"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 15 or any information to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 15 requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity. While this is a general security requirement, it does not specifically mandate the implementation of SSO, MFA, least privilege, or access reviews.",
+      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:1",
+        "eu:32024R1689:article:15:paragraph:2",
+        "eu:32024R1689:article:15:paragraph:3",
+        "eu:32024R1689:article:15:paragraph:4",
+        "eu:32024R1689:article:15:paragraph:5"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 17 or any information to assess its relevance to the control statement.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "Article 17 mandates a quality management system for providers of high-risk AI systems. This system includes a risk management system (Article 9) and other aspects, but it does not specify requirements for SSO, MFA, least privilege, or access reviews.",
+      "evidence_ids": [
+        "eu:32024R1689:article:17",
+        "eu:32024R1689:article:17:paragraph:1",
+        "eu:32024R1689:article:17:paragraph:2",
+        "eu:32024R1689:article:17:paragraph:3",
+        "eu:32024R1689:article:17:paragraph:4"
+      ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of recitals and amending articles that reference other regulations. None of the evidence contains the substantive text of the articles (9, 15, 17) that are being mapped to the control statement, making it impossible to determine if the mapping is correct."
+  "applicability_note": "No additional applicability condition is identified.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The mapping is incorrect. The control statement asks about specific access control mechanisms (SSO/MFA, least privilege, access review), but the mapped articles (9, 15, 17) address broader concepts like risk management, cybersecurity, and quality management systems. None of the provisions directly or materially support the specific control objectives."
 }

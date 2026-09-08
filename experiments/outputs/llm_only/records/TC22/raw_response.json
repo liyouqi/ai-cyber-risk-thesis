@@ -4,28 +4,28 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
       "decision": "Unsupported",
-      "reason": "Article 9 addresses the scope of the regulation and definitions, not operational monitoring of AI systems.",
+      "reason": "Article 9 establishes the scope and definitions of the AI Act, including what constitutes an AI system. It does not contain any obligations related to monitoring.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 20",
       "decision": "Supported",
-      "reason": "Article 20 requires high-risk AI systems to have a post-market monitoring system to identify and mitigate risks, which aligns with monitoring drift and emerging risks.",
+      "reason": "Article 20 requires providers of high-risk AI systems to establish a post-market monitoring system. This directly supports the control objective of monitoring for drift, misuse, and emerging risks.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
-      "decision": "Supported",
-      "reason": "Article 26(5) requires the provider to establish a post-market monitoring system, which includes tracking and addressing issues like control failures.",
+      "decision": "Unsupported",
+      "reason": "Article 26(5) pertains to the obligations of users of high-risk AI systems, specifically regarding human oversight. It does not address the provider's monitoring obligations.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 72",
       "decision": "Unsupported",
-      "reason": "Article 72 pertains to the European Artificial Intelligence Board and its tasks, not the operational monitoring of individual AI systems.",
+      "reason": "Article 72 outlines the powers of the European Artificial Intelligence Board, which is an administrative and governance provision. It does not impose a direct monitoring obligation on providers or users.",
       "evidence_ids": []
     }
   ],
@@ -33,11 +33,11 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 29",
-      "reason": "Article 29 requires providers to establish a quality management system, which includes processes for monitoring and addressing misuse, a key component of the control statement.",
+      "reason": "Article 29 requires providers to establish, implement, and document a quality management system, which includes processes for monitoring and addressing issues. This is a key provision for the control objective.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to all AI systems, with stricter requirements for high-risk systems as defined in the regulation.",
+  "applicability_note": "The control is applicable to all AI systems, with stricter requirements for high-risk systems as defined in the AI Act.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 9 and Article 72 is incorrect. Article 9 is about scope and definitions, while Article 72 is about the AI Board. The mapping to Article 20 and Article 26(5) is correct as they directly address post-market monitoring. A missing mapping is Article 29, which requires a quality management system that includes processes for monitoring misuse."
+  "challenge_comment": "The mapping is partially correct as it correctly identifies Article 20 as a key provision for monitoring. However, it incorrectly includes Articles 9, 26(5), and 72, which do not relate to the monitoring control. The mapping is missing Article 29, which is a critical provision for establishing a quality management system that includes monitoring."
 }

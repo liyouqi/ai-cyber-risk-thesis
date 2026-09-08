@@ -3,15 +3,13 @@
     {
       "instrument": "Commission Delegated Regulation (EU) 2024/1774",
       "provision": "Article 21(1)(e)(iv)",
-      "decision": "Supported",
-      "reason": "The evidence shows the provision requires an update of access rights at least once a year for all ICT systems, which directly supports the control statement.",
-      "evidence_ids": [
-        "eu-2024-1774-article-21-e-iv"
-      ]
+      "decision": "Unable to determine",
+      "reason": "The retrieved evidence is missing, so it is not possible to assess the regulatory mapping.",
+      "evidence_ids": []
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement 'At least once a year' is directly supported by the regulatory text for access rights review.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The existing mapping is correct and should be retained."
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Unable to determine",
+  "challenge_comment": "The assessment cannot be completed because the retrieved evidence is empty. To proceed, the specific text of Article 21(1)(e)(iv) and its context within the regulation must be provided to determine if it supports the control statement."
 }

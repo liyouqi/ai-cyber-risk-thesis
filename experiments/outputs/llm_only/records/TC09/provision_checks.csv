@@ -1,4 +1,4 @@
 item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-TC09,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 addresses the classification of AI systems and their risk levels, not technical isolation measures.",,
-TC09,Regulation (EU) 2024/1689,Article 15,Unsupported,"Article 15 pertains to transparency obligations for deployers of high-risk AI systems, not isolation.",,
-TC09,Regulation (EU) 2024/1689,Article 17,Unsupported,"Article 17 concerns post-market monitoring and reporting of serious incidents, not isolation.",,
+TC09,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 addresses the classification of AI systems and their risk levels, which is a foundational requirement but does not directly relate to the technical isolation of entities or tenants.",,
+TC09,Regulation (EU) 2024/1689,Article 15,Unsupported,"Article 15 pertains to transparency obligations for certain AI systems, focusing on providing information to users, not on the technical isolation of environments or knowledge bases.",,
+TC09,Regulation (EU) 2024/1689,Article 17,Unsupported,"Article 17 outlines requirements for high-risk AI systems, including risk management and data governance, but does not specifically mandate the isolation of entities or tenants.",,

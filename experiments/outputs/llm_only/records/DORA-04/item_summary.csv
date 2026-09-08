@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-04,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,No challenge is needed. The mapping to Article 24(6) is appropriate and should be retained.
+DORA-04,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,The mapping is correct. Article 24(6) of DORA is the appropriate provision for this control.

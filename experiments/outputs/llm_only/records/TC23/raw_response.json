@@ -4,32 +4,26 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
       "decision": "Unsupported",
-      "reason": "Article 13 of the AI Act focuses on the obligations of the provider regarding the technical documentation of a high-risk AI system, including its design, development, and training. It does not mandate the maintenance of an inventory of models, components, data sources, or subcontractors.",
+      "reason": "Article 13 of the EU AI Act generally addresses the obligations of providers of general-purpose AI models, focusing on transparency, documentation, and providing information to downstream users. It does not impose a specific requirement to maintain an inventory of all models, components, data sources, and subcontractors.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 25(4)",
       "decision": "Unsupported",
-      "reason": "Article 25(4) of the AI Act pertains to the obligations of the provider to ensure that the high-risk AI system is accompanied by instructions for use and to provide information to users. It does not address the maintenance of an inventory of components or subcontractors.",
+      "reason": "Article 25(4) of the EU AI Act pertains to the obligations of distributors of AI systems, requiring them to provide certain information to users. It does not establish a requirement for maintaining a comprehensive inventory of supply chain components.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 13",
-      "reason": "Article 13 focuses on technical documentation, not inventory maintenance.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 25(4)",
-      "reason": "Article 25(4) pertains to user instructions and information, not inventory maintenance.",
+      "provision": "Article 28(3)",
+      "reason": "This article requires providers of high-risk AI systems to draw up and maintain technical documentation, which includes a description of the system's components and their versions. This is a closer match to the control's objective of maintaining an inventory.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to the supply chain domain, specifically for third-party components.",
+  "applicability_note": "The control is applicable to providers of high-risk AI systems and their supply chain components.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The control statement is not supported by the mapped provisions. The AI Act does not have a specific article that mandates the maintenance of an inventory of models, components, data sources, and subcontractors. This type of control is more commonly found in other frameworks like NIST CSF or ISO 27001."
+  "challenge_comment": "The mapping to Articles 13 and 25(4) is incorrect. The control's objective of maintaining an inventory is more closely aligned with the technical documentation requirements in Article 28(3)."
 }

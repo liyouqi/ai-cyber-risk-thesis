@@ -4,33 +4,33 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
       "decision": "Unsupported",
-      "reason": "Article 10 addresses the transparency obligations for providers of general-purpose AI models, such as publishing model cards and training data summaries. It does not address the exclusion of institutional data from training or enforceable opt-outs.",
+      "reason": "Article 10 of the EU AI Act addresses the obligations of providers of general-purpose AI models, including requirements for technical documentation and training data. It does not specifically address the exclusion of institutional data from training or the provision of an opt-out mechanism for such data.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
       "decision": "Unsupported",
-      "reason": "Article 13 outlines the obligations for providers of high-risk AI systems, including risk management, data governance, and technical documentation. It does not specifically address the exclusion of institutional data from training or enforceable opt-outs.",
+      "reason": "Article 13 of the EU AI Act pertains to transparency obligations for deployers of certain AI systems, such as providing information to users. It does not contain provisions related to the training data of AI models or the opt-out of institutional data.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 25(4)",
       "decision": "Unsupported",
-      "reason": "Article 25(4) concerns the obligation for providers of high-risk AI systems to ensure human oversight. It does not address the exclusion of institutional data from training or enforceable opt-outs.",
+      "reason": "Article 25(4) of the EU AI Act concerns the obligations of providers of high-risk AI systems to implement a quality management system. This article does not address the specific issue of excluding institutional data from training or providing an opt-out mechanism.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 29(1)(b)",
-      "reason": "This article requires providers of high-risk AI systems to ensure that training, validation, and testing data sets are relevant, representative, and to the extent required by the intended purpose, complete and free of errors. It does not explicitly mandate the exclusion of institutional data or an opt-out mechanism, but it is the most relevant provision concerning data governance for training.",
+      "provision": "Article 29(1)",
+      "reason": "This article requires providers of high-risk AI systems to take appropriate data governance and management measures, which could include procedures for handling institutional data and opt-outs.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to third-party or cloud model providers as defined in the AI Act.",
+  "applicability_note": "The control is applicable to providers of AI models that are trained on data that may include institutional data, particularly those that are considered high-risk or general-purpose AI models under the EU AI Act.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The provided mapping is incorrect. None of the cited articles (10, 13, 25(4)) address the specific requirement of excluding institutional data from training or providing an enforceable opt-out. The most relevant provision for data governance is Article 29, but it does not explicitly mandate an opt-out mechanism."
+  "challenge_comment": "The provided mappings are incorrect. The control statement concerns the exclusion of institutional data from AI model training and the provision of an opt-out mechanism. None of the reviewed articles (10, 13, 25(4)) address this specific requirement. Article 29(1) is a more relevant provision as it mandates data governance measures for high-risk AI systems, which could encompass such data handling practices."
 }

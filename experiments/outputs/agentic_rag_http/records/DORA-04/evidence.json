@@ -16,32 +16,5 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": null,
     "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-26-2",
-    "document_id": "EU-2022-2554",
-    "text": "2. Each threat-led penetration test shall cover several or all critical or important functions of a financial entity, and shall be performed on live production systems supporting such functions. Financial entities shall identify all relevant underlying ICT systems, processes and technologies supporting critical or important functions and ICT services, including those supporting the critical or important functions which have been outsourced or contracted to ICT third-party service providers. Financial entities shall assess which critical or important functions need to be covered by the TLPT. The result of this assessment shall determine the precise scope of TLPT and shall be validated by the competent authorities.",
-    "source_locator": "Article 26(2)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-25-2",
-    "document_id": "EU-2022-2554",
-    "text": "2. Central securities depositories and central counterparties shall perform vulnerability assessments before any deployment or redeployment of new or existing applications and infrastructure components, and ICT services supporting critical or important functions of the financial entity.",
-    "source_locator": "Article 25(2)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-16-1-f",
-    "document_id": "EU-2022-2554",
-    "text": "(f) ensure the continuity of critical or important functions, through business continuity plans and response and recovery measures, which include, at least, back-up and restoration measures;",
-    "source_locator": "Article 16(1)(f)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
   }
 ]

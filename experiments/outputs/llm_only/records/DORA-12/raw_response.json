@@ -4,12 +4,12 @@
       "instrument": "Commission Delegated Regulation (EU) 2025/301",
       "provision": "Article 5(1)(b)",
       "decision": "Supported",
-      "reason": "Article 5(1)(b) of DORA requires the submission of an intermediate report within 72 hours of the initial notification, which directly corresponds to the control statement's requirement to submit within 72 hours.",
+      "reason": "Article 5(1)(b) of DORA requires entities to notify the competent authority of a significant cyber incident without undue delay and, in any case, within 72 hours of detection. This directly supports the control's objective of a strict 72-hour submission deadline for the initial notification.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions are known beyond the general scope of the DORA regulation.",
+  "applicability_note": "No additional applicability conditions are known beyond the general scope of DORA.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+  "challenge_comment": "The mapping is correct. Article 5(1)(b) of DORA is the specific provision that mandates the 72-hour notification deadline for significant cyber incidents, which is the core requirement of the control statement."
 }

@@ -3,27 +3,35 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 14",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 14 or any information about human review, rejection, stop, override, or escalation controls.",
-      "evidence_ids": []
+      "decision": "Supported",
+      "reason": "Article 14(1) requires effective human oversight. Article 14(4)(d) explicitly supports the ability to override or reverse the AI system's output, and Article 14(4)(e) supports the availability of a stop button. These provisions directly and materially support the main control objective of having human review, rejection, stop, override, and escalation capabilities.",
+      "evidence_ids": [
+        "eu:32024R1689:article:14:paragraph:1",
+        "eu:32024R1689:article:14:paragraph:4:point:d",
+        "eu:32024R1689:article:14:paragraph:4:point:e"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(2)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(2) or any information about human review, rejection, stop, override, or escalation controls.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "The provision requires deployers to assign human oversight to competent individuals, which is a necessary condition for the control to be effective. However, it does not specify the mechanisms or tools (like a stop button or override function) that must be available to those individuals to perform the oversight, which is a key part of the control statement.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:2"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(5) or any information about human review, rejection, stop, override, or escalation controls.",
-      "evidence_ids": []
+      "decision": "Unsupported",
+      "reason": "This provision addresses the deployer's obligation to monitor the system and report serious incidents or risks to the provider and authorities. It does not address the availability of human review, rejection, stop, override, or escalation mechanisms for the system's operation.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:5"
+      ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of amendments to other EU regulations and directives, not the substantive articles of the AI Act itself. To assess the mapping, the actual text of Articles 14, 26(2), and 26(5) is required."
+  "applicability_note": "The applicability condition 'Decision-impacting AI' is correct as the control and mapped provisions are specific to high-risk AI systems under the EU AI Act.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping to Article 26(5) is incorrect as it pertains to incident reporting, not the operational controls for human oversight. The mapping to Article 26(2) is partially correct as it establishes the requirement for competent personnel but not the specific mechanisms. The mapping to Article 14 is correct and should be retained."
 }

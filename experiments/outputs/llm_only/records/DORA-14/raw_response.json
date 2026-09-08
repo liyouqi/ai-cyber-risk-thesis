@@ -3,20 +3,13 @@
     {
       "instrument": "Commission Delegated Regulation (EU) 2025/301",
       "provision": "Article 5(1)(c)",
-      "decision": "Unsupported",
-      "reason": "The control statement requires a submission deadline, which is not specified in the provision.",
+      "decision": "Supported",
+      "reason": "Article 5(1)(c) of the DORA Delegated Regulation requires financial entities to submit a final report to the competent authority. The control statement specifies a deadline for this submission, which is a direct and material requirement of the provision.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2025/301",
-      "provision": "Article 5(1)(c)",
-      "reason": "The provision does not specify a submission deadline for the intermediate report.",
-      "evidence_ids": []
-    }
-  ],
+  "missing_mappings": [],
   "applicability_note": "No additional applicability condition is known.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect because the control statement specifies a submission deadline that is not present in the cited provision."
+  "overall_assessment": "Correct",
+  "challenge_comment": "The mapping is correct. The control statement's deadline for submitting the final report is a direct implementation of the obligation in Article 5(1)(c)."
 }

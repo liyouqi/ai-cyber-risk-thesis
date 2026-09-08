@@ -1,5 +1,5 @@
 item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-TC22,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 addresses the scope of the regulation and definitions, not operational monitoring of AI systems.",,
-TC22,Regulation (EU) 2024/1689,Article 20,Supported,"Article 20 requires high-risk AI systems to have a post-market monitoring system to identify and mitigate risks, which aligns with monitoring drift and emerging risks.",,
-TC22,Regulation (EU) 2024/1689,Article 26(5),Supported,"Article 26(5) requires the provider to establish a post-market monitoring system, which includes tracking and addressing issues like control failures.",,
-TC22,Regulation (EU) 2024/1689,Article 72,Unsupported,"Article 72 pertains to the European Artificial Intelligence Board and its tasks, not the operational monitoring of individual AI systems.",,
+TC22,Regulation (EU) 2024/1689,Article 9,Unsupported,"Article 9 establishes the scope and definitions of the AI Act, including what constitutes an AI system. It does not contain any obligations related to monitoring.",,
+TC22,Regulation (EU) 2024/1689,Article 20,Supported,"Article 20 requires providers of high-risk AI systems to establish a post-market monitoring system. This directly supports the control objective of monitoring for drift, misuse, and emerging risks.",,
+TC22,Regulation (EU) 2024/1689,Article 26(5),Unsupported,"Article 26(5) pertains to the obligations of users of high-risk AI systems, specifically regarding human oversight. It does not address the provider's monitoring obligations.",,
+TC22,Regulation (EU) 2024/1689,Article 72,Unsupported,"Article 72 outlines the powers of the European Artificial Intelligence Board, which is an administrative and governance provision. It does not impose a direct monitoring obligation on providers or users.",,

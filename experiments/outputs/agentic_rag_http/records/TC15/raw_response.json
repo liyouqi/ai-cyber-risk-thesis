@@ -3,27 +3,34 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 12",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 12 or any information about logging requirements.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 12(1) requires logging and Article 12(2) requires logging of events relevant for traceability, which supports the control's objective. However, the specific log fields (user, time, I/O, model version, tool calls, admin actions) are not explicitly listed in the provision.",
+      "evidence_ids": [
+        "eu:32024R1689:article:12:paragraph:1",
+        "eu:32024R1689:article:12:paragraph:2"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 19",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence only mentions an amendment to Article 19 and does not contain the text of the article itself or any information about logging requirements.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 19 addresses the retention of logs, which is a key part of the control's requirements. However, it does not specify the content of the logs, which is the primary focus of the control statement.",
+      "evidence_ids": [
+        "eu:32024R1689:article:19:paragraph:1"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(6)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(6) or any information about logging requirements.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 26(6) addresses the retention of logs by deployers, which is a key part of the control's requirements. However, it does not specify the content of the logs, which is the primary focus of the control statement.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:6"
+      ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of amendments to other regulations and does not contain the substantive text of the articles (12, 19, 26(6)) being reviewed. Therefore, it is impossible to assess the mapping."
+  "applicability_note": "The control is applicable to all AI systems, but the logging requirements are stricter for high-risk systems, which is reflected in the provisions reviewed.",
+  "overall_assessment": "Partially correct",
+  "challenge_comment": "The mapping is partially correct as the provisions support the logging objective but do not specify the exact log fields required by the control statement. The mapping should be retained but clarified to reflect that the provisions support the logging requirement in general, not the specific fields."
 }

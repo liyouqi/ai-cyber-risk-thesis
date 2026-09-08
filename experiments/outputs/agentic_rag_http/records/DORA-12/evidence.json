@@ -6,25 +6,7 @@
     "source_locator": "Article 5(1)(b)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
     "rank": 1,
-    "score": 24.005062
-  },
-  {
-    "evidence_id": "eu-2025-301-article-2-b",
-    "document_id": "EU-2025-301",
-    "text": "(b) the date of detection, time of detection, and classification of the incident pursuant to Article 8 of Commission Delegated Regulation (EU) 2024/1772 ( 7 ) ;",
-    "source_locator": "Article 2(b)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 2,
-    "score": 15.252947
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-2",
-    "document_id": "EU-2025-301",
-    "text": "2. Where the financial entity has not classified an ICT-related incident as major within 24 hours from the moment the financial entity has become aware of the ITC-related incident but classifies that ICT-related incident as major at a later stage, the financial entity shall submit the initial notification within four hours from the classification of the ICT-related incident as a major incident.",
-    "source_locator": "Article 5(2)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 3,
-    "score": 14.528109
+    "score": 1.0
   },
   {
     "evidence_id": "eu-2025-301-article-5-1",
@@ -32,61 +14,7 @@
     "text": "1. Financial entities shall submit the initial notification and the intermediate and final reports as referred to in Article 19(4), points (a), (b) and (c), of Regulation (EU) 2022/2554 within the following time limits:",
     "source_locator": "Article 5(1)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 4,
-    "score": 14.453995
-  },
-  {
-    "evidence_id": "eu-2025-301-article-6-e",
-    "document_id": "EU-2025-301",
-    "text": "(e) the classification criteria that would have triggered a major incident report laid down in Articles 1 to 8 of Delegated Regulation (EU) 2024/1772 if the cyber threat had materialised;",
-    "source_locator": "Article 6(e)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 5,
-    "score": 12.057615
-  },
-  {
-    "evidence_id": "eu-2025-301-article-2",
-    "document_id": "EU-2025-301",
-    "text": "Initial notifications as referred to in Article 19(4), point (a), of Regulation (EU) 2022/2554 shall contain at least all of the following specific information:",
-    "source_locator": "Article 2",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 6,
-    "score": 15.252947
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-1-a",
-    "document_id": "EU-2025-301",
-    "text": "(a) for the initial report: as early as possible, but in any case, within four hours from the classification of the ICT-related incident as a major ICT-related incident and no later than 24 hours from the moment the financial entity has become aware of the ICT-related incident;",
-    "source_locator": "Article 5(1)(a)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 7,
-    "score": 10.68732
-  },
-  {
-    "evidence_id": "eu-2025-301-article-5-1-c",
-    "document_id": "EU-2025-301",
-    "text": "(c) for the final report: no later than one month after either the submission of the intermediate report, or, where applicable, after the latest updated intermediate report.",
-    "source_locator": "Article 5(1)(c)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 8,
-    "score": 8.782536
-  },
-  {
-    "evidence_id": "eu-2025-301-article-2-d",
-    "document_id": "EU-2025-301",
-    "text": "(d) the criteria, laid down in Articles 1 to 8 of Delegated Regulation (EU) 2024/1772, on the basis of which the financial entity classified the ICT-related incident as major;",
-    "source_locator": "Article 2(d)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 9,
-    "score": 9.867988
-  },
-  {
-    "evidence_id": "eu-2025-301-article-2-h",
-    "document_id": "EU-2025-301",
-    "text": "(h) information about whether the financial entity has activated a business continuity plan;",
-    "source_locator": "Article 2(h)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
-    "rank": 10,
-    "score": 15.252947
+    "rank": 2,
+    "score": 1.0
   }
 ]

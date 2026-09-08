@@ -4,14 +4,14 @@
       "instrument": "Commission Delegated Regulation (EU) 2025/301",
       "provision": "Article 5(1)(a)",
       "decision": "Supported",
-      "reason": "The evidence text for Article 5(1)(a) explicitly states the requirement to submit the initial report 'within four hours from the classification of the ICT-related incident as a major ICT-related incident and no later than 24 hours from the moment the financial entity has become aware of the ICT-related incident', which directly matches the control statement.",
+      "reason": "The provision directly and materially supports the control objective by specifying the exact time limits for submitting an initial notification of a major incident: within four hours of classification and no later than 24 hours of awareness.",
       "evidence_ids": [
         "eu-2025-301-article-5-1-a"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions identified.",
+  "applicability_note": "No additional applicability condition identified.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The existing mapping to Article 5(1)(a) is correct and should be retained."
+  "challenge_comment": "No challenge needed. The mapping is correct and should be retained."
 }

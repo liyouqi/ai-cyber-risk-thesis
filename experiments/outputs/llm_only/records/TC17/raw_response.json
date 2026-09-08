@@ -3,29 +3,29 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Supported",
-      "reason": "Article 9 requires high-risk AI systems to have appropriate data governance and management, which includes ensuring the quality and accuracy of the data used for training, validation, and testing. This supports the testing of accuracy.",
+      "decision": "Unsupported",
+      "reason": "Article 9 of the EU AI Act addresses the obligation for high-risk AI systems to have a sufficient level of accuracy, robustness and cybersecurity. While it mentions accuracy, it does not specify the need for testing, benchmarks, or the specific aspects of hallucination, repeatability, and limits.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
-      "decision": "Supported",
-      "reason": "Article 13 mandates the implementation of a quality management system, which includes processes for ensuring the accuracy and reliability of the AI system's outputs. This supports the testing of accuracy and limits.",
+      "decision": "Unsupported",
+      "reason": "Article 13 of the EU AI Act pertains to the obligations of users of high-risk AI systems. It does not address the testing of the AI system's accuracy or other performance characteristics.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Supported",
-      "reason": "Article 15 requires the AI system to be designed and developed with appropriate levels of accuracy, robustness, and cybersecurity. This supports the testing of accuracy and limits.",
+      "decision": "Unsupported",
+      "reason": "Article 15 of the EU AI Act concerns the obligations of providers of high-risk AI systems to draw up and keep up-to-date technical documentation. While this documentation would likely include information on testing, the article itself does not mandate the testing of accuracy, hallucination, repeatability, or limits.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
       "decision": "Unsupported",
-      "reason": "Article 26(5) pertains to the obligations of the provider regarding the conformity assessment and does not directly address the testing of accuracy, hallucination, repeatability, or limits.",
+      "reason": "Article 26(5) of the EU AI Act requires providers of high-risk AI systems to implement a post-market monitoring system. This is a process for monitoring the system after it has been placed on the market, not a requirement for initial testing of its accuracy and related properties.",
       "evidence_ids": []
     }
   ],
@@ -33,17 +33,11 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
-      "reason": "Article 10 specifically addresses the obligation to ensure the accuracy of the data used for training, validation, and testing, which is a key aspect of the control statement.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 14",
-      "reason": "Article 14 requires the AI system to be designed and developed with appropriate levels of accuracy, robustness, and cybersecurity, which includes testing for hallucination and repeatability.",
+      "reason": "Article 10 of the EU AI Act specifically requires providers of high-risk AI systems to ensure that the system achieves, depending on the intended purpose, an appropriate level of accuracy, robustness and cybersecurity. This includes the obligation to test the system's performance, which would cover the aspects of accuracy, hallucination, repeatability, and limits mentioned in the control statement.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to all systems as per the assessment item.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as it includes relevant articles but misses specific provisions that directly address the testing of accuracy, hallucination, and repeatability. Article 26(5) is incorrectly included as it does not relate to the testing of these aspects."
+  "applicability_note": "The control statement applies to all AI systems, but the EU AI Act's obligations for accuracy testing are specifically for high-risk AI systems.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings do not correctly identify the regulatory basis for testing AI system accuracy. The control statement requires evidence of testing for accuracy, hallucination, repeatability, and limits, which is primarily covered by Article 10 of the EU AI Act, not the articles listed. The mapping should be corrected to reference Article 10."
 }

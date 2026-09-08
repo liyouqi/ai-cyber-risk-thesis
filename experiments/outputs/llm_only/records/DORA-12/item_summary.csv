@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-12,Correct,[],No additional applicability conditions are known beyond the general scope of the DORA regulation.,No challenge is needed. The mapping is correct and should be retained.
+DORA-12,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,"The mapping is correct. Article 5(1)(b) of DORA is the specific provision that mandates the 72-hour notification deadline for significant cyber incidents, which is the core requirement of the control statement."

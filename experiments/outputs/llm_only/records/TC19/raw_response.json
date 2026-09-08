@@ -4,39 +4,45 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
       "decision": "Unsupported",
-      "reason": "Article 9 of the EU AI Act pertains to the obligations of Distributors and Importers. It does not address the technical requirements for resilience, capacity, or fallback mechanisms.",
+      "reason": "Article 9 of the EU AI Act generally pertains to the obligations of providers regarding the design and development of AI systems, focusing on risk management and ensuring the AI system is safe and in conformity with the law. It does not specifically address the operational resilience requirements like capacity, redundancy, or recovery.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
       "decision": "Unsupported",
-      "reason": "Article 15 of the EU AI Act outlines the obligations of Users. It does not contain provisions for the technical resilience, capacity, or fallback mechanisms of the AI system itself.",
+      "reason": "Article 15 of the EU AI Act deals with the obligations of users of high-risk AI systems, such as using the system in accordance with its intended purpose and ensuring human oversight. It does not cover the technical resilience measures of the system itself.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Unsupported",
-      "reason": "Article 17 of the EU AI Act details the obligations of Providers of high-risk AI systems. While it mandates risk management, it does not specifically require the provision of capacity, redundancy, fail-safe, recovery, or manual fallback.",
+      "reason": "Article 17 of the EU AI Act outlines the obligations of providers regarding the post-market monitoring of high-risk AI systems. While this involves monitoring for issues, it is distinct from the proactive design and implementation of capacity, redundancy, and fail-safe mechanisms.",
       "evidence_ids": []
     }
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "reason": "The control statement requires technical provisions for resilience, which are not covered by the obligations of Users in Article 15.",
+      "provision": "Article 15(3)",
+      "reason": "This article requires users to ensure human oversight and the ability to override the AI system's decision. This is a key part of the manual fallback requirement.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "reason": "The control statement requires specific technical provisions for resilience, which are not explicitly mandated by the obligations of Providers in Article 17.",
+      "provision": "Article 17(1)(a)",
+      "reason": "This article requires providers to establish a post-market monitoring system to collect, document, and analyze data on the performance of the AI system. This is related to the recovery and resilience aspects of the control.",
+      "evidence_ids": []
+    },
+    {
+      "instrument": "Regulation (EU) 2024/1689",
+      "provision": "Article 17(1)(b)",
+      "reason": "This article requires providers to take corrective actions in case of serious incidents or malfunctions. This is directly related to the recovery and fail-safe aspects of the control.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to high-risk AI systems under the 'Critical use' condition as defined in the EU AI Act.",
+  "applicability_note": "The control is applicable to high-risk AI systems under the EU AI Act.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect. The control statement requires specific technical provisions for resilience, which are not covered by the obligations of Distributors (Art. 9), Users (Art. 15), or Providers (Art. 17) as mapped. The correct mapping should be to the technical requirements for high-risk AI systems, which are detailed in Annex II of the regulation."
+  "challenge_comment": "The existing mapping is incorrect. The control focuses on the technical resilience of the AI system (capacity, redundancy, fail-safe, recovery, manual fallback), which is not directly addressed by the mapped articles. The correct mapping should include provisions related to the operational aspects of high-risk AI systems, such as human oversight (Article 15(3)) and post-market monitoring (Article 17)."
 }

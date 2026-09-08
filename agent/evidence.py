@@ -82,8 +82,8 @@ class HttpRegulatoryRagAdapter:
         api_url: str,
         *,
         api_key: str | None = None,
-        retrieval_mode: str = "bm25",
-        top_k: int = 5,
+        retrieval_mode: str = "hybrid",
+        top_k: int = 8,
         direct_timeout: float = 30.0,
         planned_timeout: float = 120.0,
         session: requests.Session | None = None,
@@ -337,18 +337,47 @@ class HttpRegulatoryRagAdapter:
             raise RegulatoryRagHttpError(
                 "Planned retrieval response is missing planned_result"
             )
+        claim_coverage = planned.get("claims")
+        if not isinstance(claim_coverage, list):
+            raise RegulatoryRagHttpError(
+                "Planned retrieval response is missing claim coverage"
+            )
+        admitted_refs: set[str] = set()
+        for coverage in claim_coverage:
+            if not isinstance(coverage, dict):
+                raise RegulatoryRagHttpError(
+                    "Planned retrieval returned invalid claim coverage"
+                )
+            refs = coverage.get("evidence_refs")
+            if not isinstance(refs, list):
+                raise RegulatoryRagHttpError(
+                    "Planned claim coverage is missing evidence_refs"
+                )
+            if coverage.get("status") in {"covered", "partially_covered"}:
+                admitted_refs.update(str(ref) for ref in refs)
+
         raw_evidence = planned.get("evidence")
         if not isinstance(raw_evidence, list):
             raise RegulatoryRagHttpError(
                 "Planned retrieval response is missing the evidence list"
             )
-        evidence = [
+        all_evidence = [
             self._evidence(entry)
             for entry in raw_evidence
             if isinstance(entry, dict)
         ]
-        if len(evidence) != len(raw_evidence):
+        if len(all_evidence) != len(raw_evidence):
             raise RegulatoryRagHttpError("Planned retrieval returned invalid evidence")
+        available_refs = {entry.evidence_id for entry in all_evidence}
+        missing_refs = admitted_refs - available_refs
+        if missing_refs:
+            raise RegulatoryRagHttpError(
+                "Planned claim coverage references missing evidence: "
+                + ", ".join(sorted(missing_refs))
+            )
+        evidence = [
+            entry for entry in all_evidence if entry.evidence_id in admitted_refs
+        ]
         self._retrievals.append(
             {
                 "query": query,
@@ -357,7 +386,7 @@ class HttpRegulatoryRagAdapter:
                 "status": "retrieved" if evidence else "empty",
                 "planning_ms": body.get("planning_ms"),
                 "plan": planned.get("plan"),
-                "claim_coverage": planned.get("claims"),
+                "claim_coverage": claim_coverage,
                 "retrieval_metadata": planned.get("metadata"),
             }
         )

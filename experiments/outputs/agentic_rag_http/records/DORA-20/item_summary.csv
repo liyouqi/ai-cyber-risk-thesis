@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-20,Partially correct,[],No additional applicability condition identified.,The mapping to Article 9 is unsupported because the provided evidence does not contain any text from that article. The mapping to Article 8 is supported by the evidence. The overall assessment is partially correct due to the unsupported mapping to Article 9.
+DORA-20,Unable to determine,[],No additional applicability condition is identified.,"The assessment cannot be completed because the retrieved evidence is missing. To determine the quality of the mapping, the text of Articles 8 and 9 must be reviewed."

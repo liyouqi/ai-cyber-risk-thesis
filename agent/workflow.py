@@ -274,6 +274,8 @@ def run_review(
     system_prompt: str,
 ) -> ReviewRun:
     started = time.perf_counter()
+    initial_provider_details = getattr(evidence_provider, "metadata", {})
+    retrieval_start = len(initial_provider_details.get("retrievals", []))
     provisions = parse_mapping(item.existing_mapping, item.instrument)
     queries: list[dict[str, str]] = []
     retrieved: list[Evidence] = []
@@ -334,6 +336,11 @@ def run_review(
                 evidence,
                 require_retrieved_evidence=True,
             )
+    provider_details = copy.deepcopy(getattr(evidence_provider, "metadata", {}))
+    if isinstance(provider_details.get("retrievals"), list):
+        provider_details["retrievals"] = provider_details["retrievals"][
+            retrieval_start:
+        ]
     return ReviewRun(
         item=item,
         method=(
@@ -342,7 +349,7 @@ def run_review(
             else "agentic_rag"
         ),
         provider=evidence_provider.name,
-        provider_details=getattr(evidence_provider, "metadata", {}),
+        provider_details=provider_details,
         model=llm.model,
         model_settings=getattr(llm, "metadata", {"model": llm.model}),
         provisions=provisions,
@@ -352,7 +359,7 @@ def run_review(
         raw_attempts=raw_attempts,
         guardrail_changes=guardrail_changes,
         elapsed_seconds=round(time.perf_counter() - started, 3),
-        prompt_version="agent-review-v0.2",
+        prompt_version="agent-review-v0.3",
     )
 
 
@@ -385,7 +392,7 @@ def run_llm_only(
         raw_attempts=[response],
         guardrail_changes=[],
         elapsed_seconds=round(time.perf_counter() - started, 3),
-        prompt_version="llm-only-v0.2",
+        prompt_version="llm-only-v0.3",
     )
 
 

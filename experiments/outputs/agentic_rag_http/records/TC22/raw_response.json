@@ -3,34 +3,45 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 9 or any information to assess its relevance to monitoring drift, misuse, control failure, and emerging risks.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 9 establishes a risk management system and requires regular review, which supports monitoring. However, it focuses on the provider's proactive risk identification and management during development, not the ongoing operational monitoring of drift, misuse, or control failures by deployers or providers.",
+      "evidence_ids": [
+        "eu:32024R1689:article:9:paragraph:1",
+        "eu:32024R1689:article:9:paragraph:2"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 20",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 20 or any information to assess its relevance to monitoring drift, misuse, control failure, and emerging risks.",
-      "evidence_ids": []
+      "decision": "Partially supported",
+      "reason": "Article 20 requires providers to take corrective action when a system is non-conforming or presents a risk, which is a form of reactive monitoring. However, it does not cover the broader, ongoing monitoring of drift, misuse, or emerging risks.",
+      "evidence_ids": [
+        "eu:32024R1689:article:20:paragraph:1",
+        "eu:32024R1689:article:20:paragraph:2"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 26(5) or any information to assess its relevance to monitoring drift, misuse, control failure, and emerging risks.",
-      "evidence_ids": []
+      "decision": "Supported",
+      "reason": "Article 26(5) directly obligates deployers to monitor the operation of high-risk AI systems and to inform providers of risks or serious incidents, which directly supports the control objective of monitoring drift, misuse, and emerging risks.",
+      "evidence_ids": [
+        "eu:32024R1689:article:26:paragraph:5"
+      ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 72",
-      "decision": "Unable to determine",
-      "reason": "The provided evidence does not contain the text of Article 72 or any information to assess its relevance to monitoring drift, misuse, control failure, and emerging risks.",
-      "evidence_ids": []
+      "decision": "Supported",
+      "reason": "Article 72 requires providers to establish a post-market monitoring system to collect and analyze data on the performance of high-risk AI systems, which directly supports the control objective of monitoring drift, misuse, and emerging risks.",
+      "evidence_ids": [
+        "eu:32024R1689:article:72:paragraph:1",
+        "eu:32024R1689:article:72:paragraph:2"
+      ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The provided evidence consists of introductory and amending articles that do not contain the substantive text of the articles being reviewed. To assess the mapping, the actual content of Articles 9, 20, 26(5), and 72 is required."
+  "applicability_note": "The control is applicable to all AI systems, with stricter requirements for high-risk systems. The reviewed provisions (Art. 9, 20, 26(5), 72) are specifically targeted at high-risk AI systems, which is consistent with the stricter applicability for this control.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "The mapping is correct. The provisions collectively cover the control's objective: Art. 26(5) and Art. 72 provide the core monitoring obligations for deployers and providers, while Art. 9 and Art. 20 provide supporting risk management and corrective action frameworks. No challenge is needed."
 }

@@ -4,14 +4,14 @@
       "instrument": "Commission Delegated Regulation (EU) 2025/301",
       "provision": "Article 5(1)(b)",
       "decision": "Supported",
-      "reason": "The evidence directly states that the intermediate report must be submitted 'at the latest within 72 hours from the submission of the initial notification, even where the status or the handling of the incident have not changed'. This matches the control statement's requirement to submit within 72 hours regardless of changes.",
+      "reason": "The provision directly states that an intermediate report must be submitted 'at the latest within 72 hours from the submission of the initial notification, even where the status or the handling of the incident have not changed', which directly and materially supports the control statement's requirement.",
       "evidence_ids": [
         "eu-2025-301-article-5-1-b"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
+  "applicability_note": "No additional applicability conditions identified.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The existing mapping is correct and should be retained."
+  "challenge_comment": "No challenge needed. The mapping is correct and should be retained."
 }

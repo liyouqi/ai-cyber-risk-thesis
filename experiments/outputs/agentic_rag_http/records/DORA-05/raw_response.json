@@ -4,14 +4,14 @@
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 28(3)",
       "decision": "Supported",
-      "reason": "The evidence text explicitly states that financial entities shall report at least yearly to the competent authorities on the number of new arrangements, the categories of providers, the type of contractual arrangements, and the functions supported, which directly matches the control statement.",
+      "reason": "The provision directly requires financial entities to report at least yearly to the competent authority on the number of new arrangements, categories of providers, types of contracts, and the functions supported, which directly and materially supports the control's main objective.",
       "evidence_ids": [
         "eu-2022-2554-article-28-3"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
+  "applicability_note": "No additional applicability condition identified.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The existing mapping to Article 28(3) is correct and should be retained."
+  "challenge_comment": "No challenge needed. The mapping is correct and should be retained."
 }

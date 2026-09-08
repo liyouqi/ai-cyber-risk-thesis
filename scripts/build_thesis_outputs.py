@@ -387,6 +387,19 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     ax.set_ylabel("Score")
     ax.set_title("Material missing-mapping detection")
     ax.legend(frameon=False)
+    if not any(
+        aggregate(row for row in rows if row["method"] == method)["missing_f1"]
+        for method in AI_METHODS
+    ):
+        ax.text(
+            0.5,
+            0.5,
+            "No exact matches to reference omissions",
+            transform=ax.transAxes,
+            ha="center",
+            va="center",
+            color="#555555",
+        )
     save(fig, figure_dir / "fig_5_3_missing_detection.svg")
 
     fig, axes = plt.subplots(1, 2, figsize=(8, 3.6))
@@ -398,6 +411,17 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
         ax.bar([METHOD_LABELS[m] for m in AI_METHODS], means, color=("#8E6C8A", "#5B8C85"))
         ax.set_title(title)
         ax.set_ylabel("Mean count")
+        if not any(means):
+            ax.set_ylim(0, 1)
+            ax.text(
+                0.5,
+                0.5,
+                "No scored errors",
+                transform=ax.transAxes,
+                ha="center",
+                va="center",
+                color="#555555",
+            )
     save(fig, figure_dir / "fig_5_4_reliability_errors.svg")
 
     fig, ax = plt.subplots(figsize=(5.5, 3.8))
