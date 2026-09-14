@@ -44,7 +44,7 @@ scoring script reads it.
 ### Manual
 
 The reviewer checks official regulatory texts without an LLM or Regulatory RAG
-and records the item-level decision, important omissions, sources and time.
+and records the item-level decision, important omissions and sources.
 
 ### LLM-only
 
@@ -97,12 +97,11 @@ For missing provisions, report true positives, false positives, false
 negatives, Precision, Recall and F1. Matching uses the normalized
 `document_id::provision` identifier.
 
-The existing secondary measures remain:
+The secondary measures are:
 
-- total review or completion time;
+- measured system execution time for LLM-only and Agentic RAG;
 - evidence or citation errors;
 - unsupported claims;
-- human correction time.
 
 No weighted overall score is used.
 

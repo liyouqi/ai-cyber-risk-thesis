@@ -103,8 +103,6 @@ def update_results(results_path: Path, outputs_dir: Path, gold_path: Path) -> in
 
             if method == "manual":
                 row["execution_time_min"] = ""
-                row["human_review_time_min"] = ""
-                row["total_time_min"] = ""
                 if "PIPELINE PREVIEW" in summary.get("challenge_comment", ""):
                     row["short_note"] = "PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA"
             else:
@@ -117,12 +115,14 @@ def update_results(results_path: Path, outputs_dir: Path, gold_path: Path) -> in
                         f"{run['workflow_version']} | {run['prompt_version']} | "
                         f"{run['model']}"
                     )
-                row["human_review_time_min"] = ""
-                row["total_time_min"] = ""
             updated += 1
 
     with results_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=list(rows[0]),
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
     return updated

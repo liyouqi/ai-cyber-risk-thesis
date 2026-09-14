@@ -40,7 +40,7 @@ Run one LLM-only item:
 
 ```bash
 python -m agent.llm_only \
-  --input experiments/data/pilot_items.csv \
+  --input experiments/data/items.csv \
   --item DORA-15 \
   --output /tmp/dora15-llm-only
 ```

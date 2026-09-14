@@ -1,4 +1,4 @@
-"""Build the pilot and main datasets from the two candidate files."""
+"""Build the 40-item experiment dataset from the two candidate files."""
 
 from __future__ import annotations
 
@@ -21,7 +21,6 @@ DORA_IDS = [
     *(f"DORA-{i:02d}" for i in range(12, 23)),
 ]
 MAIN_IDS = AI_ACT_IDS + DORA_IDS
-PILOT_IDS = ["TC05", "TC20", "DORA-15", "DORA-18"]
 
 
 def read_candidates() -> tuple[list[str], dict[str, dict[str, str]]]:
@@ -60,8 +59,7 @@ def write_dataset(
 def main() -> None:
     fieldnames, items = read_candidates()
     write_dataset(Path("experiments/data/items.csv"), MAIN_IDS, fieldnames, items)
-    write_dataset(Path("experiments/data/pilot_items.csv"), PILOT_IDS, fieldnames, items)
-    print("Wrote 40 main items and 4 pilot items")
+    print("Wrote 40 experiment items")
 
 
 if __name__ == "__main__":

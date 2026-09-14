@@ -30,19 +30,6 @@ python scripts/prepare_ai_act_items.py
 
 This is the complete candidate set, not the final selected sample.
 
-`ai_act_legal_text.json` contains 500 article-paragraph chunks extracted from
-the official EUR-Lex English HTML. It is retained as historical preparation data
-and is not used by the formal Agentic RAG workflow, which calls the independent
-Regulatory RAG HTTP API. The file records
-the source URL and SHA-256 of the downloaded HTML.
-
-To rebuild it after downloading the official HTML:
-
-```bash
-python scripts/extract_ai_act_articles.py downloaded.html \
-  experiments/data/ai_act_legal_text.json
-```
-
 ## DORA
 
 `candidates/dora.csv` is generated from the four sections of
@@ -67,16 +54,13 @@ cross-instrument reference; that reference remains unchanged in
 
 ## Selected datasets
 
-`pilot_items.csv` contains four items used for a small process check. It is not a
-separate type of data and does not have its own output directory.
-
 `items.csv` is the common 40-item input for Manual, LLM-only and Agentic RAG.
 It contains AI Act TC05-TC17 and TC19-TC25, plus 20 DORA items. DORA-09 is
 excluded because it concerns a supervisory penalty rather than a cybersecurity
 control review. DORA-11 is excluded because it substantially duplicates the
 same provision and timing issue already represented by DORA-10.
 
-Regenerate both selected files with:
+Regenerate the selected dataset with:
 
 ```bash
 python scripts/build_experiment_samples.py

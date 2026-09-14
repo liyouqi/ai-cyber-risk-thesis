@@ -14,8 +14,8 @@ flowchart LR
     M --> O[Common review tables]
     L --> O
     A --> O
-    O --> H[Human correction and scoring]
-    H --> C[Time, accuracy, missing mappings, evidence errors]
+    O --> H[Gold-standard scoring]
+    H --> C[Execution time, accuracy, missing mappings, evidence errors]
     C --> T[Chapter 5 tables and figures]
 ```
 
@@ -36,7 +36,7 @@ flowchart TD
     X -- No --> Y[One correction retry]
     Y --> Z{Valid now?}
     Z -- Yes --> O
-    Z -- No --> U[Downgrade uncited claims<br/>to Unable to determine]
+    Z -- No --> U[Return No when adequate<br/>coverage cannot be established]
     U --> O
     O --> S[Save queries, evidence, raw attempts and timing]
 ```

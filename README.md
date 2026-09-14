@@ -30,8 +30,9 @@ reproducible Chapter 5 output definition are under `thesis_outputs/`.
 
 The Manual working files and completed AI outputs are under `experiments/`.
 Agentic RAG uses the separate Regulatory RAG only through its read-only HTTP
-API. All 40 LLM-only and all 40 HTTP Agentic RAG runs have been saved; Manual
-review and Manual-based scoring remain outstanding.
+API. All 40 LLM-only and all 40 HTTP Agentic RAG runs have been saved. The
+complete reporting pipeline is available; the current Manual file and resulting
+figures are marked as preview-only until replaced by an independent Manual run.
 
 Run the local checks with:
 

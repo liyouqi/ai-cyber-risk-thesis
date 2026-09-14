@@ -24,8 +24,6 @@ FIELDS = [
     "evidence_errors",
     "unsupported_claims",
     "execution_time_min",
-    "human_review_time_min",
-    "total_time_min",
     "short_note",
 ]
 

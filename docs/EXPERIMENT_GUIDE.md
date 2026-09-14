@@ -32,7 +32,6 @@ Manual 只填写：
 
 ```text
 experiments/outputs/manual/item_summary.csv
-experiments/outputs/manual/timing.csv
 ```
 
 Manual 不打开 Gold 或 AI 输出。`missing_mapping` 使用分号分隔的
@@ -87,7 +86,7 @@ python scripts/prepare_result_table.py
 python scripts/update_results.py
 ```
 
-补完证据错误、unsupported claims 和人工修正时间后生成论文表格与图表：
+评分后生成论文表格与图表：
 
 ```bash
 python scripts/build_thesis_outputs.py

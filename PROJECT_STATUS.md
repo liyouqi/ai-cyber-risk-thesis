@@ -1,6 +1,6 @@
 # Project Status
 
-Updated: 2026-09-07
+Updated: 2026-09-14
 
 Working title:
 
@@ -16,21 +16,19 @@ Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 - retained the extracted AI Act paragraphs only as historical preparation data,
   not as an experiment retrieval backend;
 - saved combined CSV answers and per-item RAG evidence;
-- created the 40-item Manual working files under `experiments/outputs/manual/`;
+- completed a clearly marked Manual pipeline-preview file for all 40 items;
 - created `experiments/results/item_results.csv` with 120 rows and filled the
   objective AI run data;
-- prepared the thesis table layouts, reporting script and two Mermaid diagrams.
+- prepared the generated thesis tables, four figures and two Mermaid diagrams;
 - completed the 20 remaining AI Act LLM-only runs;
 - completed a fresh 40-item HTTP Agentic RAG batch using corpus
   `regulatory-en` version `regulatory-core-20260907-r2`, BM25 and top-k 5.
 
 ## Still missing
 
-- the researcher's Manual decisions and timing;
-- human correction time and Manual-based scoring;
-- final tables and figures generated from the completed scores.
+- replace the marked Manual preview with an independent Manual run before using
+  the results as thesis evidence;
+- review the generated tables and figures for final thesis styling.
 
-The saved DORA output under `experiments/outputs/agentic_rag/` uses the former
-embedded provider and remains an auditable historical run. The formal 40-item
-HTTP batch is stored separately at `experiments/outputs/agentic_rag_http/`; its
-objective values have replaced the Agentic RAG rows in the result table.
+The formal 40-item HTTP batch is stored at
+`experiments/outputs/agentic_rag_http/`.

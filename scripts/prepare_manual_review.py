@@ -29,7 +29,6 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
     items = load_items(source)
 
     item_rows: list[dict[str, object]] = []
-    timing_rows: list[dict[str, object]] = []
     for item in items:
         item_rows.append(
             {
@@ -41,15 +40,6 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
                 "evidence_excerpt": "",
                 "applicability_note": "",
                 "challenge_comment": "",
-            }
-        )
-        timing_rows.append(
-            {
-                "item_id": item.item_id,
-                "start_time": "",
-                "end_time": "",
-                "total_time_min": "",
-                "official_sources": "",
             }
         )
 
@@ -66,11 +56,6 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
             "challenge_comment",
         ],
         item_rows,
-    )
-    _write_csv(
-        output / "timing.csv",
-        ["item_id", "start_time", "end_time", "total_time_min", "official_sources"],
-        timing_rows,
     )
     return output
 

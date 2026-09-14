@@ -32,7 +32,7 @@ class ResultTableTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             results = prepare_result_table(
-                ROOT / "experiments/data/pilot_items.csv", root / "results.csv"
+                ROOT / "experiments/data/items.csv", root / "results.csv"
             )
             output = root / "outputs/llm_only"
             record = output / "records/DORA-15"

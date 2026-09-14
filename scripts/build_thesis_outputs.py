@@ -47,8 +47,6 @@ NUMERIC_FIELDS = {
     "evidence_errors",
     "unsupported_claims",
     "execution_time_min",
-    "human_review_time_min",
-    "total_time_min",
 }
 
 
@@ -281,57 +279,6 @@ def result_tables(rows: list[dict[str, str]], table_dir: Path, dataset: Path) ->
     write_table(table_dir / "table_framework_results.csv", frameworks)
 
 
-def skeleton_tables(table_dir: Path, dataset: Path) -> None:
-    """Write table layouts before scores and timing data are available."""
-    with dataset.open(newline="", encoding="utf-8-sig") as handle:
-        dataset_rows = list(csv.DictReader(handle))
-    if not dataset_rows:
-        raise ValueError(f"No items found in {dataset}")
-
-    result_stub = [{"item_id": row["item_id"]} for row in dataset_rows]
-    write_table(
-        table_dir / "table_dataset_summary.csv",
-        dataset_table(dataset, result_stub),
-    )
-    metric_fields = {
-        "mean_execution_time_sec": None,
-        "median_execution_time_sec": None,
-        "coverage_accuracy": None,
-        "yes_recall": None,
-        "no_recall": None,
-        "balanced_accuracy": None,
-        "missing_precision": None,
-        "missing_recall": None,
-        "missing_f1": None,
-        "evidence_errors_per_item": None,
-        "unsupported_claims_per_item": None,
-    }
-    write_table(
-        table_dir / "table_overall_results.csv",
-        [
-            {
-                "method": METHOD_LABELS[method],
-                "items": len(dataset_rows),
-                **metric_fields,
-            }
-            for method in METHODS
-        ],
-    )
-    write_table(
-        table_dir / "table_framework_results.csv",
-        [
-            {
-                "framework": framework,
-                "method": METHOD_LABELS[method],
-                "items": sum(row["framework"] == framework for row in dataset_rows),
-                **metric_fields,
-            }
-            for framework in FRAMEWORKS
-            for method in METHODS
-        ],
-    )
-
-
 def save(fig: plt.Figure, path: Path) -> None:
     fig.tight_layout()
     fig.savefig(path, format="svg", bbox_inches="tight")
@@ -458,20 +405,7 @@ def main() -> None:
         type=Path,
         default=Path("thesis_outputs/generated"),
     )
-    parser.add_argument(
-        "--skeleton",
-        action="store_true",
-        help="Write the three table layouts without requiring completed results",
-    )
     args = parser.parse_args()
-
-    if args.skeleton:
-        args.output.mkdir(parents=True, exist_ok=True)
-        table_dir = args.output / "tables"
-        table_dir.mkdir(exist_ok=True)
-        skeleton_tables(table_dir, args.dataset)
-        print(f"Wrote thesis table skeletons to {args.output}")
-        return
 
     try:
         rows = read_results(args.results)

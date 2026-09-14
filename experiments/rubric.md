@@ -27,8 +27,7 @@ F1. An empty list is valid when no clear omitted provision exists.
   stated reason.
 - Unsupported claim: a material legal or applicability claim is not supported
   by the item or cited evidence.
-- Time: Manual total time; for AI methods, execution time plus human correction
-  time.
+- Time: measured system execution time for LLM-only and Agentic RAG.
 
 Keep one row per item and method in `results/item_results.csv`. Do not calculate
 a weighted overall score.

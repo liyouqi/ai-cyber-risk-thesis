@@ -9,8 +9,9 @@ outputs/
 └── agentic_rag_http/
 ```
 
-`manual/` contains the blank files completed by the researcher. The two AI
-folders contain their saved model answers.
+`manual/` contains the item-level Manual answers. The current file is visibly
+marked as a pipeline preview and must be replaced before final reporting. The
+two AI folders contain their saved model answers.
 
 Each fresh experiment run writes all 40 LLM-only records to `llm_only/` and all
 40 HTTP Agentic RAG records to `agentic_rag_http/`.
