@@ -1,37 +1,12 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 10",
-      "decision": "Unsupported",
-      "reason": "Article 10 focuses on data quality, governance, and bias mitigation for training data, not on restricting sensitive inputs with classification, minimisation, and masking.",
-      "evidence_ids": [
-        "eu:32024R1689:article:10:paragraph:1",
-        "eu:32024R1689:article:10:paragraph:2",
-        "eu:32024R1689:article:10:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 26(4)",
-      "decision": "Unsupported",
-      "reason": "Article 26(4) requires deployers to ensure input data is relevant and representative, which is a data quality requirement, not a restriction on sensitive inputs.",
-      "evidence_ids": [
-        "eu:32024R1689:article:26:paragraph:4"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 27",
-      "decision": "Unsupported",
-      "reason": "Article 27 mandates a fundamental rights impact assessment, which is a broader governance and risk assessment obligation, not a specific control on sensitive inputs.",
-      "evidence_ids": [
-        "eu:32024R1689:article:27"
-      ]
-    }
+  "coverage": "No",
+  "reason": "The existing mapping does not provide a defensible and sufficiently complete regulatory basis for the control objective of restricting sensitive inputs with classification, minimisation, and masking. Article 10 focuses on data quality and bias mitigation, while Article 26(4) addresses input data relevance and representativeness. Article 27 concerns fundamental rights impact assessments. None of these provisions directly address the specific requirements of classification, minimisation, or masking of sensitive inputs.",
+  "evidence_ids": [
+    "eu:32024R1689:article:10:paragraph:1",
+    "eu:32024R1689:article:26:paragraph:4",
+    "eu:32024R1689:article:27"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they do not address the control's objective of restricting sensitive inputs. The mapped articles focus on data quality, bias mitigation, and fundamental rights impact assessments, which are distinct from the control's requirements. The correct mapping should identify provisions related to data protection, such as those concerning data minimisation and pseudonymisation, which are not present in the current mapping."
+  "applicability_note": "The control is applicable to personal or confidential data, which is a key focus of the EU AI Act's data governance requirements.",
+  "challenge_comment": "The current mapping conflates general data quality requirements with specific data protection controls. A more precise mapping to Article 29 is needed to adequately cover the control objective."
 }

@@ -1,15 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2022/2554",
-      "provision": "Article 13(6)",
-      "decision": "Supported",
-      "reason": "Article 13(6) requires entities to ensure that staff members are provided with appropriate training on ICT security and digital operational resilience, which directly supports the control's objective of mandatory training. The provision does not specify a minimum number of hours, which aligns with the control statement's lack of such a requirement.",
-      "evidence_ids": []
-    }
-  ],
+  "coverage": "Yes",
+  "reason": "Article 13(6) of DORA requires entities to ensure that staff members are provided with appropriate training on ICT security and digital operational resilience. This provision directly supports the control objective of mandatory training, even without specifying a minimum number of hours.",
+  "evidence_ids": [],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is known.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "The mapping is correct. Article 13(6) of DORA directly supports the control's objective of mandatory training on ICT security and digital operational resilience."
+  "applicability_note": "This mapping is applicable to all financial entities and groups subject to the Digital Operational Resilience Act (DORA).",
+  "challenge_comment": "The challenge is that the regulation does not specify a minimum number of training hours, which could lead to inconsistent implementation across different entities."
 }

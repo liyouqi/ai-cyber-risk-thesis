@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 16022,
+        "planning_ms": 16550,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -176,9 +176,9 @@
           },
           "claims": [
             {
-              "claim_id": "provision_for_sensitive_data_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of sensitive data?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_sensitive_data",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of sensitive data in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "sensitive data",
                 "control"
@@ -191,9 +191,9 @@
               "query_variants": []
             },
             {
-              "claim_id": "provision_for_malicious_code_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of malicious code?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_malicious_code",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of malicious code in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "malicious code",
                 "control"
@@ -206,9 +206,9 @@
               "query_variants": []
             },
             {
-              "claim_id": "provision_for_harmful_content_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of harmful content?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_harmful_content",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of harmful content in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "harmful content",
                 "control"
@@ -221,9 +221,9 @@
               "query_variants": []
             },
             {
-              "claim_id": "provision_for_prohibited_use_outputs_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of prohibited-use outputs?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_prohibited_outputs",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of prohibited-use outputs in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "prohibited-use outputs",
                 "control"
@@ -232,6 +232,26 @@
                 "general_rule"
               ],
               "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "missing_provision_identification",
+              "question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for controlling sensitive data, malicious code, harmful content and prohibited-use outputs but is absent from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "necessary provision",
+                "absent mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "provision_mapping_sensitive_data",
+                "provision_mapping_malicious_code",
+                "provision_mapping_harmful_content",
+                "provision_mapping_prohibited_outputs"
+              ],
               "importance": "required",
               "query_variants": []
             }
@@ -243,7 +263,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:41:28.507583"
+            "generated_at": "2026-09-14T19:42:19.022498"
           },
           "limits": {
             "max_claims": 5,
@@ -256,9 +276,9 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "provision_for_sensitive_data_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of sensitive data?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_sensitive_data",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of sensitive data in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "sensitive data",
                 "control"
@@ -273,16 +293,16 @@
             "status": "covered",
             "evidence_refs": [
               "eu:32024R1689:article:59:paragraph:1:point:j",
-              "eu:32024R1689:article:5:paragraph:7",
-              "eu:32024R1689:article:78",
-              "eu:32024R1689:article:5:paragraph:4",
+              "eu:32024R1689:annex:iii:paragraph:1:point:7",
               "eu:32024R1689:article:46:paragraph:3",
-              "eu:32024R1689:article:3:subparagraph:1:point:38",
               "eu:32024R1689:article:72:paragraph:2",
-              "eu:32024R1689:article:26:paragraph:10"
+              "eu:32024R1689:article:26:paragraph:10",
+              "eu:32024R1689:recital:159",
+              "eu:32024R1689:article:5:paragraph:7",
+              "eu:32024R1689:annex:v:point:5"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the control of sensitive data?",
+              "Within Regulation (EU) 2024/1689, which provisions address the control of sensitive data in AI systems?",
               "sensitive data",
               "control"
             ],
@@ -293,9 +313,9 @@
           },
           {
             "claim": {
-              "claim_id": "provision_for_malicious_code_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of malicious code?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_malicious_code",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of malicious code in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "malicious code",
                 "control"
@@ -310,20 +330,20 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the control of malicious code?",
+              "Within Regulation (EU) 2024/1689, which provisions address the control of malicious code in AI systems?",
               "malicious code",
               "control"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 60 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 59 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "provision_for_harmful_content_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of harmful content?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_harmful_content",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of harmful content in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "harmful content",
                 "control"
@@ -337,23 +357,25 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu:32024R1689:recital:110"
+              "eu:32024R1689:recital:29",
+              "eu:32024R1689:recital:110",
+              "eu:32024R1689:recital:75"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the control of harmful content?",
+              "Within Regulation (EU) 2024/1689, which provisions address the control of harmful content in AI systems?",
               "harmful content",
               "control"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "1 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+              "3 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "provision_for_prohibited_use_outputs_control",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the control of prohibited-use outputs?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_prohibited_outputs",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address the control of prohibited-use outputs in AI systems?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "prohibited-use outputs",
                 "control"
@@ -367,23 +389,56 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu:32024R1689:article:5:paragraph:1:point:a",
-              "eu:32024R1689:article:5:paragraph:2:point:a",
-              "eu:32024R1689:article:5:paragraph:2:point:b",
-              "eu:32024R1689:article:46:paragraph:2",
-              "eu:32024R1689:article:74:paragraph:2",
               "eu:32024R1689:article:10:paragraph:2:point:f",
+              "eu:32024R1689:article:5:paragraph:1:point:a",
               "eu:32024R1689:annex:iii:paragraph:1:point:7",
-              "eu:32024R1689:article:14:paragraph:4:point:d"
+              "eu:32024R1689:article:5:paragraph:2:point:a",
+              "eu:32024R1689:article:46:paragraph:2",
+              "eu:32024R1689:article:5:paragraph:2:point:b",
+              "eu:32024R1689:article:14:paragraph:4:point:d",
+              "eu:32024R1689:article:74:paragraph:2"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the control of prohibited-use outputs?",
+              "Within Regulation (EU) 2024/1689, which provisions address the control of prohibited-use outputs in AI systems?",
               "prohibited-use outputs",
               "control"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
               "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "missing_provision_identification",
+              "question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for controlling sensitive data, malicious code, harmful content and prohibited-use outputs but is absent from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "necessary provision",
+                "absent mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "provision_mapping_sensitive_data",
+                "provision_mapping_malicious_code",
+                "provision_mapping_harmful_content",
+                "provision_mapping_prohibited_outputs"
+              ],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Within Regulation (EU) 2024/1689, which important provision is materially necessary for controlling sensitive data, malicious code, harmful content and prohibited-use outputs but is absent from existing mappings?",
+              "necessary provision",
+              "absent mapping"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "the retriever returned 60 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -399,15 +454,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 34.934,
+  "elapsed_seconds": 33.79,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -433,7 +488,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive data, malicious code, harmful content and prohibited-use outputs controlled?"
     }
   ],
   "item": {

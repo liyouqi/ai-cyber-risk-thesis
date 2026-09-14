@@ -1,45 +1,13 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Supported",
-      "reason": "Article 15(5) directly addresses cybersecurity for high-risk AI systems, requiring technical solutions to prevent, detect, respond to, resolve, and control for attacks, including specific AI vulnerabilities. This directly supports the control's objective of implementing detection and response processes.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Partially supported",
-      "reason": "Article 17(1)(g) requires a risk management system, which is a foundational element for vulnerability and patching processes. However, it does not explicitly mandate the specific processes for vulnerability scanning, patching, or incident response that are detailed in the control statement.",
-      "evidence_ids": [
-        "eu:32024R1689:article:17:paragraph:1"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 20",
-      "decision": "Partially supported",
-      "reason": "Article 20(2) requires providers to investigate the causes of a risk and inform authorities, which relates to the response process. However, it does not cover the full scope of vulnerability, patching, detection, or serious-incident processes as a whole.",
-      "evidence_ids": [
-        "eu:32024R1689:article:20:paragraph:2"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 73",
-      "decision": "Supported",
-      "reason": "Article 73(1) and (6) directly mandate the reporting of serious incidents and the subsequent investigation and corrective action, which are core components of the control's response and serious-incident processes.",
-      "evidence_ids": [
-        "eu:32024R1689:article:73:paragraph:1",
-        "eu:32024R1689:article:73:paragraph:6"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping provides a defensible and sufficiently complete regulatory basis. Article 15(5) supports vulnerability detection and response. Article 17 mandates a quality management system, which includes procedures for risk management (Art. 9) and post-market monitoring (Art. 72), covering patching and detection. Article 20 covers corrective actions and response. Article 73 covers serious incident reporting. Together, these provisions address all aspects of the control objective.",
+  "evidence_ids": [
+    "eu:32024R1689:article:15:paragraph:5",
+    "eu:32024R1689:article:17",
+    "eu:32024R1689:article:20:paragraph:1",
+    "eu:32024R1689:article:73:paragraph:1"
   ],
   "missing_mappings": [],
-  "applicability_note": "The applicability condition 'All; reporting for high-risk' is correct. The control statement applies to all AI systems, but the specific reporting obligation under Article 73 is limited to high-risk systems.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The existing mappings are appropriate and should be retained."
+  "applicability_note": "The control applies to all high-risk AI systems, with reporting obligations specifically for high-risk systems as defined in the AI Act.",
+  "challenge_comment": "The mapping is comprehensive, covering the entire lifecycle from vulnerability management to incident response and reporting, as required by the AI Act for high-risk systems."
 }

@@ -1,60 +1,21 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 focuses on establishing a risk management system for high-risk AI systems, which is a broader process for identifying and mitigating risks. It does not address the specific control of segregating and controlling administrative, model, and security configuration privileges.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2",
-        "eu:32024R1689:article:9:paragraph:2:point:a",
-        "eu:32024R1689:article:9:paragraph:2:point:b",
-        "eu:32024R1689:article:9:paragraph:2:point:c",
-        "eu:32024R1689:article:9:paragraph:2:point:d",
-        "eu:32024R1689:article:9:paragraph:3",
-        "eu:32024R1689:article:9:paragraph:4",
-        "eu:32024R1689:article:9:paragraph:5",
-        "eu:32024R1689:article:9:paragraph:5:point:a",
-        "eu:32024R1689:article:9:paragraph:5:point:b",
-        "eu:32024R1689:article:9:paragraph:5:point:c",
-        "eu:32024R1689:article:9:paragraph:5:text-block:4",
-        "eu:32024R1689:article:9:paragraph:6",
-        "eu:32024R1689:article:9:paragraph:7",
-        "eu:32024R1689:article:9:paragraph:8",
-        "eu:32024R1689:article:9:paragraph:9",
-        "eu:32024R1689:article:9:paragraph:10"
-      ]
-    },
+  "coverage": "No",
+  "reason": "The existing mapping (Art. 9, 15, 17) does not provide a defensible basis for the control objective of segregating and controlling admin, model, and security configuration privileges. Article 9 addresses risk management, Article 15 covers cybersecurity and robustness, and Article 17 outlines quality management systems, but none of these provisions specifically mandate or support the segregation of administrative, model, and security configuration privileges, which is a core aspect of the control statement.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:1",
+    "eu:32024R1689:article:17:paragraph:1"
+  ],
+  "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity. While it mandates technical solutions to ensure cybersecurity, it does not specifically address the segregation and control of administrative, model, and security configuration privileges.",
+      "reason": "While Article 15(5) addresses cybersecurity measures, it focuses on resilience against external attacks and does not cover the internal control of administrative, model, or security configuration privileges, which is a critical component of the control objective.",
       "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1",
-        "eu:32024R1689:article:15:paragraph:2",
-        "eu:32024R1689:article:15:paragraph:3",
-        "eu:32024R1689:article:15:paragraph:4",
         "eu:32024R1689:article:15:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Partially supported",
-      "reason": "Article 17 requires providers to establish a quality management system that includes an accountability framework setting out the responsibilities of management and staff. This framework could be interpreted as a mechanism to control access and privileges, but the provision does not explicitly mandate the segregation of specific privileges (admin, model, security configuration) or the use of PAM, approval processes, or four-eyes checks.",
-      "evidence_ids": [
-        "eu:32024R1689:article:17",
-        "eu:32024R1689:article:17:paragraph:1",
-        "eu:32024R1689:article:17:paragraph:2",
-        "eu:32024R1689:article:17:paragraph:3",
-        "eu:32024R1689:article:17:paragraph:4"
       ]
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect. The control statement requires segregation and control of specific privileges (admin, model, security configuration), which is a core principle of Privileged Access Management (PAM). None of the reviewed articles (9, 15, 17) directly address this specific requirement. Article 17's accountability framework is the closest, but it is too general to be considered a direct support for the control's main objective."
+  "applicability_note": "The control statement requires segregation of privileges for admin, model, and security configurations, which is a fundamental security principle. The existing provisions do not address this specific requirement.",
+  "challenge_comment": "The mapping lacks a provision that directly supports the segregation of privileges, which is essential for preventing unauthorized access and ensuring accountability in system administration and model management."
 }

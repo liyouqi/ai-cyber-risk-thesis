@@ -1,17 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 3",
-      "decision": "Supported",
-      "reason": "Article 3(1) directly requires the management body to review the policy at least once a year, which matches the control statement's requirement.",
-      "evidence_ids": [
-        "eu-2024-1773-article-3-1"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The control objective requires a policy review at least once a year. Article 3(1) of the regulation explicitly mandates that the management body shall review the policy at least once a year and update it where necessary, providing a direct and complete regulatory basis for the control.",
+  "evidence_ids": [
+    "eu-2024-1773-article-3-1"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions identified.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The mapping is correct as Article 3(1) directly supports the control statement."
+  "applicability_note": "This control is directly applicable to financial entities as it is a specific requirement within the DORA regulation for managing ICT third-party services.",
+  "challenge_comment": "The mapping is adequate as the control statement 'At least once a year' is a direct quote from the regulatory text in Article 3(1), which is fully supported by the provided evidence."
 }

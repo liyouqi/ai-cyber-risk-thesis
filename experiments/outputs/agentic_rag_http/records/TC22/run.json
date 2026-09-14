@@ -175,7 +175,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -190,12 +190,12 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "retrieved",
-        "planning_ms": 15048,
+        "status": "empty",
+        "planning_ms": 8634,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -211,55 +211,13 @@
           },
           "claims": [
             {
-              "claim_id": "drift_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of drift in AI systems?",
+              "claim_id": "provision_monitoring_drift_misuse",
+              "question": "Within Regulation (EU) 2024/1689, which provisions specifically require monitoring of drift, misuse, control failure and emerging risks?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "drift",
-                "monitoring"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "misuse_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of misuse of AI systems?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "misuse",
-                "monitoring"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "control_failure_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of control failures in AI systems?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "control failure",
-                "monitoring"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "emerging_risks_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of emerging risks in AI systems?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "emerging risks",
                 "monitoring"
               ],
@@ -267,6 +225,27 @@
                 "general_rule"
               ],
               "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "provision_mapping_gap",
+              "question": "Within Regulation (EU) 2024/1689, which important provisions related to monitoring drift, misuse, control failure and emerging risks are missing from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping",
+                "monitoring",
+                "drift",
+                "misuse",
+                "control failure",
+                "emerging risks"
+              ],
+              "expected_evidence_roles": [
+                "supporting_context"
+              ],
+              "depends_on": [
+                "provision_monitoring_drift_misuse"
+              ],
               "importance": "required",
               "query_variants": []
             }
@@ -278,7 +257,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:45:43.415765"
+            "generated_at": "2026-09-14T19:45:17.847380"
           },
           "limits": {
             "max_claims": 5,
@@ -291,104 +270,13 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "drift_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of drift in AI systems?",
+              "claim_id": "provision_monitoring_drift_misuse",
+              "question": "Within Regulation (EU) 2024/1689, which provisions specifically require monitoring of drift, misuse, control failure and emerging risks?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "drift",
-                "monitoring"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:9:paragraph:2:point:c",
-              "eu:32024R1689:annex:iv:point:9"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of drift in AI systems?",
-              "drift",
-              "monitoring"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "2 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "misuse_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of misuse of AI systems?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "misuse",
-                "monitoring"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:9:paragraph:2:point:b",
-              "eu:32024R1689:article:9:paragraph:2:point:c"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of misuse of AI systems?",
-              "misuse",
-              "monitoring"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "2 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "control_failure_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of control failures in AI systems?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "control failure",
-                "monitoring"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:79:paragraph:6:point:b",
-              "eu:32024R1689:article:9:paragraph:2:point:c",
-              "eu:32024R1689:annex:iv:point:3"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of control failures in AI systems?",
-              "control failure",
-              "monitoring"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "3 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "emerging_risks_monitoring_requirement",
-              "question": "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of emerging risks in AI systems?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "emerging risks",
                 "monitoring"
               ],
@@ -399,25 +287,57 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:59:paragraph:1:point:c",
-              "eu:32024R1689:article:72:paragraph:3",
-              "eu:32024R1689:article:72:paragraph:2",
-              "eu:32024R1689:article:72:paragraph:1",
-              "eu:32024R1689:article:79:paragraph:1",
-              "eu:32024R1689:article:12:paragraph:2:point:c",
-              "eu:32024R1689:article:17:paragraph:1:point:h",
-              "eu:32024R1689:article:79:paragraph:6:point:a"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Does Regulation (EU) 2024/1689 contain provisions requiring monitoring of emerging risks in AI systems?",
+              "Within Regulation (EU) 2024/1689, which provisions specifically require monitoring of drift, misuse, control failure and emerging risks?",
+              "drift",
+              "misuse",
+              "control failure",
               "emerging risks",
               "monitoring"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+              "the retriever returned 106 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "provision_mapping_gap",
+              "question": "Within Regulation (EU) 2024/1689, which important provisions related to monitoring drift, misuse, control failure and emerging risks are missing from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping",
+                "monitoring",
+                "drift",
+                "misuse",
+                "control failure",
+                "emerging risks"
+              ],
+              "expected_evidence_roles": [
+                "supporting_context"
+              ],
+              "depends_on": [
+                "provision_monitoring_drift_misuse"
+              ],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Within Regulation (EU) 2024/1689, which important provisions related to monitoring drift, misuse, control failure and emerging risks are missing from existing mappings?",
+              "mapping",
+              "monitoring",
+              "drift",
+              "misuse",
+              "control failure",
+              "emerging risks"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "the retriever returned 127 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -433,15 +353,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 38.034,
+  "elapsed_seconds": 23.316,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -473,7 +393,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are drift, misuse, control failure and emerging risks monitored?"
     }
   ],
   "item": {

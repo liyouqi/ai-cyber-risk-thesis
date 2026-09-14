@@ -105,7 +105,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -121,11 +121,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 8947,
+        "planning_ms": 9070,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -141,8 +141,8 @@
           },
           "claims": [
             {
-              "claim_id": "encryption_requirement_mapping",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement for data encryption in transit and at rest with managed keys?",
+              "claim_id": "encryption_requirements_mapping",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address data encryption requirements for AI systems, specifically encryption in transit and at rest with managed keys?",
               "intent": "scope_or_applicability",
               "target_concepts": [
                 "data encryption",
@@ -158,19 +158,19 @@
               "query_variants": []
             },
             {
-              "claim_id": "missing_provision_identification",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement about data encryption in transit and at rest with managed keys but is absent from the existing mapping?",
+              "claim_id": "provision_mapping_completeness",
+              "question": "Within Regulation (EU) 2024/1689, which important provisions related to data security and encryption are not currently mapped to the requirement about data encryption in transit and at rest with managed keys?",
               "intent": "relationship_between_provisions",
               "target_concepts": [
-                "encryption requirement",
-                "mapping",
-                "provision"
+                "data security",
+                "encryption provisions",
+                "mapping completeness"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [
-                "encryption_requirement_mapping"
+                "encryption_requirements_mapping"
               ],
               "importance": "required",
               "query_variants": []
@@ -183,7 +183,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:37:41.478374"
+            "generated_at": "2026-09-14T19:39:07.657774"
           },
           "limits": {
             "max_claims": 5,
@@ -196,8 +196,8 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "encryption_requirement_mapping",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement for data encryption in transit and at rest with managed keys?",
+              "claim_id": "encryption_requirements_mapping",
+              "question": "Within Regulation (EU) 2024/1689, which provisions address data encryption requirements for AI systems, specifically encryption in transit and at rest with managed keys?",
               "intent": "scope_or_applicability",
               "target_concepts": [
                 "data encryption",
@@ -215,7 +215,7 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the requirement for data encryption in transit and at rest with managed keys?",
+              "Within Regulation (EU) 2024/1689, which provisions address data encryption requirements for AI systems, specifically encryption in transit and at rest with managed keys?",
               "data encryption",
               "encryption in transit",
               "encryption at rest",
@@ -223,24 +223,24 @@
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 77 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 80 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "missing_provision_identification",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement about data encryption in transit and at rest with managed keys but is absent from the existing mapping?",
+              "claim_id": "provision_mapping_completeness",
+              "question": "Within Regulation (EU) 2024/1689, which important provisions related to data security and encryption are not currently mapped to the requirement about data encryption in transit and at rest with managed keys?",
               "intent": "relationship_between_provisions",
               "target_concepts": [
-                "encryption requirement",
-                "mapping",
-                "provision"
+                "data security",
+                "encryption provisions",
+                "mapping completeness"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [
-                "encryption_requirement_mapping"
+                "encryption_requirements_mapping"
               ],
               "importance": "required",
               "query_variants": []
@@ -248,14 +248,14 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement about data encryption in transit and at rest with managed keys but is absent from the existing mapping?",
-              "encryption requirement",
-              "mapping",
-              "provision"
+              "Within Regulation (EU) 2024/1689, which important provisions related to data security and encryption are not currently mapped to the requirement about data encryption in transit and at rest with managed keys?",
+              "data security",
+              "encryption provisions",
+              "mapping completeness"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 75 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 64 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -271,15 +271,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 32.413,
+  "elapsed_seconds": 23.308,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -299,7 +299,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are data encrypted in transit and at rest with managed keys?"
     }
   ],
   "item": {

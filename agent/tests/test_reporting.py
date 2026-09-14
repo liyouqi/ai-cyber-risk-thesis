@@ -28,7 +28,7 @@ class ThesisReportingTest(unittest.TestCase):
             result_tables(rows, tables, ROOT / "experiments/data/items.csv")
             figures(rows, charts)
             self.assertEqual(len(list(tables.glob("*.csv"))), 3)
-            self.assertEqual(len(list(charts.glob("*.svg"))), 6)
+            self.assertEqual(len(list(charts.glob("*.svg"))), 4)
 
     def test_table_skeletons_do_not_require_scores(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

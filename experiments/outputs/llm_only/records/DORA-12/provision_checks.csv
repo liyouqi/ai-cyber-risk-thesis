@@ -1,2 +1,0 @@
-item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-DORA-12,Commission Delegated Regulation (EU) 2025/301,Article 5(1)(b),Supported,"Article 5(1)(b) of DORA requires entities to notify the competent authority of a significant cyber incident without undue delay and, in any case, within 72 hours of detection. This directly supports the control's objective of a strict 72-hour submission deadline for the initial notification.",,

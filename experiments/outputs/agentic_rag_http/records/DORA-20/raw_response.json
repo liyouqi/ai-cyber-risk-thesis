@@ -1,73 +1,20 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 8",
-      "decision": "Partially supported",
-      "reason": "Article 8 establishes the financial entity's right to conduct audits and specifies methods for doing so, including internal/external audits. However, it does not explicitly state that these audits must be included in an audit plan or that their frequency should be determined by risk, which is a key part of the control statement.",
-      "evidence_ids": [
-        "eu-2024-1773-article-8-1",
-        "eu-2024-1773-article-8-2",
-        "eu-2024-1773-article-8-2-a",
-        "eu-2024-1773-article-8-2-b",
-        "eu-2024-1773-article-8-2-c",
-        "eu-2024-1773-article-8-2-d",
-        "eu-2024-1773-article-8-3",
-        "eu-2024-1773-article-8-3-a",
-        "eu-2024-1773-article-8-3-b",
-        "eu-2024-1773-article-8-3-c",
-        "eu-2024-1773-article-8-3-d",
-        "eu-2024-1773-article-8-3-e",
-        "eu-2024-1773-article-8-3-f",
-        "eu-2024-1773-article-8-3-g",
-        "eu-2024-1773-article-8-3-h",
-        "eu-2024-1773-article-8-4"
-      ]
-    },
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 focuses on the ongoing monitoring of ICT third-party service providers, including performance indicators, reporting, and assessment of performance and quality. It does not address the planning or frequency of audits, which is the core of the control statement.",
-      "evidence_ids": [
-        "eu-2024-1773-article-9-1",
-        "eu-2024-1773-article-9-2",
-        "eu-2024-1773-article-9-2-a",
-        "eu-2024-1773-article-9-2-b",
-        "eu-2024-1773-article-9-2-c",
-        "eu-2024-1773-article-9-2-d",
-        "eu-2024-1773-article-9-2-e",
-        "eu-2024-1773-article-9-3",
-        "eu-2024-1773-article-9-4"
-      ]
-    }
+  "coverage": "No",
+  "reason": "The existing mapping of Articles 8-9 does not provide a defensible basis for the control objective of determining audit frequency based on risk. While Article 8 outlines audit methods and Article 9 covers ongoing monitoring and assessment, neither provision explicitly mandates a risk-based approach to setting audit frequency. The control's core requirement for risk-based frequency determination is unsupported.",
+  "evidence_ids": [
+    "eu-2024-1773-article-8-1",
+    "eu-2024-1773-article-9-1"
   ],
   "missing_mappings": [
     {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 8",
-      "reason": "The provision establishes the right to audit but does not specify that these audits must be included in an audit plan or that their frequency should be determined by risk.",
+      "instrument": "Regulation (EU) 2022/2554",
+      "provision": "Article 28(6)",
+      "reason": "This provision explicitly requires financial entities to use a risk-based approach to pre-determine the frequency of audits and inspections, which is the core requirement of the control objective.",
       "evidence_ids": [
-        "eu-2024-1773-article-8-1",
-        "eu-2024-1773-article-8-2",
-        "eu-2024-1773-article-8-2-a",
-        "eu-2024-1773-article-8-2-b",
-        "eu-2024-1773-article-8-2-c",
-        "eu-2024-1773-article-8-2-d",
-        "eu-2024-1773-article-8-3",
-        "eu-2024-1773-article-8-3-a",
-        "eu-2024-1773-article-8-3-b",
-        "eu-2024-1773-article-8-3-c",
-        "eu-2024-1773-article-8-3-d",
-        "eu-2024-1773-article-8-3-e",
-        "eu-2024-1773-article-8-3-f",
-        "eu-2024-1773-article-8-3-g",
-        "eu-2024-1773-article-8-3-h",
-        "eu-2024-1773-article-8-4"
+        "eu-2022-2554-article-28-6"
       ]
     }
   ],
-  "applicability_note": "The control statement requires the audit plan to be based on risk, which is a key concept. Article 28(6) of the parent regulation (EU) 2022/2554) explicitly mentions a 'risk-based approach' for determining audit frequency, which is a relevant applicability condition not captured in the delegated regulation.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 8 is partially correct as it establishes the right to audit but misses the specific requirement to include these in an audit plan and determine frequency based on risk. Article 9 is incorrectly mapped as it deals with ongoing monitoring, not audit planning. The mapping should be revised to focus on the audit planning and risk-based frequency aspects, potentially drawing from the parent regulation's risk-based approach."
+  "applicability_note": "The control objective requires determining audit frequency based on risk, which is a specific requirement not addressed by the existing mapping to Articles 8-9 of the DORA Delegated Regulation.",
+  "challenge_comment": "The existing mapping focuses on the *methods* and *content* of audits (Articles 8-9) but omits the critical requirement for a *risk-based approach to frequency* (Article 28(6) of the DORA Regulation)."
 }

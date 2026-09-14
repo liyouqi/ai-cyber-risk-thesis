@@ -105,7 +105,7 @@
         }
       },
       {
-        "query": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -124,11 +124,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 10770,
+        "planning_ms": 7382,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios",
-          "standalone_question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios",
           "scope": {
             "frameworks": [
               "dora"
@@ -147,12 +147,10 @@
           },
           "claims": [
             {
-              "claim_id": "provision_mapping_requirement",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 addresses the requirement to conduct testing at least once a year, taking into account severe but plausible scenarios",
-              "intent": "scope_or_applicability",
+              "claim_id": "dora_annual_testing_requirement",
+              "question": "Within DORA and its related delegated regulations, what provision requires at least once a year testing taking into account severe but plausible scenarios?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "testing",
-                "at least once a year",
                 "severe but plausible scenarios"
               ],
               "expected_evidence_roles": [
@@ -160,6 +158,20 @@
               ],
               "depends_on": [],
               "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "dora_mapping_analysis",
+              "question": "Within DORA and its related delegated regulations, what provisions are currently mapped for annual testing requirements?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
               "query_variants": []
             }
           ],
@@ -170,7 +182,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:52:39.903464"
+            "generated_at": "2026-09-14T19:51:55.330127"
           },
           "limits": {
             "max_claims": 5,
@@ -183,12 +195,10 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "provision_mapping_requirement",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 addresses the requirement to conduct testing at least once a year, taking into account severe but plausible scenarios",
-              "intent": "scope_or_applicability",
+              "claim_id": "dora_annual_testing_requirement",
+              "question": "Within DORA and its related delegated regulations, what provision requires at least once a year testing taking into account severe but plausible scenarios?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "testing",
-                "at least once a year",
                 "severe but plausible scenarios"
               ],
               "expected_evidence_roles": [
@@ -201,14 +211,38 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1774 addresses the requirement to conduct testing at least once a year, taking into account severe but plausible scenarios",
-              "testing",
-              "at least once a year",
+              "Within DORA and its related delegated regulations, what provision requires at least once a year testing taking into account severe but plausible scenarios?",
               "severe but plausible scenarios"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 74 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 38 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "dora_mapping_analysis",
+              "question": "Within DORA and its related delegated regulations, what provisions are currently mapped for annual testing requirements?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": []
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Within DORA and its related delegated regulations, what provisions are currently mapped for annual testing requirements?",
+              "mapping"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "the retriever returned 40 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -224,15 +258,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 23.3,
+  "elapsed_seconds": 12.106,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -252,7 +286,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: At least once a year, taking into account severe but plausible scenarios"
     }
   ],
   "item": {

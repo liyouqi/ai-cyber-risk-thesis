@@ -1,0 +1,36 @@
+[
+  {
+    "coverage": "No",
+    "reason": "The control statement requires continuous performance, but Article 8 focuses on contractual arrangements and audit methods, not the frequency of performance. The existing mapping does not address the continuous nature of the control objective.",
+    "evidence_ids": [
+      "eu-2024-1773-article-8-1"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+        "provision": "Article 9",
+        "reason": "Article 9 addresses the frequency of audits and testing, which is critical to the continuous performance requirement of the control. The existing mapping to Article 8 does not cover this aspect.",
+        "evidence_ids": []
+      }
+    ],
+    "applicability_note": "The control is part of the 'Provider performance and risk monitoring' domain, which logically includes the frequency of monitoring activities.",
+    "challenge_comment": "The assessment item's control statement specifies 'continuously' as the performance requirement, which is a distinct requirement from the contractual and audit method provisions found in Article 8."
+  },
+  {
+    "coverage": "No",
+    "reason": "The control statement requires continuous performance, but Article 8 focuses on contractual arrangements and audit methods, not the frequency of performance. The existing mapping does not address the continuous nature of the control objective.",
+    "evidence_ids": [
+      "eu-2024-1773-article-8-1"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Commission Delegated Regulation (EU) 2024/1773",
+        "provision": "Article 9",
+        "reason": "Article 9 addresses the frequency of audits and testing, which is critical to the continuous performance requirement of the control. The existing mapping to Article 8 does not cover this aspect.",
+        "evidence_ids": []
+      }
+    ],
+    "applicability_note": "The control is part of the 'Provider performance and risk monitoring' domain, which logically includes the frequency of monitoring activities.",
+    "challenge_comment": "The assessment item's control statement specifies 'continuously' as the performance requirement, which is a distinct requirement from the contractual and audit method provisions found in Article 8."
+  }
+]

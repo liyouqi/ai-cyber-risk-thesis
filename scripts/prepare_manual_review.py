@@ -11,7 +11,6 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from agent.references import parse_mapping
 from agent.workflow import load_items
 
 
@@ -29,27 +28,17 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
 
     items = load_items(source)
 
-    mapping_rows: list[dict[str, object]] = []
     item_rows: list[dict[str, object]] = []
     timing_rows: list[dict[str, object]] = []
     for item in items:
-        for reference in parse_mapping(item.existing_mapping, item.instrument):
-            mapping_rows.append(
-                {
-                    "item_id": item.item_id,
-                    "instrument": reference.instrument,
-                    "provision": reference.provision,
-                    "decision": "",
-                    "reason": "",
-                    "evidence_reference": "",
-                    "evidence_excerpt": "",
-                }
-            )
         item_rows.append(
             {
                 "item_id": item.item_id,
-                "overall_assessment": "",
+                "coverage": "",
+                "reason": "",
                 "missing_mapping": "",
+                "evidence_reference": "",
+                "evidence_excerpt": "",
                 "applicability_note": "",
                 "challenge_comment": "",
             }
@@ -65,24 +54,14 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
         )
 
     _write_csv(
-        output / "provision_checks.csv",
-        [
-            "item_id",
-            "instrument",
-            "provision",
-            "decision",
-            "reason",
-            "evidence_reference",
-            "evidence_excerpt",
-        ],
-        mapping_rows,
-    )
-    _write_csv(
         output / "item_summary.csv",
         [
             "item_id",
-            "overall_assessment",
+            "coverage",
+            "reason",
             "missing_mapping",
+            "evidence_reference",
+            "evidence_excerpt",
             "applicability_note",
             "challenge_comment",
         ],

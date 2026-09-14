@@ -1,17 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 10",
-      "decision": "Supported",
-      "reason": "The provision directly requires the periodic review and testing of the documented exit plan, which aligns with the control objective of periodic testing.",
-      "evidence_ids": [
-        "eu-2024-1773-article-10"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "Article 10 of the DORA Delegated Regulation requires periodic review and testing of the exit plan, which directly supports the control objective of periodic testing based on risk and criticality. The evidence confirms the regulation mandates this activity without specifying a uniform annual frequency.",
+  "evidence_ids": [
+    "eu-2024-1773-article-10"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping is correct as the provision directly supports the control objective of periodic testing."
+  "applicability_note": "The mapping is applicable as the assessment item is from the DORA framework and the cited provision is from the same instrument.",
+  "challenge_comment": "The control statement mentions 'no uniform annual frequency is specified', which is consistent with the regulation's requirement for periodic testing based on risk and criticality, not a fixed schedule."
 }

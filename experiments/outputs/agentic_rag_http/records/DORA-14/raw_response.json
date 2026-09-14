@@ -1,17 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2025/301",
-      "provision": "Article 5(1)(c)",
-      "decision": "Supported",
-      "reason": "The provision directly states the requirement to submit the final report no later than one month after the intermediate report or the latest updated intermediate report, which matches the control statement exactly.",
-      "evidence_ids": [
-        "eu-2025-301-article-5-1-c"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping to Article 5(1)(c) of the DORA Delegated Regulation directly and explicitly supports the control objective of submitting the final report within one month of the intermediate report. The cited evidence confirms the exact timing requirement.",
+  "evidence_ids": [
+    "eu-2025-301-article-5-1-c"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+  "applicability_note": "This control is a specific procedural requirement for financial entities under the DORA framework, as detailed in the Delegated Regulation.",
+  "challenge_comment": "The mapping is precise and directly addresses the control statement. No additional provisions are necessary to establish the regulatory basis for this specific deadline."
 }

@@ -1,43 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 of the EU AI Act generally pertains to the obligations of providers regarding the design and development of AI systems, focusing on risk management and ensuring compliance with the Act's requirements. It does not specifically address the testing and approval of changes to models, prompts, or other components.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 of the EU AI Act outlines the obligations of users of high-risk AI systems, such as implementing human oversight and maintaining logs. It does not cover the process of testing and approving changes to the AI system's components.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 of the EU AI Act deals with the obligations of providers of high-risk AI systems to ensure the system is continuously updated and to report serious incidents. While it mentions updates, it does not specify a formal testing and approval process for changes.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 72",
-      "decision": "Unsupported",
-      "reason": "Article 72 of the EU AI Act is a general provision concerning the application of the regulation, including definitions and the scope of application. It does not contain specific requirements for change management or testing.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "reason": "While Article 17 mentions the obligation to update high-risk AI systems, it lacks a specific requirement for a formal testing and approval process for changes, which is a key part of the control statement.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The control statement applies to all AI systems, but the EU AI Act's specific obligations are primarily for high-risk AI systems. The mapping should be reviewed in the context of whether the system is classified as high-risk.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The provided mapping is incorrect. None of the listed articles directly support the control statement's requirement for testing and approving changes. The mapping appears to be based on a general understanding of the Act's structure rather than a specific connection to change management processes."
+  "coverage": "Yes",
+  "reason": "The control objective requires testing and approval of changes to AI systems. Article 9 (Risk Management) mandates a lifecycle approach, which includes change management. Article 15 (Data and Data Governance) requires data quality and integrity, which are impacted by changes. Article 17 (Record-keeping) supports documentation of changes. Article 72 (Obligations of Distributors) ensures that changes are managed throughout the supply chain. Together, these provisions provide a defensible and sufficiently complete regulatory basis for the control objective.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "This control is applicable to all AI systems under the EU AI Act, as changes to any component (model, prompt, knowledge base, plugin, security) can affect the system's risk profile and compliance with the Act.",
+  "challenge_comment": "The challenge is to ensure that all types of changes are consistently tested and approved, not just code changes. The mapping must cover changes to data, models, and other components that can impact the system's safety and compliance."
 }

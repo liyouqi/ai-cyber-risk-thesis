@@ -16,18 +16,7 @@ from agent.models import AssessmentItem, Evidence, ProvisionRef
 from agent.references import parse_mapping
 
 
-MAPPING_DECISIONS = {
-    "Supported",
-    "Partially supported",
-    "Unsupported",
-    "Unable to determine",
-}
-OVERALL_DECISIONS = {
-    "Correct",
-    "Partially correct",
-    "Incorrect",
-    "Unable to determine",
-}
+COVERAGE_DECISIONS = {"Yes", "No"}
 
 
 @dataclass(frozen=True)
@@ -82,9 +71,15 @@ def _query(item: AssessmentItem, provision: ProvisionRef | None) -> str:
         }
         instrument = citation_names.get(provision.instrument, provision.instrument)
         return f"{instrument} {provision.provision}"
+    scope = (
+        "DORA and its related delegated regulations"
+        if item.framework == "DORA"
+        else item.instrument
+    )
     return (
-        f"Which provision of {item.instrument} is materially necessary for this "
-        f"requirement but absent from the existing mapping: {item.control_statement}"
+        f"Within {scope}, which important provision is materially necessary for "
+        f"this requirement but absent from the existing mapping: "
+        f"{item.control_statement}"
     )
 
 
@@ -101,12 +96,18 @@ def _deduplicate(evidence: list[Evidence]) -> list[Evidence]:
 def _user_prompt(
     item: AssessmentItem,
     provisions: list[ProvisionRef],
-    evidence: list[Evidence],
+    existing_mapping_evidence: list[Evidence],
+    gap_search_evidence: list[Evidence] | None = None,
 ) -> str:
     data = {
         "assessment_item": item.as_dict(),
         "existing_provisions_to_review": [entry.as_dict() for entry in provisions],
-        "retrieved_evidence": [entry.as_dict() for entry in evidence],
+        "existing_mapping_evidence": [
+            entry.as_dict() for entry in existing_mapping_evidence
+        ],
+        "gap_search_evidence": [
+            entry.as_dict() for entry in (gap_search_evidence or [])
+        ],
     }
     return json.dumps(data, ensure_ascii=False, indent=2)
 
@@ -141,29 +142,19 @@ def _apply_evidence_guardrail(
     changes: list[str] = []
     known = {entry.evidence_id for entry in evidence}
 
-    reviews = corrected.get("mapping_reviews", [])
-    if isinstance(reviews, list):
-        for review in reviews:
-            if not isinstance(review, dict):
-                continue
-            cited = review.get("evidence_ids", [])
-            valid = (
-                [evidence_id for evidence_id in cited if evidence_id in known]
-                if isinstance(cited, list)
-                else []
-            )
-            if valid != cited:
-                review["evidence_ids"] = valid
-                changes.append(
-                    f"Removed unknown evidence IDs from {review.get('provision', 'a review')}"
-                )
-            if review.get("decision") != "Unable to determine" and not valid:
-                review["decision"] = "Unable to determine"
-                review["reason"] = "No retrieved evidence was cited for this decision."
-                changes.append(
-                    f"Downgraded {review.get('provision', 'a review')} because "
-                    "no evidence was cited"
-                )
+    cited = corrected.get("evidence_ids", [])
+    valid = (
+        [evidence_id for evidence_id in cited if evidence_id in known]
+        if isinstance(cited, list)
+        else []
+    )
+    if valid != cited:
+        corrected["evidence_ids"] = valid
+        changes.append("Removed unknown evidence IDs from the coverage decision")
+    if corrected.get("coverage") == "Yes" and not valid:
+        corrected["coverage"] = "No"
+        corrected["reason"] = "The retrieved evidence was insufficient to confirm coverage."
+        changes.append("Changed an uncited Yes coverage decision to No")
 
     missing = corrected.get("missing_mappings", [])
     if isinstance(missing, list):
@@ -197,55 +188,37 @@ def _validate_response(
     require_retrieved_evidence: bool,
 ) -> None:
     required = {
-        "mapping_reviews",
+        "coverage",
+        "reason",
+        "evidence_ids",
         "missing_mappings",
         "applicability_note",
-        "overall_assessment",
         "challenge_comment",
     }
     if not required.issubset(response):
         missing = ", ".join(sorted(required - response.keys()))
         raise ValueError(f"LLM output is missing fields: {missing}")
 
-    reviews = response["mapping_reviews"]
-    if not isinstance(reviews, list):
-        raise ValueError("mapping_reviews must be a list")
-    expected = {entry.key for entry in provisions}
-    actual: list[tuple[str, str]] = []
     evidence_ids = {entry.evidence_id for entry in evidence}
-
-    for review in reviews:
-        if not isinstance(review, dict):
-            raise ValueError("Each mapping review must be an object")
-        if review.get("decision") not in MAPPING_DECISIONS:
-            raise ValueError(f"Invalid mapping decision: {review.get('decision')}")
-        if not str(review.get("reason", "")).strip():
-            raise ValueError("Each mapping review must contain a reason")
-        key = (
-            str(review.get("instrument", "")).casefold(),
-            str(review.get("provision", "")).casefold(),
-        )
-        actual.append(key)
-        cited = review.get("evidence_ids", [])
-        if not isinstance(cited, list):
-            raise ValueError("evidence_ids must be a list")
-        if require_retrieved_evidence and not set(cited).issubset(evidence_ids):
-            raise ValueError("A mapping review cites an unknown evidence ID")
-        if (
-            require_retrieved_evidence
-            and review.get("decision") != "Unable to determine"
-            and not cited
-        ):
-            raise ValueError("A substantive mapping decision must cite retrieved evidence")
-        if not require_retrieved_evidence and cited:
-            raise ValueError("LLM-only output must not invent retrieved evidence IDs")
-
-    if len(actual) != len(set(actual)) or set(actual) != expected:
-        raise ValueError("LLM output must review each existing provision exactly once")
+    if response["coverage"] not in COVERAGE_DECISIONS:
+        raise ValueError("coverage must be Yes or No")
+    if not str(response["reason"]).strip():
+        raise ValueError("reason must be non-empty text")
+    cited = response["evidence_ids"]
+    if not isinstance(cited, list):
+        raise ValueError("evidence_ids must be a list")
+    if require_retrieved_evidence and not set(cited).issubset(evidence_ids):
+        raise ValueError("The coverage decision cites an unknown evidence ID")
+    if require_retrieved_evidence and response["coverage"] == "Yes" and not cited:
+        raise ValueError("A Yes coverage decision must cite retrieved evidence")
+    if not require_retrieved_evidence and cited:
+        raise ValueError("LLM-only output must not invent retrieved evidence IDs")
 
     missing_mappings = response["missing_mappings"]
     if not isinstance(missing_mappings, list):
         raise ValueError("missing_mappings must be a list")
+    if response["coverage"] == "Yes" and missing_mappings:
+        raise ValueError("A Yes coverage decision cannot contain missing mappings")
     for mapping in missing_mappings:
         if not isinstance(mapping, dict):
             raise ValueError("Each missing mapping must be an object")
@@ -260,8 +233,6 @@ def _validate_response(
         if not require_retrieved_evidence and cited:
             raise ValueError("LLM-only output must not invent retrieved evidence IDs")
 
-    if response["overall_assessment"] not in OVERALL_DECISIONS:
-        raise ValueError("Invalid overall_assessment")
     for field in ("applicability_note", "challenge_comment"):
         if not isinstance(response[field], str) or not response[field].strip():
             raise ValueError(f"{field} must be non-empty text")
@@ -278,7 +249,7 @@ def run_review(
     retrieval_start = len(initial_provider_details.get("retrievals", []))
     provisions = parse_mapping(item.existing_mapping, item.instrument)
     queries: list[dict[str, str]] = []
-    retrieved: list[Evidence] = []
+    validation_evidence: list[Evidence] = []
 
     for provision in provisions:
         query = _query(item, provision)
@@ -290,7 +261,7 @@ def run_review(
                 "query": query,
             }
         )
-        retrieved.extend(evidence_provider.retrieve(item, query, provision))
+        validation_evidence.extend(evidence_provider.retrieve(item, query, provision))
 
     gap_query = _query(item, None)
     queries.append(
@@ -301,10 +272,12 @@ def run_review(
             "query": gap_query,
         }
     )
-    retrieved.extend(evidence_provider.retrieve(item, gap_query, None))
-    evidence = _deduplicate(retrieved)
+    gap_evidence = evidence_provider.retrieve(item, gap_query, None)
+    validation_evidence = _deduplicate(validation_evidence)
+    gap_evidence = _deduplicate(gap_evidence)
+    evidence = _deduplicate(validation_evidence + gap_evidence)
 
-    user_prompt = _user_prompt(item, provisions, evidence)
+    user_prompt = _user_prompt(item, provisions, validation_evidence, gap_evidence)
     response = llm.generate_json(system_prompt, user_prompt)
     raw_attempts = [response]
     guardrail_changes: list[str] = []
@@ -359,7 +332,7 @@ def run_review(
         raw_attempts=raw_attempts,
         guardrail_changes=guardrail_changes,
         elapsed_seconds=round(time.perf_counter() - started, 3),
-        prompt_version="agent-review-v0.3",
+        prompt_version="agent-review-v0.5",
     )
 
 
@@ -371,13 +344,28 @@ def run_llm_only(
     """Review one item with model knowledge only and no retrieved evidence."""
     started = time.perf_counter()
     provisions = parse_mapping(item.existing_mapping, item.instrument)
-    response = llm.generate_json(system_prompt, _user_prompt(item, provisions, []))
-    _validate_response(
-        response,
-        provisions,
-        [],
-        require_retrieved_evidence=False,
-    )
+    user_prompt = _user_prompt(item, provisions, [])
+    response = llm.generate_json(system_prompt, user_prompt)
+    raw_attempts = [response]
+    try:
+        _validate_response(
+            response,
+            provisions,
+            [],
+            require_retrieved_evidence=False,
+        )
+    except ValueError as error:
+        response = llm.generate_json(
+            system_prompt,
+            _repair_prompt(user_prompt, response, str(error)),
+        )
+        raw_attempts.append(response)
+        _validate_response(
+            response,
+            provisions,
+            [],
+            require_retrieved_evidence=False,
+        )
     return ReviewRun(
         item=item,
         method="llm_only",
@@ -389,10 +377,10 @@ def run_llm_only(
         queries=[],
         evidence=[],
         response=response,
-        raw_attempts=[response],
+        raw_attempts=raw_attempts,
         guardrail_changes=[],
         elapsed_seconds=round(time.perf_counter() - started, 3),
-        prompt_version="llm-only-v0.3",
+        prompt_version="llm-only-v0.4",
     )
 
 
@@ -405,7 +393,7 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
         "method": run.method,
         "evidence_provider": run.provider,
         "evidence_provider_details": run.provider_details,
-        "workflow_version": "0.4" if run.method == "agentic_rag" else "0.3",
+        "workflow_version": "0.7" if run.method == "agentic_rag" else "0.4",
         "prompt_version": run.prompt_version,
         "model": run.model,
         "model_settings": run.model_settings,
@@ -437,50 +425,34 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
             encoding="utf-8",
         )
 
-    with (output / "provision_checks.csv").open("w", newline="", encoding="utf-8") as handle:
-        fields = [
-            "item_id",
-            "instrument",
-            "provision",
-            "decision",
-            "reason",
-            "evidence_reference",
-            "evidence_excerpt",
-        ]
-        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
-        writer.writeheader()
-        by_id = {entry.evidence_id: entry for entry in run.evidence}
-        for review in run.response["mapping_reviews"]:
-            cited = review.get("evidence_ids", [])
-            excerpts = [by_id[evidence_id].text[:300] for evidence_id in cited]
-            writer.writerow(
-                {
-                    "item_id": run.item.item_id,
-                    "instrument": review["instrument"],
-                    "provision": review["provision"],
-                    "decision": review["decision"],
-                    "reason": review["reason"],
-                    "evidence_reference": "; ".join(cited),
-                    "evidence_excerpt": " | ".join(excerpts),
-                }
-            )
-
     with (output / "item_summary.csv").open("w", newline="", encoding="utf-8") as handle:
         fields = [
             "item_id",
-            "overall_assessment",
+            "coverage",
+            "reason",
             "missing_mapping",
+            "evidence_reference",
+            "evidence_excerpt",
             "applicability_note",
             "challenge_comment",
         ]
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
+        cited = run.response.get("evidence_ids", [])
+        by_id = {entry.evidence_id: entry for entry in run.evidence}
         writer.writerow(
             {
                 "item_id": run.item.item_id,
-                "overall_assessment": run.response["overall_assessment"],
+                "coverage": run.response["coverage"],
+                "reason": run.response["reason"],
                 "missing_mapping": json.dumps(
                     run.response["missing_mappings"], ensure_ascii=False
+                ),
+                "evidence_reference": "; ".join(cited),
+                "evidence_excerpt": " | ".join(
+                    by_id[evidence_id].text[:300]
+                    for evidence_id in cited
+                    if evidence_id in by_id
                 ),
                 "applicability_note": run.response["applicability_note"],
                 "challenge_comment": run.response["challenge_comment"],

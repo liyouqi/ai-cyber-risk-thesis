@@ -175,7 +175,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -190,12 +190,12 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "retrieved",
-        "planning_ms": 17867,
+        "status": "empty",
+        "planning_ms": 6789,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -211,74 +211,14 @@
           },
           "claims": [
             {
-              "claim_id": "model_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of model changes?",
+              "claim_id": "provision_for_testing_approval_changes",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses the testing and approval of changes to models, prompts, knowledge bases, plugins, and security aspects?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "model changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "prompt_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of prompt changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "prompt changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "knowledge_base_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of knowledge base changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "knowledge base changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "plugin_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of plugin changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "plugin changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "security_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of security changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "security changes",
                 "testing",
                 "approval"
@@ -298,7 +238,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:45:04.675331"
+            "generated_at": "2026-09-14T19:44:48.444386"
           },
           "limits": {
             "max_claims": 5,
@@ -311,84 +251,15 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "model_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of model changes?",
+              "claim_id": "provision_for_testing_approval_changes",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses the testing and approval of changes to models, prompts, knowledge bases, plugins, and security aspects?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "model changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:60:paragraph:4:point:b",
-              "eu:32024R1689:annex:xii",
-              "eu:32024R1689:article:2:paragraph:8",
-              "eu:32024R1689:annex:iv:point:6",
-              "eu:32024R1689:recital:102",
-              "eu:32024R1689:recital:111"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 require testing and approval of model changes?",
-              "model changes",
-              "testing",
-              "approval"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "6 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "prompt_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of prompt changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "prompt changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:60:paragraph:4:point:b",
-              "eu:32024R1689:article:60:paragraph:7",
-              "eu:32024R1689:annex:iv:point:2",
-              "eu:32024R1689:annex:iv:point:2:subpoint:g",
-              "eu:32024R1689:annex:iv:point:6"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 require testing and approval of prompt changes?",
-              "prompt changes",
-              "testing",
-              "approval"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "5 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "knowledge_base_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of knowledge base changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "knowledge base changes",
+                "plugin changes",
+                "security changes",
                 "testing",
                 "approval"
               ],
@@ -402,85 +273,18 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Does Regulation (EU) 2024/1689 require testing and approval of knowledge base changes?",
+              "Within Regulation (EU) 2024/1689, which provision addresses the testing and approval of changes to models, prompts, knowledge bases, plugins, and security aspects?",
+              "model changes",
+              "prompt changes",
               "knowledge base changes",
-              "testing",
-              "approval"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "the retriever returned 76 ranked hit(s), but none passed deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "plugin_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of plugin changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
-                "plugin changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:60:paragraph:4:point:b",
-              "eu:32024R1689:annex:iv:point:6",
-              "eu:32024R1689:annex:iv:point:2",
-              "eu:32024R1689:annex:iv:point:2:subpoint:g"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 require testing and approval of plugin changes?",
               "plugin changes",
-              "testing",
-              "approval"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "4 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "security_change_testing_requirement",
-              "question": "Does Regulation (EU) 2024/1689 require testing and approval of security changes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
-                "security changes",
-                "testing",
-                "approval"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:60:paragraph:4:point:b",
-              "eu:32024R1689:article:102:subparagraph:1",
-              "eu:32024R1689:article:74:paragraph:12",
-              "eu:32024R1689:annex:iv:point:6",
-              "eu:32024R1689:recital:130"
-            ],
-            "executed_queries": [
-              "Does Regulation (EU) 2024/1689 require testing and approval of security changes?",
               "security changes",
               "testing",
               "approval"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "5 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
+              "the retriever returned 107 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -496,15 +300,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 41.784,
+  "elapsed_seconds": 26.497,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -536,7 +340,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are model, prompt, knowledge base, plugin and security changes tested and approved?"
     }
   ],
   "item": {

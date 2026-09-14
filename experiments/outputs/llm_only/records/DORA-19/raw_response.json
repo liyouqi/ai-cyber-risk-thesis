@@ -1,15 +1,15 @@
 {
-  "mapping_reviews": [
+  "coverage": "No",
+  "reason": "The mapping to Article 3 is too broad and does not provide a specific regulatory basis for the control objective of reviewing the policy on the use of ICT third-party services at least once a year. Article 3 is a general provision on definitions and scope, and it does not contain the specific requirement for an annual review.",
+  "evidence_ids": [],
+  "missing_mappings": [
     {
       "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 3",
-      "decision": "Unable to determine",
-      "reason": "The provided model knowledge does not contain the specific content of Article 3 of the DORA Delegated Regulation, which is necessary to assess the mapping to the control statement.",
+      "provision": "Article 28",
+      "reason": "Article 28 contains the specific requirement for financial entities to review their ICT third-party risk management arrangements at least annually, which directly supports the control objective.",
       "evidence_ids": []
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is known.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The assessment cannot be completed because the content of Article 3 is not available in the model's knowledge base. To proceed, the text of Article 3 must be provided."
+  "applicability_note": "The control is applicable to financial entities under DORA, which are required to manage risks associated with ICT third-party service providers.",
+  "challenge_comment": "The existing mapping to a general article (Article 3) is insufficient to justify the specific control requirement. A more precise citation to the relevant operational provision is necessary for a defensible basis."
 }

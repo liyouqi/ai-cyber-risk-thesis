@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 8322,
+        "planning_ms": 6372,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -176,8 +176,8 @@
           },
           "claims": [
             {
-              "claim_id": "provision_for_sensitive_inputs_restriction",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the restriction of sensitive inputs with classification, minimisation and masking requirements?",
+              "claim_id": "sensitive_inputs_restriction",
+              "question": "Within Regulation (EU) 2024/1689, are sensitive inputs restricted with classification, minimisation and masking?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "sensitive inputs",
@@ -200,7 +200,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:38:13.428239"
+            "generated_at": "2026-09-14T19:39:28.882097"
           },
           "limits": {
             "max_claims": 5,
@@ -213,8 +213,8 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "provision_for_sensitive_inputs_restriction",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the restriction of sensitive inputs with classification, minimisation and masking requirements?",
+              "claim_id": "sensitive_inputs_restriction",
+              "question": "Within Regulation (EU) 2024/1689, are sensitive inputs restricted with classification, minimisation and masking?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "sensitive inputs",
@@ -232,7 +232,7 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the restriction of sensitive inputs with classification, minimisation and masking requirements?",
+              "Within Regulation (EU) 2024/1689, are sensitive inputs restricted with classification, minimisation and masking?",
               "sensitive inputs",
               "classification",
               "minimisation",
@@ -256,17 +256,19 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 21.018,
-  "model_attempts": 1,
-  "guardrail_changes": [],
+  "elapsed_seconds": 34.987,
+  "model_attempts": 2,
+  "guardrail_changes": [
+    "Removed a missing-mapping proposal without valid evidence"
+  ],
   "queries": [
     {
       "purpose": "validate",
@@ -290,7 +292,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are sensitive inputs restricted with classification, minimisation and masking?"
     }
   ],
   "item": {

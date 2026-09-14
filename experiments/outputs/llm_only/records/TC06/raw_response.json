@@ -1,48 +1,21 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 of the EU AI Act pertains to the obligations of providers regarding the design and development of high-risk AI systems, focusing on risk management and ensuring the AI system is developed in accordance with the requirements of the regulation. It does not address the segregation of administrative, model, or security configuration privileges.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 of the EU AI Act outlines the obligations of providers regarding the technical documentation for high-risk AI systems. This article requires detailed documentation of the system's design, development, and testing, but it does not mandate the segregation of administrative, model, or security configuration privileges.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 of the EU AI Act concerns the obligations of providers regarding the conformity assessment for high-risk AI systems. This article focuses on the process of ensuring the AI system meets the requirements of the regulation, including risk management and documentation, but it does not address the segregation of administrative, model, or security configuration privileges.",
-      "evidence_ids": []
-    }
-  ],
+  "coverage": "No",
+  "reason": "The cited articles (9, 15, 17) of the EU AI Act address risk management, transparency, and data governance, respectively. They do not provide a regulatory basis for the specific control objective of segregating and controlling administrative, model, and security configuration privileges.",
+  "evidence_ids": [],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 4(2)",
-      "reason": "Article 4(2) of the EU AI Act requires providers to take appropriate technical and organizational measures to ensure that high-risk AI systems are designed and developed in a way that ensures their security and robustness. This includes implementing measures to prevent unauthorized access and ensure the integrity of the system, which would encompass the segregation of privileges.",
+      "reason": "This article requires providers to implement a quality management system, which typically includes controls for access and configuration management, making it a relevant but missing provision.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 10",
-      "reason": "Article 10 of the EU AI Act requires providers to implement appropriate data governance and management practices, including ensuring the quality and integrity of the data used to train, validate, and test the AI system. This includes implementing measures to prevent unauthorized access to the data, which would be facilitated by the segregation of privileges.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 14",
-      "reason": "Article 14 of the EU AI Act requires providers to implement appropriate logging and monitoring mechanisms to ensure the traceability and accountability of the AI system. This includes logging all access to the system, including administrative, model, and security configuration privileges, which would be facilitated by the segregation of privileges.",
+      "provision": "Article 15(3)",
+      "reason": "This provision mandates logging of system activities, which is a key component of the control objective and is not covered by the existing mapping.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control statement is applicable to all systems, including high-risk AI systems, as defined by the EU AI Act.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they do not address the segregation of administrative, model, and security configuration privileges. The correct mappings should include provisions that require providers to take appropriate technical and organizational measures to ensure the security and robustness of the AI system, such as Article 4(2), Article 10, and Article 14."
+  "applicability_note": "The control is applicable to all systems under the EU AI Act, as it pertains to fundamental security and operational integrity requirements for AI systems.",
+  "challenge_comment": "The challenge lies in the misalignment between the control's focus on privileged access management and the general nature of the cited articles, which do not specifically address this technical control."
 }

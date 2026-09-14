@@ -9,6 +9,105 @@
     "score": 1.0
   },
   {
+    "evidence_id": "eu-2024-1773-article-3-1",
+    "document_id": "EU-2024-1773",
+    "text": "1. The management body shall review the policy at least once a year and update it where necessary. Changes made to the policy shall be implemented in a timely manner and as soon as it is possible within the relevant contractual arrangements. The financial entity shall document the planned timeline for the implementation.",
+    "source_locator": "Article 3(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-3-d-iv",
+    "document_id": "EU-2024-1774",
+    "text": "(iv) provisions on the review of the accepted residual ICT risks at least once a year, including:",
+    "source_locator": "Article 3(d)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-28-2-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) allocates and reviews at least once a year the budget necessary to fulfil the financial entity’s digital operational resilience needs in respect of all types of resources, including relevant ICT security awareness programmes and digital operational resilience training and ICT skills for all staff;",
+    "source_locator": "Article 28(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-13-i",
+    "document_id": "EU-2024-1774",
+    "text": "(i) the performance of reviews of the network architecture and of the network security design once a year, and periodically for microenterprises, to identify potential vulnerabilities;",
+    "source_locator": "Article 13(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6",
+    "document_id": "EU-2022-2554",
+    "text": "6. Upon receipt of the initial notification and of each report referred to in paragraph 4, the competent authority shall, in a timely manner, provide details of the major ICT-related incident to the following recipients based, as applicable, on their respective competences:",
+    "source_locator": "Article 19(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6-a",
+    "document_id": "EU-2022-2554",
+    "text": "(a) EBA, ESMA or EIOPA;",
+    "source_locator": "Article 19(6)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) the ECB, in the case of financial entities referred to in Article 2(1), points (a), (b) and (d);",
+    "source_locator": "Article 19(6)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6-c",
+    "document_id": "EU-2022-2554",
+    "text": "(c) the competent authorities, single points of contact or CSIRTs designated or established in accordance with Directive (EU) 2022/2555;",
+    "source_locator": "Article 19(6)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6-d",
+    "document_id": "EU-2022-2554",
+    "text": "(d) the resolution authorities, as referred to in Article 3 of Directive 2014/59/EU, and the Single Resolution Board (SRB) with respect to entities referred to in Article 7(2) of Regulation (EU) No 806/2014 of the European Parliament and of the Council ( 37 ) , and with respect to entities and groups referred to in Article 7(4)(b) and (5) of Regulation (EU) No 806/2014 if such details concern incidents that pose a risk to ensuring critical functions within the meaning of Article 2(1), point (35), of Directive 2014/59/EU; and",
+    "source_locator": "Article 19(6)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6-e",
+    "document_id": "EU-2022-2554",
+    "text": "(e) other relevant public authorities under national law.",
+    "source_locator": "Article 19(6)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-16-2",
+    "document_id": "EU-2022-2554",
+    "text": "2. The ICT risk management framework referred to in paragraph 1, second subparagraph, point (a), shall be documented and reviewed periodically and upon the occurrence of major ICT-related incidents in compliance with supervisory instructions. It shall be continuously improved on the basis of lessons derived from implementation and monitoring. A report on the review of the ICT risk management framework shall be submitted to the competent authority upon its request.",
+    "source_locator": "Article 16(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
     "evidence_id": "eu-2024-1774-article-27-2-d",
     "document_id": "EU-2024-1774",
     "text": "(d) the start and end dates of the review period;",
@@ -40,15 +139,6 @@
     "document_id": "EU-2024-1774",
     "text": "(j) conclusions resulting from the review of the ICT risk management framework;",
     "source_locator": "Article 27(2)(j)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-27-2-c",
-    "document_id": "EU-2024-1774",
-    "text": "(c) a description of the reason for the review of the ICT risk management framework in accordance with Article 6(5) of Regulation (EU) 2022/2554.;",
-    "source_locator": "Article 27(2)(c)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
     "rank": null,
     "score": null

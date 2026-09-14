@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def combine_review_tables(output: Path, item_ids: list[str]) -> None:
     """Create two spreadsheet-friendly batch files from the per-item records."""
     records = output / "records"
-    for filename in ("provision_checks.csv", "item_summary.csv"):
+    for filename in ("item_summary.csv",):
         rows: list[dict[str, str]] = []
         fields: list[str] | None = None
         for item_id in item_ids:
@@ -91,7 +91,6 @@ def main() -> None:
         required = {
             "run.json",
             "raw_response.json",
-            "provision_checks.csv",
             "item_summary.csv",
         }
         if args.resume and required.issubset(path.name for path in folder.iterdir()):

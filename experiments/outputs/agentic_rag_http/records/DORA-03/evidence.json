@@ -27,42 +27,6 @@
     "score": 1.0
   },
   {
-    "evidence_id": "eu-2024-1774-article-25-3",
-    "document_id": "EU-2024-1774",
-    "text": "3. In addition to the requirements referred to in paragraph 2, central counterparties shall involve in the testing of their ICT business continuity plans referred to in paragraph 1:",
-    "source_locator": "Article 25(3)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-3-a",
-    "document_id": "EU-2024-1774",
-    "text": "(a) clearing members;",
-    "source_locator": "Article 25(3)(a)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-3-b",
-    "document_id": "EU-2024-1774",
-    "text": "(b) external providers;",
-    "source_locator": "Article 25(3)(b)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-3-c",
-    "document_id": "EU-2024-1774",
-    "text": "(c) relevant institutions in the financial infrastructure with which central counterparties have identified interdependencies in their business continuity policies.",
-    "source_locator": "Article 25(3)(c)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
     "evidence_id": "eu-2024-1774-article-25-2-d",
     "document_id": "EU-2024-1774",
     "text": "(d) be designed to challenge the assumptions on which the business continuity plans are based, including governance arrangements and crisis communication plans;",
@@ -72,37 +36,10 @@
     "score": null
   },
   {
-    "evidence_id": "eu-2024-1774-article-25-4",
+    "evidence_id": "eu-2024-1774-article-39-2-i",
     "document_id": "EU-2024-1774",
-    "text": "4. In addition to the requirements referred to in paragraph 2, central securities depositories shall involve in the testing of their ICT business continuity plans referred to in paragraph 1, as appropriate:",
-    "source_locator": "Article 25(4)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-2",
-    "document_id": "EU-2024-1774",
-    "text": "2. Financial entities shall assess through the testing of their ICT business continuity plans referred to in paragraph 1 whether they are able to ensure the continuity of the financial entity’s critical or important functions. That testing shall: For the purposes of point (a), financial entities shall always include in the testing the scenarios considered for the development of the business continuity plans. For the purposes of point (b), financial entities shall duly consider scenarios linked to insolvency or failures of the ICT third-party service providers or linked to political risks in the ICT third-party service providers’ jurisdictions, where relevant. For the purposes of point (c), the testing shall verify whether at least critical or important functions can be operated appropriately for a sufficient period of time, and whether the normal functioning may be restored.",
-    "source_locator": "Article 25(2)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-1",
-    "document_id": "EU-2024-1774",
-    "text": "1. When testing the ICT business continuity plans in accordance with Article 11(6), of Regulation (EU) 2022/2554, financial entities shall take into account the financial entity’s business impact analysis (BIA) and the ICT risk assessment referred to in Article 3(1), point (b), of this Regulation.",
-    "source_locator": "Article 25(1)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-5",
-    "document_id": "EU-2024-1774",
-    "text": "5. Financial entities shall document the results of the testing referred to in paragraph 1. Any identified deficiencies resulting from that testing shall be analysed, addressed, and reported to the management body.",
-    "source_locator": "Article 25(5)",
+    "text": "(i) specify the internal and external communication arrangements, including escalation plans;",
+    "source_locator": "Article 39(2)(i)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
     "rank": null,
     "score": null
@@ -117,11 +54,29 @@
     "score": null
   },
   {
-    "evidence_id": "eu-2024-1774-article-40-1",
+    "evidence_id": "eu-2024-1774-article-25-2-a",
     "document_id": "EU-2024-1774",
-    "text": "1. The financial entities referred to in Article 16(1) of Regulation (EU) 2022/2554 shall test their business continuity plans referred to in Article 39 of this Regulation, including the scenarios referred to in that Article, at least once every year for the back-up and restore procedures, or upon every major change of the business continuity plan.",
-    "source_locator": "Article 40(1)",
+    "text": "(a) be performed on the basis of test scenarios that simulate potential disruptions, including an adequate set of severe but plausible scenarios;",
+    "source_locator": "Article 25(2)(a)",
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-16-3-d",
+    "document_id": "EU-2022-2554",
+    "text": "(d) specify further the rules on the testing of business continuity plans and ensure the effectiveness of the controls referred to in paragraph 1, second subparagraph, point (g) and ensure that such testing duly takes into account scenarios in which the quality of the provision of a critical or important function deteriorates to an unacceptable level or fails;",
+    "source_locator": "Article 16(3)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-13-2-d",
+    "document_id": "EU-2022-2554",
+    "text": "(d) the effectiveness of internal and external communication.",
+    "source_locator": "Article 13(2)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": null,
     "score": null
   }

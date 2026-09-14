@@ -1,256 +1,126 @@
 # Experiment Design
 
-Working thesis title:
+Working title: **AI-Assisted Cybersecurity Regulatory Mapping Review in
+Banking: A Comparative Evaluation of Manual, LLM-Only and Agentic RAG
+Workflows**
 
-**AI-Assisted Cybersecurity Regulatory Mapping Review in Banking: A Comparative
-Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
+## Task
 
-Status: working design. Record any later change to data, prompts or corpus.
+For each of the 40 assessment items, determine whether the existing regulatory
+mapping, considered as a whole, adequately covers the material requirements of
+the control. If it does not, identify any important missing provisions.
 
-## 1. Research task
+Each method returns one item-level decision:
 
-The experiment studies a second-line regulatory review task. A source workbook
-contains a control or risk statement and one or more proposed legal references.
-The reviewer must determine whether the mapping is supported by the official
-text, whether it is too broad, and whether an important provision is missing.
+- `Yes`: the mapping set provides a defensible and sufficiently complete
+  regulatory basis for the material control objective;
+- `No`: a material part is unsupported, a cited provision is materially wrong,
+  an important provision is missing, or the method cannot confirm adequate
+  coverage.
 
-The system supports review. It does not make a final legal or compliance
-decision.
+The regulation need not name the exact implementation technology when its
+requirements clearly support that control as a reasonable implementation. A
+broad or redundant citation does not make an otherwise adequate mapping `No`.
 
-## 2. Research question
+## Data and gold standard
 
-Can an evidence-grounded agent reduce the time needed to review existing
-control-to-regulation mappings while maintaining useful legal accuracy and
-traceability?
-
-## 3. Source material
-
-The intended frameworks are:
-
-- EU AI Act;
-- DORA, including the related instruments available in the recorded corpus.
-
-Current material:
-
-- `source_files/AI_Tool_Onboarding_Risk_Assessment.xlsx`;
-- `source_files/DORA KPI.xlsx`.
-
-The AI Act workbook contains several tables. The technical control checklist is
-the most suitable starting point because it has one consistent row per control.
-The DORA workbook contributes 22 candidate quantitative requirements across the
-Level 1 Regulation and three Delegated Regulations. Together, the two workbooks
-provide 47 candidate items. The main dataset contains 20 items from each
-framework. The AI Act selection excludes the transparency and bias rows to keep
-the sample centred on cybersecurity and operational controls. The selection is
-purposeful rather than statistically representative.
-
-## 4. Assessment item
-
-One workbook row is one Assessment Item. Only fields that affect the review are
-kept:
+`experiments/data/items.csv` contains the 40 common assessment items.
+`experiments/data/gold_standard.csv` contains exactly one expert reference row
+per item:
 
 ```text
-Item ID
-Framework
-Instrument
-Domain
-Control or risk statement
-Expected control evidence (if present)
-Applicability (if present)
-Existing legal mapping
-Source row
+item_id,coverage,missing_provisions,reason,source_url,evidence_excerpt
 ```
 
-Instrument identifies the legal text in which an article is located. Source row
-is provenance, not a fact for legal reasoning; the extraction script identifies
-the source workbook and sheet.
+Missing provisions use `document_id::provision` and semicolons between multiple
+references. The Gold is based on official EUR-Lex text and is a reference
+standard for this experiment, not a claim of universal legal truth.
 
-All three methods receive the same substantive item. They do not receive a
-reference answer or another method's output.
+The Gold is never loaded by Manual, LLM-only or Agentic RAG. Only the final
+scoring script reads it.
 
-## 5. Review output
-
-The common output should remain short.
-
-### Existing mappings
-
-Review each cited provision separately:
-
-```text
-Provision
-Supported / Partially supported / Unsupported / Unable to determine
-Reason
-Evidence reference
-```
-
-- `Supported`: the provision directly and materially supports the main control
-  objective and substantially covers the requirement.
-- `Partially supported`: the provision supports an important part or underlying
-  legal objective, but not every implementation detail, actor or condition.
-- `Unsupported`: the provision concerns a materially different obligation and
-  has no substantive connection to the control.
-- `Unable to determine`: the available evidence is insufficient to make one of
-  the three substantive decisions above.
-
-### Missing mappings
-
-List only provisions that materially improve or correct the existing mapping.
-Do not produce a long list of loosely related articles.
-
-### Applicability
-
-State any important condition, such as provider/deployer role, high-risk AI
-classification, entity scope, or critical-function context. If the workbook
-does not establish the condition, say so.
-
-### Challenge comment
-
-Give a short second-line comment stating what is acceptable, what should be
-challenged, and what evidence or clarification is needed.
-
-All methods fill the same two logical tables. One table contains a row for each
-existing provision and its decision, reason and evidence. The other contains one
-summary row per Assessment Item. CSV is the experiment format; it can be opened
-and edited in Excel. A combined workbook may be generated later for convenience
-without changing the fields.
-
-## 6. Compared methods
+## Compared methods
 
 ### Manual
 
-The researcher checks the official texts without an LLM or the Regulatory RAG.
-Record the sources used and the time to reach a complete review.
+The reviewer checks official regulatory texts without an LLM or Regulatory RAG
+and records the item-level decision, important omissions, sources and time.
 
 ### LLM-only
 
-The model receives the Assessment Item and the common output instructions through
-the same configured API used by the Agent. It receives no retrieved legal text
-and has no browsing or search tools. Save the first response, model configuration,
-generation time and human correction time.
+The model receives the assessment item and output instructions. It receives no
+retrieved text and has no browsing or search tools.
 
 ### Agentic RAG
 
-The agent:
+The Agent uses the independent Regulatory RAG only through its read-only HTTP
+API. It retrieves every existing citation with Direct mode and searches for
+material omissions with Planned mode. It then makes the same item-level
+decision as the other methods and links its answer to returned evidence IDs.
 
-1. parses the Assessment Item;
-2. separates the existing legal references;
-3. sends each cited provision as a canonical citation (for example,
-   `AI Act Article 9`) to Direct HTTP retrieval, allowing Regulatory RAG's own
-   citation parser to resolve it;
-4. creates focused validation and gap-search questions;
-5. calls the read-only Regulatory RAG HTTP interface, using Direct retrieval for
-   cited-provision validation and Planned retrieval for the gap search;
-6. links its conclusions to returned evidence IDs;
-7. flags insufficient evidence instead of filling gaps from model memory;
-8. validates the output and makes at most one correction retry when the JSON or
-   evidence links are invalid;
-9. downgrades any remaining uncited conclusion to `Unable to determine`;
-10. produces the common review output.
+The thesis project does not import the RAG package or read its data, release or
+index directories. The run record preserves queries, evidence, rank, score,
+source metadata, the Planned plan and claim coverage.
 
-The first implementation makes one focused validation query per cited provision
-and one limited gap query per item. Both model attempts are saved when the single
-correction retry is used. Changes to this behaviour must be tested in the pilot.
-Observable queries, HTTP retrieval metadata, Planned retrieval plans, claim
-coverage and evidence are saved; private model reasoning is not. The thesis
-project does not import the RAG Python package or read its corpus and index
-artifacts.
+## Common output
 
-## 7. Experimental controls
+Each method produces one row per item containing:
 
-- Use the same item and output fields for all methods.
-- Use the same final model for LLM-only and Agentic RAG where possible.
-- Read model and endpoint settings from environment configuration.
-- Record model settings, prompts and corpus versions and do not mix changed
-  versions in one result set.
-- Manual and Agentic RAG review the same official source scope.
-- Do not silently treat a missing corpus document as a retrieval failure.
-- Preserve raw AI outputs before human correction.
+```text
+item_id
+coverage
+reason
+missing_mapping
+evidence_reference
+evidence_excerpt
+applicability_note
+challenge_comment
+```
 
-## 8. Verified manual baseline
+`coverage` is only `Yes` or `No`. If a method cannot determine that the mapping
+is adequate, it returns `No`. Missing provisions are listed only when a clear
+provision materially repairs the gap; otherwise the list is empty.
 
-The completed Manual review is checked against the official legal text and then
-used as the practical scoring baseline. Each decision records its provision,
-official source and a short supporting passage. This avoids creating a fourth
-workflow that repeats the same work.
+## Measures
 
-The baseline is not treated as universal legal truth. If later checking shows
-that a baseline decision is wrong, record the correction and rescore all methods
-against the corrected decision. One researcher performs the review, so the
-thesis reports this as a limitation.
+The primary metric is:
 
-## 9. Measures
+```text
+Coverage Accuracy = correctly classified items / 40
+```
 
-Keep the result table limited to measures that answer the research question:
+Because the Gold contains 29 `Yes` and 11 `No` items, also report the Yes and
+No recall and their unweighted mean (balanced accuracy) to make majority-class
+behaviour visible. Coverage Accuracy remains the primary metric.
 
-- time to reach an acceptable review;
-- accuracy of existing-mapping classifications;
-- precision and recall for material missing mappings, where the manual baseline
-  makes these measures possible;
-- citation support or citation errors;
-- unsupported legal claims;
-- human correction time and a short correction note.
+For missing provisions, report true positives, false positives, false
+negatives, Precision, Recall and F1. Matching uses the normalized
+`document_id::provision` identifier.
 
-Applicability handling and challenge usefulness may be discussed qualitatively
-or scored after the pilot if a stable rubric is practical. Do not create one
-combined quality score.
+The existing secondary measures remain:
 
-## 10. Small process check
+- total review or completion time;
+- evidence or citation errors;
+- unsupported claims;
+- human correction time.
 
-TC05, TC20, DORA-15 and DORA-18 are listed in `pilot_items.csv`. This is a small
-process check, not a separate dataset or a separate output structure.
+No weighted overall score is used.
 
-The pilot checks:
+## Experimental controls
 
-- whether workbook rows contain enough context;
-- whether the RAG contains the necessary texts;
-- whether existing citations can be parsed consistently;
-- whether the output is useful to a second-line reviewer;
-- whether timing and scoring can be applied consistently.
+- All three methods receive the same 40 items and the same task definition.
+- Manual, LLM-only and Agentic RAG cannot access the Gold during execution.
+- LLM-only and Agentic RAG use the same model and temperature 0.
+- Prompt, model, workflow and RAG corpus versions are recorded.
+- Raw AI responses and Agentic RAG evidence are retained.
+- Empty retrieval and service errors are recorded; the Agent does not widen the
+  legal scope or invent legal support.
+- Each method is run once per item. Results are scored only after the Gold is
+  fixed.
 
-The DORA process check has been completed. The two AI Act rows will be checked
-when that corpus is available.
+## Reporting
 
-## 11. Records to keep
-
-For every run, retain:
-
-- item ID and source row;
-- method;
-- prompt/workflow version;
-- model settings where applicable;
-- RAG and corpus version where applicable;
-- raw output;
-- retrieved evidence IDs for Agentic RAG;
-- execution and human review time;
-- corrections and final review.
-
-These records are sufficient for the thesis. No chain-of-thought, database or
-large workflow platform is required.
-
-## 12. Conditions for the remaining AI Act runs
-
-- both source workbooks have been inspected;
-- selected items and source scope are fixed;
-- the AI Act and DORA source texts required by those items are in the RAG;
-- the common output and verified-manual procedure have been checked;
-- prompt, model and corpus versions are recorded and are not silently mixed.
-
-## 13. Final analysis choices
-
-Each AI method is run once per item with temperature 0. Applicability handling
-and challenge usefulness are reported qualitatively rather than converted into
-an additional ordinal score. These choices keep the workload proportionate and
-avoid a weak composite quality measure.
-
-## 14. Thesis outputs
-
-Chapter 5 uses three generated tables for dataset, overall and framework-level
-results. Six generated SVG drafts cover review time, mapping accuracy, missing
-mapping detection, evidence and unsupported-claim errors, human correction time
-and paired Manual-versus-Agent time. Framework differences are shown within the
-relevant figures rather than repeated in a separate dashboard.
-
-The reporting script reads only the completed item-level result CSV. Manual
-accuracy is not plotted because the verified Manual review is the baseline.
-System architecture and Agent workflow diagrams are kept as Mermaid drafts for
-manual redrawing in the final thesis.
+Report overall and framework-level results for all three methods. Because all
+methods assess the same items, pairwise accuracy comparisons use paired item
+outcomes. Provision-level material may be retained as historical audit data but
+is not part of the new experiment score.

@@ -1,47 +1,13 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Partially supported",
-      "reason": "Article 9 establishes a risk management system for high-risk AI systems, which is a continuous process requiring regular review and updating. This supports the general objective of monitoring risks. However, it focuses on the provider's proactive risk identification and management during development and testing, rather than the ongoing operational monitoring of drift, misuse, or control failures by deployers, which is the core of the control statement.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 20",
-      "decision": "Partially supported",
-      "reason": "Article 20 obligates providers to take corrective action if they become aware a system is non-conforming or presents a risk. This supports the 'control failure' and 'emerging risks' aspects of the control by requiring a response to identified issues. However, it does not establish the ongoing monitoring mechanisms to detect such failures or risks in the first place.",
-      "evidence_ids": [
-        "eu:32024R1689:article:20:paragraph:1",
-        "eu:32024R1689:article:20:paragraph:2"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 26(5)",
-      "decision": "Supported",
-      "reason": "Article 26(5) directly obligates deployers to monitor the operation of high-risk AI systems and to inform providers of risks or serious incidents. This directly and materially supports the control statement's requirement to monitor drift, misuse, control failure, and emerging risks.",
-      "evidence_ids": [
-        "eu:32024R1689:article:26:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 72",
-      "decision": "Supported",
-      "reason": "Article 72 obligates providers to establish a post-market monitoring system to actively and systematically collect and analyze data on the performance of high-risk AI systems. This directly supports the control statement's requirement to monitor drift, misuse, control failure, and emerging risks throughout the system's lifetime.",
-      "evidence_ids": [
-        "eu:32024R1689:article:72:paragraph:1",
-        "eu:32024R1689:article:72:paragraph:2"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping provides a defensible and sufficiently complete regulatory basis. Article 9 establishes the risk management system, which is a continuous process requiring systematic review and updating. Article 72 mandates a post-market monitoring system to collect and analyze data, which feeds into the risk management process. Article 26(5) requires deployers to monitor the system's operation and report issues. Article 20 addresses corrective actions for non-conformity. Together, these provisions cover the monitoring of drift, misuse, control failure, and emerging risks.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:2",
+    "eu:32024R1689:article:72:paragraph:2",
+    "eu:32024R1689:article:26:paragraph:5",
+    "eu:32024R1689:article:20:paragraph:1"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement is applicable to all AI systems, with stricter requirements for high-risk systems. The reviewed provisions (Articles 9, 20, 26, 72) are specifically targeted at high-risk AI systems, which is consistent with the applicability of the control.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "The mapping is correct. Articles 26(5) and 72 are strongly supported as they directly mandate monitoring by deployers and providers, respectively. Articles 9 and 20 are partially supported as they establish the risk management and corrective action frameworks that are necessary components of a comprehensive monitoring strategy, even if they do not describe the operational monitoring itself."
+  "applicability_note": "The control is applicable to all AI systems, with stricter requirements for high-risk systems. The cited provisions specifically address the obligations of providers and deployers of high-risk AI systems, which are the primary entities responsible for implementing the control.",
+  "challenge_comment": "The mapping effectively links the control objective to the core regulatory requirements for risk management and post-market monitoring. The continuous nature of the risk management system (Art. 9) and the systematic data collection (Art. 72) directly support the monitoring of emerging risks. The obligations for deployers (Art. 26(5)) and providers (Art. 20) ensure a comprehensive approach to identifying and addressing issues."
 }

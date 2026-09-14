@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 13477,
+        "planning_ms": 13249,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -177,10 +177,11 @@
           "claims": [
             {
               "claim_id": "human_review_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human review capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human review capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human review"
+                "human review",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -191,10 +192,11 @@
             },
             {
               "claim_id": "human_rejection_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human rejection capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human rejection capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human rejection"
+                "human rejection",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -205,10 +207,11 @@
             },
             {
               "claim_id": "human_stop_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human stop capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human stop capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human stop"
+                "human stop",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -219,10 +222,11 @@
             },
             {
               "claim_id": "human_override_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human override capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human override capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human override"
+                "human override",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -233,10 +237,11 @@
             },
             {
               "claim_id": "human_escalation_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human escalation capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human escalation capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human escalation"
+                "human escalation",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -253,7 +258,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:42:29.344039"
+            "generated_at": "2026-09-14T19:43:11.593277"
           },
           "limits": {
             "max_claims": 5,
@@ -267,10 +272,11 @@
           {
             "claim": {
               "claim_id": "human_review_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human review capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human review capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human review"
+                "human review",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -281,24 +287,29 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu:32024R1689:article:6:paragraph:3:point:c"
+              "eu:32024R1689:article:6:paragraph:3:point:c",
+              "eu:32024R1689:annex:iv:point:1",
+              "eu:32024R1689:annex:iv:point:3",
+              "eu:32024R1689:recital:12"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses human review capabilities for AI systems?",
-              "human review"
+              "Within Regulation (EU) 2024/1689, what provision addresses human review capabilities for AI systems?",
+              "human review",
+              "AI systems"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "1 evidence item(s) selected from 2 query projection(s) after deterministic-legal-coverage-v3"
+              "4 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "human_rejection_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human rejection capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human rejection capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human rejection"
+                "human rejection",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -307,24 +318,36 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:iv:point:1",
+              "eu:32024R1689:annex:iv:point:1:subpoint:a",
+              "eu:32024R1689:annex:iv:point:1:subpoint:b",
+              "eu:32024R1689:annex:iv:point:1:subpoint:c",
+              "eu:32024R1689:annex:iv:point:1:subpoint:d",
+              "eu:32024R1689:annex:iv:point:1:subpoint:e",
+              "eu:32024R1689:annex:iv:point:1:subpoint:f",
+              "eu:32024R1689:annex:iv:point:1:subpoint:g",
+              "eu:32024R1689:annex:iv:point:1:subpoint:h"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses human rejection capabilities for AI systems?",
-              "human rejection"
+              "Within Regulation (EU) 2024/1689, what provision addresses human rejection capabilities for AI systems?",
+              "human rejection",
+              "AI systems"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 40 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "9 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
             ]
           },
           {
             "claim": {
               "claim_id": "human_stop_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human stop capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human stop capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human stop"
+                "human stop",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -336,24 +359,29 @@
             "status": "covered",
             "evidence_refs": [
               "eu:32024R1689:article:14:paragraph:4:point:e",
-              "eu:32024R1689:recital:73"
+              "eu:32024R1689:annex:iv:point:1",
+              "eu:32024R1689:recital:73",
+              "eu:32024R1689:recital:12",
+              "eu:32024R1689:recital:29"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses human stop capabilities for AI systems?",
-              "human stop"
+              "Within Regulation (EU) 2024/1689, what provision addresses human stop capabilities for AI systems?",
+              "human stop",
+              "AI systems"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "2 evidence item(s) selected from 2 query projection(s) after deterministic-legal-coverage-v3"
+              "5 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "human_override_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human override capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human override capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human override"
+                "human override",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -364,25 +392,29 @@
             },
             "status": "covered",
             "evidence_refs": [
+              "eu:32024R1689:article:7:paragraph:2:point:d",
               "eu:32024R1689:article:14:paragraph:4:point:d",
-              "eu:32024R1689:article:7:paragraph:2:point:d"
+              "eu:32024R1689:annex:iv:point:1",
+              "eu:32024R1689:recital:12"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses human override capabilities for AI systems?",
-              "human override"
+              "Within Regulation (EU) 2024/1689, what provision addresses human override capabilities for AI systems?",
+              "human override",
+              "AI systems"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "2 evidence item(s) selected from 2 query projection(s) after deterministic-legal-coverage-v3"
+              "4 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "human_escalation_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses human escalation capabilities for AI systems?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses human escalation capabilities for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "human escalation"
+                "human escalation",
+                "AI systems"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -391,15 +423,26 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:iv:point:1",
+              "eu:32024R1689:annex:iv:point:1:subpoint:a",
+              "eu:32024R1689:annex:iv:point:1:subpoint:b",
+              "eu:32024R1689:annex:iv:point:1:subpoint:c",
+              "eu:32024R1689:annex:iv:point:1:subpoint:d",
+              "eu:32024R1689:annex:iv:point:1:subpoint:e",
+              "eu:32024R1689:annex:iv:point:1:subpoint:f",
+              "eu:32024R1689:annex:iv:point:1:subpoint:g",
+              "eu:32024R1689:annex:iv:point:1:subpoint:h"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses human escalation capabilities for AI systems?",
-              "human escalation"
+              "Within Regulation (EU) 2024/1689, what provision addresses human escalation capabilities for AI systems?",
+              "human escalation",
+              "AI systems"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 39 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "9 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
             ]
           }
         ],
@@ -415,15 +458,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 32.462,
+  "elapsed_seconds": 32.673,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -449,7 +492,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are human review, rejection, stop, override and escalation available?"
     }
   ],
   "item": {

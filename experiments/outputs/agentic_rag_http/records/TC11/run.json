@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 9104,
+        "planning_ms": 9245,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -177,7 +177,7 @@
           "claims": [
             {
               "claim_id": "institutional_data_training_exclusion",
-              "question": "Is institutional data excluded from training under Regulation (EU) 2024/1689?",
+              "question": "Within Regulation (EU) 2024/1689, is institutional data excluded from training AI systems?",
               "intent": "scope_or_applicability",
               "target_concepts": [
                 "institutional data",
@@ -189,11 +189,17 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "institutional data exclusion training AI systems",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             {
               "claim_id": "institutional_data_opt_out",
-              "question": "Is there an enforceable opt-out for institutional data in training under Regulation (EU) 2024/1689?",
+              "question": "Within Regulation (EU) 2024/1689, is there an enforceable opt-out mechanism for institutional data used in training AI systems?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "institutional data",
@@ -206,7 +212,13 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "institutional data enforceable opt-out training AI systems",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -216,7 +228,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:39:47.795293"
+            "generated_at": "2026-09-14T19:41:04.112459"
           },
           "limits": {
             "max_claims": 5,
@@ -230,7 +242,7 @@
           {
             "claim": {
               "claim_id": "institutional_data_training_exclusion",
-              "question": "Is institutional data excluded from training under Regulation (EU) 2024/1689?",
+              "question": "Within Regulation (EU) 2024/1689, is institutional data excluded from training AI systems?",
               "intent": "scope_or_applicability",
               "target_concepts": [
                 "institutional data",
@@ -242,27 +254,36 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "institutional data exclusion training AI systems",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
-              "eu:32024R1689:recital:68"
+              "eu:32024R1689:recital:24",
+              "eu:32024R1689:recital:68",
+              "eu:32024R1689:article:2"
             ],
             "executed_queries": [
-              "Is institutional data excluded from training under Regulation (EU) 2024/1689?",
+              "Within Regulation (EU) 2024/1689, is institutional data excluded from training AI systems?",
+              "institutional data exclusion training AI systems",
               "institutional data",
               "training",
               "exclusion"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "1 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
+              "3 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "institutional_data_opt_out",
-              "question": "Is there an enforceable opt-out for institutional data in training under Regulation (EU) 2024/1689?",
+              "question": "Within Regulation (EU) 2024/1689, is there an enforceable opt-out mechanism for institutional data used in training AI systems?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "institutional data",
@@ -275,14 +296,19 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "institutional data enforceable opt-out training AI systems",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu:32024R1689:recital:105"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Is there an enforceable opt-out for institutional data in training under Regulation (EU) 2024/1689?",
+              "Within Regulation (EU) 2024/1689, is there an enforceable opt-out mechanism for institutional data used in training AI systems?",
+              "institutional data enforceable opt-out training AI systems",
               "institutional data",
               "opt-out",
               "enforceable",
@@ -290,7 +316,7 @@
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "1 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
+              "the retriever returned 105 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -306,15 +332,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 25.771,
+  "elapsed_seconds": 19.891,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -340,7 +366,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is institutional data excluded from training or subject to enforceable opt-out?"
     }
   ],
   "item": {

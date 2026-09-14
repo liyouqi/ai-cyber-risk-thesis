@@ -1,43 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 establishes the scope and definitions of the AI Act, including what constitutes an AI system. It does not contain any obligations related to monitoring.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 20",
-      "decision": "Supported",
-      "reason": "Article 20 requires providers of high-risk AI systems to establish a post-market monitoring system. This directly supports the control objective of monitoring for drift, misuse, and emerging risks.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 26(5)",
-      "decision": "Unsupported",
-      "reason": "Article 26(5) pertains to the obligations of users of high-risk AI systems, specifically regarding human oversight. It does not address the provider's monitoring obligations.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 72",
-      "decision": "Unsupported",
-      "reason": "Article 72 outlines the powers of the European Artificial Intelligence Board, which is an administrative and governance provision. It does not impose a direct monitoring obligation on providers or users.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 29",
-      "reason": "Article 29 requires providers to establish, implement, and document a quality management system, which includes processes for monitoring and addressing issues. This is a key provision for the control objective.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The control is applicable to all AI systems, with stricter requirements for high-risk systems as defined in the AI Act.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as it correctly identifies Article 20 as a key provision for monitoring. However, it incorrectly includes Articles 9, 26(5), and 72, which do not relate to the monitoring control. The mapping is missing Article 29, which is a critical provision for establishing a quality management system that includes monitoring."
+  "coverage": "Yes",
+  "reason": "The cited articles collectively provide a defensible basis. Art. 9 establishes the general obligation for high-risk AI systems to be monitored. Art. 20 requires a post-market monitoring system, which is the primary mechanism for tracking drift and emerging risks. Art. 26(5) mandates the reporting of serious incidents, which is a key outcome of monitoring for control failures and misuse. Art. 72 outlines the documentation requirements, which would include records of monitoring activities and reviews.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "The mapping is applicable to all AI systems, with the obligations in Articles 9 and 20 being significantly more stringent for those classified as high-risk under the Act.",
+  "challenge_comment": "The mapping is adequate as a set, but the specific control statement asks about 'drift, misuse, control failure and emerging risks'. While Art. 20 covers 'emerging risks', the mapping could be strengthened by explicitly citing a provision that more directly addresses 'drift' or 'control failure' as distinct concepts, if one exists."
 }

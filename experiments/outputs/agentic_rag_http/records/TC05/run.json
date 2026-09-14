@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -155,12 +155,12 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "retrieved",
-        "planning_ms": 12416,
+        "status": "empty",
+        "planning_ms": 12079,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -177,12 +177,11 @@
           "claims": [
             {
               "claim_id": "provision_for_sso_mfa",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the implementation of SSO/MFA requirements?",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses the implementation of SSO/MFA?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "SSO",
-                "MFA",
-                "implementation"
+                "MFA"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -193,11 +192,10 @@
             },
             {
               "claim_id": "provision_for_least_privilege",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the implementation of least privilege principles?",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses the implementation of least privilege principle?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "least privilege",
-                "implementation"
+                "least privilege"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -208,11 +206,10 @@
             },
             {
               "claim_id": "provision_for_access_review",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the implementation of access review requirements?",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses the implementation of access review?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "access review",
-                "implementation"
+                "access review"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -222,18 +219,24 @@
               "query_variants": []
             },
             {
-              "claim_id": "security_measures_provisions",
-              "question": "Which provisions of Regulation (EU) 2024/1689 address general security measures for AI systems?",
-              "intent": "scope_or_applicability",
+              "claim_id": "mapping_comparison",
+              "question": "Within Regulation (EU) 2024/1689, what provisions related to SSO/MFA, least privilege, and access review are missing from the existing mapping?",
+              "intent": "relationship_between_provisions",
               "target_concepts": [
-                "security measures",
-                "AI systems"
+                "mapping",
+                "SSO/MFA",
+                "least privilege",
+                "access review"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
-              "depends_on": [],
-              "importance": "supporting",
+              "depends_on": [
+                "provision_for_sso_mfa",
+                "provision_for_least_privilege",
+                "provision_for_access_review"
+              ],
+              "importance": "required",
               "query_variants": []
             }
           ],
@@ -244,7 +247,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:36:37.830081"
+            "generated_at": "2026-09-14T19:38:17.491352"
           },
           "limits": {
             "max_claims": 5,
@@ -258,12 +261,11 @@
           {
             "claim": {
               "claim_id": "provision_for_sso_mfa",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the implementation of SSO/MFA requirements?",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses the implementation of SSO/MFA?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "SSO",
-                "MFA",
-                "implementation"
+                "MFA"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -275,24 +277,22 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the implementation of SSO/MFA requirements?",
+              "Within Regulation (EU) 2024/1689, what provision addresses the implementation of SSO/MFA?",
               "SSO",
-              "MFA",
-              "implementation"
+              "MFA"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 78 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 60 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "provision_for_least_privilege",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the implementation of least privilege principles?",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses the implementation of least privilege principle?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "least privilege",
-                "implementation"
+                "least privilege"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -304,23 +304,21 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the implementation of least privilege principles?",
-              "least privilege",
-              "implementation"
+              "Within Regulation (EU) 2024/1689, what provision addresses the implementation of least privilege principle?",
+              "least privilege"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 56 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 40 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "provision_for_access_review",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the implementation of access review requirements?",
+              "question": "Within Regulation (EU) 2024/1689, what provision addresses the implementation of access review?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "access review",
-                "implementation"
+                "access review"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -329,56 +327,51 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "partially_covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:66:subparagraph:1:point:e",
-              "eu:32024R1689:article:66:subparagraph:1:point:e:subpoint:ii"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the implementation of access review requirements?",
-              "access review",
-              "implementation"
+              "Within Regulation (EU) 2024/1689, what provision addresses the implementation of access review?",
+              "access review"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+              "the retriever returned 38 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "security_measures_provisions",
-              "question": "Which provisions of Regulation (EU) 2024/1689 address general security measures for AI systems?",
-              "intent": "scope_or_applicability",
+              "claim_id": "mapping_comparison",
+              "question": "Within Regulation (EU) 2024/1689, what provisions related to SSO/MFA, least privilege, and access review are missing from the existing mapping?",
+              "intent": "relationship_between_provisions",
               "target_concepts": [
-                "security measures",
-                "AI systems"
+                "mapping",
+                "SSO/MFA",
+                "least privilege",
+                "access review"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
-              "depends_on": [],
-              "importance": "supporting",
+              "depends_on": [
+                "provision_for_sso_mfa",
+                "provision_for_least_privilege",
+                "provision_for_access_review"
+              ],
+              "importance": "required",
               "query_variants": []
             },
-            "status": "partially_covered",
-            "evidence_refs": [
-              "eu:32024R1689:article:15:paragraph:5",
-              "eu:32024R1689:recital:115",
-              "eu:32024R1689:article:78:paragraph:2",
-              "eu:32024R1689:article:78",
-              "eu:32024R1689:article:4:subparagraph:1",
-              "eu:32024R1689:article:2:paragraph:3",
-              "eu:32024R1689:article:17:paragraph:1:point:l",
-              "eu:32024R1689:article:10:paragraph:5:point:b"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Which provisions of Regulation (EU) 2024/1689 address general security measures for AI systems?",
-              "security measures",
-              "AI systems"
+              "Within Regulation (EU) 2024/1689, what provisions related to SSO/MFA, least privilege, and access review are missing from the existing mapping?",
+              "mapping",
+              "SSO/MFA",
+              "least privilege",
+              "access review"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+              "the retriever returned 97 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -394,15 +387,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 34.631,
+  "elapsed_seconds": 27.15,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -428,7 +421,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are SSO/MFA, least privilege and access review implemented?"
     }
   ],
   "item": {

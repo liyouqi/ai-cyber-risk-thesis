@@ -105,7 +105,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -121,11 +121,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 6652,
+        "planning_ms": 6415,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -142,7 +142,7 @@
           "claims": [
             {
               "claim_id": "inventory_requirement",
-              "question": "Is an inventory of models, components, data sources and subcontractors maintained according to Regulation (EU) 2024/1689?",
+              "question": "Within Regulation (EU) 2024/1689, is there a requirement to maintain an inventory of models, components, data sources and subcontractors?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "inventory",
@@ -156,13 +156,7 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": [
-                {
-                  "query": "inventory of models components data sources subcontractors maintained",
-                  "language": null,
-                  "weight": 1.0
-                }
-              ]
+              "query_variants": []
             }
           ],
           "answer_shape": "structured",
@@ -172,7 +166,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:46:12.664413"
+            "generated_at": "2026-09-14T19:45:37.393800"
           },
           "limits": {
             "max_claims": 5,
@@ -186,7 +180,7 @@
           {
             "claim": {
               "claim_id": "inventory_requirement",
-              "question": "Is an inventory of models, components, data sources and subcontractors maintained according to Regulation (EU) 2024/1689?",
+              "question": "Within Regulation (EU) 2024/1689, is there a requirement to maintain an inventory of models, components, data sources and subcontractors?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "inventory",
@@ -200,22 +194,15 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": [
-                {
-                  "query": "inventory of models components data sources subcontractors maintained",
-                  "language": null,
-                  "weight": 1.0
-                }
-              ]
+              "query_variants": []
             },
             "status": "covered",
             "evidence_refs": [
-              "eu:32024R1689:recital:89",
-              "eu:32024R1689:recital:103"
+              "eu:32024R1689:recital:103",
+              "eu:32024R1689:recital:89"
             ],
             "executed_queries": [
-              "Is an inventory of models, components, data sources and subcontractors maintained according to Regulation (EU) 2024/1689?",
-              "inventory of models components data sources subcontractors maintained",
+              "Within Regulation (EU) 2024/1689, is there a requirement to maintain an inventory of models, components, data sources and subcontractors?",
               "inventory",
               "models",
               "components",
@@ -224,7 +211,7 @@
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "2 evidence item(s) selected from 7 query projection(s) after deterministic-legal-coverage-v3"
+              "2 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -240,17 +227,19 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 15.638,
-  "model_attempts": 1,
-  "guardrail_changes": [],
+  "elapsed_seconds": 24.496,
+  "model_attempts": 2,
+  "guardrail_changes": [
+    "Removed a missing-mapping proposal without valid evidence"
+  ],
   "queries": [
     {
       "purpose": "validate",
@@ -268,7 +257,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?"
     }
   ],
   "item": {

@@ -1,35 +1,21 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 of the EU AI Act addresses the classification of AI systems and their risk levels, which is a governance and categorization requirement. It does not impose specific technical obligations for data encryption.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 of the EU AI Act pertains to the obligations of users of high-risk AI systems, focusing on their responsibilities for use and oversight. It does not contain requirements for data encryption.",
-      "evidence_ids": []
-    }
-  ],
+  "coverage": "No",
+  "reason": "The mapping to Articles 9 and 15 of the EU AI Act is insufficient to support the control objective of data encryption. Article 9 addresses data governance and quality, while Article 15 covers transparency obligations for high-risk AI systems. Neither provision mandates or supports the technical requirement for encrypting data in transit and at rest.",
+  "evidence_ids": [],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15(3)(b)",
-      "reason": "This provision requires users of high-risk AI systems to implement appropriate technical and organizational measures to ensure the security of the system throughout its lifecycle. This includes protecting data, which would encompass encryption.",
+      "provision": "Article 4(2)",
+      "reason": "This article requires that high-risk AI systems be designed and developed with appropriate cybersecurity measures, which would include data encryption as a standard practice to ensure confidentiality and integrity.",
       "evidence_ids": []
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15(3)(c)",
-      "reason": "This provision mandates that users ensure the AI system is resilient against reasonably foreseeable misuse or malfunction. Data encryption is a key technical measure for ensuring such resilience.",
+      "provision": "Article 15(3)",
+      "reason": "This provision requires that high-risk AI systems be designed and developed with appropriate cybersecurity measures, which would include data encryption as a standard practice to ensure confidentiality and integrity.",
       "evidence_ids": []
     }
   ],
-  "applicability_note": "The control is applicable to providers of high-risk AI systems and users of such systems when they process protected data.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect. The control statement requires technical measures for data encryption, which is not addressed by the general risk classification in Article 9 or the user obligations in Article 15. The correct mapping should be to the specific security and resilience requirements in Article 15(3)(b) and (c)."
+  "applicability_note": "The control is applicable to any system processing protected data, as defined by the regulation, which would include personal data and other sensitive information.",
+  "challenge_comment": "The challenge lies in the fact that the EU AI Act is a sector-specific regulation focused on AI systems, and its provisions on cybersecurity are general. The mapping to Articles 9 and 15 is too broad and does not provide a specific legal basis for the encryption control."
 }

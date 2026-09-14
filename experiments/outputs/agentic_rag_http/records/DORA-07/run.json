@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 12262,
+        "planning_ms": 11655,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
-          "standalone_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
           "scope": {
             "frameworks": [
               "dora"
@@ -113,7 +113,7 @@
           "claims": [
             {
               "claim_id": "mandatory_ict_training_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 mandates ICT security and digital operational resilience training?",
+              "question": "Within DORA and its related delegated regulations, what provision makes ICT security and digital operational resilience training mandatory?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT security training",
@@ -125,11 +125,17 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "mandatory ICT security and digital operational resilience training provision in DORA",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             {
-              "claim_id": "minimum_training_hours_requirement",
-              "question": "Does Regulation (EU) 2022/2554 specify a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "claim_id": "absent_minimum_training_hours",
+              "question": "Within DORA and its related delegated regulations, is there a provision specifying a minimum number of training hours per year for ICT security and digital operational resilience training?",
               "intent": "threshold_or_condition",
               "target_concepts": [
                 "minimum training hours"
@@ -137,11 +143,40 @@
               "expected_evidence_roles": [
                 "condition_or_threshold"
               ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "minimum number of training hours per year for ICT security and digital operational resilience training in DORA",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "mapping_gap_analysis",
+              "question": "Within DORA and its related delegated regulations, what important provision related to mandatory ICT security and digital operational resilience training is missing from existing mappings that specify training requirements?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping gap",
+                "training requirements",
+                "provision mapping"
+              ],
+              "expected_evidence_roles": [
+                "supporting_context"
+              ],
               "depends_on": [
-                "mandatory_ict_training_provision"
+                "mandatory_ict_training_provision",
+                "absent_minimum_training_hours"
               ],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "missing provision in mapping of mandatory ICT security training requirements in DORA",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -151,7 +186,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:49:37.250238"
+            "generated_at": "2026-09-14T19:48:47.437434"
           },
           "limits": {
             "max_claims": 5,
@@ -165,7 +200,7 @@
           {
             "claim": {
               "claim_id": "mandatory_ict_training_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 mandates ICT security and digital operational resilience training?",
+              "question": "Within DORA and its related delegated regulations, what provision makes ICT security and digital operational resilience training mandatory?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT security training",
@@ -177,34 +212,40 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "mandatory ICT security and digital operational resilience training provision in DORA",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
               "eu-2022-2554-article-13-6",
-              "eu-2022-2554-article-25-1",
               "eu-2022-2554-article-5-2-g",
               "eu-2022-2554-article-16-1-h",
               "eu-2022-2554-article-30-2-i",
-              "eu-2022-2554-article-24-1",
-              "eu-2022-2554-article-24-6",
-              "eu-2024-1774-article-2-2-a"
+              "eu-2024-1774-article-28-2-e",
+              "eu-2024-1774-article-11-2-k",
+              "eu-2022-2554-article-3-1"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 mandates ICT security and digital operational resilience training?",
+              "Within DORA and its related delegated regulations, what provision makes ICT security and digital operational resilience training mandatory?",
+              "mandatory ICT security and digital operational resilience training provision in DORA",
               "ICT security training",
               "digital operational resilience training",
               "mandatory training"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
+              "7 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "minimum_training_hours_requirement",
-              "question": "Does Regulation (EU) 2022/2554 specify a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "claim_id": "absent_minimum_training_hours",
+              "question": "Within DORA and its related delegated regulations, is there a provision specifying a minimum number of training hours per year for ICT security and digital operational resilience training?",
               "intent": "threshold_or_condition",
               "target_concepts": [
                 "minimum training hours"
@@ -212,27 +253,66 @@
               "expected_evidence_roles": [
                 "condition_or_threshold"
               ],
-              "depends_on": [
-                "mandatory_ict_training_provision"
-              ],
+              "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "minimum number of training hours per year for ICT security and digital operational resilience training in DORA",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu-2022-2554-article-5-2-g",
-              "eu-2022-2554-article-13-6",
-              "eu-2024-1774-article-28-2-e",
-              "eu-2022-2554-article-30-2-i",
-              "eu-2022-2554-article-16-1-h"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Does Regulation (EU) 2022/2554 specify a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "Within DORA and its related delegated regulations, is there a provision specifying a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "minimum number of training hours per year for ICT security and digital operational resilience training in DORA",
               "minimum training hours"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "5 evidence item(s) selected from 2 query projection(s) after deterministic-legal-coverage-v3"
+              "the retriever returned 42 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "mapping_gap_analysis",
+              "question": "Within DORA and its related delegated regulations, what important provision related to mandatory ICT security and digital operational resilience training is missing from existing mappings that specify training requirements?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping gap",
+                "training requirements",
+                "provision mapping"
+              ],
+              "expected_evidence_roles": [
+                "supporting_context"
+              ],
+              "depends_on": [
+                "mandatory_ict_training_provision",
+                "absent_minimum_training_hours"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "missing provision in mapping of mandatory ICT security training requirements in DORA",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Within DORA and its related delegated regulations, what important provision related to mandatory ICT security and digital operational resilience training is missing from existing mappings that specify training requirements?",
+              "missing provision in mapping of mandatory ICT security training requirements in DORA",
+              "mapping gap",
+              "training requirements",
+              "provision mapping"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "the retriever returned 84 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -248,15 +328,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 23.772,
+  "elapsed_seconds": 22.61,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -270,7 +350,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified"
     }
   ],
   "item": {

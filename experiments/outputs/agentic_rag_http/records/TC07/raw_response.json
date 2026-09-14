@@ -1,44 +1,20 @@
 {
-  "mapping_reviews": [
+  "coverage": "No",
+  "reason": "The existing mapping to Articles 9 and 15 of the EU AI Act is insufficient to support the control objective of data encryption in transit and at rest with managed keys. Article 9 establishes a general risk management framework, and Article 15 requires cybersecurity but does not specify data encryption or key management as a technical control.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:1"
+  ],
+  "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "The provision focuses on establishing a general risk management system for high-risk AI systems, which is a broad process for identifying and mitigating risks. It does not specifically address the technical requirement of encrypting data in transit or at rest.",
+      "provision": "Article 15(5)",
+      "reason": "While Article 15(5) requires cybersecurity measures, it focuses on resilience against attacks like data poisoning and adversarial examples, not the specific requirement for data encryption in transit and at rest with managed keys.",
       "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2",
-        "eu:32024R1689:article:9:paragraph:2:point:a",
-        "eu:32024R1689:article:9:paragraph:2:point:b",
-        "eu:32024R1689:article:9:paragraph:2:point:c",
-        "eu:32024R1689:article:9:paragraph:2:point:d",
-        "eu:32024R1689:article:9:paragraph:3",
-        "eu:32024R1689:article:9:paragraph:4",
-        "eu:32024R1689:article:9:paragraph:5",
-        "eu:32024R1689:article:9:paragraph:5:point:a",
-        "eu:32024R1689:article:9:paragraph:5:point:b",
-        "eu:32024R1689:article:9:paragraph:5:point:c",
-        "eu:32024R1689:article:9:paragraph:5:text-block:4",
-        "eu:32024R1689:article:9:paragraph:6",
-        "eu:32024R1689:article:9:paragraph:7",
-        "eu:32024R1689:article:9:paragraph:8",
-        "eu:32024R1689:article:9:paragraph:9",
-        "eu:32024R1689:article:9:paragraph:10"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Partially supported",
-      "reason": "Article 15(1) requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity. Article 15(5) further specifies that systems must be resilient against unauthorised third parties by exploiting vulnerabilities and lists specific AI-related attacks. While this establishes a cybersecurity obligation, it is a high-level requirement and does not specifically mandate encryption of data in transit or at rest as a technical control.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1",
         "eu:32024R1689:article:15:paragraph:5"
       ]
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 9 is incorrect as it addresses a general risk management process, not specific data protection controls like encryption. The mapping to Article 15 is partially correct as it establishes a cybersecurity requirement, but it is too broad to be considered a direct and material support for the specific control of encrypting data in transit and at rest."
+  "applicability_note": "The control is applicable to high-risk AI systems under the EU AI Act, which handle protected data.",
+  "challenge_comment": "The EU AI Act's cybersecurity requirements are broad and do not explicitly mandate data encryption, making it difficult to establish a direct regulatory basis for this specific control."
 }

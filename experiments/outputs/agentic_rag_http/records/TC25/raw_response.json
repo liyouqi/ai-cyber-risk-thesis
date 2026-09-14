@@ -1,39 +1,12 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 11",
-      "decision": "Supported",
-      "reason": "Article 11 directly requires the creation and maintenance of technical documentation for high-risk AI systems, which is the core objective of the control statement. The evidence shows it mandates documentation to demonstrate compliance and provides information to assessors, covering the requirement to document architecture, purpose, versions, tests, and controls.",
-      "evidence_ids": [
-        "eu:32024R1689:article:11:paragraph:1",
-        "eu:32024R1689:article:11:paragraph:2",
-        "eu:32024R1689:article:11:paragraph:3"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 13",
-      "decision": "Partially supported",
-      "reason": "Article 13 requires instructions for use, which is a key part of the documentation. The evidence shows it mandates instructions that include details on the system's purpose, characteristics, limitations, and performance, supporting the control's objective. However, it does not cover the full scope of the control statement, such as the technical file or test pack.",
-      "evidence_ids": [
-        "eu:32024R1689:article:13:paragraph:1",
-        "eu:32024R1689:article:13:paragraph:2",
-        "eu:32024R1689:article:13:paragraph:3"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Partially supported",
-      "reason": "Article 17 requires a documented quality management system, which supports the control's objective of having documented instructions and procedures. The evidence shows it mandates written policies and procedures for design, development, testing, and validation. However, it does not directly address the creation of the technical file or test pack itself, which are specific outputs of the documentation process.",
-      "evidence_ids": [
-        "eu:32024R1689:article:17"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping of Articles 11, 13, and 17 provides a defensible and sufficiently complete regulatory basis for the control objective. Article 11 mandates the creation and maintenance of technical documentation, which is the core requirement. Article 13 specifies the required content for instructions for use, which includes details on the system's purpose, performance, and limitations. Article 17 requires a documented quality management system that includes procedures for design, testing, and validation, which supports the documentation of tests and controls. The evidence confirms these provisions collectively cover the documentation of architecture, purpose, versions, limits, tests, controls, and instructions.",
+  "evidence_ids": [
+    "eu:32024R1689:article:11:paragraph:1",
+    "eu:32024R1689:article:13:paragraph:2",
+    "eu:32024R1689:article:17"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control is applicable to providers of high-risk AI systems, as specified in the assessment item.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The existing mappings are appropriate. Article 11 is the primary support for the documentation requirement, while Articles 13 and 17 provide relevant but partial support by addressing specific components (instructions and quality management) of the overall documentation process."
+  "applicability_note": "This control is applicable to providers of high-risk AI systems as defined by the EU AI Act. The cited provisions are specifically directed at such providers.",
+  "challenge_comment": "The control requires documentation of 'architecture, purpose, versions, limits, tests, controls and instructions'. While Article 11 mandates the technical documentation, the specific content required by Annex IV (e.g., system architecture, versioning, testing procedures, and cybersecurity measures) is not explicitly detailed in the main text of Article 11 itself. However, the mapping is still considered complete because Article 11 explicitly refers to Annex IV for the required content, and the other cited articles (13 and 17) provide direct support for the instructions and testing/controls aspects."
 }

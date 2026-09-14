@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 6383,
+        "planning_ms": 8806,
         "plan": {
-          "plan_id": "ai_act_privilege_segregation",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+          "plan_id": "auto",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -177,8 +177,8 @@
           "claims": [
             {
               "claim_id": "privilege_segregation_requirement",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the segregation and control of administrative, model, and security configuration privileges?",
-              "intent": "obligation_or_prohibition",
+              "question": "Within Regulation (EU) 2024/1689, what provisions address the segregation and control of administrative, model, and security configuration privileges?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "privilege segregation",
                 "administrative privileges",
@@ -197,6 +197,29 @@
                   "weight": 1.0
                 }
               ]
+            },
+            {
+              "claim_id": "missing_provision_identification",
+              "question": "Within Regulation (EU) 2024/1689, which provisions are materially necessary for the requirement of segregating and controlling admin, model and security configuration privileges but are absent from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "missing provisions",
+                "privilege segregation requirement"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "privilege_segregation_requirement"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "missing provisions privilege segregation administrative model security configuration",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -206,7 +229,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:37:06.416746"
+            "generated_at": "2026-09-14T19:38:41.444516"
           },
           "limits": {
             "max_claims": 5,
@@ -220,8 +243,8 @@
           {
             "claim": {
               "claim_id": "privilege_segregation_requirement",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the segregation and control of administrative, model, and security configuration privileges?",
-              "intent": "obligation_or_prohibition",
+              "question": "Within Regulation (EU) 2024/1689, what provisions address the segregation and control of administrative, model, and security configuration privileges?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "privilege segregation",
                 "administrative privileges",
@@ -244,7 +267,7 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the segregation and control of administrative, model, and security configuration privileges?",
+              "Within Regulation (EU) 2024/1689, what provisions address the segregation and control of administrative, model, and security configuration privileges?",
               "privilege segregation administrative model security configuration",
               "privilege segregation",
               "administrative privileges",
@@ -253,7 +276,44 @@
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 99 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 98 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "missing_provision_identification",
+              "question": "Within Regulation (EU) 2024/1689, which provisions are materially necessary for the requirement of segregating and controlling admin, model and security configuration privileges but are absent from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "missing provisions",
+                "privilege segregation requirement"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "privilege_segregation_requirement"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "missing provisions privilege segregation administrative model security configuration",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Within Regulation (EU) 2024/1689, which provisions are materially necessary for the requirement of segregating and controlling admin, model and security configuration privileges but are absent from existing mappings?",
+              "missing provisions privilege segregation administrative model security configuration",
+              "missing provisions",
+              "privilege segregation requirement"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "the retriever returned 68 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -269,15 +329,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 32.635,
+  "elapsed_seconds": 26.259,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -303,7 +363,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are admin, model and security configuration privileges segregated and controlled?"
     }
   ],
   "item": {

@@ -1,48 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 of the EU AI Act generally pertains to the obligations of providers regarding the design and development of AI systems, focusing on risk management and ensuring the AI system is safe and in conformity with the law. It does not specifically address the operational resilience requirements like capacity, redundancy, or recovery.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 of the EU AI Act deals with the obligations of users of high-risk AI systems, such as using the system in accordance with its intended purpose and ensuring human oversight. It does not cover the technical resilience measures of the system itself.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 of the EU AI Act outlines the obligations of providers regarding the post-market monitoring of high-risk AI systems. While this involves monitoring for issues, it is distinct from the proactive design and implementation of capacity, redundancy, and fail-safe mechanisms.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15(3)",
-      "reason": "This article requires users to ensure human oversight and the ability to override the AI system's decision. This is a key part of the manual fallback requirement.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17(1)(a)",
-      "reason": "This article requires providers to establish a post-market monitoring system to collect, document, and analyze data on the performance of the AI system. This is related to the recovery and resilience aspects of the control.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17(1)(b)",
-      "reason": "This article requires providers to take corrective actions in case of serious incidents or malfunctions. This is directly related to the recovery and fail-safe aspects of the control.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The control is applicable to high-risk AI systems under the EU AI Act.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mapping is incorrect. The control focuses on the technical resilience of the AI system (capacity, redundancy, fail-safe, recovery, manual fallback), which is not directly addressed by the mapped articles. The correct mapping should include provisions related to the operational aspects of high-risk AI systems, such as human oversight (Article 15(3)) and post-market monitoring (Article 17)."
+  "coverage": "Yes",
+  "reason": "The mapping to Articles 9, 15, and 17 of the EU AI Act provides a defensible and sufficiently complete regulatory basis. Article 9 covers risk management and mitigation, which includes capacity and redundancy. Article 15 addresses incident and risk notification, implying the need for recovery and fallback. Article 17 mandates post-market monitoring and corrective actions, which supports recovery and fail-safe mechanisms.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "This assessment is specific to the 'Critical use' applicability of the EU AI Act, where the requirements for resilience are most stringent.",
+  "challenge_comment": "The control objective is well-covered by the general principles of risk management, incident response, and post-market obligations within the EU AI Act."
 }

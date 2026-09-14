@@ -1,18 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2022/2554",
-      "provision": "Article 11(6)",
-      "decision": "Supported",
-      "reason": "Article 11(6)(a) directly requires financial entities to test ICT business continuity and response/recovery plans at least yearly and after substantive changes to critical or important functions, which matches the control statement's requirements.",
-      "evidence_ids": [
-        "eu-2022-2554-article-11-6",
-        "eu-2022-2554-article-11-6-a"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping to Article 11(6) of Regulation (EU) 2022/2554 is defensible and complete. The evidence, specifically Article 11(6)(a), directly supports the control objective by mandating the annual testing of ICT business continuity and response/recovery plans, as well as testing after substantive changes to critical or important functions.",
+  "evidence_ids": [
+    "eu-2022-2554-article-11-6-a"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The mapping to Article 11(6) is correct and should be retained."
+  "applicability_note": "This control is applicable to financial entities under the DORA regulation, which requires them to test their ICT business continuity plans annually and after major changes.",
+  "challenge_comment": "The mapping is clear and directly supported by the text of the regulation. No additional provisions are needed to establish the required testing frequency and triggers."
 }

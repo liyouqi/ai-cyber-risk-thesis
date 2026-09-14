@@ -1,15 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
-      "provision": "Article 21(1)(e)(iv)",
-      "decision": "Supported",
-      "reason": "Article 21(1)(e)(iv) requires entities to review access rights at least annually, which directly and materially supports the control objective of an annual access rights review.",
-      "evidence_ids": []
-    }
-  ],
+  "coverage": "Yes",
+  "reason": "Article 21(1)(e)(iv) of DORA requires entities to review access rights at least annually. This directly supports the control objective of performing an annual access rights review for ordinary systems.",
+  "evidence_ids": [],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is known.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping is correct and should be retained."
+  "applicability_note": "This mapping is specific to the DORA framework and applies to all entities within its scope, including financial market infrastructures, financial institutions, and certain investment firms.",
+  "challenge_comment": "The mapping is direct and sufficient. The control statement 'At least once a year' is explicitly mandated by the cited provision, leaving no ambiguity about the required frequency."
 }

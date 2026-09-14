@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 14147,
+        "planning_ms": 9267,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year",
-          "standalone_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year",
           "scope": {
             "frameworks": [
               "dora"
@@ -112,32 +112,11 @@
           },
           "claims": [
             {
-              "claim_id": "identify_testing_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires testing of ICT systems and applications supporting critical or important functions at least once a year?",
+              "claim_id": "dora_annual_testing_requirement",
+              "question": "Within DORA and its related delegated regulations, what is the specific provision that requires testing all ICT systems and applications supporting critical or important functions appropriately at least once a year?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "testing",
                 "ICT systems",
-                "applications",
-                "critical or important functions",
-                "at least once a year"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "identify_mapping_provisions",
-              "question": "Which provisions of Regulation (EU) 2022/2554 are currently mapped to the requirement of testing ICT systems and applications supporting critical or important functions at least once a year?",
-              "intent": "scope_or_applicability",
-              "target_concepts": [
-                "mapping",
-                "testing",
-                "ICT systems",
-                "applications",
                 "critical or important functions"
               ],
               "expected_evidence_roles": [
@@ -148,25 +127,19 @@
               "query_variants": []
             },
             {
-              "claim_id": "identify_missing_provisions",
-              "question": "Which provisions of Regulation (EU) 2022/2554 are materially necessary for the requirement to test all ICT systems and applications supporting critical or important functions appropriately at least once a year but are not included in the existing mapping?",
+              "claim_id": "dora_mapping_provision_absence",
+              "question": "Within DORA and its related delegated regulations, which important provision is materially necessary for the annual testing requirement but absent from existing mappings?",
               "intent": "relationship_between_provisions",
               "target_concepts": [
-                "materially necessary",
-                "testing",
-                "ICT systems",
-                "applications",
-                "critical or important functions",
-                "appropriately",
-                "once a year",
-                "mapping"
+                "mapping",
+                "provision absence",
+                "material necessity"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [
-                "identify_testing_requirement",
-                "identify_mapping_provisions"
+                "dora_annual_testing_requirement"
               ],
               "importance": "required",
               "query_variants": []
@@ -179,7 +152,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:48:36.332673"
+            "generated_at": "2026-09-14T19:47:44.987116"
           },
           "limits": {
             "max_claims": 5,
@@ -192,57 +165,11 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "identify_testing_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires testing of ICT systems and applications supporting critical or important functions at least once a year?",
+              "claim_id": "dora_annual_testing_requirement",
+              "question": "Within DORA and its related delegated regulations, what is the specific provision that requires testing all ICT systems and applications supporting critical or important functions appropriately at least once a year?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "testing",
                 "ICT systems",
-                "applications",
-                "critical or important functions",
-                "at least once a year"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu-2024-1774-article-21-e-iv",
-              "eu-2022-2554-article-24-6",
-              "eu-2022-2554-article-26-2",
-              "eu-2022-2554-article-25-2",
-              "eu-2024-1774-article-26-1-b",
-              "eu-2022-2554-article-11-6-a",
-              "eu-2024-1774-article-25-2-c",
-              "eu-2024-1774-article-13-i"
-            ],
-            "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires testing of ICT systems and applications supporting critical or important functions at least once a year?",
-              "testing",
-              "ICT systems",
-              "applications",
-              "critical or important functions",
-              "at least once a year"
-            ],
-            "candidate_count": 1381,
-            "coverage_reasons": [
-              "8 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "identify_mapping_provisions",
-              "question": "Which provisions of Regulation (EU) 2022/2554 are currently mapped to the requirement of testing ICT systems and applications supporting critical or important functions at least once a year?",
-              "intent": "scope_or_applicability",
-              "target_concepts": [
-                "mapping",
-                "testing",
-                "ICT systems",
-                "applications",
                 "critical or important functions"
               ],
               "expected_evidence_roles": [
@@ -254,71 +181,50 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2024-1774-article-21-e-iv",
               "eu-2022-2554-article-24-6",
-              "eu-2022-2554-article-26-2",
-              "eu-2024-1774-article-26-1-b",
-              "eu-2022-2554-article-11-6-a",
-              "eu-2022-2554-article-25-2"
+              "eu-2024-1774-article-21-e-iv",
+              "eu-2022-2554-article-11-6-a"
             ],
             "executed_queries": [
-              "Which provisions of Regulation (EU) 2022/2554 are currently mapped to the requirement of testing ICT systems and applications supporting critical or important functions at least once a year?",
-              "mapping",
-              "testing",
+              "Within DORA and its related delegated regulations, what is the specific provision that requires testing all ICT systems and applications supporting critical or important functions appropriately at least once a year?",
               "ICT systems",
-              "applications",
               "critical or important functions"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "6 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
+              "3 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "identify_missing_provisions",
-              "question": "Which provisions of Regulation (EU) 2022/2554 are materially necessary for the requirement to test all ICT systems and applications supporting critical or important functions appropriately at least once a year but are not included in the existing mapping?",
+              "claim_id": "dora_mapping_provision_absence",
+              "question": "Within DORA and its related delegated regulations, which important provision is materially necessary for the annual testing requirement but absent from existing mappings?",
               "intent": "relationship_between_provisions",
               "target_concepts": [
-                "materially necessary",
-                "testing",
-                "ICT systems",
-                "applications",
-                "critical or important functions",
-                "appropriately",
-                "once a year",
-                "mapping"
+                "mapping",
+                "provision absence",
+                "material necessity"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [
-                "identify_testing_requirement",
-                "identify_mapping_provisions"
+                "dora_annual_testing_requirement"
               ],
               "importance": "required",
               "query_variants": []
             },
-            "status": "covered",
-            "evidence_refs": [
-              "eu-2024-1774-article-21-e-iv",
-              "eu-2022-2554-article-24-6",
-              "eu-2022-2554-article-11-6-a"
-            ],
+            "status": "not_covered",
+            "evidence_refs": [],
             "executed_queries": [
-              "Which provisions of Regulation (EU) 2022/2554 are materially necessary for the requirement to test all ICT systems and applications supporting critical or important functions appropriately at least once a year but are not included in the existing mapping?",
-              "materially necessary",
-              "testing",
-              "ICT systems",
-              "applications",
-              "critical or important functions",
-              "appropriately",
-              "once a year",
-              "mapping"
+              "Within DORA and its related delegated regulations, which important provision is materially necessary for the annual testing requirement but absent from existing mappings?",
+              "mapping",
+              "provision absence",
+              "material necessity"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "3 evidence item(s) selected from 9 query projection(s) after deterministic-legal-coverage-v3"
+              "the retriever returned 79 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -334,15 +240,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 26.529,
+  "elapsed_seconds": 17.869,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -356,7 +262,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test all ICT systems and applications supporting critical or important functions appropriately at least once a year"
     }
   ],
   "item": {

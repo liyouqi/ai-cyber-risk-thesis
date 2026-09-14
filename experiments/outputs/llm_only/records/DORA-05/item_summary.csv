@@ -1,2 +1,2 @@
-item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-05,Correct,[],The control is applicable to all financial entities as defined by DORA.,No challenge is needed. The mapping to Article 28(3) is correct and should be retained.
+item_id,coverage,reason,missing_mapping,evidence_reference,evidence_excerpt,applicability_note,challenge_comment
+DORA-05,Yes,"Article 28(3) of DORA requires entities to report annually to the competent authority on their ICT third-party risk management, including the number of new arrangements, provider categories, contract types, and supported functions. This directly supports the control objective.",[],,,This mapping is specific to DORA and applies to all financial entities within its scope.,"The mapping is direct and complete, with no apparent gaps in coverage for the stated control objective."

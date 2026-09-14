@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 9827,
+        "planning_ms": 7399,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
-          "standalone_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement",
           "scope": {
             "frameworks": [
               "dora"
@@ -112,8 +112,8 @@
           },
           "claims": [
             {
-              "claim_id": "ict_business_continuity_testing_communication_plans",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires including communication plans in ICT business continuity testing?",
+              "claim_id": "dora_communication_plans_bct",
+              "question": "Within DORA and its related delegated regulations, what provision requires including communication plans in ICT business continuity testing?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "communication plans",
@@ -124,15 +124,20 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA requirement for including communication plans in ICT business continuity testing",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             {
-              "claim_id": "timing_requirement_communication_plans_testing",
-              "question": "Does Regulation (EU) 2022/2554 specify a uniform timing requirement for including communication plans in ICT business continuity testing?",
+              "claim_id": "dora_timing_requirement_bct",
+              "question": "Within DORA and its related delegated regulations, is there a uniform timing requirement for ICT business continuity testing?",
               "intent": "frequency_or_deadline",
               "target_concepts": [
                 "timing requirement",
-                "communication plans",
                 "ICT business continuity testing"
               ],
               "expected_evidence_roles": [
@@ -140,7 +145,13 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA uniform timing requirement for ICT business continuity testing",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -150,7 +161,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:48:09.913423"
+            "generated_at": "2026-09-14T19:47:26.141157"
           },
           "limits": {
             "max_claims": 5,
@@ -163,8 +174,8 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "ict_business_continuity_testing_communication_plans",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires including communication plans in ICT business continuity testing?",
+              "claim_id": "dora_communication_plans_bct",
+              "question": "Within DORA and its related delegated regulations, what provision requires including communication plans in ICT business continuity testing?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "communication plans",
@@ -175,33 +186,41 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA requirement for including communication plans in ICT business continuity testing",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2024-1774-article-25-3",
-              "eu-2024-1774-article-25-3-a",
-              "eu-2024-1774-article-25-3-b",
-              "eu-2024-1774-article-25-3-c"
+              "eu-2024-1774-article-25-2-d",
+              "eu-2024-1774-article-39-2-i",
+              "eu-2022-2554-article-11-6-b",
+              "eu-2024-1774-article-25-2-a",
+              "eu-2022-2554-article-16-3-d",
+              "eu-2022-2554-article-13-2-d"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires including communication plans in ICT business continuity testing?",
+              "Within DORA and its related delegated regulations, what provision requires including communication plans in ICT business continuity testing?",
+              "DORA requirement for including communication plans in ICT business continuity testing",
               "communication plans",
               "ICT business continuity testing"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "4 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
+              "6 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "timing_requirement_communication_plans_testing",
-              "question": "Does Regulation (EU) 2022/2554 specify a uniform timing requirement for including communication plans in ICT business continuity testing?",
+              "claim_id": "dora_timing_requirement_bct",
+              "question": "Within DORA and its related delegated regulations, is there a uniform timing requirement for ICT business continuity testing?",
               "intent": "frequency_or_deadline",
               "target_concepts": [
                 "timing requirement",
-                "communication plans",
                 "ICT business continuity testing"
               ],
               "expected_evidence_roles": [
@@ -209,28 +228,27 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA uniform timing requirement for ICT business continuity testing",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2024-1774-article-25-2-d",
-              "eu-2024-1774-article-25-3",
-              "eu-2024-1774-article-25-4",
-              "eu-2024-1774-article-25-2",
-              "eu-2024-1774-article-25-1",
-              "eu-2024-1774-article-25-5",
-              "eu-2022-2554-article-11-6-b",
-              "eu-2024-1774-article-40-1"
+              "eu-2022-2554-article-16-3-d"
             ],
             "executed_queries": [
-              "Does Regulation (EU) 2022/2554 specify a uniform timing requirement for including communication plans in ICT business continuity testing?",
+              "Within DORA and its related delegated regulations, is there a uniform timing requirement for ICT business continuity testing?",
+              "DORA uniform timing requirement for ICT business continuity testing",
               "timing requirement",
-              "communication plans",
               "ICT business continuity testing"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
+              "1 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -246,15 +264,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 22.093,
+  "elapsed_seconds": 16.945,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -268,7 +286,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include communication plans in ICT business continuity testing, but there is no uniform timing requirement"
     }
   ],
   "item": {

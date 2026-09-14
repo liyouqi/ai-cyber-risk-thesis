@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 9329,
+        "planning_ms": 6149,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -176,9 +176,9 @@
           },
           "claims": [
             {
-              "claim_id": "provision_for_capacity_redundancy_failsafe_recovery_fallback",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for capacity, redundancy, fail-safe, recovery, and manual fallback?",
-              "intent": "minimum_requirements",
+              "claim_id": "provision_mapping_requirement",
+              "question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for the requirement regarding capacity, redundancy, fail-safe, recovery and manual fallback but absent from the existing mapping?",
+              "intent": "relationship_between_provisions",
               "target_concepts": [
                 "capacity",
                 "redundancy",
@@ -201,7 +201,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:43:33.211567"
+            "generated_at": "2026-09-14T19:44:01.017820"
           },
           "limits": {
             "max_claims": 5,
@@ -214,9 +214,9 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "provision_for_capacity_redundancy_failsafe_recovery_fallback",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for capacity, redundancy, fail-safe, recovery, and manual fallback?",
-              "intent": "minimum_requirements",
+              "claim_id": "provision_mapping_requirement",
+              "question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for the requirement regarding capacity, redundancy, fail-safe, recovery and manual fallback but absent from the existing mapping?",
+              "intent": "relationship_between_provisions",
               "target_concepts": [
                 "capacity",
                 "redundancy",
@@ -234,7 +234,7 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses requirements for capacity, redundancy, fail-safe, recovery, and manual fallback?",
+              "Within Regulation (EU) 2024/1689, which important provision is materially necessary for the requirement regarding capacity, redundancy, fail-safe, recovery and manual fallback but absent from the existing mapping?",
               "capacity",
               "redundancy",
               "fail-safe",
@@ -259,19 +259,17 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 35.388,
-  "model_attempts": 2,
-  "guardrail_changes": [
-    "Removed unknown evidence IDs from Article 17"
-  ],
+  "elapsed_seconds": 15.196,
+  "model_attempts": 1,
+  "guardrail_changes": [],
   "queries": [
     {
       "purpose": "validate",
@@ -295,7 +293,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are capacity, redundancy, fail-safe, recovery and manual fallback provided?"
     }
   ],
   "item": {

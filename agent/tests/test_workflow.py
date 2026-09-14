@@ -17,18 +17,11 @@ class FakeLlm:
 
     def generate_json(self, system_prompt: str, user_prompt: str) -> dict[str, object]:
         return {
-            "mapping_reviews": [
-                {
-                    "instrument": "Test Regulation",
-                    "provision": "Article 1",
-                    "decision": "Supported",
-                    "reason": "The evidence expressly requires an access review record.",
-                    "evidence_ids": ["test-article-1"],
-                }
-            ],
+            "coverage": "Yes",
+            "reason": "The evidence expressly requires an access review record.",
+            "evidence_ids": ["test-article-1"],
             "missing_mappings": [],
             "applicability_note": "No extra condition is stated in the supplied text.",
-            "overall_assessment": "Correct",
             "challenge_comment": "Retain the reference and confirm the review record.",
         }
 
@@ -36,7 +29,7 @@ class FakeLlm:
 class FakeLlmOnly(FakeLlm):
     def generate_json(self, system_prompt: str, user_prompt: str) -> dict[str, object]:
         response = super().generate_json(system_prompt, user_prompt)
-        response["mapping_reviews"][0]["evidence_ids"] = []
+        response["evidence_ids"] = []
         return response
 
 
@@ -48,7 +41,7 @@ class RepairingFakeLlm(FakeLlm):
         self.calls += 1
         response = super().generate_json(system_prompt, user_prompt)
         if self.calls == 1:
-            response["mapping_reviews"][0]["evidence_ids"] = []
+            response["evidence_ids"] = []
         return response
 
 
@@ -59,7 +52,7 @@ class AlwaysUncitedFakeLlm(FakeLlm):
     def generate_json(self, system_prompt: str, user_prompt: str) -> dict[str, object]:
         self.calls += 1
         response = super().generate_json(system_prompt, user_prompt)
-        response["mapping_reviews"][0]["evidence_ids"] = []
+        response["evidence_ids"] = []
         return response
 
 
@@ -78,7 +71,7 @@ class WorkflowTest(unittest.TestCase):
         )
         provider = ReplayEvidenceProvider(ROOT / "agent/tests/fixtures/replay_evidence.json")
         run = run_review(item, provider, FakeLlm(), "test prompt")
-        self.assertEqual(run.response["overall_assessment"], "Correct")
+        self.assertEqual(run.response["coverage"], "Yes")
 
         with tempfile.TemporaryDirectory() as directory:
             output = write_run(run, Path(directory) / "run")
@@ -88,13 +81,12 @@ class WorkflowTest(unittest.TestCase):
                     "run.json",
                     "evidence.json",
                     "raw_response.json",
-                    "provision_checks.csv",
                     "item_summary.csv",
                 },
             )
             self.assertEqual(
                 (output / "item_summary.csv").read_text(encoding="utf-8").splitlines()[0],
-                "item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment",
+                "item_id,coverage,reason,missing_mapping,evidence_reference,evidence_excerpt,applicability_note,challenge_comment",
             )
 
     def test_llm_only_uses_no_retrieved_evidence(self) -> None:
@@ -157,8 +149,8 @@ class WorkflowTest(unittest.TestCase):
         run = run_review(item, provider, llm, "test prompt")
         self.assertEqual(llm.calls, 2)
         self.assertEqual(
-            run.response["mapping_reviews"][0]["decision"],
-            "Unable to determine",
+            run.response["coverage"],
+            "No",
         )
         self.assertTrue(run.guardrail_changes)
 

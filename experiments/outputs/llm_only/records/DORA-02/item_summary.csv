@@ -1,2 +1,2 @@
-item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-02,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,No challenge is needed. The mapping is correct and should be retained.
+item_id,coverage,reason,missing_mapping,evidence_reference,evidence_excerpt,applicability_note,challenge_comment
+DORA-02,Yes,"Article 11(6) of DORA requires entities to test their ICT business continuity plans and response and recovery plans at least annually and after any major change to a critical or important function, which directly and completely supports the control objective.",[],,,This mapping is directly applicable to all entities within the scope of DORA that have critical or important functions.,"The mapping is precise and directly addresses the control's requirement for annual testing and testing after major changes, leaving no material gaps."

@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 17803,
+        "planning_ms": 11950,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
-          "standalone_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
           "scope": {
             "frameworks": [
               "dora"
@@ -112,79 +112,68 @@
           },
           "claims": [
             {
-              "claim_id": "initial_notification_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires an initial notification for ICT-related major operational or business continuity disruptions?",
+              "claim_id": "dora_notification_requirements",
+              "question": "What are the notification requirements under DORA and its related delegated regulations, including initial notification, intermediate report, and final report requirements?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
+                "notification requirements",
                 "initial notification",
-                "ICT-related major operational or business continuity disruptions"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "intermediate_report_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires an intermediate report for ICT-related major operational or business continuity disruptions?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "intermediate report",
-                "ICT-related major operational or business continuity disruptions"
+                "final report"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA notification requirements initial intermediate final report",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             {
-              "claim_id": "final_report_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires a final report for ICT-related major operational or business continuity disruptions?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "rts_2025_301_deadlines",
+              "question": "What are the specific deadlines (four-hour, 24-hour, and 72-hour) specified in RTS 2025/301 for notifications and reports under DORA?",
+              "intent": "frequency_or_deadline",
               "target_concepts": [
-                "final report",
-                "ICT-related major operational or business continuity disruptions"
+                "four-hour deadline",
+                "24-hour deadline",
+                "72-hour deadline"
               ],
               "expected_evidence_roles": [
-                "general_rule"
+                "frequency_or_deadline"
               ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
             },
             {
-              "claim_id": "report_deadlines_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 establishes the requirement for reporting deadlines for ICT-related major operational or business continuity disruptions, without specifying the exact timeframes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
-                "reporting deadlines",
-                "ICT-related major operational or business continuity disruptions"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "rts_deadlines_specification",
-              "question": "Which provision of Regulation (EU) 2022/2554 delegates the specification of exact reporting deadlines (four-hour, 24-hour, 72-hour) to RTS 2025/301?",
+              "claim_id": "missing_provision_mapping",
+              "question": "Which important provision in DORA and its related delegated regulations is materially necessary for the notification requirements but absent from the existing mapping?",
               "intent": "relationship_between_provisions",
               "target_concepts": [
-                "delegation",
-                "reporting deadlines"
+                "missing provision",
+                "mapping",
+                "notification requirements"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
-              "depends_on": [],
+              "depends_on": [
+                "dora_notification_requirements",
+                "rts_2025_301_deadlines"
+              ],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA missing provision notification requirements mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -194,7 +183,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:50:06.612359"
+            "generated_at": "2026-09-14T19:49:10.363888"
           },
           "limits": {
             "max_claims": 5,
@@ -207,56 +196,27 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "initial_notification_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires an initial notification for ICT-related major operational or business continuity disruptions?",
+              "claim_id": "dora_notification_requirements",
+              "question": "What are the notification requirements under DORA and its related delegated regulations, including initial notification, intermediate report, and final report requirements?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
+                "notification requirements",
                 "initial notification",
-                "ICT-related major operational or business continuity disruptions"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "covered",
-            "evidence_refs": [
-              "eu-2022-2554-article-19-4-a",
-              "eu-2025-301-article-1",
-              "eu-2022-2554-article-19-6",
-              "eu-2025-301-article-1-a",
-              "eu-2025-301-article-1-c",
-              "eu-2025-301-article-1-d",
-              "eu-2022-2554-article-19-4-b",
-              "eu-2025-301-article-5-2"
-            ],
-            "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires an initial notification for ICT-related major operational or business continuity disruptions?",
-              "initial notification",
-              "ICT-related major operational or business continuity disruptions"
-            ],
-            "candidate_count": 1381,
-            "coverage_reasons": [
-              "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "intermediate_report_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires an intermediate report for ICT-related major operational or business continuity disruptions?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
                 "intermediate report",
-                "ICT-related major operational or business continuity disruptions"
+                "final report"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA notification requirements initial intermediate final report",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
@@ -270,26 +230,30 @@
               "eu-2025-301-article-1-g"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires an intermediate report for ICT-related major operational or business continuity disruptions?",
+              "What are the notification requirements under DORA and its related delegated regulations, including initial notification, intermediate report, and final report requirements?",
+              "DORA notification requirements initial intermediate final report",
+              "notification requirements",
+              "initial notification",
               "intermediate report",
-              "ICT-related major operational or business continuity disruptions"
+              "final report"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
+              "8 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
             ]
           },
           {
             "claim": {
-              "claim_id": "final_report_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires a final report for ICT-related major operational or business continuity disruptions?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "rts_2025_301_deadlines",
+              "question": "What are the specific deadlines (four-hour, 24-hour, and 72-hour) specified in RTS 2025/301 for notifications and reports under DORA?",
+              "intent": "frequency_or_deadline",
               "target_concepts": [
-                "final report",
-                "ICT-related major operational or business continuity disruptions"
+                "four-hour deadline",
+                "24-hour deadline",
+                "72-hour deadline"
               ],
               "expected_evidence_roles": [
-                "general_rule"
+                "frequency_or_deadline"
               ],
               "depends_on": [],
               "importance": "required",
@@ -297,78 +261,58 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2025-301-article-1-a",
-              "eu-2025-301-article-1",
-              "eu-2025-301-article-1-c",
-              "eu-2025-301-article-1-d",
-              "eu-2022-2554-article-19-4-c",
-              "eu-2022-2554-article-18-3-b",
-              "eu-2022-2554-article-20-a-i"
+              "eu-2025-301-article-5-1-a",
+              "eu-2025-301-article-5-2"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires a final report for ICT-related major operational or business continuity disruptions?",
-              "final report",
-              "ICT-related major operational or business continuity disruptions"
+              "What are the specific deadlines (four-hour, 24-hour, and 72-hour) specified in RTS 2025/301 for notifications and reports under DORA?",
+              "four-hour deadline",
+              "24-hour deadline",
+              "72-hour deadline"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "7 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+              "2 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "report_deadlines_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 establishes the requirement for reporting deadlines for ICT-related major operational or business continuity disruptions, without specifying the exact timeframes?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
-                "reporting deadlines",
-                "ICT-related major operational or business continuity disruptions"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "not_covered",
-            "evidence_refs": [],
-            "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 establishes the requirement for reporting deadlines for ICT-related major operational or business continuity disruptions, without specifying the exact timeframes?",
-              "reporting deadlines",
-              "ICT-related major operational or business continuity disruptions"
-            ],
-            "candidate_count": 1381,
-            "coverage_reasons": [
-              "the retriever returned 48 ranked hit(s), but none passed deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "rts_deadlines_specification",
-              "question": "Which provision of Regulation (EU) 2022/2554 delegates the specification of exact reporting deadlines (four-hour, 24-hour, 72-hour) to RTS 2025/301?",
+              "claim_id": "missing_provision_mapping",
+              "question": "Which important provision in DORA and its related delegated regulations is materially necessary for the notification requirements but absent from the existing mapping?",
               "intent": "relationship_between_provisions",
               "target_concepts": [
-                "delegation",
-                "reporting deadlines"
+                "missing provision",
+                "mapping",
+                "notification requirements"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
-              "depends_on": [],
+              "depends_on": [
+                "dora_notification_requirements",
+                "rts_2025_301_deadlines"
+              ],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA missing provision notification requirements mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 delegates the specification of exact reporting deadlines (four-hour, 24-hour, 72-hour) to RTS 2025/301?",
-              "delegation",
-              "reporting deadlines"
+              "Which important provision in DORA and its related delegated regulations is materially necessary for the notification requirements but absent from the existing mapping?",
+              "DORA missing provision notification requirements mapping",
+              "missing provision",
+              "mapping",
+              "notification requirements"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 53 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 78 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -384,15 +328,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 33.545,
+  "elapsed_seconds": 26.564,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -406,7 +350,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301"
     }
   ],
   "item": {

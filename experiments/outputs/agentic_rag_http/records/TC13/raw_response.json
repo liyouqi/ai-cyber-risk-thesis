@@ -1,29 +1,14 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Partially supported",
-      "reason": "The provision establishes a general risk management system for high-risk AI systems, which is a relevant obligation for mitigating risks like prompt injection. However, it does not specifically address the technical mechanisms for mitigating these particular attack vectors.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2:point:a",
-        "eu:32024R1689:article:9:paragraph:2:point:b",
-        "eu:32024R1689:article:9:paragraph:2:point:d"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Supported",
-      "reason": "Article 15(5) directly addresses the cybersecurity of high-risk AI systems and specifically lists adversarial examples (which includes prompt injection) and model evasion as attack types that technical solutions must prevent, detect, and respond to.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:5"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping to Articles 9 and 15 of the EU AI Act provides a defensible and sufficiently complete regulatory basis. Article 9 establishes a comprehensive risk management system, which requires the identification and mitigation of risks, including those from misuse like prompt injection. Article 15, specifically paragraph 5, directly addresses cybersecurity, mandating resilience against attacks that manipulate inputs (e.g., adversarial examples) and other vulnerabilities, which covers prompt injection, malicious files, and retrieval bypass.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:1",
+    "eu:32024R1689:article:9:paragraph:2:point:b",
+    "eu:32024R1689:article:9:paragraph:2:point:d",
+    "eu:32024R1689:article:15:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:5"
   ],
   "missing_mappings": [],
-  "applicability_note": "The applicability condition is correctly identified as applying to generative AI, RAG, or agent systems, which are high-risk AI systems under the EU AI Act.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 9 is partially correct as it provides a general risk management framework, but the specific control objective of mitigating prompt injection and related attacks is more directly and materially supported by Article 15(5). The mapping to Article 15 is correct and should be retained."
+  "applicability_note": "This assessment applies to Generative AI, RAG, or agent systems that are classified as high-risk under the EU AI Act, as these are the systems to which Articles 9 and 15 apply.",
+  "challenge_comment": "The control objective focuses on mitigating specific attack vectors. While Article 15(5) provides a strong basis for cybersecurity measures against these threats, the mapping's reliance on the broader risk management framework in Article 9 is also critical, as it mandates the proactive identification of such risks."
 }

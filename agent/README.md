@@ -1,8 +1,8 @@
 # Review Agent
 
-The Agent checks an existing control-to-regulation mapping. It splits compound
-references, retrieves relevant legal text, checks each cited provision, searches
-for a small number of material omissions and writes a short summary.
+The Agent checks whether an existing control-to-regulation mapping, considered
+as a whole, adequately covers the control. It retrieves the cited provisions,
+searches for material omissions and returns one `Yes` or `No` decision.
 
 LLM-only uses the same configured model and output format without retrieval.
 Replay evidence exists only for automated software tests.
@@ -18,10 +18,9 @@ evidence rank and score, and the Planned retrieval plan and claim coverage.
 
 ## Output
 
-A batch produces two files intended for normal use:
+A batch produces one file intended for normal use:
 
 ```text
-provision_checks.csv
 item_summary.csv
 ```
 

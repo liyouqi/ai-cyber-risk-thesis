@@ -1,0 +1,40 @@
+[
+  {
+    "coverage": "No",
+    "reason": "The existing mapping does not provide a defensible basis for maintaining an inventory of models, components, data sources, and subcontractors. Article 13 focuses on transparency and instructions for use, while Article 25(4) addresses contractual obligations for third-party suppliers, neither of which directly mandates or supports the creation and maintenance of such an inventory.",
+    "evidence_ids": [
+      "eu:32024R1689:article:13:paragraph:1",
+      "eu:32024R1689:article:25:paragraph:4"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 16(1)",
+        "reason": "Article 16(1) requires providers to establish and maintain a quality management system, which includes the documentation of the design, development, and post-market monitoring processes. This provision directly supports the need for an inventory of components and subcontractors as part of a comprehensive quality management system.",
+        "evidence_ids": [
+          "eu:32024R1689:article:16:paragraph:1"
+        ]
+      }
+    ],
+    "applicability_note": "This control is applicable to third-party components, as the AI Act imposes specific obligations on providers of high-risk AI systems to manage their supply chain and ensure compliance with the regulation.",
+    "challenge_comment": "The control requires a formal inventory, which is a foundational element of a quality management system. While Article 25(4) addresses contractual relationships with suppliers, it does not mandate the creation of an inventory. The existing mapping lacks a provision that directly supports this specific documentation requirement."
+  },
+  {
+    "coverage": "No",
+    "reason": "The existing mapping does not provide a defensible basis for maintaining an inventory of models, components, data sources, and subcontractors. Article 13 focuses on transparency and instructions for use, while Article 25(4) addresses contractual obligations for third-party suppliers, neither of which directly mandates or supports the creation and maintenance of such an inventory.",
+    "evidence_ids": [
+      "eu:32024R1689:article:13:paragraph:1",
+      "eu:32024R1689:article:25:paragraph:4"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 16(1)",
+        "reason": "Article 16(1) requires providers to establish and maintain a quality management system, which includes the documentation of the design, development, and post-market monitoring processes. This provision directly supports the need for an inventory of components and subcontractors as part of a comprehensive quality management system.",
+        "evidence_ids": []
+      }
+    ],
+    "applicability_note": "This control is applicable to third-party components, as the AI Act imposes specific obligations on providers of high-risk AI systems to manage their supply chain and ensure compliance with the regulation.",
+    "challenge_comment": "The control requires a formal inventory, which is a foundational element of a quality management system. While Article 25(4) addresses contractual relationships with suppliers, it does not mandate the creation of an inventory. The existing mapping lacks a provision that directly supports this specific documentation requirement."
+  }
+]

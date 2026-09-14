@@ -1,42 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 addresses the classification of AI systems and their risk levels, which is a foundational requirement but does not directly relate to the technical isolation of entities or tenants.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 pertains to transparency obligations for certain AI systems, focusing on providing information to users, not on the technical isolation of environments or knowledge bases.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 outlines requirements for high-risk AI systems, including risk management and data governance, but does not specifically mandate the isolation of entities or tenants.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "reason": "Article 15 is not relevant to the control statement on isolation.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "reason": "Article 17 does not address the specific requirement of isolating entities, tenants, environments, or knowledge bases.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The control is applicable to multi-entity or tenant systems, which is a key context for the isolation requirement.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings (Art. 9, 15, 17) do not directly support the control statement on isolation. These articles address classification, transparency, and high-risk system requirements, respectively, but none specifically mandate the technical isolation of entities or tenants. The mapping is incorrect as it does not align with the control's objective."
+  "coverage": "Yes",
+  "reason": "The mapping to Articles 9, 15, and 17 of the EU AI Act provides a defensible and sufficiently complete regulatory basis for the isolation control objective. Article 9 establishes risk management and mitigation requirements, which inherently include isolation as a key control. Article 15 mandates technical and organizational measures for high-risk AI systems, which directly supports the need for isolation. Article 17 addresses the obligations of users, which includes ensuring the system is used in accordance with its intended purpose, a goal that isolation helps achieve.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "This control is applicable to multi-entity or tenant systems, which are explicitly addressed by the high-risk AI system requirements in the EU AI Act.",
+  "challenge_comment": "The challenge is to ensure that the specific technical implementation of isolation (e.g., network segmentation, data separation) is robust enough to meet the regulatory requirements for risk mitigation and technical measures."
 }

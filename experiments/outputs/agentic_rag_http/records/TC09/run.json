@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -156,11 +156,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 6779,
+        "planning_ms": 6021,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -177,8 +177,8 @@
           "claims": [
             {
               "claim_id": "isolation_requirement_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement that entities, tenants, environments and knowledge bases must be isolated?",
-              "intent": "obligation_or_prohibition",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses the requirement for isolation of entities, tenants, environments and knowledge bases?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "isolation",
                 "entities",
@@ -191,13 +191,7 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": [
-                {
-                  "query": "provision requiring isolation of entities tenants environments knowledge bases",
-                  "language": null,
-                  "weight": 1.0
-                }
-              ]
+              "query_variants": []
             }
           ],
           "answer_shape": "structured",
@@ -207,7 +201,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:38:32.855652"
+            "generated_at": "2026-09-14T19:40:03.283910"
           },
           "limits": {
             "max_claims": 5,
@@ -221,8 +215,8 @@
           {
             "claim": {
               "claim_id": "isolation_requirement_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement that entities, tenants, environments and knowledge bases must be isolated?",
-              "intent": "obligation_or_prohibition",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses the requirement for isolation of entities, tenants, environments and knowledge bases?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "isolation",
                 "entities",
@@ -235,19 +229,12 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": [
-                {
-                  "query": "provision requiring isolation of entities tenants environments knowledge bases",
-                  "language": null,
-                  "weight": 1.0
-                }
-              ]
+              "query_variants": []
             },
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the requirement that entities, tenants, environments and knowledge bases must be isolated?",
-              "provision requiring isolation of entities tenants environments knowledge bases",
+              "Within Regulation (EU) 2024/1689, which provision addresses the requirement for isolation of entities, tenants, environments and knowledge bases?",
               "isolation",
               "entities",
               "tenants",
@@ -256,7 +243,7 @@
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 124 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 111 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -272,16 +259,16 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 23.955,
-  "model_attempts": 1,
+  "elapsed_seconds": 32.286,
+  "model_attempts": 2,
   "guardrail_changes": [],
   "queries": [
     {
@@ -306,7 +293,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are entities, tenants, environments and knowledge bases isolated?"
     }
   ],
   "item": {

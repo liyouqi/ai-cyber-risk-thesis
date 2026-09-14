@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 10956,
+        "planning_ms": 8687,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
-          "standalone_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
           "scope": {
             "frameworks": [
               "dora"
@@ -112,14 +112,15 @@
           },
           "claims": [
             {
-              "claim_id": "ict_business_continuity_testing_frequency",
-              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans at least once a year?",
+              "claim_id": "dora_bcp_testing_requirement",
+              "question": "What is the specific provision in DORA and its related delegated regulations that requires testing of ICT business continuity plans and response and recovery plans at least once a year and following major changes to critical or important functions?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT business continuity plans",
                 "response and recovery plans",
                 "testing",
-                "at least once a year"
+                "testing after major changes",
+                "critical or important functions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -129,22 +130,27 @@
               "query_variants": []
             },
             {
-              "claim_id": "ict_business_continuity_testing_after_change",
-              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans following a major change to a critical or important function?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "dora_mapping_analysis",
+              "question": "What provisions in DORA and its related delegated regulations are currently mapped to the requirement of testing ICT business continuity plans and response and recovery plans?",
+              "intent": "relationship_between_provisions",
               "target_concepts": [
                 "ICT business continuity plans",
                 "response and recovery plans",
                 "testing",
-                "major change",
-                "critical or important function"
+                "mapping"
               ],
               "expected_evidence_roles": [
-                "general_rule"
+                "supporting_context"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA mapping ICT business continuity plans testing",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -154,7 +160,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:47:53.398712"
+            "generated_at": "2026-09-14T19:47:12.279260"
           },
           "limits": {
             "max_claims": 5,
@@ -167,14 +173,15 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "ict_business_continuity_testing_frequency",
-              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans at least once a year?",
+              "claim_id": "dora_bcp_testing_requirement",
+              "question": "What is the specific provision in DORA and its related delegated regulations that requires testing of ICT business continuity plans and response and recovery plans at least once a year and following major changes to critical or important functions?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT business continuity plans",
                 "response and recovery plans",
                 "testing",
-                "at least once a year"
+                "testing after major changes",
+                "critical or important functions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -185,68 +192,67 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2024-1774-article-26-1-f",
-              "eu-2022-2554-article-11-8",
-              "eu-2022-2554-article-11-7",
               "eu-2022-2554-article-11-6-a",
-              "eu-2024-1774-article-25-1",
-              "eu-2024-1774-article-25-3",
-              "eu-2024-1774-article-24-1-a-iv",
-              "eu-2024-1774-article-25-5"
+              "eu-2022-2554-article-5-2-i-iii"
             ],
             "executed_queries": [
-              "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans at least once a year?",
+              "What is the specific provision in DORA and its related delegated regulations that requires testing of ICT business continuity plans and response and recovery plans at least once a year and following major changes to critical or important functions?",
               "ICT business continuity plans",
               "response and recovery plans",
               "testing",
-              "at least once a year"
+              "testing after major changes",
+              "critical or important functions"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
+              "2 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "ict_business_continuity_testing_after_change",
-              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans following a major change to a critical or important function?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "dora_mapping_analysis",
+              "question": "What provisions in DORA and its related delegated regulations are currently mapped to the requirement of testing ICT business continuity plans and response and recovery plans?",
+              "intent": "relationship_between_provisions",
               "target_concepts": [
                 "ICT business continuity plans",
                 "response and recovery plans",
                 "testing",
-                "major change",
-                "critical or important function"
+                "mapping"
               ],
               "expected_evidence_roles": [
-                "general_rule"
+                "supporting_context"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA mapping ICT business continuity plans testing",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
               "eu-2022-2554-article-11-6-a",
-              "eu-2024-1774-article-39-1",
-              "eu-2022-2554-article-11-7",
-              "eu-2022-2554-article-11-4",
-              "eu-2024-1774-article-39-2-e",
-              "eu-2024-1774-article-26-2-b",
               "eu-2024-1774-article-24-1-b-iv",
-              "eu-2022-2554-article-11-2-a"
+              "eu-2022-2554-article-5-2-e",
+              "eu-2022-2554-article-60-2-a",
+              "eu-2022-2554-article-11-2-c",
+              "eu-2022-2554-article-11-6-b",
+              "eu-2022-2554-article-16-3-d"
             ],
             "executed_queries": [
-              "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans following a major change to a critical or important function?",
+              "What provisions in DORA and its related delegated regulations are currently mapped to the requirement of testing ICT business continuity plans and response and recovery plans?",
+              "DORA mapping ICT business continuity plans testing",
               "ICT business continuity plans",
               "response and recovery plans",
               "testing",
-              "major change",
-              "critical or important function"
+              "mapping"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
+              "7 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -262,15 +268,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 17.661,
+  "elapsed_seconds": 15.191,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -284,7 +290,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function"
     }
   ],
   "item": {

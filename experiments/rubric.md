@@ -1,73 +1,34 @@
-# Evaluation
+# Evaluation Rubric
 
-Use the verified Manual review as the practical baseline. The same researcher
-performs and scores the reviews; this is reported as a limitation.
+The independent expert Gold in `data/gold_standard.csv` is used only by final
+scoring. All three methods are evaluated against it.
 
-## Decisions
+## Coverage
 
-Each existing provision receives one label:
+- `Yes`: the existing mapping set adequately covers the material control
+  objective.
+- `No`: a material part is unsupported, a material citation is wrong, an
+  important provision is missing, or the method cannot confirm adequate
+  coverage.
 
-- `Supported`: the provision materially supports the stated control;
-- `Partially supported`: it supports only part of the statement or depends on
-  an unstated condition;
-- `Unsupported`: it does not materially support the statement;
-- `Unable to determine`: the available context or legal source is insufficient.
+Coverage Accuracy is the number of matching Yes/No decisions divided by 40.
+Also report Yes recall, No recall and balanced accuracy so the 29/11 class
+distribution is visible; these do not replace the primary metric.
 
-Compound mappings must be split before scoring. Article ranges and references to
-annexes are reviewed as separate provisions where they express separate legal
-requirements.
+## Missing provisions
 
-## Measures
+Compare proposed missing provisions with the Gold using normalized
+`document_id::provision` identifiers. Report TP, FP, FN, Precision, Recall and
+F1. An empty list is valid when no clear omitted provision exists.
 
-### Existing mapping accuracy
+## Other measures
 
-For each AI method, report the share of existing provision decisions that match
-the verified Manual decision. Report the counts as well as the percentage.
-Manual is marked as the baseline rather than scored against itself.
+- Evidence error: a cited location does not exist or does not support the
+  stated reason.
+- Unsupported claim: a material legal or applicability claim is not supported
+  by the item or cited evidence.
+- Time: Manual total time; for AI methods, execution time plus human correction
+  time.
 
-### Missing mapping precision and recall
-
-Use these only when the verified Manual review identifies a reasonably stable
-set of material omissions. A long list of remotely relevant articles is not
-rewarded.
-
-### Evidence errors
-
-Count a citation as an error when the cited location does not exist, cannot be
-verified, or does not support the stated reason. Describe the error briefly.
-
-### Unsupported claims
-
-Count material legal or applicability claims that are not supported by the item
-or the cited official text. Repeated wording of the same error counts once.
-
-### Time
-
-For Manual, record total review time. For each AI method, record execution time,
-human review time and their sum. The main efficiency comparison uses total time
-to reach an acceptable review.
-
-## Result table
-
-Keep one row per item and method:
-
-```text
-item_id
-framework
-method
-existing_mapping_correct
-existing_mapping_total
-missing_mapping_true_positive
-missing_mapping_proposed
-missing_mapping_reference_total
-evidence_errors
-unsupported_claims
-execution_time_min
-human_review_time_min
-total_time_min
-short_note
-```
-
-Do not calculate a combined quality score. Applicability handling and challenge
-usefulness should first be discussed in short notes; add an ordinal score only
-if the pilot shows that it can be applied consistently.
+Keep one row per item and method in `results/item_results.csv`. Do not calculate
+a weighted overall score.

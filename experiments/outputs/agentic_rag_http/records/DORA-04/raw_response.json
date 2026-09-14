@@ -1,17 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2022/2554",
-      "provision": "Article 24(6)",
-      "decision": "Supported",
-      "reason": "The provision directly states that financial entities must ensure appropriate tests are conducted at least yearly on all ICT systems and applications supporting critical or important functions, which directly and materially supports the control's objective.",
-      "evidence_ids": [
-        "eu-2022-2554-article-24-6"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping to Article 24(6) of Regulation (EU) 2022/2554 directly and comprehensively supports the control objective. The provision explicitly requires financial entities to conduct appropriate tests on all ICT systems and applications supporting critical or important functions at least yearly, which is the exact requirement of the control statement.",
+  "evidence_ids": [
+    "eu-2022-2554-article-24-6"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control applies to financial entities, other than microenterprises, as specified in the provision.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The existing mapping to Article 24(6) is correct and should be retained."
+  "applicability_note": "This control applies to financial entities, other than microenterprises, as specified in the regulation.",
+  "challenge_comment": "The mapping is direct and requires no interpretation. The evidence clearly states the annual testing requirement for the specified systems."
 }

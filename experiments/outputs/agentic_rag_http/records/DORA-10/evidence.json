@@ -16,5 +16,176 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
     "rank": 2,
     "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-1",
+    "document_id": "EU-2022-2554",
+    "text": "1. Financial entities shall report major ICT-related incidents to the relevant competent authority as referred to in Article 46 in accordance with paragraph 4 of this Article. Where a financial entity is subject to supervision by more than one national competent authority referred to in Article 46, Member States shall designate a single competent authority as the relevant competent authority responsible for carrying out the functions and duties provided for in this Article. Credit institutions classified as significant, in accordance with Article 6(4) of Regulation (EU) No 1024/2013, shall report major ICT-related incidents to the relevant national competent authority designated in accordance with Article 4 of Directive 2013/36/EU, which shall immediately transmit that report to the ECB. For the purpose of the first subparagraph, financial entities shall produce, after collecting and analysing all relevant information, the initial notification and reports referred to in paragraph 4 of this Article using the templates referred to in Article 20 and submit them to the competent authority. In the event that a technical impossibility prevents the submission of the initial notification using the template, financial entities shall notify the competent authority about it via alternative means. The initial notification and reports referred to in paragraph 4 shall include all information necessary for the competent authority to determine the significance of the major ICT-related incident and assess possible cross-border impacts. Without prejudice to the reporting pursuant to the first subparagraph by the financial entity to the relevant competent authority, Member States may additionally determine that some or all financial entities shall also provide the initial notification and each report referred to in paragraph 4 of this Article using the templates referred to in Article 20 to the competent authorities or the computer security incident response teams (CSIRTs) designated or established in accordance with Directive (EU) 2022/2555.",
+    "source_locator": "Article 19(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-4-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) an intermediate report after the initial notification referred to in point (a), as soon as the status of the original incident has changed significantly or the handling of the major ICT-related incident has changed based on new information available, followed, as appropriate, by updated notifications every time a relevant status update is available, as well as upon a specific request of the competent authority;",
+    "source_locator": "Article 19(4)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-6-e",
+    "document_id": "EU-2025-301",
+    "text": "(e) the classification criteria that would have triggered a major incident report laid down in Articles 1 to 8 of Delegated Regulation (EU) 2024/1772 if the cyber threat had materialised;",
+    "source_locator": "Article 6(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-18-3-a",
+    "document_id": "EU-2022-2554",
+    "text": "(a) the criteria set out in paragraph 1, including materiality thresholds for determining major ICT-related incidents or, as applicable, major operational or security payment-related incidents, that are subject to the reporting obligation laid down in Article 19(1);",
+    "source_locator": "Article 18(3)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-2",
+    "document_id": "EU-2025-301",
+    "text": "2. Where the financial entity has not classified an ICT-related incident as major within 24 hours from the moment the financial entity has become aware of the ITC-related incident but classifies that ICT-related incident as major at a later stage, the financial entity shall submit the initial notification within four hours from the classification of the ICT-related incident as a major incident.",
+    "source_locator": "Article 5(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-18-3-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) the criteria to be applied by competent authorities for the purpose of assessing the relevance of major ICT-related incidents or, as applicable, major operational or security payment-related incidents, to relevant competent authorities in other Member States’, and the details of reports of major ICT-related incidents or, as applicable, major operational or security payment-related incidents, to be shared with other competent authorities pursuant to Article 19(6) and (7);",
+    "source_locator": "Article 18(3)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-20-a-i",
+    "document_id": "EU-2022-2554",
+    "text": "(i) establish the content of the reports for major ICT-related incidents in order to reflect the criteria laid down in Article 18(1) and incorporate further elements, such as details for establishing the relevance of the reporting for other Member States and whether it constitutes a major operational or security payment-related incident or not;",
+    "source_locator": "Article 20(a)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-20-a",
+    "document_id": "EU-2022-2554",
+    "text": "(a) common draft regulatory technical standards in order to: When developing those draft regulatory technical standards, the ESAs shall take into account the size and the overall risk profile of the financial entity, and the nature, scale and complexity of its services, activities and operations, and in particular, with a view to ensuring that, for the purposes of this paragraph, point (a), point (ii), different time limits may reflect, as appropriate, specificities of financial sectors, without prejudice to maintaining a consistent approach to ICT-related incident reporting pursuant to this Regulation and to Directive (EU) 2022/2555. The ESAs shall, as applicable, provide justification when deviating from the approaches taken in the context of that Directive;",
+    "source_locator": "Article 20(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-3-d",
+    "document_id": "EU-2025-301",
+    "text": "(d) information about how the criteria laid down in Articles 1 to 8 of Delegated Regulation (EU) 2024/1772 have been fulfilled, on the basis of which the financial entity classified the ITC-related incident as major;",
+    "source_locator": "Article 3(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-2-d",
+    "document_id": "EU-2025-301",
+    "text": "(d) the criteria, laid down in Articles 1 to 8 of Delegated Regulation (EU) 2024/1772, on the basis of which the financial entity classified the ICT-related incident as major;",
+    "source_locator": "Article 2(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2",
+    "document_id": "EU-2022-2554",
+    "text": "2. The joint report referred to in paragraph 1 shall comprise at least the following elements:",
+    "source_locator": "Article 21(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-a",
+    "document_id": "EU-2022-2554",
+    "text": "(a) prerequisites for the establishment of a single EU Hub;",
+    "source_locator": "Article 21(2)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) benefits, limitations and risks, including risks associated with the high concentration of sensitive information;",
+    "source_locator": "Article 21(2)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-c",
+    "document_id": "EU-2022-2554",
+    "text": "(c) the necessary capability to ensure interoperability with regard to other relevant reporting schemes;",
+    "source_locator": "Article 21(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-d",
+    "document_id": "EU-2022-2554",
+    "text": "(d) elements of operational management;",
+    "source_locator": "Article 21(2)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-e",
+    "document_id": "EU-2022-2554",
+    "text": "(e) conditions of membership;",
+    "source_locator": "Article 21(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-f",
+    "document_id": "EU-2022-2554",
+    "text": "(f) technical arrangements for financial entities and national competent authorities to access the single EU Hub;",
+    "source_locator": "Article 21(2)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-21-2-g",
+    "document_id": "EU-2022-2554",
+    "text": "(g) a preliminary assessment of financial costs incurred by setting-up the operational platform supporting the single EU Hub, including the requisite expertise.",
+    "source_locator": "Article 21(2)(g)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-20-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) common draft implementing technical standards in order to establish the standard forms, templates and procedures for financial entities to report a major ICT-related incident and to notify a significant cyber threat.",
+    "source_locator": "Article 20(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
   }
 ]

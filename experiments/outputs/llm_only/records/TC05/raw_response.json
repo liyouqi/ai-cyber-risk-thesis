@@ -1,36 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 of the EU AI Act establishes the scope and definitions for the regulation, including what constitutes an AI system. It does not contain any specific obligations related to access control, authentication, or authorization.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 outlines the obligations for high-risk AI systems, focusing on the requirements for the provider to ensure the system is compliant with the regulation. It does not address specific technical security controls like SSO, MFA, or access reviews.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 details the obligations for providers of high-risk AI systems to implement a quality management system. This is a broad governance requirement and does not specifically mandate the technical access control measures mentioned in the control statement.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15(3)(f)",
-      "reason": "This provision requires providers of high-risk AI systems to implement a cybersecurity risk management system. While not a direct mapping, it is a relevant regulatory objective that could encompass access control as part of a broader security posture.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The EU AI Act is a horizontal regulation that applies to the development, placement on the market, and use of AI systems. The applicability of specific security requirements depends on whether the system is classified as high-risk.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The provided mapping is incorrect. The cited articles (9, 15, 17) do not contain specific requirements for access control mechanisms like SSO, MFA, or access reviews. The mapping should be revised to identify provisions that directly address cybersecurity or access management, such as those related to the cybersecurity risk management system in Article 15(3)(f)."
+  "coverage": "Yes",
+  "reason": "The mapping to Articles 9, 15, and 17 of the EU AI Act provides a defensible and sufficiently complete regulatory basis for the control objective. Article 9 establishes the general obligation for risk management, which includes access control. Article 15 mandates the implementation of technical and organizational measures, which encompasses SSO/MFA and least privilege. Article 17 requires regular reviews of the risk management system, which supports access reviews.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "The control is applicable to all systems as the EU AI Act imposes obligations on providers of AI systems, which includes the underlying IT infrastructure that supports the AI system.",
+  "challenge_comment": "The mapping is adequate as the cited provisions collectively support the implementation of SSO/MFA, least privilege, and access reviews as necessary technical and organizational measures for risk management."
 }

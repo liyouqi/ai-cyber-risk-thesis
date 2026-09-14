@@ -1,0 +1,36 @@
+[
+  {
+    "coverage": "No",
+    "reason": "The existing mapping (Art. 9, 15, 17) does not provide a defensible basis for the control objective of isolation. Article 9 addresses risk management, Article 15 covers accuracy, robustness, and cybersecurity, and Article 17 outlines quality management. None of these provisions specifically require or address the isolation of entities, tenants, environments, or knowledge bases, which is the core of the control objective.",
+    "evidence_ids": [
+      "eu:32024R1689:article:9:paragraph:1",
+      "eu:32024R1689:article:15:paragraph:1",
+      "eu:32024R1689:article:17:paragraph:1"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 29",
+        "reason": "Article 29 specifically requires providers to ensure that high-risk AI systems are designed and developed in such a way that they are sufficiently transparent to enable deployers to interpret the system's output and use it appropriately. This includes the requirement for appropriate logging capabilities, which is a key technical control for achieving isolation and preventing unauthorized access or data leakage between tenants or entities.",
+        "evidence_ids": [
+          "eu:32024R1689:article:29:paragraph:1",
+          "eu:32024R1689:article:29:paragraph:2"
+        ]
+      }
+    ],
+    "applicability_note": "This control is applicable to multi-entity or tenant systems, which are explicitly addressed by the requirement for transparency and logging in Article 29 to ensure that activities and data of one tenant do not interfere with or become accessible to another.",
+    "challenge_comment": "The current mapping conflates general cybersecurity and quality management requirements with the specific technical control of isolation. A direct provision mandating isolation or the technical means to achieve it, such as robust logging and access controls, is necessary for a complete mapping."
+  },
+  {
+    "coverage": "No",
+    "reason": "The existing mapping (Art. 9, 15, 17) does not provide a defensible basis for the control objective of isolation. Article 9 addresses risk management, Article 15 covers accuracy, robustness, and cybersecurity, and Article 17 outlines quality management. None of these provisions specifically require or address the isolation of entities, tenants, environments, or knowledge bases, which is the core of the control objective.",
+    "evidence_ids": [
+      "eu:32024R1689:article:9:paragraph:1",
+      "eu:32024R1689:article:15:paragraph:1",
+      "eu:32024R1689:article:17:paragraph:1"
+    ],
+    "missing_mappings": [],
+    "applicability_note": "This control is applicable to multi-entity or tenant systems, which are explicitly addressed by the requirement for transparency and logging in Article 29 to ensure that activities and data of one tenant do not interfere with or become accessible to another.",
+    "challenge_comment": "The current mapping conflates general cybersecurity and quality management requirements with the specific technical control of isolation. A direct provision mandating isolation or the technical means to achieve it, such as robust logging and access controls, is necessary for a complete mapping."
+  }
+]

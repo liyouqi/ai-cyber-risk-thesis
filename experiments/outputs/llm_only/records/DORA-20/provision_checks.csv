@@ -1,3 +1,0 @@
-item_id,instrument,provision,decision,reason,evidence_reference,evidence_excerpt
-DORA-20,Commission Delegated Regulation (EU) 2024/1773,Article 8,Supported,Article 8 requires the competent authority to conduct an independent review of critical or important ICT third-party service providers. This directly supports the control objective of including such services in an audit plan.,,
-DORA-20,Commission Delegated Regulation (EU) 2024/1773,Article 9,Supported,"Article 9 specifies that the frequency of the independent review must be determined based on the risk profile of the ICT service, which aligns with the control's requirement to set audit frequency based on risk rather than a uniform annual schedule.",,

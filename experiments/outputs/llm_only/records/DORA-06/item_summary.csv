@@ -1,2 +1,2 @@
-item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-06,Correct,[],No additional applicability conditions are known.,No challenge is needed. The mapping is correct and should be retained.
+item_id,coverage,reason,missing_mapping,evidence_reference,evidence_excerpt,applicability_note,challenge_comment
+DORA-06,Yes,"Article 5(4) of DORA requires management body members to have sufficient expertise in ICT risk and digital operational resilience, which is fulfilled by regular training. The mapping is defensible as the provision directly supports the control objective.",[],,,"This control is applicable to all financial entities and groups subject to DORA, as Article 5(4) is a general requirement for the management body.","The control statement's lack of a specific number of sessions or hours is consistent with the regulation, which does not mandate a uniform standard, allowing for flexibility in implementation."

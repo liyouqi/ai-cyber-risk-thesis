@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 7985,
+        "planning_ms": 6800,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
-          "standalone_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
           "scope": {
             "frameworks": [
               "dora"
@@ -112,12 +112,15 @@
           },
           "claims": [
             {
-              "claim_id": "provision_requirement_periodic_testing",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires periodic testing based on risk and criticality without specifying a uniform annual frequency?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "dora_testing_frequency_provision",
+              "question": "Within DORA and its related delegated regulations, what provision requires testing periodically based on risk and criticality without specifying a uniform annual frequency?",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "periodic testing",
-                "risk and criticality"
+                "testing",
+                "periodically",
+                "risk",
+                "criticality",
+                "frequency"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -134,7 +137,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:54:36.927237"
+            "generated_at": "2026-09-14T19:53:05.191367"
           },
           "limits": {
             "max_claims": 5,
@@ -147,12 +150,15 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "provision_requirement_periodic_testing",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires periodic testing based on risk and criticality without specifying a uniform annual frequency?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "dora_testing_frequency_provision",
+              "question": "Within DORA and its related delegated regulations, what provision requires testing periodically based on risk and criticality without specifying a uniform annual frequency?",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "periodic testing",
-                "risk and criticality"
+                "testing",
+                "periodically",
+                "risk",
+                "criticality",
+                "frequency"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -164,13 +170,16 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires periodic testing based on risk and criticality without specifying a uniform annual frequency?",
-              "periodic testing",
-              "risk and criticality"
+              "Within DORA and its related delegated regulations, what provision requires testing periodically based on risk and criticality without specifying a uniform annual frequency?",
+              "testing",
+              "periodically",
+              "risk",
+              "criticality",
+              "frequency"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 54 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 105 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -186,15 +195,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 12.448,
+  "elapsed_seconds": 14.092,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -208,7 +217,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified"
     }
   ],
   "item": {

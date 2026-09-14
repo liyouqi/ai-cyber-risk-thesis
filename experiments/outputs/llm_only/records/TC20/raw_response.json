@@ -1,43 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 relates to the classification of AI systems and their risk levels, not to the implementation of security processes like vulnerability management or incident response.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 addresses the obligations for high-risk AI systems, including data governance and documentation, but does not specifically mandate the implementation of vulnerability or incident response processes.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 20",
-      "decision": "Unsupported",
-      "reason": "Article 20 concerns the conformity assessment procedures for high-risk AI systems, which is a distinct process from the operational security controls for vulnerability and incident management.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 73",
-      "decision": "Unsupported",
-      "reason": "Article 73 outlines the rules for market surveillance and enforcement, which is a regulatory oversight function and not a direct requirement for implementing specific security processes.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 24",
-      "reason": "Article 24 contains the general security obligations for high-risk AI systems, which would directly support the control statement's requirements for vulnerability, patching, detection, response, and serious-incident processes.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The control is applicable to all AI systems, but the reporting requirement is specific to high-risk systems.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they do not relate to the security processes. The correct mapping should be to Article 24, which contains the general security obligations for high-risk AI systems."
+  "coverage": "Yes",
+  "reason": "The cited articles collectively address the key components of the control. Article 15 covers risk management and vulnerability assessment. Article 17 mandates the implementation of appropriate security measures, which includes patching. Article 20 requires the establishment of an incident-handling process, covering detection and response. Article 73 mandates reporting of serious incidents, which is a key part of the response process.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "The mapping is applicable to all AI systems, with the reporting requirement specifically for high-risk systems as per the regulation's scope.",
+  "challenge_comment": "The mapping is broad but defensible, as the articles provide a general regulatory basis for the required processes without specifying exact technical implementations."
 }

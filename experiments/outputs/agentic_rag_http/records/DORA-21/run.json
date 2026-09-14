@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 9382,
+        "planning_ms": 5153,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly",
-          "standalone_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly",
           "scope": {
             "frameworks": [
               "dora"
@@ -113,12 +113,12 @@
           "claims": [
             {
               "claim_id": "continuous_performance_requirement",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 establishes a requirement to perform continuously without specifying monthly or quarterly frequency?",
+              "question": "Within DORA and its related delegated regulations, which important provision is materially necessary for a requirement that must be performed continuously without monthly or quarterly frequency requirements?",
               "intent": "procedure_or_reporting",
               "target_concepts": [
                 "continuous performance",
-                "frequency requirement",
-                "absent from mapping"
+                "frequency requirements",
+                "DORA provisions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -135,7 +135,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:54:20.332311"
+            "generated_at": "2026-09-14T19:52:38.954134"
           },
           "limits": {
             "max_claims": 5,
@@ -149,12 +149,12 @@
           {
             "claim": {
               "claim_id": "continuous_performance_requirement",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 establishes a requirement to perform continuously without specifying monthly or quarterly frequency?",
+              "question": "Within DORA and its related delegated regulations, which important provision is materially necessary for a requirement that must be performed continuously without monthly or quarterly frequency requirements?",
               "intent": "procedure_or_reporting",
               "target_concepts": [
                 "continuous performance",
-                "frequency requirement",
-                "absent from mapping"
+                "frequency requirements",
+                "DORA provisions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -166,14 +166,14 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1773 establishes a requirement to perform continuously without specifying monthly or quarterly frequency?",
+              "Within DORA and its related delegated regulations, which important provision is materially necessary for a requirement that must be performed continuously without monthly or quarterly frequency requirements?",
               "continuous performance",
-              "frequency requirement",
-              "absent from mapping"
+              "frequency requirements",
+              "DORA provisions"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 77 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 75 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -189,17 +189,19 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 17.996,
-  "model_attempts": 1,
-  "guardrail_changes": [],
+  "elapsed_seconds": 24.573,
+  "model_attempts": 2,
+  "guardrail_changes": [
+    "Removed a missing-mapping proposal without valid evidence"
+  ],
   "queries": [
     {
       "purpose": "validate",
@@ -211,7 +213,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Perform continuously; there is no requirement to perform it monthly or quarterly"
     }
   ],
   "item": {

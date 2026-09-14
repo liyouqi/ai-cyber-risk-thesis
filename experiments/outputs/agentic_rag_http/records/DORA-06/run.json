@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 10302,
+        "planning_ms": 12136,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
-          "standalone_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified",
           "scope": {
             "frameworks": [
               "dora"
@@ -113,7 +113,7 @@
           "claims": [
             {
               "claim_id": "management_body_training_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires members of the management body to receive training on ICT risk and digital operational resilience without specifying a uniform number of sessions or hours?",
+              "question": "What provision in DORA and its related delegated regulations requires members of the management body to regularly receive training on ICT risk and digital operational resilience?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "management body",
@@ -126,7 +126,63 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA management body training ICT risk digital operational resilience",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "training_frequency_or_duration",
+              "question": "Does DORA or its related delegated regulations specify a uniform number of sessions or hours for the training of management body members on ICT risk and digital operational resilience?",
+              "intent": "threshold_or_condition",
+              "target_concepts": [
+                "training",
+                "sessions",
+                "hours",
+                "management body"
+              ],
+              "expected_evidence_roles": [
+                "condition_or_threshold"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA management body training sessions hours specified",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "absent_provision_identification",
+              "question": "What important provision in DORA and its related delegated regulations is materially necessary for the requirement that management body members receive training on ICT risk and digital operational resilience but is absent from the existing mapping?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "provision",
+                "requirement",
+                "training",
+                "ICT risk",
+                "digital operational resilience"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "management_body_training_requirement",
+                "training_frequency_or_duration"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA materially necessary provision management body training ICT risk digital operational resilience absent mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -136,7 +192,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:49:17.400877"
+            "generated_at": "2026-09-14T19:48:21.045622"
           },
           "limits": {
             "max_claims": 5,
@@ -150,7 +206,7 @@
           {
             "claim": {
               "claim_id": "management_body_training_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires members of the management body to receive training on ICT risk and digital operational resilience without specifying a uniform number of sessions or hours?",
+              "question": "What provision in DORA and its related delegated regulations requires members of the management body to regularly receive training on ICT risk and digital operational resilience?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "management body",
@@ -163,16 +219,28 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA management body training ICT risk digital operational resilience",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
+              "eu-2022-2554-article-13-6",
+              "eu-2022-2554-article-5-4",
+              "eu-2022-2554-article-24-1",
+              "eu-2022-2554-article-13-3",
+              "eu-2022-2554-article-6-5",
               "eu-2022-2554-article-16-1-h",
-              "eu-2022-2554-article-5-2-g",
-              "eu-2024-1774-article-28-2-e"
+              "eu-2022-2554-article-13-1",
+              "eu-2022-2554-article-5-2-g"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires members of the management body to receive training on ICT risk and digital operational resilience without specifying a uniform number of sessions or hours?",
+              "What provision in DORA and its related delegated regulations requires members of the management body to regularly receive training on ICT risk and digital operational resilience?",
+              "DORA management body training ICT risk digital operational resilience",
               "management body",
               "training",
               "ICT risk",
@@ -180,7 +248,92 @@
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "3 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
+              "8 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "training_frequency_or_duration",
+              "question": "Does DORA or its related delegated regulations specify a uniform number of sessions or hours for the training of management body members on ICT risk and digital operational resilience?",
+              "intent": "threshold_or_condition",
+              "target_concepts": [
+                "training",
+                "sessions",
+                "hours",
+                "management body"
+              ],
+              "expected_evidence_roles": [
+                "condition_or_threshold"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA management body training sessions hours specified",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2022-2554-article-5-2-g"
+            ],
+            "executed_queries": [
+              "Does DORA or its related delegated regulations specify a uniform number of sessions or hours for the training of management body members on ICT risk and digital operational resilience?",
+              "DORA management body training sessions hours specified",
+              "training",
+              "sessions",
+              "hours",
+              "management body"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "1 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "absent_provision_identification",
+              "question": "What important provision in DORA and its related delegated regulations is materially necessary for the requirement that management body members receive training on ICT risk and digital operational resilience but is absent from the existing mapping?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "provision",
+                "requirement",
+                "training",
+                "ICT risk",
+                "digital operational resilience"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "management_body_training_requirement",
+                "training_frequency_or_duration"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA materially necessary provision management body training ICT risk digital operational resilience absent mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "What important provision in DORA and its related delegated regulations is materially necessary for the requirement that management body members receive training on ICT risk and digital operational resilience but is absent from the existing mapping?",
+              "DORA materially necessary provision management body training ICT risk digital operational resilience absent mapping",
+              "provision",
+              "requirement",
+              "training",
+              "ICT risk",
+              "digital operational resilience"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "the retriever returned 103 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -196,15 +349,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 17.879,
+  "elapsed_seconds": 26.893,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -218,7 +371,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Members of the management body should regularly receive training on ICT risk and digital operational resilience, but no uniform number of sessions or hours is specified"
     }
   ],
   "item": {

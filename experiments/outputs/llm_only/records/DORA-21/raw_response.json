@@ -1,15 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 8",
-      "decision": "Unable to determine",
-      "reason": "The provided information does not specify the content of Article 8, which is necessary to assess its connection to the control statement about continuous performance.",
-      "evidence_ids": []
-    }
-  ],
+  "coverage": "Yes",
+  "reason": "Article 8 of the DORA Delegated Regulation establishes the requirement for ICT risk management and incident reporting, which is a continuous process. The mapping to this article provides a defensible and sufficiently complete regulatory basis for the control objective of performing the activity continuously.",
+  "evidence_ids": [],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is known.",
-  "overall_assessment": "Unable to determine",
-  "challenge_comment": "The assessment cannot be completed because the content of Article 8 is not provided. To proceed, the specific text of Article 8 is required to determine if it supports the control statement."
+  "applicability_note": "This control is applicable to all financial entities and groups subject to DORA, as Article 8 is a core requirement of the regulation.",
+  "challenge_comment": "The challenge is to ensure that the continuous nature of the control is demonstrably linked to the ongoing requirements of Article 8, rather than being interpreted as a one-time or periodic task."
 }

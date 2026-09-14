@@ -140,7 +140,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -155,12 +155,12 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 8874,
+        "status": "retrieved",
+        "planning_ms": 5607,
         "plan": {
-          "plan_id": "ai_act_logging_requirement",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?",
+          "plan_id": "auto",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -176,39 +176,30 @@
           },
           "claims": [
             {
-              "claim_id": "logging_requirements_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 requires logging of user, time, I/O, model version, tool calls and admin actions?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "logging_requirements_ai_act",
+              "question": "Within Regulation (EU) 2024/1689, what are the specific requirements for logging user interactions, time stamps, input/output data, model versions, tool calls, and administrative actions?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "logging",
-                "user",
-                "time",
-                "I/O",
-                "model version",
+                "user interactions",
+                "time stamps",
+                "input/output data",
+                "model versions",
                 "tool calls",
-                "admin actions"
+                "administrative actions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
-            },
-            {
-              "claim_id": "existing_mapping_analysis",
-              "question": "What provisions are currently mapped for logging requirements in Regulation (EU) 2024/1689?",
-              "intent": "scope_or_applicability",
-              "target_concepts": [
-                "logging",
-                "mapping"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "logging requirements user time input output model version tool calls administrative actions",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -218,7 +209,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:41:56.297519"
+            "generated_at": "2026-09-14T19:42:41.562896"
           },
           "limits": {
             "max_claims": 5,
@@ -231,68 +222,49 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "logging_requirements_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 requires logging of user, time, I/O, model version, tool calls and admin actions?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "logging_requirements_ai_act",
+              "question": "Within Regulation (EU) 2024/1689, what are the specific requirements for logging user interactions, time stamps, input/output data, model versions, tool calls, and administrative actions?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "logging",
-                "user",
-                "time",
-                "I/O",
-                "model version",
+                "user interactions",
+                "time stamps",
+                "input/output data",
+                "model versions",
                 "tool calls",
-                "admin actions"
+                "administrative actions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "logging requirements user time input output model version tool calls administrative actions",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:xiii"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 requires logging of user, time, I/O, model version, tool calls and admin actions?",
+              "Within Regulation (EU) 2024/1689, what are the specific requirements for logging user interactions, time stamps, input/output data, model versions, tool calls, and administrative actions?",
+              "logging requirements user time input output model version tool calls administrative actions",
               "logging",
-              "user",
-              "time",
-              "I/O",
-              "model version",
+              "user interactions",
+              "time stamps",
+              "input/output data",
+              "model versions",
               "tool calls",
-              "admin actions"
+              "administrative actions"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 152 ranked hit(s), but none passed deterministic-legal-coverage-v3"
-            ]
-          },
-          {
-            "claim": {
-              "claim_id": "existing_mapping_analysis",
-              "question": "What provisions are currently mapped for logging requirements in Regulation (EU) 2024/1689?",
-              "intent": "scope_or_applicability",
-              "target_concepts": [
-                "logging",
-                "mapping"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            },
-            "status": "not_covered",
-            "evidence_refs": [],
-            "executed_queries": [
-              "What provisions are currently mapped for logging requirements in Regulation (EU) 2024/1689?",
-              "logging",
-              "mapping"
-            ],
-            "candidate_count": 1455,
-            "coverage_reasons": [
-              "the retriever returned 56 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "1 evidence item(s) selected from 9 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -308,15 +280,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 28.454,
+  "elapsed_seconds": 21.891,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -342,7 +314,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are user, time, I/O, model version, tool calls and admin actions logged?"
     }
   ],
   "item": {

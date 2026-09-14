@@ -105,7 +105,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -121,11 +121,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 15636,
+        "planning_ms": 15430,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -142,8 +142,8 @@
           "claims": [
             {
               "claim_id": "provision_for_prompt_injection_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of prompt injection attacks?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of prompt injection attacks?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "prompt injection",
                 "mitigation"
@@ -157,8 +157,8 @@
             },
             {
               "claim_id": "provision_for_malicious_files_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of malicious files?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of malicious files?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "malicious files",
                 "mitigation"
@@ -172,8 +172,8 @@
             },
             {
               "claim_id": "provision_for_retrieval_bypass_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of retrieval bypass?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of retrieval bypass attacks?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "retrieval bypass",
                 "mitigation"
@@ -187,8 +187,8 @@
             },
             {
               "claim_id": "provision_for_indirect_instructions_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of indirect instructions?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of indirect instructions?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "indirect instructions",
                 "mitigation"
@@ -201,15 +201,15 @@
               "query_variants": []
             },
             {
-              "claim_id": "existing_mapping_comparison",
-              "question": "What provisions are currently mapped for mitigating prompt injection, malicious files, retrieval bypass and indirect instructions in Regulation (EU) 2024/1689?",
-              "intent": "relationship_between_provisions",
+              "claim_id": "ai_system_security_requirements",
+              "question": "Within Regulation (EU) 2024/1689, what are the general security requirements for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "mapping",
-                "mitigation"
+                "security requirements",
+                "AI systems"
               ],
               "expected_evidence_roles": [
-                "supporting_context"
+                "general_rule"
               ],
               "depends_on": [],
               "importance": "supporting",
@@ -223,7 +223,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:40:54.813140"
+            "generated_at": "2026-09-14T19:41:45.714602"
           },
           "limits": {
             "max_claims": 5,
@@ -237,8 +237,8 @@
           {
             "claim": {
               "claim_id": "provision_for_prompt_injection_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of prompt injection attacks?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of prompt injection attacks?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "prompt injection",
                 "mitigation"
@@ -253,7 +253,7 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses mitigation of prompt injection attacks?",
+              "Within Regulation (EU) 2024/1689, which provision addresses mitigation of prompt injection attacks?",
               "prompt injection",
               "mitigation"
             ],
@@ -265,8 +265,8 @@
           {
             "claim": {
               "claim_id": "provision_for_malicious_files_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of malicious files?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of malicious files?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "malicious files",
                 "mitigation"
@@ -281,7 +281,7 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses mitigation of malicious files?",
+              "Within Regulation (EU) 2024/1689, which provision addresses mitigation of malicious files?",
               "malicious files",
               "mitigation"
             ],
@@ -293,8 +293,8 @@
           {
             "claim": {
               "claim_id": "provision_for_retrieval_bypass_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of retrieval bypass?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of retrieval bypass attacks?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "retrieval bypass",
                 "mitigation"
@@ -309,20 +309,20 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses mitigation of retrieval bypass?",
+              "Within Regulation (EU) 2024/1689, which provision addresses mitigation of retrieval bypass attacks?",
               "retrieval bypass",
               "mitigation"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 59 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 58 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
               "claim_id": "provision_for_indirect_instructions_mitigation",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses mitigation of indirect instructions?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, which provision addresses mitigation of indirect instructions?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "indirect instructions",
                 "mitigation"
@@ -339,7 +339,7 @@
               "eu:32024R1689:recital:65"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses mitigation of indirect instructions?",
+              "Within Regulation (EU) 2024/1689, which provision addresses mitigation of indirect instructions?",
               "indirect instructions",
               "mitigation"
             ],
@@ -350,30 +350,39 @@
           },
           {
             "claim": {
-              "claim_id": "existing_mapping_comparison",
-              "question": "What provisions are currently mapped for mitigating prompt injection, malicious files, retrieval bypass and indirect instructions in Regulation (EU) 2024/1689?",
-              "intent": "relationship_between_provisions",
+              "claim_id": "ai_system_security_requirements",
+              "question": "Within Regulation (EU) 2024/1689, what are the general security requirements for AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
-                "mapping",
-                "mitigation"
+                "security requirements",
+                "AI systems"
               ],
               "expected_evidence_roles": [
-                "supporting_context"
+                "general_rule"
               ],
               "depends_on": [],
               "importance": "supporting",
               "query_variants": []
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:108:subparagraph:1:point:5",
+              "eu:32024R1689:article:74:paragraph:12",
+              "eu:32024R1689:article:2:paragraph:3",
+              "eu:32024R1689:article:4:subparagraph:1",
+              "eu:32024R1689:article:102:subparagraph:1",
+              "eu:32024R1689:article:78",
+              "eu:32024R1689:article:78:paragraph:3",
+              "eu:32024R1689:article:78:paragraph:2"
+            ],
             "executed_queries": [
-              "What provisions are currently mapped for mitigating prompt injection, malicious files, retrieval bypass and indirect instructions in Regulation (EU) 2024/1689?",
-              "mapping",
-              "mitigation"
+              "Within Regulation (EU) 2024/1689, what are the general security requirements for AI systems?",
+              "security requirements",
+              "AI systems"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 60 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
             ]
           }
         ],
@@ -389,15 +398,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 33.178,
+  "elapsed_seconds": 31.544,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -417,7 +426,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are prompt injection, malicious files, retrieval bypass and indirect instructions mitigated?"
     }
   ],
   "item": {

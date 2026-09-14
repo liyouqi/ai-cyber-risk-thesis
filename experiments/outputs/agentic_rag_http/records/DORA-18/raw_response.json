@@ -1,27 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1774",
-      "provision": "Article 26",
-      "decision": "Partially supported",
-      "reason": "Article 26 requires ICT response and recovery plans to identify severe scenarios, including cyber-attacks, but does not specify the annual testing frequency required by the control statement.",
-      "evidence_ids": [
-        "eu-2024-1774-article-26-1",
-        "eu-2024-1774-article-26-2"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2022/2554",
-      "provision": "Article 11(6)",
-      "decision": "Supported",
-      "reason": "Article 11(6)(a) directly requires financial entities to test ICT business continuity and response and recovery plans at least yearly, which directly supports the control statement's requirement.",
-      "evidence_ids": [
-        "eu-2022-2554-article-11-6-a"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping of Article 26 (Delegated Regulation) and Article 11(6) (DORA) provides a defensible and complete regulatory basis. Article 11(6)(a) explicitly requires annual testing of ICT business continuity and response/recovery plans, which directly supports the control objective. Article 26 provides the detailed requirements for the content of these plans, including the development of severe but plausible scenarios, which is also a key part of the control objective.",
+  "evidence_ids": [
+    "eu-2022-2554-article-11-6-a"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct. Article 11(6) of Regulation (EU) 2022/2554 correctly supports the annual testing requirement. However, Article 26 of the Delegated Regulation, while relevant to the overall ICT continuity planning, does not address the specific testing frequency. The mapping should be refined to reflect that Article 11(6) is the primary support for the testing frequency, while Article 26 supports the broader planning context."
+  "applicability_note": "The control is applicable to financial entities under the DORA framework, as specified in the assessment item.",
+  "challenge_comment": "The mapping is adequate as it combines the specific testing frequency requirement from Article 11(6)(a) with the detailed scenario planning requirements from Article 26, which together fully support the control objective."
 }

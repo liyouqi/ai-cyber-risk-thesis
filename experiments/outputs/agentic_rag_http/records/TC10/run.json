@@ -175,7 +175,7 @@
         }
       },
       {
-        "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+        "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -191,11 +191,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 7136,
+        "planning_ms": 7864,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
-          "standalone_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+          "original_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
+          "standalone_question": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?",
           "scope": {
             "frameworks": [
               "ai_act"
@@ -212,12 +212,12 @@
           "claims": [
             {
               "claim_id": "retention_deletion_configurability",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the configurability of retention and deletion for prompts, files, outputs, vectors and logs?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, are retention and deletion requirements configurable for prompts, files, outputs, vectors and logs?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "retention",
                 "deletion",
-                "configurability",
+                "configurable",
                 "prompts",
                 "files",
                 "outputs",
@@ -231,7 +231,7 @@
               "importance": "required",
               "query_variants": [
                 {
-                  "query": "retention and deletion configurable prompts files outputs vectors logs",
+                  "query": "retention deletion configurable prompts files outputs vectors logs",
                   "language": null,
                   "weight": 1.0
                 }
@@ -245,7 +245,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:38:57.362529"
+            "generated_at": "2026-09-14T19:40:37.470408"
           },
           "limits": {
             "max_claims": 5,
@@ -259,12 +259,12 @@
           {
             "claim": {
               "claim_id": "retention_deletion_configurability",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses the configurability of retention and deletion for prompts, files, outputs, vectors and logs?",
-              "intent": "scope_or_applicability",
+              "question": "Within Regulation (EU) 2024/1689, are retention and deletion requirements configurable for prompts, files, outputs, vectors and logs?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "retention",
                 "deletion",
-                "configurability",
+                "configurable",
                 "prompts",
                 "files",
                 "outputs",
@@ -278,7 +278,7 @@
               "importance": "required",
               "query_variants": [
                 {
-                  "query": "retention and deletion configurable prompts files outputs vectors logs",
+                  "query": "retention deletion configurable prompts files outputs vectors logs",
                   "language": null,
                   "weight": 1.0
                 }
@@ -287,11 +287,11 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses the configurability of retention and deletion for prompts, files, outputs, vectors and logs?",
-              "retention and deletion configurable prompts files outputs vectors logs",
+              "Within Regulation (EU) 2024/1689, are retention and deletion requirements configurable for prompts, files, outputs, vectors and logs?",
+              "retention deletion configurable prompts files outputs vectors logs",
               "retention",
               "deletion",
-              "configurability",
+              "configurable",
               "prompts",
               "files",
               "outputs",
@@ -300,7 +300,7 @@
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 160 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 161 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -316,16 +316,16 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 48.632,
-  "model_attempts": 2,
+  "elapsed_seconds": 25.454,
+  "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
     {
@@ -356,7 +356,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?"
+      "query": "Within Regulation (EU) 2024/1689, which important provision is materially necessary for this requirement but absent from the existing mapping: Are retention and deletion configurable for prompts, files, outputs, vectors and logs?"
     }
   ],
   "item": {

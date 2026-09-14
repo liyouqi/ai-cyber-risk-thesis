@@ -1,17 +1,10 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2022/2554",
-      "provision": "Article 28(3)",
-      "decision": "Supported",
-      "reason": "The provision directly requires financial entities to report at least yearly to the competent authority on the number of new arrangements, categories of providers, type of contractual arrangements, and the ICT services and functions provided, which directly and materially supports the control's objective.",
-      "evidence_ids": [
-        "eu-2022-2554-article-28-3"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping to Article 28(3) of Regulation (EU) 2022/2554 provides a defensible and sufficiently complete regulatory basis. The provision explicitly requires financial entities to report at least yearly to the competent authority on the number of new ICT service arrangements, the categories of providers, the types of contracts, and the functions supported, which directly corresponds to the control objective.",
+  "evidence_ids": [
+    "eu-2022-2554-article-28-3"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions identified.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "The mapping is correct. The provision's requirements for yearly reporting on new ICT service arrangements, provider categories, contract types, and functions directly and materially support the control statement."
+  "applicability_note": "This control is applicable to financial entities as defined in DORA, which are required to maintain an ICT third-party register and report on it annually.",
+  "challenge_comment": "The mapping is direct and the evidence is clear. No challenge to the adequacy of the mapping is identified."
 }

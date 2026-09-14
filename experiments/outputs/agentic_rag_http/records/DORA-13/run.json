@@ -70,7 +70,7 @@
         }
       },
       {
-        "query": "Which provision of Commission Delegated Regulation (EU) 2025/301 is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -89,11 +89,11 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 9956,
+        "planning_ms": 9335,
         "plan": {
-          "plan_id": "auto",
-          "original_question": "Which provision of Commission Delegated Regulation (EU) 2025/301 is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it",
-          "standalone_question": "Which provision of Commission Delegated Regulation (EU) 2025/301 is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it",
+          "plan_id": "dora_incident_reporting_requirement",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it",
           "scope": {
             "frameworks": [
               "dora"
@@ -112,13 +112,14 @@
           },
           "claims": [
             {
-              "claim_id": "incident_reporting_triggers",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2025/301 addresses the obligation to submit reports without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it?",
+              "claim_id": "dora_incident_reporting_trigger",
+              "question": "Within DORA and its related delegated regulations, what provision requires submission without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "incident reporting",
+                "without undue delay",
                 "regular activities recovery",
-                "material change in incident status",
+                "material incident status change",
                 "competent authority request"
               ],
               "expected_evidence_roles": [
@@ -126,7 +127,37 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA incident reporting obligation without undue delay after recovery or material status change or competent authority request",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "dora_incident_mapping_gap",
+              "question": "Within DORA and its related delegated regulations, what important provision is materially necessary for the incident reporting requirement but absent from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "incident reporting requirement",
+                "materially necessary provision",
+                "absent from mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "dora_incident_reporting_trigger"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA materially necessary provision for incident reporting not in existing mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
@@ -136,7 +167,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:51:07.034455"
+            "generated_at": "2026-09-14T19:50:26.796164"
           },
           "limits": {
             "max_claims": 5,
@@ -149,13 +180,14 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "incident_reporting_triggers",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2025/301 addresses the obligation to submit reports without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it?",
+              "claim_id": "dora_incident_reporting_trigger",
+              "question": "Within DORA and its related delegated regulations, what provision requires submission without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "incident reporting",
+                "without undue delay",
                 "regular activities recovery",
-                "material change in incident status",
+                "material incident status change",
                 "competent authority request"
               ],
               "expected_evidence_roles": [
@@ -163,20 +195,67 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA incident reporting obligation without undue delay after recovery or material status change or competent authority request",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2025/301 addresses the obligation to submit reports without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it?",
+              "Within DORA and its related delegated regulations, what provision requires submission without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it?",
+              "DORA incident reporting obligation without undue delay after recovery or material status change or competent authority request",
               "incident reporting",
+              "without undue delay",
               "regular activities recovery",
-              "material change in incident status",
+              "material incident status change",
               "competent authority request"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 93 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 113 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "dora_incident_mapping_gap",
+              "question": "Within DORA and its related delegated regulations, what important provision is materially necessary for the incident reporting requirement but absent from existing mappings?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "incident reporting requirement",
+                "materially necessary provision",
+                "absent from mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "dora_incident_reporting_trigger"
+              ],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA materially necessary provision for incident reporting not in existing mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Within DORA and its related delegated regulations, what important provision is materially necessary for the incident reporting requirement but absent from existing mappings?",
+              "DORA materially necessary provision for incident reporting not in existing mapping",
+              "incident reporting requirement",
+              "materially necessary provision",
+              "absent from mapping"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "the retriever returned 78 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -192,15 +271,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 16.411,
+  "elapsed_seconds": 25.43,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -214,7 +293,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Commission Delegated Regulation (EU) 2025/301 is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Submit without undue delay after regular activities have recovered, when the incident status changes materially, or when the competent authority requests it"
     }
   ],
   "item": {

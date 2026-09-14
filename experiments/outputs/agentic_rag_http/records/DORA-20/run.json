@@ -105,7 +105,7 @@
         }
       },
       {
-        "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
+        "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
         "query_mode": "planned",
         "scope": {
           "frameworks": [
@@ -124,11 +124,11 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 18423,
+        "planning_ms": 10342,
         "plan": {
           "plan_id": "auto",
-          "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
-          "standalone_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
+          "original_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
+          "standalone_question": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit",
           "scope": {
             "frameworks": [
               "dora"
@@ -147,38 +147,50 @@
           },
           "claims": [
             {
-              "claim_id": "provision_for_audit_plan_inclusion",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires including audit plans in the overall audit strategy?",
+              "claim_id": "dora_audit_plan_requirement",
+              "question": "Within DORA and its related delegated regulations, what provision requires including audits in the audit plan?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "audit plan",
-                "overall audit strategy"
+                "audit"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA audit plan requirement",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             {
-              "claim_id": "provision_for_risk_based_audit_frequency",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 determines audit frequency based on risk assessment?",
+              "claim_id": "dora_audit_frequency_risk_based",
+              "question": "Within DORA and its related delegated regulations, what provision determines audit frequency based on risk?",
               "intent": "procedure_or_reporting",
               "target_concepts": [
                 "audit frequency",
-                "risk assessment"
+                "risk-based"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA risk-based audit frequency",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             {
-              "claim_id": "provision_for_no_uniform_annual_audit",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 explicitly states there is no uniform requirement for an annual audit?",
+              "claim_id": "dora_no_uniform_annual_audit",
+              "question": "Within DORA and its related delegated regulations, what provision explicitly states there is no uniform requirement for an annual audit?",
               "intent": "exception_or_derogation",
               "target_concepts": [
                 "uniform requirement"
@@ -198,7 +210,7 @@
             "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-14T10:53:29.058556"
+            "generated_at": "2026-09-14T19:52:23.618888"
           },
           "limits": {
             "max_claims": 5,
@@ -211,67 +223,80 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "provision_for_audit_plan_inclusion",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires including audit plans in the overall audit strategy?",
+              "claim_id": "dora_audit_plan_requirement",
+              "question": "Within DORA and its related delegated regulations, what provision requires including audits in the audit plan?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "audit plan",
-                "overall audit strategy"
+                "audit"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA audit plan requirement",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires including audit plans in the overall audit strategy?",
+              "Within DORA and its related delegated regulations, what provision requires including audits in the audit plan?",
+              "DORA audit plan requirement",
               "audit plan",
-              "overall audit strategy"
+              "audit"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 44 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 36 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "provision_for_risk_based_audit_frequency",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 determines audit frequency based on risk assessment?",
+              "claim_id": "dora_audit_frequency_risk_based",
+              "question": "Within DORA and its related delegated regulations, what provision determines audit frequency based on risk?",
               "intent": "procedure_or_reporting",
               "target_concepts": [
                 "audit frequency",
-                "risk assessment"
+                "risk-based"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "DORA risk-based audit frequency",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2022-2554-article-28-6",
-              "eu-2022-2554-article-30-5"
+              "eu-2022-2554-article-28-6"
             ],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1773 determines audit frequency based on risk assessment?",
+              "Within DORA and its related delegated regulations, what provision determines audit frequency based on risk?",
+              "DORA risk-based audit frequency",
               "audit frequency",
-              "risk assessment"
+              "risk-based"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "2 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+              "1 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
             ]
           },
           {
             "claim": {
-              "claim_id": "provision_for_no_uniform_annual_audit",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 explicitly states there is no uniform requirement for an annual audit?",
+              "claim_id": "dora_no_uniform_annual_audit",
+              "question": "Within DORA and its related delegated regulations, what provision explicitly states there is no uniform requirement for an annual audit?",
               "intent": "exception_or_derogation",
               "target_concepts": [
                 "uniform requirement"
@@ -286,12 +311,12 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1773 explicitly states there is no uniform requirement for an annual audit?",
+              "Within DORA and its related delegated regulations, what provision explicitly states there is no uniform requirement for an annual audit?",
               "uniform requirement"
             ],
             "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 38 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+              "the retriever returned 37 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -307,15 +332,15 @@
       }
     ]
   },
-  "workflow_version": "0.4",
-  "prompt_version": "agent-review-v0.3",
+  "workflow_version": "0.7",
+  "prompt_version": "agent-review-v0.5",
   "model": "glm-4.6v",
   "model_settings": {
     "model": "glm-4.6v",
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 60.489,
+  "elapsed_seconds": 20.791,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
@@ -335,7 +360,7 @@
       "purpose": "gap",
       "query_mode": "planned",
       "provision": "",
-      "query": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit"
+      "query": "Within DORA and its related delegated regulations, which important provision is materially necessary for this requirement but absent from the existing mapping: Include it in the audit plan; determine the audit frequency based on risk, with no uniform requirement for an annual audit"
     }
   ],
   "item": {

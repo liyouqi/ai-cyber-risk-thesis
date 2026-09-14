@@ -1,27 +1,23 @@
-"""Prepare the item-level scoring sheet before experiment results exist."""
+"""Prepare the item-level scoring sheet for the three methods."""
 
 from __future__ import annotations
 
 import argparse
 import csv
-import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-from agent.references import parse_mapping
 from agent.workflow import load_items
 
 
+ROOT = Path(__file__).resolve().parents[1]
 METHODS = ("manual", "llm_only", "agentic_rag")
 FIELDS = [
     "item_id",
     "framework",
     "method",
-    "existing_mapping_correct",
-    "existing_mapping_total",
+    "gold_coverage",
+    "predicted_coverage",
+    "coverage_correct",
     "missing_mapping_true_positive",
     "missing_mapping_proposed",
     "missing_mapping_reference_total",
@@ -36,23 +32,12 @@ FIELDS = [
 
 def prepare_result_table(input_path: str | Path, output_path: str | Path) -> Path:
     output = Path(output_path)
-    if output.exists():
-        with output.open(newline="", encoding="utf-8-sig") as handle:
-            if any(csv.DictReader(handle)):
-                raise FileExistsError(f"Result table already contains rows: {output}")
-
-    rows: list[dict[str, object]] = []
+    rows: list[dict[str, str]] = []
     for item in load_items(input_path):
-        mapping_total = len(parse_mapping(item.existing_mapping, item.instrument))
         for method in METHODS:
-            row: dict[str, object] = {field: "" for field in FIELDS}
+            row = {field: "" for field in FIELDS}
             row.update(
-                {
-                    "item_id": item.item_id,
-                    "framework": item.framework,
-                    "method": method,
-                    "existing_mapping_total": mapping_total,
-                }
+                {"item_id": item.item_id, "framework": item.framework, "method": method}
             )
             rows.append(row)
 
@@ -66,17 +51,12 @@ def prepare_result_table(input_path: str | Path, output_path: str | Path) -> Pat
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Prepare the blank scoring table")
+    parser.add_argument("--input", default=str(ROOT / "experiments/data/items.csv"))
     parser.add_argument(
-        "--input",
-        default=str(ROOT / "experiments/data/items.csv"),
-    )
-    parser.add_argument(
-        "--output",
-        default=str(ROOT / "experiments/results/item_results.csv"),
+        "--output", default=str(ROOT / "experiments/results/item_results.csv")
     )
     args = parser.parse_args()
-    output = prepare_result_table(args.input, args.output)
-    print(f"Scoring table written to {output}")
+    print(f"Scoring table written to {prepare_result_table(args.input, args.output)}")
 
 
 if __name__ == "__main__":

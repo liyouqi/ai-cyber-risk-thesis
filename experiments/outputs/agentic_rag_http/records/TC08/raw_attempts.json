@@ -1,0 +1,40 @@
+[
+  {
+    "coverage": "No",
+    "reason": "The existing mapping does not provide a defensible and sufficiently complete regulatory basis for the control objective of restricting sensitive inputs with classification, minimisation, and masking. Article 10 focuses on data quality and bias mitigation, while Article 26(4) addresses input data relevance and representativeness. Article 27 concerns fundamental rights impact assessments. None of these provisions directly address the specific requirements of classification, minimisation, or masking of sensitive inputs.",
+    "evidence_ids": [
+      "eu:32024R1689:article:10:paragraph:1",
+      "eu:32024R1689:article:26:paragraph:4",
+      "eu:32024R1689:article:27"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 29",
+        "reason": "Article 29 requires providers to implement a quality management system that includes data governance measures. This provision is a more direct and comprehensive basis for implementing controls like classification, minimisation, and masking of sensitive inputs as part of data governance.",
+        "evidence_ids": []
+      }
+    ],
+    "applicability_note": "The control is applicable to personal or confidential data, which is a key focus of the EU AI Act's data governance requirements.",
+    "challenge_comment": "The current mapping conflates general data quality requirements with specific data protection controls. A more precise mapping to Article 29 is needed to adequately cover the control objective."
+  },
+  {
+    "coverage": "No",
+    "reason": "The existing mapping does not provide a defensible and sufficiently complete regulatory basis for the control objective of restricting sensitive inputs with classification, minimisation, and masking. Article 10 focuses on data quality and bias mitigation, while Article 26(4) addresses input data relevance and representativeness. Article 27 concerns fundamental rights impact assessments. None of these provisions directly address the specific requirements of classification, minimisation, or masking of sensitive inputs.",
+    "evidence_ids": [
+      "eu:32024R1689:article:10:paragraph:1",
+      "eu:32024R1689:article:26:paragraph:4",
+      "eu:32024R1689:article:27"
+    ],
+    "missing_mappings": [
+      {
+        "instrument": "Regulation (EU) 2024/1689",
+        "provision": "Article 29",
+        "reason": "Article 29 requires providers to implement a quality management system that includes data governance measures. This provision is a more direct and comprehensive basis for implementing controls like classification, minimisation, and masking of sensitive inputs as part of data governance.",
+        "evidence_ids": []
+      }
+    ],
+    "applicability_note": "The control is applicable to personal or confidential data, which is a key focus of the EU AI Act's data governance requirements.",
+    "challenge_comment": "The current mapping conflates general data quality requirements with specific data protection controls. A more precise mapping to Article 29 is needed to adequately cover the control objective."
+  }
+]

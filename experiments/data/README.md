@@ -81,3 +81,7 @@ Regenerate both selected files with:
 ```bash
 python scripts/build_experiment_samples.py
 ```
+
+`gold_standard.csv` is the independent expert reference standard for those 40
+items. Experiment workflows never read it; only `scripts/update_results.py`
+loads it after method outputs have been completed.

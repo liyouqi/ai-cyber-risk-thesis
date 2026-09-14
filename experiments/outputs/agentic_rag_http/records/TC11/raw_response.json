@@ -1,50 +1,21 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 10",
-      "decision": "Unsupported",
-      "reason": "Article 10 focuses on the quality, governance, and bias assessment of training data sets, but does not address the exclusion of institutional data or the provision of an enforceable opt-out mechanism.",
-      "evidence_ids": [
-        "eu:32024R1689:article:10:paragraph:1",
-        "eu:32024R1689:article:10:paragraph:2",
-        "eu:32024R1689:article:10:paragraph:3",
-        "eu:32024R1689:article:10:paragraph:4",
-        "eu:32024R1689:article:10:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 13",
-      "decision": "Unsupported",
-      "reason": "Article 13 concerns the transparency and instructions for use of high-risk AI systems, which is unrelated to the control's focus on data exclusion and opt-outs.",
-      "evidence_ids": [
-        "eu:32024R1689:article:13:paragraph:1",
-        "eu:32024R1689:article:13:paragraph:2",
-        "eu:32024R1689:article:13:paragraph:3"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 25(4)",
-      "decision": "Unsupported",
-      "reason": "Article 25(4) addresses contractual obligations between providers and third parties to ensure compliance, not the specific control of excluding institutional data from training.",
-      "evidence_ids": [
-        "eu:32024R1689:article:25:paragraph:4"
-      ]
-    }
+  "coverage": "No",
+  "reason": "The existing mapping does not address the core requirement of excluding institutional data from training or providing an enforceable opt-out. Articles 10, 13, and 25(4) focus on data quality, transparency, and third-party obligations, but none contain provisions for data exclusion or opt-out mechanisms.",
+  "evidence_ids": [
+    "eu:32024R1689:article:10:paragraph:1",
+    "eu:32024R1689:article:13:paragraph:1",
+    "eu:32024R1689:article:25:paragraph:4"
   ],
   "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Recital 105",
-      "reason": "Recital 105 discusses the right to opt out of text and data mining for copyrighted works, which is a relevant concept for data used in AI training and aligns with the control's objective of an enforceable opt-out.",
+      "provision": "Article 10(2)(b)",
+      "reason": "This provision requires data collection processes to consider the original purpose of personal data. While it doesn't explicitly mandate an opt-out, it establishes a principle that data should only be used for its intended purpose, which is foundational to the concept of an enforceable opt-out for institutional data.",
       "evidence_ids": [
-        "eu:32024R1689:recital:105"
+        "eu:32024R1689:article:10:paragraph:2:point:b"
       ]
     }
   ],
-  "applicability_note": "The control is applicable to third-party or cloud models, which may involve using data from external sources where opt-out rights could be relevant.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as they do not address the control's core requirement of excluding institutional data or providing an opt-out. Recital 105, which discusses opt-out rights for text and data mining, is a relevant but missing mapping that should be considered."
+  "applicability_note": "The control is applicable to third-party or cloud models, which are explicitly covered by the AI Act's obligations for high-risk AI systems.",
+  "challenge_comment": "The assessment item requires a specific control (data exclusion/opt-out) that is not directly addressed by the cited articles. The mapping relies on general data governance principles (Art. 10) and transparency (Art. 13) which, while related, do not constitute a defensible basis for the specific control objective."
 }

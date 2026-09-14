@@ -1,2 +1,2 @@
-item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-04,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,The mapping is correct. Article 24(6) of DORA is the appropriate provision for this control.
+item_id,coverage,reason,missing_mapping,evidence_reference,evidence_excerpt,applicability_note,challenge_comment
+DORA-04,Yes,"Article 24(6) of DORA requires entities to test their ICT systems and applications supporting critical or important functions at least annually, which directly corresponds to the control objective.",[],,,"This mapping is specific to entities within the scope of DORA, which includes financial market infrastructures, credit institutions, investment firms, and other financial entities.","The mapping is direct and sufficient, as the control statement's requirement for annual testing is explicitly mandated by the cited provision."

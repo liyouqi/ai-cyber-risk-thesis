@@ -360,33 +360,6 @@
     "score": 1.0
   },
   {
-    "evidence_id": "eu:32024R1689:annex:ix",
-    "document_id": "EU-2024-1689",
-    "text": "The following information shall be provided and thereafter kept up to date with regard to testing in real world conditions to be registered in accordance with Article 60:\n1. A Union-wide unique single identification number of the testing in real world conditions;\n2. The name and contact details of the provider or prospective provider and of the deployers involved in the testing in real world conditions;\n3. A brief description of the AI system, its intended purpose, and other information necessary for the identification of the system;\n4. A summary of the main characteristics of the plan for testing in real world conditions;\n5. Information on the suspension or termination of the testing in real world conditions.",
-    "source_locator": "ANNEX IX — Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:e",
-    "document_id": "EU-2024-1689",
-    "text": "(e) data collected and processed for the purpose of the testing in real world conditions shall be transferred to third countries only provided that appropriate and applicable safeguards under Union law are implemented;",
-    "source_locator": "Article 60(4)(e)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:7",
-    "document_id": "EU-2024-1689",
-    "text": "7. Any serious incident identified in the course of the testing in real world conditions shall be reported to the national market surveillance authority in accordance with Article 73. The provider or prospective provider shall adopt immediate mitigation measures or, failing that, shall suspend the testing in real world conditions until such mitigation takes place, or otherwise terminate it. The provider or prospective provider shall establish a procedure for the prompt recall of the AI system upon such termination of the testing in real world conditions.",
-    "source_locator": "Article 60(7)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
     "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:b",
     "document_id": "EU-2024-1689",
     "text": "(b) the market surveillance authority in the Member State where the testing in real world conditions is to be conducted has approved the testing in real world conditions and the real-world testing plan; where the market surveillance authority has not provided an answer within 30 days, the testing in real world conditions and the real-world testing plan shall be understood to have been approved; where national law does not provide for a tacit approval, the testing in real world conditions shall remain subject to an authorisation;",
@@ -396,55 +369,91 @@
     "score": null
   },
   {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:1",
+    "evidence_id": "eu:32024R1689:annex:iv",
     "document_id": "EU-2024-1689",
-    "text": "1. Testing of high-risk AI systems in real world conditions outside AI regulatory sandboxes may be conducted by providers or prospective providers of high-risk AI systems listed in Annex III, in accordance with this Article and the real-world testing plan referred to in this Article, without prejudice to the prohibitions under Article 5. The Commission shall, by means of implementing acts, specify the detailed elements of the real-world testing plan. Those implementing acts shall be adopted in accordance with the examination procedure referred to in Article 98(2). This paragraph shall be without prejudice to Union or national law on the testing in real world conditions of high-risk AI systems related to products covered by Union harmonisation legislation listed in Annex I.",
-    "source_locator": "Article 60(1)",
+    "text": "The technical documentation referred to in Article 11(1) shall contain at least the following information, as applicable to the relevant AI system:\n1. A general description of the AI system including:\n(a) its intended purpose, the name of the provider and the version of the system reflecting its relation to previous versions;\n(b) how the AI system interacts with, or can be used to interact with, hardware or software, including with other AI systems, that are not part of the AI system itself, where applicable;\n(c) the versions of relevant software or firmware, and any requirements related to version updates;\n(d) the description of all the forms in which the AI system is placed on the market or put into service, such as software packages embedded into hardware, downloads, or APIs;\n(e) the description of the hardware on which the AI system is intended to run;\n(f) where the AI system is a component of products, photographs or illustrations showing external features, the marking and internal layout of those products;\n(g) a basic description of the user-interface provided to the deployer;\n(h) instructions for use for the deployer, and a basic description of the user-interface provided to the deployer, where applicable;\n2. A detailed description of the elements of the AI system and of the process for its development, including:\n(a) the methods and steps performed for the development of the AI system, including, where relevant, recourse to pre-trained systems or tools provided by third parties and how those were used, integrated or modified by the provider;\n(b) the design specifications of the system, namely the general logic of the AI system and of the algorithms; the key design choices including the rationale and assumptions made, including with regard to persons or groups of persons in respect of who, the system is intended to be used; the main classification choices; what the system is designed to optimise for, and the relevance of the different parameters; the description of the expected output and output quality of the system; the decisions about any possible trade-off made regarding the technical solutions adopted to comply with the requirements set out in Chapter III, Section 2;\n(c) the description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; the computational resources used to develop, train, test and validate the AI system;\n(d) where relevant, the data requirements in terms of datasheets describing the training methodologies and techniques and the training data sets used, including a general description of these data sets, information about their provenance, scope and main characteristics; how the data was obtained and selected; labelling procedures (e.g. for supervised learning), data cleaning methodologies (e.g. outliers detection);\n(e) assessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the deployers, in accordance with Article 13(3), point (d);\n(f) where applicable, a detailed description of pre-determined changes to the AI system and its performance, together with all the relevant information related to the technical solutions adopted to ensure continuous compliance of the AI system with the relevant requirements set out in Chapter III, Section 2;\n(g) the validation and testing procedures used, including information about the validation and testing data used and their main characteristics; metrics used to measure accuracy, robustness and compliance with other relevant requirements set out in Chapter III, Section 2, as well as potentially discriminatory impacts; test logs and all test reports dated and signed by the responsible persons, including with regard to pre-determined changes as referred to under point (f);\n(h) cybersecurity measures put in place;\n3. Detailed information about the monitoring, functioning and control of the AI system, in particular with regard to: its capabilities and limitations in performance, including the degrees of accuracy for specific persons or groups of persons on which the system is intended to be used and the overall expected level of accuracy in relation to its intended purpose; the foreseeable unintended outcomes and sources of risks to health and safety, fundamental rights and discrimination in view of the intended purpose of the AI system; the human oversight measures needed in accordance with Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of AI systems by the deployers; specifications on input data, as appropriate;\n4. A description of the appropriateness of the performance metrics for the specific AI system;\n5. A detailed description of the risk management system in accordance with Article 9;\n6. A description of relevant changes made by the provider to the system through its lifecycle;\n7. A list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union; where no such harmonised standards have been applied, a detailed description of the solutions adopted to meet the requirements set out in Chapter III, Section 2, including a list of other relevant standards and technical specifications applied;\n8. A copy of the EU declaration of conformity referred to in Article 47;\n9. A detailed description of the system in place to evaluate the AI system performance in the post-market phase in accordance with Article 72, including the post-market monitoring plan referred to in Article 72(3).",
+    "source_locator": "ANNEX IV — Technical documentation referred to in Article 11(1)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": null,
     "score": null
   },
   {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:3",
+    "evidence_id": "eu:32024R1689:article:105:subparagraph:1",
     "document_id": "EU-2024-1689",
-    "text": "3. The testing of high-risk AI systems in real world conditions under this Article shall be without prejudice to any ethical review that is required by Union or national law.",
-    "source_locator": "Article 60(3)",
+    "text": "In Article 8 of Directive 2014/90/EU, the following paragraph is added: For Artificial Intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council, when carrying out its activities pursuant to paragraph 1 and when adopting technical specifications and testing standards in accordance with paragraphs 2 and 3, the Commission shall take into account the requirements set out in Chapter III, Section 2, of that Regulation.",
+    "source_locator": "Article 105, Subparagraph",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": null,
     "score": null
   },
   {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:h",
+    "evidence_id": "eu:32024R1689:annex:iv:point:2",
     "document_id": "EU-2024-1689",
-    "text": "(h) where a provider or prospective provider organises the testing in real world conditions in cooperation with one or more deployers or prospective deployers, the latter have been informed of all aspects of the testing that are relevant to their decision to participate, and given the relevant instructions for use of the AI system referred to in Article 13; the provider or prospective provider and the deployer or prospective deployer shall conclude an agreement specifying their roles and responsibilities with a view to ensuring compliance with the provisions for testing in real world conditions under this Regulation and under other applicable Union and national law;",
-    "source_locator": "Article 60(4)(h)",
+    "text": "2. A detailed description of the elements of the AI system and of the process for its development, including:",
+    "source_locator": "ANNEX IV — Technical documentation referred to in Article 11(1) — 2.",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": null,
     "score": null
   },
   {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:i",
+    "evidence_id": "eu:32024R1689:annex:iv:point:2:subpoint:g",
     "document_id": "EU-2024-1689",
-    "text": "(i) the subjects of the testing in real world conditions have given informed consent in accordance with Article 61, or in the case of law enforcement, where the seeking of informed consent would prevent the AI system from being tested, the testing itself and the outcome of the testing in the real world conditions shall not have any negative effect on the subjects, and their personal data shall be deleted after the test is performed;",
-    "source_locator": "Article 60(4)(i)",
+    "text": "(g) the validation and testing procedures used, including information about the validation and testing data used and their main characteristics; metrics used to measure accuracy, robustness and compliance with other relevant requirements set out in Chapter III, Section 2, as well as potentially discriminatory impacts; test logs and all test reports dated and signed by the responsible persons, including with regard to pre-determined changes as referred to under point (f);",
+    "source_locator": "ANNEX IV — Technical documentation referred to in Article 11(1) — 2. — (g)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": null,
     "score": null
   },
   {
-    "evidence_id": "eu:32024R1689:article:60:paragraph:8",
+    "evidence_id": "eu:32024R1689:article:58:paragraph:2:point:i",
     "document_id": "EU-2024-1689",
-    "text": "8. Providers or prospective providers shall notify the national market surveillance authority in the Member State where the testing in real world conditions is to be conducted of the suspension or termination of the testing in real world conditions and of the final outcomes.",
-    "source_locator": "Article 60(8)",
+    "text": "(i) that AI regulatory sandboxes facilitate the development of tools and infrastructure for testing, benchmarking, assessing and explaining dimensions of AI systems relevant for regulatory learning, such as accuracy, robustness and cybersecurity, as well as measures to mitigate risks to fundamental rights and society at large.",
+    "source_locator": "Article 58(2)(i)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": null,
     "score": null
   },
   {
-    "evidence_id": "eu:32024R1689:annex:ix:subparagraph:1",
+    "evidence_id": "eu:32024R1689:annex:iv:point:3",
     "document_id": "EU-2024-1689",
-    "text": "The following information shall be provided and thereafter kept up to date with regard to testing in real world conditions to be registered in accordance with Article 60:",
-    "source_locator": "ANNEX IX — Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60 — subparagraph",
+    "text": "3. Detailed information about the monitoring, functioning and control of the AI system, in particular with regard to: its capabilities and limitations in performance, including the degrees of accuracy for specific persons or groups of persons on which the system is intended to be used and the overall expected level of accuracy in relation to its intended purpose; the foreseeable unintended outcomes and sources of risks to health and safety, fundamental rights and discrimination in view of the intended purpose of the AI system; the human oversight measures needed in accordance with Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of AI systems by the deployers; specifications on input data, as appropriate;",
+    "source_locator": "ANNEX IV — Technical documentation referred to in Article 11(1) — 3.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:3:subparagraph:1:point:57",
+    "document_id": "EU-2024-1689",
+    "text": "(57) testing in real-world conditions means the temporary testing of an AI system for its intended purpose in real-world conditions outside a laboratory or otherwise simulated environment, with a view to gathering reliable and robust data and to assessing and verifying the conformity of the AI system with the requirements of this Regulation and it does not qualify as placing the AI system on the market or putting it into service within the meaning of this Regulation, provided that all the conditions laid down in Article 57 or 60 are fulfilled;",
+    "source_locator": "Article 3(57)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:57:paragraph:11",
+    "document_id": "EU-2024-1689",
+    "text": "11. The AI regulatory sandboxes shall not affect the supervisory or corrective powers of the competent authorities supervising the sandboxes, including at regional or local level. Any significant risks to health and safety and fundamental rights identified during the development and testing of such AI systems shall result in an adequate mitigation. National competent authorities shall have the power to temporarily or permanently suspend the testing process, or the participation in the sandbox if no effective mitigation is possible, and shall inform the AI Office of such decision. National competent authorities shall exercise their supervisory powers within the limits of the relevant law, using their discretionary powers when implementing legal provisions in respect of a specific AI regulatory sandbox project, with the objective of supporting innovation in AI in the Union.",
+    "source_locator": "Article 57(11)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:77:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. National public authorities or bodies which supervise or enforce the respect of obligations under Union law protecting fundamental rights, including the right to non-discrimination, in relation to the use of high-risk AI systems referred to in Annex III shall have the power to request and access any documentation created or maintained under this Regulation in accessible language and format when access to that documentation is necessary for effectively fulfilling their mandates within the limits of their jurisdiction. The relevant public authority or body shall inform the market surveillance authority of the Member State concerned of any such request.",
+    "source_locator": "Article 77(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:5:paragraph:5",
+    "document_id": "EU-2024-1689",
+    "text": "5. A Member State may decide to provide for the possibility to fully or partially authorise the use of real-time remote biometric identification systems in publicly accessible spaces for the purposes of law enforcement within the limits and under the conditions listed in paragraph 1, first subparagraph, point (h), and paragraphs 2 and 3. Member States concerned shall lay down in their national law the necessary detailed rules for the request, issuance and exercise of, as well as supervision and reporting relating to, the authorisations referred to in paragraph 3. Those rules shall also specify in respect of which of the objectives listed in paragraph 1, first subparagraph, point (h), including which of the criminal offences referred to in point (h)(iii) thereof, the competent authorities may be authorised to use those systems for the purposes of law enforcement. Member States shall notify those rules to the Commission at the latest 30 days following the adoption thereof. Member States may introduce, in accordance with Union law, more restrictive laws on the use of remote biometric identification systems.",
+    "source_locator": "Article 5(5)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": null,
     "score": null

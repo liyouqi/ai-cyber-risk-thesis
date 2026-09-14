@@ -1,22 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 8",
-      "decision": "Supported",
-      "reason": "Article 8 requires the competent authority to conduct an independent review of critical or important ICT third-party service providers. This directly supports the control objective of including such services in an audit plan.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Commission Delegated Regulation (EU) 2024/1773",
-      "provision": "Article 9",
-      "decision": "Supported",
-      "reason": "Article 9 specifies that the frequency of the independent review must be determined based on the risk profile of the ICT service, which aligns with the control's requirement to set audit frequency based on risk rather than a uniform annual schedule.",
-      "evidence_ids": []
-    }
-  ],
+  "coverage": "Yes",
+  "reason": "Articles 8 and 9 of the DORA Delegated Regulation establish the requirements for the independent review of critical or important ICT services. Article 8 mandates the review, and Article 9 specifies that the frequency must be determined based on risk, which aligns with the control's objective of risk-based, non-uniform audit frequency.",
+  "evidence_ids": [],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability conditions are known beyond the instrument itself.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "The mapping is correct. Articles 8 and 9 together fully support the control statement by establishing both the requirement for an independent review and the risk-based approach to its frequency."
+  "applicability_note": "This control is applicable to all financial entities that use critical or important ICT services, as defined by DORA.",
+  "challenge_comment": "The mapping is adequate as it correctly identifies the core regulatory basis for both the requirement to conduct an independent review and the principle of determining its frequency based on risk."
 }

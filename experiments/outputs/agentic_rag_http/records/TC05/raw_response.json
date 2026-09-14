@@ -1,60 +1,21 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Unsupported",
-      "reason": "Article 9 focuses on establishing a risk management system for high-risk AI systems, which is a broad process for identifying and mitigating risks. It does not address specific access control mechanisms like SSO, MFA, least privilege, or access reviews.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2",
-        "eu:32024R1689:article:9:paragraph:2:point:a",
-        "eu:32024R1689:article:9:paragraph:2:point:b",
-        "eu:32024R1689:article:9:paragraph:2:point:c",
-        "eu:32024R1689:article:9:paragraph:2:point:d",
-        "eu:32024R1689:article:9:paragraph:3",
-        "eu:32024R1689:article:9:paragraph:4",
-        "eu:32024R1689:article:9:paragraph:5",
-        "eu:32024R1689:article:9:paragraph:5:point:a",
-        "eu:32024R1689:article:9:paragraph:5:point:b",
-        "eu:32024R1689:article:9:paragraph:5:point:c",
-        "eu:32024R1689:article:9:paragraph:5:text-block:4",
-        "eu:32024R1689:article:9:paragraph:6",
-        "eu:32024R1689:article:9:paragraph:7",
-        "eu:32024R1689:article:9:paragraph:8",
-        "eu:32024R1689:article:9:paragraph:9",
-        "eu:32024R1689:article:9:paragraph:10"
-      ]
-    },
+  "coverage": "No",
+  "reason": "The existing mapping (Art. 9, 15, 17) does not provide a defensible basis for the control objective of implementing SSO/MFA, least privilege, and access review. Article 9 covers risk management, Article 15 covers cybersecurity and robustness, and Article 17 covers quality management systems. None of these provisions specifically address access control mechanisms like SSO/MFA, least privilege, or access reviews, which are core to the control statement.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:1",
+    "eu:32024R1689:article:17:paragraph:1"
+  ],
+  "missing_mappings": [
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
-      "decision": "Unsupported",
-      "reason": "Article 15 requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity. While it mandates resilience against unauthorized access, it does not specify the implementation of SSO, MFA, least privilege, or access reviews as required control mechanisms.",
+      "reason": "While Article 15(5) addresses cybersecurity, it focuses on resilience against external attacks and AI-specific vulnerabilities, not internal access control mechanisms like SSO/MFA or least privilege. The control objective requires specific provisions for access management.",
       "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1",
-        "eu:32024R1689:article:15:paragraph:2",
-        "eu:32024R1689:article:15:paragraph:3",
-        "eu:32024R1689:article:15:paragraph:4",
         "eu:32024R1689:article:15:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Unsupported",
-      "reason": "Article 17 mandates a quality management system for providers of high-risk AI systems. While this system includes a risk management component (Article 9) and resource management, it does not specifically require the implementation of SSO, MFA, least privilege, or access reviews.",
-      "evidence_ids": [
-        "eu:32024R1689:article:17",
-        "eu:32024R1689:article:17:paragraph:1",
-        "eu:32024R1689:article:17:paragraph:2",
-        "eu:32024R1689:article:17:paragraph:3",
-        "eu:32024R1689:article:17:paragraph:4"
       ]
     }
   ],
-  "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect. The control statement asks about specific access control mechanisms (SSO/MFA, least privilege, access review), but the mapped articles (9, 15, 17) address broader concepts like risk management, cybersecurity resilience, and quality management systems. None of the provisions directly or materially support the specific control objectives."
+  "applicability_note": "The control statement requires implementation of SSO/MFA, least privilege, and access review for all systems. The existing mapping does not cover these specific access control requirements, which are fundamental to identity and access management (IAM).",
+  "challenge_comment": "The existing mapping relies on general cybersecurity and risk management provisions that do not specifically address access control mechanisms. A more targeted provision is needed to support the control objective."
 }

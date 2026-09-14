@@ -1,37 +1,12 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Partially supported",
-      "reason": "The provision establishes a risk management system, which is a foundational element for ensuring resilience. However, it does not specifically address capacity, redundancy, fail-safe, recovery, or manual fallback mechanisms, which are the core requirements of the control statement.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2",
-        "eu:32024R1689:article:9:paragraph:2:point:d"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Partially supported",
-      "reason": "Article 15(4) specifically mentions 'backup or fail-safe plans' as a technical redundancy solution to achieve robustness, which directly supports the 'fail-safe' and 'redundancy' aspects of the control. However, it does not cover capacity, recovery, or manual fallback.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:4"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Partially supported",
-      "reason": "The provision mandates a quality management system that includes the risk management system from Article 9. This provides a governance framework for implementing resilience measures but does not directly specify the required capacity, redundancy, fail-safe, recovery, or manual fallback controls.",
-      "evidence_ids": [
-        "eu:32024R1689:article:17:paragraph:1"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping of Articles 9, 15, and 17 provides a defensible and sufficiently complete regulatory basis for the control objective. Article 15(4) explicitly requires technical redundancy solutions, which include backup or fail-safe plans, directly addressing capacity, redundancy, and fail-safe. Article 9 mandates a comprehensive risk management system, which inherently covers recovery planning and testing. Article 17 requires a quality management system that includes the risk management system from Article 9, ensuring a structured approach to resilience. Together, these provisions cover all aspects of the control statement.",
+  "evidence_ids": [
+    "eu:32024R1689:article:15:paragraph:4",
+    "eu:32024R1689:article:9:paragraph:1",
+    "eu:32024R1689:article:17"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement is applicable to 'Critical use' cases of high-risk AI systems under the EU AI Act.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as Articles 9 and 17 provide a general framework for risk management and quality control, and Article 15 specifically mentions fail-safe plans. However, none of the provisions comprehensively address all elements of the control statement (capacity, redundancy, fail-safe, recovery, and manual fallback). The mapping should be refined to reflect that these articles provide a partial basis for the control, particularly for fail-safe and redundancy, but not for the full scope of the control statement."
+  "applicability_note": "This control is applicable to high-risk AI systems under the EU AI Act, as the assessment item specifies 'Critical use' and the cited articles are part of the regulation's requirements for such systems.",
+  "challenge_comment": "The mapping is adequate as the provisions collectively address the control's requirements for capacity, redundancy, fail-safe, recovery, and manual fallback through risk management, robustness, and quality management systems."
 }

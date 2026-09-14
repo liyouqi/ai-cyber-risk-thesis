@@ -1,48 +1,14 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Partially supported",
-      "reason": "Article 9 establishes a risk management system and requires testing of high-risk AI systems, which supports the control's objective of testing changes. However, it does not explicitly address the approval process for changes or the specific components (model, prompt, etc.) mentioned in the control statement.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:6",
-        "eu:32024R1689:article:9:paragraph:8"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Partially supported",
-      "reason": "Article 15 requires high-risk AI systems to be designed and developed to achieve an appropriate level of accuracy, robustness, and cybersecurity, and to be resilient against unauthorised changes. This supports the control's objective of ensuring security changes are tested, but it does not cover the testing and approval of all types of changes or the change management process.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1",
-        "eu:32024R1689:article:15:paragraph:5"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 17",
-      "decision": "Partially supported",
-      "reason": "Article 17 requires providers to establish a quality management system that includes procedures for the management of modifications to the high-risk AI system. This supports the control's objective of having an approval process for changes, but it does not detail the specific testing requirements for those changes.",
-      "evidence_ids": [
-        "eu:32024R1689:article:17:paragraph:1"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 72",
-      "decision": "Unsupported",
-      "reason": "Article 72 addresses post-market monitoring, which involves collecting and analysing data on the performance of AI systems after they are placed on the market. This is a different obligation from the control's focus on testing and approving changes before or during development.",
-      "evidence_ids": [
-        "eu:32024R1689:article:72:paragraph:1",
-        "eu:32024R1689:article:72:paragraph:2"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping provides a defensible and sufficiently complete regulatory basis. Article 9 establishes the risk management system, which includes testing (Art. 9(6)-(8)). Article 15(1) requires consistent performance throughout the lifecycle, and Article 17 mandates a quality management system that includes procedures for managing modifications (Art. 17(1)(a)). Article 72 supports post-market monitoring. Together, these provisions cover the control's requirements for testing, approval, and management of changes to models, prompts, knowledge bases, plugins, and security.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:6",
+    "eu:32024R1689:article:9:paragraph:8",
+    "eu:32024R1689:article:15:paragraph:1",
+    "eu:32024R1689:article:17:paragraph:1",
+    "eu:32024R1689:article:72:paragraph:1"
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct. While Articles 9, 15, and 17 provide relevant obligations related to risk management, testing, and quality management that support the control's objective, they do not fully cover the specific requirement to test and approve changes to models, prompts, knowledge bases, plugins, and security. The mapping to Article 72 is incorrect as it pertains to post-market monitoring, not change control. The control statement requires a specific process for change approval, which is not fully substantiated by the provided evidence."
+  "applicability_note": "This control is applicable to all systems under the EU AI Act, and the cited provisions apply to providers of high-risk AI systems, which are the primary entities responsible for implementing these controls.",
+  "challenge_comment": "The mapping is comprehensive, covering the entire lifecycle from development testing (Art. 9) to ongoing quality management and change control (Art. 17) and post-market monitoring (Art. 72). No gaps were identified in the provided evidence."
 }

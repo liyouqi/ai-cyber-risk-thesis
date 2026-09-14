@@ -1,78 +1,13 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 5",
-      "decision": "Unsupported",
-      "reason": "Article 5 prohibits specific AI practices, such as manipulative techniques and biometric identification, but does not address the control objective of controlling sensitive data, malicious code, harmful content, or prohibited-use outputs.",
-      "evidence_ids": [
-        "eu:32024R1689:article:5:paragraph:1",
-        "eu:32024R1689:article:5:paragraph:1:point:a",
-        "eu:32024R1689:article:5:paragraph:1:point:b",
-        "eu:32024R1689:article:5:paragraph:1:point:c",
-        "eu:32024R1689:article:5:paragraph:1:point:d",
-        "eu:32024R1689:article:5:paragraph:1:point:e",
-        "eu:32024R1689:article:5:paragraph:1:point:f",
-        "eu:32024R1689:article:5:paragraph:1:point:g",
-        "eu:32024R1689:article:5:paragraph:1:point:h",
-        "eu:32024R1689:article:5:paragraph:1:point:h:subpoint:i",
-        "eu:32024R1689:article:5:paragraph:1:point:h:subpoint:ii",
-        "eu:32024R1689:article:5:paragraph:1:point:h:subpoint:iii",
-        "eu:32024R1689:article:5:paragraph:1:text-block:9",
-        "eu:32024R1689:article:5:paragraph:2",
-        "eu:32024R1689:article:5:paragraph:2:point:a",
-        "eu:32024R1689:article:5:paragraph:2:point:b",
-        "eu:32024R1689:article:5:paragraph:2:text-block:3",
-        "eu:32024R1689:article:5:paragraph:3",
-        "eu:32024R1689:article:5:paragraph:4",
-        "eu:32024R1689:article:5:paragraph:5",
-        "eu:32024R1689:article:5:paragraph:6",
-        "eu:32024R1689:article:5:paragraph:7",
-        "eu:32024R1689:article:5:paragraph:8"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Partially supported",
-      "reason": "Article 9 requires a risk management system for high-risk AI systems, which includes identifying and addressing risks. This is relevant to controlling harmful outputs, but the provision is a general framework and does not specifically address the control of sensitive data, malicious code, or prohibited-use outputs.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:1",
-        "eu:32024R1689:article:9:paragraph:2",
-        "eu:32024R1689:article:9:paragraph:2:point:a",
-        "eu:32024R1689:article:9:paragraph:2:point:b",
-        "eu:32024R1689:article:9:paragraph:2:point:c",
-        "eu:32024R1689:article:9:paragraph:2:point:d",
-        "eu:32024R1689:article:9:paragraph:3",
-        "eu:32024R1689:article:9:paragraph:4",
-        "eu:32024R1689:article:9:paragraph:5",
-        "eu:32024R1689:article:9:paragraph:5:point:a",
-        "eu:32024R1689:article:9:paragraph:5:point:b",
-        "eu:32024R1689:article:9:paragraph:5:point:c",
-        "eu:32024R1689:article:9:paragraph:5:text-block:4",
-        "eu:32024R1689:article:9:paragraph:6",
-        "eu:32024R1689:article:9:paragraph:7",
-        "eu:32024R1689:article:9:paragraph:8",
-        "eu:32024R1689:article:9:paragraph:9",
-        "eu:32024R1689:article:9:paragraph:10"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Partially supported",
-      "reason": "Article 15 requires high-risk AI systems to be designed for cybersecurity, which is relevant to controlling malicious code. However, it does not specifically address the control of sensitive data, harmful content, or prohibited-use outputs.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1",
-        "eu:32024R1689:article:15:paragraph:2",
-        "eu:32024R1689:article:15:paragraph:3",
-        "eu:32024R1689:article:15:paragraph:4",
-        "eu:32024R1689:article:15:paragraph:5"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping of Articles 5, 9, and 15 provides a defensible and sufficiently complete regulatory basis. Article 5 prohibits harmful AI practices, including manipulative techniques and exploitative systems. Article 9 mandates a risk management system to identify and mitigate risks, including those from harmful outputs. Article 15 requires cybersecurity measures to protect against attacks that could alter outputs or performance, directly addressing the control of malicious code and harmful content. Together, these provisions support the control objective of managing sensitive data, malicious code, harmful content, and prohibited-use outputs.",
+  "evidence_ids": [
+    "eu:32024R1689:article:5:paragraph:1",
+    "eu:32024R1689:article:9:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:5"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement is applicable to generative AI systems, which are a subset of high-risk AI systems under the EU AI Act.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect. Article 5 is about prohibited AI practices, not output control. Article 9 is a general risk management framework, and Article 15 focuses on cybersecurity, neither of which directly supports the control objective of managing sensitive data, malicious code, harmful content, and prohibited-use outputs. The expected evidence (DLP, filters, sandboxing) is not addressed by the mapped provisions."
+  "applicability_note": "This assessment applies to generative AI systems classified as high-risk under the EU AI Act, as the cited provisions (Articles 5, 9, 15) are mandatory for such systems.",
+  "challenge_comment": "The control objective requires a multi-faceted approach. Article 5 addresses the prohibition of harmful outputs, Article 9 ensures a systematic process to manage associated risks, and Article 15 provides the technical cybersecurity foundation to protect the system and its outputs from manipulation. This combination effectively covers the control statement."
 }

@@ -17,17 +17,13 @@ class BatchOutputTest(unittest.TestCase):
             for item_id in ("A", "B"):
                 folder = records / item_id
                 folder.mkdir()
-                (folder / "provision_checks.csv").write_text(
-                    f"item_id,decision\n{item_id},Supported\n",
-                    encoding="utf-8",
-                )
                 (folder / "item_summary.csv").write_text(
-                    f"item_id,overall_assessment\n{item_id},Correct\n",
+                    f"item_id,coverage\n{item_id},Yes\n",
                     encoding="utf-8",
                 )
 
             combine_review_tables(output, ["A", "B"])
-            with (output / "provision_checks.csv").open(
+            with (output / "item_summary.csv").open(
                 newline="", encoding="utf-8"
             ) as handle:
                 rows = list(csv.DictReader(handle))

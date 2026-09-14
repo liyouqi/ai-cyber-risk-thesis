@@ -18,56 +18,11 @@
     "score": null
   },
   {
-    "evidence_id": "eu-2022-2554-article-26-2",
-    "document_id": "EU-2022-2554",
-    "text": "2. Each threat-led penetration test shall cover several or all critical or important functions of a financial entity, and shall be performed on live production systems supporting such functions. Financial entities shall identify all relevant underlying ICT systems, processes and technologies supporting critical or important functions and ICT services, including those supporting the critical or important functions which have been outsourced or contracted to ICT third-party service providers. Financial entities shall assess which critical or important functions need to be covered by the TLPT. The result of this assessment shall determine the precise scope of TLPT and shall be validated by the competent authorities.",
-    "source_locator": "Article 26(2)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2022-2554-article-25-2",
-    "document_id": "EU-2022-2554",
-    "text": "2. Central securities depositories and central counterparties shall perform vulnerability assessments before any deployment or redeployment of new or existing applications and infrastructure components, and ICT services supporting critical or important functions of the financial entity.",
-    "source_locator": "Article 25(2)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-26-1-b",
-    "document_id": "EU-2024-1774",
-    "text": "(b) describe what actions are to be taken to ensure the availability, integrity, continuity, and recovery of at least ICT systems and services supporting critical or important functions of the financial entity;",
-    "source_locator": "Article 26(1)(b)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
     "evidence_id": "eu-2022-2554-article-11-6-a",
     "document_id": "EU-2022-2554",
     "text": "(a) test the ICT business continuity plans and the ICT response and recovery plans in relation to ICT systems supporting all functions at least yearly, as well as in the event of any substantive changes to ICT systems supporting critical or important functions;",
     "source_locator": "Article 11(6)(a)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-25-2-c",
-    "document_id": "EU-2024-1774",
-    "text": "(c) for financial entities, other than microenterprises, as referred to in Article 11(6), second subparagraph, of Regulation (EU) 2022/2554, contain scenarios of switchover from primary ICT infrastructure to the redundant capacity, backups and redundant facilities;",
-    "source_locator": "Article 25(2)(c)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
-    "rank": null,
-    "score": null
-  },
-  {
-    "evidence_id": "eu-2024-1774-article-13-i",
-    "document_id": "EU-2024-1774",
-    "text": "(i) the performance of reviews of the network architecture and of the network security design once a year, and periodically for microenterprises, to identify potential vulnerabilities;",
-    "source_locator": "Article 13(i)",
-    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
     "rank": null,
     "score": null
   }

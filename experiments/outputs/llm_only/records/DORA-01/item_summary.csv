@@ -1,2 +1,2 @@
-item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-01,Correct,[],No additional applicability conditions are known beyond the general scope of DORA.,"The mapping is correct. The control statement's requirement for annual reviews and reviews following major incidents, supervisory instructions, or testing findings is directly and materially supported by DORA Article 6(5)."
+item_id,coverage,reason,missing_mapping,evidence_reference,evidence_excerpt,applicability_note,challenge_comment
+DORA-01,Yes,"Article 6(5) of DORA requires institutions to review their ICT risk management framework at least annually and after significant incidents or supervisory actions, which directly corresponds to the control's requirements.",[],,,This control is a direct requirement for all financial entities subject to DORA.,The mapping is precise and directly addresses the control's frequency and trigger conditions.

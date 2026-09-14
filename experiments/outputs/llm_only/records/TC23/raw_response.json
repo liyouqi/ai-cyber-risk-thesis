@@ -1,29 +1,8 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 13",
-      "decision": "Unsupported",
-      "reason": "Article 13 of the EU AI Act generally addresses the obligations of providers of general-purpose AI models, focusing on transparency, documentation, and providing information to downstream users. It does not impose a specific requirement to maintain an inventory of all models, components, data sources, and subcontractors.",
-      "evidence_ids": []
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 25(4)",
-      "decision": "Unsupported",
-      "reason": "Article 25(4) of the EU AI Act pertains to the obligations of distributors of AI systems, requiring them to provide certain information to users. It does not establish a requirement for maintaining a comprehensive inventory of supply chain components.",
-      "evidence_ids": []
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 28(3)",
-      "reason": "This article requires providers of high-risk AI systems to draw up and maintain technical documentation, which includes a description of the system's components and their versions. This is a closer match to the control's objective of maintaining an inventory.",
-      "evidence_ids": []
-    }
-  ],
-  "applicability_note": "The control is applicable to providers of high-risk AI systems and their supply chain components.",
-  "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping to Articles 13 and 25(4) is incorrect. The control's objective of maintaining an inventory is more closely aligned with the technical documentation requirements in Article 28(3)."
+  "coverage": "Yes",
+  "reason": "The mapping to Art. 13 and Art. 25(4) of the EU AI Act provides a defensible basis. Art. 13 requires providers to maintain documentation, which includes an inventory of components and subcontractors. Art. 25(4) mandates that providers ensure subcontractors comply with the Act, which necessitates tracking them. Together, these provisions support the control objective of maintaining an inventory.",
+  "evidence_ids": [],
+  "missing_mappings": [],
+  "applicability_note": "This control is specifically applicable to AI systems that use third-party components, as the Act's obligations for documentation and subcontractor management are triggered in such supply chain contexts.",
+  "challenge_comment": "The challenge lies in the practical implementation of maintaining a comprehensive and up-to-date inventory, especially for complex AI systems with numerous components and dynamic subcontractor relationships."
 }

@@ -1,38 +1,12 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 14",
-      "decision": "Supported",
-      "reason": "Article 14 directly addresses the control objective by requiring high-risk AI systems to be designed for effective human oversight. It specifically mandates that the system enables the assigned person to override or reverse the output (Art. 14(4)(d)) and to interrupt the system via a stop button (Art. 14(4)(e)), which are core elements of the control statement.",
-      "evidence_ids": [
-        "eu:32024R1689:article:14:paragraph:1",
-        "eu:32024R1689:article:14:paragraph:2",
-        "eu:32024R1689:article:14:paragraph:4:point:d",
-        "eu:32024R1689:article:14:paragraph:4:point:e"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 26(2)",
-      "decision": "Partially supported",
-      "reason": "The provision establishes the obligation for deployers to assign competent individuals for human oversight, which is a necessary precondition for the control's functions. However, it does not detail the specific mechanisms (e.g., override, stop button) that the control statement requires.",
-      "evidence_ids": [
-        "eu:32024R1689:article:26:paragraph:2"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 26(5)",
-      "decision": "Unsupported",
-      "reason": "This provision focuses on the deployer's obligation to monitor the system and report risks or incidents to authorities. It does not address the availability of human review, rejection, stop, override, or escalation mechanisms within the AI system itself.",
-      "evidence_ids": [
-        "eu:32024R1689:article:26:paragraph:5"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping of Article 14 and Article 26(2), (5) provides a defensible and sufficiently complete regulatory basis. Article 14(4)(d) explicitly supports the ability to override or reverse the system's output, and Article 14(4)(e) supports the availability of a stop button. Article 26(2) ensures that competent individuals are assigned to perform this oversight. Together, these provisions cover the core requirements of human review, rejection, stop, override, and escalation.",
+  "evidence_ids": [
+    "eu:32024R1689:article:14:paragraph:4:point:d",
+    "eu:32024R1689:article:14:paragraph:4:point:e",
+    "eu:32024R1689:article:26:paragraph:2"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control is applicable to decision-impacting AI systems, which are a subset of high-risk AI systems under the EU AI Act. The evidence confirms that Article 14 applies to high-risk AI systems, and the control's requirements are directly supported by this article.",
-  "overall_assessment": "Correct",
-  "challenge_comment": "No challenge is needed. The mapping to Article 14 is correct and should be retained. The mapping to Article 26(2) is partially correct as it supports the assignment of personnel but not the specific mechanisms. The mapping to Article 26(5) is incorrect and should be removed."
+  "applicability_note": "This control is applicable to decision-impacting high-risk AI systems as defined by the EU AI Act, which are subject to the human oversight requirements in Article 14.",
+  "challenge_comment": "The assessment requires evidence of human review, rejection, stop, override, and escalation. The cited provisions comprehensively address these functions, with Article 14(4)(d) covering override/rejection and Article 14(4)(e) covering stop/escalation, while Article 26(2) ensures the oversight is performed by competent individuals."
 }

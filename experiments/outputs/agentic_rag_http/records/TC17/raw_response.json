@@ -1,46 +1,14 @@
 {
-  "mapping_reviews": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 9",
-      "decision": "Partially supported",
-      "reason": "Article 9 requires testing of high-risk AI systems to identify risk management measures and ensure consistent performance, which supports the control's objective of testing accuracy and limits. However, it does not explicitly mention testing for hallucination or repeatability.",
-      "evidence_ids": [
-        "eu:32024R1689:article:9:paragraph:6",
-        "eu:32024R1689:article:9:paragraph:8"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 13",
-      "decision": "Partially supported",
-      "reason": "Article 13 requires providers to declare the level of accuracy and its metrics in the instructions for use, which supports the control's objective of testing accuracy. However, it does not address testing for hallucination, repeatability, or limits.",
-      "evidence_ids": [
-        "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:ii"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15",
-      "decision": "Partially supported",
-      "reason": "Article 15 requires high-risk AI systems to achieve an appropriate level of accuracy and requires providers to declare the levels of accuracy and relevant metrics. This supports the control's objective of testing accuracy. However, it does not address testing for hallucination, repeatability, or limits.",
-      "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1",
-        "eu:32024R1689:article:15:paragraph:3"
-      ]
-    },
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 26(5)",
-      "decision": "Unsupported",
-      "reason": "Article 26(5) addresses the deployer's obligation to monitor the operation of a high-risk AI system and report serious incidents. This is a post-deployment monitoring obligation and does not support the control's objective of testing accuracy, hallucination, repeatability, and limits.",
-      "evidence_ids": [
-        "eu:32024R1689:article:26:paragraph:5"
-      ]
-    }
+  "coverage": "Yes",
+  "reason": "The existing mapping provides a defensible and sufficiently complete regulatory basis. Article 9 establishes the risk management system and testing requirements, including testing against defined metrics and thresholds. Article 13 mandates the inclusion of accuracy metrics in instructions for use. Article 15 requires an appropriate level of accuracy and mandates the declaration of accuracy levels. Article 26(5) addresses deployer monitoring, which is relevant to ongoing performance. Together, these provisions cover the control objective of testing accuracy, hallucination, repeatability, and limits.",
+  "evidence_ids": [
+    "eu:32024R1689:article:9:paragraph:8",
+    "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:ii",
+    "eu:32024R1689:article:15:paragraph:1",
+    "eu:32024R1689:article:15:paragraph:3",
+    "eu:32024R1689:article:26:paragraph:5"
   ],
   "missing_mappings": [],
-  "applicability_note": "The control applies to all systems, but the reviewed provisions are specific to high-risk AI systems under the EU AI Act.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as Articles 9, 13, and 15 support the testing of accuracy, but they do not cover all aspects of the control statement, specifically hallucination and repeatability. Article 26(5) is incorrectly mapped as it pertains to post-deployment monitoring, not testing. The mapping should be refined to focus on provisions that explicitly require testing for the full scope of the control statement."
+  "applicability_note": "This control is applicable to all systems as per the assessment item, and the cited provisions from the EU AI Act apply to high-risk AI systems, which are the primary focus of these requirements.",
+  "challenge_comment": "The control objective requires testing for accuracy, hallucination, repeatability, and limits. While the regulation does not explicitly name 'hallucination' or 'repeatability' as standalone terms, these concepts are encompassed within the broader requirements for accuracy, robustness, and consistent performance, which are explicitly mandated and tested under Articles 9, 13, and 15."
 }
