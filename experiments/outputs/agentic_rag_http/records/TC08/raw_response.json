@@ -3,19 +3,19 @@
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 10",
-      "decision": "Partially supported",
-      "reason": "Article 10 requires data governance and management practices, including measures to detect, prevent and mitigate biases (points f and g), and imposes technical limitations and security measures for processing special categories of personal data (point b). These provisions support the control's objective of restricting sensitive inputs, but the article focuses on data quality and bias mitigation rather than classification, minimisation, and masking.",
+      "decision": "Unsupported",
+      "reason": "Article 10 focuses on data quality, governance, and bias mitigation for training data, not on restricting sensitive inputs with classification, minimisation, and masking.",
       "evidence_ids": [
-        "eu:32024R1689:article:10:paragraph:2:point:f",
-        "eu:32024R1689:article:10:paragraph:2:point:g",
-        "eu:32024R1689:article:10:paragraph:5:point:b"
+        "eu:32024R1689:article:10:paragraph:1",
+        "eu:32024R1689:article:10:paragraph:2",
+        "eu:32024R1689:article:10:paragraph:5"
       ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(4)",
       "decision": "Unsupported",
-      "reason": "Article 26(4) requires deployers to ensure input data is relevant and representative, which is a data quality requirement. It does not address the restriction of sensitive inputs through classification, minimisation, or masking.",
+      "reason": "Article 26(4) requires deployers to ensure input data is relevant and representative, which is a data quality requirement, not a restriction on sensitive inputs.",
       "evidence_ids": [
         "eu:32024R1689:article:26:paragraph:4"
       ]
@@ -24,14 +24,14 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 27",
       "decision": "Unsupported",
-      "reason": "Article 27 requires deployers to perform a fundamental rights impact assessment. This is a governance and risk assessment obligation and does not address the technical restriction of sensitive inputs.",
+      "reason": "Article 27 mandates a fundamental rights impact assessment, which is a broader governance and risk assessment obligation, not a specific control on sensitive inputs.",
       "evidence_ids": [
         "eu:32024R1689:article:27"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as Article 10 provides some support for the control's objective through its data governance and bias mitigation requirements. However, Articles 26(4) and 27 are incorrectly mapped as they address different obligations (data quality and impact assessment, respectively) and do not support the control's focus on restricting sensitive inputs. The mapping should be revised to remove the unsupported articles and retain only the relevant provisions from Article 10."
+  "applicability_note": "No additional applicability condition identified.",
+  "overall_assessment": "Incorrect",
+  "challenge_comment": "The existing mappings are incorrect as they do not address the control's objective of restricting sensitive inputs. The mapped articles focus on data quality, bias mitigation, and fundamental rights impact assessments, which are distinct from the control's requirements. The correct mapping should identify provisions related to data protection, such as those concerning data minimisation and pseudonymisation, which are not present in the current mapping."
 }

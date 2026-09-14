@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2022-2554"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -83,8 +88,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 10607,
+        "status": "retrieved",
+        "planning_ms": 12262,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2022-2554"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,19 +112,34 @@
           },
           "claims": [
             {
-              "claim_id": "identify_missing_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for the requirement that ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified, and is absent from the existing mapping?",
-              "intent": "relationship_between_provisions",
+              "claim_id": "mandatory_ict_training_provision",
+              "question": "Which provision of Regulation (EU) 2022/2554 mandates ICT security and digital operational resilience training?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT security training",
                 "digital operational resilience training",
-                "mandatory training",
-                "minimum training hours"
+                "mandatory training"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "minimum_training_hours_requirement",
+              "question": "Does Regulation (EU) 2022/2554 specify a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "intent": "threshold_or_condition",
+              "target_concepts": [
+                "minimum training hours"
+              ],
+              "expected_evidence_roles": [
+                "condition_or_threshold"
+              ],
+              "depends_on": [
+                "mandatory_ict_training_provision"
+              ],
               "importance": "required",
               "query_variants": []
             }
@@ -125,10 +148,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:48:44.540949"
+            "generated_at": "2026-09-14T10:49:37.250238"
           },
           "limits": {
             "max_claims": 5,
@@ -141,14 +164,13 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "identify_missing_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for the requirement that ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified, and is absent from the existing mapping?",
-              "intent": "relationship_between_provisions",
+              "claim_id": "mandatory_ict_training_provision",
+              "question": "Which provision of Regulation (EU) 2022/2554 mandates ICT security and digital operational resilience training?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT security training",
                 "digital operational resilience training",
-                "mandatory training",
-                "minimum training hours"
+                "mandatory training"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -157,14 +179,60 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "not_covered",
-            "evidence_refs": [],
-            "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 is materially necessary for the requirement that ICT security and digital operational resilience training should be mandatory, but no minimum number of training hours per year is specified, and is absent from the existing mapping?"
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2022-2554-article-13-6",
+              "eu-2022-2554-article-25-1",
+              "eu-2022-2554-article-5-2-g",
+              "eu-2022-2554-article-16-1-h",
+              "eu-2022-2554-article-30-2-i",
+              "eu-2022-2554-article-24-1",
+              "eu-2022-2554-article-24-6",
+              "eu-2024-1774-article-2-2-a"
             ],
-            "candidate_count": 713,
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2022/2554 mandates ICT security and digital operational resilience training?",
+              "ICT security training",
+              "digital operational resilience training",
+              "mandatory training"
+            ],
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "8 evidence item(s) selected from 4 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "minimum_training_hours_requirement",
+              "question": "Does Regulation (EU) 2022/2554 specify a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "intent": "threshold_or_condition",
+              "target_concepts": [
+                "minimum training hours"
+              ],
+              "expected_evidence_roles": [
+                "condition_or_threshold"
+              ],
+              "depends_on": [
+                "mandatory_ict_training_provision"
+              ],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2022-2554-article-5-2-g",
+              "eu-2022-2554-article-13-6",
+              "eu-2024-1774-article-28-2-e",
+              "eu-2022-2554-article-30-2-i",
+              "eu-2022-2554-article-16-1-h"
+            ],
+            "executed_queries": [
+              "Does Regulation (EU) 2022/2554 specify a minimum number of training hours per year for ICT security and digital operational resilience training?",
+              "minimum training hours"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 2 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -172,7 +240,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -180,7 +248,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -188,7 +256,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 16.235,
+  "elapsed_seconds": 23.772,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

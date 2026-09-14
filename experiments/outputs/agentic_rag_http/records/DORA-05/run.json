@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2022-2554"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -84,7 +89,7 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 5922,
+        "planning_ms": 10365,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2022-2554"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,11 +112,29 @@
           },
           "claims": [
             {
-              "claim_id": "find_reporting_requirement",
+              "claim_id": "provision_for_yearly_reporting",
               "question": "Which provision of Regulation (EU) 2022/2554 requires reporting at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?",
-              "intent": "obligation_or_prohibition",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "reporting",
+                "competent authority",
+                "ICT service arrangements",
+                "categories of providers",
+                "types of contracts",
+                "functions supported"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "mapping_comparison",
+              "question": "Which provisions of Regulation (EU) 2022/2554 are included in the existing mapping for the requirement to report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "existing mapping",
                 "competent authority",
                 "ICT service arrangements",
                 "categories of providers",
@@ -127,10 +153,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:48:10.783319"
+            "generated_at": "2026-09-14T10:48:59.177753"
           },
           "limits": {
             "max_claims": 5,
@@ -143,11 +169,10 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_reporting_requirement",
+              "claim_id": "provision_for_yearly_reporting",
               "question": "Which provision of Regulation (EU) 2022/2554 requires reporting at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?",
-              "intent": "obligation_or_prohibition",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "reporting",
                 "competent authority",
                 "ICT service arrangements",
                 "categories of providers",
@@ -166,11 +191,54 @@
               "eu-2022-2554-article-28-3"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires reporting at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?"
+              "Which provision of Regulation (EU) 2022/2554 requires reporting at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?",
+              "competent authority",
+              "ICT service arrangements",
+              "categories of providers",
+              "types of contracts",
+              "functions supported"
             ],
-            "candidate_count": 713,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "1 evidence item(s) selected from 1 query projection(s) after deterministic-term-coverage-v2"
+              "1 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "mapping_comparison",
+              "question": "Which provisions of Regulation (EU) 2022/2554 are included in the existing mapping for the requirement to report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "existing mapping",
+                "competent authority",
+                "ICT service arrangements",
+                "categories of providers",
+                "types of contracts",
+                "functions supported"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2022-2554-article-28-3"
+            ],
+            "executed_queries": [
+              "Which provisions of Regulation (EU) 2022/2554 are included in the existing mapping for the requirement to report at least yearly to the competent authority the number of new ICT service arrangements, the categories of providers, the types of contracts and the functions supported?",
+              "existing mapping",
+              "competent authority",
+              "ICT service arrangements",
+              "categories of providers",
+              "types of contracts",
+              "functions supported"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "1 evidence item(s) selected from 7 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -178,7 +246,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -186,7 +254,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -194,7 +262,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 9.143,
+  "elapsed_seconds": 18.385,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

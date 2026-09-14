@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2022-2554"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -83,8 +88,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 7115,
+        "status": "retrieved",
+        "planning_ms": 17803,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Initial notification, an intermediate report and a final report are required; the specific four-hour, 24-hour and 72-hour deadlines are specified by RTS 2025/301",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2022-2554"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,14 +112,72 @@
           },
           "claims": [
             {
-              "claim_id": "find_missing_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for the requirement of initial notification, intermediate report, and final report but absent from the existing mapping",
-              "intent": "scope_or_applicability",
+              "claim_id": "initial_notification_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires an initial notification for ICT-related major operational or business continuity disruptions?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "initial notification",
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "intermediate_report_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires an intermediate report for ICT-related major operational or business continuity disruptions?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
                 "intermediate report",
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "final_report_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires a final report for ICT-related major operational or business continuity disruptions?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
                 "final report",
-                "existing mapping"
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "report_deadlines_provision",
+              "question": "Which provision of Regulation (EU) 2022/2554 establishes the requirement for reporting deadlines for ICT-related major operational or business continuity disruptions, without specifying the exact timeframes?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "reporting deadlines",
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "rts_deadlines_specification",
+              "question": "Which provision of Regulation (EU) 2022/2554 delegates the specification of exact reporting deadlines (four-hour, 24-hour, 72-hour) to RTS 2025/301?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "delegation",
+                "reporting deadlines"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -125,10 +191,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:48:57.302918"
+            "generated_at": "2026-09-14T10:50:06.612359"
           },
           "limits": {
             "max_claims": 5,
@@ -141,14 +207,122 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_missing_provision",
-              "question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for the requirement of initial notification, intermediate report, and final report but absent from the existing mapping",
-              "intent": "scope_or_applicability",
+              "claim_id": "initial_notification_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires an initial notification for ICT-related major operational or business continuity disruptions?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "initial notification",
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2022-2554-article-19-4-a",
+              "eu-2025-301-article-1",
+              "eu-2022-2554-article-19-6",
+              "eu-2025-301-article-1-a",
+              "eu-2025-301-article-1-c",
+              "eu-2025-301-article-1-d",
+              "eu-2022-2554-article-19-4-b",
+              "eu-2025-301-article-5-2"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2022/2554 requires an initial notification for ICT-related major operational or business continuity disruptions?",
+              "initial notification",
+              "ICT-related major operational or business continuity disruptions"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "intermediate_report_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires an intermediate report for ICT-related major operational or business continuity disruptions?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
                 "intermediate report",
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2025-301-article-1",
+              "eu-2025-301-article-1-a",
+              "eu-2025-301-article-1-b",
+              "eu-2025-301-article-1-c",
+              "eu-2025-301-article-1-d",
+              "eu-2025-301-article-1-e",
+              "eu-2025-301-article-1-f",
+              "eu-2025-301-article-1-g"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2022/2554 requires an intermediate report for ICT-related major operational or business continuity disruptions?",
+              "intermediate report",
+              "ICT-related major operational or business continuity disruptions"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "final_report_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires a final report for ICT-related major operational or business continuity disruptions?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
                 "final report",
-                "existing mapping"
+                "ICT-related major operational or business continuity disruptions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2025-301-article-1-a",
+              "eu-2025-301-article-1",
+              "eu-2025-301-article-1-c",
+              "eu-2025-301-article-1-d",
+              "eu-2022-2554-article-19-4-c",
+              "eu-2022-2554-article-18-3-b",
+              "eu-2022-2554-article-20-a-i"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2022/2554 requires a final report for ICT-related major operational or business continuity disruptions?",
+              "final report",
+              "ICT-related major operational or business continuity disruptions"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "7 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "report_deadlines_provision",
+              "question": "Which provision of Regulation (EU) 2022/2554 establishes the requirement for reporting deadlines for ICT-related major operational or business continuity disruptions, without specifying the exact timeframes?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "reporting deadlines",
+                "ICT-related major operational or business continuity disruptions"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -160,11 +334,41 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 is materially necessary for the requirement of initial notification, intermediate report, and final report but absent from the existing mapping"
+              "Which provision of Regulation (EU) 2022/2554 establishes the requirement for reporting deadlines for ICT-related major operational or business continuity disruptions, without specifying the exact timeframes?",
+              "reporting deadlines",
+              "ICT-related major operational or business continuity disruptions"
             ],
-            "candidate_count": 713,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "the retriever returned 48 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "rts_deadlines_specification",
+              "question": "Which provision of Regulation (EU) 2022/2554 delegates the specification of exact reporting deadlines (four-hour, 24-hour, 72-hour) to RTS 2025/301?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "delegation",
+                "reporting deadlines"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2022/2554 delegates the specification of exact reporting deadlines (four-hour, 24-hour, 72-hour) to RTS 2025/301?",
+              "delegation",
+              "reporting deadlines"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "the retriever returned 53 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -172,7 +376,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -180,7 +384,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -188,7 +392,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 14.559,
+  "elapsed_seconds": 33.545,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

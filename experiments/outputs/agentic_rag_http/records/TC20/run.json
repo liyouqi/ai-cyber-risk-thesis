@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -188,8 +190,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 10399,
+        "status": "retrieved",
+        "planning_ms": 20978,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are vulnerability, patching, detection, response and serious-incident processes implemented?",
@@ -209,32 +211,116 @@
           },
           "claims": [
             {
-              "claim_id": "identify_necessary_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement vulnerability, patching, detection, response and serious-incident processes?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "vulnerability_patching_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for vulnerability and patching processes?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "vulnerability",
-                "patching",
-                "detection",
-                "response",
-                "serious-incident processes"
+                "patching"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "vulnerability patching processes requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "detection_response_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for detection and response processes?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
+                "detection",
+                "response"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "detection response processes requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "serious_incident_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for serious incident processes?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
+                "serious incident"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "serious incident processes requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "security_governance_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses overall security governance requirements?",
+              "intent": "governance_or_responsibility",
+              "target_concepts": [
+                "security governance"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": [
+                {
+                  "query": "security governance requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            {
+              "claim_id": "incident_reporting_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses incident reporting requirements?",
+              "intent": "procedure_or_reporting",
+              "target_concepts": [
+                "incident reporting"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": [
+                {
+                  "query": "incident reporting requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:43:33.170505"
+            "generated_at": "2026-09-14T10:44:20.439571"
           },
           "limits": {
             "max_claims": 5,
@@ -247,31 +333,198 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "identify_necessary_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement vulnerability, patching, detection, response and serious-incident processes?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "vulnerability_patching_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for vulnerability and patching processes?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "vulnerability",
-                "patching",
-                "detection",
-                "response",
-                "serious-incident processes"
+                "patching"
               ],
               "expected_evidence_roles": [
                 "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "vulnerability patching processes requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:recital:110"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to implement vulnerability, patching, detection, response and serious-incident processes?"
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for vulnerability and patching processes?",
+              "vulnerability patching processes requirements",
+              "vulnerability",
+              "patching"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "detection_response_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for detection and response processes?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
+                "detection",
+                "response"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "detection response processes requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:59",
+              "eu:32024R1689:annex:iii:paragraph:1",
+              "eu:32024R1689:annex:iii",
+              "eu:32024R1689:recital:120"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for detection and response processes?",
+              "detection response processes requirements",
+              "detection",
+              "response"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "serious_incident_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for serious incident processes?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
+                "serious incident"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "serious incident processes requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:73:paragraph:6",
+              "eu:32024R1689:article:3:subparagraph:1:point:49",
+              "eu:32024R1689:article:17",
+              "eu:32024R1689:article:73:paragraph:1",
+              "eu:32024R1689:article:73:paragraph:2",
+              "eu:32024R1689:article:73:paragraph:11",
+              "eu:32024R1689:article:73:paragraph:4",
+              "eu:32024R1689:article:73:paragraph:3"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for serious incident processes?",
+              "serious incident processes requirements",
+              "serious incident"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "security_governance_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses overall security governance requirements?",
+              "intent": "governance_or_responsibility",
+              "target_concepts": [
+                "security governance"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": [
+                {
+                  "query": "security governance requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:10:paragraph:5:point:b"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses overall security governance requirements?",
+              "security governance requirements",
+              "security governance"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "incident_reporting_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses incident reporting requirements?",
+              "intent": "procedure_or_reporting",
+              "target_concepts": [
+                "incident reporting"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": [
+                {
+                  "query": "incident reporting requirements",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:73:paragraph:6",
+              "eu:32024R1689:article:73:paragraph:2",
+              "eu:32024R1689:article:73:paragraph:3",
+              "eu:32024R1689:article:73:paragraph:1",
+              "eu:32024R1689:article:73:paragraph:7",
+              "eu:32024R1689:article:73:paragraph:11",
+              "eu:32024R1689:article:73:paragraph:4",
+              "eu:32024R1689:article:73:paragraph:9"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses incident reporting requirements?",
+              "incident reporting requirements",
+              "incident reporting"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
             ]
           }
         ],
@@ -279,7 +532,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -287,7 +540,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -295,7 +548,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 33.172,
+  "elapsed_seconds": 47.096,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-21,Unable to determine,[],No additional applicability condition is identified.,"The assessment cannot be completed because the retrieved evidence is empty. To determine the mapping's validity, the text of Article 8 must be reviewed to see if it supports the control's continuous performance requirement."
+DORA-21,Incorrect,[],No additional applicability condition is identified.,"The mapping to Article 8 is incorrect. The control statement concerns the frequency of a control's performance, while Article 8 governs contractual arrangements and oversight methods for third-party ICT providers. The mapping should be removed."

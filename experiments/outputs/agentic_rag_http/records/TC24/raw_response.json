@@ -4,7 +4,7 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
       "decision": "Unsupported",
-      "reason": "Article 9 focuses on establishing and maintaining a risk management system for high-risk AI systems, which is a lifecycle activity but does not address data export, access revocation, deletion, or system retirement.",
+      "reason": "Article 9 focuses on establishing and maintaining a risk management system for high-risk AI systems, which is a lifecycle process but does not address data export, access revocation, deletion, or system retirement.",
       "evidence_ids": [
         "eu:32024R1689:article:9:paragraph:1",
         "eu:32024R1689:article:9:paragraph:2"
@@ -14,7 +14,7 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Unsupported",
-      "reason": "Article 17 requires providers to establish a quality management system to ensure compliance, which is a general governance requirement and does not specifically address data exit or system retirement processes.",
+      "reason": "Article 17 requires providers to establish a quality management system to ensure compliance, which includes aspects like data management and risk management but does not specifically address data export, deletion, or system retirement.",
       "evidence_ids": [
         "eu:32024R1689:article:17"
       ]
@@ -23,7 +23,7 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(5)",
       "decision": "Unsupported",
-      "reason": "Article 26(5) obliges deployers to monitor the operation of high-risk AI systems and report serious incidents, which is a monitoring and reporting obligation, not a data or system exit control.",
+      "reason": "Article 26(5) outlines deployers' obligations to monitor high-risk AI systems and report serious incidents, which is unrelated to data export, deletion, or system retirement.",
       "evidence_ids": [
         "eu:32024R1689:article:26:paragraph:5"
       ]
@@ -40,7 +40,7 @@
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
+  "applicability_note": "No additional applicability condition is identified.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The existing mappings are incorrect as none of the reviewed provisions (Art. 9, 17, 26(5), 72) address the control's objective of data export, access revocation, deletion, or system retirement. These provisions relate to risk management, quality management, deployer monitoring, and post-market monitoring, respectively, which are distinct from the exit control requirements."
+  "challenge_comment": "The existing mappings are incorrect as none of the reviewed articles (9, 17, 26(5), 72) address the control's objective of data export, access revocation, deletion, and system retirement. The control focuses on exit and data lifecycle management, while the mapped articles pertain to risk management, quality management, deployer monitoring, and post-market surveillance."
 }

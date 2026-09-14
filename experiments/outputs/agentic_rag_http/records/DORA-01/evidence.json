@@ -7,5 +7,50 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": 1,
     "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-27-2-d",
+    "document_id": "EU-2024-1774",
+    "text": "(d) the start and end dates of the review period;",
+    "source_locator": "Article 27(2)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-27-2-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) an indication of the function responsible for the review;",
+    "source_locator": "Article 27(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-27-2-g",
+    "document_id": "EU-2024-1774",
+    "text": "(g) a summary of the findings of the review and detailed analysis and assessment of the severity of the weaknesses, deficiencies, and gaps in the ICT risk management framework during the review period;",
+    "source_locator": "Article 27(2)(g)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-27-2-j",
+    "document_id": "EU-2024-1774",
+    "text": "(j) conclusions resulting from the review of the ICT risk management framework;",
+    "source_locator": "Article 27(2)(j)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-27-2-c",
+    "document_id": "EU-2024-1774",
+    "text": "(c) a description of the reason for the review of the ICT risk management framework in accordance with Article 6(5) of Regulation (EU) 2022/2554.;",
+    "source_locator": "Article 27(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": null,
+    "score": null
   }
 ]

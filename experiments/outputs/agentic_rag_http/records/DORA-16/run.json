@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -48,11 +50,11 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
+        "status": "retrieved",
         "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2--explicit-citation-v2--provision-context-v1",
         "retrieval_metadata": {
           "retrieval_mode": "hybrid",
-          "candidate_count": 0,
+          "candidate_count": 1,
           "retrieval_ms": 0,
           "embedding_provider": null,
           "embedding_model": null,
@@ -60,7 +62,7 @@
           "query_expansion_version": "regulatory-aliases-v4",
           "query_expansion_terms": [],
           "context_expansion_version": "provision-context-v1",
-          "context_expansion_count": 0,
+          "context_expansion_count": 1,
           "scope_policy_version": "1.0",
           "effective_jurisdictions": [
             "EU"
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2024-1774"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -84,7 +89,7 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 8329,
+        "planning_ms": 7907,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2024-1774"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,11 +112,13 @@
           },
           "claims": [
             {
-              "claim_id": "find_provision_for_annual_requirement",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_frequency",
+              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 addresses the requirement 'At least once a year' and is missing from the existing mapping?",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "At least once a year"
+                "At least once a year",
+                "requirement",
+                "mapping"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -122,10 +132,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:50:29.849166"
+            "generated_at": "2026-09-14T10:52:08.512927"
           },
           "limits": {
             "max_claims": 5,
@@ -138,11 +148,13 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_provision_for_annual_requirement",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_frequency",
+              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 addresses the requirement 'At least once a year' and is missing from the existing mapping?",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "At least once a year"
+                "At least once a year",
+                "requirement",
+                "mapping"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -154,11 +166,14 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: At least once a year"
+              "Which provision of Commission Delegated Regulation (EU) 2024/1774 addresses the requirement 'At least once a year' and is missing from the existing mapping?",
+              "At least once a year",
+              "requirement",
+              "mapping"
             ],
-            "candidate_count": 515,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "the retriever returned 74 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -166,7 +181,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -174,7 +189,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -182,7 +197,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 15.887,
+  "elapsed_seconds": 13.992,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

@@ -1,0 +1,245 @@
+[
+  {
+    "evidence_id": "eu-2024-1773-article-8-1",
+    "document_id": "EU-2024-1773",
+    "text": "1. The policy shall specify that the relevant contractual arrangement are to be in written form and are to include all the elements referred to in Article 30(2) and (3) of Regulation (EU) 2022/2554. The policy shall also include elements regarding requirements referred to in Article 1(1), point (a), of Regulation (EU) 2022/2554, as well as other relevant Union and national law as appropriate.",
+    "source_locator": "Article 8(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-2",
+    "document_id": "EU-2024-1773",
+    "text": "2. The policy shall specify that the relevant contractual arrangements are to include the right for the financial entity to access information, to carry out inspections and audits, and to perform tests on ICT. For that purpose, the policy shall require that the financial entity uses the following methods, without prejudice to the ultimate responsibility of the financial entity:",
+    "source_locator": "Article 8(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-2-a",
+    "document_id": "EU-2024-1773",
+    "text": "(a) its own internal audit or an audit by an appointed third party;",
+    "source_locator": "Article 8(2)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 3,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-2-b",
+    "document_id": "EU-2024-1773",
+    "text": "(b) where appropriate, pooled audits and pooled ICT testing, including threat-led penetration testing, that are organised jointly with other contracting financial entities or firms that use ICT services of the same ICT third-party service provider and that are performed by those contracting financial entities or firms or by a third party appointed by them;",
+    "source_locator": "Article 8(2)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 4,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-2-c",
+    "document_id": "EU-2024-1773",
+    "text": "(c) where appropriate, third-party certifications;",
+    "source_locator": "Article 8(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 5,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-2-d",
+    "document_id": "EU-2024-1773",
+    "text": "(d) where appropriate, internal or third-party audit reports made available by the ICT third-party service provider.",
+    "source_locator": "Article 8(2)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 6,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3",
+    "document_id": "EU-2024-1773",
+    "text": "3. The financial entity shall not over time rely solely on certifications referred to in paragraph 2, point (c), or audit reports referred to in point (d) of that paragraph. The policy shall only permit the use of the methods referred to in paragraph 2, points (c) and (d), where the financial entity:",
+    "source_locator": "Article 8(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 7,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-a",
+    "document_id": "EU-2024-1773",
+    "text": "(a) is satisfied with the audit plan of the ICT third-party service provider for the relevant contractual arrangements;",
+    "source_locator": "Article 8(3)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-b",
+    "document_id": "EU-2024-1773",
+    "text": "(b) ensures that the scope of the certifications or audit reports cover the systems and key controls identified by it and ensures compliance with relevant regulatory requirements;",
+    "source_locator": "Article 8(3)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-c",
+    "document_id": "EU-2024-1773",
+    "text": "(c) thoroughly assesses the content of the certifications or audit reports on an ongoing basis and verifies that the reports or certifications are not obsolete;",
+    "source_locator": "Article 8(3)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 10,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-d",
+    "document_id": "EU-2024-1773",
+    "text": "(d) ensures that key systems and controls are covered in future versions of the certification or audit report;",
+    "source_locator": "Article 8(3)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 11,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-e",
+    "document_id": "EU-2024-1773",
+    "text": "(e) is satisfied with the aptitude of the certifying or auditing party;",
+    "source_locator": "Article 8(3)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 12,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-f",
+    "document_id": "EU-2024-1773",
+    "text": "(f) is satisfied that the certifications are issued, and the audits are performed against widely recognised relevant professional standards and include a test of the operational effectiveness of the key controls in place;",
+    "source_locator": "Article 8(3)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 13,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-g",
+    "document_id": "EU-2024-1773",
+    "text": "(g) has the contractual right to request, with a frequency that is reasonable and legitimate from a risk management perspective, modifications of the scope of the certifications or audit reports to other relevant systems and controls;",
+    "source_locator": "Article 8(3)(g)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 14,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-3-h",
+    "document_id": "EU-2024-1773",
+    "text": "(h) has the contractual right to perform individual and pooled audits at its discretion with regard to the contractual arrangements and execute those rights in line with the agreed frequency.",
+    "source_locator": "Article 8(3)(h)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 15,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-8-4",
+    "document_id": "EU-2024-1773",
+    "text": "4. The policy shall ensure that material changes to the contractual agreement are to be formalised in a written document which is dated and signed by all parties and shall specify the renewal process for the contractual arrangements.",
+    "source_locator": "Article 8(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 16,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-1",
+    "document_id": "EU-2024-1773",
+    "text": "1. The policy shall require that the contractual arrangements specify the measures and key indicators to monitor, on an ongoing basis, the performance of ICT third party service providers, including measures to monitor compliance with requirements regarding the confidentiality, availability, integrity and authenticity of data and information, and the compliance of the ICT third-party service providers with the financial entity’s relevant policies and procedures. The policy shall also specify measures that apply when service level agreements are not met, including contractual penalties where appropriate.",
+    "source_locator": "Article 9(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-2",
+    "document_id": "EU-2024-1773",
+    "text": "2. The policy shall specify how the financial entity is to assess whether the ICT third-party service providers used for the ICT services supporting critical or important functions meet appropriate performance and quality standards in line with the contractual arrangement and the financial entity’s own policies. The policy shall, in particular, ensure the following:",
+    "source_locator": "Article 9(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-2-a",
+    "document_id": "EU-2024-1773",
+    "text": "(a) that the ICT third-party service providers provide appropriate reports on their activities and services to the financial entity, including periodic reports, incidents reports, service delivery reports, reports on ICT security and reports on business continuity measures and testing;",
+    "source_locator": "Article 9(2)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 3,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-2-b",
+    "document_id": "EU-2024-1773",
+    "text": "(b) that the performance of ICT third-party service providers is assessed with key performance indicators, key control indicators, audits, self-certifications and independent reviews in line with the financial entity’s ICT risk management framework;",
+    "source_locator": "Article 9(2)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 4,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-2-c",
+    "document_id": "EU-2024-1773",
+    "text": "(c) that the financial entity receives other relevant information from the ICT third-party service providers;",
+    "source_locator": "Article 9(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 5,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-2-d",
+    "document_id": "EU-2024-1773",
+    "text": "(d) that the financial entity is notified, where appropriate, of ICT-related incidents and operational or security payment-related incidents;",
+    "source_locator": "Article 9(2)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 6,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-2-e",
+    "document_id": "EU-2024-1773",
+    "text": "(e) that an independent review and audits verifying compliance with legal and regulatory requirements and policies are performed.",
+    "source_locator": "Article 9(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 7,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-3",
+    "document_id": "EU-2024-1773",
+    "text": "3. The policy shall specify that the assessment referred to in paragraph 2 is to be documented and its results to be used to update the financial entity’s risk assessment referred to in Article 6.",
+    "source_locator": "Article 9(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1773-article-9-4",
+    "document_id": "EU-2024-1773",
+    "text": "4. The policy shall establish the appropriate measures that the financial entity is to adopt if it identifies shortcomings of the ICT third-party service providers, including ICT-related incidents and operational or security payment related incidents, in the provision of the ICT services supporting critical or important functions or in the compliance with contractual arrangements or legal requirements. It shall also specify how the implementation of such measures is to be monitored in order to ensure that they are effectively complied with within a defined timeframe, taking into account the materiality of the shortcomings.",
+    "source_locator": "Article 9(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-28-6",
+    "document_id": "EU-2022-2554",
+    "text": "6. In exercising access, inspection and audit rights over the ICT third-party service provider, financial entities shall, on the basis of a risk-based approach, pre-determine the frequency of audits and inspections as well as the areas to be audited through adhering to commonly accepted audit standards in line with any supervisory instruction on the use and incorporation of such audit standards. Where contractual arrangements concluded with ICT third-party service providers on the use of ICT services entail high technical complexity, the financial entity shall verify that auditors, whether internal or external, or a pool of auditors, possess appropriate skills and knowledge to effectively perform the relevant audits and assessments.",
+    "source_locator": "Article 28(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-30-5",
+    "document_id": "EU-2022-2554",
+    "text": "5. The ESAs shall, through the Joint Committee, develop draft regulatory technical standards to specify further the elements referred to in paragraph 2, point (a), which a financial entity needs to determine and assess when subcontracting ICT services supporting critical or important functions. When developing those draft regulatory technical standards, the ESAs shall take into consideration the size and overall risk profile of the financial entity, and the nature, scale and complexity of its services, activities and operations. The ESAs shall submit those draft regulatory technical standards to the Commission by 17 July 2024. Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in the first subparagraph in accordance with Articles 10 to 14 of Regulations (EU) No 1093/2010, (EU) No 1094/2010 and (EU) No 1095/2010.",
+    "source_locator": "Article 30(5)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  }
+]

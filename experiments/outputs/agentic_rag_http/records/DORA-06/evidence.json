@@ -9,11 +9,29 @@
     "score": 1.0
   },
   {
+    "evidence_id": "eu-2022-2554-article-16-1-h",
+    "document_id": "EU-2022-2554",
+    "text": "(h) implement, as appropriate, relevant operational conclusions resulting from the tests referred to in point (g) and from post-incident analysis into the ICT risk assessment process and develop, according to needs and ICT risk profile, ICT security awareness programmes and digital operational resilience training for staff and management.",
+    "source_locator": "Article 16(1)(h)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
     "evidence_id": "eu-2022-2554-article-5-2-g",
     "document_id": "EU-2022-2554",
     "text": "(g) allocate and periodically review the appropriate budget to fulfil the financial entity’s digital operational resilience needs in respect of all types of resources, including relevant ICT security awareness programmes and digital operational resilience training referred to in Article 13(6), and ICT skills for all staff;",
     "source_locator": "Article 5(2)(g)",
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-28-2-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) allocates and reviews at least once a year the budget necessary to fulfil the financial entity’s digital operational resilience needs in respect of all types of resources, including relevant ICT security awareness programmes and digital operational resilience training and ICT skills for all staff;",
+    "source_locator": "Article 28(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
     "rank": null,
     "score": null
   }

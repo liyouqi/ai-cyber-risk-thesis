@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -188,8 +190,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 11683,
+        "status": "retrieved",
+        "planning_ms": 14230,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Can data be exported, access revoked, data deleted and the system safely retired?",
@@ -209,16 +211,63 @@
           },
           "claims": [
             {
-              "claim_id": "identify_provision_for_data_rights",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that data can be exported, access revoked, data deleted and the system safely retired?",
+              "claim_id": "data_export_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the right to export data?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "data export",
-                "access revocation",
-                "data deletion",
-                "system retirement"
+                "right to export"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "access_revocation_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the right to revoke access to data?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "access revocation",
+                "right to revoke access"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "data_deletion_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the right to delete data?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "data deletion",
+                "right to delete data",
+                "right to be forgotten"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "system_retirement_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirements for safely retiring an AI system?",
+              "intent": "procedure_or_reporting",
+              "target_concepts": [
+                "system retirement",
+                "safely retiring system",
+                "decommissioning"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
@@ -228,10 +277,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:45:49.469423"
+            "generated_at": "2026-09-14T10:46:36.223563"
           },
           "limits": {
             "max_claims": 5,
@@ -244,16 +293,86 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "identify_provision_for_data_rights",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that data can be exported, access revoked, data deleted and the system safely retired?",
+              "claim_id": "data_export_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the right to export data?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "data export",
-                "access revocation",
-                "data deletion",
-                "system retirement"
+                "right to export"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:10:paragraph:5:point:d",
+              "eu:32024R1689:article:10:paragraph:5:point:c",
+              "eu:32024R1689:article:2:paragraph:7",
+              "eu:32024R1689:article:78",
+              "eu:32024R1689:recital:10",
+              "eu:32024R1689:recital:69",
+              "eu:32024R1689:recital:70",
+              "eu:32024R1689:recital:48"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses the right to export data?",
+              "data export",
+              "right to export"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "8 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "access_revocation_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the right to revoke access to data?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "access revocation",
+                "right to revoke access"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:10:paragraph:5:point:c",
+              "eu:32024R1689:article:78",
+              "eu:32024R1689:recital:10"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses the right to revoke access to data?",
+              "access revocation",
+              "right to revoke access"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "3 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "data_deletion_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the right to delete data?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "data deletion",
+                "right to delete data",
+                "right to be forgotten"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
@@ -261,11 +380,44 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement that data can be exported, access revoked, data deleted and the system safely retired?"
+              "Which provision of Regulation (EU) 2024/1689 addresses the right to delete data?",
+              "data deletion",
+              "right to delete data",
+              "right to be forgotten"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "the retriever returned 55 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "system_retirement_requirements",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirements for safely retiring an AI system?",
+              "intent": "procedure_or_reporting",
+              "target_concepts": [
+                "system retirement",
+                "safely retiring system",
+                "decommissioning"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses the requirements for safely retiring an AI system?",
+              "system retirement",
+              "safely retiring system",
+              "decommissioning"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "the retriever returned 66 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -273,7 +425,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -281,7 +433,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -289,7 +441,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 35.672,
+  "elapsed_seconds": 33.654,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

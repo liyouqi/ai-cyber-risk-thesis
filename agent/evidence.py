@@ -24,6 +24,16 @@ FRAMEWORK_IDS = {
     "DORA": "dora",
 }
 
+# This is the experiment's predeclared DORA corpus boundary for Planned
+# missing-mapping discovery.  Direct provision checks remain restricted to the
+# provision's own instrument.
+DORA_PLANNED_DOCUMENT_IDS = (
+    "EU-2022-2554",
+    "EU-2024-1773",
+    "EU-2024-1774",
+    "EU-2025-301",
+)
+
 
 class RegulatoryRagHttpError(RuntimeError):
     """Raised when the independent Regulatory RAG service cannot be used safely."""
@@ -219,9 +229,12 @@ class HttpRegulatoryRagAdapter:
             raise RegulatoryRagHttpError(
                 f"No fixed Regulatory RAG framework ID for: {item.framework}"
             )
+        document_ids = [document_id]
+        if provision is None and framework_id == "dora":
+            document_ids = list(DORA_PLANNED_DOCUMENT_IDS)
         return {
             "frameworks": [framework_id],
-            "document_ids": [document_id],
+            "document_ids": document_ids,
             "jurisdictions": ["EU"],
             "entity_types": [],
             "topics": [],

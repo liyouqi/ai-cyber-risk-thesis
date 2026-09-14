@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -153,8 +155,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 9259,
+        "status": "retrieved",
+        "planning_ms": 15286,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are APIs, plugins, agent tools and outbound connections allowlisted and least-privileged?",
@@ -174,20 +176,69 @@
           },
           "claims": [
             {
-              "claim_id": "find_allowlisting_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 requires APIs, plugins, agent tools, and outbound connections to be allowlisted and least-privileged?",
+              "claim_id": "api_plugin_allowlisting_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement to allowlist APIs, plugins, agent tools and outbound connections?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "allowlisted",
-                "least-privileged",
                 "APIs",
                 "plugins",
                 "agent tools",
-                "outbound connections"
+                "outbound connections",
+                "allowlisting"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "least_privilege_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement for least-privilege access for APIs, plugins, agent tools and outbound connections?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "APIs",
+                "plugins",
+                "agent tools",
+                "outbound connections",
+                "least-privilege"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "security_measures_provisions",
+              "question": "Which provisions of Regulation (EU) 2024/1689 specifically address security measures for AI systems?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "security measures",
+                "AI systems"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": []
+            },
+            {
+              "claim_id": "technical_documentation_requirements",
+              "question": "Which provisions of Regulation (EU) 2024/1689 require technical documentation for security measures?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "technical documentation",
+                "security measures"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
               "query_variants": []
             }
           ],
@@ -195,10 +246,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:17:33.599979"
+            "generated_at": "2026-09-14T10:40:19.755930"
           },
           "limits": {
             "max_claims": 5,
@@ -211,18 +262,19 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_allowlisting_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 requires APIs, plugins, agent tools, and outbound connections to be allowlisted and least-privileged?",
+              "claim_id": "api_plugin_allowlisting_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement to allowlist APIs, plugins, agent tools and outbound connections?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "allowlisted",
-                "least-privileged",
                 "APIs",
                 "plugins",
                 "agent tools",
-                "outbound connections"
+                "outbound connections",
+                "allowlisting"
               ],
-              "expected_evidence_roles": [],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
@@ -230,11 +282,119 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 requires APIs, plugins, agent tools, and outbound connections to be allowlisted and least-privileged?"
+              "Which provision of Regulation (EU) 2024/1689 addresses the requirement to allowlist APIs, plugins, agent tools and outbound connections?",
+              "APIs",
+              "plugins",
+              "agent tools",
+              "outbound connections",
+              "allowlisting"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "the retriever returned 103 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "least_privilege_requirement",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses the requirement for least-privilege access for APIs, plugins, agent tools and outbound connections?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "APIs",
+                "plugins",
+                "agent tools",
+                "outbound connections",
+                "least-privilege"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "not_covered",
+            "evidence_refs": [],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses the requirement for least-privilege access for APIs, plugins, agent tools and outbound connections?",
+              "APIs",
+              "plugins",
+              "agent tools",
+              "outbound connections",
+              "least-privilege"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "the retriever returned 103 ranked hit(s), but none passed deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "security_measures_provisions",
+              "question": "Which provisions of Regulation (EU) 2024/1689 specifically address security measures for AI systems?",
+              "intent": "scope_or_applicability",
+              "target_concepts": [
+                "security measures",
+                "AI systems"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": []
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:15:paragraph:5",
+              "eu:32024R1689:article:78:paragraph:2",
+              "eu:32024R1689:article:78",
+              "eu:32024R1689:article:17:paragraph:1:point:l",
+              "eu:32024R1689:article:10:paragraph:5:point:b",
+              "eu:32024R1689:article:102:subparagraph:1",
+              "eu:32024R1689:recital:76"
+            ],
+            "executed_queries": [
+              "Which provisions of Regulation (EU) 2024/1689 specifically address security measures for AI systems?",
+              "security measures",
+              "AI systems"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "technical_documentation_requirements",
+              "question": "Which provisions of Regulation (EU) 2024/1689 require technical documentation for security measures?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "technical documentation",
+                "security measures"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "supporting",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:vii:annex-part:4:paragraph:4.2",
+              "eu:32024R1689:annex:vii:annex-part:4:paragraph:4.2:point:a",
+              "eu:32024R1689:annex:vii:annex-part:4:paragraph:4.2:point:b",
+              "eu:32024R1689:annex:vii:annex-part:4:paragraph:4.2:point:c"
+            ],
+            "executed_queries": [
+              "Which provisions of Regulation (EU) 2024/1689 require technical documentation for security measures?",
+              "technical documentation",
+              "security measures"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "4 evidence item(s) selected from 3 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
             ]
           }
         ],
@@ -242,7 +402,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -250,7 +410,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -258,7 +418,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 33.101,
+  "elapsed_seconds": 34.813,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

@@ -358,5 +358,95 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 1,
     "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:annex:ix",
+    "document_id": "EU-2024-1689",
+    "text": "The following information shall be provided and thereafter kept up to date with regard to testing in real world conditions to be registered in accordance with Article 60:\n1. A Union-wide unique single identification number of the testing in real world conditions;\n2. The name and contact details of the provider or prospective provider and of the deployers involved in the testing in real world conditions;\n3. A brief description of the AI system, its intended purpose, and other information necessary for the identification of the system;\n4. A summary of the main characteristics of the plan for testing in real world conditions;\n5. Information on the suspension or termination of the testing in real world conditions.",
+    "source_locator": "ANNEX IX — Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:e",
+    "document_id": "EU-2024-1689",
+    "text": "(e) data collected and processed for the purpose of the testing in real world conditions shall be transferred to third countries only provided that appropriate and applicable safeguards under Union law are implemented;",
+    "source_locator": "Article 60(4)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:7",
+    "document_id": "EU-2024-1689",
+    "text": "7. Any serious incident identified in the course of the testing in real world conditions shall be reported to the national market surveillance authority in accordance with Article 73. The provider or prospective provider shall adopt immediate mitigation measures or, failing that, shall suspend the testing in real world conditions until such mitigation takes place, or otherwise terminate it. The provider or prospective provider shall establish a procedure for the prompt recall of the AI system upon such termination of the testing in real world conditions.",
+    "source_locator": "Article 60(7)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) the market surveillance authority in the Member State where the testing in real world conditions is to be conducted has approved the testing in real world conditions and the real-world testing plan; where the market surveillance authority has not provided an answer within 30 days, the testing in real world conditions and the real-world testing plan shall be understood to have been approved; where national law does not provide for a tacit approval, the testing in real world conditions shall remain subject to an authorisation;",
+    "source_locator": "Article 60(4)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. Testing of high-risk AI systems in real world conditions outside AI regulatory sandboxes may be conducted by providers or prospective providers of high-risk AI systems listed in Annex III, in accordance with this Article and the real-world testing plan referred to in this Article, without prejudice to the prohibitions under Article 5. The Commission shall, by means of implementing acts, specify the detailed elements of the real-world testing plan. Those implementing acts shall be adopted in accordance with the examination procedure referred to in Article 98(2). This paragraph shall be without prejudice to Union or national law on the testing in real world conditions of high-risk AI systems related to products covered by Union harmonisation legislation listed in Annex I.",
+    "source_locator": "Article 60(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. The testing of high-risk AI systems in real world conditions under this Article shall be without prejudice to any ethical review that is required by Union or national law.",
+    "source_locator": "Article 60(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:h",
+    "document_id": "EU-2024-1689",
+    "text": "(h) where a provider or prospective provider organises the testing in real world conditions in cooperation with one or more deployers or prospective deployers, the latter have been informed of all aspects of the testing that are relevant to their decision to participate, and given the relevant instructions for use of the AI system referred to in Article 13; the provider or prospective provider and the deployer or prospective deployer shall conclude an agreement specifying their roles and responsibilities with a view to ensuring compliance with the provisions for testing in real world conditions under this Regulation and under other applicable Union and national law;",
+    "source_locator": "Article 60(4)(h)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:4:point:i",
+    "document_id": "EU-2024-1689",
+    "text": "(i) the subjects of the testing in real world conditions have given informed consent in accordance with Article 61, or in the case of law enforcement, where the seeking of informed consent would prevent the AI system from being tested, the testing itself and the outcome of the testing in the real world conditions shall not have any negative effect on the subjects, and their personal data shall be deleted after the test is performed;",
+    "source_locator": "Article 60(4)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:60:paragraph:8",
+    "document_id": "EU-2024-1689",
+    "text": "8. Providers or prospective providers shall notify the national market surveillance authority in the Member State where the testing in real world conditions is to be conducted of the suspension or termination of the testing in real world conditions and of the final outcomes.",
+    "source_locator": "Article 60(8)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:annex:ix:subparagraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "The following information shall be provided and thereafter kept up to date with regard to testing in real world conditions to be registered in accordance with Article 60:",
+    "source_locator": "ANNEX IX — Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60 — subparagraph",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
   }
 ]

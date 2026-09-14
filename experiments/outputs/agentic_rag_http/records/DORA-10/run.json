@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,6 +77,9 @@
             "dora"
           ],
           "document_ids": [
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
             "EU-2025-301"
           ],
           "jurisdictions": [
@@ -83,8 +88,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 8391,
+        "status": "retrieved",
+        "planning_ms": 11800,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Commission Delegated Regulation (EU) 2025/301 is materially necessary for this requirement but absent from the existing mapping: Submit within four hours after classification as a major incident and no later than 24 hours after first becoming aware of the incident",
@@ -94,6 +99,9 @@
               "dora"
             ],
             "document_ids": [
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
               "EU-2025-301"
             ],
             "jurisdictions": [
@@ -104,31 +112,54 @@
           },
           "claims": [
             {
-              "claim_id": "find_reporting_deadlines_in_eu_2025_301",
-              "question": "Which provisions of Commission Delegated Regulation (EU) 2025/301 specify deadlines for incident reporting, including timeframes after classification as a major incident and after first awareness?",
-              "intent": "frequency_or_deadline",
+              "claim_id": "provision_for_major_incident_reporting_deadlines",
+              "question": "Which provision of Commission Delegated Regulation (EU) 2025/301 establishes the requirement to submit within four hours after classification as a major incident and no later than 24 hours after first becoming aware of the incident?",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "incident reporting",
-                "deadlines",
                 "major incident",
-                "first becoming aware"
+                "reporting deadline",
+                "classification",
+                "submission"
               ],
               "expected_evidence_roles": [
-                "frequency_or_deadline"
+                "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
+            },
+            {
+              "claim_id": "mapping_comparison_existing_requirements",
+              "question": "What are the existing requirements in the mapping for major incident reporting deadlines under DORA framework?",
+              "intent": "procedure_or_reporting",
+              "target_concepts": [
+                "major incident",
+                "reporting deadline",
+                "mapping",
+                "DORA"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA framework major incident reporting deadline mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:49:13.138751"
+            "generated_at": "2026-09-14T10:50:34.125752"
           },
           "limits": {
             "max_claims": 5,
@@ -141,30 +172,75 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_reporting_deadlines_in_eu_2025_301",
-              "question": "Which provisions of Commission Delegated Regulation (EU) 2025/301 specify deadlines for incident reporting, including timeframes after classification as a major incident and after first awareness?",
-              "intent": "frequency_or_deadline",
+              "claim_id": "provision_for_major_incident_reporting_deadlines",
+              "question": "Which provision of Commission Delegated Regulation (EU) 2025/301 establishes the requirement to submit within four hours after classification as a major incident and no later than 24 hours after first becoming aware of the incident?",
+              "intent": "procedure_or_reporting",
               "target_concepts": [
-                "incident reporting",
-                "deadlines",
                 "major incident",
-                "first becoming aware"
+                "reporting deadline",
+                "classification",
+                "submission"
               ],
               "expected_evidence_roles": [
-                "frequency_or_deadline"
+                "general_rule"
               ],
               "depends_on": [],
               "importance": "required",
               "query_variants": []
             },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2025-301-article-5-1-a"
+            ],
+            "executed_queries": [
+              "Which provision of Commission Delegated Regulation (EU) 2025/301 establishes the requirement to submit within four hours after classification as a major incident and no later than 24 hours after first becoming aware of the incident?",
+              "major incident",
+              "reporting deadline",
+              "classification",
+              "submission"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "1 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "mapping_comparison_existing_requirements",
+              "question": "What are the existing requirements in the mapping for major incident reporting deadlines under DORA framework?",
+              "intent": "procedure_or_reporting",
+              "target_concepts": [
+                "major incident",
+                "reporting deadline",
+                "mapping",
+                "DORA"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "DORA framework major incident reporting deadline mapping",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provisions of Commission Delegated Regulation (EU) 2025/301 specify deadlines for incident reporting, including timeframes after classification as a major incident and after first awareness?"
+              "What are the existing requirements in the mapping for major incident reporting deadlines under DORA framework?",
+              "DORA framework major incident reporting deadline mapping",
+              "major incident",
+              "reporting deadline",
+              "mapping",
+              "DORA"
             ],
-            "candidate_count": 60,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "the retriever returned 88 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -172,7 +248,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -180,7 +256,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -188,7 +264,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 14.852,
+  "elapsed_seconds": 21.085,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

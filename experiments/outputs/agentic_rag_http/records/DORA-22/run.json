@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2024-1773"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -84,7 +89,7 @@
           "topics": []
         },
         "status": "empty",
-        "planning_ms": 10526,
+        "planning_ms": 7985,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for this requirement but absent from the existing mapping: Test periodically based on risk and criticality, but no uniform annual frequency is specified",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2024-1773"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,16 +112,12 @@
           },
           "claims": [
             {
-              "claim_id": "find_absent_provision",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for the requirement to test periodically based on risk and criticality, but absent from the existing mapping",
-              "intent": "relationship_between_provisions",
+              "claim_id": "provision_requirement_periodic_testing",
+              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires periodic testing based on risk and criticality without specifying a uniform annual frequency?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "test",
-                "periodically",
-                "risk",
-                "criticality",
-                "absent",
-                "mapping"
+                "periodic testing",
+                "risk and criticality"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -127,10 +131,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:52:25.445460"
+            "generated_at": "2026-09-14T10:54:36.927237"
           },
           "limits": {
             "max_claims": 5,
@@ -143,16 +147,12 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_absent_provision",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for the requirement to test periodically based on risk and criticality, but absent from the existing mapping",
-              "intent": "relationship_between_provisions",
+              "claim_id": "provision_requirement_periodic_testing",
+              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires periodic testing based on risk and criticality without specifying a uniform annual frequency?",
+              "intent": "obligation_or_prohibition",
               "target_concepts": [
-                "test",
-                "periodically",
-                "risk",
-                "criticality",
-                "absent",
-                "mapping"
+                "periodic testing",
+                "risk and criticality"
               ],
               "expected_evidence_roles": [
                 "general_rule"
@@ -164,11 +164,13 @@
             "status": "not_covered",
             "evidence_refs": [],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1773 is materially necessary for the requirement to test periodically based on risk and criticality, but absent from the existing mapping"
+              "Which provision of Commission Delegated Regulation (EU) 2024/1773 requires periodic testing based on risk and criticality without specifying a uniform annual frequency?",
+              "periodic testing",
+              "risk and criticality"
             ],
-            "candidate_count": 93,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "the retriever returned 54 ranked hit(s), but none passed deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -176,7 +178,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -184,7 +186,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -192,7 +194,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 20.112,
+  "elapsed_seconds": 12.448,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

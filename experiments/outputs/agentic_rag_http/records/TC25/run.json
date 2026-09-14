@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -153,8 +155,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 10268,
+        "status": "retrieved",
+        "planning_ms": 14294,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are architecture, purpose, versions, limits, tests, controls and instructions documented?",
@@ -174,49 +176,8 @@
           },
           "claims": [
             {
-              "claim_id": "find_missing_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to document architecture, purpose, versions, limits, tests, controls, and instructions but absent from the existing mapping?",
-              "intent": "obligation_or_prohibition",
-              "target_concepts": [
-                "architecture",
-                "purpose",
-                "versions",
-                "limits",
-                "tests",
-                "controls",
-                "instructions",
-                "documentation"
-              ],
-              "expected_evidence_roles": [
-                "general_rule"
-              ],
-              "depends_on": [],
-              "importance": "required",
-              "query_variants": []
-            }
-          ],
-          "answer_shape": "structured",
-          "clarification": null,
-          "planner_metadata": {
-            "planner": "private-ai",
-            "model": "glm-4.6v",
-            "prompt_version": "3",
-            "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:46:23.666043"
-          },
-          "limits": {
-            "max_claims": 5,
-            "max_query_variants_per_claim": 4,
-            "max_evidence_per_claim": 8,
-            "max_total_evidence": 40,
-            "max_relation_expansion_depth": 1
-          }
-        },
-        "claim_coverage": [
-          {
-            "claim": {
-              "claim_id": "find_missing_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to document architecture, purpose, versions, limits, tests, controls, and instructions but absent from the existing mapping?",
+              "claim_id": "documentation_requirement_architecture",
+              "question": "Which provision of Regulation (EU) 2024/1689 requires documentation of architecture, purpose, versions, limits, tests, controls and instructions for AI systems?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "architecture",
@@ -235,14 +196,162 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            {
+              "claim_id": "existing_mapping_analysis",
+              "question": "What provisions are currently mapped to the requirement: Are architecture, purpose, versions, limits, tests, controls and instructions documented?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping",
+                "architecture",
+                "purpose",
+                "versions",
+                "limits",
+                "tests",
+                "controls",
+                "instructions",
+                "documentation"
+              ],
+              "expected_evidence_roles": [
+                "supporting_context"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "existing mapping architecture purpose versions limits tests controls instructions documentation",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            }
+          ],
+          "answer_shape": "structured",
+          "clarification": null,
+          "planner_metadata": {
+            "planner": "private-ai",
+            "model": "glm-4.5-air",
+            "prompt_version": "3",
+            "planner_schema_version": "1.0",
+            "generated_at": "2026-09-14T10:47:09.808512"
+          },
+          "limits": {
+            "max_claims": 5,
+            "max_query_variants_per_claim": 4,
+            "max_evidence_per_claim": 8,
+            "max_total_evidence": 40,
+            "max_relation_expansion_depth": 1
+          }
+        },
+        "claim_coverage": [
+          {
+            "claim": {
+              "claim_id": "documentation_requirement_architecture",
+              "question": "Which provision of Regulation (EU) 2024/1689 requires documentation of architecture, purpose, versions, limits, tests, controls and instructions for AI systems?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "architecture",
+                "purpose",
+                "versions",
+                "limits",
+                "tests",
+                "controls",
+                "instructions",
+                "documentation"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:xii",
+              "eu:32024R1689:annex:xii:subparagraph:1",
+              "eu:32024R1689:annex:xii:point:1",
+              "eu:32024R1689:annex:xii:point:1:subpoint:a",
+              "eu:32024R1689:annex:xii:point:1:subpoint:b",
+              "eu:32024R1689:annex:xii:point:1:subpoint:c",
+              "eu:32024R1689:annex:xii:point:1:subpoint:d",
+              "eu:32024R1689:annex:xii:point:1:subpoint:e",
+              "eu:32024R1689:annex:xii:point:1:subpoint:f",
+              "eu:32024R1689:annex:xii:point:1:subpoint:g",
+              "eu:32024R1689:annex:xii:point:1:subpoint:h",
+              "eu:32024R1689:annex:xii:point:2",
+              "eu:32024R1689:annex:xii:point:2:subpoint:a",
+              "eu:32024R1689:annex:xii:point:2:subpoint:b",
+              "eu:32024R1689:annex:xii:point:2:subpoint:c"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 is materially necessary for the requirement to document architecture, purpose, versions, limits, tests, controls, and instructions but absent from the existing mapping?"
+              "Which provision of Regulation (EU) 2024/1689 requires documentation of architecture, purpose, versions, limits, tests, controls and instructions for AI systems?",
+              "architecture",
+              "purpose",
+              "versions",
+              "limits",
+              "tests",
+              "controls",
+              "instructions",
+              "documentation"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "15 evidence item(s) selected from 9 query projection(s) after deterministic-legal-coverage-v3; expanded the answer-bearing provision list"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "existing_mapping_analysis",
+              "question": "What provisions are currently mapped to the requirement: Are architecture, purpose, versions, limits, tests, controls and instructions documented?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping",
+                "architecture",
+                "purpose",
+                "versions",
+                "limits",
+                "tests",
+                "controls",
+                "instructions",
+                "documentation"
+              ],
+              "expected_evidence_roles": [
+                "supporting_context"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": [
+                {
+                  "query": "existing mapping architecture purpose versions limits tests controls instructions documentation",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:iv",
+              "eu:32024R1689:annex:iv:point:3",
+              "eu:32024R1689:annex:iv:point:6",
+              "eu:32024R1689:annex:iv:point:2",
+              "eu:32024R1689:annex:iv:point:7"
+            ],
+            "executed_queries": [
+              "What provisions are currently mapped to the requirement: Are architecture, purpose, versions, limits, tests, controls and instructions documented?",
+              "existing mapping architecture purpose versions limits tests controls instructions documentation",
+              "mapping",
+              "architecture",
+              "purpose",
+              "versions",
+              "limits",
+              "tests",
+              "controls",
+              "instructions",
+              "documentation"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "5 evidence item(s) selected from 11 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -250,7 +359,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -258,7 +367,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -266,11 +375,9 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 43.407,
-  "model_attempts": 2,
-  "guardrail_changes": [
-    "Removed unknown evidence IDs from Article 17"
-  ],
+  "elapsed_seconds": 30.549,
+  "model_attempts": 1,
+  "guardrail_changes": [],
   "queries": [
     {
       "purpose": "validate",

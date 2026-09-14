@@ -4,35 +4,36 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 11",
       "decision": "Supported",
-      "reason": "Article 11 directly mandates the creation and maintenance of technical documentation for high-risk AI systems, which is the core objective of the control statement. The provision requires this documentation to demonstrate compliance and provide necessary information for assessment, aligning with the requirement to document architecture, purpose, and other elements.",
+      "reason": "Article 11 directly requires the creation and maintenance of technical documentation for high-risk AI systems, which is the core objective of the control statement. The evidence shows it mandates documentation to demonstrate compliance and provides information to assessors, covering the requirement to document architecture, purpose, versions, tests, and controls.",
       "evidence_ids": [
         "eu:32024R1689:article:11:paragraph:1",
-        "eu:32024R1689:article:11:paragraph:2"
+        "eu:32024R1689:article:11:paragraph:2",
+        "eu:32024R1689:article:11:paragraph:3"
       ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 13",
       "decision": "Partially supported",
-      "reason": "Article 13 supports the control statement by requiring instructions for use that must include details about the system's characteristics, capabilities, limitations, and intended purpose. However, it does not cover the full scope of the control statement, which also includes architecture, versions, tests, controls, and instructions in a broader sense.",
+      "reason": "Article 13 requires instructions for use, which is a key part of the documentation. The evidence shows it mandates instructions that include details on the system's purpose, characteristics, limitations, and performance, supporting the control's objective. However, it does not cover the full scope of the control statement, such as the technical file or test pack.",
       "evidence_ids": [
         "eu:32024R1689:article:13:paragraph:1",
         "eu:32024R1689:article:13:paragraph:2",
-        "eu:32024R1689:article:13:paragraph:3:point:b:subpoint:i"
+        "eu:32024R1689:article:13:paragraph:3"
       ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 17",
       "decision": "Partially supported",
-      "reason": "Article 17 supports the control statement by requiring a documented quality management system that includes examination, test, and validation procedures. This addresses the 'tests' and 'controls' aspects of the control statement. However, it does not cover the documentation of architecture, purpose, versions, or instructions in the same direct manner as Article 11.",
+      "reason": "Article 17 requires a documented quality management system, which supports the control's objective of having documented instructions and procedures. The evidence shows it mandates written policies and procedures for design, development, testing, and validation. However, it does not directly address the creation of the technical file or test pack itself, which are specific outputs of the documentation process.",
       "evidence_ids": [
-        "eu:32024R1689:article:17:paragraph:1"
+        "eu:32024R1689:article:17"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "The control statement applies to providers of high-risk AI systems, which is consistent with the applicability of Articles 11, 13, and 17.",
-  "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct. Article 11 is a strong match for the documentation requirement. Article 13 and 17 provide relevant but incomplete support. The mapping should be retained, but the relationship to Article 13 and 17 should be clarified to reflect their partial support for specific elements of the control statement."
+  "applicability_note": "The control is applicable to providers of high-risk AI systems, as specified in the assessment item.",
+  "overall_assessment": "Correct",
+  "challenge_comment": "No challenge is needed. The existing mappings are appropriate. Article 11 is the primary support for the documentation requirement, while Articles 13 and 17 provide relevant but partial support by addressing specific components (instructions and quality management) of the overall documentation process."
 }

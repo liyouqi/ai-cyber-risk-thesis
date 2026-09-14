@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2024-1774"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -84,7 +89,7 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 8950,
+        "planning_ms": 16057,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 is materially necessary for this requirement but absent from the existing mapping: Perform automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2024-1774"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,11 +112,12 @@
           },
           "claims": [
             {
-              "claim_id": "find_vulnerability_scanning_provision",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 requires automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "identify_vulnerability_scanning_requirement",
+              "question": "Which provision in Commission Delegated Regulation (EU) 2024/1774 requires automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "automated vulnerability scanning",
+                "assessment",
                 "ICT assets",
                 "critical or important functions"
               ],
@@ -118,16 +127,57 @@
               "depends_on": [],
               "importance": "required",
               "query_variants": []
+            },
+            {
+              "claim_id": "identify_existing_mapping_provisions",
+              "question": "Which provisions in Commission Delegated Regulation (EU) 2024/1774 are currently mapped to the requirement of performing automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping",
+                "automated vulnerability scanning",
+                "assessment",
+                "ICT assets",
+                "critical or important functions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "identify_missing_provisions",
+              "question": "Which provisions in Commission Delegated Regulation (EU) 2024/1774 are materially necessary for the requirement of performing automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions but are not included in the existing mapping?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "materially necessary",
+                "requirement",
+                "automated vulnerability scanning",
+                "assessment",
+                "ICT assets",
+                "critical or important functions",
+                "mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "identify_vulnerability_scanning_requirement",
+                "identify_existing_mapping_provisions"
+              ],
+              "importance": "required",
+              "query_variants": []
             }
           ],
           "answer_shape": "structured",
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:50:13.798853"
+            "generated_at": "2026-09-14T10:51:49.239401"
           },
           "limits": {
             "max_claims": 5,
@@ -140,11 +190,12 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_vulnerability_scanning_provision",
-              "question": "Which provision of Commission Delegated Regulation (EU) 2024/1774 requires automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "identify_vulnerability_scanning_requirement",
+              "question": "Which provision in Commission Delegated Regulation (EU) 2024/1774 requires automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "automated vulnerability scanning",
+                "assessment",
                 "ICT assets",
                 "critical or important functions"
               ],
@@ -157,17 +208,118 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2024-1774-article-10-2-b",
               "eu-2024-1774-article-10-2",
+              "eu-2024-1774-article-10-2-b",
               "eu-2024-1774-article-23-2-b",
-              "eu-2024-1774-article-7-4"
+              "eu-2024-1774-article-10-2-a",
+              "eu-2024-1774-article-10-2-h",
+              "eu-2024-1774-article-10-2-d",
+              "eu-2024-1774-article-10-2-g",
+              "eu-2024-1774-article-10-2-f"
             ],
             "executed_queries": [
-              "Which provision of Commission Delegated Regulation (EU) 2024/1774 requires automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?"
+              "Which provision in Commission Delegated Regulation (EU) 2024/1774 requires automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
+              "automated vulnerability scanning",
+              "assessment",
+              "ICT assets",
+              "critical or important functions"
             ],
-            "candidate_count": 515,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "4 evidence item(s) selected from 1 query projection(s) after deterministic-term-coverage-v2"
+              "8 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "identify_existing_mapping_provisions",
+              "question": "Which provisions in Commission Delegated Regulation (EU) 2024/1774 are currently mapped to the requirement of performing automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "mapping",
+                "automated vulnerability scanning",
+                "assessment",
+                "ICT assets",
+                "critical or important functions"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2024-1774-article-10-2",
+              "eu-2024-1774-article-10-2-b",
+              "eu-2024-1774-article-10-2-a",
+              "eu-2024-1774-article-10-2-h",
+              "eu-2024-1774-article-10-2-d",
+              "eu-2024-1774-article-10-2-g",
+              "eu-2024-1774-article-10-2-f",
+              "eu-2024-1774-article-10-2-e"
+            ],
+            "executed_queries": [
+              "Which provisions in Commission Delegated Regulation (EU) 2024/1774 are currently mapped to the requirement of performing automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions?",
+              "mapping",
+              "automated vulnerability scanning",
+              "assessment",
+              "ICT assets",
+              "critical or important functions"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "8 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "identify_missing_provisions",
+              "question": "Which provisions in Commission Delegated Regulation (EU) 2024/1774 are materially necessary for the requirement of performing automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions but are not included in the existing mapping?",
+              "intent": "relationship_between_provisions",
+              "target_concepts": [
+                "materially necessary",
+                "requirement",
+                "automated vulnerability scanning",
+                "assessment",
+                "ICT assets",
+                "critical or important functions",
+                "mapping"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [
+                "identify_vulnerability_scanning_requirement",
+                "identify_existing_mapping_provisions"
+              ],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2024-1774-article-10-2",
+              "eu-2024-1774-article-10-2-b",
+              "eu-2024-1774-article-10-2-a",
+              "eu-2024-1774-article-10-2-h",
+              "eu-2024-1774-article-10-2-d",
+              "eu-2024-1774-article-10-2-g",
+              "eu-2024-1774-article-10-2-f",
+              "eu-2024-1774-article-10-2-e"
+            ],
+            "executed_queries": [
+              "Which provisions in Commission Delegated Regulation (EU) 2024/1774 are materially necessary for the requirement of performing automated vulnerability scanning and assessment at least weekly for ICT assets supporting critical or important functions but are not included in the existing mapping?",
+              "materially necessary",
+              "requirement",
+              "automated vulnerability scanning",
+              "assessment",
+              "ICT assets",
+              "critical or important functions",
+              "mapping"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "8 evidence item(s) selected from 8 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -175,7 +327,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -183,7 +335,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -191,7 +343,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 16.65,
+  "elapsed_seconds": 27.434,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

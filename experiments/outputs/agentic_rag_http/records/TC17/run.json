@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -188,8 +190,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 13327,
+        "status": "retrieved",
+        "planning_ms": 11275,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Are accuracy, hallucination, repeatability and limits tested?",
@@ -209,13 +211,55 @@
           },
           "claims": [
             {
-              "claim_id": "identify_accuracy_hallucination_repeatability_limits_testing_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses testing for accuracy, hallucination, repeatability, and limits?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_for_accuracy_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing accuracy of AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "accuracy",
+                "testing"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "provision_for_hallucination_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing hallucination of AI systems?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
                 "hallucination",
+                "testing"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "provision_for_repeatability_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing repeatability of AI systems?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
                 "repeatability",
+                "testing"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "provision_for_limits_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing limits of AI systems?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
                 "limits",
                 "testing"
               ],
@@ -231,10 +275,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:42:28.667164"
+            "generated_at": "2026-09-14T10:42:59.793149"
           },
           "limits": {
             "max_claims": 5,
@@ -247,13 +291,121 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "identify_accuracy_hallucination_repeatability_limits_testing_provision",
-              "question": "Which provision of Regulation (EU) 2024/1689 addresses testing for accuracy, hallucination, repeatability, and limits?",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_for_accuracy_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing accuracy of AI systems?",
+              "intent": "minimum_requirements",
               "target_concepts": [
                 "accuracy",
+                "testing"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:15:paragraph:3",
+              "eu:32024R1689:article:15:paragraph:2",
+              "eu:32024R1689:article:15:paragraph:1",
+              "eu:32024R1689:annex:ix",
+              "eu:32024R1689:article:60:paragraph:4:point:e",
+              "eu:32024R1689:article:60:paragraph:7",
+              "eu:32024R1689:article:60:paragraph:4:point:b",
+              "eu:32024R1689:article:60:paragraph:1"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing accuracy of AI systems?",
+              "accuracy",
+              "testing"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "provision_for_hallucination_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing hallucination of AI systems?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
                 "hallucination",
+                "testing"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:article:60:paragraph:1",
+              "eu:32024R1689:annex:ix",
+              "eu:32024R1689:article:60:paragraph:7",
+              "eu:32024R1689:article:60:paragraph:4:point:b",
+              "eu:32024R1689:article:60:paragraph:3",
+              "eu:32024R1689:article:60:paragraph:4:point:h",
+              "eu:32024R1689:article:60:paragraph:4:point:i",
+              "eu:32024R1689:article:60:paragraph:8"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing hallucination of AI systems?",
+              "hallucination",
+              "testing"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "provision_for_repeatability_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing repeatability of AI systems?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
                 "repeatability",
+                "testing"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:ix",
+              "eu:32024R1689:article:60:paragraph:7",
+              "eu:32024R1689:article:60:paragraph:4:point:b",
+              "eu:32024R1689:article:60:paragraph:4:point:e",
+              "eu:32024R1689:article:60:paragraph:4:point:h",
+              "eu:32024R1689:annex:ix:subparagraph:1",
+              "eu:32024R1689:article:60:paragraph:4:point:i",
+              "eu:32024R1689:article:60:paragraph:8"
+            ],
+            "executed_queries": [
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing repeatability of AI systems?",
+              "repeatability",
+              "testing"
+            ],
+            "candidate_count": 1455,
+            "coverage_reasons": [
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "provision_for_limits_testing",
+              "question": "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing limits of AI systems?",
+              "intent": "minimum_requirements",
+              "target_concepts": [
                 "limits",
                 "testing"
               ],
@@ -264,14 +416,25 @@
               "importance": "required",
               "query_variants": []
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "partially_covered",
+            "evidence_refs": [
+              "eu:32024R1689:annex:ix",
+              "eu:32024R1689:article:60:paragraph:4:point:h",
+              "eu:32024R1689:article:60:paragraph:7",
+              "eu:32024R1689:article:60:paragraph:4:point:b",
+              "eu:32024R1689:article:60:paragraph:1",
+              "eu:32024R1689:article:60:paragraph:4:point:e",
+              "eu:32024R1689:article:60:paragraph:4:point:i",
+              "eu:32024R1689:article:60:paragraph:8"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 addresses testing for accuracy, hallucination, repeatability, and limits?"
+              "Which provision of Regulation (EU) 2024/1689 addresses requirements for testing limits of AI systems?",
+              "limits",
+              "testing"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "relevant evidence was found, but no complete provision structure was established for this enumeration claim"
             ]
           }
         ],
@@ -279,7 +442,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -287,7 +450,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -295,7 +458,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 23.417,
+  "elapsed_seconds": 35.52,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -118,8 +120,8 @@
           "entity_types": [],
           "topics": []
         },
-        "status": "empty",
-        "planning_ms": 6873,
+        "status": "retrieved",
+        "planning_ms": 6652,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2024/1689 is materially necessary for this requirement but absent from the existing mapping: Is an inventory of models, components, data sources and subcontractors maintained?",
@@ -139,8 +141,8 @@
           },
           "claims": [
             {
-              "claim_id": "regulation_2024_1689_inventory_requirement",
-              "question": "Which provision of Regulation (EU) 2024/1689 requires an inventory of models, components, data sources and subcontractors?",
+              "claim_id": "inventory_requirement",
+              "question": "Is an inventory of models, components, data sources and subcontractors maintained according to Regulation (EU) 2024/1689?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "inventory",
@@ -154,17 +156,23 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "inventory of models components data sources subcontractors maintained",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             }
           ],
           "answer_shape": "structured",
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:45:18.944151"
+            "generated_at": "2026-09-14T10:46:12.664413"
           },
           "limits": {
             "max_claims": 5,
@@ -177,8 +185,8 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "regulation_2024_1689_inventory_requirement",
-              "question": "Which provision of Regulation (EU) 2024/1689 requires an inventory of models, components, data sources and subcontractors?",
+              "claim_id": "inventory_requirement",
+              "question": "Is an inventory of models, components, data sources and subcontractors maintained according to Regulation (EU) 2024/1689?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "inventory",
@@ -192,16 +200,31 @@
               ],
               "depends_on": [],
               "importance": "required",
-              "query_variants": []
+              "query_variants": [
+                {
+                  "query": "inventory of models components data sources subcontractors maintained",
+                  "language": null,
+                  "weight": 1.0
+                }
+              ]
             },
-            "status": "not_covered",
-            "evidence_refs": [],
+            "status": "covered",
+            "evidence_refs": [
+              "eu:32024R1689:recital:89",
+              "eu:32024R1689:recital:103"
+            ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2024/1689 requires an inventory of models, components, data sources and subcontractors?"
+              "Is an inventory of models, components, data sources and subcontractors maintained according to Regulation (EU) 2024/1689?",
+              "inventory of models components data sources subcontractors maintained",
+              "inventory",
+              "models",
+              "components",
+              "data sources",
+              "subcontractors"
             ],
             "candidate_count": 1455,
             "coverage_reasons": [
-              "the retriever returned 20 ranked hit(s), but none passed deterministic-term-coverage-v2"
+              "2 evidence item(s) selected from 7 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -209,7 +232,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -217,7 +240,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -225,7 +248,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 25.31,
+  "elapsed_seconds": 15.638,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

@@ -58,6 +58,20 @@ def item() -> AssessmentItem:
     )
 
 
+def dora_item() -> AssessmentItem:
+    return AssessmentItem(
+        item_id="DORA-08",
+        framework="DORA",
+        instrument="Regulation (EU) 2022/2554",
+        domain="Incident reporting",
+        control_statement="Report a major ICT-related incident.",
+        expected_evidence="Incident report",
+        applicability="All financial entities",
+        existing_mapping="Article 19(4)",
+        source_row=10,
+    )
+
+
 def chunk(evidence_id: str = "eu-2024-1689-article-9-1") -> dict[str, object]:
     return {
         "evidence_id": evidence_id,
@@ -171,10 +185,42 @@ class HttpRegulatoryRagAdapterTest(unittest.TestCase):
         self.assertEqual(
             session.calls[-1]["json"]["query_mode"], "planned"  # type: ignore[index]
         )
+        self.assertEqual(
+            session.calls[-1]["json"]["scope"]["document_ids"],  # type: ignore[index]
+            ["EU-2024-1689"],
+        )
         self.assertEqual(evidence[0].evidence_id, "eu-2024-1689-article-9-1")
         trace = adapter.metadata["retrievals"][0]  # type: ignore[index]
         self.assertEqual(trace["plan"], plan)
         self.assertEqual(trace["claim_coverage"], claims)
+
+    def test_dora_planned_uses_only_the_predeclared_dora_allowlist(self) -> None:
+        session = FakeSession(
+            [
+                FakeResponse(
+                    200,
+                    {
+                        "query_mode": "planned",
+                        "status": "retrieved",
+                        "planned_result": {
+                            "plan": {},
+                            "claims": [],
+                            "evidence": [],
+                            "metadata": {},
+                        },
+                    },
+                )
+            ]
+        )
+        adapter = HttpRegulatoryRagAdapter(
+            "http://rag.test", session=session  # type: ignore[arg-type]
+        )
+        adapter.retrieve(dora_item(), "Which provision is missing?", None)
+
+        self.assertEqual(
+            session.calls[-1]["json"]["scope"]["document_ids"],  # type: ignore[index]
+            ["EU-2022-2554", "EU-2024-1773", "EU-2024-1774", "EU-2025-301"],
+        )
 
     def test_empty_result_is_recorded_without_scope_expansion(self) -> None:
         session = FakeSession(

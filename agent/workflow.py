@@ -405,7 +405,7 @@ def write_run(run: ReviewRun, output_dir: str | Path) -> Path:
         "method": run.method,
         "evidence_provider": run.provider,
         "evidence_provider_details": run.provider_details,
-        "workflow_version": "0.3",
+        "workflow_version": "0.4" if run.method == "agentic_rag" else "0.3",
         "prompt_version": run.prompt_version,
         "model": run.model,
         "model_settings": run.model_settings,

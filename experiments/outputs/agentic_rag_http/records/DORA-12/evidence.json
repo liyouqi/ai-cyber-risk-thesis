@@ -16,5 +16,14 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
     "rank": 2,
     "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-4-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) an intermediate report after the initial notification referred to in point (a), as soon as the status of the original incident has changed significantly or the handling of the major ICT-related incident has changed based on new information available, followed, as appropriate, by updated notifications every time a relevant status update is available, as well as upon a specific request of the competent authority;",
+    "source_locator": "Article 19(4)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
   }
 ]

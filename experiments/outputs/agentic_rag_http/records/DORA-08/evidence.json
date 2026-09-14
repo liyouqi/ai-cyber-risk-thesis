@@ -34,5 +34,113 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     "rank": 4,
     "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1",
+    "document_id": "EU-2025-301",
+    "text": "Financial entities shall include in the initial notification, the intermediate report, and the final report, as referred to in Article 19(4) of Regulation (EU) 2022/2554, the following general information:",
+    "source_locator": "Article 1",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-19-6",
+    "document_id": "EU-2022-2554",
+    "text": "6. Upon receipt of the initial notification and of each report referred to in paragraph 4, the competent authority shall, in a timely manner, provide details of the major ICT-related incident to the following recipients based, as applicable, on their respective competences:",
+    "source_locator": "Article 19(6)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-a",
+    "document_id": "EU-2025-301",
+    "text": "(a) the type of submission (initial notification, intermediate report, or final report);",
+    "source_locator": "Article 1(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-c",
+    "document_id": "EU-2025-301",
+    "text": "(c) the name and identification code of the entity that submits the initial notification, or intermediate or final report, for the financial entity;",
+    "source_locator": "Article 1(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-d",
+    "document_id": "EU-2025-301",
+    "text": "(d) where applicable, the names and LEI codes of all financial entities covered in the aggregated initial notification or intermediate or final report;",
+    "source_locator": "Article 1(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-5-2",
+    "document_id": "EU-2025-301",
+    "text": "2. Where the financial entity has not classified an ICT-related incident as major within 24 hours from the moment the financial entity has become aware of the ITC-related incident but classifies that ICT-related incident as major at a later stage, the financial entity shall submit the initial notification within four hours from the classification of the ICT-related incident as a major incident.",
+    "source_locator": "Article 5(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-b",
+    "document_id": "EU-2025-301",
+    "text": "(b) the name of the financial entity, its LEI code, and the type of financial entity, as referred to in Article 2(1) of Regulation (EU) 2022/2554;",
+    "source_locator": "Article 1(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-e",
+    "document_id": "EU-2025-301",
+    "text": "(e) the contact details of the persons responsible for communicating with the competent authority on the major ICT-related incident;",
+    "source_locator": "Article 1(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-f",
+    "document_id": "EU-2025-301",
+    "text": "(f) where applicable, the identification of the parent undertaking of the group to which the financial entity belongs;",
+    "source_locator": "Article 1(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2025-301-article-1-g",
+    "document_id": "EU-2025-301",
+    "text": "(g) where there is monetary impact, the currency the amounts are based on.",
+    "source_locator": "Article 1(g)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2025/301/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-18-3-b",
+    "document_id": "EU-2022-2554",
+    "text": "(b) the criteria to be applied by competent authorities for the purpose of assessing the relevance of major ICT-related incidents or, as applicable, major operational or security payment-related incidents, to relevant competent authorities in other Member States’, and the details of reports of major ICT-related incidents or, as applicable, major operational or security payment-related incidents, to be shared with other competent authorities pursuant to Article 19(6) and (7);",
+    "source_locator": "Article 18(3)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu-2022-2554-article-20-a-i",
+    "document_id": "EU-2022-2554",
+    "text": "(i) establish the content of the reports for major ICT-related incidents in order to reflect the criteria laid down in Article 18(1) and incorporate further elements, such as details for establishing the relevance of the reporting for other Member States and whether it constitutes a major operational or security payment-related incident or not;",
+    "source_locator": "Article 20(a)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "rank": null,
+    "score": null
   }
 ]

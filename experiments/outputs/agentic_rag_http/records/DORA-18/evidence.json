@@ -1,5 +1,176 @@
 [
   {
+    "evidence_id": "eu-2024-1774-article-26-1",
+    "document_id": "EU-2024-1774",
+    "text": "1. When developing the ICT response and recovery plans referred to in Article 11(3) of Regulation (EU) 2022/2554, financial entities shall take into account the results of the financial entity’s business impact analysis (BIA). Those ICT response and recovery plans shall: For the purposes of point (d), financial entities shall clearly specify roles and responsibilities.",
+    "source_locator": "Article 26(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-1-a",
+    "document_id": "EU-2024-1774",
+    "text": "(a) specify the conditions prompting their activation or deactivation, and any exceptions for such activation or deactivation;",
+    "source_locator": "Article 26(1)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-1-b",
+    "document_id": "EU-2024-1774",
+    "text": "(b) describe what actions are to be taken to ensure the availability, integrity, continuity, and recovery of at least ICT systems and services supporting critical or important functions of the financial entity;",
+    "source_locator": "Article 26(1)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 3,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-1-c",
+    "document_id": "EU-2024-1774",
+    "text": "(c) be designed to meet the recovery objectives of the operations of the financial entities;",
+    "source_locator": "Article 26(1)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 4,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-1-d",
+    "document_id": "EU-2024-1774",
+    "text": "(d) be documented and made available to the staff involved in the execution of ICT response and recovery plans and be readily accessible in case of emergency;",
+    "source_locator": "Article 26(1)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 5,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-1-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) provide for both short-term and long-term recovery options, including partial systems recovery;",
+    "source_locator": "Article 26(1)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 6,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-1-f",
+    "document_id": "EU-2024-1774",
+    "text": "(f) lay down the objectives of ICT response and recovery plans and the conditions to declare a successful execution of those plans.",
+    "source_locator": "Article 26(1)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 7,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2",
+    "document_id": "EU-2024-1774",
+    "text": "2. The ICT response and recovery plans referred to in paragraph 1 shall identify relevant scenarios, including scenarios of severe business disruptions and increased likelihood of occurrence of disruption. Those plans shall develop scenarios based on current information on threats and on lessons learned from previous occurrences of business disruptions. Financial entities shall duly take into account all of the following scenarios:",
+    "source_locator": "Article 26(2)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 8,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-a",
+    "document_id": "EU-2024-1774",
+    "text": "(a) cyber-attacks and switchovers between the primary ICT infrastructure and the redundant capacity, backups, and redundant facilities;",
+    "source_locator": "Article 26(2)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 9,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-b",
+    "document_id": "EU-2024-1774",
+    "text": "(b) scenarios in which the quality of the provision of a critical or important function deteriorates to an unacceptable level or fails, and duly consider the potential impact of the insolvency, or other failures, of any relevant ICT third-party service provider;",
+    "source_locator": "Article 26(2)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 10,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-c",
+    "document_id": "EU-2024-1774",
+    "text": "(c) partial or total failure of premises, including office and business premises, and data centres;",
+    "source_locator": "Article 26(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 11,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-d",
+    "document_id": "EU-2024-1774",
+    "text": "(d) substantial failure of ICT assets or of the communication infrastructure;",
+    "source_locator": "Article 26(2)(d)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 12,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) the non-availability of a critical number of staff or staff members in charge of guaranteeing the continuity of operations;",
+    "source_locator": "Article 26(2)(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 13,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-f",
+    "document_id": "EU-2024-1774",
+    "text": "(f) impact of climate change and environment degradation related events, natural disasters, pandemics, and physical attacks, including intrusions and terrorist attacks;",
+    "source_locator": "Article 26(2)(f)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 14,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-g",
+    "document_id": "EU-2024-1774",
+    "text": "(g) insider attacks;",
+    "source_locator": "Article 26(2)(g)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 15,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-h",
+    "document_id": "EU-2024-1774",
+    "text": "(h) political and social instability, including, where relevant, in the ICT third-party service provider’s jurisdiction and the location where the data are stored and processed;",
+    "source_locator": "Article 26(2)(h)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 16,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-2-i",
+    "document_id": "EU-2024-1774",
+    "text": "(i) widespread power outages.",
+    "source_locator": "Article 26(2)(i)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 17,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-3",
+    "document_id": "EU-2024-1774",
+    "text": "3. Where the primary recovery measures may not be feasible in the short term because of costs, risks, logistics, or unforeseen circumstances, the ICT response and recovery plans referred to in paragraph 1 shall consider alternative options.",
+    "source_locator": "Article 26(3)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 18,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-26-4",
+    "document_id": "EU-2024-1774",
+    "text": "4. As part of the ICT response and recovery plans referred to in paragraph 1, financial entities shall consider and implement continuity measures to mitigate failures of ICT third-party service providers of ICT services supporting critical or important functions of the financial entity.",
+    "source_locator": "Article 26(4)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 19,
+    "score": 1.0
+  },
+  {
     "evidence_id": "eu-2022-2554-article-11-6",
     "document_id": "EU-2022-2554",
     "text": "6. As part of their comprehensive ICT risk management, financial entities shall: For the purposes of the first subparagraph, point (a), financial entities, other than microenterprises, shall include in the testing plans scenarios of cyber-attacks and switchovers between the primary ICT infrastructure and the redundant capacity, backups and redundant facilities necessary to meet the obligations set out in Article 12. Financial entities shall regularly review their ICT business continuity policy and ICT response and recovery plans, taking into account the results of tests carried out in accordance with the first subparagraph and recommendations stemming from audit checks or supervisory reviews.",

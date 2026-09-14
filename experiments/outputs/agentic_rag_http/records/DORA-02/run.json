@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2022-2554"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -84,7 +89,7 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 6236,
+        "planning_ms": 10956,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Test the ICT business continuity plans and response and recovery plans at least once a year; also test them following a major change to a critical or important function",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2022-2554"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,14 +112,30 @@
           },
           "claims": [
             {
-              "claim_id": "identify_ict_testing_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires testing ICT business continuity plans and response and recovery plans at least once a year and following a major change to a critical or important function?",
+              "claim_id": "ict_business_continuity_testing_frequency",
+              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans at least once a year?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT business continuity plans",
                 "response and recovery plans",
                 "testing",
-                "once a year",
+                "at least once a year"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            {
+              "claim_id": "ict_business_continuity_testing_after_change",
+              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans following a major change to a critical or important function?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "ICT business continuity plans",
+                "response and recovery plans",
+                "testing",
                 "major change",
                 "critical or important function"
               ],
@@ -127,10 +151,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:47:19.061841"
+            "generated_at": "2026-09-14T10:47:53.398712"
           },
           "limits": {
             "max_claims": 5,
@@ -143,14 +167,54 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "identify_ict_testing_requirement",
-              "question": "Which provision of Regulation (EU) 2022/2554 requires testing ICT business continuity plans and response and recovery plans at least once a year and following a major change to a critical or important function?",
+              "claim_id": "ict_business_continuity_testing_frequency",
+              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans at least once a year?",
               "intent": "obligation_or_prohibition",
               "target_concepts": [
                 "ICT business continuity plans",
                 "response and recovery plans",
                 "testing",
-                "once a year",
+                "at least once a year"
+              ],
+              "expected_evidence_roles": [
+                "general_rule"
+              ],
+              "depends_on": [],
+              "importance": "required",
+              "query_variants": []
+            },
+            "status": "covered",
+            "evidence_refs": [
+              "eu-2024-1774-article-26-1-f",
+              "eu-2022-2554-article-11-8",
+              "eu-2022-2554-article-11-7",
+              "eu-2022-2554-article-11-6-a",
+              "eu-2024-1774-article-25-1",
+              "eu-2024-1774-article-25-3",
+              "eu-2024-1774-article-24-1-a-iv",
+              "eu-2024-1774-article-25-5"
+            ],
+            "executed_queries": [
+              "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans at least once a year?",
+              "ICT business continuity plans",
+              "response and recovery plans",
+              "testing",
+              "at least once a year"
+            ],
+            "candidate_count": 1381,
+            "coverage_reasons": [
+              "8 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
+            ]
+          },
+          {
+            "claim": {
+              "claim_id": "ict_business_continuity_testing_after_change",
+              "question": "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans following a major change to a critical or important function?",
+              "intent": "obligation_or_prohibition",
+              "target_concepts": [
+                "ICT business continuity plans",
+                "response and recovery plans",
+                "testing",
                 "major change",
                 "critical or important function"
               ],
@@ -164,20 +228,25 @@
             "status": "covered",
             "evidence_refs": [
               "eu-2022-2554-article-11-6-a",
-              "eu-2022-2554-article-60-2-a",
-              "eu-2022-2554-article-16-3-d",
-              "eu-2022-2554-article-60-4",
-              "eu-2022-2554-article-16-1-f",
-              "eu-2022-2554-article-15-e",
-              "eu-2022-2554-article-61-3",
-              "eu-2022-2554-article-11-4"
+              "eu-2024-1774-article-39-1",
+              "eu-2022-2554-article-11-7",
+              "eu-2022-2554-article-11-4",
+              "eu-2024-1774-article-39-2-e",
+              "eu-2024-1774-article-26-2-b",
+              "eu-2024-1774-article-24-1-b-iv",
+              "eu-2022-2554-article-11-2-a"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 requires testing ICT business continuity plans and response and recovery plans at least once a year and following a major change to a critical or important function?"
+              "What is the provision in Regulation (EU) 2022/2554 that requires testing ICT business continuity plans and response and recovery plans following a major change to a critical or important function?",
+              "ICT business continuity plans",
+              "response and recovery plans",
+              "testing",
+              "major change",
+              "critical or important function"
             ],
-            "candidate_count": 713,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "8 evidence item(s) selected from 1 query projection(s) after deterministic-term-coverage-v2"
+              "8 evidence item(s) selected from 6 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -185,7 +254,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -193,7 +262,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -201,7 +270,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 10.981,
+  "elapsed_seconds": 17.661,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [

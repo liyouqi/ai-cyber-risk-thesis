@@ -4,17 +4,18 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 12",
       "decision": "Partially supported",
-      "reason": "Article 12(1) requires logging and Article 12(2) requires logging of events relevant for traceability, which supports the control's objective. However, the specific log fields (user, time, I/O, model version, tool calls, admin actions) are not explicitly listed in the provision.",
+      "reason": "Article 12(1) requires logging events over the system's lifetime. Article 12(2) requires logging capabilities to record events relevant for traceability, including identifying risks and facilitating post-market monitoring. Article 12(3) specifies minimum logging requirements for certain high-risk systems, such as the period of use and input data. While it mandates logging, it does not explicitly list all the specific log fields (user, I/O, model version, tool calls, admin actions) mentioned in the control statement.",
       "evidence_ids": [
         "eu:32024R1689:article:12:paragraph:1",
-        "eu:32024R1689:article:12:paragraph:2"
+        "eu:32024R1689:article:12:paragraph:2",
+        "eu:32024R1689:article:12:paragraph:3"
       ]
     },
     {
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 19",
       "decision": "Partially supported",
-      "reason": "Article 19 addresses the retention of logs, which is a key part of the control's requirements. However, it does not specify the content of the logs, which is the primary focus of the control statement.",
+      "reason": "Article 19(1) requires providers to keep logs for at least six months. This supports the control's objective of logging by mandating retention, but it does not address the specific content of the logs (e.g., user, I/O, model version).",
       "evidence_ids": [
         "eu:32024R1689:article:19:paragraph:1"
       ]
@@ -23,14 +24,14 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 26(6)",
       "decision": "Partially supported",
-      "reason": "Article 26(6) addresses the retention of logs by deployers, which is a key part of the control's requirements. However, it does not specify the content of the logs, which is the primary focus of the control statement.",
+      "reason": "Article 26(6) requires deployers to keep logs for at least six months. This supports the control's objective of logging by mandating retention, but it does not address the specific content of the logs (e.g., user, I/O, model version).",
       "evidence_ids": [
         "eu:32024R1689:article:26:paragraph:6"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "The control is applicable to all AI systems, but the logging requirements are stricter for high-risk systems, which is reflected in the provisions reviewed.",
+  "applicability_note": "The applicability condition 'All; stricter for high-risk' is correct. The logging requirements in Articles 12, 19, and 26 are specifically for high-risk AI systems, with Article 12(3) imposing stricter requirements for a subset of high-risk systems listed in Annex III.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping is partially correct as the provisions support the logging objective but do not specify the exact log fields required by the control statement. The mapping should be retained but clarified to reflect that the provisions support the logging requirement in general, not the specific fields."
+  "challenge_comment": "The mapping is partially correct. While Articles 12, 19, and 26 collectively support the objective of logging and retention, none of the provisions explicitly mandate the specific log fields (user, time, I/O, model version, tool calls, admin actions) detailed in the control statement. The assessment should be updated to reflect that the provisions support the general logging requirement but not the specific fields."
 }

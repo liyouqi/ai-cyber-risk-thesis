@@ -4,7 +4,7 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 5",
       "decision": "Unsupported",
-      "reason": "Article 5 prohibits specific AI practices that cause harm, such as manipulative techniques or biometric identification. It does not address the control objective of controlling sensitive data, malicious code, harmful content, or prohibited-use outputs.",
+      "reason": "Article 5 prohibits specific AI practices, such as manipulative techniques and biometric identification, but does not address the control objective of controlling sensitive data, malicious code, harmful content, or prohibited-use outputs.",
       "evidence_ids": [
         "eu:32024R1689:article:5:paragraph:1",
         "eu:32024R1689:article:5:paragraph:1:point:a",
@@ -35,7 +35,7 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 9",
       "decision": "Partially supported",
-      "reason": "Article 9 requires a risk management system for high-risk AI systems, which includes identifying and addressing risks. This is relevant to controlling harmful outputs, but the provision is a general framework and does not specifically mandate controls for sensitive data, malicious code, or prohibited-use outputs.",
+      "reason": "Article 9 requires a risk management system for high-risk AI systems, which includes identifying and addressing risks. This is relevant to controlling harmful outputs, but the provision is a general framework and does not specifically address the control of sensitive data, malicious code, or prohibited-use outputs.",
       "evidence_ids": [
         "eu:32024R1689:article:9:paragraph:1",
         "eu:32024R1689:article:9:paragraph:2",
@@ -72,7 +72,7 @@
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition is identified.",
+  "applicability_note": "The control statement is applicable to generative AI systems, which are a subset of high-risk AI systems under the EU AI Act.",
   "overall_assessment": "Incorrect",
-  "challenge_comment": "The mapping is incorrect because Article 5 is about prohibited AI practices, not about controlling outputs. Article 9 and 15 are relevant but do not fully cover the control objective."
+  "challenge_comment": "The mapping is incorrect. Article 5 is about prohibited AI practices, not output control. Article 9 is a general risk management framework, and Article 15 focuses on cybersecurity, neither of which directly supports the control objective of managing sensitive data, malicious code, harmful content, and prohibited-use outputs. The expected evidence (DLP, filters, sandboxing) is not addressed by the mapped provisions."
 }

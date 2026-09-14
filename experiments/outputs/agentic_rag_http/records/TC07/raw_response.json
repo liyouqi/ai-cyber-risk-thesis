@@ -30,23 +30,15 @@
       "instrument": "Regulation (EU) 2024/1689",
       "provision": "Article 15",
       "decision": "Partially supported",
-      "reason": "Article 15(1) requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity, which is a relevant objective. However, the provision does not specifically mandate encryption of data in transit or at rest, nor does it mention managed keys. The requirement is a high-level objective rather than a specific implementation detail.",
+      "reason": "Article 15(1) requires high-risk AI systems to be designed and developed with an appropriate level of cybersecurity. Article 15(5) further specifies that systems must be resilient against unauthorised third parties by exploiting vulnerabilities and lists specific AI-related attacks. While this establishes a cybersecurity obligation, it is a high-level requirement and does not specifically mandate encryption of data in transit or at rest as a technical control.",
       "evidence_ids": [
-        "eu:32024R1689:article:15:paragraph:1"
-      ]
-    }
-  ],
-  "missing_mappings": [
-    {
-      "instrument": "Regulation (EU) 2024/1689",
-      "provision": "Article 15(5)",
-      "reason": "The provision requires high-risk AI systems to be resilient against unauthorized access and manipulation, which is a cybersecurity objective. This includes preventing confidentiality attacks, which is directly related to the control's requirement for data encryption.",
-      "evidence_ids": [
+        "eu:32024R1689:article:15:paragraph:1",
         "eu:32024R1689:article:15:paragraph:5"
       ]
     }
   ],
-  "applicability_note": "The control is applicable to protected data used in high-risk AI systems.",
+  "missing_mappings": [],
+  "applicability_note": "No additional applicability condition is identified.",
   "overall_assessment": "Partially correct",
-  "challenge_comment": "The mapping to Article 9 is incorrect as it addresses a general risk management process, not specific encryption requirements. The mapping to Article 15 is partially correct as it establishes a high-level cybersecurity objective. A missing mapping to Article 15(5) should be added as it directly supports the confidentiality aspect of the control."
+  "challenge_comment": "The mapping to Article 9 is incorrect as it addresses a general risk management process, not specific data protection controls like encryption. The mapping to Article 15 is partially correct as it establishes a cybersecurity requirement, but it is too broad to be considered a direct and material support for the specific control of encrypting data in transit and at rest."
 }

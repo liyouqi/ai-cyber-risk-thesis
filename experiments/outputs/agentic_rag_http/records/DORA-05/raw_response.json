@@ -4,14 +4,14 @@
       "instrument": "Regulation (EU) 2022/2554",
       "provision": "Article 28(3)",
       "decision": "Supported",
-      "reason": "The provision directly requires financial entities to report at least yearly to the competent authority on the number of new arrangements, categories of providers, types of contracts, and the functions supported, which directly and materially supports the control's main objective.",
+      "reason": "The provision directly requires financial entities to report at least yearly to the competent authority on the number of new arrangements, categories of providers, type of contractual arrangements, and the ICT services and functions provided, which directly and materially supports the control's objective.",
       "evidence_ids": [
         "eu-2022-2554-article-28-3"
       ]
     }
   ],
   "missing_mappings": [],
-  "applicability_note": "No additional applicability condition identified.",
+  "applicability_note": "No additional applicability conditions identified.",
   "overall_assessment": "Correct",
-  "challenge_comment": "No challenge needed. The mapping is correct and should be retained."
+  "challenge_comment": "The mapping is correct. The provision's requirements for yearly reporting on new ICT service arrangements, provider categories, contract types, and functions directly and materially support the control statement."
 }

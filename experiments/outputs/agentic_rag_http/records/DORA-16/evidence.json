@@ -1,0 +1,20 @@
+[
+  {
+    "evidence_id": "eu-2024-1774-article-21-e-iv",
+    "document_id": "EU-2024-1774",
+    "text": "(iv) update of access rights where changes are necessary and at least once a year for all ICT systems, other than ICT systems supporting critical or important functions and at least every 6 months for ICT systems supporting critical or important functions;",
+    "source_locator": "Article 21(e)(iv)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 1,
+    "score": 1.0
+  },
+  {
+    "evidence_id": "eu-2024-1774-article-21-e",
+    "document_id": "EU-2024-1774",
+    "text": "(e) account management procedures to grant, change or revoke access rights for user and generic accounts, including generic administrator accounts, including provision on all of the following:",
+    "source_locator": "Article 21(e)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg_del/2024/1774/oj/eng",
+    "rank": 2,
+    "score": 1.0
+  }
+]

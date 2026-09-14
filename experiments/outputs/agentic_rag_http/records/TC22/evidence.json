@@ -223,5 +223,77 @@
     "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     "rank": 4,
     "score": 1.0
+  },
+  {
+    "evidence_id": "eu:32024R1689:annex:iv:point:9",
+    "document_id": "EU-2024-1689",
+    "text": "9. A detailed description of the system in place to evaluate the AI system performance in the post-market phase in accordance with Article 72, including the post-market monitoring plan referred to in Article 72(3).",
+    "source_locator": "ANNEX IV — Technical documentation referred to in Article 11(1) — 9.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:79:paragraph:6:point:b",
+    "document_id": "EU-2024-1689",
+    "text": "(b) a failure of a high-risk AI system to meet requirements set out in Chapter III, Section 2;",
+    "source_locator": "Article 79(6)(b)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:annex:iv:point:3",
+    "document_id": "EU-2024-1689",
+    "text": "3. Detailed information about the monitoring, functioning and control of the AI system, in particular with regard to: its capabilities and limitations in performance, including the degrees of accuracy for specific persons or groups of persons on which the system is intended to be used and the overall expected level of accuracy in relation to its intended purpose; the foreseeable unintended outcomes and sources of risks to health and safety, fundamental rights and discrimination in view of the intended purpose of the AI system; the human oversight measures needed in accordance with Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of AI systems by the deployers; specifications on input data, as appropriate;",
+    "source_locator": "ANNEX IV — Technical documentation referred to in Article 11(1) — 3.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:59:paragraph:1:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) there are effective monitoring mechanisms to identify if any high risks to the rights and freedoms of the data subjects, as referred to in Article 35 of Regulation (EU) 2016/679 and in Article 39 of Regulation (EU) 2018/1725, may arise during the sandbox experimentation, as well as response mechanisms to promptly mitigate those risks and, where necessary, stop the processing;",
+    "source_locator": "Article 59(1)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:79:paragraph:1",
+    "document_id": "EU-2024-1689",
+    "text": "1. AI systems presenting a risk shall be understood as a product presenting a risk as defined in Article 3, point 19 of Regulation (EU) 2019/1020, in so far as they present risks to the health or safety, or to fundamental rights, of persons.",
+    "source_locator": "Article 79(1)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:12:paragraph:2:point:c",
+    "document_id": "EU-2024-1689",
+    "text": "(c) monitoring the operation of high-risk AI systems referred to in Article 26(5).",
+    "source_locator": "Article 12(2)(c)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:17:paragraph:1:point:h",
+    "document_id": "EU-2024-1689",
+    "text": "(h) the setting-up, implementation and maintenance of a post-market monitoring system, in accordance with Article 72;",
+    "source_locator": "Article 17(1)(h)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
+  },
+  {
+    "evidence_id": "eu:32024R1689:article:79:paragraph:6:point:a",
+    "document_id": "EU-2024-1689",
+    "text": "(a) non-compliance with the prohibition of the AI practices referred to in Article 5;",
+    "source_locator": "Article 79(6)(a)",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "rank": null,
+    "score": null
   }
 ]

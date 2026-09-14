@@ -1,2 +1,2 @@
 item_id,overall_assessment,missing_mapping,applicability_note,challenge_comment
-DORA-16,Unable to determine,[],No additional applicability condition identified.,"The assessment cannot be completed because the retrieved evidence is empty. To proceed, the specific text of Article 21(1)(e)(iv) and its context within the regulation must be provided to determine if it supports the control statement."
+DORA-16,Correct,[],"The control applies to 'ordinary systems', which aligns with the provision's scope for systems not supporting critical or important functions.",No challenge needed. The mapping is correct and should be retained.

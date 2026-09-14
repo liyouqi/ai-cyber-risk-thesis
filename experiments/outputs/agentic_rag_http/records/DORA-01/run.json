@@ -25,7 +25,9 @@
         "direct",
         "planned"
       ],
-      "planner_available": true
+      "planner_available": true,
+      "qa_available": true,
+      "private_ai_qa_available": true
     },
     "retrieval_mode": "hybrid",
     "top_k": 8,
@@ -75,7 +77,10 @@
             "dora"
           ],
           "document_ids": [
-            "EU-2022-2554"
+            "EU-2022-2554",
+            "EU-2024-1773",
+            "EU-2024-1774",
+            "EU-2025-301"
           ],
           "jurisdictions": [
             "EU"
@@ -84,7 +89,7 @@
           "topics": []
         },
         "status": "retrieved",
-        "planning_ms": 11080,
+        "planning_ms": 7859,
         "plan": {
           "plan_id": "auto",
           "original_question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing",
@@ -94,7 +99,10 @@
               "dora"
             ],
             "document_ids": [
-              "EU-2022-2554"
+              "EU-2022-2554",
+              "EU-2024-1773",
+              "EU-2024-1774",
+              "EU-2025-301"
             ],
             "jurisdictions": [
               "EU"
@@ -104,9 +112,9 @@
           },
           "claims": [
             {
-              "claim_id": "find_review_requirements_regulation_eu_2022_2554",
-              "question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires a review at least once a year and also following a major ICT incident, a supervisory instruction or a finding from testing?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "review",
                 "major ICT incident",
@@ -125,10 +133,10 @@
           "clarification": null,
           "planner_metadata": {
             "planner": "private-ai",
-            "model": "glm-4.6v",
+            "model": "glm-4.5-air",
             "prompt_version": "3",
             "planner_schema_version": "1.0",
-            "generated_at": "2026-09-08T17:47:07.389664"
+            "generated_at": "2026-09-14T10:47:33.563857"
           },
           "limits": {
             "max_claims": 5,
@@ -141,9 +149,9 @@
         "claim_coverage": [
           {
             "claim": {
-              "claim_id": "find_review_requirements_regulation_eu_2022_2554",
-              "question": "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing",
-              "intent": "obligation_or_prohibition",
+              "claim_id": "provision_mapping_requirement",
+              "question": "Which provision of Regulation (EU) 2022/2554 requires a review at least once a year and also following a major ICT incident, a supervisory instruction or a finding from testing?",
+              "intent": "scope_or_applicability",
               "target_concepts": [
                 "review",
                 "major ICT incident",
@@ -159,14 +167,23 @@
             },
             "status": "covered",
             "evidence_refs": [
-              "eu-2022-2554-article-6-5"
+              "eu-2022-2554-article-6-5",
+              "eu-2024-1774-article-27-2-d",
+              "eu-2024-1774-article-27-2-e",
+              "eu-2024-1774-article-27-2-g",
+              "eu-2024-1774-article-27-2-j",
+              "eu-2024-1774-article-27-2-c"
             ],
             "executed_queries": [
-              "Which provision of Regulation (EU) 2022/2554 is materially necessary for this requirement but absent from the existing mapping: Review at least once a year; also review following a major ICT incident, a supervisory instruction or a finding from testing"
+              "Which provision of Regulation (EU) 2022/2554 requires a review at least once a year and also following a major ICT incident, a supervisory instruction or a finding from testing?",
+              "review",
+              "major ICT incident",
+              "supervisory instruction",
+              "testing finding"
             ],
-            "candidate_count": 713,
+            "candidate_count": 1381,
             "coverage_reasons": [
-              "1 evidence item(s) selected from 1 query projection(s) after deterministic-term-coverage-v2"
+              "6 evidence item(s) selected from 5 query projection(s) after deterministic-legal-coverage-v3"
             ]
           }
         ],
@@ -174,7 +191,7 @@
           "corpus_id": "regulatory-en",
           "corpus_version": "regulatory-core-20260907-r2",
           "index_version": "hybrid-regulatory-en-regulatory-core-20260907-r2-bm25--regulatory-en-regulatory-core-20260907-r2-vector-all-minilm-l6-v2",
-          "retrieval_strategy_version": "planned-retrieval-v2",
+          "retrieval_strategy_version": "planned-retrieval-v3",
           "knowledge_pack_version": null,
           "retrieval_ms": 0,
           "fallback_details": []
@@ -182,7 +199,7 @@
       }
     ]
   },
-  "workflow_version": "0.3",
+  "workflow_version": "0.4",
   "prompt_version": "agent-review-v0.3",
   "model": "glm-4.6v",
   "model_settings": {
@@ -190,7 +207,7 @@
     "temperature": 0,
     "thinking_mode": "disabled"
   },
-  "elapsed_seconds": 16.535,
+  "elapsed_seconds": 16.721,
   "model_attempts": 1,
   "guardrail_changes": [],
   "queries": [
