@@ -1,121 +1,121 @@
-item_id,framework,method,gold_coverage,predicted_coverage,coverage_correct,missing_mapping_true_positive,missing_mapping_proposed,missing_mapping_reference_total,evidence_errors,unsupported_claims,execution_time_min,short_note
-TC05,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC05,EU AI Act,llm_only,Yes,Yes,1,0,0,0,1,0,0.066,0.4 | llm-only-v0.4 | glm-4.6v
-TC05,EU AI Act,agentic_rag,Yes,No,0,0,1,0,1,1,0.452,0.7 | agent-review-v0.5 | glm-4.6v
-TC06,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC06,EU AI Act,llm_only,Yes,No,0,0,2,0,2,2,0.070,0.4 | llm-only-v0.4 | glm-4.6v
-TC06,EU AI Act,agentic_rag,Yes,No,0,0,1,0,1,1,0.438,0.7 | agent-review-v0.5 | glm-4.6v
-TC07,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC07,EU AI Act,llm_only,Yes,No,0,0,2,0,1,1,0.062,0.4 | llm-only-v0.4 | glm-4.6v
-TC07,EU AI Act,agentic_rag,Yes,No,0,0,1,0,1,1,0.388,0.7 | agent-review-v0.5 | glm-4.6v
-TC08,EU AI Act,manual,Yes,No,0,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC08,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.073,0.4 | llm-only-v0.4 | glm-4.6v
-TC08,EU AI Act,agentic_rag,Yes,No,0,0,0,0,1,1,0.583,0.7 | agent-review-v0.5 | glm-4.6v
-TC09,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC09,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.135,0.4 | llm-only-v0.4 | glm-4.6v
-TC09,EU AI Act,agentic_rag,Yes,No,0,0,0,0,1,1,0.538,0.7 | agent-review-v0.5 | glm-4.6v
-TC10,EU AI Act,manual,No,Yes,0,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC10,EU AI Act,llm_only,No,Yes,0,0,0,0,2,2,0.041,0.4 | llm-only-v0.4 | glm-4.6v
-TC10,EU AI Act,agentic_rag,No,No,1,0,2,0,0,0,0.424,0.7 | agent-review-v0.5 | glm-4.6v
-TC11,EU AI Act,manual,No,No,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC11,EU AI Act,llm_only,No,Yes,0,0,0,0,1,1,0.151,0.4 | llm-only-v0.4 | glm-4.6v
-TC11,EU AI Act,agentic_rag,No,No,1,0,1,0,0,0,0.332,0.7 | agent-review-v0.5 | glm-4.6v
-TC12,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC12,EU AI Act,llm_only,Yes,No,0,0,2,0,2,2,0.069,0.4 | llm-only-v0.4 | glm-4.6v
-TC12,EU AI Act,agentic_rag,Yes,No,0,0,1,0,1,1,0.263,0.7 | agent-review-v0.5 | glm-4.6v
-TC13,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC13,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.140,0.4 | llm-only-v0.4 | glm-4.6v
-TC13,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.526,0.7 | agent-review-v0.5 | glm-4.6v
-TC14,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC14,EU AI Act,llm_only,Yes,Yes,1,0,0,0,1,0,0.136,0.4 | llm-only-v0.4 | glm-4.6v
-TC14,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.563,0.7 | agent-review-v0.5 | glm-4.6v
-TC15,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC15,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.081,0.4 | llm-only-v0.4 | glm-4.6v
-TC15,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.365,0.7 | agent-review-v0.5 | glm-4.6v
-TC16,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC16,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.149,0.4 | llm-only-v0.4 | glm-4.6v
-TC16,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.545,0.7 | agent-review-v0.5 | glm-4.6v
-TC17,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC17,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.094,0.4 | llm-only-v0.4 | glm-4.6v
-TC17,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.408,0.7 | agent-review-v0.5 | glm-4.6v
-TC19,EU AI Act,manual,No,Yes,0,0,0,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC19,EU AI Act,llm_only,No,Yes,0,0,0,1,2,2,0.042,0.4 | llm-only-v0.4 | glm-4.6v
-TC19,EU AI Act,agentic_rag,No,Yes,0,0,0,1,1,1,0.253,0.7 | agent-review-v0.5 | glm-4.6v
-TC20,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC20,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.103,0.4 | llm-only-v0.4 | glm-4.6v
-TC20,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.520,0.7 | agent-review-v0.5 | glm-4.6v
-TC21,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC21,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.084,0.4 | llm-only-v0.4 | glm-4.6v
-TC21,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.442,0.7 | agent-review-v0.5 | glm-4.6v
-TC22,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC22,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.180,0.4 | llm-only-v0.4 | glm-4.6v
-TC22,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.389,0.7 | agent-review-v0.5 | glm-4.6v
-TC23,EU AI Act,manual,No,No,1,2,2,2,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC23,EU AI Act,llm_only,No,Yes,0,0,0,2,2,2,0.110,0.4 | llm-only-v0.4 | glm-4.6v
-TC23,EU AI Act,agentic_rag,No,No,1,0,0,2,0,0,0.408,0.7 | agent-review-v0.5 | glm-4.6v
-TC24,EU AI Act,manual,No,No,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC24,EU AI Act,llm_only,No,Yes,0,0,0,0,1,1,0.117,0.4 | llm-only-v0.4 | glm-4.6v
-TC24,EU AI Act,agentic_rag,No,No,1,0,1,0,0,0,0.371,0.7 | agent-review-v0.5 | glm-4.6v
-TC25,EU AI Act,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-TC25,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0,0,0.097,0.4 | llm-only-v0.4 | glm-4.6v
-TC25,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.383,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-01,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-01,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.031,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-01,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.385,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-02,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-02,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.036,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-02,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.253,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-03,DORA,manual,No,No,1,1,1,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-03,DORA,llm_only,No,Yes,0,0,0,1,1,1,0.069,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-03,DORA,agentic_rag,No,No,1,1,1,1,0,0,0.282,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-04,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-04,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.088,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-04,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.298,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-05,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-05,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.038,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-05,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.256,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-06,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-06,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.085,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-06,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.448,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-07,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-07,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.061,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-07,DORA,agentic_rag,Yes,Yes,1,0,0,0,1,0,0.377,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-08,DORA,manual,No,No,1,1,1,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-08,DORA,llm_only,No,Yes,0,0,0,1,1,2,0.038,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-08,DORA,agentic_rag,No,No,1,0,1,1,0,0,0.443,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-10,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-10,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.032,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-10,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.434,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-12,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-12,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.068,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-12,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.438,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-13,DORA,manual,No,Yes,0,0,0,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-13,DORA,llm_only,No,Yes,0,0,0,1,1,1,0.071,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-13,DORA,agentic_rag,No,Yes,0,0,0,1,1,1,0.424,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-14,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-14,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.098,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-14,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.271,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-15,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-15,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.065,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-15,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.377,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-16,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-16,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.094,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-16,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.200,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-17,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-17,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.040,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-17,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.236,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-18,DORA,manual,No,No,1,1,1,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-18,DORA,llm_only,No,Yes,0,0,0,1,2,2,0.101,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-18,DORA,agentic_rag,No,Yes,0,0,0,1,1,1,0.202,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-19,DORA,manual,Yes,No,0,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-19,DORA,llm_only,Yes,No,0,0,1,0,1,1,0.106,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-19,DORA,agentic_rag,Yes,Yes,1,0,0,0,0,0,0.219,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-20,DORA,manual,No,No,1,1,1,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-20,DORA,llm_only,No,Yes,0,0,0,1,2,2,0.056,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-20,DORA,agentic_rag,No,No,1,0,1,1,0,0,0.347,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-21,DORA,manual,No,No,1,1,1,1,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-21,DORA,llm_only,No,Yes,0,0,0,1,1,1,0.069,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-21,DORA,agentic_rag,No,No,1,0,0,1,0,0,0.410,0.7 | agent-review-v0.5 | glm-4.6v
-DORA-22,DORA,manual,Yes,Yes,1,0,0,0,,,,PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA
-DORA-22,DORA,llm_only,Yes,Yes,1,0,0,0,0,0,0.041,0.4 | llm-only-v0.4 | glm-4.6v
-DORA-22,DORA,agentic_rag,Yes,Yes,1,0,0,0,1,0,0.235,0.7 | agent-review-v0.5 | glm-4.6v
+item_id, framework, method     , gold_coverage, predicted_coverage, coverage_correct, missing_mapping_true_positive, missing_mapping_proposed, missing_mapping_reference_total, evidence_errors, unsupported_claims, execution_time_min, short_note
+TC05   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC05   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               1,                  0,              0.066, 0.4 | llm-only-v0.4 | glm-4.6v
+TC05   , EU AI Act, agentic_rag, Yes          , No                ,                0,                             0,                        1,                               0,               1,                  1,              0.452, 0.7 | agent-review-v0.5 | glm-4.6v
+TC06   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC06   , EU AI Act, llm_only   , Yes          , No                ,                0,                             0,                        2,                               0,               2,                  2,              0.070, 0.4 | llm-only-v0.4 | glm-4.6v
+TC06   , EU AI Act, agentic_rag, Yes          , No                ,                0,                             0,                        1,                               0,               1,                  1,              0.438, 0.7 | agent-review-v0.5 | glm-4.6v
+TC07   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC07   , EU AI Act, llm_only   , Yes          , No                ,                0,                             0,                        2,                               0,               1,                  1,              0.062, 0.4 | llm-only-v0.4 | glm-4.6v
+TC07   , EU AI Act, agentic_rag, Yes          , No                ,                0,                             0,                        1,                               0,               1,                  1,              0.388, 0.7 | agent-review-v0.5 | glm-4.6v
+TC08   , EU AI Act, manual     , Yes          , No                ,                0,                             0,                        0,                               0,                ,                   ,                   , 
+TC08   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.073, 0.4 | llm-only-v0.4 | glm-4.6v
+TC08   , EU AI Act, agentic_rag, Yes          , No                ,                0,                             0,                        0,                               0,               1,                  1,              0.583, 0.7 | agent-review-v0.5 | glm-4.6v
+TC09   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC09   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.135, 0.4 | llm-only-v0.4 | glm-4.6v
+TC09   , EU AI Act, agentic_rag, Yes          , No                ,                0,                             0,                        0,                               0,               1,                  1,              0.538, 0.7 | agent-review-v0.5 | glm-4.6v
+TC10   , EU AI Act, manual     , No           , Yes               ,                0,                             0,                        0,                               0,                ,                   ,                   , 
+TC10   , EU AI Act, llm_only   , No           , Yes               ,                0,                             0,                        0,                               0,               2,                  2,              0.041, 0.4 | llm-only-v0.4 | glm-4.6v
+TC10   , EU AI Act, agentic_rag, No           , No                ,                1,                             0,                        2,                               0,               0,                  0,              0.424, 0.7 | agent-review-v0.5 | glm-4.6v
+TC11   , EU AI Act, manual     , No           , No                ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC11   , EU AI Act, llm_only   , No           , Yes               ,                0,                             0,                        0,                               0,               1,                  1,              0.151, 0.4 | llm-only-v0.4 | glm-4.6v
+TC11   , EU AI Act, agentic_rag, No           , No                ,                1,                             0,                        1,                               0,               0,                  0,              0.332, 0.7 | agent-review-v0.5 | glm-4.6v
+TC12   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC12   , EU AI Act, llm_only   , Yes          , No                ,                0,                             0,                        2,                               0,               2,                  2,              0.069, 0.4 | llm-only-v0.4 | glm-4.6v
+TC12   , EU AI Act, agentic_rag, Yes          , No                ,                0,                             0,                        1,                               0,               1,                  1,              0.263, 0.7 | agent-review-v0.5 | glm-4.6v
+TC13   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC13   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.140, 0.4 | llm-only-v0.4 | glm-4.6v
+TC13   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.526, 0.7 | agent-review-v0.5 | glm-4.6v
+TC14   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC14   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               1,                  0,              0.136, 0.4 | llm-only-v0.4 | glm-4.6v
+TC14   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.563, 0.7 | agent-review-v0.5 | glm-4.6v
+TC15   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC15   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.081, 0.4 | llm-only-v0.4 | glm-4.6v
+TC15   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.365, 0.7 | agent-review-v0.5 | glm-4.6v
+TC16   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC16   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.149, 0.4 | llm-only-v0.4 | glm-4.6v
+TC16   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.545, 0.7 | agent-review-v0.5 | glm-4.6v
+TC17   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC17   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.094, 0.4 | llm-only-v0.4 | glm-4.6v
+TC17   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.408, 0.7 | agent-review-v0.5 | glm-4.6v
+TC19   , EU AI Act, manual     , No           , Yes               ,                0,                             0,                        0,                               1,                ,                   ,                   , 
+TC19   , EU AI Act, llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               2,                  2,              0.042, 0.4 | llm-only-v0.4 | glm-4.6v
+TC19   , EU AI Act, agentic_rag, No           , Yes               ,                0,                             0,                        0,                               1,               1,                  1,              0.253, 0.7 | agent-review-v0.5 | glm-4.6v
+TC20   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC20   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.103, 0.4 | llm-only-v0.4 | glm-4.6v
+TC20   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.520, 0.7 | agent-review-v0.5 | glm-4.6v
+TC21   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC21   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.084, 0.4 | llm-only-v0.4 | glm-4.6v
+TC21   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.442, 0.7 | agent-review-v0.5 | glm-4.6v
+TC22   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC22   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.180, 0.4 | llm-only-v0.4 | glm-4.6v
+TC22   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.389, 0.7 | agent-review-v0.5 | glm-4.6v
+TC23   , EU AI Act, manual     , No           , No                ,                1,                             2,                        2,                               2,                ,                   ,                   , 
+TC23   , EU AI Act, llm_only   , No           , Yes               ,                0,                             0,                        0,                               2,               2,                  2,              0.110, 0.4 | llm-only-v0.4 | glm-4.6v
+TC23   , EU AI Act, agentic_rag, No           , No                ,                1,                             0,                        0,                               2,               0,                  0,              0.408, 0.7 | agent-review-v0.5 | glm-4.6v
+TC24   , EU AI Act, manual     , No           , No                ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC24   , EU AI Act, llm_only   , No           , Yes               ,                0,                             0,                        0,                               0,               1,                  1,              0.117, 0.4 | llm-only-v0.4 | glm-4.6v
+TC24   , EU AI Act, agentic_rag, No           , No                ,                1,                             0,                        1,                               0,               0,                  0,              0.371, 0.7 | agent-review-v0.5 | glm-4.6v
+TC25   , EU AI Act, manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+TC25   , EU AI Act, llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.097, 0.4 | llm-only-v0.4 | glm-4.6v
+TC25   , EU AI Act, agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.383, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-01, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-01, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.031, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-01, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.385, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-02, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-02, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.036, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-02, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.253, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-03, DORA     , manual     , No           , No                ,                1,                             1,                        1,                               1,                ,                   ,                   , 
+DORA-03, DORA     , llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               1,                  1,              0.069, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-03, DORA     , agentic_rag, No           , No                ,                1,                             1,                        1,                               1,               0,                  0,              0.282, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-04, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-04, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.088, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-04, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.298, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-05, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-05, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.038, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-05, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.256, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-06, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-06, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.085, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-06, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.448, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-07, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-07, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.061, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-07, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               1,                  0,              0.377, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-08, DORA     , manual     , No           , No                ,                1,                             1,                        1,                               1,                ,                   ,                   , 
+DORA-08, DORA     , llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               1,                  2,              0.038, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-08, DORA     , agentic_rag, No           , No                ,                1,                             0,                        1,                               1,               0,                  0,              0.443, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-10, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-10, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.032, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-10, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.434, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-12, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-12, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.068, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-12, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.438, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-13, DORA     , manual     , No           , Yes               ,                0,                             0,                        0,                               1,                ,                   ,                   , 
+DORA-13, DORA     , llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               1,                  1,              0.071, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-13, DORA     , agentic_rag, No           , Yes               ,                0,                             0,                        0,                               1,               1,                  1,              0.424, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-14, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-14, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.098, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-14, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.271, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-15, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-15, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.065, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-15, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.377, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-16, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-16, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.094, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-16, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.200, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-17, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-17, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.040, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-17, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.236, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-18, DORA     , manual     , No           , No                ,                1,                             1,                        1,                               1,                ,                   ,                   , 
+DORA-18, DORA     , llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               2,                  2,              0.101, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-18, DORA     , agentic_rag, No           , Yes               ,                0,                             0,                        0,                               1,               1,                  1,              0.202, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-19, DORA     , manual     , Yes          , No                ,                0,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-19, DORA     , llm_only   , Yes          , No                ,                0,                             0,                        1,                               0,               1,                  1,              0.106, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-19, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.219, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-20, DORA     , manual     , No           , No                ,                1,                             1,                        1,                               1,                ,                   ,                   , 
+DORA-20, DORA     , llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               2,                  2,              0.056, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-20, DORA     , agentic_rag, No           , No                ,                1,                             0,                        1,                               1,               0,                  0,              0.347, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-21, DORA     , manual     , No           , No                ,                1,                             1,                        1,                               1,                ,                   ,                   , 
+DORA-21, DORA     , llm_only   , No           , Yes               ,                0,                             0,                        0,                               1,               1,                  1,              0.069, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-21, DORA     , agentic_rag, No           , No                ,                1,                             0,                        0,                               1,               0,                  0,              0.410, 0.7 | agent-review-v0.5 | glm-4.6v
+DORA-22, DORA     , manual     , Yes          , Yes               ,                1,                             0,                        0,                               0,                ,                   ,                   , 
+DORA-22, DORA     , llm_only   , Yes          , Yes               ,                1,                             0,                        0,                               0,               0,                  0,              0.041, 0.4 | llm-only-v0.4 | glm-4.6v
+DORA-22, DORA     , agentic_rag, Yes          , Yes               ,                1,                             0,                        0,                               0,               1,                  0,              0.235, 0.7 | agent-review-v0.5 | glm-4.6v

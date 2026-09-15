@@ -1,4 +1,4 @@
-result_status,method,items,mean_execution_time_sec,median_execution_time_sec,coverage_accuracy,yes_recall,no_recall,balanced_accuracy,missing_precision,missing_recall,missing_f1,evidence_errors_per_item,unsupported_claims_per_item
-PREVIEW ONLY — NOT EXPERIMENT RESULTS,Manual,40,,,0.875,0.931,0.727,0.829,1.000,0.778,0.875,,
-PREVIEW ONLY — NOT EXPERIMENT RESULTS,LLM-only,40,4.931,4.320,0.625,0.862,0.000,0.431,0.000,0.000,0.000,0.600,0.575
-PREVIEW ONLY — NOT EXPERIMENT RESULTS,Agentic RAG,40,22.689,23.190,0.775,0.793,0.727,0.760,0.091,0.111,0.100,0.275,0.225
+method,items,mean_execution_time_sec,median_execution_time_sec,coverage_accuracy,yes_recall,no_recall,balanced_accuracy,missing_precision,missing_recall,missing_f1,evidence_errors_per_item,unsupported_claims_per_item
+Manual,40,,,0.875,0.931,0.727,0.829,1.000,0.778,0.875,,
+LLM-only,40,4.931,4.320,0.625,0.862,0.000,0.431,0.000,0.000,0.000,0.600,0.575
+Agentic RAG,40,22.689,23.190,0.775,0.793,0.727,0.760,0.091,0.111,0.100,0.275,0.225
