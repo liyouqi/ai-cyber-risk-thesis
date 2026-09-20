@@ -23,7 +23,8 @@ F1. An empty list is valid when no clear omitted provision exists.
 
 ## Other measures
 
-- Time: measured system execution time for LLM-only and Agentic RAG.
+- Time: observed item-level review time for Manual and measured wall-clock
+  execution time for LLM-only and Agentic RAG.
 
 Keep one row per item and method in `results/item_results.csv`. Do not calculate
 a weighted overall score.

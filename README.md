@@ -65,14 +65,15 @@ The primary metric is Coverage Accuracy against the Gold. Because the Gold is
 imbalanced, the experiment also reports Yes recall, No recall and balanced
 accuracy. Missing provisions are compared using normalized
 `document_id::provision` identifiers and reported with Precision, Recall and F1.
-Measured system execution time is reported for the two AI workflows. No
+Observed elapsed time is reported for all three workflows: item-level review
+time for Manual and measured wall-clock execution for the two AI workflows. No
 weighted overall score is calculated.
 
 ## Current results
 
-| Workflow | Coverage accuracy | Balanced accuracy | No recall | Missing-provision F1 | Mean execution |
+| Workflow | Coverage accuracy | Balanced accuracy | No recall | Missing-provision F1 | Mean elapsed time |
 |---|---:|---:|---:|---:|---:|
-| Manual | 87.5% | 82.9% | 72.7% | 87.5% | — |
+| Manual | 85.0% | 78.4% | 63.6% | 71.4% | 17.48 min/item |
 | LLM-only | 62.5% | 43.1% | 0.0% | 0.0% | 4.93 s/item |
 | Agentic RAG | 77.5% | 76.0% | 72.7% | 10.0% | 22.69 s/item |
 
@@ -80,7 +81,7 @@ Framework-level Coverage Accuracy is:
 
 | Workflow | EU AI Act | DORA |
 |---|---:|---:|
-| Manual | 85% | 90% |
+| Manual | 80% | 90% |
 | LLM-only | 60% | 65% |
 | Agentic RAG | 65% | 90% |
 
@@ -102,9 +103,8 @@ expert review.
 ### Result status
 
 The LLM-only and Agentic RAG answers and execution times come from completed
-40-item runs. The Manual decisions were completed through manual legal review,
-but review time was not recorded contemporaneously and is therefore excluded
-from the measured execution-time comparison. 
+40-item runs. The Manual decisions and item-level review times come from the
+completed manual legal review.
 
 ## Reproduce the outputs
 

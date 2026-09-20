@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import re
 from pathlib import Path
 
@@ -102,7 +103,18 @@ def update_results(results_path: Path, outputs_dir: Path, gold_path: Path) -> in
             row["missing_mapping_reference_total"] = str(len(expected_refs))
 
             if method == "manual":
-                row["execution_time_min"] = ""
+                raw_time = summary.get("time_min", "").strip()
+                try:
+                    execution = float(raw_time)
+                except ValueError as exc:
+                    raise ValueError(
+                        f"{item_id}: Manual time_min must be a number"
+                    ) from exc
+                if not math.isfinite(execution) or execution <= 0:
+                    raise ValueError(
+                        f"{item_id}: Manual time_min must be greater than zero"
+                    )
+                row["execution_time_min"] = f"{execution:.3f}"
             else:
                 run_path = output / "records" / item_id / "run.json"
                 if run_path.exists():

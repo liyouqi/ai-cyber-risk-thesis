@@ -34,8 +34,8 @@ Manual 只填写：
 experiments/outputs/manual/item_summary.csv
 ```
 
-表中只保留四列：`item_id`、`coverage`、`missing_mapping`，以及事后估算
-的 `time_min`。没有同期保存的人工定性笔记，因此不报告
+表中只保留四列：`item_id`、`coverage`、`missing_mapping`，以及逐项实际
+记录的 `time_min`。没有同期保存的人工定性笔记，因此不报告
 review note，也不要求人工填写 AI 输出里的 evidence excerpt、
 applicability note 或 challenge comment。
 

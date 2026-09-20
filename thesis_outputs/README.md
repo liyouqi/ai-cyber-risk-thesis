@@ -29,9 +29,10 @@ The SVG files are transparent, reproducible drafts. They can be imported into
 draw.io, PowerPoint, Inkscape or another tool for final thesis styling. Do not
 edit the numbers manually; regenerate the files from the CSV results.
 
-Execution time uses measured AI run time only. Manual has no software execution
-time. Applicability and challenge quality remain qualitative because the
-experiment has no independent rating scale for them.
+Elapsed time uses observed item-level review time for Manual and measured
+wall-clock run time for the AI workflows. Applicability and challenge quality
+remain qualitative because the experiment has no independent rating scale for
+them.
 
 Model, prompt, workflow and corpus versions are already preserved in each AI
 run's `run.json`. They are not repeated as manually copied columns in

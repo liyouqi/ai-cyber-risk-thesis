@@ -1,7 +1,7 @@
 item_id,framework,method,gold_coverage,predicted_coverage,coverage_correct,missing_mapping_true_positive,missing_mapping_proposed,missing_mapping_reference_total,execution_time_min
-TC05,EU AI Act,manual,Yes,Yes,1,1,1,1,
+TC05,EU AI Act,manual,Yes,Yes,1,1,1,1,20.0
 TC05,EU AI Act,llm_only,Yes,No,0,0,1,1,0.2
 TC05,EU AI Act,agentic_rag,Yes,Yes,1,1,1,1,0.4
-DORA-15,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-15,DORA,manual,Yes,Yes,1,0,0,0,18.0
 DORA-15,DORA,llm_only,Yes,No,0,0,1,0,0.2
 DORA-15,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.4

@@ -1,4 +1,4 @@
-method,items,mean_execution_time_sec,median_execution_time_sec,coverage_accuracy,yes_recall,no_recall,balanced_accuracy,missing_precision,missing_recall,missing_f1
-Manual,40,,,0.875,0.931,0.727,0.829,1.000,0.778,0.875
+method,items,mean_elapsed_time_sec,median_elapsed_time_sec,coverage_accuracy,yes_recall,no_recall,balanced_accuracy,missing_precision,missing_recall,missing_f1
+Manual,40,1048.500,1020.000,0.850,0.931,0.636,0.784,1.000,0.556,0.714
 LLM-only,40,4.931,4.320,0.625,0.862,0.000,0.431,0.000,0.000,0.000
 Agentic RAG,40,22.689,23.190,0.775,0.793,0.727,0.760,0.091,0.111,0.100

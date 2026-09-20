@@ -70,6 +70,35 @@ class ResultTableTest(unittest.TestCase):
             self.assertEqual(row["execution_time_min"], "0.100")
             self.assertEqual(row["missing_mapping_proposed"], "0")
 
+    def test_manual_time_is_copied_to_results(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            results = prepare_result_table(
+                ROOT / "experiments/data/items.csv", root / "results.csv"
+            )
+            output = root / "outputs/manual"
+            output.mkdir(parents=True)
+            (output / "item_summary.csv").write_text(
+                "item_id,coverage,missing_mapping,time_min\nDORA-15,Yes,,17\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                update_results(
+                    results,
+                    root / "outputs",
+                    ROOT / "experiments/data/gold_standard.csv",
+                ),
+                1,
+            )
+            with results.open(newline="", encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle))
+            row = next(
+                row
+                for row in rows
+                if row["item_id"] == "DORA-15" and row["method"] == "manual"
+            )
+            self.assertEqual(row["execution_time_min"], "17.000")
+
 
 if __name__ == "__main__":
     unittest.main()

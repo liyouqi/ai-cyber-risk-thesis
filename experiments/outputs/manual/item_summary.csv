@@ -2,21 +2,21 @@ item_id,coverage,missing_mapping,time_min
 TC05,Yes,,22
 TC06,Yes,,20
 TC07,Yes,,23
-TC08,No,,28
+TC08,No,,22
 TC09,Yes,,23
 TC10,Yes,,22
-TC11,No,,29
-TC12,Yes,,23
+TC11,No,,21
+TC12,Yes,,14
 TC13,Yes,,16
-TC14,Yes,,20
+TC14,No,,20
 TC15,Yes,,22
-TC16,Yes,,23
+TC16,Yes,,11
 TC17,Yes,,25
 TC19,Yes,,19
 TC20,Yes,,20
 TC21,Yes,,22
-TC22,Yes,,23
-TC23,No,EU-2024-1689::Article 11;EU-2024-1689::Annex IV,26
+TC22,Yes,,17
+TC23,No,EU-2024-1689::Article 11,26
 TC24,No,,25
 TC25,Yes,,24
 DORA-01,Yes,,17
@@ -27,15 +27,15 @@ DORA-05,Yes,,17
 DORA-06,Yes,,15
 DORA-07,Yes,,17
 DORA-08,No,EU-2025-301::Article 5(1),17
-DORA-10,Yes,,16
+DORA-10,Yes,,12
 DORA-12,Yes,,13
-DORA-13,Yes,,10
+DORA-13,No,EU-2022-2554::Article 19(4)(b),10
 DORA-14,Yes,,12
-DORA-15,Yes,,15
-DORA-16,Yes,,17
+DORA-15,Yes,,10
+DORA-16,Yes,,12
 DORA-17,Yes,,11
-DORA-18,No,EU-2024-1774::Article 25(2)(a),18
-DORA-19,No,,18
-DORA-20,No,EU-2024-1773::Article 3(7),16
+DORA-18,Yes,,13
+DORA-19,Yes,,14
+DORA-20,Yes,,16
 DORA-21,No,EU-2024-1773::Article 9(1),17
 DORA-22,Yes,,13

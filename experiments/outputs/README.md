@@ -9,12 +9,9 @@ outputs/
 └── agentic_rag_http/
 ```
 
-`manual/` contains the completed item-level Manual answers. Its
-`item_summary.csv` also contains `time_status`;The two AI folders contain their saved model answers.
-
-The timing preview totals 763 minutes across 40 items (mean 19.1 minutes;
-median 18 minutes). It is a fixed planning scenario representing roughly
-1.5 working days, not a retrospective measurement of the completed review.
+`manual/` contains the completed item-level Manual answers and the observed
+review time for each item in `time_min`. The two AI folders contain their saved
+model answers and measured wall-clock execution times.
 
 Each fresh experiment run writes all 40 LLM-only records to `llm_only/` and all
 40 HTTP Agentic RAG records to `agentic_rag_http/`.

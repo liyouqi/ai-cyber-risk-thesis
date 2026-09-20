@@ -48,8 +48,7 @@ scoring script reads it.
 The reviewer checks official regulatory texts without an LLM or Regulatory RAG
 and records the item-level decision and any specifically identified important
 omissions. The Manual form is intentionally smaller than the AI response schema.
-Manual review time was not recorded contemporaneously and is therefore not
-treated as measured execution-time data.
+The reviewer records the observed review time for each item in minutes.
 
 ### LLM-only
 
@@ -77,7 +76,7 @@ coverage
 missing_mapping
 ```
 
-The Manual spreadsheet adds only the explicitly retrospective time:
+The Manual spreadsheet adds the observed item-level review time:
 
 ```text
 time_min
@@ -120,7 +119,8 @@ negatives, Precision, Recall and F1. Matching uses the normalized
 
 The secondary measures are:
 
-- measured system execution time for LLM-only and Agentic RAG;
+- observed elapsed time for all methods: human review time for Manual and
+  measured wall-clock execution time for LLM-only and Agentic RAG;
 
 No weighted overall score is used.
 

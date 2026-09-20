@@ -31,7 +31,6 @@ from agent.references import parse_mapping
 
 
 METHODS = ("manual", "llm_only", "agentic_rag")
-AI_METHODS = ("llm_only", "agentic_rag")
 METHOD_LABELS = {
     "manual": "Manual",
     "llm_only": "LLM-only",
@@ -80,21 +79,19 @@ def read_results(path: Path) -> list[dict[str, str]]:
             "missing_mapping_true_positive",
             "missing_mapping_proposed",
             "missing_mapping_reference_total",
+            "execution_time_min",
         ]
-        if row["method"] in AI_METHODS:
-            required.append("execution_time_min")
         absent = [field for field in required if number(row, field) is None]
         if absent:
             raise ValueError(
                 f"{row['item_id']} {row['method']} has blank required values: "
                 + ", ".join(absent)
             )
-        if row["method"] in AI_METHODS:
-            true_positive = number(row, "missing_mapping_true_positive") or 0
-            proposed = number(row, "missing_mapping_proposed") or 0
-            reference = number(row, "missing_mapping_reference_total") or 0
-            if true_positive > proposed or true_positive > reference:
-                raise ValueError(f"{row['item_id']}: missing-mapping counts are inconsistent")
+        true_positive = number(row, "missing_mapping_true_positive") or 0
+        proposed = number(row, "missing_mapping_proposed") or 0
+        reference = number(row, "missing_mapping_reference_total") or 0
+        if true_positive > proposed or true_positive > reference:
+            raise ValueError(f"{row['item_id']}: missing-mapping counts are inconsistent")
 
     grouped: dict[str, set[str]] = defaultdict(set)
     seen: set[tuple[str, str]] = set()
@@ -149,10 +146,10 @@ def aggregate(rows: Iterable[dict[str, str]]) -> dict[str, float | int | None]:
         f1 = None
     return {
         "items": len({row["item_id"] for row in rows}),
-        "mean_execution_time_sec": (
+        "mean_elapsed_time_sec": (
             statistics.mean(execution_times_sec) if execution_times_sec else None
         ),
-        "median_execution_time_sec": (
+        "median_elapsed_time_sec": (
             statistics.median(execution_times_sec) if execution_times_sec else None
         ),
         "coverage_accuracy": ratio(correct, len(rows)),
@@ -267,15 +264,16 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
     time_data = [
         [value * 60 for value in values(rows, method, "execution_time_min")]
-        for method in AI_METHODS
+        for method in METHODS
     ]
     ax.boxplot(
         time_data,
-        labels=[METHOD_LABELS[m] for m in AI_METHODS],
+        labels=[METHOD_LABELS[m] for m in METHODS],
         showmeans=True,
     )
-    ax.set_ylabel("Execution time (seconds)")
-    ax.set_title("Measured system execution time")
+    ax.set_yscale("log")
+    ax.set_ylabel("Elapsed time (seconds, log scale)")
+    ax.set_title("Observed elapsed time by method")
     save(fig, figure_dir / "fig_5_1_execution_time.svg")
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))

@@ -16,8 +16,8 @@ Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 - retained the extracted AI Act paragraphs only as historical preparation data,
   not as an experiment retrieval backend;
 - saved combined CSV answers and per-item RAG evidence;
-- completed the Manual legal review for all 40 items; review time was not
-  recorded and is excluded from measured execution-time comparisons;
+- completed the Manual legal review for all 40 items and recorded item-level
+  review time;
 - created `experiments/results/item_results.csv` with 120 rows and filled the
   objective AI run data;
 - prepared the generated thesis tables, three figures and two Mermaid diagrams;

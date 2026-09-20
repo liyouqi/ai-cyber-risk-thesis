@@ -1,121 +1,121 @@
 item_id,framework,method,gold_coverage,predicted_coverage,coverage_correct,missing_mapping_true_positive,missing_mapping_proposed,missing_mapping_reference_total,execution_time_min
-TC05,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC05,EU AI Act,manual,Yes,Yes,1,0,0,0,22.000
 TC05,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.066
 TC05,EU AI Act,agentic_rag,Yes,No,0,0,1,0,0.452
-TC06,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC06,EU AI Act,manual,Yes,Yes,1,0,0,0,20.000
 TC06,EU AI Act,llm_only,Yes,No,0,0,2,0,0.070
 TC06,EU AI Act,agentic_rag,Yes,No,0,0,1,0,0.438
-TC07,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC07,EU AI Act,manual,Yes,Yes,1,0,0,0,23.000
 TC07,EU AI Act,llm_only,Yes,No,0,0,2,0,0.062
 TC07,EU AI Act,agentic_rag,Yes,No,0,0,1,0,0.388
-TC08,EU AI Act,manual,Yes,No,0,0,0,0,
+TC08,EU AI Act,manual,Yes,No,0,0,0,0,22.000
 TC08,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.073
 TC08,EU AI Act,agentic_rag,Yes,No,0,0,0,0,0.583
-TC09,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC09,EU AI Act,manual,Yes,Yes,1,0,0,0,23.000
 TC09,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.135
 TC09,EU AI Act,agentic_rag,Yes,No,0,0,0,0,0.538
-TC10,EU AI Act,manual,No,Yes,0,0,0,0,
+TC10,EU AI Act,manual,No,Yes,0,0,0,0,22.000
 TC10,EU AI Act,llm_only,No,Yes,0,0,0,0,0.041
 TC10,EU AI Act,agentic_rag,No,No,1,0,2,0,0.424
-TC11,EU AI Act,manual,No,No,1,0,0,0,
+TC11,EU AI Act,manual,No,No,1,0,0,0,21.000
 TC11,EU AI Act,llm_only,No,Yes,0,0,0,0,0.151
 TC11,EU AI Act,agentic_rag,No,No,1,0,1,0,0.332
-TC12,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC12,EU AI Act,manual,Yes,Yes,1,0,0,0,14.000
 TC12,EU AI Act,llm_only,Yes,No,0,0,2,0,0.069
 TC12,EU AI Act,agentic_rag,Yes,No,0,0,1,0,0.263
-TC13,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC13,EU AI Act,manual,Yes,Yes,1,0,0,0,16.000
 TC13,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.140
 TC13,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.526
-TC14,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC14,EU AI Act,manual,Yes,No,0,0,0,0,20.000
 TC14,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.136
 TC14,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.563
-TC15,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC15,EU AI Act,manual,Yes,Yes,1,0,0,0,22.000
 TC15,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.081
 TC15,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.365
-TC16,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC16,EU AI Act,manual,Yes,Yes,1,0,0,0,11.000
 TC16,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.149
 TC16,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.545
-TC17,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC17,EU AI Act,manual,Yes,Yes,1,0,0,0,25.000
 TC17,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.094
 TC17,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.408
-TC19,EU AI Act,manual,No,Yes,0,0,0,1,
+TC19,EU AI Act,manual,No,Yes,0,0,0,1,19.000
 TC19,EU AI Act,llm_only,No,Yes,0,0,0,1,0.042
 TC19,EU AI Act,agentic_rag,No,Yes,0,0,0,1,0.253
-TC20,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC20,EU AI Act,manual,Yes,Yes,1,0,0,0,20.000
 TC20,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.103
 TC20,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.520
-TC21,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC21,EU AI Act,manual,Yes,Yes,1,0,0,0,22.000
 TC21,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.084
 TC21,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.442
-TC22,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC22,EU AI Act,manual,Yes,Yes,1,0,0,0,17.000
 TC22,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.180
 TC22,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.389
-TC23,EU AI Act,manual,No,No,1,2,2,2,
+TC23,EU AI Act,manual,No,No,1,1,1,2,26.000
 TC23,EU AI Act,llm_only,No,Yes,0,0,0,2,0.110
 TC23,EU AI Act,agentic_rag,No,No,1,0,0,2,0.408
-TC24,EU AI Act,manual,No,No,1,0,0,0,
+TC24,EU AI Act,manual,No,No,1,0,0,0,25.000
 TC24,EU AI Act,llm_only,No,Yes,0,0,0,0,0.117
 TC24,EU AI Act,agentic_rag,No,No,1,0,1,0,0.371
-TC25,EU AI Act,manual,Yes,Yes,1,0,0,0,
+TC25,EU AI Act,manual,Yes,Yes,1,0,0,0,24.000
 TC25,EU AI Act,llm_only,Yes,Yes,1,0,0,0,0.097
 TC25,EU AI Act,agentic_rag,Yes,Yes,1,0,0,0,0.383
-DORA-01,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-01,DORA,manual,Yes,Yes,1,0,0,0,17.000
 DORA-01,DORA,llm_only,Yes,Yes,1,0,0,0,0.031
 DORA-01,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.385
-DORA-02,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-02,DORA,manual,Yes,Yes,1,0,0,0,17.000
 DORA-02,DORA,llm_only,Yes,Yes,1,0,0,0,0.036
 DORA-02,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.253
-DORA-03,DORA,manual,No,No,1,1,1,1,
+DORA-03,DORA,manual,No,No,1,1,1,1,17.000
 DORA-03,DORA,llm_only,No,Yes,0,0,0,1,0.069
 DORA-03,DORA,agentic_rag,No,No,1,1,1,1,0.282
-DORA-04,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-04,DORA,manual,Yes,Yes,1,0,0,0,15.000
 DORA-04,DORA,llm_only,Yes,Yes,1,0,0,0,0.088
 DORA-04,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.298
-DORA-05,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-05,DORA,manual,Yes,Yes,1,0,0,0,17.000
 DORA-05,DORA,llm_only,Yes,Yes,1,0,0,0,0.038
 DORA-05,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.256
-DORA-06,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-06,DORA,manual,Yes,Yes,1,0,0,0,15.000
 DORA-06,DORA,llm_only,Yes,Yes,1,0,0,0,0.085
 DORA-06,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.448
-DORA-07,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-07,DORA,manual,Yes,Yes,1,0,0,0,17.000
 DORA-07,DORA,llm_only,Yes,Yes,1,0,0,0,0.061
 DORA-07,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.377
-DORA-08,DORA,manual,No,No,1,1,1,1,
+DORA-08,DORA,manual,No,No,1,1,1,1,17.000
 DORA-08,DORA,llm_only,No,Yes,0,0,0,1,0.038
 DORA-08,DORA,agentic_rag,No,No,1,0,1,1,0.443
-DORA-10,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-10,DORA,manual,Yes,Yes,1,0,0,0,12.000
 DORA-10,DORA,llm_only,Yes,Yes,1,0,0,0,0.032
 DORA-10,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.434
-DORA-12,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-12,DORA,manual,Yes,Yes,1,0,0,0,13.000
 DORA-12,DORA,llm_only,Yes,Yes,1,0,0,0,0.068
 DORA-12,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.438
-DORA-13,DORA,manual,No,Yes,0,0,0,1,
+DORA-13,DORA,manual,No,No,1,1,1,1,10.000
 DORA-13,DORA,llm_only,No,Yes,0,0,0,1,0.071
 DORA-13,DORA,agentic_rag,No,Yes,0,0,0,1,0.424
-DORA-14,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-14,DORA,manual,Yes,Yes,1,0,0,0,12.000
 DORA-14,DORA,llm_only,Yes,Yes,1,0,0,0,0.098
 DORA-14,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.271
-DORA-15,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-15,DORA,manual,Yes,Yes,1,0,0,0,10.000
 DORA-15,DORA,llm_only,Yes,Yes,1,0,0,0,0.065
 DORA-15,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.377
-DORA-16,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-16,DORA,manual,Yes,Yes,1,0,0,0,12.000
 DORA-16,DORA,llm_only,Yes,Yes,1,0,0,0,0.094
 DORA-16,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.200
-DORA-17,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-17,DORA,manual,Yes,Yes,1,0,0,0,11.000
 DORA-17,DORA,llm_only,Yes,Yes,1,0,0,0,0.040
 DORA-17,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.236
-DORA-18,DORA,manual,No,No,1,1,1,1,
+DORA-18,DORA,manual,No,Yes,0,0,0,1,13.000
 DORA-18,DORA,llm_only,No,Yes,0,0,0,1,0.101
 DORA-18,DORA,agentic_rag,No,Yes,0,0,0,1,0.202
-DORA-19,DORA,manual,Yes,No,0,0,0,0,
+DORA-19,DORA,manual,Yes,Yes,1,0,0,0,14.000
 DORA-19,DORA,llm_only,Yes,No,0,0,1,0,0.106
 DORA-19,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.219
-DORA-20,DORA,manual,No,No,1,1,1,1,
+DORA-20,DORA,manual,No,Yes,0,0,0,1,16.000
 DORA-20,DORA,llm_only,No,Yes,0,0,0,1,0.056
 DORA-20,DORA,agentic_rag,No,No,1,0,1,1,0.347
-DORA-21,DORA,manual,No,No,1,1,1,1,
+DORA-21,DORA,manual,No,No,1,1,1,1,17.000
 DORA-21,DORA,llm_only,No,Yes,0,0,0,1,0.069
 DORA-21,DORA,agentic_rag,No,No,1,0,0,1,0.410
-DORA-22,DORA,manual,Yes,Yes,1,0,0,0,
+DORA-22,DORA,manual,Yes,Yes,1,0,0,0,13.000
 DORA-22,DORA,llm_only,Yes,Yes,1,0,0,0,0.041
 DORA-22,DORA,agentic_rag,Yes,Yes,1,0,0,0,0.235
