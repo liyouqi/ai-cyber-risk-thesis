@@ -1,7 +1,7 @@
-framework,method,items,mean_execution_time_sec,median_execution_time_sec,coverage_accuracy,yes_recall,no_recall,balanced_accuracy,missing_precision,missing_recall,missing_f1,evidence_errors_per_item,unsupported_claims_per_item
-EU AI Act,Manual,20,,,0.850,0.933,0.600,0.767,1.000,0.667,0.800,,
-EU AI Act,LLM-only,20,6.000,5.730,0.600,0.800,0.000,0.400,0.000,0.000,0.000,0.750,0.650
-EU AI Act,Agentic RAG,20,25.773,24.960,0.650,0.600,0.800,0.700,0.000,0.000,0.000,0.350,0.350
-DORA,Manual,20,,,0.900,0.929,0.833,0.881,1.000,0.833,0.909,,
-DORA,LLM-only,20,3.861,3.990,0.650,0.929,0.000,0.464,0.000,0.000,0.000,0.450,0.500
-DORA,Agentic RAG,20,19.605,19.350,0.900,1.000,0.667,0.833,0.333,0.167,0.222,0.200,0.100
+framework,method,items,mean_execution_time_sec,median_execution_time_sec,coverage_accuracy,yes_recall,no_recall,balanced_accuracy,missing_precision,missing_recall,missing_f1
+EU AI Act,Manual,20,,,0.850,0.933,0.600,0.767,1.000,0.667,0.800
+EU AI Act,LLM-only,20,6.000,5.730,0.600,0.800,0.000,0.400,0.000,0.000,0.000
+EU AI Act,Agentic RAG,20,25.773,24.960,0.650,0.600,0.800,0.700,0.000,0.000,0.000
+DORA,Manual,20,,,0.900,0.929,0.833,0.881,1.000,0.833,0.909
+DORA,LLM-only,20,3.861,3.990,0.650,0.929,0.000,0.464,0.000,0.000,0.000
+DORA,Agentic RAG,20,19.605,19.350,0.900,1.000,0.667,0.833,0.333,0.167,0.222

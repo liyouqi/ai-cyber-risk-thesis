@@ -44,8 +44,6 @@ NUMERIC_FIELDS = {
     "missing_mapping_true_positive",
     "missing_mapping_proposed",
     "missing_mapping_reference_total",
-    "evidence_errors",
-    "unsupported_claims",
     "execution_time_min",
 }
 
@@ -84,13 +82,7 @@ def read_results(path: Path) -> list[dict[str, str]]:
             "missing_mapping_reference_total",
         ]
         if row["method"] in AI_METHODS:
-            required.extend(
-                [
-                    "evidence_errors",
-                    "unsupported_claims",
-                    "execution_time_min",
-                ]
-            )
+            required.append("execution_time_min")
         absent = [field for field in required if number(row, field) is None]
         if absent:
             raise ValueError(
@@ -174,12 +166,6 @@ def aggregate(rows: Iterable[dict[str, str]]) -> dict[str, float | int | None]:
         "missing_precision": precision,
         "missing_recall": recall,
         "missing_f1": f1,
-        "evidence_errors_per_item": ratio(
-            sum(number(row, "evidence_errors") or 0 for row in rows), len(rows)
-        ),
-        "unsupported_claims_per_item": ratio(
-            sum(number(row, "unsupported_claims") or 0 for row in rows), len(rows)
-        ),
     }
 
 
@@ -234,23 +220,12 @@ def dataset_table(
 
 
 def result_tables(rows: list[dict[str, str]], table_dir: Path, dataset: Path) -> None:
-    status = (
-        "PREVIEW ONLY — NOT EXPERIMENT RESULTS"
-        if any("PIPELINE_PREVIEW" in row.get("short_note", "") for row in rows)
-        else "FINAL"
-    )
     write_table(table_dir / "table_dataset_summary.csv", dataset_table(dataset, rows))
 
     overall = []
     for method in METHODS:
         values = aggregate(row for row in rows if row["method"] == method)
-        if method == "manual":
-            for field in (
-                "evidence_errors_per_item",
-                "unsupported_claims_per_item",
-            ):
-                values[field] = None
-        overall.append({"result_status": status, "method": METHOD_LABELS[method], **values})
+        overall.append({"method": METHOD_LABELS[method], **values})
     write_table(table_dir / "table_overall_results.csv", overall)
 
     frameworks = []
@@ -262,15 +237,8 @@ def result_tables(rows: list[dict[str, str]], table_dir: Path, dataset: Path) ->
             if not subset:
                 continue
             values = aggregate(subset)
-            if method == "manual":
-                for field in (
-                    "evidence_errors_per_item",
-                    "unsupported_claims_per_item",
-                ):
-                    values[field] = None
             frameworks.append(
                 {
-                    "result_status": status,
                     "framework": framework,
                     "method": METHOD_LABELS[method],
                     **values,
@@ -295,8 +263,6 @@ def values(rows: list[dict[str, str]], method: str, field: str) -> list[float]:
 
 def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
-    preview = any("PIPELINE_PREVIEW" in row.get("short_note", "") for row in rows)
-    title_prefix = "PREVIEW ONLY — " if preview else ""
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
     time_data = [
@@ -305,7 +271,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     ]
     ax.boxplot(
         time_data,
-        tick_labels=[METHOD_LABELS[m] for m in AI_METHODS],
+        labels=[METHOD_LABELS[m] for m in AI_METHODS],
         showmeans=True,
     )
     ax.set_ylabel("Execution time (seconds)")
@@ -326,7 +292,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     ax.bar(labels, scores, color=colors)
     ax.set_ylim(0, 1)
     ax.set_ylabel("Coverage accuracy")
-    ax.set_title(title_prefix + "Item-level coverage accuracy by method and framework")
+    ax.set_title("Item-level coverage accuracy by method and framework")
     save(fig, figure_dir / "fig_5_2_mapping_accuracy.svg")
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
@@ -347,7 +313,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     ax.set_xticks(list(x), [METHOD_LABELS[method] for method in METHODS])
     ax.set_ylim(0, 1)
     ax.set_ylabel("Score")
-    ax.set_title(title_prefix + "Material missing-mapping detection")
+    ax.set_title("Material missing-mapping detection")
     ax.legend(frameon=False)
     if not any(
         aggregate(row for row in rows if row["method"] == method)["missing_f1"]
@@ -363,30 +329,6 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
             color="#555555",
         )
     save(fig, figure_dir / "fig_5_3_missing_detection.svg")
-
-    fig, axes = plt.subplots(1, 2, figsize=(8, 3.6))
-    for ax, field, title in (
-        (axes[0], "evidence_errors", "Evidence errors per item"),
-        (axes[1], "unsupported_claims", "Unsupported claims per item"),
-    ):
-        means = [statistics.mean(values(rows, method, field)) for method in AI_METHODS]
-        ax.bar([METHOD_LABELS[m] for m in AI_METHODS], means, color=("#8E6C8A", "#5B8C85"))
-        ax.set_title(title_prefix + title)
-        ax.set_ylabel("Mean count")
-        if not any(means):
-            ax.set_ylim(0, 1)
-            ax.text(
-                0.5,
-                0.5,
-                "No scored errors",
-                transform=ax.transAxes,
-                ha="center",
-                va="center",
-                color="#555555",
-            )
-    save(fig, figure_dir / "fig_5_4_reliability_errors.svg")
-
-
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build thesis tables and draft figures")

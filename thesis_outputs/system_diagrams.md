@@ -15,7 +15,7 @@ flowchart LR
     L --> O
     A --> O
     O --> H[Gold-standard scoring]
-    H --> C[Execution time, accuracy, missing mappings, evidence errors]
+    H --> C[Execution time, accuracy, missing mappings]
     C --> T[Chapter 5 tables and figures]
 ```
 

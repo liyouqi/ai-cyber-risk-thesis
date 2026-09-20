@@ -4,12 +4,16 @@ from __future__ import annotations
 
 import argparse
 import csv
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from agent.workflow import load_items
 
 
-ROOT = Path(__file__).resolve().parents[1]
 METHODS = ("manual", "llm_only", "agentic_rag")
 FIELDS = [
     "item_id",
@@ -21,10 +25,7 @@ FIELDS = [
     "missing_mapping_true_positive",
     "missing_mapping_proposed",
     "missing_mapping_reference_total",
-    "evidence_errors",
-    "unsupported_claims",
     "execution_time_min",
-    "short_note",
 ]
 
 

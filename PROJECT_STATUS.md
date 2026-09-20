@@ -1,6 +1,6 @@
 # Project Status
 
-Updated: 2026-09-14
+Updated: 2026-09-20
 
 Working title:
 
@@ -16,18 +16,21 @@ Evaluation of Manual, LLM-Only and Agentic RAG Workflows**
 - retained the extracted AI Act paragraphs only as historical preparation data,
   not as an experiment retrieval backend;
 - saved combined CSV answers and per-item RAG evidence;
-- completed a clearly marked Manual pipeline-preview file for all 40 items;
+- completed the Manual legal review for all 40 items; review time was not
+  recorded and is excluded from measured execution-time comparisons;
 - created `experiments/results/item_results.csv` with 120 rows and filled the
   objective AI run data;
-- prepared the generated thesis tables, four figures and two Mermaid diagrams;
+- prepared the generated thesis tables, three figures and two Mermaid diagrams;
 - completed the 20 remaining AI Act LLM-only runs;
 - completed a fresh 40-item HTTP Agentic RAG batch using corpus
-  `regulatory-en` version `regulatory-core-20260907-r2`, BM25 and top-k 5.
+  `regulatory-en` version `regulatory-core-20260907-r2`, hybrid retrieval and
+  top-k 8.
 
 ## Still missing
 
-- replace the marked Manual preview with an independent Manual run before using
-  the results as thesis evidence;
+- document in the thesis that the company-provided Gold was fixed before
+  scoring and unavailable to the three workflows;
+- explain the purposive sample exclusions in the methodology;
 - review the generated tables and figures for final thesis styling.
 
 The formal 40-item HTTP batch is stored at

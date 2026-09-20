@@ -11,7 +11,7 @@ Run:
 python scripts/build_thesis_outputs.py
 ```
 
-The script creates three CSV tables and four SVG figures:
+The script creates three CSV tables and three SVG figures:
 
 ```text
 generated/
@@ -22,8 +22,7 @@ generated/
 └── figures/
     ├── fig_5_1_execution_time.svg
     ├── fig_5_2_mapping_accuracy.svg
-    ├── fig_5_3_missing_detection.svg
-    └── fig_5_4_reliability_errors.svg
+    └── fig_5_3_missing_detection.svg
 ```
 
 The SVG files are transparent, reproducible drafts. They can be imported into

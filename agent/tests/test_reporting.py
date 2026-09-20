@@ -28,7 +28,7 @@ class ThesisReportingTest(unittest.TestCase):
             result_tables(rows, tables, ROOT / "experiments/data/items.csv")
             figures(rows, charts)
             self.assertEqual(len(list(tables.glob("*.csv"))), 3)
-            self.assertEqual(len(list(charts.glob("*.svg"))), 4)
+            self.assertEqual(len(list(charts.glob("*.svg"))), 3)
 
 if __name__ == "__main__":
     unittest.main()

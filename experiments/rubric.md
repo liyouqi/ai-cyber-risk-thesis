@@ -23,10 +23,6 @@ F1. An empty list is valid when no clear omitted provision exists.
 
 ## Other measures
 
-- Evidence error: a cited location does not exist or does not support the
-  stated reason.
-- Unsupported claim: a material legal or applicability claim is not supported
-  by the item or cited evidence.
 - Time: measured system execution time for LLM-only and Agentic RAG.
 
 Keep one row per item and method in `results/item_results.csv`. Do not calculate

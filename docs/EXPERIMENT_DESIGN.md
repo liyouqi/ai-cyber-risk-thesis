@@ -25,8 +25,8 @@ broad or redundant citation does not make an otherwise adequate mapping `No`.
 ## Data and gold standard
 
 `experiments/data/items.csv` contains the 40 common assessment items.
-`experiments/data/gold_standard.csv` contains exactly one expert reference row
-per item:
+`experiments/data/gold_standard.csv` contains exactly one company-provided
+expert reference row per item:
 
 ```text
 item_id,coverage,missing_provisions,reason,source_url,evidence_excerpt
@@ -34,7 +34,9 @@ item_id,coverage,missing_provisions,reason,source_url,evidence_excerpt
 
 Missing provisions use `document_id::provision` and semicolons between multiple
 references. The Gold is based on official EUR-Lex text and is a reference
-standard for this experiment, not a claim of universal legal truth.
+standard for this experiment, not a claim of universal legal truth. It was
+fixed before final scoring and unavailable to all three workflows while they
+produced answers.
 
 The Gold is never loaded by Manual, LLM-only or Agentic RAG. Only the final
 scoring script reads it.
@@ -44,7 +46,9 @@ scoring script reads it.
 ### Manual
 
 The reviewer checks official regulatory texts without an LLM or Regulatory RAG
-and records the item-level decision, important omissions and sources.
+and records the item-level decision, important omissions and sources. Manual
+review time was not recorded contemporaneously and is therefore not treated as
+measured execution-time data.
 
 ### LLM-only
 
@@ -100,8 +104,6 @@ negatives, Precision, Recall and F1. Matching uses the normalized
 The secondary measures are:
 
 - measured system execution time for LLM-only and Agentic RAG;
-- evidence or citation errors;
-- unsupported claims;
 
 No weighted overall score is used.
 

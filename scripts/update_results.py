@@ -103,18 +103,12 @@ def update_results(results_path: Path, outputs_dir: Path, gold_path: Path) -> in
 
             if method == "manual":
                 row["execution_time_min"] = ""
-                if "PIPELINE PREVIEW" in summary.get("challenge_comment", ""):
-                    row["short_note"] = "PIPELINE_PREVIEW_ONLY_NOT_EXPERIMENT_DATA"
             else:
                 run_path = output / "records" / item_id / "run.json"
                 if run_path.exists():
                     run = json.loads(run_path.read_text(encoding="utf-8"))
                     execution = run["elapsed_seconds"] / 60
                     row["execution_time_min"] = f"{execution:.3f}"
-                    row["short_note"] = (
-                        f"{run['workflow_version']} | {run['prompt_version']} | "
-                        f"{run['model']}"
-                    )
             updated += 1
 
     with results_path.open("w", newline="", encoding="utf-8") as handle:

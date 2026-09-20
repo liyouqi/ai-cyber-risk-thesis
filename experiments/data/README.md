@@ -60,12 +60,17 @@ excluded because it concerns a supervisory penalty rather than a cybersecurity
 control review. DORA-11 is excluded because it substantially duplicates the
 same provision and timing issue already represented by DORA-10.
 
+The AI Act sample excludes TC01-TC04 because they concern transparency and
+disclosure controls, and TC18 because it concerns bias and discrimination
+testing. The selected 20 items keep the comparison focused on cybersecurity and
+technology-control mapping rather than representing a random AI Act sample.
+
 Regenerate the selected dataset with:
 
 ```bash
 python scripts/build_experiment_samples.py
 ```
 
-`gold_standard.csv` is the independent expert reference standard for those 40
-items. Experiment workflows never read it; only `scripts/update_results.py`
-loads it after method outputs have been completed.
+`gold_standard.csv` is the company-provided expert reference standard for those
+40 items. Experiment workflows never read it; only
+`scripts/update_results.py` loads it after method outputs have been completed.

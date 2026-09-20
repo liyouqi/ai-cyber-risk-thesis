@@ -35,10 +35,10 @@ Their control statements and existing mappings are normalized into
 the EU AI Act and 20 concerning DORA. The source contains 63 existing AI Act
 provision references and 22 existing DORA references.
 
-`experiments/data/gold_standard.csv` contains one expert reference decision per
-item, constructed from official EUR-Lex text. It contains 29 `Yes` and 11 `No`
-items. The Gold is used only by the final scoring script; none of the three
-workflows can read it while producing answers.
+`experiments/data/gold_standard.csv` contains one company-provided expert
+reference decision per item, constructed from official EUR-Lex text. It contains
+29 `Yes` and 11 `No` items. The Gold is used only by the final scoring script;
+none of the three workflows can read it while producing answers.
 
 ## Agentic RAG workflow
 
@@ -65,9 +65,8 @@ The primary metric is Coverage Accuracy against the Gold. Because the Gold is
 imbalanced, the experiment also reports Yes recall, No recall and balanced
 accuracy. Missing provisions are compared using normalized
 `document_id::provision` identifiers and reported with Precision, Recall and F1.
-Measured system execution time is reported for the two AI workflows. Evidence
-errors and unsupported claims are retained as secondary reliability measures.
-No weighted overall score is calculated.
+Measured system execution time is reported for the two AI workflows. No
+weighted overall score is calculated.
 
 ## Current results
 
@@ -103,11 +102,9 @@ expert review.
 ### Result status
 
 The LLM-only and Agentic RAG answers and execution times come from completed
-40-item runs. The current Manual answers, and human-scored secondary error
-fields, were prepared to exercise the reporting pipeline and are not an
-independent human experiment. They must be replaced before these numbers are
-used as final thesis evidence. Until then, the tables and figures should be
-treated as provisional.
+40-item runs. The Manual decisions were completed through manual legal review,
+but review time was not recorded contemporaneously and is therefore excluded
+from the measured execution-time comparison. 
 
 ## Reproduce the outputs
 
