@@ -46,9 +46,10 @@ scoring script reads it.
 ### Manual
 
 The reviewer checks official regulatory texts without an LLM or Regulatory RAG
-and records the item-level decision, important omissions and sources. Manual
-review time was not recorded contemporaneously and is therefore not treated as
-measured execution-time data.
+and records the item-level decision and any specifically identified important
+omissions. The Manual form is intentionally smaller than the AI response schema.
+Manual review time was not recorded contemporaneously and is therefore not
+treated as measured execution-time data.
 
 ### LLM-only
 
@@ -66,15 +67,31 @@ The thesis project does not import the RAG package or read its data, release or
 index directories. The run record preserves queries, evidence, rank, score,
 source metadata, the Planned plan and claim coverage.
 
-## Common output
+## Output and scoring boundary
 
-Each method produces one row per item containing:
+All three methods produce the same scored content:
 
 ```text
 item_id
 coverage
-reason
 missing_mapping
+```
+
+The Manual spreadsheet adds only the explicitly retrospective time:
+
+```text
+time_min
+```
+
+No contemporaneous qualitative Manual notes were retained, so none are
+reported. `missing_mapping` remains empty when the reviewer judged coverage
+insufficient but did not identify a specific provision that would repair it.
+
+The AI outputs retain richer diagnostic fields because these are generated
+automatically and preserve the model and retrieval audit trail:
+
+```text
+reason
 evidence_reference
 evidence_excerpt
 applicability_note

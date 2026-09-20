@@ -10,11 +10,7 @@ outputs/
 ```
 
 `manual/` contains the completed item-level Manual answers. Its
-`item_summary.csv` also contains `estimated_time_min` and `time_status`; every
-estimated value is marked `IMPUTED_NOT_OBSERVED`. Manual review time was not
-recorded contemporaneously, so these values are illustrative and must not be
-presented as measured experiment data. The two AI folders contain their saved
-model answers.
+`item_summary.csv` also contains `time_status`;The two AI folders contain their saved model answers.
 
 The timing preview totals 763 minutes across 40 items (mean 19.1 minutes;
 median 18 minutes). It is a fixed planning scenario representing roughly

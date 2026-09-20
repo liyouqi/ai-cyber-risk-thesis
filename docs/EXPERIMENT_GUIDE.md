@@ -34,12 +34,20 @@ Manual 只填写：
 experiments/outputs/manual/item_summary.csv
 ```
 
+表中只保留四列：`item_id`、`coverage`、`missing_mapping`，以及事后估算
+的 `time_min`。没有同期保存的人工定性笔记，因此不报告
+review note，也不要求人工填写 AI 输出里的 evidence excerpt、
+applicability note 或 challenge comment。
+
 Manual 不打开 Gold 或 AI 输出。`missing_mapping` 使用分号分隔的
 `document_id::provision`，例如：
 
 ```text
 EU-2022-2554::Article 11(6)(b)
 ```
+
+只有人工记录明确指出能修复缺口的具体条款时才填写；仅判断覆盖不足但
+没有明确补充条款时保持为空。
 
 ## AI 运行
 

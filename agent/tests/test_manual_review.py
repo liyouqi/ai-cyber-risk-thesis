@@ -29,6 +29,15 @@ class ManualReviewTest(unittest.TestCase):
                 items = list(csv.DictReader(handle))
 
             self.assertEqual(len(items), 1)
+            self.assertEqual(
+                list(items[0]),
+                [
+                    "item_id",
+                    "coverage",
+                    "missing_mapping",
+                    "time_min",
+                ],
+            )
             self.assertTrue(all(not row["coverage"] for row in items))
 
 

@@ -34,12 +34,8 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
             {
                 "item_id": item.item_id,
                 "coverage": "",
-                "reason": "",
                 "missing_mapping": "",
-                "evidence_reference": "",
-                "evidence_excerpt": "",
-                "applicability_note": "",
-                "challenge_comment": "",
+                "time_min": "",
             }
         )
 
@@ -48,12 +44,8 @@ def prepare_manual_review(input_path: str | Path, output_dir: str | Path) -> Pat
         [
             "item_id",
             "coverage",
-            "reason",
             "missing_mapping",
-            "evidence_reference",
-            "evidence_excerpt",
-            "applicability_note",
-            "challenge_comment",
+            "time_min",
         ],
         item_rows,
     )
