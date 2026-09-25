@@ -246,7 +246,7 @@ def result_tables(rows: list[dict[str, str]], table_dir: Path, dataset: Path) ->
 
 def save(fig: plt.Figure, path: Path) -> None:
     fig.tight_layout()
-    fig.savefig(path, format="svg", bbox_inches="tight")
+    fig.savefig(path, format="png", dpi=200, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -268,13 +268,13 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     ]
     ax.boxplot(
         time_data,
-        labels=[METHOD_LABELS[m] for m in METHODS],
+        tick_labels=[METHOD_LABELS[m] for m in METHODS],
         showmeans=True,
     )
     ax.set_yscale("log")
     ax.set_ylabel("Elapsed time (seconds, log scale)")
     ax.set_title("Observed elapsed time by method")
-    save(fig, figure_dir / "fig_5_1_execution_time.svg")
+    save(fig, figure_dir / "fig_5_1_execution_time.png")
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
     labels, scores, colors = [], [], []
@@ -291,7 +291,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
     ax.set_ylim(0, 1)
     ax.set_ylabel("Coverage accuracy")
     ax.set_title("Item-level coverage accuracy by method and framework")
-    save(fig, figure_dir / "fig_5_2_mapping_accuracy.svg")
+    save(fig, figure_dir / "fig_5_2_mapping_accuracy.png")
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
     metric_names = ("missing_precision", "missing_recall", "missing_f1")
@@ -326,7 +326,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
             va="center",
             color="#555555",
         )
-    save(fig, figure_dir / "fig_5_3_missing_detection.svg")
+    save(fig, figure_dir / "fig_5_3_missing_detection.png")
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build thesis tables and draft figures")
