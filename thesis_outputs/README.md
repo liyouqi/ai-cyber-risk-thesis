@@ -11,7 +11,7 @@ Run:
 python scripts/build_thesis_outputs.py
 ```
 
-The script creates three CSV tables and three SVG figures:
+The script creates three CSV tables and three PNG figures:
 
 ```text
 generated/
@@ -20,14 +20,18 @@ generated/
 │   ├── table_overall_results.csv
 │   └── table_framework_results.csv
 └── figures/
-    ├── fig_5_1_execution_time.svg
-    ├── fig_5_2_mapping_accuracy.svg
-    └── fig_5_3_missing_detection.svg
+    ├── fig_5_1_execution_time.png
+    ├── fig_5_2_mapping_accuracy.png
+    └── fig_5_3_missing_detection.png
 ```
 
-The figures are reproducible drafts. SVG files can be imported into draw.io,
-PowerPoint, Inkscape or another tool for final thesis styling. Do not
-edit the numbers manually; regenerate the files from the CSV results.
+The PNG files are reproducible drafts suitable for the thesis or presentation
+slides. Do not edit the numbers manually; regenerate the files from the CSV
+results.
+
+The execution-time and framework-accuracy figures also export SVG and PDF
+versions. SVG files can be imported into draw.io, PowerPoint or Inkscape for
+final thesis styling.
 
 The revised **Figure 5.2**, "Coverage decision and missing-provision
 detection performance", combines the two tasks in one figure. Regenerate it with:

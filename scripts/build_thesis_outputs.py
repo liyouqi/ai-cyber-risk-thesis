@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import inspect
 import math
 import os
 import statistics
@@ -246,7 +247,7 @@ def result_tables(rows: list[dict[str, str]], table_dir: Path, dataset: Path) ->
 
 def save(fig: plt.Figure, path: Path) -> None:
     fig.tight_layout()
-    fig.savefig(path, format="svg", bbox_inches="tight")
+    fig.savefig(path, format="png", dpi=200, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -266,9 +267,12 @@ def publication_figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
             [value * 60 for value in values(rows, method, "execution_time_min")]
             for method in METHODS
         ]
+        label_argument = (
+            "tick_labels" if "tick_labels" in inspect.signature(ax.boxplot).parameters else "labels"
+        )
         boxes = ax.boxplot(
             time_data,
-            labels=[WORKFLOW_STYLES[method][0] for method in METHODS],
+            **{label_argument: [WORKFLOW_STYLES[method][0] for method in METHODS]},
             showmeans=True, patch_artist=True,
             medianprops={"color": "black", "linewidth": 1.1},
             meanprops={"marker": "^", "markerfacecolor": "white", "markeredgecolor": "black"},
@@ -357,7 +361,7 @@ def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
             va="center",
             color="#555555",
         )
-    save(fig, figure_dir / "fig_5_3_missing_detection.svg")
+    save(fig, figure_dir / "fig_5_3_missing_detection.png")
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build thesis tables and draft figures")
