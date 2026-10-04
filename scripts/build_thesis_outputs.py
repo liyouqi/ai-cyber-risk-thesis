@@ -28,6 +28,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from agent.references import parse_mapping
+from scripts.thesis_figure_style import FIGURE_STYLE, WORKFLOW_STYLES, save_publication_figure
 
 
 METHODS = ("manual", "llm_only", "agentic_rag")
@@ -37,7 +38,6 @@ METHOD_LABELS = {
     "agentic_rag": "Agentic RAG",
 }
 FRAMEWORKS = ("EU AI Act", "DORA")
-COLORS = {"EU AI Act": "#4878A8", "DORA": "#E08B3E"}
 NUMERIC_FIELDS = {
     "coverage_correct",
     "missing_mapping_true_positive",
@@ -258,40 +258,71 @@ def values(rows: list[dict[str, str]], method: str, field: str) -> list[float]:
     ]
 
 
+def publication_figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
+    """Style the time and framework figures without changing their observations."""
+    with plt.rc_context(FIGURE_STYLE):
+        fig, ax = plt.subplots(figsize=(6.2, 3.8))
+        time_data = [
+            [value * 60 for value in values(rows, method, "execution_time_min")]
+            for method in METHODS
+        ]
+        boxes = ax.boxplot(
+            time_data,
+            labels=[WORKFLOW_STYLES[method][0] for method in METHODS],
+            showmeans=True, patch_artist=True,
+            medianprops={"color": "black", "linewidth": 1.1},
+            meanprops={"marker": "^", "markerfacecolor": "white", "markeredgecolor": "black"},
+        )
+        for box, method in zip(boxes["boxes"], METHODS):
+            color = WORKFLOW_STYLES[method][1]
+            box.set_facecolor(color)
+            box.set_edgecolor(color)
+        ax.set_yscale("log")
+        ax.set_ylabel("Elapsed time (seconds, log scale)")
+        fig.tight_layout()
+        save_publication_figure(
+            fig, figure_dir / "fig_5_1_execution_time.svg", "Observed elapsed time by method"
+        )
+        plt.close(fig)
+
+        fig, ax = plt.subplots(figsize=(6.2, 3.8))
+        fig.subplots_adjust(left=0.12, right=0.99, bottom=0.23, top=0.91)
+        for method_index, method in enumerate(METHODS):
+            scores = []
+            for framework in FRAMEWORKS:
+                subset = [
+                    row for row in rows
+                    if row["method"] == method and row["framework"] == framework
+                ]
+                score = aggregate(subset)["coverage_accuracy"] if subset else None
+                scores.append((score or 0) * 100)
+            positions = [index + (method_index - 1) * 0.24 for index in range(len(FRAMEWORKS))]
+            label, color = WORKFLOW_STYLES[method]
+            ax.bar(positions, scores, width=0.22, color=color, label=label)
+            for position, score in zip(positions, scores):
+                ax.annotate(
+                    f"{score:.1f}", (position, score), xytext=(0, 4),
+                    textcoords="offset points", ha="center", va="bottom", fontsize=9.5,
+                )
+        ax.set_xticks(range(len(FRAMEWORKS)), FRAMEWORKS)
+        ax.set_xlim(-0.6, len(FRAMEWORKS) - 0.4)
+        ax.set_ylim(0, 105)
+        ax.set_yticks(range(0, 101, 20))
+        ax.set_ylabel("Coverage decision accuracy (%)")
+        handles, labels = ax.get_legend_handles_labels()
+        fig.legend(
+            handles, labels, loc="center", bbox_to_anchor=(0.55, 0.055), ncol=3,
+            frameon=False, handlelength=1.5, columnspacing=1.5, fontsize=9,
+        )
+        save_publication_figure(
+            fig, figure_dir / "fig_5_2_mapping_accuracy.svg", "Coverage decision accuracy by framework"
+        )
+        plt.close(fig)
+
+
 def figures(rows: list[dict[str, str]], figure_dir: Path) -> None:
+    publication_figures(rows, figure_dir)
     plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
-
-    fig, ax = plt.subplots(figsize=(6.2, 3.8))
-    time_data = [
-        [value * 60 for value in values(rows, method, "execution_time_min")]
-        for method in METHODS
-    ]
-    ax.boxplot(
-        time_data,
-        labels=[METHOD_LABELS[m] for m in METHODS],
-        showmeans=True,
-    )
-    ax.set_yscale("log")
-    ax.set_ylabel("Elapsed time (seconds, log scale)")
-    ax.set_title("Observed elapsed time by method")
-    save(fig, figure_dir / "fig_5_1_execution_time.svg")
-
-    fig, ax = plt.subplots(figsize=(6.2, 3.8))
-    labels, scores, colors = [], [], []
-    for method in METHODS:
-        for framework in FRAMEWORKS:
-            subset = [
-                row for row in rows if row["method"] == method and row["framework"] == framework
-            ]
-            score = aggregate(subset)["coverage_accuracy"] if subset else None
-            labels.append(f"{METHOD_LABELS[method]}\n{framework}")
-            scores.append(score or 0)
-            colors.append(COLORS[framework])
-    ax.bar(labels, scores, color=colors)
-    ax.set_ylim(0, 1)
-    ax.set_ylabel("Coverage accuracy")
-    ax.set_title("Item-level coverage accuracy by method and framework")
-    save(fig, figure_dir / "fig_5_2_mapping_accuracy.svg")
 
     fig, ax = plt.subplots(figsize=(6.2, 3.8))
     metric_names = ("missing_precision", "missing_recall", "missing_f1")
